@@ -21,9 +21,9 @@ from utils.config import STAGE_TEMPERATURES
 class IterativeIntegrator:
     """Stage 5A: Iterative paper integration with synthesis state management"""
     
-    def __init__(self, gemini_client: GeminiClient):
+    def __init__(self, gemini_client: GeminiClient, prompt_loader: PromptLoader):
         self.client = gemini_client
-        self.prompt_loader = PromptLoader()
+        self.prompt_loader = prompt_loader
         self.stage_name = "stage_5a_knowledge_synthesis"
         self.temperature = STAGE_TEMPERATURES.get("stage_5a_iterative_integration", 0.2)
         

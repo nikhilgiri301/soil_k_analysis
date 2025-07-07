@@ -263,3 +263,36 @@
 2025-07-07 21:47:50,487 - root - INFO - Starting Stage 5: Iterative knowledge synthesis
 2025-07-07 21:47:50,487 - root - INFO - Completed Stage 5: Iterative knowledge synthesis
 2025-07-07 21:47:50,487 - root - INFO - 10-pass analysis completed successfully
+2025-07-07 23:10:09,577 - root - INFO - Quality Controller initialized
+2025-07-07 23:10:09,578 - root - INFO - Confidence Scorer initialized with conservative calibration
+2025-07-07 23:10:09,578 - root - INFO - Synthesis Runner initialized
+2025-07-07 23:10:09,597 - root - INFO - GeminiClient initialized with model: gemini-2.5-flash
+2025-07-07 23:10:09,597 - root - INFO - Thinking mode: enabled
+2025-07-07 23:10:09,597 - root - INFO - Token limits: REMOVED - using system defaults
+2025-07-07 23:10:09,598 - root - INFO - PromptLoader initialized with 10 expected prompts
+2025-07-07 23:10:09,599 - root - INFO - Quality Controller initialized
+2025-07-07 23:10:09,599 - root - INFO - Confidence Scorer initialized with conservative calibration
+2025-07-07 23:10:09,602 - root - INFO - Prompt validation: 10/10 prompts validated successfully
+2025-07-07 23:10:09,602 - root - INFO - All system components validated successfully
+2025-07-07 23:10:09,603 - root - ERROR - Synthesis failed: GenericExtractor.__init__() takes 2 positional arguments but 3 were given
+2025-07-07 23:10:09,603 - root - ERROR - Synthesis execution failed: GenericExtractor.__init__() takes 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "C:\Users\Nikhil\Desktop\Potash-Papers\soil_k_analysis\run_synthesis.py", line 360, in main
+    result = await runner.run_synthesis()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nikhil\Desktop\Potash-Papers\soil_k_analysis\run_synthesis.py", line 135, in run_synthesis
+    self.engine = SoilKAnalysisEngine(
+                  ~~~~~~~~~~~~~~~~~~~^
+        api_key=self.api_key,
+        ^^^^^^^^^^^^^^^^^^^^^
+        resume_from_checkpoint=self.resume_checkpoint
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Nikhil\Desktop\Potash-Papers\soil_k_analysis\6_synthesis_engine\master_controller.py", line 60, in __init__
+    self.processors = self.initialize_all_processors()
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Nikhil\Desktop\Potash-Papers\soil_k_analysis\6_synthesis_engine\master_controller.py", line 85, in initialize_all_processors
+    '1a': GenericExtractor(self.gemini_client, self.prompt_loader),
+          ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GenericExtractor.__init__() takes 2 positional arguments but 3 were given

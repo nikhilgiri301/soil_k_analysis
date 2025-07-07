@@ -18,9 +18,9 @@ from utils.config import STAGE_TEMPERATURES
 class PaperSynthesizer:
     """Stage 3A: Synthesizes generic and soil K extractions into coherent paper understanding"""
     
-    def __init__(self, gemini_client: GeminiClient):
+    def __init__(self, gemini_client: GeminiClient, prompt_loader: PromptLoader):
         self.client = gemini_client
-        self.prompt_loader = PromptLoader()
+        self.prompt_loader = prompt_loader
         self.stage_name = "stage_3a_paper_synthesis"
         self.temperature = STAGE_TEMPERATURES[self.stage_name]
         
@@ -31,16 +31,21 @@ class PaperSynthesizer:
             logging.error(f"Failed to load synthesis prompt: {str(e)}")
             raise
     
-    async def synthesize(self, stage_1b_result: Dict[str, Any], stage_2b_result: Dict[str, Any], 
-                        paper_data: Dict[str, Any]) -> Dict[str, Any]:
+    async def synthesize(self, stage_results: Dict[str, Any]) -> Dict[str, Any]:
         """Synthesize validated generic and soil K extractions"""
         
         try:
+            # Extract stage results
+            stage_1a_results = stage_results.get('stage_1a_results', {})
+            stage_1b_results = stage_results.get('stage_1b_results', {})
+            stage_2a_results = stage_results.get('stage_2a_results', {})
+            stage_2b_results = stage_results.get('stage_2b_results', {})
+            
             # Format synthesis prompt with both validated extractions
             formatted_prompt = self.prompt_template.format(
-                paper_title=paper_data.get('filename', 'Unknown'),
-                validated_generic_extraction=json.dumps(stage_1b_result, indent=2),
-                validated_soilk_extraction=json.dumps(stage_2b_result, indent=2)
+                paper_title=stage_1a_results.get('paper_id', 'Unknown'),
+                validated_generic_extraction=json.dumps(stage_1b_results, indent=2),
+                validated_soilk_extraction=json.dumps(stage_2b_results, indent=2)
             )
             
             # Generate synthesis with creative temperature
@@ -51,12 +56,12 @@ class PaperSynthesizer:
             
             # Add synthesis metadata
             synthesis_result['stage'] = '3A'
-            synthesis_result['paper_id'] = paper_data.get('filename')
+            synthesis_result['paper_id'] = stage_1a_results.get('paper_id', 'Unknown')
             synthesis_result['synthesis_timestamp'] = datetime.now().isoformat()
             synthesis_result['temperature_used'] = self.temperature
             synthesis_result['input_stages'] = ['1B', '2B']
             
-            logging.info(f"Successfully synthesized paper: {paper_data.get('filename')}")
+            logging.info(f"Successfully synthesized paper: {stage_1a_results.get('paper_id', 'Unknown')}")
             return synthesis_result
             
         except Exception as e:
@@ -64,7 +69,7 @@ class PaperSynthesizer:
             return {
                 "error": str(e),
                 "stage": "3A",
-                "paper_id": paper_data.get('filename'),
+                "paper_id": stage_results.get('stage_1a_results', {}).get('paper_id', 'Unknown'),
                 "synthesis_confidence": 0.0,
                 "synthesis_timestamp": datetime.now().isoformat()
             }

@@ -20,9 +20,9 @@ from utils.config import STAGE_TEMPERATURES
 class GenericExtractor:
     """Stage 1A: Generic paper information extractor using file-based prompts"""
     
-    def __init__(self, gemini_client: GeminiClient):
+    def __init__(self, gemini_client: GeminiClient, prompt_loader: PromptLoader):
         self.client = gemini_client
-        self.prompt_loader = PromptLoader()
+        self.prompt_loader = prompt_loader
         self.stage_name = "stage_1a_generic_extraction"
         self.temperature = STAGE_TEMPERATURES[self.stage_name]
         

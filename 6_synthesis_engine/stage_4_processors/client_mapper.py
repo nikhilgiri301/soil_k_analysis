@@ -18,9 +18,9 @@ from utils.config import STAGE_TEMPERATURES
 class ClientMapper:
     """Stage 4A: Maps paper synthesis to client question architecture"""
     
-    def __init__(self, gemini_client: GeminiClient):
+    def __init__(self, gemini_client: GeminiClient, prompt_loader: PromptLoader):
         self.client = gemini_client
-        self.prompt_loader = PromptLoader()
+        self.prompt_loader = prompt_loader
         self.stage_name = "stage_4a_client_mapping"
         self.temperature = STAGE_TEMPERATURES[self.stage_name]
         
@@ -31,15 +31,15 @@ class ClientMapper:
             logging.error(f"Failed to load client mapping prompt: {str(e)}")
             raise
     
-    async def map_to_client_questions(self, stage_3b_result: Dict[str, Any], 
-                                    client_architecture: Dict[str, Any]) -> Dict[str, Any]:
+    async def map_to_client(self, stage_3a_result: Dict[str, Any], 
+                           client_architecture: Dict[str, Any]) -> Dict[str, Any]:
         """Map validated synthesis to client question architecture"""
         
         try:
             # Format mapping prompt
             formatted_prompt = self.prompt_template.format(
                 client_question_tree=json.dumps(client_architecture.get('question_tree', {}), indent=2),
-                stage_3b_results=json.dumps(stage_3b_result, indent=2)
+                stage_3a_results=json.dumps(stage_3a_result, indent=2)
             )
             
             # Generate mapping with precise temperature
@@ -50,12 +50,12 @@ class ClientMapper:
             
             # Add metadata
             mapping_result['stage'] = '4A'
-            mapping_result['paper_id'] = stage_3b_result.get('paper_id', 'unknown')
+            mapping_result['paper_id'] = stage_3a_result.get('paper_id', 'unknown')
             mapping_result['mapping_timestamp'] = datetime.now().isoformat()
             mapping_result['temperature_used'] = self.temperature
             mapping_result['client_architecture_version'] = client_architecture.get('version', '1.0')
             
-            logging.info(f"Successfully mapped to client questions: {stage_3b_result.get('paper_id')}")
+            logging.info(f"Successfully mapped to client questions: {stage_3a_result.get('paper_id')}")
             return mapping_result
             
         except Exception as e:
@@ -63,7 +63,7 @@ class ClientMapper:
             return {
                 "error": str(e),
                 "stage": "4A",
-                "paper_id": stage_3b_result.get('paper_id', 'unknown'),
+                "paper_id": stage_3a_result.get('paper_id', 'unknown'),
                 "mapping_confidence": 0.0,
                 "mapping_timestamp": datetime.now().isoformat()
             }

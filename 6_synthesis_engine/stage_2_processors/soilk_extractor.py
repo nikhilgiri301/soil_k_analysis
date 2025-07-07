@@ -18,9 +18,9 @@ from utils.config import STAGE_TEMPERATURES
 class SoilKExtractor:
     """Stage 2A: Soil K specific information extractor"""
     
-    def __init__(self, gemini_client: GeminiClient):
+    def __init__(self, gemini_client: GeminiClient, prompt_loader: PromptLoader):
         self.client = gemini_client
-        self.prompt_loader = PromptLoader()
+        self.prompt_loader = prompt_loader
         self.stage_name = "stage_2a_soilk_extraction"
         self.temperature = STAGE_TEMPERATURES[self.stage_name]
         

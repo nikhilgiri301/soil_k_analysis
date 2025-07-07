@@ -18,11 +18,11 @@ from utils.config import STAGE_TEMPERATURES
 class SoilKValidator:
     """Stage 2B: Validates soil K specific extraction"""
     
-    def __init__(self, gemini_client: GeminiClient):
+    def __init__(self, gemini_client: GeminiClient, prompt_loader: PromptLoader):
         self.client = gemini_client
-        self.prompt_loader = PromptLoader()
+        self.prompt_loader = prompt_loader
         self.stage_name = "stage_2b_soilk_validation"
-        self.temperature = STAGE_TEMPERATURES[self.stage_name]
+        self.temperature = STAGE_TEMPERATURES.get(self.stage_name, 0.1)
         
         try:
             self.prompt_template = self.prompt_loader.load_prompt(self.stage_name)
@@ -35,6 +35,17 @@ class SoilKValidator:
         """Validate Stage 2A soil K extraction"""
         
         try:
+            # Check if stage_2a failed
+            if not stage_2a_result.get('success', False):
+                return {
+                    "success": False,
+                    "stage": "2B",
+                    "paper_id": paper_data.get('filename'),
+                    "validation_errors": ["Stage 2A soil K extraction failed - cannot validate"],
+                    "confidence_score": 0.0,
+                    "validation_timestamp": datetime.now().isoformat()
+                }
+            
             # Format validation prompt
             formatted_prompt = self.prompt_template.format(
                 paper_title=paper_data.get('filename', 'Unknown'),
@@ -49,7 +60,12 @@ class SoilKValidator:
                 temperature=self.temperature
             )
             
+            # Ensure result is dict
+            if not isinstance(validation_result, dict):
+                validation_result = {"success": False, "error": "Invalid response format"}
+            
             # Add metadata
+            validation_result['success'] = validation_result.get('success', True)
             validation_result['stage'] = '2B'
             validation_result['paper_id'] = paper_data.get('filename')
             validation_result['validation_timestamp'] = datetime.now().isoformat()
@@ -62,6 +78,7 @@ class SoilKValidator:
         except Exception as e:
             logging.error(f"Stage 2B validation failed: {str(e)}")
             return {
+                "success": False,
                 "error": str(e),
                 "stage": "2B",
                 "paper_id": paper_data.get('filename'),

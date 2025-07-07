@@ -18,11 +18,11 @@ from utils.config import STAGE_TEMPERATURES
 class GenericValidator:
     """Stage 1B: Validates generic paper extraction for accuracy and completeness"""
     
-    def __init__(self, gemini_client: GeminiClient):
+    def __init__(self, gemini_client: GeminiClient, prompt_loader: PromptLoader):
         self.client = gemini_client
-        self.prompt_loader = PromptLoader()
+        self.prompt_loader = prompt_loader
         self.stage_name = "stage_1b_generic_validation"
-        self.temperature = STAGE_TEMPERATURES[self.stage_name]
+        self.temperature = STAGE_TEMPERATURES.get(self.stage_name, 0.1)
         
         try:
             self.prompt_template = self.prompt_loader.load_prompt(self.stage_name)
@@ -35,6 +35,17 @@ class GenericValidator:
         """Validate Stage 1A extraction against original paper"""
         
         try:
+            # Check if stage_1a failed
+            if not stage_1a_result.get('success', False):
+                return {
+                    "success": False,
+                    "stage": "1B",
+                    "paper_id": paper_data.get('filename'),
+                    "validation_errors": ["Stage 1A extraction failed - cannot validate"],
+                    "confidence_score": 0.0,
+                    "validation_timestamp": datetime.now().isoformat()
+                }
+            
             # Format validation prompt
             formatted_prompt = self.prompt_template.format(
                 paper_title=paper_data.get('filename', 'Unknown'),
@@ -49,7 +60,12 @@ class GenericValidator:
                 temperature=self.temperature
             )
             
+            # Ensure result is dict
+            if not isinstance(validation_result, dict):
+                validation_result = {"success": False, "error": "Invalid response format"}
+            
             # Add validation metadata
+            validation_result['success'] = validation_result.get('success', True)
             validation_result['stage'] = '1B'
             validation_result['paper_id'] = paper_data.get('filename')
             validation_result['validation_timestamp'] = datetime.now().isoformat()
@@ -62,10 +78,10 @@ class GenericValidator:
         except Exception as e:
             logging.error(f"Stage 1B validation failed: {str(e)}")
             return {
+                "success": False,
                 "error": str(e),
                 "stage": "1B",
                 "paper_id": paper_data.get('filename'),
                 "validation_confidence": 0.0,
                 "validation_timestamp": datetime.now().isoformat()
             }
-

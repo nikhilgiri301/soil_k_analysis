@@ -1,15 +1,107 @@
 """
 Enhanced Gemini API client with thinking mode support for complex literature synthesis
+Updated to remove artificial token limits and add comprehensive usage tracking
 """
 
 import asyncio
 import json
 import logging
+import time
+from datetime import datetime
 from typing import Dict, Any, Optional
 import google.generativeai as genai
 from google.generativeai.types import GenerateContentConfig, ThinkingConfig
 from .config import GEMINI_CONFIG
-import time
+from pathlib import Path
+
+class TokenUsageTracker:
+    """Simple token usage tracking integrated into existing GeminiClient"""
+    
+    def __init__(self, output_dir: str = "11_validation_logs"):
+        self.output_dir = Path(output_dir)
+        self.output_dir.mkdir(exist_ok=True)
+        
+        self.usage_data = []
+        self.INPUT_COST = 0.15
+        self.OUTPUT_COST_THINKING = 3.50
+        
+    def track_usage(self, stage_name: str, paper_id: str, response: Any, 
+                   prompt_length: int, processing_time: float, thinking_enabled: bool) -> Dict[str, Any]:
+        """Track token usage for this API call"""
+        
+        usage_record = {
+            'timestamp': datetime.now().isoformat(),
+            'stage_name': stage_name,
+            'paper_id': paper_id,
+            'prompt_length_chars': prompt_length,
+            'processing_time_seconds': round(processing_time, 2),
+            'thinking_enabled': thinking_enabled
+        }
+        
+        # Extract token usage
+        if hasattr(response, 'usage_metadata'):
+            metadata = response.usage_metadata
+            usage_record.update({
+                'input_tokens': getattr(metadata, 'prompt_token_count', 0),
+                'output_tokens': getattr(metadata, 'candidates_token_count', 0),
+                'thinking_tokens': getattr(metadata, 'thinking_token_count', 0),
+            })
+            
+            # Calculate costs
+            input_cost = usage_record['input_tokens'] * self.INPUT_COST / 1_000_000
+            output_cost = usage_record['output_tokens'] * self.OUTPUT_COST_THINKING / 1_000_000
+            thinking_cost = usage_record['thinking_tokens'] * self.OUTPUT_COST_THINKING / 1_000_000
+            
+            usage_record.update({
+                'input_cost_usd': round(input_cost, 6),
+                'output_cost_usd': round(output_cost, 6), 
+                'thinking_cost_usd': round(thinking_cost, 6),
+                'total_cost_usd': round(input_cost + output_cost + thinking_cost, 6)
+            })
+            
+            # Log summary
+            logging.info(
+                f"{stage_name} | IN={usage_record['input_tokens']:,} "
+                f"OUT={usage_record['output_tokens']:,} THINK={usage_record['thinking_tokens']:,} | "
+                f"Cost=${usage_record['total_cost_usd']:.4f} | Time={processing_time:.1f}s"
+            )
+        
+        self.usage_data.append(usage_record)
+        return usage_record
+    
+    def save_summary(self):
+        """Save usage summary at end of processing"""
+        if not self.usage_data:
+            return
+            
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        
+        # Save detailed data
+        detail_file = self.output_dir / f"token_usage_{timestamp}.json"
+        with open(detail_file, 'w') as f:
+            json.dump(self.usage_data, f, indent=2)
+        
+        # Generate summary
+        total_cost = sum(record.get('total_cost_usd', 0) for record in self.usage_data)
+        total_papers = len(set(record['paper_id'] for record in self.usage_data))
+        
+        summary = {
+            'total_calls': len(self.usage_data),
+            'total_papers': total_papers,
+            'total_cost_usd': round(total_cost, 4),
+            'cost_per_paper': round(total_cost / max(total_papers, 1), 4),
+            'timestamp': timestamp
+        }
+        
+        summary_file = self.output_dir / f"usage_summary_{timestamp}.json"
+        with open(summary_file, 'w') as f:
+            json.dump(summary, f, indent=2)
+        
+        logging.info(f"USAGE SUMMARY: {summary['total_calls']} calls, "
+                    f"${summary['total_cost_usd']} total, "
+                    f"${summary['cost_per_paper']:.3f} per paper")
+        
+        return summary
 
 class GeminiClient:
     """Enhanced Gemini API client with thinking mode for complex reasoning tasks"""
@@ -30,19 +122,27 @@ class GeminiClient:
             thinking_budget=-1  # Unlimited thinking for quality
         ) if enable_thinking else None
         
+        # Token usage tracking
+        self.tracker = TokenUsageTracker()
+        
         logging.info(f"GeminiClient initialized with model: {GEMINI_CONFIG['model']}")
         logging.info(f"Thinking mode: {'enabled' if enable_thinking else 'disabled'}")
+        logging.info("Token limits: REMOVED - using system defaults")
         
     async def generate_json_content(self, prompt: str, temperature: float = 0.1, 
                                    max_retries: int = None, 
-                                   enable_thinking_for_stage: bool = None) -> Dict[str, Any]:
-        """Generate JSON content with thinking mode and error handling"""
+                                   enable_thinking_for_stage: bool = None,
+                                   stage_name: str = "unknown",
+                                   paper_id: str = "unknown") -> Dict[str, Any]:
+        """Generate JSON content with thinking mode, tracking, and NO artificial token limits"""
         
         if max_retries is None:
             max_retries = GEMINI_CONFIG.get("retry_attempts", 3)
         
         # Determine if thinking should be used for this specific call
         use_thinking = enable_thinking_for_stage if enable_thinking_for_stage is not None else self.enable_thinking
+        
+        start_time = time.time()
         
         async with self.rate_limiter:
             
@@ -54,26 +154,38 @@ class GeminiClient:
                     enhanced_prompt = f"{prompt}\n\nIMPORTANT: Return ONLY valid JSON. No markdown, no explanations, just the JSON object."
                     
                     # Configure generation with thinking mode if enabled
+                    # KEY CHANGE: NO max_output_tokens parameter - let Gemini use system defaults
                     if use_thinking and self.thinking_config:
                         generation_config = GenerateContentConfig(
                             temperature=temperature,
-                            max_output_tokens=GEMINI_CONFIG.get("max_tokens", 8192),
+                            # max_output_tokens=None,  # REMOVED - no artificial limits
                             response_mime_type="application/json",
                             thinking_config=self.thinking_config
                         )
                         
-                        logging.debug(f"Using thinking mode for complex reasoning (temperature: {temperature})")
+                        logging.debug(f"Using thinking mode for {stage_name} (temperature: {temperature})")
                     else:
                         generation_config = GenerateContentConfig(
                             temperature=temperature,
-                            max_output_tokens=GEMINI_CONFIG.get("max_tokens", 8192),
+                            # max_output_tokens=None,  # REMOVED - no artificial limits  
                             response_mime_type="application/json"
                         )
                     
                     # Generate content with enhanced API
                     response = await asyncio.wait_for(
                         self._generate_async_enhanced(enhanced_prompt, generation_config),
-                        timeout=GEMINI_CONFIG.get("timeout", 120)  # Longer timeout for thinking mode
+                        timeout=GEMINI_CONFIG.get("timeout", 300)  # Longer timeout for thinking mode
+                    )
+                    
+                    # Track usage
+                    processing_time = time.time() - start_time
+                    usage_record = self.tracker.track_usage(
+                        stage_name=stage_name,
+                        paper_id=paper_id, 
+                        response=response,
+                        prompt_length=len(enhanced_prompt),
+                        processing_time=processing_time,
+                        thinking_enabled=use_thinking
                     )
                     
                     # Parse JSON response
@@ -89,54 +201,66 @@ class GeminiClient:
                         # Add thinking metadata if available
                         if use_thinking and hasattr(response, 'thinking_text') and response.thinking_text:
                             result['_thinking_metadata'] = {
-                                'thinking_used': True,
-                                'thinking_length': len(response.thinking_text),
-                                'thinking_preview': response.thinking_text[:200] + "..." if len(response.thinking_text) > 200 else response.thinking_text
+                                'thinking_tokens_used': usage_record.get('thinking_tokens', 0),
+                                'has_thinking_trace': True
                             }
                         
-                        logging.debug(f"Successful API call #{self.request_count}, temperature: {temperature}, thinking: {use_thinking}")
+                        # Add usage metadata
+                        result['_usage_metadata'] = usage_record
+                        
                         return result
                         
                     except json.JSONDecodeError as e:
-                        logging.warning(f"JSON parsing failed (attempt {attempt + 1}): {str(e)}")
+                        logging.warning(f"JSON decode error (attempt {attempt + 1}): {str(e)}")
                         
-                        # Try to extract JSON from response
-                        cleaned_response = self._extract_json_from_response(response_text)
-                        if cleaned_response:
+                        # Try to extract JSON from malformed response
+                        extracted_json = self._extract_json_from_response(response_text)
+                        if extracted_json:
                             try:
-                                result = json.loads(cleaned_response)
-                                if use_thinking:
-                                    result['_thinking_metadata'] = {'thinking_used': True, 'json_extraction_applied': True}
+                                result = json.loads(extracted_json)
+                                result['_usage_metadata'] = usage_record
                                 return result
-                            except json.JSONDecodeError:
+                            except:
                                 pass
                         
                         if attempt == max_retries:
                             self.error_count += 1
                             return {
-                                "error": "json_parse_error",
-                                "raw_response": response_text[:1000],
-                                "parse_error": str(e),
-                                "attempt": attempt + 1,
-                                "thinking_enabled": use_thinking
+                                "error": "json_decode_failed", 
+                                "raw_response": response_text[:500],
+                                "attempt": attempt + 1, 
+                                "thinking_enabled": use_thinking,
+                                "_usage_metadata": usage_record
                             }
-                            
+                        
                 except asyncio.TimeoutError:
-                    logging.error(f"API timeout (attempt {attempt + 1}) - thinking mode may need more time")
+                    logging.warning(f"Timeout (attempt {attempt + 1}) for {stage_name}")
                     if attempt == max_retries:
+                        processing_time = time.time() - start_time
                         self.error_count += 1
-                        return {"error": "timeout", "attempt": attempt + 1, "thinking_enabled": use_thinking}
+                        return {
+                            "error": "timeout", 
+                            "attempt": attempt + 1, 
+                            "thinking_enabled": use_thinking,
+                            "processing_time": processing_time
+                        }
                         
                 except Exception as e:
-                    logging.error(f"API error (attempt {attempt + 1}): {str(e)}")
+                    logging.error(f"API error (attempt {attempt + 1}) for {stage_name}: {str(e)}")
                     if attempt == max_retries:
+                        processing_time = time.time() - start_time
                         self.error_count += 1
-                        return {"error": str(e), "attempt": attempt + 1, "thinking_enabled": use_thinking}
+                        return {
+                            "error": str(e), 
+                            "attempt": attempt + 1, 
+                            "thinking_enabled": use_thinking,
+                            "processing_time": processing_time
+                        }
                 
                 # Wait before retry with exponential backoff
                 if attempt < max_retries:
                     wait_time = GEMINI_CONFIG.get("retry_delay", 2) * (2 ** attempt)
-                    logging.info(f"Retrying in {wait_time} seconds...")
+                    logging.info(f"Retrying {stage_name} in {wait_time} seconds...")
                     await asyncio.sleep(wait_time)
             
             return {"error": "max_retries_exceeded", "thinking_enabled": use_thinking}
@@ -188,7 +312,8 @@ class GeminiClient:
             "error_rate": self.error_count / max(self.request_count, 1),
             "model": GEMINI_CONFIG["model"],
             "rate_limit": GEMINI_CONFIG["rate_limit"],
-            "thinking_mode_enabled": self.enable_thinking
+            "thinking_mode_enabled": self.enable_thinking,
+            "token_limits": "REMOVED - using system defaults"
         }
     
     def set_thinking_mode(self, enabled: bool, thinking_budget: int = -1):
@@ -202,8 +327,8 @@ class GeminiClient:
             self.thinking_config = None
             logging.info("Thinking mode disabled")
     
-    async def generate_with_stage_optimization(self, prompt: str, stage_name: str, temperature: float = 0.1) -> Dict[str, Any]:
-        """Generate content with maximum thinking for all stages"""
+    async def generate_with_stage_optimization(self, prompt: str, stage_name: str, temperature: float = 0.1, paper_id: str = "unknown") -> Dict[str, Any]:
+        """Generate content with maximum thinking for all stages and comprehensive tracking"""
         
         # Enable maximum thinking for ALL stages - quality over speed
         enable_thinking = True
@@ -213,8 +338,14 @@ class GeminiClient:
         return await self.generate_json_content(
             prompt=prompt,
             temperature=temperature,
-            enable_thinking_for_stage=enable_thinking
+            enable_thinking_for_stage=enable_thinking,
+            stage_name=stage_name,
+            paper_id=paper_id
         )
+    
+    def save_usage_analytics(self):
+        """Save comprehensive usage analytics at end of processing"""
+        return self.tracker.save_summary()
 
 # Enhanced factory function for easy integration
 def create_thinking_gemini_client(api_key: str, enable_thinking: bool = True) -> GeminiClient:

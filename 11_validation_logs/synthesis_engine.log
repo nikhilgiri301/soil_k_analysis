@@ -1,3 +1,265 @@
 2025-07-07 19:43:41,299 - root - INFO - Quality Controller initialized
 2025-07-07 19:43:41,300 - root - INFO - Confidence Scorer initialized with conservative calibration
 2025-07-07 19:43:41,300 - root - INFO - Synthesis Runner initialized
+2025-07-07 21:44:29,323 - root - INFO - Quality Controller initialized
+2025-07-07 21:44:29,324 - root - INFO - Confidence Scorer initialized with conservative calibration
+2025-07-07 21:44:29,324 - root - INFO - Synthesis Runner initialized
+2025-07-07 21:47:50,292 - root - INFO - Quality Controller initialized
+2025-07-07 21:47:50,293 - root - INFO - Confidence Scorer initialized with conservative calibration
+2025-07-07 21:47:50,300 - root - INFO - Synthesis Runner initialized
+2025-07-07 21:47:50,318 - root - INFO - GeminiClient initialized with model: gemini-2.5-flash
+2025-07-07 21:47:50,318 - root - INFO - Thinking mode: enabled
+2025-07-07 21:47:50,318 - root - INFO - Token limits: REMOVED - using system defaults
+2025-07-07 21:47:50,319 - root - INFO - PromptLoader initialized with 10 expected prompts
+2025-07-07 21:47:50,319 - root - INFO - Quality Controller initialized
+2025-07-07 21:47:50,320 - root - INFO - Confidence Scorer initialized with conservative calibration
+2025-07-07 21:47:50,328 - root - INFO - Prompt validation: 10/10 prompts validated successfully
+2025-07-07 21:47:50,328 - root - INFO - All system components validated successfully
+2025-07-07 21:47:50,331 - root - INFO - PromptLoader initialized with 10 expected prompts
+2025-07-07 21:47:50,331 - root - INFO - Loaded prompt template for stage_1a_generic_extraction
+2025-07-07 21:47:50,332 - root - INFO - PromptLoader initialized with 10 expected prompts
+2025-07-07 21:47:50,332 - root - INFO - Loaded validation prompt for stage_1b_generic_validation
+2025-07-07 21:47:50,333 - root - INFO - PromptLoader initialized with 10 expected prompts
+2025-07-07 21:47:50,333 - root - INFO - Loaded soil K extraction prompt for stage_2a_soilk_extraction
+2025-07-07 21:47:50,333 - root - INFO - PromptLoader initialized with 10 expected prompts
+2025-07-07 21:47:50,334 - root - INFO - Loaded soil K validation prompt for stage_2b_soilk_validation
+2025-07-07 21:47:50,334 - root - INFO - PromptLoader initialized with 10 expected prompts
+2025-07-07 21:47:50,335 - root - INFO - Loaded paper synthesis prompt for stage_3a_paper_synthesis
+2025-07-07 21:47:50,335 - root - INFO - PromptLoader initialized with 10 expected prompts
+2025-07-07 21:47:50,336 - root - INFO - Loaded synthesis validation prompt for stage_3b_synthesis_validation
+2025-07-07 21:47:50,336 - root - INFO - PromptLoader initialized with 10 expected prompts
+2025-07-07 21:47:50,336 - root - INFO - Loaded client mapping prompt for stage_4a_client_mapping
+2025-07-07 21:47:50,336 - root - INFO - PromptLoader initialized with 10 expected prompts
+2025-07-07 21:47:50,337 - root - INFO - Loaded mapping validation prompt for stage_4b_mapping_validation
+2025-07-07 21:47:50,337 - root - INFO - PromptLoader initialized with 10 expected prompts
+2025-07-07 21:47:50,337 - root - INFO - Loaded iterative integration prompt for stage_5a_knowledge_synthesis
+2025-07-07 21:47:50,337 - root - INFO - PromptLoader initialized with 10 expected prompts
+2025-07-07 21:47:50,338 - root - INFO - Loaded integration validation prompt for stage_5b_final_validation
+2025-07-07 21:47:50,338 - root - INFO - Soil K Analysis Engine initialized successfully
+2025-07-07 21:47:50,352 - root - INFO - Starting 10-pass analysis of 25 papers
+2025-07-07 21:47:50,352 - root - INFO - Processing stages 1-4 for paper 1/25: A global dataset for the production and usage of cereal residues in the period 1997–2021.pdf
+2025-07-07 21:47:50,353 - root - ERROR - Stage 1A extraction failed for A global dataset for the production and usage of cereal residues in the period 1997–2021.pdf: 'table_count'
+2025-07-07 21:47:50,353 - root - ERROR - Stage 2A soil K extraction failed: '\n  "paper_metadata"'
+2025-07-07 21:47:50,354 - root - ERROR - Stage 1B validation failed: '\n  "accuracy_verification"'
+2025-07-07 21:47:50,354 - root - ERROR - Stage 2B validation failed: '\n  "scientific_accuracy_validation"'
+2025-07-07 21:47:50,354 - root - ERROR - Stage 3A synthesis failed: 'stage_1b_results'
+2025-07-07 21:47:50,355 - root - ERROR - Stage 3B validation failed: 'stage_1b_results'
+2025-07-07 21:47:50,355 - root - ERROR - Stage 4A client mapping failed: '\n  "paper_identification"'
+2025-07-07 21:47:50,355 - root - ERROR - Failed to process paper A global dataset for the production and usage of cereal residues in the period 1997–2021.pdf: 'MappingValidator' object has no attribute 'validate'
+2025-07-07 21:47:50,355 - root - INFO - Processing stages 1-4 for paper 2/25: Agricultural Pollution Field Burning.pdf
+2025-07-07 21:47:50,356 - root - ERROR - Stage 1A extraction failed for Agricultural Pollution Field Burning.pdf: 'table_count'
+2025-07-07 21:47:50,356 - root - ERROR - Stage 2A soil K extraction failed: '\n  "paper_metadata"'
+2025-07-07 21:47:50,356 - root - ERROR - Stage 1B validation failed: '\n  "accuracy_verification"'
+2025-07-07 21:47:50,357 - root - ERROR - Stage 2B validation failed: '\n  "scientific_accuracy_validation"'
+2025-07-07 21:47:50,357 - root - ERROR - Stage 3A synthesis failed: 'stage_1b_results'
+2025-07-07 21:47:50,357 - root - ERROR - Stage 3B validation failed: 'stage_1b_results'
+2025-07-07 21:47:50,357 - root - ERROR - Stage 4A client mapping failed: '\n  "paper_identification"'
+2025-07-07 21:47:50,358 - root - ERROR - Failed to process paper Agricultural Pollution Field Burning.pdf: 'MappingValidator' object has no attribute 'validate'
+2025-07-07 21:47:50,358 - root - INFO - Processing stages 1-4 for paper 3/25: Balance of potassium in two long-term field experiments with different fertilization treatments.pdf
+2025-07-07 21:47:50,358 - root - ERROR - Stage 1A extraction failed for Balance of potassium in two long-term field experiments with different fertilization treatments.pdf: 'table_count'
+2025-07-07 21:47:50,359 - root - ERROR - Stage 2A soil K extraction failed: '\n  "paper_metadata"'
+2025-07-07 21:47:50,359 - root - ERROR - Stage 1B validation failed: '\n  "accuracy_verification"'
+2025-07-07 21:47:50,359 - root - ERROR - Stage 2B validation failed: '\n  "scientific_accuracy_validation"'
+2025-07-07 21:47:50,359 - root - ERROR - Stage 3A synthesis failed: 'stage_1b_results'
+2025-07-07 21:47:50,360 - root - ERROR - Stage 3B validation failed: 'stage_1b_results'
+2025-07-07 21:47:50,360 - root - ERROR - Stage 4A client mapping failed: '\n  "paper_identification"'
+2025-07-07 21:47:50,360 - root - ERROR - Failed to process paper Balance of potassium in two long-term field experiments with different fertilization treatments.pdf: 'MappingValidator' object has no attribute 'validate'
+2025-07-07 21:47:50,360 - root - INFO - Processing stages 1-4 for paper 4/25: Considering_Soil_Potassium_Pools_with_Dissimilar_P.pdf
+2025-07-07 21:47:50,360 - root - ERROR - Stage 1A extraction failed for Considering_Soil_Potassium_Pools_with_Dissimilar_P.pdf: 'table_count'
+2025-07-07 21:47:50,361 - root - ERROR - Stage 2A soil K extraction failed: '\n  "paper_metadata"'
+2025-07-07 21:47:50,361 - root - ERROR - Stage 1B validation failed: '\n  "accuracy_verification"'
+2025-07-07 21:47:50,361 - root - ERROR - Stage 2B validation failed: '\n  "scientific_accuracy_validation"'
+2025-07-07 21:47:50,361 - root - ERROR - Stage 3A synthesis failed: 'stage_1b_results'
+2025-07-07 21:47:50,361 - root - ERROR - Stage 3B validation failed: 'stage_1b_results'
+2025-07-07 21:47:50,362 - root - ERROR - Stage 4A client mapping failed: '\n  "paper_identification"'
+2025-07-07 21:47:50,362 - root - ERROR - Failed to process paper Considering_Soil_Potassium_Pools_with_Dissimilar_P.pdf: 'MappingValidator' object has no attribute 'validate'
+2025-07-07 21:47:50,362 - root - INFO - Processing stages 1-4 for paper 5/25: Dynamics of Soil Potassium under Different Cropping Systems in Y.S.R Kadapa District of Andhra Pradesh.pdf
+2025-07-07 21:47:50,362 - root - ERROR - Stage 1A extraction failed for Dynamics of Soil Potassium under Different Cropping Systems in Y.S.R Kadapa District of Andhra Pradesh.pdf: 'table_count'
+2025-07-07 21:47:50,362 - root - ERROR - Stage 2A soil K extraction failed: '\n  "paper_metadata"'
+2025-07-07 21:47:50,362 - root - ERROR - Stage 1B validation failed: '\n  "accuracy_verification"'
+2025-07-07 21:47:50,363 - root - ERROR - Stage 2B validation failed: '\n  "scientific_accuracy_validation"'
+2025-07-07 21:47:50,363 - root - ERROR - Stage 3A synthesis failed: 'stage_1b_results'
+2025-07-07 21:47:50,363 - root - ERROR - Stage 3B validation failed: 'stage_1b_results'
+2025-07-07 21:47:50,363 - root - ERROR - Stage 4A client mapping failed: '\n  "paper_identification"'
+2025-07-07 21:47:50,363 - root - ERROR - Failed to process paper Dynamics of Soil Potassium under Different Cropping Systems in Y.S.R Kadapa District of Andhra Pradesh.pdf: 'MappingValidator' object has no attribute 'validate'
+2025-07-07 21:47:50,363 - root - INFO - Processing stages 1-4 for paper 6/25: Exchangeable potassium reserve in a Brazilian savanna Oxisol after nine years under different cotton production systems.pdf
+2025-07-07 21:47:50,364 - root - ERROR - Stage 1A extraction failed for Exchangeable potassium reserve in a Brazilian savanna Oxisol after nine years under different cotton production systems.pdf: 'table_count'
+2025-07-07 21:47:50,364 - root - ERROR - Stage 2A soil K extraction failed: '\n  "paper_metadata"'
+2025-07-07 21:47:50,364 - root - ERROR - Stage 1B validation failed: '\n  "accuracy_verification"'
+2025-07-07 21:47:50,364 - root - ERROR - Stage 2B validation failed: '\n  "scientific_accuracy_validation"'
+2025-07-07 21:47:50,364 - root - ERROR - Stage 3A synthesis failed: 'stage_1b_results'
+2025-07-07 21:47:50,365 - root - ERROR - Stage 3B validation failed: 'stage_1b_results'
+2025-07-07 21:47:50,365 - root - ERROR - Stage 4A client mapping failed: '\n  "paper_identification"'
+2025-07-07 21:47:50,365 - root - ERROR - Failed to process paper Exchangeable potassium reserve in a Brazilian savanna Oxisol after nine years under different cotton production systems.pdf: 'MappingValidator' object has no attribute 'validate'
+2025-07-07 21:47:50,365 - root - INFO - Processing stages 1-4 for paper 7/25: Field-specific potassium and phosphorus balances.pdf
+2025-07-07 21:47:50,365 - root - ERROR - Stage 1A extraction failed for Field-specific potassium and phosphorus balances.pdf: 'table_count'
+2025-07-07 21:47:50,365 - root - ERROR - Stage 2A soil K extraction failed: '\n  "paper_metadata"'
+2025-07-07 21:47:50,366 - root - ERROR - Stage 1B validation failed: '\n  "accuracy_verification"'
+2025-07-07 21:47:50,366 - root - ERROR - Stage 2B validation failed: '\n  "scientific_accuracy_validation"'
+2025-07-07 21:47:50,366 - root - ERROR - Stage 3A synthesis failed: 'stage_1b_results'
+2025-07-07 21:47:50,366 - root - ERROR - Stage 3B validation failed: 'stage_1b_results'
+2025-07-07 21:47:50,366 - root - ERROR - Stage 4A client mapping failed: '\n  "paper_identification"'
+2025-07-07 21:47:50,366 - root - ERROR - Failed to process paper Field-specific potassium and phosphorus balances.pdf: 'MappingValidator' object has no attribute 'validate'
+2025-07-07 21:47:50,366 - root - INFO - Processing stages 1-4 for paper 8/25: Global Fostat Reference Database.pdf
+2025-07-07 21:47:50,366 - root - ERROR - Stage 1A extraction failed for Global Fostat Reference Database.pdf: 'table_count'
+2025-07-07 21:47:50,367 - root - ERROR - Stage 2A soil K extraction failed: '\n  "paper_metadata"'
+2025-07-07 21:47:50,367 - root - ERROR - Stage 1B validation failed: '\n  "accuracy_verification"'
+2025-07-07 21:47:50,367 - root - ERROR - Stage 2B validation failed: '\n  "scientific_accuracy_validation"'
+2025-07-07 21:47:50,367 - root - ERROR - Stage 3A synthesis failed: 'stage_1b_results'
+2025-07-07 21:47:50,367 - root - ERROR - Stage 3B validation failed: 'stage_1b_results'
+2025-07-07 21:47:50,367 - root - ERROR - Stage 4A client mapping failed: '\n  "paper_identification"'
+2025-07-07 21:47:50,367 - root - ERROR - Failed to process paper Global Fostat Reference Database.pdf: 'MappingValidator' object has no attribute 'validate'
+2025-07-07 21:47:50,368 - root - INFO - Processing stages 1-4 for paper 9/25: Impact of Long-Term Intensive Cropping on Soil Potassium and Sustainability of Crop Production.pdf
+2025-07-07 21:47:50,368 - root - ERROR - Stage 1A extraction failed for Impact of Long-Term Intensive Cropping on Soil Potassium and Sustainability of Crop Production.pdf: 'table_count'
+2025-07-07 21:47:50,368 - root - ERROR - Stage 2A soil K extraction failed: '\n  "paper_metadata"'
+2025-07-07 21:47:50,368 - root - ERROR - Stage 1B validation failed: '\n  "accuracy_verification"'
+2025-07-07 21:47:50,368 - root - ERROR - Stage 2B validation failed: '\n  "scientific_accuracy_validation"'
+2025-07-07 21:47:50,368 - root - ERROR - Stage 3A synthesis failed: 'stage_1b_results'
+2025-07-07 21:47:50,368 - root - ERROR - Stage 3B validation failed: 'stage_1b_results'
+2025-07-07 21:47:50,369 - root - ERROR - Stage 4A client mapping failed: '\n  "paper_identification"'
+2025-07-07 21:47:50,369 - root - ERROR - Failed to process paper Impact of Long-Term Intensive Cropping on Soil Potassium and Sustainability of Crop Production.pdf: 'MappingValidator' object has no attribute 'validate'
+2025-07-07 21:47:50,369 - root - INFO - Processing stages 1-4 for paper 10/25: Impact of potassium management on soil dynamics and crop uptake in rice systems.pdf
+2025-07-07 21:47:50,369 - root - ERROR - Stage 1A extraction failed for Impact of potassium management on soil dynamics and crop uptake in rice systems.pdf: 'table_count'
+2025-07-07 21:47:50,369 - root - ERROR - Stage 2A soil K extraction failed: '\n  "paper_metadata"'
+2025-07-07 21:47:50,369 - root - ERROR - Stage 1B validation failed: '\n  "accuracy_verification"'
+2025-07-07 21:47:50,370 - root - ERROR - Stage 2B validation failed: '\n  "scientific_accuracy_validation"'
+2025-07-07 21:47:50,370 - root - ERROR - Stage 3A synthesis failed: 'stage_1b_results'
+2025-07-07 21:47:50,370 - root - ERROR - Stage 3B validation failed: 'stage_1b_results'
+2025-07-07 21:47:50,370 - root - ERROR - Stage 4A client mapping failed: '\n  "paper_identification"'
+2025-07-07 21:47:50,370 - root - ERROR - Failed to process paper Impact of potassium management on soil dynamics and crop uptake in rice systems.pdf: 'MappingValidator' object has no attribute 'validate'
+2025-07-07 21:47:50,370 - root - INFO - Processing stages 1-4 for paper 11/25: Interannual dynamics of available potassium in a long-term fertilization experiment.pdf
+2025-07-07 21:47:50,370 - root - ERROR - Stage 1A extraction failed for Interannual dynamics of available potassium in a long-term fertilization experiment.pdf: 'table_count'
+2025-07-07 21:47:50,370 - root - ERROR - Stage 2A soil K extraction failed: '\n  "paper_metadata"'
+2025-07-07 21:47:50,371 - root - ERROR - Stage 1B validation failed: '\n  "accuracy_verification"'
+2025-07-07 21:47:50,371 - root - ERROR - Stage 2B validation failed: '\n  "scientific_accuracy_validation"'
+2025-07-07 21:47:50,371 - root - ERROR - Stage 3A synthesis failed: 'stage_1b_results'
+2025-07-07 21:47:50,371 - root - ERROR - Stage 3B validation failed: 'stage_1b_results'
+2025-07-07 21:47:50,371 - root - ERROR - Stage 4A client mapping failed: '\n  "paper_identification"'
+2025-07-07 21:47:50,371 - root - ERROR - Failed to process paper Interannual dynamics of available potassium in a long-term fertilization experiment.pdf: 'MappingValidator' object has no attribute 'validate'
+2025-07-07 21:47:50,371 - root - INFO - Processing stages 1-4 for paper 12/25: Kinetics of Non-exchangeable Potassium Release in Selected Soil Orders of Southern Iran.pdf
+2025-07-07 21:47:50,371 - root - ERROR - Stage 1A extraction failed for Kinetics of Non-exchangeable Potassium Release in Selected Soil Orders of Southern Iran.pdf: 'table_count'
+2025-07-07 21:47:50,371 - root - ERROR - Stage 2A soil K extraction failed: '\n  "paper_metadata"'
+2025-07-07 21:47:50,372 - root - ERROR - Stage 1B validation failed: '\n  "accuracy_verification"'
+2025-07-07 21:47:50,372 - root - ERROR - Stage 2B validation failed: '\n  "scientific_accuracy_validation"'
+2025-07-07 21:47:50,372 - root - ERROR - Stage 3A synthesis failed: 'stage_1b_results'
+2025-07-07 21:47:50,372 - root - ERROR - Stage 3B validation failed: 'stage_1b_results'
+2025-07-07 21:47:50,372 - root - ERROR - Stage 4A client mapping failed: '\n  "paper_identification"'
+2025-07-07 21:47:50,372 - root - ERROR - Failed to process paper Kinetics of Non-exchangeable Potassium Release in Selected Soil Orders of Southern Iran.pdf: 'MappingValidator' object has no attribute 'validate'
+2025-07-07 21:47:50,373 - root - INFO - Processing stages 1-4 for paper 13/25: Long-term K dynamics in organic and conventional mixed cropping systems as related to management and soil properties.pdf
+2025-07-07 21:47:50,373 - root - ERROR - Stage 1A extraction failed for Long-term K dynamics in organic and conventional mixed cropping systems as related to management and soil properties.pdf: 'table_count'
+2025-07-07 21:47:50,373 - root - ERROR - Stage 2A soil K extraction failed: '\n  "paper_metadata"'
+2025-07-07 21:47:50,373 - root - ERROR - Stage 1B validation failed: '\n  "accuracy_verification"'
+2025-07-07 21:47:50,374 - root - ERROR - Stage 2B validation failed: '\n  "scientific_accuracy_validation"'
+2025-07-07 21:47:50,374 - root - ERROR - Stage 3A synthesis failed: 'stage_1b_results'
+2025-07-07 21:47:50,374 - root - ERROR - Stage 3B validation failed: 'stage_1b_results'
+2025-07-07 21:47:50,375 - root - ERROR - Stage 4A client mapping failed: '\n  "paper_identification"'
+2025-07-07 21:47:50,375 - root - ERROR - Failed to process paper Long-term K dynamics in organic and conventional mixed cropping systems as related to management and soil properties.pdf: 'MappingValidator' object has no attribute 'validate'
+2025-07-07 21:47:50,375 - root - INFO - Processing stages 1-4 for paper 14/25: Majumdar2021_Chapter_AssessingPotassiumMassBalances.pdf
+2025-07-07 21:47:50,375 - root - ERROR - Stage 1A extraction failed for Majumdar2021_Chapter_AssessingPotassiumMassBalances.pdf: 'table_count'
+2025-07-07 21:47:50,376 - root - ERROR - Stage 2A soil K extraction failed: '\n  "paper_metadata"'
+2025-07-07 21:47:50,376 - root - ERROR - Stage 1B validation failed: '\n  "accuracy_verification"'
+2025-07-07 21:47:50,377 - root - ERROR - Stage 2B validation failed: '\n  "scientific_accuracy_validation"'
+2025-07-07 21:47:50,377 - root - ERROR - Stage 3A synthesis failed: 'stage_1b_results'
+2025-07-07 21:47:50,377 - root - ERROR - Stage 3B validation failed: 'stage_1b_results'
+2025-07-07 21:47:50,377 - root - ERROR - Stage 4A client mapping failed: '\n  "paper_identification"'
+2025-07-07 21:47:50,378 - root - ERROR - Failed to process paper Majumdar2021_Chapter_AssessingPotassiumMassBalances.pdf: 'MappingValidator' object has no attribute 'validate'
+2025-07-07 21:47:50,378 - root - INFO - Processing stages 1-4 for paper 15/25: Nutrient Partitioning and Stoichiometry in Unburnt Sugarcane Ratoon at Varying Yield Levels.pdf
+2025-07-07 21:47:50,378 - root - ERROR - Stage 1A extraction failed for Nutrient Partitioning and Stoichiometry in Unburnt Sugarcane Ratoon at Varying Yield Levels.pdf: 'table_count'
+2025-07-07 21:47:50,378 - root - ERROR - Stage 2A soil K extraction failed: '\n  "paper_metadata"'
+2025-07-07 21:47:50,379 - root - ERROR - Stage 1B validation failed: '\n  "accuracy_verification"'
+2025-07-07 21:47:50,379 - root - ERROR - Stage 2B validation failed: '\n  "scientific_accuracy_validation"'
+2025-07-07 21:47:50,379 - root - ERROR - Stage 3A synthesis failed: 'stage_1b_results'
+2025-07-07 21:47:50,379 - root - ERROR - Stage 3B validation failed: 'stage_1b_results'
+2025-07-07 21:47:50,380 - root - ERROR - Stage 4A client mapping failed: '\n  "paper_identification"'
+2025-07-07 21:47:50,380 - root - ERROR - Failed to process paper Nutrient Partitioning and Stoichiometry in Unburnt Sugarcane Ratoon at Varying Yield Levels.pdf: 'MappingValidator' object has no attribute 'validate'
+2025-07-07 21:47:50,380 - root - INFO - Processing stages 1-4 for paper 16/25: Optimizing rice yield, quality and nutrient use efficiency through combined application of nitrogen and potassium.pdf
+2025-07-07 21:47:50,380 - root - ERROR - Stage 1A extraction failed for Optimizing rice yield, quality and nutrient use efficiency through combined application of nitrogen and potassium.pdf: 'table_count'
+2025-07-07 21:47:50,380 - root - ERROR - Stage 2A soil K extraction failed: '\n  "paper_metadata"'
+2025-07-07 21:47:50,381 - root - ERROR - Stage 1B validation failed: '\n  "accuracy_verification"'
+2025-07-07 21:47:50,381 - root - ERROR - Stage 2B validation failed: '\n  "scientific_accuracy_validation"'
+2025-07-07 21:47:50,381 - root - ERROR - Stage 3A synthesis failed: 'stage_1b_results'
+2025-07-07 21:47:50,381 - root - ERROR - Stage 3B validation failed: 'stage_1b_results'
+2025-07-07 21:47:50,381 - root - ERROR - Stage 4A client mapping failed: '\n  "paper_identification"'
+2025-07-07 21:47:50,381 - root - ERROR - Failed to process paper Optimizing rice yield, quality and nutrient use efficiency through combined application of nitrogen and potassium.pdf: 'MappingValidator' object has no attribute 'validate'
+2025-07-07 21:47:50,381 - root - INFO - Processing stages 1-4 for paper 17/25: Organic Materials.pdf
+2025-07-07 21:47:50,381 - root - ERROR - Stage 1A extraction failed for Organic Materials.pdf: 'table_count'
+2025-07-07 21:47:50,382 - root - ERROR - Stage 2A soil K extraction failed: '\n  "paper_metadata"'
+2025-07-07 21:47:50,382 - root - ERROR - Stage 1B validation failed: '\n  "accuracy_verification"'
+2025-07-07 21:47:50,382 - root - ERROR - Stage 2B validation failed: '\n  "scientific_accuracy_validation"'
+2025-07-07 21:47:50,382 - root - ERROR - Stage 3A synthesis failed: 'stage_1b_results'
+2025-07-07 21:47:50,382 - root - ERROR - Stage 3B validation failed: 'stage_1b_results'
+2025-07-07 21:47:50,382 - root - ERROR - Stage 4A client mapping failed: '\n  "paper_identification"'
+2025-07-07 21:47:50,382 - root - ERROR - Failed to process paper Organic Materials.pdf: 'MappingValidator' object has no attribute 'validate'
+2025-07-07 21:47:50,382 - root - INFO - Processing stages 1-4 for paper 18/25: PotassiumDynamicsinSoils.pdf
+2025-07-07 21:47:50,383 - root - ERROR - Stage 1A extraction failed for PotassiumDynamicsinSoils.pdf: 'table_count'
+2025-07-07 21:47:50,383 - root - ERROR - Stage 2A soil K extraction failed: '\n  "paper_metadata"'
+2025-07-07 21:47:50,383 - root - ERROR - Stage 1B validation failed: '\n  "accuracy_verification"'
+2025-07-07 21:47:50,383 - root - ERROR - Stage 2B validation failed: '\n  "scientific_accuracy_validation"'
+2025-07-07 21:47:50,383 - root - ERROR - Stage 3A synthesis failed: 'stage_1b_results'
+2025-07-07 21:47:50,383 - root - ERROR - Stage 3B validation failed: 'stage_1b_results'
+2025-07-07 21:47:50,383 - root - ERROR - Stage 4A client mapping failed: '\n  "paper_identification"'
+2025-07-07 21:47:50,384 - root - ERROR - Failed to process paper PotassiumDynamicsinSoils.pdf: 'MappingValidator' object has no attribute 'validate'
+2025-07-07 21:47:50,384 - root - INFO - Processing stages 1-4 for paper 19/25: principles-of-potash-use.pdf
+2025-07-07 21:47:50,384 - root - ERROR - Stage 1A extraction failed for principles-of-potash-use.pdf: 'table_count'
+2025-07-07 21:47:50,384 - root - ERROR - Stage 2A soil K extraction failed: '\n  "paper_metadata"'
+2025-07-07 21:47:50,384 - root - ERROR - Stage 1B validation failed: '\n  "accuracy_verification"'
+2025-07-07 21:47:50,385 - root - ERROR - Stage 2B validation failed: '\n  "scientific_accuracy_validation"'
+2025-07-07 21:47:50,385 - root - ERROR - Stage 3A synthesis failed: 'stage_1b_results'
+2025-07-07 21:47:50,385 - root - ERROR - Stage 3B validation failed: 'stage_1b_results'
+2025-07-07 21:47:50,386 - root - ERROR - Stage 4A client mapping failed: '\n  "paper_identification"'
+2025-07-07 21:47:50,386 - root - ERROR - Failed to process paper principles-of-potash-use.pdf: 'MappingValidator' object has no attribute 'validate'
+2025-07-07 21:47:50,386 - root - INFO - Processing stages 1-4 for paper 20/25: Release Kinetics of Nonexchangeable Potassium by Different Extractants from Soils of Varying Mineralogy and Depth.pdf
+2025-07-07 21:47:50,386 - root - ERROR - Stage 1A extraction failed for Release Kinetics of Nonexchangeable Potassium by Different Extractants from Soils of Varying Mineralogy and Depth.pdf: 'table_count'
+2025-07-07 21:47:50,386 - root - ERROR - Stage 2A soil K extraction failed: '\n  "paper_metadata"'
+2025-07-07 21:47:50,387 - root - ERROR - Stage 1B validation failed: '\n  "accuracy_verification"'
+2025-07-07 21:47:50,387 - root - ERROR - Stage 2B validation failed: '\n  "scientific_accuracy_validation"'
+2025-07-07 21:47:50,387 - root - ERROR - Stage 3A synthesis failed: 'stage_1b_results'
+2025-07-07 21:47:50,387 - root - ERROR - Stage 3B validation failed: 'stage_1b_results'
+2025-07-07 21:47:50,387 - root - ERROR - Stage 4A client mapping failed: '\n  "paper_identification"'
+2025-07-07 21:47:50,387 - root - ERROR - Failed to process paper Release Kinetics of Nonexchangeable Potassium by Different Extractants from Soils of Varying Mineralogy and Depth.pdf: 'MappingValidator' object has no attribute 'validate'
+2025-07-07 21:47:50,387 - root - INFO - Processing stages 1-4 for paper 21/25: Root K Affinity Drivers and Photosynthetic Characteristics in Response to Low Potassium Stress in K High-Efficiency Vegetable Soybean.pdf
+2025-07-07 21:47:50,388 - root - ERROR - Stage 1A extraction failed for Root K Affinity Drivers and Photosynthetic Characteristics in Response to Low Potassium Stress in K High-Efficiency Vegetable Soybean.pdf: 'table_count'
+2025-07-07 21:47:50,388 - root - ERROR - Stage 2A soil K extraction failed: '\n  "paper_metadata"'
+2025-07-07 21:47:50,388 - root - ERROR - Stage 1B validation failed: '\n  "accuracy_verification"'
+2025-07-07 21:47:50,388 - root - ERROR - Stage 2B validation failed: '\n  "scientific_accuracy_validation"'
+2025-07-07 21:47:50,388 - root - ERROR - Stage 3A synthesis failed: 'stage_1b_results'
+2025-07-07 21:47:50,388 - root - ERROR - Stage 3B validation failed: 'stage_1b_results'
+2025-07-07 21:47:50,389 - root - ERROR - Stage 4A client mapping failed: '\n  "paper_identification"'
+2025-07-07 21:47:50,389 - root - ERROR - Failed to process paper Root K Affinity Drivers and Photosynthetic Characteristics in Response to Low Potassium Stress in K High-Efficiency Vegetable Soybean.pdf: 'MappingValidator' object has no attribute 'validate'
+2025-07-07 21:47:50,389 - root - INFO - Processing stages 1-4 for paper 22/25: Soil K Balance in Sichuan.pdf
+2025-07-07 21:47:50,389 - root - ERROR - Stage 1A extraction failed for Soil K Balance in Sichuan.pdf: 'table_count'
+2025-07-07 21:47:50,389 - root - ERROR - Stage 2A soil K extraction failed: '\n  "paper_metadata"'
+2025-07-07 21:47:50,389 - root - ERROR - Stage 1B validation failed: '\n  "accuracy_verification"'
+2025-07-07 21:47:50,389 - root - ERROR - Stage 2B validation failed: '\n  "scientific_accuracy_validation"'
+2025-07-07 21:47:50,390 - root - ERROR - Stage 3A synthesis failed: 'stage_1b_results'
+2025-07-07 21:47:50,390 - root - ERROR - Stage 3B validation failed: 'stage_1b_results'
+2025-07-07 21:47:50,391 - root - ERROR - Stage 4A client mapping failed: '\n  "paper_identification"'
+2025-07-07 21:47:50,391 - root - ERROR - Failed to process paper Soil K Balance in Sichuan.pdf: 'MappingValidator' object has no attribute 'validate'
+2025-07-07 21:47:50,391 - root - INFO - Processing stages 1-4 for paper 23/25: Standing Biomass, Dry-Matter Production, and Nutrient Demand of Tenera Oil Palm.pdf
+2025-07-07 21:47:50,392 - root - ERROR - Stage 1A extraction failed for Standing Biomass, Dry-Matter Production, and Nutrient Demand of Tenera Oil Palm.pdf: 'table_count'
+2025-07-07 21:47:50,392 - root - ERROR - Stage 2A soil K extraction failed: '\n  "paper_metadata"'
+2025-07-07 21:47:50,393 - root - ERROR - Stage 1B validation failed: '\n  "accuracy_verification"'
+2025-07-07 21:47:50,393 - root - ERROR - Stage 2B validation failed: '\n  "scientific_accuracy_validation"'
+2025-07-07 21:47:50,393 - root - ERROR - Stage 3A synthesis failed: 'stage_1b_results'
+2025-07-07 21:47:50,393 - root - ERROR - Stage 3B validation failed: 'stage_1b_results'
+2025-07-07 21:47:50,393 - root - ERROR - Stage 4A client mapping failed: '\n  "paper_identification"'
+2025-07-07 21:47:50,394 - root - ERROR - Failed to process paper Standing Biomass, Dry-Matter Production, and Nutrient Demand of Tenera Oil Palm.pdf: 'MappingValidator' object has no attribute 'validate'
+2025-07-07 21:47:50,480 - root - ERROR - Stage 2A soil K extraction failed: '\n  "paper_metadata"'
+2025-07-07 21:47:50,481 - root - ERROR - Stage 1B validation failed: '\n  "accuracy_verification"'
+2025-07-07 21:47:50,481 - root - ERROR - Stage 2B validation failed: '\n  "scientific_accuracy_validation"'
+2025-07-07 21:47:50,481 - root - ERROR - Stage 3A synthesis failed: 'stage_1b_results'
+2025-07-07 21:47:50,481 - root - ERROR - Stage 3B validation failed: 'stage_1b_results'
+2025-07-07 21:47:50,482 - root - ERROR - Stage 4A client mapping failed: '\n  "paper_identification"'
+2025-07-07 21:47:50,485 - root - INFO - Processing stages 1-4 for paper 25/25: Temporal andspatial variation of potassium balance in agricultural land at national and regional levels in China.pdf
+2025-07-07 21:47:50,485 - root - ERROR - Stage 1A extraction failed for Temporal andspatial variation of potassium balance in agricultural land at national and regional levels in China.pdf: 'table_count'
+2025-07-07 21:47:50,485 - root - ERROR - Stage 2A soil K extraction failed: '\n  "paper_metadata"'
+2025-07-07 21:47:50,486 - root - ERROR - Stage 1B validation failed: '\n  "accuracy_verification"'
+2025-07-07 21:47:50,486 - root - ERROR - Stage 2B validation failed: '\n  "scientific_accuracy_validation"'
+2025-07-07 21:47:50,486 - root - ERROR - Stage 3A synthesis failed: 'stage_1b_results'
+2025-07-07 21:47:50,486 - root - ERROR - Stage 3B validation failed: 'stage_1b_results'
+2025-07-07 21:47:50,486 - root - ERROR - Stage 4A client mapping failed: '\n  "paper_identification"'
+2025-07-07 21:47:50,486 - root - ERROR - Failed to process paper Temporal andspatial variation of potassium balance in agricultural land at national and regional levels in China.pdf: 'MappingValidator' object has no attribute 'validate'
+2025-07-07 21:47:50,486 - root - INFO - Completed stages 1-4 for 0/25 papers
+2025-07-07 21:47:50,487 - root - INFO - Starting Stage 5: Iterative knowledge synthesis
+2025-07-07 21:47:50,487 - root - INFO - Completed Stage 5: Iterative knowledge synthesis
+2025-07-07 21:47:50,487 - root - INFO - 10-pass analysis completed successfully

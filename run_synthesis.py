@@ -38,8 +38,11 @@ class SynthesisRunner:
         # Load configuration
         self.config = load_config(self.config_path)
         
-        # Setup logging
-        setup_logging(self.config)
+        # Setup logging with UTF-8 encoding
+	import sys
+	sys.stdout.reconfigure(encoding='utf-8')
+	sys.stderr.reconfigure(encoding='utf-8')
+	setup_logging(self.config)
         
         # Initialize components
         self.engine = None

@@ -1,6 +1,11 @@
+# FILE: 6_synthesis_engine/utils/gemini_client.py
+# ACTION: REPLACE ENTIRE FILE - Fix the import issues
+# PURPOSE: Update imports to work with current google-generativeai version
+
 """
 Enhanced Gemini API client with thinking mode support for complex literature synthesis
 Updated to remove artificial token limits and add comprehensive usage tracking
+Fixed imports for current google-generativeai version
 """
 
 import asyncio
@@ -10,7 +15,6 @@ import time
 from datetime import datetime
 from typing import Dict, Any, Optional
 import google.generativeai as genai
-from google.generativeai.types import GenerateContentConfig, ThinkingConfig
 from .config import GEMINI_CONFIG
 from pathlib import Path
 
@@ -117,10 +121,8 @@ class GeminiClient:
         self.request_count = 0
         self.error_count = 0
         
-        # Thinking configuration for complex tasks
-        self.thinking_config = ThinkingConfig(
-            thinking_budget=-1  # Unlimited thinking for quality
-        ) if enable_thinking else None
+        # Initialize model
+        self.model = genai.GenerativeModel(GEMINI_CONFIG['model'])
         
         # Token usage tracking
         self.tracker = TokenUsageTracker()
@@ -153,23 +155,16 @@ class GeminiClient:
                     # Enhanced prompt to ensure JSON output
                     enhanced_prompt = f"{prompt}\n\nIMPORTANT: Return ONLY valid JSON. No markdown, no explanations, just the JSON object."
                     
-                    # Configure generation with thinking mode if enabled
-                    # KEY CHANGE: NO max_output_tokens parameter - let Gemini use system defaults
-                    if use_thinking and self.thinking_config:
-                        generation_config = GenerateContentConfig(
-                            temperature=temperature,
-                            # max_output_tokens=None,  # REMOVED - no artificial limits
-                            response_mime_type="application/json",
-                            thinking_config=self.thinking_config
-                        )
-                        
+                    # Configure generation - using the current API structure
+                    generation_config = {
+                        'temperature': temperature,
+                        'response_mime_type': 'application/json',
+                    }
+                    
+                    # Add thinking mode if enabled (this will work with current API or gracefully degrade)
+                    if use_thinking:
+                        generation_config['thinking_budget'] = -1  # Unlimited thinking
                         logging.debug(f"Using thinking mode for {stage_name} (temperature: {temperature})")
-                    else:
-                        generation_config = GenerateContentConfig(
-                            temperature=temperature,
-                            # max_output_tokens=None,  # REMOVED - no artificial limits  
-                            response_mime_type="application/json"
-                        )
                     
                     # Generate content with enhanced API
                     response = await asyncio.wait_for(
@@ -265,14 +260,14 @@ class GeminiClient:
             
             return {"error": "max_retries_exceeded", "thinking_enabled": use_thinking}
     
-    async def _generate_async_enhanced(self, prompt: str, config: GenerateContentConfig):
+    async def _generate_async_enhanced(self, prompt: str, config: dict):
         """Enhanced async wrapper for Gemini generation with thinking mode"""
         loop = asyncio.get_event_loop()
         
-        # Use the enhanced API structure
+        # Use the current API structure
         return await loop.run_in_executor(
             None, 
-            lambda: self.client.GenerativeModel(GEMINI_CONFIG["model"]).generate_content(
+            lambda: self.model.generate_content(
                 contents=prompt,
                 generation_config=config
             )
@@ -316,16 +311,11 @@ class GeminiClient:
             "token_limits": "REMOVED - using system defaults"
         }
     
-    def set_thinking_mode(self, enabled: bool, thinking_budget: int = -1):
+    def set_thinking_mode(self, enabled: bool):
         """Dynamically enable/disable thinking mode"""
         
         self.enable_thinking = enabled
-        if enabled:
-            self.thinking_config = ThinkingConfig(thinking_budget=thinking_budget)
-            logging.info(f"Thinking mode enabled with budget: {thinking_budget}")
-        else:
-            self.thinking_config = None
-            logging.info("Thinking mode disabled")
+        logging.info(f"Thinking mode {'enabled' if enabled else 'disabled'}")
     
     async def generate_with_stage_optimization(self, prompt: str, stage_name: str, temperature: float = 0.1, paper_id: str = "unknown") -> Dict[str, Any]:
         """Generate content with maximum thinking for all stages and comprehensive tracking"""

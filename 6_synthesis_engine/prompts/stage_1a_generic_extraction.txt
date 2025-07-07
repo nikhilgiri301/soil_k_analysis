@@ -1,0 +1,298 @@
+You are a systematic research paper analyzer with expertise in agricultural and soil science literature. Your task is to extract comprehensive information from this research paper while maintaining complete scientific objectivity. Do not prioritize any specific topic or parameter - extract all relevant scientific information with equal rigor.
+
+PAPER DATA:
+Title: {paper_title}
+Full Text: {paper_text}
+Available Tables: {table_count} tables with structured data
+Table Data: {table_data}
+
+COMPREHENSIVE EXTRACTION REQUIREMENTS:
+
+1. RESEARCH METHODOLOGY AND DESIGN:
+   - Study type: [field_experiment|laboratory_study|modeling_study|review_analysis|meta_analysis|survey_research|greenhouse_study|long_term_monitoring]
+   - Temporal scope: Study duration, data collection periods, monitoring frequency, seasonal coverage
+   - Spatial scope: Geographic locations with coordinates if available, site characteristics, number of locations, regional representativeness
+   - Experimental design: Sample sizes, replication levels, randomization, controls, treatment structures
+   - Measurement protocols: Analytical methods, instrumentation specifications, quality control procedures, detection limits
+   - Statistical approach: Analysis methods, significance testing, uncertainty quantification, model validation
+
+2. QUANTITATIVE DATA AND MEASUREMENTS:
+   - All numerical results with exact values, units, standard errors, confidence intervals
+   - Statistical relationships: correlations, regression parameters, effect sizes, p-values
+   - Temporal trends: rates of change, seasonal patterns, long-term trajectories
+   - Comparative results: treatment effects, before/after comparisons, regional differences
+   - Model parameters: coefficients, calibration values, prediction accuracy metrics
+   - Measurement precision: detection limits, analytical uncertainty, method validation
+
+3. GEOGRAPHIC AND ENVIRONMENTAL CONTEXT:
+   - Precise locations: country, region, coordinates, elevation, landscape position
+   - Climate classification: temperature patterns, precipitation amounts and seasonality, growing season length
+   - Soil properties: texture, classification, organic matter content, pH, chemical properties, mineralogy
+   - Land use context: cropping systems, management practices, historical land use, intensification level
+   - Environmental conditions: drainage, topography, parent material, microclimate factors
+
+4. AGRICULTURAL SYSTEM CHARACTERIZATION:
+   - Crop types and varieties with specific cultivar information where available
+   - Management practices: fertilization, irrigation, tillage, crop rotation, pest management
+   - Input rates and timing: fertilizer applications, organic amendments, water management
+   - Yield levels and production metrics with units and measurement methods
+   - System sustainability indicators: nutrient balances, soil health metrics, environmental impacts
+
+5. TEMPORAL DYNAMICS AND PATTERNS:
+   - Study duration and data collection frequency
+   - Seasonal variations in measured parameters
+   - Inter-annual variability and trend analysis
+   - Long-term sustainability assessments
+   - Change detection and trend quantification
+   - Projection or prediction timeframes
+
+6. DATA QUALITY AND LIMITATIONS:
+   - Sample sizes and statistical power
+   - Measurement uncertainty and error sources
+   - Spatial and temporal representativeness
+   - Method limitations and potential biases
+   - Data gaps and missing information
+   - Extrapolation constraints and scaling issues
+
+7. LITERATURE INTEGRATION:
+   - Key methodological references and standard protocols
+   - Comparative studies and benchmarking data
+   - Theoretical framework and conceptual models
+   - Data sources for external parameters
+   - Validation against independent datasets
+
+REQUIRED OUTPUT FORMAT (JSON):
+{
+  "paper_metadata": {
+    "title": "",
+    "authors": [],
+    "journal": "",
+    "publication_year": 0,
+    "doi": "",
+    "study_region": "",
+    "primary_focus": ""
+  },
+  "research_methodology": {
+    "study_type": "",
+    "experimental_design": "",
+    "temporal_scope": {
+      "study_duration_years": 0,
+      "data_collection_frequency": "",
+      "seasonal_coverage": "",
+      "monitoring_timeline": []
+    },
+    "spatial_scope": {
+      "number_of_sites": 0,
+      "geographic_coverage": "",
+      "site_characteristics": [],
+      "coordinates": "",
+      "regional_representativeness": ""
+    },
+    "sample_design": {
+      "sample_sizes": {},
+      "replication_levels": "",
+      "randomization_approach": "",
+      "controls_and_treatments": [],
+      "statistical_power": ""
+    },
+    "analytical_methods": {
+      "measurement_protocols": [],
+      "instrumentation": [],
+      "quality_control": [],
+      "detection_limits": {},
+      "analytical_precision": {}
+    },
+    "statistical_approach": {
+      "analysis_methods": [],
+      "significance_testing": "",
+      "uncertainty_quantification": "",
+      "model_validation": ""
+    }
+  },
+  "quantitative_findings": {
+    "primary_measurements": [
+      {
+        "parameter": "",
+        "values": [],
+        "units": "",
+        "statistical_measures": {
+          "mean": 0,
+          "standard_error": 0,
+          "confidence_interval": "",
+          "sample_size": 0
+        },
+        "measurement_context": ""
+      }
+    ],
+    "statistical_relationships": [
+      {
+        "relationship_type": "",
+        "variables": [],
+        "correlation_coefficient": 0,
+        "regression_parameters": {},
+        "significance_level": "",
+        "effect_size": ""
+      }
+    ],
+    "temporal_patterns": [
+      {
+        "parameter": "",
+        "trend_description": "",
+        "rate_of_change": 0,
+        "units_per_time": "",
+        "trend_significance": "",
+        "seasonal_component": ""
+      }
+    ],
+    "comparative_results": [
+      {
+        "comparison_type": "",
+        "groups_compared": [],
+        "difference_magnitude": 0,
+        "units": "",
+        "statistical_significance": "",
+        "practical_significance": ""
+      }
+    ]
+  },
+  "environmental_context": {
+    "geographic_details": {
+      "countries": [],
+      "regions": [],
+      "coordinates": "",
+      "elevation": "",
+      "landscape_position": ""
+    },
+    "climate_characteristics": {
+      "climate_classification": "",
+      "temperature_patterns": {},
+      "precipitation_patterns": {},
+      "growing_season": "",
+      "environmental_stressors": []
+    },
+    "soil_properties": {
+      "soil_classification": "",
+      "texture": "",
+      "organic_matter": "",
+      "chemical_properties": {},
+      "physical_properties": {},
+      "mineralogy": ""
+    },
+    "land_use_context": {
+      "current_land_use": "",
+      "cropping_systems": [],
+      "management_intensity": "",
+      "historical_context": "",
+      "sustainability_metrics": []
+    }
+  },
+  "agricultural_systems": {
+    "crop_information": {
+      "crop_types": [],
+      "varieties_cultivars": [],
+      "growth_stages_studied": [],
+      "yield_levels": {},
+      "production_metrics": {}
+    },
+    "management_practices": {
+      "fertilization": {
+        "types": [],
+        "rates": {},
+        "timing": [],
+        "application_methods": []
+      },
+      "irrigation": {
+        "system_type": "",
+        "water_amounts": {},
+        "scheduling": ""
+      },
+      "other_practices": {
+        "tillage": "",
+        "rotation": [],
+        "pest_management": "",
+        "organic_amendments": []
+      }
+    },
+    "input_output_relationships": {
+      "input_rates": {},
+      "output_measurements": {},
+      "efficiency_metrics": {},
+      "balance_calculations": {}
+    }
+  },
+  "temporal_dynamics": {
+    "study_timeline": {
+      "start_date": "",
+      "end_date": "",
+      "data_collection_schedule": [],
+      "monitoring_frequency": ""
+    },
+    "seasonal_variations": [
+      {
+        "parameter": "",
+        "seasonal_pattern": "",
+        "peak_periods": [],
+        "minimum_periods": [],
+        "amplitude": 0
+      }
+    ],
+    "long_term_trends": [
+      {
+        "parameter": "",
+        "trend_direction": "",
+        "trend_magnitude": 0,
+        "trend_units": "",
+        "projection_timeframe": "",
+        "sustainability_implications": ""
+      }
+    ],
+    "variability_characterization": {
+      "inter_annual_variability": {},
+      "spatial_variability": {},
+      "measurement_uncertainty": {},
+      "drivers_of_variability": []
+    }
+  },
+  "data_quality_assessment": {
+    "methodological_strengths": [],
+    "methodological_limitations": [],
+    "data_completeness": "",
+    "measurement_precision": {},
+    "representativeness": {
+      "spatial_representativeness": "",
+      "temporal_representativeness": "",
+      "system_representativeness": ""
+    },
+    "uncertainty_sources": [],
+    "validation_evidence": []
+  },
+  "literature_integration": {
+    "key_methodological_references": [],
+    "comparative_studies": [],
+    "theoretical_framework": "",
+    "data_sources": [],
+    "benchmarking_data": [],
+    "validation_studies": []
+  },
+  "extraction_metadata": {
+    "extraction_completeness": 0.0,
+    "data_richness_assessment": "",
+    "confidence_in_extraction": 0.0,
+    "potential_ambiguities": [],
+    "extraction_limitations": [],
+    "quality_flags": [],
+    "recommended_validation_checks": []
+  }
+}
+
+EXTRACTION QUALITY STANDARDS:
+- Maintain extraction_completeness score of 0.8+ for comprehensive coverage
+- Provide confidence_in_extraction score reflecting extraction accuracy
+- Flag any ambiguities, uncertainties, or potential interpretation issues
+- Note missing critical information that affects interpretation
+- Be conservative in confidence assessment - prefer underestimation to overconfidence
+- Ensure all numerical values include units and uncertainty measures where available
+- Maintain scientific precision in terminology and parameter descriptions
+
+Extract with maximum scientific rigor and comprehensive detail while maintaining complete objectivity across all research topics and parameters. 
+ 

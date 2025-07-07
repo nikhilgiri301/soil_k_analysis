@@ -1,0 +1,284 @@
+{
+  "client_questions": {
+    "soil_k_supply_rates": {
+      "description": "Understanding natural soil potassium release rates for crop availability",
+      "priority": "critical",
+      "by_region": {
+        "china": {
+          "arid_soils": {
+            "parameters": [
+              "annual_kg_k2o_per_ha",
+              "sustainability_years", 
+              "depletion_rate",
+              "recovery_potential"
+            ],
+            "confidence_threshold": 0.7,
+            "evidence_requirements": ["field_studies", "long_term_data", "soil_analysis"]
+          },
+          "temperate_soils": {
+            "parameters": [
+              "seasonal_release_patterns",
+              "annual_kg_k2o_per_ha",
+              "clay_mineral_effects"
+            ],
+            "confidence_threshold": 0.6,
+            "evidence_requirements": ["multi_season_studies", "mineralogy_data"]
+          },
+          "tropical_soils": {
+            "parameters": [
+              "monsoon_leaching_effects",
+              "annual_kg_k2o_per_ha",
+              "organic_matter_contributions"
+            ],
+            "confidence_threshold": 0.6,
+            "evidence_requirements": ["rainfall_correlation", "organic_studies"]
+          }
+        },
+        "india": {
+          "monsoon_regions": {
+            "parameters": [
+              "pre_monsoon_k_levels",
+              "post_monsoon_k_depletion",
+              "annual_replenishment_rate"
+            ],
+            "confidence_threshold": 0.7,
+            "evidence_requirements": ["seasonal_monitoring", "watershed_studies"]
+          },
+          "dry_regions": {
+            "parameters": [
+              "irrigation_k_mobilization",
+              "saline_soil_k_availability",
+              "drought_resistance_k_needs"
+            ],
+            "confidence_threshold": 0.6,
+            "evidence_requirements": ["irrigation_studies", "salinity_analysis"]
+          },
+          "himalayan_regions": {
+            "parameters": [
+              "altitude_k_weathering_rates",
+              "snowmelt_k_transport",
+              "terrace_k_retention"
+            ],
+            "confidence_threshold": 0.5,
+            "evidence_requirements": ["elevation_studies", "snowpack_analysis"]
+          }
+        },
+        "brazil": {
+          "cerrado": {
+            "parameters": [
+              "savanna_k_cycling",
+              "deep_soil_k_reserves",
+              "root_zone_k_concentration"
+            ],
+            "confidence_threshold": 0.7,
+            "evidence_requirements": ["ecosystem_studies", "deep_core_analysis"]
+          },
+          "atlantic_forest": {
+            "parameters": [
+              "forest_k_cycling_efficiency",
+              "cleared_land_k_depletion",
+              "regeneration_k_accumulation"
+            ],
+            "confidence_threshold": 0.6,
+            "evidence_requirements": ["forest_clearing_studies", "succession_analysis"]
+          },
+          "amazon_fringe": {
+            "parameters": [
+              "rainforest_k_cycling",
+              "conversion_k_losses",
+              "sustainable_extraction_rates"
+            ],
+            "confidence_threshold": 0.5,
+            "evidence_requirements": ["deforestation_studies", "nutrient_flow_analysis"]
+          }
+        },
+        "iran": {
+          "arid_plateau": {
+            "parameters": [
+              "desert_soil_k_availability",
+              "water_stress_k_mobilization",
+              "salt_accumulation_effects"
+            ],
+            "confidence_threshold": 0.6,
+            "evidence_requirements": ["arid_zone_studies", "water_stress_experiments"]
+          }
+        },
+        "usa": {
+          "great_plains": {
+            "parameters": [
+              "prairie_soil_k_reserves",
+              "cultivation_k_depletion",
+              "conservation_k_retention"
+            ],
+            "confidence_threshold": 0.8,
+            "evidence_requirements": ["long_term_plots", "conservation_studies"]
+          },
+          "southeastern_coastal": {
+            "parameters": [
+              "sandy_soil_k_leaching",
+              "humid_climate_k_losses",
+              "organic_k_stabilization"
+            ],
+            "confidence_threshold": 0.7,
+            "evidence_requirements": ["leaching_studies", "organic_matter_analysis"]
+          }
+        }
+      },
+      "by_time_horizon": {
+        "annual_rates": {
+          "description": "Year-to-year K release patterns",
+          "parameters": [
+            "growing_season_supply",
+            "off_season_accumulation",
+            "annual_net_balance"
+          ],
+          "confidence_threshold": 0.8,
+          "evidence_requirements": ["annual_monitoring", "crop_uptake_correlation"]
+        },
+        "5_year_sustainability": {
+          "description": "Medium-term soil K sustainability without fertilizer",
+          "parameters": [
+            "cumulative_k_depletion",
+            "soil_reserve_drawdown",
+            "productivity_decline_rate"
+          ],
+          "confidence_threshold": 0.6,
+          "evidence_requirements": ["multi_year_trials", "yield_decline_data"]
+        },
+        "10_year_depletion": {
+          "description": "Long-term soil K exhaustion patterns",
+          "parameters": [
+            "total_extractable_k_decline",
+            "irreversible_k_fixation",
+            "restoration_requirements"
+          ],
+          "confidence_threshold": 0.4,
+          "evidence_requirements": ["long_term_experiments", "soil_chemistry_changes"]
+        }
+      },
+      "by_crop_system": {
+        "rice_systems": {
+          "flooded_conditions": {
+            "parameters": [
+              "anaerobic_k_release",
+              "puddling_k_effects",
+              "water_k_concentration"
+            ],
+            "confidence_threshold": 0.7,
+            "evidence_requirements": ["flooded_soil_studies", "water_analysis"]
+          },
+          "upland_rice": {
+            "parameters": [
+              "aerobic_k_availability",
+              "drought_stress_k_uptake",
+              "residue_k_recycling"
+            ],
+            "confidence_threshold": 0.6,
+            "evidence_requirements": ["upland_trials", "stress_studies"]
+          }
+        },
+        "cotton_systems": {
+          "parameters": [
+            "high_k_demand_supply",
+            "boll_development_k_needs",
+            "irrigation_k_mobilization"
+          ],
+          "confidence_threshold": 0.7,
+          "evidence_requirements": ["cotton_nutrition_studies", "fiber_quality_correlation"]
+        },
+        "sugarcane_systems": {
+          "parameters": [
+            "ratoon_k_depletion",
+            "trash_blanket_k_cycling",
+            "long_rotation_k_balance"
+          ],
+          "confidence_threshold": 0.6,
+          "evidence_requirements": ["ratoon_studies", "trash_decomposition_analysis"]
+        },
+        "mixed_cropping": {
+          "parameters": [
+            "intercrop_k_competition",
+            "rotation_k_cycling_efficiency",
+            "cover_crop_k_contributions"
+          ],
+          "confidence_threshold": 0.5,
+          "evidence_requirements": ["intercropping_studies", "rotation_experiments"]
+        }
+      }
+    },
+    "integration_parameters": {
+      "crop_uptake_relationships": {
+        "description": "How soil K supply relates to actual crop K uptake",
+        "parameters": [
+          "soil_solution_k_concentration",
+          "root_zone_k_depletion",
+          "plant_k_efficiency_factors"
+        ],
+        "confidence_threshold": 0.7,
+        "evidence_requirements": ["plant_soil_correlation", "uptake_kinetics"]
+      },
+      "manure_cycling_interactions": {
+        "description": "How animal manure K interacts with soil K supply",
+        "parameters": [
+          "manure_k_mineralization_rates",
+          "soil_manure_k_synergies",
+          "organic_k_stabilization"
+        ],
+        "confidence_threshold": 0.6,
+        "evidence_requirements": ["manure_decomposition", "organic_k_studies"]
+      },
+      "residue_k_contributions": {
+        "description": "Crop residue K cycling effects on soil K supply",
+        "parameters": [
+          "residue_k_release_timing",
+          "decomposition_k_availability",
+          "residue_soil_k_interactions"
+        ],
+        "confidence_threshold": 0.6,
+        "evidence_requirements": ["residue_decomposition", "k_cycling_studies"]
+      }
+    }
+  },
+  "evidence_quality_criteria": {
+    "field_studies": {
+      "minimum_duration": "1_growing_season",
+      "preferred_duration": "3_years",
+      "replication_requirement": "minimum_3_sites",
+      "measurement_frequency": "monthly_during_growing_season"
+    },
+    "long_term_data": {
+      "minimum_duration": "5_years",
+      "preferred_duration": "10_years",
+      "continuity_requirement": "no_gaps_longer_than_1_year",
+      "measurement_consistency": "same_methods_same_locations"
+    },
+    "soil_analysis": {
+      "depth_requirement": "0_60cm_minimum",
+      "analytical_methods": ["extractable_k", "exchangeable_k", "total_k"],
+      "seasonal_sampling": "pre_planting_post_harvest",
+      "quality_control": "certified_laboratory_methods"
+    }
+  },
+  "uncertainty_tolerances": {
+    "critical_parameters": {
+      "annual_kg_k2o_per_ha": {
+        "acceptable_range": "±20%",
+        "confidence_minimum": 0.7
+      },
+      "sustainability_years": {
+        "acceptable_range": "±30%",
+        "confidence_minimum": 0.6
+      }
+    },
+    "secondary_parameters": {
+      "seasonal_patterns": {
+        "acceptable_range": "±40%",
+        "confidence_minimum": 0.5
+      },
+      "interaction_effects": {
+        "acceptable_range": "±50%",
+        "confidence_minimum": 0.4
+      }
+    }
+  }
+} 

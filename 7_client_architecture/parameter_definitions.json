@@ -1,0 +1,293 @@
+{
+  "parameter_definitions": {
+    "annual_kg_k2o_per_ha": {
+      "description": "Annual potassium release from soil, expressed as K2O equivalent per hectare",
+      "units": "kg K2O/ha/year",
+      "typical_range": "10-150",
+      "measurement_methods": [
+        "sequential_extraction",
+        "field_balance_studies",
+        "lysimeter_analysis"
+      ],
+      "conversion_factors": {
+        "k_to_k2o": 1.2046,
+        "exchangeable_k_factor": "0.6-0.8",
+        "availability_coefficient": "0.3-0.7"
+      },
+      "uncertainty_sources": [
+        "seasonal_variation",
+        "soil_heterogeneity",
+        "measurement_methodology",
+        "weather_effects"
+      ]
+    },
+    "sustainability_years": {
+      "description": "Number of years soil can maintain K supply without external inputs",
+      "units": "years",
+      "typical_range": "2-15",
+      "calculation_basis": [
+        "initial_k_reserves",
+        "annual_depletion_rate",
+        "minimum_productivity_threshold"
+      ],
+      "threshold_definitions": {
+        "high_sustainability": ">10_years",
+        "medium_sustainability": "5-10_years",
+        "low_sustainability": "2-5_years",
+        "unsustainable": "<2_years"
+      }
+    },
+    "depletion_rate": {
+      "description": "Rate of soil K decline under continuous cropping",
+      "units": "% per year",
+      "typical_range": "2-20",
+      "measurement_approaches": [
+        "time_series_analysis",
+        "comparative_field_studies",
+        "modeling_approaches"
+      ],
+      "influencing_factors": [
+        "crop_intensity",
+        "soil_type",
+        "climate",
+        "management_practices"
+      ]
+    },
+    "recovery_potential": {
+      "description": "Soil's ability to replenish K from non-exchangeable sources",
+      "units": "kg K2O/ha/year",
+      "typical_range": "5-50",
+      "assessment_methods": [
+        "k_release_curves",
+        "weathering_studies",
+        "mineral_analysis"
+      ],
+      "recovery_mechanisms": [
+        "clay_mineral_weathering",
+        "organic_matter_mineralization",
+        "microbial_mediated_release"
+      ]
+    },
+    "seasonal_release_patterns": {
+      "description": "Temporal variation in soil K availability throughout the year",
+      "units": "coefficient_of_variation",
+      "typical_range": "0.1-0.8",
+      "pattern_types": [
+        "monsoon_driven",
+        "temperature_driven", 
+        "crop_cycle_driven",
+        "irrigation_driven"
+      ],
+      "measurement_frequency": "monthly_minimum"
+    },
+    "clay_mineral_effects": {
+      "description": "Influence of clay mineralogy on K retention and release",
+      "units": "dimensionless_index",
+      "typical_range": "0.2-1.0",
+      "mineral_categories": {
+        "high_k_retention": ["illite", "vermiculite"],
+        "medium_k_retention": ["smectite", "mixed_layer"],
+        "low_k_retention": ["kaolinite", "halloysite"]
+      },
+      "assessment_indicators": [
+        "k_fixing_capacity",
+        "k_release_kinetics",
+        "weathering_susceptibility"
+      ]
+    },
+    "monsoon_leaching_effects": {
+      "description": "K losses due to monsoon rainfall and drainage",
+      "units": "kg K2O/ha/monsoon_season",
+      "typical_range": "5-80",
+      "loss_mechanisms": [
+        "surface_runoff",
+        "deep_drainage", 
+        "lateral_flow"
+      ],
+      "mitigation_factors": [
+        "soil_depth",
+        "organic_matter_content",
+        "vegetation_cover",
+        "slope_gradient"
+      ]
+    },
+    "organic_matter_contributions": {
+      "description": "K supplied through organic matter decomposition",
+      "units": "kg K2O/ha/year",
+      "typical_range": "10-60",
+      "organic_sources": [
+        "crop_residues",
+        "root_biomass",
+        "microbial_biomass",
+        "soil_organic_matter"
+      ],
+      "decomposition_factors": [
+        "temperature",
+        "moisture",
+        "c_n_ratio",
+        "lignin_content"
+      ]
+    },
+    "irrigation_k_mobilization": {
+      "description": "Enhancement of K availability through irrigation water",
+      "units": "multiplier_factor",
+      "typical_range": "1.2-3.0",
+      "mobilization_mechanisms": [
+        "increased_diffusion",
+        "enhanced_weathering",
+        "reduced_k_fixation",
+        "improved_root_access"
+      ],
+      "water_quality_effects": [
+        "salinity_impact",
+        "ph_effects",
+        "competing_cations"
+      ]
+    },
+    "saline_soil_k_availability": {
+      "description": "K availability in salt-affected soils",
+      "units": "availability_coefficient",
+      "typical_range": "0.1-0.6",
+      "salinity_effects": [
+        "cation_competition",
+        "osmotic_stress",
+        "soil_structure_degradation"
+      ],
+      "management_implications": [
+        "leaching_requirements",
+        "amendment_needs",
+        "crop_selection_criteria"
+      ]
+    },
+    "anaerobic_k_release": {
+      "description": "K release under flooded/anaerobic conditions",
+      "units": "enhancement_factor",
+      "typical_range": "1.5-4.0",
+      "release_mechanisms": [
+        "reduction_processes",
+        "ph_changes",
+        "organic_acid_effects",
+        "microbial_activity"
+      ],
+      "temporal_patterns": [
+        "initial_flood_release",
+        "sustained_release_phase",
+        "equilibrium_conditions"
+      ]
+    },
+    "puddling_k_effects": {
+      "description": "Impact of soil puddling on K availability in rice systems",
+      "units": "availability_change_%",
+      "typical_range": "-20_to_+50",
+      "puddling_benefits": [
+        "enhanced_k_diffusion",
+        "reduced_k_fixation",
+        "improved_root_soil_contact"
+      ],
+      "puddling_drawbacks": [
+        "subsoil_compaction",
+        "reduced_aeration",
+        "potential_k_losses"
+      ]
+    },
+    "high_k_demand_supply": {
+      "description": "Soil K supply capacity for high K demanding crops like cotton",
+      "units": "supply_demand_ratio",
+      "typical_range": "0.3-1.5",
+      "demand_characteristics": [
+        "peak_uptake_periods",
+        "total_seasonal_requirement",
+        "critical_growth_stages"
+      ],
+      "supply_constraints": [
+        "diffusion_limitations",
+        "root_zone_depletion",
+        "timing_mismatches"
+      ]
+    },
+    "ratoon_k_depletion": {
+      "description": "K depletion in successive sugarcane ratoon crops",
+      "units": "% decline per ratoon",
+      "typical_range": "10-40",
+      "depletion_factors": [
+        "intensive_harvesting",
+        "reduced_root_system",
+        "soil_compaction",
+        "pest_disease_stress"
+      ],
+      "management_responses": [
+        "fertilizer_adjustments",
+        "organic_amendments",
+        "replanting_decisions"
+      ]
+    },
+    "intercrop_k_competition": {
+      "description": "K competition effects in mixed cropping systems",
+      "units": "competition_index",
+      "typical_range": "0.8-1.4",
+      "competition_outcomes": [
+        "complementary_uptake",
+        "competitive_exclusion",
+        "facilitative_interactions"
+      ],
+      "system_factors": [
+        "root_zone_overlap",
+        "temporal_uptake_patterns",
+        "species_k_efficiency"
+      ]
+    }
+  },
+  "measurement_standards": {
+    "analytical_methods": {
+      "extractable_k": {
+        "standard_methods": ["ammonium_acetate", "mehlich_3", "bray_1"],
+        "extraction_conditions": "soil_solution_ratio_1_10",
+        "analytical_precision": "±5%",
+        "detection_limit": "1_mg_kg"
+      },
+      "exchangeable_k": {
+        "standard_methods": ["barium_chloride", "cobalt_hexamine"],
+        "equilibration_time": "16_hours",
+        "analytical_precision": "±3%",
+        "detection_limit": "0.5_mg_kg"
+      },
+      "total_k": {
+        "standard_methods": ["xrf_analysis", "acid_digestion_icp"],
+        "sample_preparation": "fine_grinding_<100_mesh",
+        "analytical_precision": "±2%",
+        "detection_limit": "0.1_mg_kg"
+      }
+    },
+    "field_measurements": {
+      "soil_sampling": {
+        "depth_increments": "0_15_30_60_cm",
+        "sampling_density": "minimum_10_points_per_hectare",
+        "temporal_sampling": "pre_planting_mid_season_post_harvest",
+        "storage_conditions": "air_dry_room_temperature"
+      },
+      "plant_sampling": {
+        "tissue_selection": "youngest_fully_expanded_leaf",
+        "sampling_timing": "specific_growth_stages",
+        "sample_size": "minimum_20_plants",
+        "preparation": "wash_dry_grind"
+      }
+    }
+  },
+  "data_quality_requirements": {
+    "minimum_sample_sizes": {
+      "field_studies": "minimum_3_replicates",
+      "laboratory_analysis": "duplicate_analysis_required",
+      "temporal_studies": "minimum_2_seasons"
+    },
+    "statistical_requirements": {
+      "significance_level": "p<0.05",
+      "confidence_intervals": "95%_required",
+      "outlier_detection": "grubbs_test_or_equivalent"
+    },
+    "documentation_requirements": {
+      "methodology_description": "detailed_protocols_required",
+      "quality_control": "blanks_standards_duplicates",
+      "data_validation": "range_checks_consistency_tests"
+    }
+  }
+} 

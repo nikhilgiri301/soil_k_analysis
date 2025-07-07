@@ -1,0 +1,277 @@
+{
+  "confidence_calibration_framework": {
+    "description": "Conservative confidence scoring system for soil K literature synthesis",
+    "philosophy": "Prefer underconfidence to overconfidence for critical business decisions",
+    "scoring_basis": "Evidence quality + geographic coverage + methodological rigor"
+  },
+  "confidence_levels": {
+    "high_confidence": {
+      "range": "0.8-1.0",
+      "description": "Strong evidence base with multiple supporting studies",
+      "requirements": {
+        "minimum_studies": 5,
+        "geographic_coverage": "multiple_regions",
+        "methodological_diversity": "at_least_2_approaches",
+        "study_duration": "minimum_3_years",
+        "replication": "consistent_results_across_studies"
+      },
+      "business_application": "Suitable for strategic planning and major investment decisions"
+    },
+    "medium_confidence": {
+      "range": "0.6-0.79",
+      "description": "Adequate evidence with some limitations or gaps",
+      "requirements": {
+        "minimum_studies": 3,
+        "geographic_coverage": "regional_coverage",
+        "methodological_diversity": "consistent_methodology",
+        "study_duration": "minimum_2_years",
+        "replication": "generally_consistent_results"
+      },
+      "business_application": "Suitable for tactical decisions with contingency planning"
+    },
+    "low_confidence": {
+      "range": "0.4-0.59",
+      "description": "Limited evidence with significant uncertainties",
+      "requirements": {
+        "minimum_studies": 2,
+        "geographic_coverage": "limited_regional_data",
+        "methodological_diversity": "single_primary_approach",
+        "study_duration": "minimum_1_year",
+        "replication": "some_conflicting_results"
+      },
+      "business_application": "Requires additional validation before major decisions"
+    },
+    "very_low_confidence": {
+      "range": "0.2-0.39",
+      "description": "Minimal evidence with high uncertainty",
+      "requirements": {
+        "minimum_studies": 1,
+        "geographic_coverage": "very_limited",
+        "methodological_diversity": "single_study_approach",
+        "study_duration": "less_than_1_year",
+        "replication": "no_independent_validation"
+      },
+      "business_application": "Insufficient for business decisions, research priority"
+    },
+    "insufficient_evidence": {
+      "range": "0.0-0.19",
+      "description": "No reliable evidence or conflicting evidence",
+      "requirements": {
+        "minimum_studies": 0,
+        "geographic_coverage": "none_or_irrelevant",
+        "methodological_diversity": "inadequate_methods",
+        "study_duration": "irrelevant",
+        "replication": "no_evidence_or_contradictory"
+      },
+      "business_application": "Parameter cannot be used in modeling without additional research"
+    }
+  },
+  "evidence_quality_multipliers": {
+    "study_design": {
+      "randomized_controlled": 1.0,
+      "controlled_comparison": 0.9,
+      "observational_longitudinal": 0.8,
+      "cross_sectional": 0.7,
+      "case_study": 0.6,
+      "modeling_only": 0.4
+    },
+    "publication_quality": {
+      "peer_reviewed_journal": 1.0,
+      "conference_proceedings": 0.8,
+      "government_report": 0.9,
+      "thesis_dissertation": 0.7,
+      "grey_literature": 0.6,
+      "unpublished": 0.4
+    },
+    "sample_size": {
+      "large_n_gt_100": 1.0,
+      "medium_n_30_100": 0.9,
+      "small_n_10_30": 0.8,
+      "very_small_n_lt_10": 0.6,
+      "single_observation": 0.3
+    },
+    "temporal_coverage": {
+      "gt_10_years": 1.0,
+      "5_10_years": 0.9,
+      "2_5_years": 0.8,
+      "1_2_years": 0.7,
+      "lt_1_year": 0.5,
+      "single_season": 0.4
+    },
+    "geographic_relevance": {
+      "same_region_same_conditions": 1.0,
+      "same_region_similar_conditions": 0.9,
+      "adjacent_region_similar": 0.8,
+      "different_region_similar_climate": 0.7,
+      "different_region_different_climate": 0.5,
+      "not_specified": 0.3
+    }
+  },
+  "parameter_specific_thresholds": {
+    "annual_kg_k2o_per_ha": {
+      "critical_importance": true,
+      "minimum_confidence_required": 0.7,
+      "evidence_requirements": {
+        "minimum_studies": 4,
+        "geographic_diversity": "required",
+        "methodology_validation": "required"
+      },
+      "uncertainty_tolerance": "±20%",
+      "business_impact": "direct_revenue_impact"
+    },
+    "sustainability_years": {
+      "critical_importance": true,
+      "minimum_confidence_required": 0.6,
+      "evidence_requirements": {
+        "minimum_studies": 3,
+        "long_term_data": "preferred",
+        "multiple_cropping_cycles": "required"
+      },
+      "uncertainty_tolerance": "±30%",
+      "business_impact": "strategic_planning_horizon"
+    },
+    "depletion_rate": {
+      "critical_importance": true,
+      "minimum_confidence_required": 0.6,
+      "evidence_requirements": {
+        "minimum_studies": 3,
+        "temporal_data": "required",
+        "baseline_comparisons": "required"
+      },
+      "uncertainty_tolerance": "±25%",
+      "business_impact": "resource_management"
+    },
+    "seasonal_patterns": {
+      "critical_importance": false,
+      "minimum_confidence_required": 0.5,
+      "evidence_requirements": {
+        "minimum_studies": 2,
+        "seasonal_monitoring": "required"
+      },
+      "uncertainty_tolerance": "±40%",
+      "business_impact": "tactical_timing"
+    },
+    "recovery_potential": {
+      "critical_importance": false,
+      "minimum_confidence_required": 0.5,
+      "evidence_requirements": {
+        "minimum_studies": 2,
+        "mechanistic_understanding": "preferred"
+      },
+      "uncertainty_tolerance": "±50%",
+      "business_impact": "long_term_sustainability"
+    }
+  },
+  "regional_confidence_adjustments": {
+    "china": {
+      "data_availability": "high",
+      "research_quality": "high",
+      "geographic_coverage": "good",
+      "confidence_multiplier": 1.0
+    },
+    "india": {
+      "data_availability": "medium",
+      "research_quality": "medium",
+      "geographic_coverage": "variable",
+      "confidence_multiplier": 0.9
+    },
+    "brazil": {
+      "data_availability": "medium",
+      "research_quality": "high",
+      "geographic_coverage": "limited",
+      "confidence_multiplier": 0.8
+    },
+    "iran": {
+      "data_availability": "low",
+      "research_quality": "medium", 
+      "geographic_coverage": "limited",
+      "confidence_multiplier": 0.7
+    },
+    "usa": {
+      "data_availability": "high",
+      "research_quality": "high",
+      "geographic_coverage": "excellent",
+      "confidence_multiplier": 1.0
+    },
+    "other_regions": {
+      "data_availability": "unknown",
+      "research_quality": "unknown",
+      "geographic_coverage": "unknown",
+      "confidence_multiplier": 0.6
+    }
+  },
+  "conflict_resolution_guidelines": {
+    "methodology_conflicts": {
+      "approach": "Weight by study quality and sample size",
+      "preference_order": [
+        "field_studies_over_laboratory",
+        "long_term_over_short_term",
+        "multiple_sites_over_single_site",
+        "peer_reviewed_over_grey_literature"
+      ],
+      "confidence_penalty": "Reduce by 0.1-0.2 depending on conflict severity"
+    },
+    "geographic_conflicts": {
+      "approach": "Regional clustering with explicit geographic limitations",
+      "preference_order": [
+        "local_data_over_regional",
+        "similar_climate_over_different",
+        "recent_studies_over_historical"
+      ],
+      "confidence_penalty": "Reduce by 0.1-0.3 depending on geographic distance"
+    },
+    "temporal_conflicts": {
+      "approach": "Weight recent studies more heavily while noting trends",
+      "preference_order": [
+        "recent_data_for_current_conditions",
+        "long_term_data_for_trends",
+        "multiple_time_periods_for_validation"
+      ],
+      "confidence_penalty": "Reduce by 0.1 for conflicting temporal trends"
+    }
+  },
+  "validation_checkpoints": {
+    "initial_extraction": {
+      "confidence_assignment": "Conservative preliminary scoring",
+      "validation_method": "Cross-reference with paper methodology",
+      "adjustment_range": "±0.1"
+    },
+    "cross_paper_validation": {
+      "confidence_assignment": "Consensus-based adjustment",
+      "validation_method": "Identify convergent vs. divergent findings",
+      "adjustment_range": "±0.2"
+    },
+    "final_synthesis": {
+      "confidence_assignment": "Evidence-weighted final calibration",
+      "validation_method": "Overall evidence strength assessment",
+      "adjustment_range": "±0.15"
+    }
+  },
+  "uncertainty_communication": {
+    "high_confidence_language": [
+      "Strong evidence suggests",
+      "Multiple studies demonstrate",
+      "Well-established relationship"
+    ],
+    "medium_confidence_language": [
+      "Available evidence indicates",
+      "Studies generally show",
+      "Emerging consensus suggests"
+    ],
+    "low_confidence_language": [
+      "Limited evidence suggests",
+      "Some studies indicate",
+      "Preliminary findings show"
+    ],
+    "very_low_confidence_language": [
+      "Very limited evidence",
+      "Single study suggests",
+      "Insufficient data for conclusions"
+    ],
+    "insufficient_evidence_language": [
+      "No reliable evidence available",
+      "Conflicting evidence prevents conclusions",
+      "Research gap identified"
+    ]
+  }
+} 

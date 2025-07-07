@@ -1,0 +1,182 @@
+{
+  "system_config": {
+    "project_name": "Soil K Literature Synthesis",
+    "version": "2.0.0",
+    "environment": "production",
+    "debug_mode": false,
+    "log_level": "INFO"
+  },
+  "gemini_config": {
+    "model": "gemini-2.5-flash",
+    "_model_note": "Using Gemini 2.5 Flash with unlimited thinking mode for optimal literature synthesis quality",
+    "api_version": "v1",
+    "rate_limit": 30,
+    "max_tokens": 8192,
+    "retry_attempts": 3,
+    "timeout_seconds": 300,
+    "thinking_mode": {
+      "enabled": true,
+      "thinking_budget": -1,
+      "priority_stages": [
+        "all_stages"
+      ]
+    },
+    "safety_settings": [
+      {
+        "category": "HARM_CATEGORY_HARASSMENT",
+        "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+      },
+      {
+        "category": "HARM_CATEGORY_HATE_SPEECH", 
+        "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+      },
+      {
+        "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+        "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+      },
+      {
+        "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+        "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+      }
+    ]
+  },
+  "stage_temperatures": {
+    "stage_1a_generic_extraction": 0.1,
+    "stage_1b_generic_validation": 0.05,
+    "stage_2a_soilk_extraction": 0.15,
+    "stage_2b_soilk_validation": 0.05,
+    "stage_3a_paper_synthesis": 0.25,
+    "stage_3b_synthesis_validation": 0.0,
+    "stage_4a_client_mapping": 0.1,
+    "stage_4b_mapping_validation": 0.0,
+    "stage_5a_iterative_integration": 0.2,
+    "stage_5b_integration_validation": 0.0
+  },
+  "thinking_optimization": {
+    "description": "Maximum thinking mode enabled for all stages - prioritizing quality over speed",
+    "all_stages_thinking": {
+      "thinking_budget": -1,
+      "reason": "Unlimited thinking for highest quality literature synthesis across all processing stages"
+    },
+    "stage_specific_settings": {
+      "stage_1a_generic_extraction": {
+        "thinking_budget": -1,
+        "reason": "Maximum thinking for accurate and thorough extraction"
+      },
+      "stage_1b_generic_validation": {
+        "thinking_budget": -1,
+        "reason": "Maximum thinking for comprehensive validation"
+      },
+      "stage_2a_soilk_extraction": {
+        "thinking_budget": -1,
+        "reason": "Maximum thinking for precise soil K parameter extraction"
+      },
+      "stage_2b_soilk_validation": {
+        "thinking_budget": -1,
+        "reason": "Maximum thinking for thorough soil K validation"
+      },
+      "stage_3a_paper_synthesis": {
+        "thinking_budget": -1,
+        "reason": "Maximum thinking for complex synthesis across multiple data sources"
+      },
+      "stage_3b_synthesis_validation": {
+        "thinking_budget": -1,
+        "reason": "Maximum thinking for comprehensive synthesis validation"
+      },
+      "stage_4a_client_mapping": {
+        "thinking_budget": -1,
+        "reason": "Maximum thinking for strategic mapping to client questions"
+      },
+      "stage_4b_mapping_validation": {
+        "thinking_budget": -1,
+        "reason": "Maximum thinking for thorough mapping validation"
+      },
+      "stage_5a_iterative_integration": {
+        "thinking_budget": -1,
+        "reason": "Maximum thinking for complex cross-paper integration and conflict resolution"
+      },
+      "stage_5b_integration_validation": {
+        "thinking_budget": -1,
+        "reason": "Maximum thinking for comprehensive integration validation"
+      }
+    }
+  },
+  "file_paths": {
+    "source_pdfs": "1_source_pdfs",
+    "processed_data": "2_processed_data",
+    "synthesis_ready": "3_synthesis_ready",
+    "scripts": "4_scripts",
+    "synthesis_engine": "6_synthesis_engine",
+    "client_architecture": "7_client_architecture",
+    "stage_outputs": "8_stage_outputs",
+    "final_synthesis": "9_final_synthesis",
+    "query_system": "10_query_system",
+    "validation_logs": "11_validation_logs",
+    "prompts": "6_synthesis_engine/prompts"
+  },
+  "processing_config": {
+    "max_concurrent_papers": 3,
+    "batch_size": 5,
+    "enable_parallel_processing": true,
+    "checkpoint_frequency": 5,
+    "auto_retry_failed": true,
+    "save_intermediate_results": true
+  },
+  "validation_config": {
+    "enable_quality_validation": true,
+    "enable_confidence_scoring": true,
+    "minimum_quality_threshold": 0.6,
+    "require_citation_traceability": true,
+    "conservative_confidence_bias": true,
+    "validation_checkpoint_stages": [
+      "stage_1b",
+      "stage_2b", 
+      "stage_3b",
+      "stage_4b",
+      "stage_5b"
+    ]
+  },
+  "output_config": {
+    "save_stage_outputs": true,
+    "compress_large_outputs": false,
+    "include_debug_info": true,
+    "generate_audit_trail": true,
+    "format_outputs_for_client": true,
+    "include_confidence_metadata": true,
+    "save_thinking_logs": true
+  },
+  "error_handling": {
+    "max_retry_attempts": 3,
+    "retry_delay_seconds": 2,
+    "escalate_after_failures": 5,
+    "save_error_outputs": true,
+    "continue_on_single_failure": true,
+    "graceful_degradation": true,
+    "thinking_timeout_multiplier": 2.0
+  },
+  "logging_config": {
+    "log_file": "11_validation_logs/synthesis_engine.log",
+    "max_log_size_mb": 100,
+    "backup_count": 5,
+    "log_format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    "enable_console_logging": true,
+    "log_api_calls": false,
+    "log_processing_times": true,
+    "log_thinking_usage": true
+  },
+  "client_specific_config": {
+    "mining_company_context": true,
+    "potash_focus": true,
+    "uncertainty_framework": "five_bucket",
+    "track_1_bucket_4": true,
+    "conservative_business_approach": true
+  },
+  "synthesis_parameters": {
+    "minimum_papers_per_parameter": 2,
+    "confidence_threshold_for_inclusion": 0.3,
+    "require_geographic_diversity": true,
+    "prefer_recent_studies": true,
+    "weight_peer_reviewed_higher": true,
+    "enable_conflict_resolution": true
+  }
+}

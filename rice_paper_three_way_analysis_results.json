@@ -1,0 +1,1401 @@
+{
+  "paper_name": "rice_systems",
+  "findings": {
+    "original_flash": {
+      "primary_measurements": [
+        {
+          "parameter": "Grain Yield",
+          "values": [
+            {
+              "treatment": "K0",
+              "dry_season": 2.7,
+              "wet_season": 4.2
+            },
+            {
+              "treatment": "K40",
+              "dry_season": 3.2,
+              "wet_season": 4.3
+            },
+            {
+              "treatment": "K60",
+              "dry_season": 3.5,
+              "wet_season": 4.7
+            },
+            {
+              "treatment": "K80",
+              "dry_season": 3.4,
+              "wet_season": 4.9
+            },
+            {
+              "treatment": "K20 + Straw",
+              "dry_season": 3.2,
+              "wet_season": 4.4
+            },
+            {
+              "treatment": "K30 + Straw",
+              "dry_season": 3.5,
+              "wet_season": 5.2
+            },
+            {
+              "treatment": "K40 + Straw",
+              "dry_season": 3.1,
+              "wet_season": 4.9
+            },
+            {
+              "treatment": "Straw",
+              "dry_season": 2.8,
+              "wet_season": 4.6
+            },
+            {
+              "treatment": "K40 + 1% KNO3 spray",
+              "dry_season": 3.8,
+              "wet_season": 5.4
+            }
+          ],
+          "units": "t ha⁻¹",
+          "statistical_measures": {
+            "LSD_0.05": 0.6
+          },
+          "measurement_context": "Measured at harvest for both dry and wet seasons."
+        },
+        {
+          "parameter": "Potassium Balance",
+          "values": [
+            {
+              "treatment": "K0",
+              "balance": -103
+            },
+            {
+              "treatment": "K40",
+              "balance": -60
+            },
+            {
+              "treatment": "K60",
+              "balance": -87
+            },
+            {
+              "treatment": "K80",
+              "balance": -86
+            },
+            {
+              "treatment": "K20 + Straw",
+              "balance": 53
+            },
+            {
+              "treatment": "K30 + Straw",
+              "balance": 65
+            },
+            {
+              "treatment": "K40 + Straw",
+              "balance": 89
+            },
+            {
+              "treatment": "Straw",
+              "balance": 11
+            },
+            {
+              "treatment": "K40 + 1% KNO3 spray",
+              "balance": -140
+            }
+          ],
+          "units": "kg ha⁻¹",
+          "statistical_measures": {},
+          "measurement_context": "Total balance calculated over both dry and wet seasons."
+        },
+        {
+          "parameter": "Initial Soil Potassium",
+          "values": [
+            {
+              "depth": "0-15 cm",
+              "exchangeable_K": 58,
+              "non_exchangeable_K": 123,
+              "reserve_K": 181
+            },
+            {
+              "depth": "15-30 cm",
+              "exchangeable_K": 59
+            },
+            {
+              "depth": "30-45 cm",
+              "exchangeable_K": 53
+            }
+          ],
+          "units": "kg ha⁻¹",
+          "statistical_measures": {},
+          "measurement_context": "Baseline soil characteristics before the experiment."
+        }
+      ],
+      "statistical_relationships": [
+        {
+          "relationship_type": "Correlation",
+          "variables": [
+            "Reserve K",
+            "Non-exchangeable K",
+            "Available K in soil solution"
+          ],
+          "correlation_coefficient": null,
+          "regression_parameters": {},
+          "significance_level": "Significant",
+          "effect_size": "Reserve and non-exchangeable K significantly contributed to maintaining available K levels."
+        }
+      ],
+      "temporal_patterns": [
+        {
+          "parameter": "Non-exchangeable K",
+          "trend_description": "A greater shift (depletion) in non-exchangeable K was observed during the dry season compared to the wet season.",
+          "rate_of_change": null,
+          "units_per_time": "",
+          "trend_significance": "",
+          "seasonal_component": "Higher depletion in the dry season."
+        }
+      ],
+      "comparative_results": [
+        {
+          "comparison_type": "Treatment Effect on Yield",
+          "groups_compared": [
+            "T9 (K40 + 1% KNO3 spray)",
+            "T1 (Control)"
+          ],
+          "difference_magnitude": 1.1,
+          "units": "t ha⁻¹",
+          "statistical_significance": "Significant (p<0.05)",
+          "practical_significance": "In the dry season, T9 yield was 40.7% higher than control."
+        },
+        {
+          "comparison_type": "Treatment Effect on K Balance",
+          "groups_compared": [
+            "Treatments with straw (T5, T6, T7, T8)",
+            "Treatments with chemical fertilizers alone (T2, T3, T4)"
+          ],
+          "difference_magnitude": null,
+          "units": "kg ha⁻¹",
+          "statistical_significance": "",
+          "practical_significance": "Treatments combining reduced fertilizer doses with straw resulted in a positive K balance, while chemical fertilizers alone led to a negative balance."
+        }
+      ]
+    },
+    "revised_flash": {
+      "primary_measurements": [
+        {
+          "parameter": "Grain yield",
+          "values": [
+            {
+              "treatment": "K0",
+              "dry_season_t_ha": 2.7,
+              "wet_season_t_ha": 4.2
+            },
+            {
+              "treatment": "K40",
+              "dry_season_t_ha": 3.2,
+              "wet_season_t_ha": 4.3
+            },
+            {
+              "treatment": "K60",
+              "dry_season_t_ha": 3.5,
+              "wet_season_t_ha": 4.7
+            },
+            {
+              "treatment": "K80",
+              "dry_season_t_ha": 3.4,
+              "wet_season_t_ha": 4.9
+            },
+            {
+              "treatment": "K20 + Straw",
+              "dry_season_t_ha": 3.2,
+              "wet_season_t_ha": 4.4
+            },
+            {
+              "treatment": "K30 + Straw",
+              "dry_season_t_ha": 3.5,
+              "wet_season_t_ha": 5.2
+            },
+            {
+              "treatment": "K40 + Straw",
+              "dry_season_t_ha": 3.1,
+              "wet_season_t_ha": 4.9
+            },
+            {
+              "treatment": "Straw",
+              "dry_season_t_ha": 2.8,
+              "wet_season_t_ha": 4.6
+            },
+            {
+              "treatment": "K40 + 1% KNO3 spray",
+              "dry_season_t_ha": 3.8,
+              "wet_season_t_ha": 5.4
+            }
+          ],
+          "units": "t ha⁻¹",
+          "statistical_measures": {
+            "LSD_0.05_dry_season": 0.6,
+            "LSD_0.05_wet_season": 0.6
+          },
+          "measurement_context": "Grain yield at harvest for dry and wet seasons"
+        },
+        {
+          "parameter": "Plant K uptake (total)",
+          "values": [
+            {
+              "treatment": "T1",
+              "dry_season_kg_ha": 74,
+              "wet_season_kg_ha": 87
+            },
+            {
+              "treatment": "T4",
+              "dry_season_kg_ha": 147,
+              "wet_season_kg_ha": 156
+            },
+            {
+              "treatment": "T5",
+              "wet_season_kg_ha": 87
+            }
+          ],
+          "units": "kg ha⁻¹",
+          "statistical_measures": {},
+          "measurement_context": "Total K uptake at harvest"
+        },
+        {
+          "parameter": "Plant K uptake (Maximum Tillering)",
+          "values": [
+            {
+              "treatment": "T8",
+              "dry_season_kg_ha": 16.1,
+              "wet_season_kg_ha": 21.9
+            },
+            {
+              "treatment": "T9",
+              "dry_season_kg_ha": 19.1
+            },
+            {
+              "treatment": "T4",
+              "wet_season_kg_ha": 30.7
+            }
+          ],
+          "units": "kg ha⁻¹",
+          "statistical_measures": {},
+          "measurement_context": "K uptake at Maximum Tillering stage"
+        },
+        {
+          "parameter": "Exchangeable K (0-15 cm)",
+          "values": [
+            {
+              "stage": "MT",
+              "dry_season_range_kg_ha": "68.5 (T1) to 117.8 (T4)",
+              "wet_season_range_kg_ha": "42.4 (T1) to 81.7 (T6)"
+            },
+            {
+              "stage": "PI",
+              "dry_season_range_kg_ha": "56.2 (T1) to 94.7 (T4)"
+            },
+            {
+              "stage": "Harvest",
+              "dry_season_range_kg_ha": "47.9 (T1) to 79.6 (T4)",
+              "wet_season_range_kg_ha": "35.6 (T1) to 63.3 (T3)"
+            }
+          ],
+          "units": "kg ha⁻¹",
+          "statistical_measures": {},
+          "measurement_context": "Exchangeable K levels at different growth stages and soil depth"
+        },
+        {
+          "parameter": "Exchangeable K (15-30 cm)",
+          "values": [
+            {
+              "stage": "MT",
+              "dry_season_range_kg_ha": "42.1 (T1) to 78.4 (T4)",
+              "wet_season_range_kg_ha": "33.1 (T1) to 55.3 (T7)"
+            },
+            {
+              "stage": "PI",
+              "dry_season_range_kg_ha": "49.9 (T1) to 72.2 (T4)"
+            },
+            {
+              "stage": "Harvest",
+              "dry_season_range_kg_ha": "48.8 (T1) to 62.5 (T4)",
+              "wet_season_range_kg_ha": "47.1 (T5) to 70.9 (T3)"
+            }
+          ],
+          "units": "kg ha⁻¹",
+          "statistical_measures": {},
+          "measurement_context": "Exchangeable K levels at different growth stages and soil depth"
+        },
+        {
+          "parameter": "Non-exchangeable K (0-15 cm)",
+          "values": [
+            {
+              "stage": "MT",
+              "dry_season_range_kg_ha": "35.5 (T8) to 97.9 (T5)",
+              "wet_season_range_kg_ha": "78.8 (T5) to 111.2 (T2)"
+            },
+            {
+              "stage": "Harvest",
+              "dry_season_range_kg_ha": "83.3 (T9) to 152.4 (T3)",
+              "wet_season_range_kg_ha": "164.7 (T1) to 226.2 (T4)"
+            }
+          ],
+          "units": "kg ha⁻¹",
+          "statistical_measures": {},
+          "measurement_context": "Non-exchangeable K levels at different growth stages and soil depth"
+        },
+        {
+          "parameter": "Non-exchangeable K (15-30 cm)",
+          "values": [
+            {
+              "stage": "MT",
+              "dry_season_range_kg_ha": "74.5 (T8) to 147.7 (T5)",
+              "wet_season_range_kg_ha": "68.0 (T1) to 140.5 (T4)"
+            },
+            {
+              "stage": "Harvest",
+              "dry_season_range_kg_ha": "63.6 (T5) to 106.2 (T3)",
+              "wet_season_range_kg_ha": "130.6 (T8) to 149.5 (T5)"
+            }
+          ],
+          "units": "kg ha⁻¹",
+          "statistical_measures": {},
+          "measurement_context": "Non-exchangeable K levels at different growth stages and soil depth"
+        },
+        {
+          "parameter": "Reserve K (0-15 cm)",
+          "values": [
+            {
+              "stage": "MT",
+              "dry_season_range_kg_ha": "144 (T1) to 215 (T4)",
+              "wet_season_range_kg_ha": "124 (T1) to 173 (T4)"
+            },
+            {
+              "stage": "Harvest",
+              "dry_season_range_kg_ha": "132 (T1) to 232 (T4)",
+              "wet_season_range_kg_ha": "200 (T1) to 306 (T4)"
+            }
+          ],
+          "units": "kg ha⁻¹",
+          "statistical_measures": {},
+          "measurement_context": "Reserve K levels at different growth stages and soil depth"
+        },
+        {
+          "parameter": "Reserve K (15-30 cm)",
+          "values": [
+            {
+              "stage": "MT",
+              "dry_season_range_kg_ha": "148 (T1) to 215 (T4)",
+              "wet_season_range_kg_ha": "101 (T1) to 186 (T4)"
+            },
+            {
+              "stage": "Harvest",
+              "dry_season_range_kg_ha": "156 (T1) to 161 (T4)",
+              "wet_season_range_kg_ha": "193 (T1) to 203 (T6)"
+            }
+          ],
+          "units": "kg ha⁻¹",
+          "statistical_measures": {},
+          "measurement_context": "Reserve K levels at different growth stages and soil depth"
+        },
+        {
+          "parameter": "K balance (annual)",
+          "values": [
+            {
+              "treatment": "K0",
+              "total_balance_kg_ha": -103
+            },
+            {
+              "treatment": "K40",
+              "total_balance_kg_ha": -60
+            },
+            {
+              "treatment": "K60",
+              "total_balance_kg_ha": -87
+            },
+            {
+              "treatment": "K80",
+              "total_balance_kg_ha": -86
+            },
+            {
+              "treatment": "K20 + Straw",
+              "total_balance_kg_ha": 53
+            },
+            {
+              "treatment": "K30 + Straw",
+              "total_balance_kg_ha": 65
+            },
+            {
+              "treatment": "K40 + Straw",
+              "total_balance_kg_ha": 89
+            },
+            {
+              "treatment": "Straw",
+              "total_balance_kg_ha": 11
+            },
+            {
+              "treatment": "K40 + 1% KNO3 spray",
+              "total_balance_kg_ha": -140
+            }
+          ],
+          "units": "kg ha⁻¹",
+          "statistical_measures": {},
+          "measurement_context": "Annual K balance (K added - K removed)"
+        }
+      ],
+      "statistical_relationships": [
+        {
+          "relationship_type": "Correlation",
+          "variables": [
+            "Total K uptake",
+            "Available K at MT"
+          ],
+          "correlation_coefficient": 0.63,
+          "regression_parameters": {},
+          "significance_level": "Significant",
+          "effect_size": "R^2 = 0.63"
+        },
+        {
+          "relationship_type": "Correlation",
+          "variables": [
+            "Total K uptake",
+            "Available K at PI"
+          ],
+          "correlation_coefficient": 0.49,
+          "regression_parameters": {},
+          "significance_level": "Significant",
+          "effect_size": "R^2 = 0.49"
+        },
+        {
+          "relationship_type": "Correlation",
+          "variables": [
+            "Total K uptake",
+            "Available K at harvest"
+          ],
+          "correlation_coefficient": 0.5,
+          "regression_parameters": {},
+          "significance_level": "Significant",
+          "effect_size": "R^2 = 0.50"
+        },
+        {
+          "relationship_type": "Correlation",
+          "variables": [
+            "Total K uptake",
+            "Reserve K at PI and harvest"
+          ],
+          "correlation_coefficient": 0.52,
+          "regression_parameters": {},
+          "significance_level": "Significant",
+          "effect_size": "R^2 = 0.52"
+        },
+        {
+          "relationship_type": "Correlation",
+          "variables": [
+            "Total K uptake",
+            "Non-exchangeable K at MT"
+          ],
+          "correlation_coefficient": 0.43,
+          "regression_parameters": {},
+          "significance_level": "Significant",
+          "effect_size": "R^2 = 0.43"
+        }
+      ],
+      "temporal_patterns": [
+        {
+          "parameter": "K uptake partitioning",
+          "trend_description": "Seasonal differences in K uptake distribution across growth stages.",
+          "rate_of_change": null,
+          "units_per_time": null,
+          "trend_significance": "Significant",
+          "seasonal_component": "Wet season: 16–18% by MT, 38–44% between MT and PI, 40–44% between PI and maturity. Dry season: 12–13% by MT, 23–27% between MT and PI, 59–64% between PI and maturity."
+        },
+        {
+          "parameter": "Non-exchangeable K",
+          "trend_description": "Decline in NE-K at harvest in DS, indicating active soil K release. Higher NE-K levels in WS at harvest.",
+          "rate_of_change": null,
+          "units_per_time": null,
+          "trend_significance": "Evident",
+          "seasonal_component": "Greater shift in non-exchangeable K in dry season, indicative of larger soil K depletion."
+        },
+        {
+          "parameter": "Reserve K",
+          "trend_description": "Decline from MT to PI, followed by an increase at harvest in both seasons.",
+          "rate_of_change": null,
+          "units_per_time": null,
+          "trend_significance": "Observed pattern",
+          "seasonal_component": "Consistently higher in DS compared to WS."
+        }
+      ],
+      "comparative_results": [
+        {
+          "comparison_type": "Grain Yield (Treatment vs. Control)",
+          "groups_compared": [
+            "T9 (40 kg K₂O ha⁻¹ + 1% KNO₃ foliar spray)",
+            "T1 (Control)"
+          ],
+          "difference_magnitude": 1.15,
+          "units": "t ha⁻¹",
+          "statistical_significance": "Significantly higher",
+          "practical_significance": "Increased yield by 42.7% in DS (3.84 vs 2.69 t ha⁻¹) and 27.1% in WS (5.35 vs 4.21 t ha⁻¹)."
+        },
+        {
+          "comparison_type": "Grain Yield (Season)",
+          "groups_compared": [
+            "Wet Season",
+            "Dry Season"
+          ],
+          "difference_magnitude": "Higher in WS",
+          "units": "t ha⁻¹",
+          "statistical_significance": "Higher yields observed in WS",
+          "practical_significance": "Attributed to climatic conditions and water availability."
+        },
+        {
+          "comparison_type": "K Balance (Treatment Type)",
+          "groups_compared": [
+            "Treatments with straw incorporation",
+            "Treatments with chemical fertilizers alone"
+          ],
+          "difference_magnitude": "Positive vs. Negative",
+          "units": "kg ha⁻¹",
+          "statistical_significance": "Contrasting trends",
+          "practical_significance": "Straw-based treatments exhibited positive K balances (e.g., T7: +89 kg ha⁻¹), while fertilizer-only treatments showed negative balances (e.g., T9: -140 kg ha⁻¹)."
+        },
+        {
+          "comparison_type": "Exchangeable K (Season)",
+          "groups_compared": [
+            "Dry Season",
+            "Wet Season"
+          ],
+          "difference_magnitude": "Higher in DS",
+          "units": "kg ha⁻¹",
+          "statistical_significance": "Generally higher in DS",
+          "practical_significance": "Attributed to greater K release from soil reserves during DS, possibly due to soil drying and reduced leaching."
+        }
+      ]
+    },
+    "human": {
+      "primary_measurements": [
+        {
+          "parameter": "Rice grain yield - dry season",
+          "values": [
+            2.7,
+            3.2,
+            3.5,
+            3.4,
+            3.2,
+            3.5,
+            3.1,
+            2.8,
+            3.8
+          ],
+          "units": "t ha⁻¹",
+          "statistical_measures": {
+            "mean": 3.24,
+            "standard_error": null,
+            "confidence_interval": "",
+            "sample_size": 9,
+            "LSD_0.05": 0.6
+          },
+          "measurement_context": "Range from control (T1: 2.7) to foliar spray treatment (T9: 3.8)"
+        },
+        {
+          "parameter": "Rice grain yield - wet season",
+          "values": [
+            4.2,
+            4.3,
+            4.7,
+            4.9,
+            4.4,
+            5.2,
+            4.9,
+            4.6,
+            5.4
+          ],
+          "units": "t ha⁻¹",
+          "statistical_measures": {
+            "mean": 4.73,
+            "standard_error": null,
+            "confidence_interval": "",
+            "sample_size": 9,
+            "LSD_0.05": 0.6
+          },
+          "measurement_context": "Range from control (T1: 4.2) to foliar spray treatment (T9: 5.4)"
+        },
+        {
+          "parameter": "Plant K uptake at maximum tillering - dry season",
+          "values": [
+            16.1,
+            19.1
+          ],
+          "units": "kg ha⁻¹",
+          "statistical_measures": {
+            "mean": 17.6,
+            "standard_error": null,
+            "confidence_interval": "",
+            "sample_size": 2
+          },
+          "measurement_context": "Range from T8 (straw only) to T9 (foliar spray)"
+        },
+        {
+          "parameter": "Plant K uptake at maximum tillering - wet season",
+          "values": [
+            21.9,
+            30.7
+          ],
+          "units": "kg ha⁻¹",
+          "statistical_measures": {
+            "mean": 26.3,
+            "standard_error": null,
+            "confidence_interval": "",
+            "sample_size": 2
+          },
+          "measurement_context": "Range from T8 (straw only) to T4 (80 kg K2O)"
+        },
+        {
+          "parameter": "Total K uptake at harvest - dry season",
+          "values": [
+            74,
+            147
+          ],
+          "units": "kg ha⁻¹",
+          "statistical_measures": {
+            "mean": 110.5,
+            "standard_error": null,
+            "confidence_interval": "",
+            "sample_size": 2
+          },
+          "measurement_context": "Range from T1 (control) to T4 (80 kg K2O)"
+        },
+        {
+          "parameter": "Total K uptake at harvest - wet season",
+          "values": [
+            87,
+            156
+          ],
+          "units": "kg ha⁻¹",
+          "statistical_measures": {
+            "mean": 121.5,
+            "standard_error": null,
+            "confidence_interval": "",
+            "sample_size": 2
+          },
+          "measurement_context": "Range from T1 and T5 (87) to T4 (156)"
+        },
+        {
+          "parameter": "Exchangeable K surface layer (0-15 cm) at maximum tillering - dry season",
+          "values": [
+            68.5,
+            117.8
+          ],
+          "units": "kg ha⁻¹",
+          "statistical_measures": {
+            "mean": 93.15,
+            "standard_error": null,
+            "confidence_interval": "",
+            "sample_size": 2
+          },
+          "measurement_context": "Range from T1 (control) to T4 (80 kg K2O)"
+        },
+        {
+          "parameter": "Exchangeable K surface layer (0-15 cm) at maximum tillering - wet season",
+          "values": [
+            42.4,
+            81.7
+          ],
+          "units": "kg ha⁻¹",
+          "statistical_measures": {
+            "mean": 62.05,
+            "standard_error": null,
+            "confidence_interval": "",
+            "sample_size": 2
+          },
+          "measurement_context": "Range from T1 (control) to T6 (30 kg K2O + straw)"
+        },
+        {
+          "parameter": "Non-exchangeable K surface layer (0-15 cm) at maximum tillering - dry season",
+          "values": [
+            35.5,
+            97.9
+          ],
+          "units": "kg ha⁻¹",
+          "statistical_measures": {
+            "mean": 66.7,
+            "standard_error": null,
+            "confidence_interval": "",
+            "sample_size": 2
+          },
+          "measurement_context": "Range from T8 (straw only) to T5 (20 kg K2O + straw)"
+        },
+        {
+          "parameter": "Non-exchangeable K subsurface layer (15-30 cm) at maximum tillering - dry season",
+          "values": [
+            74.5,
+            147.7
+          ],
+          "units": "kg ha⁻¹",
+          "statistical_measures": {
+            "mean": 111.1,
+            "standard_error": null,
+            "confidence_interval": "",
+            "sample_size": 2
+          },
+          "measurement_context": "Range from T8 (straw only) to T5 (20 kg K2O + straw)"
+        },
+        {
+          "parameter": "Reserve K surface layer (0-15 cm) at maximum tillering - dry season",
+          "values": [
+            144,
+            215
+          ],
+          "units": "kg ha⁻¹",
+          "statistical_measures": {
+            "mean": 179.5,
+            "standard_error": null,
+            "confidence_interval": "",
+            "sample_size": 2
+          },
+          "measurement_context": "Range from T1 (control) to T4 (80 kg K2O)"
+        },
+        {
+          "parameter": "Reserve K surface layer (0-15 cm) at maximum tillering - wet season",
+          "values": [
+            124,
+            173
+          ],
+          "units": "kg ha⁻¹",
+          "statistical_measures": {
+            "mean": 148.5,
+            "standard_error": null,
+            "confidence_interval": "",
+            "sample_size": 2
+          },
+          "measurement_context": "Range from T1 (control) to T4 (80 kg K2O)"
+        },
+        {
+          "parameter": "Initial soil exchangeable K",
+          "values": [
+            58,
+            59,
+            53
+          ],
+          "units": "kg ha⁻¹",
+          "statistical_measures": {
+            "mean": 56.7,
+            "standard_error": null,
+            "confidence_interval": "",
+            "sample_size": 3
+          },
+          "measurement_context": "At 0-15, 15-30, and 30-45 cm depths respectively"
+        },
+        {
+          "parameter": "Initial soil non-exchangeable K",
+          "values": [
+            123
+          ],
+          "units": "kg ha⁻¹",
+          "statistical_measures": {
+            "mean": 123,
+            "standard_error": null,
+            "confidence_interval": "",
+            "sample_size": 1
+          },
+          "measurement_context": "At 0-15 cm depth"
+        },
+        {
+          "parameter": "Initial soil reserve K",
+          "values": [
+            181
+          ],
+          "units": "kg ha⁻¹",
+          "statistical_measures": {
+            "mean": 181,
+            "standard_error": null,
+            "confidence_interval": "",
+            "sample_size": 1
+          },
+          "measurement_context": "At 0-15 cm depth"
+        }
+      ],
+      "statistical_relationships": [
+        {
+          "relationship_type": "Correlation between available K and total K uptake",
+          "variables": [
+            "Available K at maximum tillering",
+            "Total K uptake"
+          ],
+          "correlation_coefficient": null,
+          "regression_parameters": {
+            "r_squared": 0.63
+          },
+          "significance_level": "Significant",
+          "effect_size": "Strong positive correlation"
+        },
+        {
+          "relationship_type": "Correlation between available K and total K uptake",
+          "variables": [
+            "Available K at panicle initiation",
+            "Total K uptake"
+          ],
+          "correlation_coefficient": null,
+          "regression_parameters": {
+            "r_squared": 0.49
+          },
+          "significance_level": "Significant",
+          "effect_size": "Moderate positive correlation"
+        },
+        {
+          "relationship_type": "Correlation between available K and total K uptake",
+          "variables": [
+            "Available K at harvest",
+            "Total K uptake"
+          ],
+          "correlation_coefficient": null,
+          "regression_parameters": {
+            "r_squared": 0.5
+          },
+          "significance_level": "Significant",
+          "effect_size": "Moderate positive correlation"
+        },
+        {
+          "relationship_type": "Correlation between reserve K and total K uptake",
+          "variables": [
+            "Reserve K at panicle initiation",
+            "Total K uptake"
+          ],
+          "correlation_coefficient": null,
+          "regression_parameters": {
+            "r_squared": 0.52
+          },
+          "significance_level": "Significant",
+          "effect_size": "Moderate positive correlation"
+        },
+        {
+          "relationship_type": "Correlation between reserve K and total K uptake",
+          "variables": [
+            "Reserve K at harvest",
+            "Total K uptake"
+          ],
+          "correlation_coefficient": null,
+          "regression_parameters": {
+            "r_squared": 0.52
+          },
+          "significance_level": "Significant",
+          "effect_size": "Moderate positive correlation"
+        },
+        {
+          "relationship_type": "Correlation between non-exchangeable K and total K uptake",
+          "variables": [
+            "Non-exchangeable K at maximum tillering",
+            "Total K uptake"
+          ],
+          "correlation_coefficient": null,
+          "regression_parameters": {
+            "r_squared": 0.43
+          },
+          "significance_level": "Significant",
+          "effect_size": "Moderate positive correlation"
+        },
+        {
+          "relationship_type": "Seasonal effect on K dynamics",
+          "variables": [
+            "Season",
+            "Soil K availability"
+          ],
+          "correlation_coefficient": null,
+          "regression_parameters": {},
+          "significance_level": "Highly significant",
+          "effect_size": "Consistently higher exchangeable K in dry season vs wet season"
+        },
+        {
+          "relationship_type": "Treatment effect on grain yield",
+          "variables": [
+            "K management treatment",
+            "Grain yield"
+          ],
+          "correlation_coefficient": null,
+          "regression_parameters": {},
+          "significance_level": "Significant with LSD 0.05",
+          "effect_size": "Foliar spray and higher K doses significantly increased yield"
+        },
+        {
+          "relationship_type": "Depth effect on soil K pools",
+          "variables": [
+            "Soil depth",
+            "K availability"
+          ],
+          "correlation_coefficient": null,
+          "regression_parameters": {},
+          "significance_level": "Significant",
+          "effect_size": "Consistently higher available K in topsoil than subsoil"
+        }
+      ],
+      "temporal_patterns": [
+        {
+          "parameter": "K uptake partitioning - dry season",
+          "trend_description": "12-13% of total K uptake by maximum tillering, 23-27% between maximum tillering and panicle initiation, 59-64% between panicle initiation and maturity",
+          "rate_of_change": null,
+          "units_per_time": "percentage of total seasonal uptake",
+          "trend_significance": "Statistically significant seasonal pattern",
+          "seasonal_component": "Greater reliance on post-panicle initiation K uptake in dry season"
+        },
+        {
+          "parameter": "K uptake partitioning - wet season",
+          "trend_description": "16-18% of total K uptake by maximum tillering, 38-44% between maximum tillering and panicle initiation, 40-44% between panicle initiation and maturity",
+          "rate_of_change": null,
+          "units_per_time": "percentage of total seasonal uptake",
+          "trend_significance": "Statistically significant seasonal pattern",
+          "seasonal_component": "More evenly distributed K uptake across growth stages in wet season"
+        },
+        {
+          "parameter": "Exchangeable K decline during crop growth",
+          "trend_description": "Decline from maximum tillering to panicle initiation stage reflecting active crop uptake",
+          "rate_of_change": null,
+          "units_per_time": "kg ha⁻¹ per growth stage",
+          "trend_significance": "Significant",
+          "seasonal_component": "More pronounced decline in surface soil during crop growth period"
+        },
+        {
+          "parameter": "Non-exchangeable K conversion during dry season",
+          "trend_description": "Active conversion of non-exchangeable K to exchangeable forms, with levels declining at harvest",
+          "rate_of_change": null,
+          "units_per_time": "kg ha⁻¹ per season",
+          "trend_significance": "Significant",
+          "seasonal_component": "More active soil K release during dry season due to dynamic equilibrium"
+        },
+        {
+          "parameter": "Reserve K mobilization pattern",
+          "trend_description": "Decline from maximum tillering to panicle initiation, followed by increase at harvest due to root turnover and microbial activity",
+          "rate_of_change": null,
+          "units_per_time": "kg ha⁻¹ per growth stage",
+          "trend_significance": "Significant",
+          "seasonal_component": "Higher reserve K levels in wet season due to enhanced mineral weathering"
+        }
+      ],
+      "comparative_results": [
+        {
+          "comparison_type": "Seasonal comparison of grain yield",
+          "groups_compared": [
+            "Dry season",
+            "Wet season"
+          ],
+          "difference_magnitude": 1.49,
+          "units": "t ha⁻¹ (average difference)",
+          "statistical_significance": "Highly significant - wet season consistently higher",
+          "practical_significance": "46% higher yields in wet season due to better water availability and nutrient uptake efficiency"
+        },
+        {
+          "comparison_type": "Treatment effect on grain yield - dry season",
+          "groups_compared": [
+            "Control (T1)",
+            "Best treatment (T9)"
+          ],
+          "difference_magnitude": 1.1,
+          "units": "t ha⁻¹",
+          "statistical_significance": "Significant with LSD 0.6",
+          "practical_significance": "41% yield increase with foliar spray + 40 kg K2O application"
+        },
+        {
+          "comparison_type": "Treatment effect on grain yield - wet season",
+          "groups_compared": [
+            "Control (T1)",
+            "Best treatment (T9)"
+          ],
+          "difference_magnitude": 1.2,
+          "units": "t ha⁻¹",
+          "statistical_significance": "Significant with LSD 0.6",
+          "practical_significance": "29% yield increase with foliar spray + 40 kg K2O application"
+        },
+        {
+          "comparison_type": "K balance comparison by treatment type",
+          "groups_compared": [
+            "Chemical fertilizer only treatments",
+            "Straw-based treatments"
+          ],
+          "difference_magnitude": 229,
+          "units": "kg ha⁻¹ annual difference",
+          "statistical_significance": "Highly significant",
+          "practical_significance": "Straw treatments show positive K balance (+89 to +11) vs negative balance (-60 to -140) for fertilizer-only"
+        },
+        {
+          "comparison_type": "Seasonal comparison of exchangeable K",
+          "groups_compared": [
+            "Dry season",
+            "Wet season"
+          ],
+          "difference_magnitude": 31.1,
+          "units": "kg ha⁻¹ (average surface layer difference)",
+          "statistical_significance": "Significant",
+          "practical_significance": "50% higher exchangeable K in dry season due to reduced leaching and greater K release"
+        },
+        {
+          "comparison_type": "Depth comparison of available K",
+          "groups_compared": [
+            "Surface soil (0-15 cm)",
+            "Subsurface soil (15-30 cm)"
+          ],
+          "difference_magnitude": null,
+          "units": "kg ha⁻¹",
+          "statistical_significance": "Consistently significant across treatments",
+          "practical_significance": "Topsoil consistently higher in available K than subsoil across both seasons"
+        },
+        {
+          "comparison_type": "K uptake efficiency by season",
+          "groups_compared": [
+            "Dry season",
+            "Wet season"
+          ],
+          "difference_magnitude": 11,
+          "units": "kg ha⁻¹ (average total uptake difference)",
+          "statistical_significance": "Significant",
+          "practical_significance": "10% higher total K uptake in wet season despite lower soil K availability"
+        }
+      ]
+    }
+  },
+  "performance": {
+    "original_flash": {
+      "input_tokens": 12869,
+      "output_tokens": 4529,
+      "processing_time": 91.39189052581787,
+      "cost": 0.08520875
+    },
+    "revised_flash": {
+      "input_tokens": 12869,
+      "output_tokens": 6513,
+      "processing_time": 47.817824602127075,
+      "cost": 0.10703275
+    },
+    "human": {
+      "input_tokens": "N/A (manual)",
+      "output_tokens": "N/A (manual)",
+      "processing_time": "N/A (manual)",
+      "cost": "N/A (manual)",
+      "note": "8-12 hours estimated human time"
+    }
+  },
+  "examples": {
+    "original_flash": {
+      "sample_measurements": [
+        {
+          "parameter": "Grain Yield",
+          "values": [
+            {
+              "treatment": "K0",
+              "dry_season": 2.7,
+              "wet_season": 4.2
+            },
+            {
+              "treatment": "K40",
+              "dry_season": 3.2,
+              "wet_season": 4.3
+            },
+            {
+              "treatment": "K60",
+              "dry_season": 3.5,
+              "wet_season": 4.7
+            },
+            {
+              "treatment": "K80",
+              "dry_season": 3.4,
+              "wet_season": 4.9
+            },
+            {
+              "treatment": "K20 + Straw",
+              "dry_season": 3.2,
+              "wet_season": 4.4
+            },
+            {
+              "treatment": "K30 + Straw",
+              "dry_season": 3.5,
+              "wet_season": 5.2
+            },
+            {
+              "treatment": "K40 + Straw",
+              "dry_season": 3.1,
+              "wet_season": 4.9
+            },
+            {
+              "treatment": "Straw",
+              "dry_season": 2.8,
+              "wet_season": 4.6
+            },
+            {
+              "treatment": "K40 + 1% KNO3 spray",
+              "dry_season": 3.8,
+              "wet_season": 5.4
+            }
+          ],
+          "units": "t ha⁻¹",
+          "statistical_measures": {
+            "LSD_0.05": 0.6
+          },
+          "measurement_context": "Measured at harvest for both dry and wet seasons."
+        },
+        {
+          "parameter": "Potassium Balance",
+          "values": [
+            {
+              "treatment": "K0",
+              "balance": -103
+            },
+            {
+              "treatment": "K40",
+              "balance": -60
+            },
+            {
+              "treatment": "K60",
+              "balance": -87
+            },
+            {
+              "treatment": "K80",
+              "balance": -86
+            },
+            {
+              "treatment": "K20 + Straw",
+              "balance": 53
+            },
+            {
+              "treatment": "K30 + Straw",
+              "balance": 65
+            },
+            {
+              "treatment": "K40 + Straw",
+              "balance": 89
+            },
+            {
+              "treatment": "Straw",
+              "balance": 11
+            },
+            {
+              "treatment": "K40 + 1% KNO3 spray",
+              "balance": -140
+            }
+          ],
+          "units": "kg ha⁻¹",
+          "statistical_measures": {},
+          "measurement_context": "Total balance calculated over both dry and wet seasons."
+        },
+        {
+          "parameter": "Initial Soil Potassium",
+          "values": [
+            {
+              "depth": "0-15 cm",
+              "exchangeable_K": 58,
+              "non_exchangeable_K": 123,
+              "reserve_K": 181
+            },
+            {
+              "depth": "15-30 cm",
+              "exchangeable_K": 59
+            },
+            {
+              "depth": "30-45 cm",
+              "exchangeable_K": 53
+            }
+          ],
+          "units": "kg ha⁻¹",
+          "statistical_measures": {},
+          "measurement_context": "Baseline soil characteristics before the experiment."
+        }
+      ],
+      "measurement_count": 3,
+      "has_statistical_measures": true
+    },
+    "revised_flash": {
+      "sample_measurements": [
+        {
+          "parameter": "Grain yield",
+          "values": [
+            {
+              "treatment": "K0",
+              "dry_season_t_ha": 2.7,
+              "wet_season_t_ha": 4.2
+            },
+            {
+              "treatment": "K40",
+              "dry_season_t_ha": 3.2,
+              "wet_season_t_ha": 4.3
+            },
+            {
+              "treatment": "K60",
+              "dry_season_t_ha": 3.5,
+              "wet_season_t_ha": 4.7
+            },
+            {
+              "treatment": "K80",
+              "dry_season_t_ha": 3.4,
+              "wet_season_t_ha": 4.9
+            },
+            {
+              "treatment": "K20 + Straw",
+              "dry_season_t_ha": 3.2,
+              "wet_season_t_ha": 4.4
+            },
+            {
+              "treatment": "K30 + Straw",
+              "dry_season_t_ha": 3.5,
+              "wet_season_t_ha": 5.2
+            },
+            {
+              "treatment": "K40 + Straw",
+              "dry_season_t_ha": 3.1,
+              "wet_season_t_ha": 4.9
+            },
+            {
+              "treatment": "Straw",
+              "dry_season_t_ha": 2.8,
+              "wet_season_t_ha": 4.6
+            },
+            {
+              "treatment": "K40 + 1% KNO3 spray",
+              "dry_season_t_ha": 3.8,
+              "wet_season_t_ha": 5.4
+            }
+          ],
+          "units": "t ha⁻¹",
+          "statistical_measures": {
+            "LSD_0.05_dry_season": 0.6,
+            "LSD_0.05_wet_season": 0.6
+          },
+          "measurement_context": "Grain yield at harvest for dry and wet seasons"
+        },
+        {
+          "parameter": "Plant K uptake (total)",
+          "values": [
+            {
+              "treatment": "T1",
+              "dry_season_kg_ha": 74,
+              "wet_season_kg_ha": 87
+            },
+            {
+              "treatment": "T4",
+              "dry_season_kg_ha": 147,
+              "wet_season_kg_ha": 156
+            },
+            {
+              "treatment": "T5",
+              "wet_season_kg_ha": 87
+            }
+          ],
+          "units": "kg ha⁻¹",
+          "statistical_measures": {},
+          "measurement_context": "Total K uptake at harvest"
+        },
+        {
+          "parameter": "Plant K uptake (Maximum Tillering)",
+          "values": [
+            {
+              "treatment": "T8",
+              "dry_season_kg_ha": 16.1,
+              "wet_season_kg_ha": 21.9
+            },
+            {
+              "treatment": "T9",
+              "dry_season_kg_ha": 19.1
+            },
+            {
+              "treatment": "T4",
+              "wet_season_kg_ha": 30.7
+            }
+          ],
+          "units": "kg ha⁻¹",
+          "statistical_measures": {},
+          "measurement_context": "K uptake at Maximum Tillering stage"
+        }
+      ],
+      "measurement_count": 10,
+      "has_statistical_measures": true
+    },
+    "human": {
+      "sample_measurements": [
+        {
+          "parameter": "Rice grain yield - dry season",
+          "values": [
+            2.7,
+            3.2,
+            3.5,
+            3.4,
+            3.2,
+            3.5,
+            3.1,
+            2.8,
+            3.8
+          ],
+          "units": "t ha⁻¹",
+          "statistical_measures": {
+            "mean": 3.24,
+            "standard_error": null,
+            "confidence_interval": "",
+            "sample_size": 9,
+            "LSD_0.05": 0.6
+          },
+          "measurement_context": "Range from control (T1: 2.7) to foliar spray treatment (T9: 3.8)"
+        },
+        {
+          "parameter": "Rice grain yield - wet season",
+          "values": [
+            4.2,
+            4.3,
+            4.7,
+            4.9,
+            4.4,
+            5.2,
+            4.9,
+            4.6,
+            5.4
+          ],
+          "units": "t ha⁻¹",
+          "statistical_measures": {
+            "mean": 4.73,
+            "standard_error": null,
+            "confidence_interval": "",
+            "sample_size": 9,
+            "LSD_0.05": 0.6
+          },
+          "measurement_context": "Range from control (T1: 4.2) to foliar spray treatment (T9: 5.4)"
+        },
+        {
+          "parameter": "Plant K uptake at maximum tillering - dry season",
+          "values": [
+            16.1,
+            19.1
+          ],
+          "units": "kg ha⁻¹",
+          "statistical_measures": {
+            "mean": 17.6,
+            "standard_error": null,
+            "confidence_interval": "",
+            "sample_size": 2
+          },
+          "measurement_context": "Range from T8 (straw only) to T9 (foliar spray)"
+        }
+      ],
+      "measurement_count": 15,
+      "has_statistical_measures": true
+    }
+  },
+  "statistical_completeness": {
+    "original": {
+      "total": 3,
+      "with_stats": 1,
+      "percentage": 33.33333333333333
+    },
+    "revised": {
+      "total": 10,
+      "with_stats": 1,
+      "percentage": 10.0
+    },
+    "human": {
+      "total": 15,
+      "with_stats": 15,
+      "percentage": 100.0
+    }
+  },
+  "gap_analysis": {
+    "original_gap": 80.55555555555556,
+    "revised_gap": 38.88888888888889,
+    "gap_reduction": 41.666666666666664
+  },
+  "total_items": {
+    "original": 7,
+    "revised": 22,
+    "human": 36
+  },
+  "cross_paper_consistency": {
+    "rice_improvement": 214.28571428571428,
+    "balance_improvement": 400
+  }
+}

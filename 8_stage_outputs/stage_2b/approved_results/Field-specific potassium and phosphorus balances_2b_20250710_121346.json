@@ -1,0 +1,2405 @@
+{
+  "stage_id": "2b",
+  "stage_name": "Soil K Validation",
+  "paper_id": "Field-specific potassium and phosphorus balances",
+  "processing_timestamp": "2025-07-10T12:13:46.489141",
+  "processing_time_seconds": 137.91037,
+  "processing_mode": "single_paper",
+  "validation_passed": true,
+  "validation_message": "Valid validation result",
+  "results": {
+    "scientific_accuracy_validation": {
+      "terminology_accuracy": {
+        "accurate": true,
+        "corrections_needed": [],
+        "clarifications_required": []
+      },
+      "parameter_extraction_accuracy": {
+        "accurate": true,
+        "measurement_errors": [],
+        "unit_corrections": []
+      },
+      "process_characterization_accuracy": {
+        "accurate": true,
+        "description_errors": [],
+        "mechanistic_corrections": []
+      }
+    },
+    "quantitative_data_validation": {
+      "numerical_accuracy": {
+        "verified": true,
+        "value_discrepancies": [],
+        "calculation_errors": []
+      },
+      "unit_preservation": {
+        "preserved": true,
+        "conversion_errors": [],
+        "standardization_issues": []
+      },
+      "statistical_accuracy": {
+        "verified": true,
+        "missing_statistics": [
+          "Coefficient of variation for some specific locations under 'Available Potassium (kg ha-1) among farmers' plots (India)'"
+        ],
+        "statistical_errors": []
+      }
+    },
+    "context_preservation_validation": {
+      "research_objective_accuracy": {
+        "preserved": true,
+        "mischaracterizations": [],
+        "context_omissions": []
+      },
+      "experimental_design_accuracy": {
+        "preserved": true,
+        "design_errors": [],
+        "scope_misrepresentations": []
+      },
+      "environmental_context_accuracy": {
+        "preserved": true,
+        "context_errors": [],
+        "setting_omissions": []
+      }
+    },
+    "methodological_validation": {
+      "analytical_method_accuracy": {
+        "accurate": true,
+        "method_mischaracterizations": [],
+        "protocol_errors": []
+      },
+      "sampling_design_accuracy": {
+        "accurate": true,
+        "design_errors": [],
+        "representativeness_issues": []
+      },
+      "quality_control_accuracy": {
+        "accurate": true,
+        "qc_omissions": [],
+        "precision_mischaracterizations": []
+      }
+    },
+    "temporal_spatial_validation": {
+      "temporal_accuracy": {
+        "accurate": true,
+        "timeline_errors": [],
+        "pattern_mischaracterizations": []
+      },
+      "spatial_accuracy": {
+        "accurate": true,
+        "location_errors": [],
+        "scale_misrepresentations": []
+      },
+      "variability_characterization": {
+        "accurate": true,
+        "variability_errors": [],
+        "scaling_mischaracterizations": []
+      }
+    },
+    "completeness_assessment": {
+      "data_completeness": {
+        "complete": false,
+        "missing_data": [
+          "Specific coefficient of variation for Ghoragacha village in India's available K data."
+        ],
+        "omitted_measurements": []
+      },
+      "methodological_completeness": {
+        "complete": true,
+        "missing_methods": [],
+        "incomplete_descriptions": []
+      },
+      "contextual_completeness": {
+        "complete": true,
+        "missing_context": [],
+        "insufficient_background": []
+      }
+    },
+    "validation_enhancements": {
+      "critical_corrections": [],
+      "completeness_improvements": [
+        {
+          "improvement_type": "Quantitative data enrichment",
+          "missing_information": "Coefficient of variation for Available Potassium in Ghoragacha village, India.",
+          "source_location": "Page 12, Table 9 and accompanying text.",
+          "addition_value": "Adds specific statistical detail to spatial variability data."
+        },
+        {
+          "improvement_type": "Contextual clarification for quantitative data",
+          "missing_information": "Specific yield potential range for QUEFTS-derived RIE values.",
+          "source_location": "Abstract and Page 7, Figure 2.",
+          "addition_value": "Provides important context for the applicability of the RIE values."
+        },
+        {
+          "improvement_type": "Methodological detail restructuring",
+          "missing_information": "Explicit method comparison for Ac-K vs NH4Ac.",
+          "source_location": "Page 13.",
+          "addition_value": "Improves logical structuring of methodological details."
+        }
+      ],
+      "context_clarifications": []
+    },
+    "enhanced_soil_k_extraction": {
+      "paper_metadata": {
+        "title": "Field-specific potassium and phosphorus balances and fertilizer requirements for irrigated rice-based cropping systems",
+        "authors": [
+          "Roland J Buresh",
+          "Mirasol F Pampolino",
+          "Christian Witt"
+        ],
+        "journal": "Proceedings—IPI-OUAT-IPNI International Symposium",
+        "publication_year": 2009,
+        "research_focus": "Determining field-specific K and P fertilizer requirements for irrigated rice-based cropping systems using site-specific nutrient management (SSNM), reciprocal internal efficiency (RIE), and nutrient balances.",
+        "soil_k_relevance": "Soil potassium dynamics, balances, and fertilizer recommendations are central to the study, including K accumulation in plants, K release from soil, and the impact of management practices on soil K pools."
+      },
+      "research_context": {
+        "study_objectives": "1) To determine the relationship between rice grain yield and N, P, and K accumulation in total above-ground plant dry matter to confirm RIE values for K and P. 2) To assess field-level K and P nutrient balances, factors, uncertainties, and emerging trends affecting fertilizer requirements for rice–rice, rice–wheat, and rice–maize cropping systems. 3) To examine and compare revised approaches for calculating field-specific K and P fertilizer rates that consider soil processes and balance profitability and sustainability.",
+        "soil_k_research_role": "The research aims to refine algorithms for determining field-specific K fertilizer requirements by integrating internal nutrient efficiency, nutrient balances, and yield gains, considering soil processes and economic trade-offs.",
+        "geographic_setting": "Irrigated rice production areas in seven countries across tropical and subtropical environments in Asia (Bangladesh, China, India, Indonesia, Philippines, Thailand, Vietnam). Specific locations mentioned for irrigation water analysis include Zhejiang (China), Cauvery Delta (India), West Java (Indonesia), Bohol and Iloilo (Philippines), Central Plain (Thailand), Red River Delta and Mekong Delta (Vietnam).",
+        "environmental_conditions": "Irrigated rice, water rarely limited plant growth. Semiarid monsoon climate in Shanxi province (China) with average annual rainfall of 405 mm and average temperature of 8.5°C. Tropical monsoon climate in Orissa (India) with high humidity and rainfall (1497 mm). Long-term grass rotation experiment in NE Scotland with mean annual temperature 7.9°C and rainfall 791 mm.",
+        "agricultural_context": "Intensive rice-based cropping systems (rice-rice, rice-wheat, rice-maize). Continuous rice cultivation (two to three crops/year) common in tropical Asia. Rice in rotation with other crops, particularly wheat, common in subtropical Asia. Increasing rotation of maize with irrigated rice. Small and spatially variable plots. Use of modern high-yielding indica cultivars with good agronomic practices. Organic materials (composted animal manure, green manures) and crop residue management are considered.",
+        "study_design": "For RIE determination: Compilation of >8000 plot-level observations from nutrient omission trials, fertilizer evaluation trials, and on-station experiments. Data grouped by nutrient. Excluded plots with suspected yield loss, unbalanced fertilization, or harvest index <0.4. For K/P balances and fertilizer rates: QUEFTS model, simple nutrient balances, yield gain approach, partial maintenance approach (fractional and limited depletion), and combined approaches. Long-term grass rotation experiment: Randomized block design with two K treatments (K0, K65) and five replicates over 30 years (Grass I, Cereals, Grass II phases). Soil fertility mapping: 100x100 m grid sampling (280 samples) in a 245 ha village.",
+        "temporal_scope": "RIE data: 1991-2007 (Philippines on-station), 1997-2004 (on-farm trials). K balances and fertilizer rates: based on current RIEs and typical cropping cycles. Long-term grass rotation experiment: 30 years (1968-1998), with annual soil sampling (1968-1987) and specific sampling in 1998. State-wise nutrient balances: 2007-08 data, compared with 1998-99 or 1999-2000.",
+        "spatial_scope": "RIE data: Plot-level observations from seven countries across Asia. K balances: Single rice crop, one rice–wheat cropping cycle, one rice–maize cropping cycle. Irrigation water K: Samples from eight rice-growing areas across six countries. Soil fertility mapping: Ershilipu village, Xinzhou city, Shanxi Province, China (245 ha, 443 farmer's plots). Long-term grass rotation experiment: Single experimental site in NE Scotland. State-wise nutrient balances: Major agriculturally important states of India (Assam, Bihar, Jharkhand, Orissa, West Bengal, Haryana, Punjab, Uttar Pradesh, Andhra Pradesh, Karnataka, Kerala, Tamil Nadu, Gujarat, Madhya Pradesh, Rajasthan, Maharashtra)."
+      },
+      "quantitative_soil_k_data": {
+        "concentration_measurements": [
+          {
+            "parameter": "Reciprocal Internal Efficiency (RIE) for Plant K",
+            "values": [
+              17.8
+            ],
+            "original_units": "kg nutrient in above-ground dry matter per 1000 kg grain",
+            "measurement_method": "Plant analysis (NPK fertilized plots, HI=0.4-0.63)",
+            "sample_context": "Full fertilized plots (NPK)",
+            "temporal_context": "Maturity of irrigated rice",
+            "spatial_context": "Across Asia (n=8521 observations)",
+            "statistical_measures": {
+              "mean": 17.8,
+              "standard_deviation": 4.6,
+              "25th_quartile": 14.2,
+              "median": 17.2,
+              "75th_quartile": 20.8
+            }
+          },
+          {
+            "parameter": "Reciprocal Internal Efficiency (RIE) for Plant K",
+            "values": [
+              14.8
+            ],
+            "original_units": "kg nutrient in above-ground dry matter per 1000 kg grain",
+            "measurement_method": "Plant analysis (-K plots, HI=0.4-0.63)",
+            "sample_context": "Nutrient omission plots (-K)",
+            "temporal_context": "Maturity of irrigated rice",
+            "spatial_context": "Across Asia (n=462 observations)",
+            "statistical_measures": {
+              "mean": 14.8,
+              "standard_deviation": 5.5,
+              "25th_quartile": 11.0,
+              "median": 12.4,
+              "75th_quartile": 18.4
+            }
+          },
+          {
+            "parameter": "Reciprocal Internal Efficiency (RIE) for Plant K (QUEFTS-derived)",
+            "values": [
+              15.9
+            ],
+            "original_units": "kg nutrient in above-ground dry matter per 1000 kg grain",
+            "measurement_method": "QUEFTS model (linear portion of relationship)",
+            "sample_context": "NPK fertilized plots with harvest index (HI) = 0.4 to 0.63",
+            "temporal_context": "Maturity of irrigated rice",
+            "spatial_context": "Across Asia",
+            "statistical_measures": {
+              "applicability_context": "Corresponds to 60% to 70% of yield potential"
+            }
+          },
+          {
+            "parameter": "Reciprocal Internal Efficiency (RIE) for Plant K (QUEFTS-derived)",
+            "values": [
+              15.9,
+              15.9,
+              16.0,
+              16.3,
+              17.0,
+              17.7,
+              18.7
+            ],
+            "original_units": "kg nutrient in above-ground dry matter per 1000 kg grain",
+            "measurement_method": "QUEFTS model (at different target grain yields)",
+            "sample_context": "NPK fertilized plots with harvest index (HI) = 0.4 to 0.63, yield potential set to 10 t ha-1",
+            "temporal_context": "Maturity of irrigated rice",
+            "spatial_context": "Across Asia",
+            "statistical_measures": {
+              "grain_yield_kg_ha": [
+                5000,
+                6000,
+                7000,
+                7500,
+                8000,
+                8500,
+                9000
+              ],
+              "percentage_of_yield_potential": [
+                50,
+                60,
+                70,
+                75,
+                80,
+                85,
+                90
+              ]
+            }
+          },
+          {
+            "parameter": "Reciprocal Internal Efficiency (RIE) for Plant K (by Harvest Index)",
+            "values": [
+              27.3,
+              19.1,
+              16.1
+            ],
+            "original_units": "kg nutrient in above-ground dry matter per 1000 kg grain",
+            "measurement_method": "Plant analysis (entire data set)",
+            "sample_context": "All data (n=8983 for HI 0.4-0.63, n=564 for HI 0.2-0.4)",
+            "temporal_context": "Maturity of irrigated rice",
+            "spatial_context": "Across Asia",
+            "statistical_measures": {
+              "harvest_index_range": [
+                "0.2-0.4",
+                "0.4-0.5",
+                "0.5-0.63"
+              ],
+              "mean": [
+                27.3,
+                19.1,
+                16.1
+              ],
+              "standard_deviation": [
+                8.1,
+                5.0,
+                3.8
+              ],
+              "median": [
+                27.6,
+                18.7,
+                15.4
+              ]
+            }
+          },
+          {
+            "parameter": "Nutrient Harvest Index (HI) for K",
+            "values": [
+              0.16
+            ],
+            "original_units": "kg nutrient in grain per kg nutrient in total above-ground dry matter",
+            "measurement_method": "Plant analysis",
+            "sample_context": "NPK fertilized plots with HI = 0.4 to 0.63",
+            "temporal_context": "Maturity of irrigated rice",
+            "spatial_context": "Across Asia (n=8521 observations)",
+            "statistical_measures": {
+              "mean": 0.16,
+              "standard_deviation": 0.06,
+              "25th_quartile": 0.12,
+              "median": 0.15,
+              "75th_quartile": 0.19
+            }
+          },
+          {
+            "parameter": "K concentration in irrigation water",
+            "values": [
+              2.5
+            ],
+            "original_units": "mg L-1",
+            "measurement_method": "Water sample analysis",
+            "sample_context": "Irrigation water collected from canals of gravity-fed irrigation systems and from tube wells",
+            "temporal_context": "Not specified, likely during cropping seasons",
+            "spatial_context": "Eight rice-growing areas across six countries in Asia (n=245 samples)",
+            "statistical_measures": {
+              "mean": 2.5,
+              "standard_deviation": 2.4,
+              "25th_quartile": 1.3,
+              "median": 1.8,
+              "75th_quartile": 2.8,
+              "range_across_locations_median": "1.2 to 3.9 mg L-1"
+            }
+          },
+          {
+            "parameter": "K concentration in irrigation water (specific locations)",
+            "values": [],
+            "original_units": "mg L-1",
+            "measurement_method": "Water sample analysis",
+            "sample_context": "Irrigation water from Bohol (Philippines) and Iloilo (Philippines)",
+            "temporal_context": "Not specified",
+            "spatial_context": "Bohol (n=13), Iloilo (n=22)",
+            "statistical_measures": {
+              "bohol_range": "0.3 to 1.5",
+              "bohol_50percent_range": "1.2 to 1.4",
+              "iloilo_range": "2.0 to 6.1",
+              "iloilo_50percent_range": "3.3 to 4.2"
+            }
+          },
+          {
+            "parameter": "K concentration in tube-well water (Northwest India)",
+            "values": [
+              5.1
+            ],
+            "original_units": "mg L-1",
+            "measurement_method": "Water sample analysis (Pasricha et al. 2001)",
+            "sample_context": "Tube wells in central plain region of Punjab",
+            "temporal_context": "Not specified",
+            "spatial_context": "Northwest India (n=242 samples)",
+            "statistical_measures": {
+              "range": "0.87 to 38.2",
+              "mean": 5.1
+            }
+          },
+          {
+            "parameter": "Available Potassium (K) in soil (Shanxi, China)",
+            "values": [
+              88.3
+            ],
+            "original_units": "mg L-1",
+            "measurement_method": "0.25 M/L NaHCO3, 0.01 M/L EDTA and 0.01 M/L NH4F extraction, Atomic Absorption Spectrophotometer",
+            "sample_context": "Plow layer (0-20 cm) soil samples",
+            "temporal_context": "Prior to maize sowing",
+            "spatial_context": "Ershilipu village, Shanxi Province, China (n=280 samples)",
+            "statistical_measures": {
+              "minimum_value": 47,
+              "maximum_value": 137,
+              "mean": 88.3,
+              "standard_deviation": 16.6,
+              "coefficient_of_variation": 18.8,
+              "critical_value": 78,
+              "percentage_below_critical": 23
+            }
+          },
+          {
+            "parameter": "Water soluble K (West Bengal, India)",
+            "values": [
+              0.042
+            ],
+            "original_units": "cmol(p+) kg-1",
+            "measurement_method": "Not specified",
+            "sample_context": "Selected rice growing soils in alluvial tract of West Bengal (Nadia district)",
+            "temporal_context": "Not specified",
+            "spatial_context": "Three adjacent blocks of Nadia district",
+            "statistical_measures": {
+              "minimum": 0.02,
+              "maximum": 0.066,
+              "mean": 0.042,
+              "standard_deviation": 0.014,
+              "coefficient_of_variation": 33.96
+            }
+          },
+          {
+            "parameter": "Exchangeable K (West Bengal, India)",
+            "values": [
+              0.121
+            ],
+            "original_units": "cmol(p+) kg-1",
+            "measurement_method": "Not specified",
+            "sample_context": "Selected rice growing soils in alluvial tract of West Bengal (Nadia district)",
+            "temporal_context": "Not specified",
+            "spatial_context": "Three adjacent blocks of Nadia district",
+            "statistical_measures": {
+              "minimum": 0.017,
+              "maximum": 0.329,
+              "mean": 0.121,
+              "standard_deviation": 0.064,
+              "coefficient_of_variation": 52.87
+            }
+          },
+          {
+            "parameter": "Available K (West Bengal, India)",
+            "values": [
+              0.163
+            ],
+            "original_units": "cmol(p+) kg-1",
+            "measurement_method": "Not specified",
+            "sample_context": "Selected rice growing soils in alluvial tract of West Bengal (Nadia district)",
+            "temporal_context": "Not specified",
+            "spatial_context": "Three adjacent blocks of Nadia district",
+            "statistical_measures": {
+              "minimum": 0.093,
+              "maximum": 0.35,
+              "mean": 0.163,
+              "standard_deviation": 0.056,
+              "coefficient_of_variation": 34.39
+            }
+          },
+          {
+            "parameter": "Nonexchangeable K (West Bengal, India)",
+            "values": [
+              4.15
+            ],
+            "original_units": "cmol(p+) kg-1",
+            "measurement_method": "Not specified",
+            "sample_context": "Selected rice growing soils in alluvial tract of West Bengal (Nadia district)",
+            "temporal_context": "Not specified",
+            "spatial_context": "Three adjacent blocks of Nadia district",
+            "statistical_measures": {
+              "minimum": 2.83,
+              "maximum": 6.07,
+              "mean": 4.15,
+              "standard_deviation": 0.83,
+              "coefficient_of_variation": 20.12
+            }
+          },
+          {
+            "parameter": "Available Potassium (kg ha-1) among farmers' plots (India)",
+            "values": [],
+            "original_units": "kg ha-1",
+            "measurement_method": "Not specified",
+            "sample_context": "Alluvial and red and lateritic soil zones",
+            "temporal_context": "2006-07",
+            "spatial_context": "Within villages (Ghoragacha, Sripurdanga, Bahadurpur, Meherpur, Barhu Simatoli)",
+            "statistical_measures": {
+              "Ghoragacha_Nadia_WB": {
+                "maximum": 640,
+                "minimum": 96,
+                "mean": 283,
+                "standard_deviation": 109,
+                "cv_percent": 39
+              },
+              "Sripurdanga_Murshidabad_WB": {
+                "maximum": 448,
+                "minimum": 87,
+                "mean": 254,
+                "standard_deviation": 93,
+                "cv_percent": 37
+              },
+              "Bahadurpur_Birbhum_WB": {
+                "maximum": 150,
+                "minimum": 96,
+                "mean": 110,
+                "standard_deviation": 9,
+                "cv_percent": 8
+              },
+              "Meherpur_Birbhum_WB": {
+                "maximum": 494,
+                "minimum": 24,
+                "mean": 168,
+                "standard_deviation": 113,
+                "cv_percent": 68
+              },
+              "Barhu_Simatoli_Ranchi_Jharkhand": {
+                "maximum": 356,
+                "minimum": 61,
+                "mean": 142,
+                "standard_deviation": 71,
+                "cv_percent": 50
+              }
+            }
+          },
+          {
+            "parameter": "NH4OAc-K (Exchangeable K)",
+            "values": [],
+            "original_units": "mg kg-1",
+            "measurement_method": "Ammonium acetate extraction",
+            "sample_context": "Benchmark soils supporting rice-based cropping system in Indo-Gangetic Plains",
+            "temporal_context": "First sampling vs. After 10 years",
+            "spatial_context": "Nabha (Punjab), Akbarpur (UP), Rarha (UP), Hanrgram (WB), Kharbona (WB)",
+            "statistical_measures": {
+              "Nabha_Punjab": {
+                "first_sampling": 104,
+                "after_10_years": 63
+              },
+              "Akbarpur_UP": {
+                "first_sampling": 125,
+                "after_10_years": 71
+              },
+              "Rarha_UP": {
+                "first_sampling": 95,
+                "after_10_years": 79
+              },
+              "Hanrgram_WB": {
+                "first_sampling": 132,
+                "after_10_years": 93
+              },
+              "Kharbona_WB": {
+                "first_sampling": 42,
+                "after_10_years": 29
+              }
+            }
+          },
+          {
+            "parameter": "HNO3-K (Non-exchangeable K)",
+            "values": [],
+            "original_units": "mg kg-1",
+            "measurement_method": "Nitric acid extraction",
+            "sample_context": "Benchmark soils supporting rice-based cropping system in Indo-Gangetic Plains",
+            "temporal_context": "First sampling vs. After 10 years",
+            "spatial_context": "Nabha (Punjab), Akbarpur (UP), Rarha (UP), Hanrgram (WB), Kharbona (WB)",
+            "statistical_measures": {
+              "Nabha_Punjab": {
+                "first_sampling": 965,
+                "after_10_years": 875
+              },
+              "Akbarpur_UP": {
+                "first_sampling": 1448,
+                "after_10_years": 1231
+              },
+              "Rarha_UP": {
+                "first_sampling": 1531,
+                "after_10_years": 1497
+              },
+              "Hanrgram_WB": {
+                "first_sampling": 425,
+                "after_10_years": 400
+              },
+              "Kharbona_WB": {
+                "first_sampling": 119,
+                "after_10_years": 109
+              }
+            }
+          },
+          {
+            "parameter": "Total K content in soils (Orissa)",
+            "values": [],
+            "original_units": "%",
+            "measurement_method": "Not specified",
+            "sample_context": "Different soil types in Orissa",
+            "temporal_context": "Not specified",
+            "spatial_context": "Orissa",
+            "statistical_measures": {
+              "laterite_soils_range": "0.30 to 1.20",
+              "mixed_red_and_black_soils_range": "1.62 to 6.03",
+              "alluvial_soils_range": "0.68 to 2.41",
+              "coastal_saline_soils_range": "1.77 to 3.01"
+            }
+          },
+          {
+            "parameter": "Non-exchangeable K as % of Total K (Orissa)",
+            "values": [],
+            "original_units": "%",
+            "measurement_method": "Not specified",
+            "sample_context": "Different soil types in Orissa",
+            "temporal_context": "Not specified",
+            "spatial_context": "Orissa",
+            "statistical_measures": {
+              "range": "21 to 64",
+              "highest_in": "alluvial soils"
+            }
+          },
+          {
+            "parameter": "Exchangeable K as % of Total K (Orissa)",
+            "values": [],
+            "original_units": "%",
+            "measurement_method": "Not specified",
+            "sample_context": "Different soil types in Orissa",
+            "temporal_context": "Not specified",
+            "spatial_context": "Orissa",
+            "statistical_measures": {
+              "range": "12.5 to 35.7"
+            }
+          },
+          {
+            "parameter": "Total K in rice-groundnut soils (Orissa)",
+            "values": [],
+            "original_units": "mg kg-1",
+            "measurement_method": "Not specified",
+            "sample_context": "Alhagarh, Cuttack district",
+            "temporal_context": "Not specified",
+            "spatial_context": "Orissa",
+            "statistical_measures": {
+              "range": "950 to 2400"
+            }
+          },
+          {
+            "parameter": "Ammonium acetate extractable K as % of Total K (Orissa)",
+            "values": [],
+            "original_units": "%",
+            "measurement_method": "Not specified",
+            "sample_context": "Alhagarh, Cuttack district",
+            "temporal_context": "Not specified",
+            "spatial_context": "Orissa",
+            "statistical_measures": {
+              "range": "3 to 12"
+            }
+          },
+          {
+            "parameter": "Non-exchangeable K as % of Total K (Orissa)",
+            "values": [],
+            "original_units": "%",
+            "measurement_method": "Not specified",
+            "sample_context": "Alhagarh, Cuttack district",
+            "temporal_context": "Not specified",
+            "spatial_context": "Orissa",
+            "statistical_measures": {
+              "range": "14 to 45"
+            }
+          },
+          {
+            "parameter": "Lattice-K as % of Total K (Orissa)",
+            "values": [],
+            "original_units": "%",
+            "measurement_method": "Not specified",
+            "sample_context": "Alhagarh, Cuttack district",
+            "temporal_context": "Not specified",
+            "spatial_context": "Orissa",
+            "statistical_measures": {
+              "range": "48 to 80"
+            }
+          },
+          {
+            "parameter": "Total K content in rice-pulse soils (Orissa)",
+            "values": [],
+            "original_units": "mg kg-1",
+            "measurement_method": "Not specified",
+            "sample_context": "Khajuripada block, Kandhamal district (watershed)",
+            "temporal_context": "Not specified",
+            "spatial_context": "Orissa",
+            "statistical_measures": {
+              "range": "1100 to 2600"
+            }
+          },
+          {
+            "parameter": "Lattice K as % of Total K (Orissa)",
+            "values": [],
+            "original_units": "%",
+            "measurement_method": "Not specified",
+            "sample_context": "Khajuripada block, Kandhamal district (watershed)",
+            "temporal_context": "Not specified",
+            "spatial_context": "Orissa",
+            "statistical_measures": {
+              "range": "53 to 73"
+            }
+          },
+          {
+            "parameter": "Non-exchangeable K as % of Total K (Orissa)",
+            "values": [],
+            "original_units": "%",
+            "measurement_method": "Not specified",
+            "sample_context": "Khajuripada block, Kandhamal district (watershed)",
+            "temporal_context": "Not specified",
+            "spatial_context": "Orissa",
+            "statistical_measures": {
+              "range": "24.8 to 41.8"
+            }
+          },
+          {
+            "parameter": "Exchangeable K as % of Total K (Orissa)",
+            "values": [],
+            "original_units": "%",
+            "measurement_method": "Not specified",
+            "sample_context": "Khajuripada block, Kandhamal district (watershed)",
+            "temporal_context": "Not specified",
+            "spatial_context": "Orissa",
+            "statistical_measures": {
+              "range": "2.8 to 3.7"
+            }
+          },
+          {
+            "parameter": "K saturation of broad soil groups (Orissa)",
+            "values": [],
+            "original_units": "%",
+            "measurement_method": "Not specified",
+            "sample_context": "Broad soil groups of Orissa",
+            "temporal_context": "Not specified",
+            "spatial_context": "Orissa",
+            "statistical_measures": {
+              "black_soils": 5.54,
+              "coastal_saline_soils": 4.32,
+              "laterite_soils": 2.7,
+              "alluvial_soils": 2.35
+            }
+          },
+          {
+            "parameter": "Herbage K concentration (long-term grass experiment)",
+            "values": [],
+            "original_units": "% (dw)",
+            "measurement_method": "Plant analysis (wet-digestion, flame photometry/ICP-AES)",
+            "sample_context": "Ryegrass herbage",
+            "temporal_context": "Annual average over 30 years (1969-1997)",
+            "spatial_context": "Craigiebuckler, NE Scotland",
+            "statistical_measures": {
+              "K0_range": "0.5-0.7",
+              "K65_range": "1.1-1.7"
+            }
+          },
+          {
+            "parameter": "Herbage K concentration (long-term grass experiment, individual cuts)",
+            "values": [],
+            "original_units": "% (dw)",
+            "measurement_method": "Plant analysis",
+            "sample_context": "Ryegrass herbage (Grass II phase)",
+            "temporal_context": "Individual cuts (Cut 1, 2, 3)",
+            "spatial_context": "Craigiebuckler, NE Scotland",
+            "statistical_measures": {
+              "K0_cut1_mean": 0.74,
+              "K0_cut2_mean": 0.71,
+              "K0_cut3_mean": 0.75,
+              "K65_cut1_mean": 1.48,
+              "K65_cut2_mean": 1.12,
+              "K65_cut3_mean": 1.0
+            }
+          },
+          {
+            "parameter": "K 'uptake' rate (long-term grass experiment)",
+            "values": [],
+            "original_units": "kg ha-1 d-1",
+            "measurement_method": "Calculated from K removal by cut and days of growth",
+            "sample_context": "Ryegrass herbage (Grass II phase)",
+            "temporal_context": "Individual cuts (Cut 1, 2, 3)",
+            "spatial_context": "Craigiebuckler, NE Scotland",
+            "statistical_measures": {
+              "K0_cut1_mean": 0.4,
+              "K0_cut2_mean": 0.26,
+              "K0_cut3_mean": 0.14,
+              "K65_cut1_mean": 1.15,
+              "K65_cut2_mean": 0.57,
+              "K65_cut3_mean": 0.24
+            }
+          },
+          {
+            "parameter": "Acetic acid extractable K (Ac-K) in soil (long-term grass experiment)",
+            "values": [],
+            "original_units": "mg K kg-1 soil",
+            "measurement_method": "2.5% acetic acid extraction, flame photometry/ICP-AES",
+            "sample_context": "Ap-horizon (0-15 cm) soil",
+            "temporal_context": "Annually (1969-1987), then 1990, 1991, 1998",
+            "spatial_context": "Craigiebuckler, NE Scotland",
+            "statistical_measures": {
+              "K0_range": "30-60",
+              "K65_range": "40-80",
+              "average_GrassI_K0": 39,
+              "average_GrassII_K0": 28
+            }
+          },
+          {
+            "parameter": "Total K (Tot-K) in soil profile (long-term grass experiment)",
+            "values": [],
+            "original_units": "g kg-1",
+            "measurement_method": "X-ray fluorescence (XRF)",
+            "sample_context": "<2mm fraction of soil horizons",
+            "temporal_context": "30 years after start (1998)",
+            "spatial_context": "Craigiebuckler, NE Scotland",
+            "statistical_measures": {
+              "K0_Ap1_mean": 22.9,
+              "K0_Bs_mean": 27.4,
+              "K0_BC_mean": 28.5,
+              "K65_Ap1_mean": 22.7,
+              "K65_Bs_mean": 28.1,
+              "K65_BC_mean": 28.5,
+              "range_across_horizons": "22.7-28.5"
+            }
+          },
+          {
+            "parameter": "Aqua-regia extractable K (Aq-K) in soil profile (long-term grass experiment)",
+            "values": [],
+            "original_units": "g kg-1",
+            "measurement_method": "3:1 50% HCl:conc. HNO3 extraction, ICP-AES",
+            "sample_context": "<2mm fraction of soil horizons (composite samples)",
+            "temporal_context": "30 years after start (1998)",
+            "spatial_context": "Craigiebuckler, NE Scotland",
+            "statistical_measures": {
+              "K0_Ap1": 3.74,
+              "K0_Bs": 5.39,
+              "K0_BC": 6.76,
+              "K65_Ap1": 3.71,
+              "K65_Bs": 5.0,
+              "K65_BC": 6.76,
+              "range_across_horizons": "3.71-6.76"
+            }
+          },
+          {
+            "parameter": "Acetic acid extractable K (Ac-K) in soil profile (long-term grass experiment)",
+            "values": [],
+            "original_units": "mg kg-1",
+            "measurement_method": "2.5% acetic acid extraction, ICP-AES",
+            "sample_context": "<2mm fraction of soil horizons",
+            "temporal_context": "30 years after start (1998)",
+            "spatial_context": "Craigiebuckler, NE Scotland",
+            "statistical_measures": {
+              "K0_Ap1_mean": 53.0,
+              "K0_Bs_mean": 33.0,
+              "K0_BC_mean": 41.9,
+              "K65_Ap1_mean": 69.1,
+              "K65_Bs_mean": 31.3,
+              "K65_BC_mean": 41.9,
+              "range_across_horizons": "30.3-69.1"
+            }
+          },
+          {
+            "parameter": "K in K-bearing minerals (long-term grass experiment)",
+            "values": [],
+            "original_units": "kg K ha-1",
+            "measurement_method": "Quantitative XRPD and normative calculations",
+            "sample_context": "Soil horizons",
+            "temporal_context": "30 years after start (1998)",
+            "spatial_context": "Craigiebuckler, NE Scotland",
+            "statistical_measures": {
+              "K_feldspar_0_40cm": 39910,
+              "muscovite_0_40cm": 20660,
+              "illite_0_40cm": 1490,
+              "biotite_0_40cm": 1800,
+              "hydrobiotite_0_40cm": 6180,
+              "total_mineral_K_0_40cm": 70020,
+              "biotite_hydrobiotite_0_40cm": 7980,
+              "biotite_hydrobiotite_C_horizon": 13600
+            }
+          },
+          {
+            "parameter": "K application rate (India)",
+            "values": [],
+            "original_units": "kg ha-1",
+            "measurement_method": "Survey data",
+            "sample_context": "Rice-wheat system",
+            "temporal_context": "Not specified",
+            "spatial_context": "Indo-Gangetic Plains (IGP)",
+            "statistical_measures": {
+              "SSNM_plots_range": "50 to 66 kg ha-1 crop-1",
+              "average_farmer_rate": "30 kg ha-1 crop-1"
+            }
+          },
+          {
+            "parameter": "Economically optimum potassium rates (India)",
+            "values": [],
+            "original_units": "kg K2O ha-1",
+            "measurement_method": "Multi-location trials",
+            "sample_context": "Rice-wheat and rice-rice systems",
+            "temporal_context": "Mean of two years",
+            "spatial_context": "17 locations across India",
+            "statistical_measures": {
+              "rice_wheat_system_range": "143 to 196",
+              "rice_rice_system_range": "72 to 188"
+            }
+          },
+          {
+            "parameter": "Response to potassium (India)",
+            "values": [],
+            "original_units": "kg rice grain equivalent kg-1 nutrient",
+            "measurement_method": "On-farm trials",
+            "sample_context": "Rice-based cropping systems",
+            "temporal_context": "Not specified",
+            "spatial_context": "32 centers in different agro-climatic zones",
+            "statistical_measures": {
+              "rice_rice": 16.2,
+              "rice_wheat": 14.0,
+              "rice_groundnut": 24.6,
+              "rice_chickpea": 11.7,
+              "rice_mustard": 17.3,
+              "rice_tomato": 51.0
+            }
+          },
+          {
+            "parameter": "Grain yield response to K over NP (India)",
+            "values": [],
+            "original_units": "t ha-1",
+            "measurement_method": "AICRP on Cropping System",
+            "sample_context": "Rice-wheat system",
+            "temporal_context": "2006-07",
+            "spatial_context": "Modipuram, Fatehgarh Sahib, Sabour, Pantnagar, Varanasi, Banda",
+            "statistical_measures": {
+              "rice_range": "0.40 to 0.79",
+              "wheat_range": "0.13 to 0.68"
+            }
+          },
+          {
+            "parameter": "K application rate (Orissa)",
+            "values": [
+              7.2
+            ],
+            "original_units": "kg ha-1",
+            "measurement_method": "Agricultural Statistics of Orissa",
+            "sample_context": "State-level fertilizer consumption",
+            "temporal_context": "2007-08",
+            "spatial_context": "Orissa",
+            "statistical_measures": {
+              "N_P2O5_K2O_ratio": "4.3:2.2:1"
+            }
+          },
+          {
+            "parameter": "K application rate (Assam)",
+            "values": [
+              15.0
+            ],
+            "original_units": "kg ha-1",
+            "measurement_method": "State-level fertilizer consumption",
+            "sample_context": "State-level fertilizer consumption",
+            "temporal_context": "Current",
+            "spatial_context": "Assam",
+            "statistical_measures": {
+              "N_P2O5_K2O_ratio": "1.8:0.9:1.0"
+            }
+          },
+          {
+            "parameter": "K application rate (Bihar)",
+            "values": [
+              11.4
+            ],
+            "original_units": "kg ha-1",
+            "measurement_method": "State-level fertilizer consumption",
+            "sample_context": "State-level fertilizer consumption",
+            "temporal_context": "Current",
+            "spatial_context": "Bihar",
+            "statistical_measures": {
+              "N_P2O5_K2O_ratio": "9.9:2.2:1.0"
+            }
+          },
+          {
+            "parameter": "K application rate (Jharkhand)",
+            "values": [
+              4.6
+            ],
+            "original_units": "kg ha-1",
+            "measurement_method": "State-level fertilizer consumption",
+            "sample_context": "State-level fertilizer consumption",
+            "temporal_context": "Current",
+            "spatial_context": "Jharkhand",
+            "statistical_measures": {
+              "N_P2O5_K2O_ratio": "9.2:4.7:1"
+            }
+          },
+          {
+            "parameter": "K application rate (West Bengal)",
+            "values": [
+              31.9
+            ],
+            "original_units": "kg ha-1",
+            "measurement_method": "State-level fertilizer consumption",
+            "sample_context": "State-level fertilizer consumption",
+            "temporal_context": "Current",
+            "spatial_context": "West Bengal",
+            "statistical_measures": {
+              "N_P2O5_K2O_ratio": "2.4:1.2:1.0"
+            }
+          },
+          {
+            "parameter": "K application rate (Haryana)",
+            "values": [
+              3.6
+            ],
+            "original_units": "kg ha-1",
+            "measurement_method": "State-level fertilizer consumption",
+            "sample_context": "State-level fertilizer consumption",
+            "temporal_context": "Current",
+            "spatial_context": "Haryana",
+            "statistical_measures": {
+              "N_P2O5_K2O_ratio": "59.7:18.6:1"
+            }
+          },
+          {
+            "parameter": "K application rate (Punjab)",
+            "values": [
+              4.7
+            ],
+            "original_units": "kg ha-1",
+            "measurement_method": "State-level fertilizer consumption",
+            "sample_context": "State-level fertilizer consumption",
+            "temporal_context": "Current",
+            "spatial_context": "Punjab",
+            "statistical_measures": {
+              "N_P2O5_K2O_ratio": "34.3:9.0:1"
+            }
+          },
+          {
+            "parameter": "K application rate (Uttar Pradesh)",
+            "values": [
+              7.3
+            ],
+            "original_units": "kg ha-1",
+            "measurement_method": "State-level fertilizer consumption",
+            "sample_context": "State-level fertilizer consumption",
+            "temporal_context": "Current",
+            "spatial_context": "Uttar Pradesh",
+            "statistical_measures": {
+              "N_P2O5_K2O_ratio": "16.0:5.3:1"
+            }
+          },
+          {
+            "parameter": "K application rate (Andhra Pradesh)",
+            "values": [
+              412.0
+            ],
+            "original_units": "thousand tonnes",
+            "measurement_method": "State-level fertilizer consumption",
+            "sample_context": "State-level fertilizer consumption",
+            "temporal_context": "2007-08",
+            "spatial_context": "Andhra Pradesh",
+            "statistical_measures": {
+              "N_P2O5_K2O_ratio": "4.4:2.1:1"
+            }
+          },
+          {
+            "parameter": "K application rate (Karnataka)",
+            "values": [
+              330.3
+            ],
+            "original_units": "thousand tonnes",
+            "measurement_method": "State-level fertilizer consumption",
+            "sample_context": "State-level fertilizer consumption",
+            "temporal_context": "2007-08",
+            "spatial_context": "Karnataka",
+            "statistical_measures": {
+              "N_P2O5_K2O_ratio": "2.4:1.2:1"
+            }
+          },
+          {
+            "parameter": "K application rate (Kerala)",
+            "values": [
+              72.3
+            ],
+            "original_units": "thousand tonnes",
+            "measurement_method": "State-level fertilizer consumption",
+            "sample_context": "State-level fertilizer consumption",
+            "temporal_context": "2007-08",
+            "spatial_context": "Kerala",
+            "statistical_measures": {
+              "N_P2O5_K2O_ratio": "1.3:0.5:1"
+            }
+          },
+          {
+            "parameter": "K application rate (Tamil Nadu)",
+            "values": [
+              304.2
+            ],
+            "original_units": "thousand tonnes",
+            "measurement_method": "State-level fertilizer consumption",
+            "sample_context": "State-level fertilizer consumption",
+            "temporal_context": "2007-08",
+            "spatial_context": "Tamil Nadu",
+            "statistical_measures": {
+              "N_P2O5_K2O_ratio": "2.0:0.7:1"
+            }
+          },
+          {
+            "parameter": "K application rate (Gujarat)",
+            "values": [
+              146.1
+            ],
+            "original_units": "thousand tonnes",
+            "measurement_method": "State-level fertilizer consumption",
+            "sample_context": "State-level fertilizer consumption",
+            "temporal_context": "2007-08",
+            "spatial_context": "Gujarat",
+            "statistical_measures": {
+              "N_P2O5_K2O_ratio": "7.3:2.9:1"
+            }
+          },
+          {
+            "parameter": "K application rate (Madhya Pradesh)",
+            "values": [
+              76.0
+            ],
+            "original_units": "thousand tonnes",
+            "measurement_method": "State-level fertilizer consumption",
+            "sample_context": "State-level fertilizer consumption",
+            "temporal_context": "2007-08",
+            "spatial_context": "Madhya Pradesh",
+            "statistical_measures": {
+              "N_P2O5_K2O_ratio": "10.5:5.7:1.0"
+            }
+          },
+          {
+            "parameter": "K application rate (Rajasthan)",
+            "values": [
+              20.9
+            ],
+            "original_units": "thousand tonnes",
+            "measurement_method": "State-level fertilizer consumption",
+            "sample_context": "State-level fertilizer consumption",
+            "temporal_context": "2007-08",
+            "spatial_context": "Rajasthan",
+            "statistical_measures": {
+              "N_P2O5_K2O_ratio": "57.4:16.9:1.0"
+            }
+          },
+          {
+            "parameter": "K application rate (Maharashtra)",
+            "values": [
+              420.8
+            ],
+            "original_units": "thousand tonnes",
+            "measurement_method": "State-level fertilizer consumption",
+            "sample_context": "State-level fertilizer consumption",
+            "temporal_context": "2007-08",
+            "spatial_context": "Maharashtra",
+            "statistical_measures": {
+              "N_P2O5_K2O_ratio": "3.0:1.5:1"
+            }
+          }
+        ],
+        "pool_characterizations": [
+          {
+            "pool_type": "Exchangeable K",
+            "values": [
+              100
+            ],
+            "units": "kg ha-1",
+            "analytical_method": "Acetic acid extraction (Ac-K)",
+            "measurement_conditions": "Rooting zone (0-40 cm)",
+            "temporal_variation": "Estimated at the end of 30-year experiment",
+            "treatment_effects": {
+              "K0": 98,
+              "K65": 106
+            }
+          },
+          {
+            "pool_type": "Total Soil K",
+            "values": [
+              72000
+            ],
+            "units": "kg K ha-1",
+            "analytical_method": "X-ray fluorescence (XRF)",
+            "measurement_conditions": "Main rooting zone (0-40 cm)",
+            "temporal_variation": "Estimated at the end of 30-year experiment",
+            "treatment_effects": {
+              "K0": 71053,
+              "K65": 71921
+            }
+          },
+          {
+            "pool_type": "Aqua-regia extractable K (Aq-K)",
+            "values": [
+              12000
+            ],
+            "units": "kg K ha-1",
+            "analytical_method": "Aqua-regia extraction",
+            "measurement_conditions": "Main rooting zone (0-40 cm)",
+            "temporal_variation": "Estimated at the end of 30-year experiment",
+            "treatment_effects": {
+              "K0": 12810,
+              "K65": 12333
+            }
+          },
+          {
+            "pool_type": "K in Biotite and Hydrobiotite",
+            "values": [
+              8000
+            ],
+            "units": "kg K ha-1",
+            "analytical_method": "Quantitative X-ray powder diffraction (XRPD) and normative calculations",
+            "measurement_conditions": "Rooting zone (0-40 cm)",
+            "temporal_variation": "Estimated at the end of 30-year experiment",
+            "treatment_effects": {}
+          },
+          {
+            "pool_type": "K in Biotite and Hydrobiotite (original)",
+            "values": [
+              13600
+            ],
+            "units": "kg K ha-1",
+            "analytical_method": "Quantitative X-ray powder diffraction (XRPD) and normative calculations",
+            "measurement_conditions": "C horizon (60-80 cm), representative of parent material",
+            "temporal_variation": "Original K content",
+            "treatment_effects": {}
+          },
+          {
+            "pool_type": "Nonexchangeable K (NEK) in soils (Orissa)",
+            "values": [
+              6.0
+            ],
+            "units": "cmol(p+) kg-1",
+            "analytical_method": "Not specified",
+            "measurement_conditions": "Kalyani (an Entisol)",
+            "temporal_variation": "Not specified",
+            "treatment_effects": {}
+          },
+          {
+            "pool_type": "Nonexchangeable K (NEK) in soils (Orissa)",
+            "values": [
+              0.6
+            ],
+            "units": "cmol(p+) kg-1",
+            "analytical_method": "Not specified",
+            "measurement_conditions": "Anandapur (an Alfisol)",
+            "temporal_variation": "Not specified",
+            "treatment_effects": {}
+          },
+          {
+            "pool_type": "Total K in soils (Orissa)",
+            "values": [
+              52.2
+            ],
+            "units": "cmol(p+) kg-1",
+            "analytical_method": "Not specified",
+            "measurement_conditions": "Kalyani (an Entisol)",
+            "temporal_variation": "Not specified",
+            "treatment_effects": {}
+          },
+          {
+            "pool_type": "Total K in soils (Orissa)",
+            "values": [
+              29.0
+            ],
+            "units": "cmol(p+) kg-1",
+            "analytical_method": "Not specified",
+            "measurement_conditions": "Anandapur (an Alfisol)",
+            "temporal_variation": "Not specified",
+            "treatment_effects": {}
+          }
+        ],
+        "process_rates": [
+          {
+            "process": "K leaching loss (continuous rice)",
+            "rate_values": [
+              1,
+              3
+            ],
+            "units": "kg K ha-1",
+            "measurement_approach": "Reported by My Hoa et al. (2006) on puddled soil",
+            "environmental_conditions": "Mekong Delta, Vietnam",
+            "duration": "During a growing season"
+          },
+          {
+            "process": "K input from rainwater (continuous rice)",
+            "rate_values": [
+              6,
+              10
+            ],
+            "units": "kg ha-1",
+            "measurement_approach": "Reported by My Hoa et al. (2006)",
+            "environmental_conditions": "Mekong Delta, Vietnam",
+            "duration": "During a growing season"
+          },
+          {
+            "process": "K leaching loss (rice-wheat)",
+            "rate_values": [
+              19,
+              31
+            ],
+            "units": "kg ha-1 yr-1",
+            "measurement_approach": "Estimated from literature review (Bijay-Singh et al. 2004)",
+            "environmental_conditions": "Light-textured soil in Punjab, Northwest India",
+            "duration": "Annual"
+          },
+          {
+            "process": "K input from rainwater (rice-wheat)",
+            "rate_values": [
+              5
+            ],
+            "units": "kg ha-1 yr-1",
+            "measurement_approach": "Estimated from literature review (Bijay-Singh et al. 2004)",
+            "environmental_conditions": "Northwest India",
+            "duration": "Annual"
+          },
+          {
+            "process": "K release from non-exchangeable source (soybean-wheat-cowpea)",
+            "rate_values": [
+              3129,
+              9932
+            ],
+            "units": "kg ha-1",
+            "measurement_approach": "Calculated from K uptake exceeding K applied in K-omission plots",
+            "environmental_conditions": "Vertisols (Typic Haplusterts)",
+            "duration": "Not specified, likely cumulative over multiple crops"
+          },
+          {
+            "process": "K release from non-exchangeable source (rice-rice)",
+            "rate_values": [
+              1183,
+              1891
+            ],
+            "units": "kg ha-1",
+            "measurement_approach": "Calculated from K uptake exceeding K applied in K-omission plots",
+            "environmental_conditions": "Inceptisols",
+            "duration": "Not specified, likely cumulative over multiple crops"
+          },
+          {
+            "process": "Step K release (laterite soils)",
+            "rate_values": [
+              150,
+              700
+            ],
+            "units": "mg kg-1",
+            "measurement_approach": "Sequential stepwise extraction",
+            "environmental_conditions": "Laterite soils with rice based cropping system",
+            "duration": "1st extraction"
+          },
+          {
+            "process": "Constant rate K (CR-K) release (laterite soils)",
+            "rate_values": [
+              12,
+              56
+            ],
+            "units": "mg kg-1",
+            "measurement_approach": "Sequential stepwise extraction",
+            "environmental_conditions": "Laterite soils with rice based cropping system",
+            "duration": "Not specified"
+          },
+          {
+            "process": "Total step K release (laterite soils)",
+            "rate_values": [
+              140,
+              1332
+            ],
+            "units": "mg kg-1",
+            "measurement_approach": "Sequential stepwise extraction",
+            "environmental_conditions": "Laterite soils with rice based cropping system",
+            "duration": "Not specified"
+          },
+          {
+            "process": "Total exchangeable K release (laterite soils)",
+            "rate_values": [
+              500,
+              1592
+            ],
+            "units": "mg kg-1",
+            "measurement_approach": "Sequential stepwise extraction",
+            "environmental_conditions": "Laterite soils with rice based cropping system",
+            "duration": "Not specified"
+          },
+          {
+            "process": "Step K release (alluvial soils)",
+            "rate_values": [
+              104,
+              1510
+            ],
+            "units": "mg kg-1",
+            "measurement_approach": "Sequential stepwise extraction",
+            "environmental_conditions": "Alluvial soils with rice based cropping system",
+            "duration": "1st extraction"
+          },
+          {
+            "process": "Constant rate K (CR K) release (alluvial soils)",
+            "rate_values": [
+              8,
+              44
+            ],
+            "units": "mg kg-1",
+            "measurement_approach": "Sequential stepwise extraction",
+            "environmental_conditions": "Alluvial soils with rice based cropping system",
+            "duration": "Not specified"
+          },
+          {
+            "process": "Total extractable K release (alluvial soils)",
+            "rate_values": [
+              442,
+              1792
+            ],
+            "units": "mg kg-1 soil",
+            "measurement_approach": "Sequential stepwise extraction",
+            "environmental_conditions": "Alluvial soils with rice based cropping system",
+            "duration": "Not specified"
+          },
+          {
+            "process": "K release from non-exchangeable/structural mineral K (long-term grass experiment)",
+            "rate_values": [
+              35
+            ],
+            "units": "kg K ha-1 yr-1",
+            "measurement_approach": "Calculated from unaccounted K deficit in mass balance",
+            "environmental_conditions": "Loamy sand soil from granitic bedrock",
+            "duration": "Average over 30 years"
+          }
+        ],
+        "balance_calculations": [
+          {
+            "balance_type": "Annual K balance (continuous rice)",
+            "components": {
+              "K_input_irrigation_water": 18,
+              "K_input_organic_materials": 20,
+              "K_input_retained_residues": "variable",
+              "K_loss_leaching": "negligible",
+              "K_output_crop_removal": "variable based on yield and residue retention"
+            },
+            "net_result": null,
+            "units": "kg K ha-1",
+            "calculation_period": "One rice cropping cycle",
+            "assumptions": [
+              "1000 mm irrigation water",
+              "Median K concentration in irrigation water (1.8 mg L-1)",
+              "2 t ha-1 organic material with 10 g K kg-1"
+            ]
+          },
+          {
+            "balance_type": "Annual K balance (rice-wheat)",
+            "components": {
+              "K_input_irrigation_water": "variable (25, 75, 125)",
+              "K_input_retained_residues": "variable (15% both, 15% wheat/100% rice)",
+              "K_loss_leaching": 20,
+              "K_output_crop_removal": "variable based on yield"
+            },
+            "net_result": null,
+            "units": "kg K ha-1 yr-1",
+            "calculation_period": "One rice-wheat cropping cycle",
+            "assumptions": [
+              "Wheat grain yield 5 t ha-1",
+              "Net K input from irrigation water (75 kg ha-1 plausible common, 125 kg ha-1 high, 25 kg ha-1 water-saving)",
+              "Annual leaching loss of 20 kg K ha-1"
+            ]
+          },
+          {
+            "balance_type": "Annual K balance (rice-maize)",
+            "components": {
+              "K_input_irrigation_water": 25,
+              "K_input_retained_residues": "variable (40% rice, 15% maize; or 100% both)",
+              "K_loss_leaching": "negligible",
+              "K_output_crop_removal": "variable based on yield"
+            },
+            "net_result": null,
+            "units": "kg K ha-1",
+            "calculation_period": "One rice-maize cropping cycle",
+            "assumptions": [
+              "Rice grain yield 5 t ha-1",
+              "Maize yield up to 12 t ha-1"
+            ]
+          },
+          {
+            "balance_type": "Annual K balance (long-term grass experiment)",
+            "components": {
+              "K_input_deposition": 1.4,
+              "K_input_fertiliser": "variable (0 or 65)",
+              "K_output_leaching": "variable (0.8 or 2.3)",
+              "K_output_harvest": "variable"
+            },
+            "net_result": null,
+            "units": "kg K ha-1 yr-1",
+            "calculation_period": "Annual average over experimental phases",
+            "assumptions": []
+          },
+          {
+            "balance_type": "Accumulated K balance (long-term grass experiment)",
+            "components": {
+              "K_input_total": {
+                "K0": 448,
+                "K65": 1969
+              },
+              "K_output_total": {
+                "K0": 1608,
+                "K65": 3158
+              }
+            },
+            "net_result": -1160,
+            "units": "kg K ha-1",
+            "calculation_period": "30-year experimental period",
+            "assumptions": []
+          },
+          {
+            "balance_type": "Annual K balance (India, illustrative)",
+            "components": {
+              "K_addition_gross": 1454,
+              "K_removal_gross": 11657,
+              "K_addition_net": 1018,
+              "K_removal_net": 6994
+            },
+            "net_result": -10202,
+            "units": "thousand tonnes K2O",
+            "calculation_period": "Annual",
+            "assumptions": [
+              "Gross balance based on actual application",
+              "Net balance based on efficiency of 70% for K2O"
+            ]
+          },
+          {
+            "balance_type": "Annual K balance (Orissa, rice-rice LTFE)",
+            "components": {
+              "K_uptake_mean_annual": {
+                "Control": 56.0,
+                "100% N": 84.0,
+                "100% NP": 90.0,
+                "100% NPK": 137.0,
+                "100% NPK + FYM": 167.0,
+                "150% NPK": 187.0
+              }
+            },
+            "net_result": -56.0,
+            "units": "kg ha-1",
+            "calculation_period": "Mean annual over 41 cropping cycles",
+            "assumptions": []
+          },
+          {
+            "balance_type": "Annual K balance (Orissa, rice-green gram)",
+            "components": {
+              "K_depletion_at_optimum_K": 51.0,
+              "K_depletion_at_super_optimal_K": 41.0
+            },
+            "net_result": null,
+            "units": "kg ha-1",
+            "calculation_period": "Not specified",
+            "assumptions": []
+          },
+          {
+            "balance_type": "Annual K balance (Orissa, rice-groundnut)",
+            "components": {
+              "K_depletion_at_optimum_K": 37.0,
+              "K_depletion_at_super_optimal_K": 26.0
+            },
+            "net_result": null,
+            "units": "kg ha-1",
+            "calculation_period": "Not specified",
+            "assumptions": []
+          },
+          {
+            "balance_type": "State-wise K balance (India)",
+            "components": {
+              "K_additions": null,
+              "K_removal": null
+            },
+            "net_result": null,
+            "units": "thousand tonnes",
+            "calculation_period": "2007-08",
+            "assumptions": [
+              "Nutrient additions through fertilizers and organic sources where possible",
+              "Nutrient removal by crops at present production levels, including fruits, vegetables, plantation crops"
+            ]
+          }
+        ]
+      },
+      "temporal_patterns": {
+        "study_duration": "RIE data: 1991-2007 (Philippines on-station), 1997-2004 (on-farm trials). Long-term grass rotation experiment: 30 years (1968-1998). State-wise nutrient balances: 2007-08 data, compared with 1998-99 or 1999-2000.",
+        "monitoring_frequency": "RIE data: Plot-level observations. Long-term grass experiment: Herbage yield and exchangeable soil K analyzed annually. Soil samples collected annually in autumn (0-15 cm) from 1968 to 1987, then in 1990, 1991, and 1998. Soil K turnover rates estimated for Grass I (annual data).",
+        "seasonal_observations": [
+          {
+            "parameter": "Herbage K concentration (long-term grass experiment)",
+            "seasonal_pattern": "Declined from the first to the third cut in K65 treatment (1.5% to 1.0%). Remained low and similar throughout the growing season in K0 (0.7%).",
+            "timing": [
+              "Cut 1 (April-May)",
+              "Cut 2 (June-July)",
+              "Cut 3 (August-September)"
+            ],
+            "magnitude": {
+              "K65_cut1": 1.48,
+              "K65_cut2": 1.12,
+              "K65_cut3": 1.0,
+              "K0_cut1": 0.74,
+              "K0_cut2": 0.71,
+              "K0_cut3": 0.75
+            },
+            "drivers": []
+          },
+          {
+            "parameter": "Daily K 'uptake rate' (long-term grass experiment)",
+            "seasonal_pattern": "Declined substantially from the first to the third cut in both K65 and K0. Always greater for K65 than K0.",
+            "timing": [
+              "Cut 1 (April-May)",
+              "Cut 2 (June-July)",
+              "Cut 3 (August-September)"
+            ],
+            "magnitude": {
+              "K65_cut1": 1.15,
+              "K65_cut2": 0.57,
+              "K65_cut3": 0.24,
+              "K0_cut1": 0.4,
+              "K0_cut2": 0.26,
+              "K0_cut3": 0.14
+            },
+            "drivers": []
+          }
+        ],
+        "long_term_trends": [
+          {
+            "parameter": "Herbage yield (long-term grass experiment)",
+            "trend_description": "Declined with time in both K0 and K65 treatments. K65 showed significantly higher production after the first five years of Grass I and from the third year of Grass II.",
+            "time_period": "30 years (1968-1998)",
+            "trend_magnitude": null,
+            "statistical_significance": "Significant differences between K0 and K65 after initial years."
+          },
+          {
+            "parameter": "Herbage K concentration (long-term grass experiment)",
+            "trend_description": "Annually averaged K concentration decreased significantly in both K0 and K65 treatments during both Grass I and II periods. K0 stabilized at 0.5-0.7% (dw).",
+            "time_period": "30 years (1968-1998)",
+            "trend_magnitude": null,
+            "statistical_significance": "Statistically significant difference between K65 and K0 during the entire grass periods."
+          },
+          {
+            "parameter": "Annual net K off-take (long-term grass experiment)",
+            "trend_description": "Declined with time. Large deficit (>100 kg K ha-1 yr-1) in first two years of Grass I, then 55-70 kg K ha-1 yr-1, then ~30 kg ha-1 yr-1. Grass II showed similar pattern (90-100 kg K ha-1 yr-1 first year, then 55-85, then 40).",
+            "time_period": "30 years (1968-1998)",
+            "trend_magnitude": null,
+            "statistical_significance": "Generally no significant difference in net off-take between K0 and K65 for most of the grass periods."
+          },
+          {
+            "parameter": "Acetic acid extractable K (Ac-K) in soil (long-term grass experiment)",
+            "trend_description": "Showed annual variation but generally lower under grass compared to cereals. Overall, K status dropped from moderate to low to very low. K0 plots consistently lower than K65 plots.",
+            "time_period": "30 years (1968-1998)",
+            "trend_magnitude": null,
+            "statistical_significance": "Clear difference between grass and cereal years, and between K0 and K65."
+          },
+          {
+            "parameter": "Available K (India)",
+            "trend_description": "Declined by 17% and 28% after two crop cycles in middle Indo-Gangetic plains (Tiwari 1985).",
+            "time_period": "Not specified",
+            "trend_magnitude": null,
+            "statistical_significance": null
+          },
+          {
+            "parameter": "NH4OAc-K and HNO3-K (India)",
+            "trend_description": "Showed considerable decrease after 10 years of continuous cultivation in most benchmark soils of Indo-Gangetic Plains (Sekhon 1999).",
+            "time_period": "10 years",
+            "trend_magnitude": null,
+            "statistical_significance": null
+          },
+          {
+            "parameter": "Available potassium content (India)",
+            "trend_description": "Decreased even where K was applied in both rice and wheat in long-term experiments (Yadav et al. 2000a).",
+            "time_period": "Not specified",
+            "trend_magnitude": null,
+            "statistical_significance": null
+          },
+          {
+            "parameter": "Response to applied potassium (India)",
+            "trend_description": "Increased steadily over the last 20 years as a result of depletion of soil K (Swarup and Srinivasa Rao 1999).",
+            "time_period": "20 years",
+            "trend_magnitude": null,
+            "statistical_significance": null
+          },
+          {
+            "parameter": "K fertility (West Bengal, India)",
+            "trend_description": "Decreased perceptibly within two years in an intensively cultivated village. Available K2O range changed from 87-448 kg ha-1 in 2006 to 56-375 kg ha-1 in 2008. Mean from 166 kg ha-1 to 88 kg ha-1. Frequency distribution shifted more towards low fertility.",
+            "time_period": "Two years (2006-2008)",
+            "trend_magnitude": null,
+            "statistical_significance": null
+          },
+          {
+            "parameter": "NH4OAc-K (Orissa, rice-rice LTFE)",
+            "trend_description": "Sharp increase in first 10 years, followed by rapid fall (1980-1983), then plateauing. NP treatment always lowest, 150% NPK highest.",
+            "time_period": "22 years (1972-1994)",
+            "trend_magnitude": null,
+            "statistical_significance": null
+          },
+          {
+            "parameter": "HNO3-K (Orissa, rice-rice LTFE)",
+            "trend_description": "Gradual decrease over the years, reaching almost 50% of initial level after 20 years, particularly in K-receiving treatments. Maximum decrease in NP, followed by NPK+FYM.",
+            "time_period": "20 years (1972-1993)",
+            "trend_magnitude": null,
+            "statistical_significance": null
+          },
+          {
+            "parameter": "Total K (Orissa, rice-rice LTFE)",
+            "trend_description": "Substantial variation from initial value, with a drop many times higher than decrease in NH4OAc-K and HNO3-K by 1987-88.",
+            "time_period": "15 years (1972-1988)",
+            "trend_magnitude": null,
+            "statistical_significance": null
+          }
+        ],
+        "event_responses": [
+          {
+            "event_type": "Fertilizer application (long-term grass experiment)",
+            "soil_k_response": "Ac-K concentrations were lower under grass (low K input) compared to cereals (higher K input).",
+            "response_timing": "Annual",
+            "magnitude": {},
+            "recovery_pattern": null
+          }
+        ]
+      },
+      "spatial_variations": {
+        "within_site_variability": [
+          {
+            "parameter": "Available Potassium (K) in soil (Shanxi, China)",
+            "variability_description": "Small spatial variation in soil K (CV 18.8%).",
+            "coefficient_of_variation": 18.8,
+            "spatial_pattern": "High P and K contents in middle of eastern part of the village. Medium P and K in western part. Lowest P and K in south and north bottom. Spatial distribution similarity observed in P, K, and Zn.",
+            "controlling_factors": [
+              "Fertilization history (e.g., vegetable production with heavy input in mid-eastern part)",
+              "Fertilizer application level",
+              "Soil texture (sandy loam in south/north bottom with low P/K)"
+            ]
+          },
+          {
+            "parameter": "Available Potassium (kg ha-1) among farmers' plots (India)",
+            "variability_description": "Quite high variability among fields within villages.",
+            "coefficient_of_variation": null,
+            "spatial_pattern": null,
+            "controlling_factors": [
+              "Fertilization history",
+              "Cropping history",
+              "Resource availability to farmers"
+            ]
+          },
+          {
+            "parameter": "Water soluble K (West Bengal, India)",
+            "variability_description": "Varied to a greater extent (33.96% CV).",
+            "coefficient_of_variation": 33.96,
+            "spatial_pattern": null,
+            "controlling_factors": []
+          },
+          {
+            "parameter": "Exchangeable K (West Bengal, India)",
+            "variability_description": "Varied to a greater extent (52.87% CV).",
+            "coefficient_of_variation": 52.87,
+            "spatial_pattern": null,
+            "controlling_factors": []
+          },
+          {
+            "parameter": "Nonexchangeable K (West Bengal, India)",
+            "variability_description": "Varied to a lesser extent (20.12% CV).",
+            "coefficient_of_variation": 20.12,
+            "spatial_pattern": null,
+            "controlling_factors": []
+          }
+        ],
+        "between_site_differences": [
+          {
+            "parameter": "K concentration in irrigation water",
+            "site_comparison": "Median K concentration ranged from 1.2 to 3.9 mg L-1 across eight rice-growing areas in Asia. Substantial variation among locations within a country (e.g., Bohol vs Iloilo in Philippines).",
+            "difference_magnitude": {
+              "Bohol_50percent_range": "1.2 to 1.4 mg L-1",
+              "Iloilo_50percent_range": "3.3 to 4.2 mg L-1",
+              "Cauvery_Delta_50percent_range": "1.3 to 3.0 mg L-1"
+            },
+            "explanatory_factors": [
+              "Source of water (tube wells often higher than canals)",
+              "Regional geological factors"
+            ]
+          },
+          {
+            "parameter": "Native potassium supply (India)",
+            "site_comparison": "Varied from 205 to 354 kg K2O ha-1 year-1 depending on location in K-omission plots.",
+            "difference_magnitude": {
+              "Ranchi": 205,
+              "Ludhiana": 354
+            },
+            "explanatory_factors": [
+              "Soil type",
+              "Mineralogy",
+              "Weathering state"
+            ]
+          },
+          {
+            "parameter": "Economically optimum potassium rates (India)",
+            "site_comparison": "Varied according to locations for rice-wheat and rice-rice systems.",
+            "difference_magnitude": {
+              "rice_wheat_system_range": "143 to 196 kg K2O ha-1",
+              "rice_rice_system_range": "72 to 188 kg K2O ha-1"
+            },
+            "explanatory_factors": [
+              "Location-specific soil properties",
+              "Crop requirements"
+            ]
+          },
+          {
+            "parameter": "Response to potassium (India)",
+            "site_comparison": "Varied from 11.7 to 51.0 kg rice grain equivalent kg-1 nutrient across 32 centers.",
+            "difference_magnitude": {
+              "range": "11.7 to 51.0"
+            },
+            "explanatory_factors": [
+              "Agro-climatic zones",
+              "Cropping system"
+            ]
+          },
+          {
+            "parameter": "Average response of rice to K application (Orissa)",
+            "site_comparison": "Varied across different soil groups.",
+            "difference_magnitude": {
+              "mixed_red_and_black": "7.8 kg per kg K2O",
+              "red_and_lateritic": "4.8 to 6.4 kg per kg K2O",
+              "mixed_red_and_yellow": "4.4 to 4.8 kg per kg K2O",
+              "coastal_saline_and_brown_forest_soils": "no response"
+            },
+            "explanatory_factors": [
+              "Texture of soils",
+              "Mineralogy of soils"
+            ]
+          }
+        ],
+        "scaling_considerations": [
+          {
+            "scale_transition": "From plot-level to field-specific/regional",
+            "scaling_approach": "SSNM approach and algorithms enable rapid development of field-specific K and P management. GIS-based mapping for creating soil fertility maps of large areas through interpolation of soil analysis data from a small number of samples. Adjustment of fertilizer K requirements for irrigation water inputs would likely need to be made across a region rather than for a specific field.",
+            "uncertainty": "Uncertainties associated with K concentration in irrigation water and quantity of added irrigation water, which can vary from field to field.",
+            "limitations": [
+              "Small-scale farm size and cost of soil testing make it impossible to give fertilizer recommendations based on each farmer without advanced tools.",
+              "Representativeness of measurements for larger areas or systems is a challenge."
+            ]
+          }
+        ]
+      },
+      "process_characterization": {
+        "cycling_processes": [
+          {
+            "process_name": "K Balance",
+            "description": "Net soil K change from all inputs minus all outputs over time. Calculated for single rice crop, rice-wheat, and rice-maize cropping cycles, considering retained crop residue, irrigation water, and organic materials.",
+            "quantification": {
+              "K_balance_rice_equation": "K_W + K_OM + K_CRr – K_L – (GY_r x RIE_Kr)",
+              "K_balance_rice_wheat_maize_equation": "K_W + K_OM + K_CRr + K_CRwm – K_L – (GY_r x RIE_Kr) – (GY_wm x RIE_Kwm)"
+            },
+            "controlling_factors": [
+              "Grain yield",
+              "Fraction of retained crop residue",
+              "Input of K from irrigation water",
+              "Input of K from added organic materials",
+              "K loss by percolation or leaching"
+            ],
+            "measurement_approach": "Calculated using RIEs, harvest indices, and estimated inputs/losses."
+          },
+          {
+            "process_name": "K Release from Soil Reserves",
+            "description": "Transfer of K from less available to more available soil pools, including non-exchangeable and structural K. This process is crucial for sustaining crop production, especially in low-input systems.",
+            "quantification": {
+              "unaccounted_K_deficit_long_term_grass_experiment": "1100-1150 kg K ha-1 over 30 years (approx. 35 kg K ha-1 yr-1)",
+              "native_K_supply_India": "205 to 354 kg K2O ha-1 year-1 (K-omission plots)"
+            },
+            "controlling_factors": [
+              "Soil mineralogy (type and state of weathering of K-bearing minerals, e.g., biotite, hydrobiotite, muscovite, illite, K-feldspar)",
+              "Clay composition and content",
+              "Soil solution K concentration",
+              "Root density and rooting depth",
+              "Climatic conditions (soil temperature and moisture)",
+              "Soil attributes (organic acids, pH, particle size distribution)",
+              "Management practices (e.g., K fertilization, residue retention, tillage, water management)",
+              "Degree of exposure of edges of clay minerals to soil solution"
+            ],
+            "measurement_approach": "Long-term field experiments, K omission plots, sequential stepwise extraction (Step K, CR-K), mineralogical analysis (XRPD), and mass balance calculations."
+          },
+          {
+            "process_name": "K Fixation",
+            "description": "Binding of K in clay minerals, making it less available. Soils can become more 'hungry' for K fixation with continued negative balance.",
+            "quantification": {
+              "illite_soils_fixed": "23-29% of applied K",
+              "kaolinite_soils_fixed": "17-23% of applied K",
+              "smectite_soils_fixed": "26-32% of applied K"
+            },
+            "controlling_factors": [
+              "Type of clay minerals (e.g., illite, kaolinite, smectite)",
+              "Soil moisture regime (e.g., shallow surface submergence in rice-rice system may increase K fixation)"
+            ],
+            "measurement_approach": "K fixation studies."
+          }
+        ],
+        "plant_soil_interactions": [
+          {
+            "interaction_type": "Plant K Uptake",
+            "description": "Plants take up K from soil solution, which is replenished from exchangeable and non-exchangeable pools. The rate of uptake is influenced by plant demand and soil supply capacity.",
+            "quantitative_data": {
+              "RIE_rice": "15.9 kg K per tonne of grain",
+              "RIE_wheat": "21.6 kg plant K per 1000 kg grain",
+              "RIE_maize": "17.4 kg plant K per 1000 kg grain",
+              "K_uptake_rate_grass": "Declined from 1.15 kg ha-1 d-1 (K65, Cut 1) to 0.14 kg ha-1 d-1 (K0, Cut 3)",
+              "K_uptake_rice_wheat_system_India": "Mean K uptake 1.74 times K input",
+              "K_uptake_rice_rice_system_India": "Mean K uptake 62% higher than K input",
+              "K_uptake_rice_rice_LTFE_Orissa": "56.0 to 187.0 kg ha-1 mean annual uptake depending on treatment"
+            },
+            "temporal_patterns": "Daily K 'uptake rate' declined substantially from the first to the third cut in grass. K uptake in rice-rice system increased with NPK+FYM over 41 cropping cycles.",
+            "influencing_factors": [
+              "Plant growth stage and yield potential",
+              "Soil K availability (solution, exchangeable, non-exchangeable pools)",
+              "Root density and rooting depth",
+              "Fertilizer K application",
+              "Biotic and abiotic stresses (e.g., pests, diseases, water deficit)",
+              "Soil mineralogy and weathering"
+            ]
+          },
+          {
+            "interaction_type": "Root-induced processes",
+            "description": "Plant roots can influence K availability through processes like acidification and removal of K from soil solution.",
+            "quantitative_data": {},
+            "temporal_patterns": null,
+            "influencing_factors": [
+              "Release of hydronium ion (H3O+) from roots",
+              "Decomposition of organic manures and plant residue (accelerates weathering)"
+            ]
+          }
+        ],
+        "chemical_processes": [
+          {
+            "process": "Sorption/Desorption",
+            "characterization": "K is held on exchange sites and can be released into soil solution. The exchangeable K pool is dynamically related to other K pools.",
+            "rates": {},
+            "environmental_controls": [
+              "Clay composition and content",
+              "Cationic environment (e.g., base saturation of clays)",
+              "Soil pH"
+            ],
+            "implications": "Influences the readily available K for plant uptake and the replenishment of the exchangeable pool from less available forms."
+          },
+          {
+            "process": "Weathering of K-bearing minerals",
+            "characterization": "Release of K from primary minerals (micas, feldspars) and secondary minerals (illite, vermiculite, smectite) into more available forms. Biotite is most prone to release K, followed by hydrobiotite.",
+            "rates": {
+              "estimated_K_release_from_minerals_long_term_grass_experiment": "35 kg K ha-1 yr-1"
+            },
+            "environmental_controls": [
+              "Mineralogy of the soil (type and proportion of K-bearing minerals)",
+              "Degree of weathering",
+              "Soil solution K concentration (governs diffusion from interlayer positions)",
+              "Temperature and moisture regimes",
+              "Presence of organic acids"
+            ],
+            "implications": "Provides a long-term supply of K to plants, but the rate of release can vary significantly and may not always meet crop demand, leading to K mining."
+          }
+        ]
+      },
+      "treatment_management_effects": {
+        "experimental_treatments": [
+          {
+            "treatment_description": "K fertilization (K0: nil, K65: 65 kg K ha-1 yr-1)",
+            "soil_k_effects": {
+              "herbage_yield": "K65 significantly higher than K0 after initial years in grass phases.",
+              "herbage_k_concentration": "K65 consistently higher than K0, but both declined over time. K0 stabilized at 0.5-0.7% (dw).",
+              "net_k_off_take": "Similar net off-take between K0 and K65 for most of the grass periods, indicating K0 was drawing more from soil reserves.",
+              "acetic_acid_extractable_k": "K65 consistently higher than K0 in surface soil (0-15 cm)."
+            },
+            "effect_magnitude": null,
+            "effect_duration": "30 years",
+            "mechanisms": [
+              "Direct input of K to soil solution and exchangeable pool.",
+              "Reduced reliance on soil K reserves in K65."
+            ]
+          },
+          {
+            "treatment_description": "Nutrient omission plots (-K plots)",
+            "soil_k_effects": {
+              "reciprocal_internal_efficiency": "Lower RIE for K (14.8 kg/1000 kg grain) compared to full fertilized plots (17.8 kg/1000 kg grain), reflecting nutrient dilution due to deficiency.",
+              "yield_gain": "Averaged 12% for K in 525 observations for irrigated rice."
+            },
+            "effect_magnitude": null,
+            "effect_duration": "Single cropping season",
+            "mechanisms": [
+              "Induces K deficiency, leading to lower K accumulation per unit of grain yield."
+            ]
+          },
+          {
+            "treatment_description": "Full fertilization (NPK)",
+            "soil_k_effects": {
+              "reciprocal_internal_efficiency": "Higher RIE (17.8 kg/1000 kg grain) compared to omission plots, reflecting balanced nutrient uptake.",
+              "yield_decline_rice_rice_LTFE_Orissa": "Yield decline narrowed to 25% over 22 years compared to initial yield, much less than control (52%) or NP (37%).",
+              "K_uptake_rice_rice_LTFE_Orissa": "Increased to 137 kg ha-1 mean annual uptake."
+            },
+            "effect_magnitude": null,
+            "effect_duration": "Long-term (up to 22 years)",
+            "mechanisms": [
+              "Ensures balanced nutrient supply, optimizing K uptake and yield."
+            ]
+          },
+          {
+            "treatment_description": "Super optimal NPK dose (150% NPK)",
+            "soil_k_effects": {
+              "yield_increase_rice_rice_LTFE_Orissa": "Increased grain yield by 10% over initial year yield.",
+              "K_uptake_rice_rice_LTFE_Orissa": "Increased to 187 kg ha-1 mean annual uptake.",
+              "K_depletion_rice_green_gram_rice_groundnut": "Decreased K depletion to 41.0 and 26.0 kg ha-1 respectively."
+            },
+            "effect_magnitude": null,
+            "effect_duration": "Long-term (up to 22 years)",
+            "mechanisms": [
+              "Provides excess K, potentially leading to luxury consumption or reduced K mining."
+            ]
+          },
+          {
+            "treatment_description": "Combined NPK + FYM",
+            "soil_k_effects": {
+              "yield_increase_rice_rice_LTFE_Orissa": "Increased grain yield by 21% over initial year yield.",
+              "K_uptake_rice_rice_LTFE_Orissa": "Increased to 167 kg ha-1 mean annual uptake.",
+              "non_exchangeable_k_release": "Encouraged release of more non-exchangeable K under acidic environment."
+            },
+            "effect_magnitude": null,
+            "effect_duration": "Long-term (up to 22 years)",
+            "mechanisms": [
+              "Provides both mineral and organic K, improves soil properties, and enhances K release."
+            ]
+          },
+          {
+            "treatment_description": "K application rates for hybrid rice (Orissa)",
+            "soil_k_effects": {
+              "grain_yield": "Gradual increase in K rate (25-100% K) increased grain yield from 8.0 t ha-1 (control) to 13.9 t ha-1 (100% K).",
+              "chaff_production": "Decreased from 1.00 t ha-1 (control) to 0.48 t ha-1 (100% K).",
+              "grain_straw_ratio": "Narrowed from 1:1.44 (control) to 1:1.01 (100% K).",
+              "harvest_index": "Steadily improved from 0.39 (control) to 0.49 (100% K)."
+            },
+            "effect_magnitude": null,
+            "effect_duration": "Two consecutive seasons",
+            "mechanisms": [
+              "Directly addresses K deficiency, improving plant growth and partitioning of biomass to grain."
+            ]
+          },
+          {
+            "treatment_description": "K application for groundnut (Orissa)",
+            "soil_k_effects": {
+              "yield_increase": "40 kg K ha-1 increased summer groundnut yield from 10.60 to 15.88 q ha-1. 60 kg K ha-1 increased rabi groundnut yield to 22.7 q ha-1 over NP control (16.4 q ha-1)."
+            },
+            "effect_magnitude": null,
+            "effect_duration": "Not specified",
+            "mechanisms": [
+              "Addresses K deficiency in specific crops."
+            ]
+          },
+          {
+            "treatment_description": "K application for green gram (Orissa)",
+            "soil_k_effects": {
+              "yield_increase": "20 kg K ha-1 increased green gram yield by 67% even without N fertilizer."
+            },
+            "effect_magnitude": null,
+            "effect_duration": "Not specified",
+            "mechanisms": [
+              "Addresses K deficiency in specific crops."
+            ]
+          },
+          {
+            "treatment_description": "K application for banana (Orissa)",
+            "soil_k_effects": {
+              "fruit_yield": "Increased with increasing K levels (200-600 g plant-1) from 37.0 to 55.9 t ha-1.",
+              "fruit_quality": "Increased fruit weight, total soluble solids, total sugar, and ascorbic acid content."
+            },
+            "effect_magnitude": null,
+            "effect_duration": "Not specified",
+            "mechanisms": [
+              "K is critical for fruit development and quality."
+            ]
+          },
+          {
+            "treatment_description": "K application for turmeric and ginger (Orissa)",
+            "soil_k_effects": {
+              "turmeric_yield": "Responded up to 90 kg K ha-1, 26% higher yield over K control (8.14 t ha-1).",
+              "ginger_yield": "Increased by 6% at 50 kg K ha-1 and 12% at 100 kg K ha-1 over control."
+            },
+            "effect_magnitude": null,
+            "effect_duration": "Not specified",
+            "mechanisms": [
+              "K is important for tuber/rhizome development."
+            ]
+          }
+        ],
+        "management_practices": [
+          {
+            "practice": "Crop residue retention",
+            "soil_k_impacts": {
+              "continuous_rice": "Complete retention results in near neutral K balances even at high grain yields. Removal results in substantial K export (exceeds 100 kg K ha-1 above 7 t ha-1 grain yield if 15% residue retained).",
+              "rice_wheat": "15% retention of both rice and wheat residue leads to negative K balances. 100% rice residue retention with wheat residue removal can lead to near neutral K balance with high irrigation K input.",
+              "rice_maize": "Retention of maize residues can markedly reduce K export, but complete retention of both rice and maize residues is needed for near-neutral K balances."
+            },
+            "implementation_details": "Manual harvesting with stubble retention, combine harvesting with complete residue retention, or manual harvesting with complete return of residue after threshing.",
+            "temporal_effects": "Affects annual K balance.",
+            "spatial_effects": "Varies by region (e.g., South Asia vs Southeast Asia)."
+          },
+          {
+            "practice": "Application of organic materials (manure, compost, green manures)",
+            "soil_k_impacts": {
+              "continuous_rice": "Input of 20 kg K ha-1 from organic material can result in positive K balances across all rice yields if all crop residue is retained. Can result in near neutral K balances at lower rice yields (<5 t ha-1) with partial residue retention.",
+              "K_balances": "Contributes to K balances and supply of plant-available K."
+            },
+            "implementation_details": "Common levels of availability and application (e.g., 2 t ha-1 with 10 g K kg-1).",
+            "temporal_effects": "Delayed release of plant-available P from organic materials compared to chemical fertilizer.",
+            "spatial_effects": "Integrated use with manufactured chemical fertilizers is recommended in some areas."
+          },
+          {
+            "practice": "Irrigation water management",
+            "soil_k_impacts": {
+              "K_input": "Can represent an important input of K during rice production (e.g., 18 kg K ha-1 from 1000 mm water with 1.8 mg K L-1).",
+              "K_deficiency_risk": "Water-saving technologies that reduce K inputs from irrigation could increase the likelihood of K deficiency, especially in rice-wheat systems where tube-well water is high in K."
+            },
+            "implementation_details": "Depends on K concentration in water and quantity of water added. Varies by source (tube wells vs canals) and region.",
+            "temporal_effects": "Rainfall can contribute a greater portion of total required water in wet seasons, reducing irrigation K input.",
+            "spatial_effects": "K input varies significantly within and among rice-growing areas."
+          },
+          {
+            "practice": "Tillage and cultivation",
+            "soil_k_impacts": {
+              "rice_soils": "Puddling destroys soil structure and reduces percolation rate and leaching loss of ions, including K.",
+              "maize_residue_incorporation": "Problematic for maize residue due to increased energy for tillage and potential N immobilization."
+            },
+            "implementation_details": "Puddling for rice land preparation. Direct dry seeding with mulching of maize residue might facilitate retention.",
+            "temporal_effects": null,
+            "spatial_effects": null
+          }
+        ],
+        "comparative_analysis": [
+          {
+            "comparison_type": "Yield gain approach vs. Nutrient balance approach",
+            "treatments_compared": [
+              "Yield gain approach (equations 7, 8)",
+              "Nutrient balance approach (full maintenance, equations 9, 10)",
+              "Partial maintenance (fractional depletion, equations 11, 12)",
+              "Partial maintenance (limited depletion, equations 13, 14)",
+              "Partial maintenance + yield gain (equations 15-18, 21-24)"
+            ],
+            "soil_k_differences": {
+              "yield_gain_approach": "Fertilizer K rates increased with target yield but did not prevent increasing depletion of soil K at high yields. Could accelerate nutrient limitations.",
+              "full_maintenance": "Fertilizer K rates match removal, ensuring no depletion, but can result in financial loss if no yield response.",
+              "partial_maintenance_fractional": "Fertilizer rates increased with target yield but increasing depletion at high yields.",
+              "partial_maintenance_limited": "Fertilizer rates calculated to ensure depletion does not exceed a threshold limit. No fertilizer K recommended at low yields. More attractive due to relatively comparable level of nutrient depletion across yields.",
+              "partial_maintenance_plus_yield_gain": "Higher calculated fertilizer rates and more positive K balances than partial maintenance alone. Expressing yield gain as a fraction of attainable yield ensures better fit and sufficient nutrient input at higher yields."
+            },
+            "statistical_significance": null
+          },
+          {
+            "comparison_type": "Rice-rice vs. Rice-wheat vs. Rice-maize cropping systems",
+            "treatments_compared": [],
+            "soil_k_differences": {
+              "rice_maize_system": "More extractive of nutrients (e.g., ~200 kg K ha-1 net export at 12 t ha-1 maize yield) than rice-rice and rice-wheat systems, leading to higher K deficits and fertilizer K requirements.",
+              "rice_wheat_system": "Can have high K inputs from tube-well irrigation water, potentially leading to near-neutral K balances even with residue removal. However, water-saving technologies can increase K deficiency risk."
+            },
+            "statistical_significance": null
+          }
+        ]
+      },
+      "methodological_details": {
+        "analytical_methods": [
+          {
+            "method_name": "Flame Photometry",
+            "target_parameters": [
+              "K in crop samples"
+            ],
+            "procedure_description": "Wet-digestion of crop samples, then K analysis by flame photometry.",
+            "instrumentation": "Flame photometer",
+            "precision": {},
+            "detection_limits": {},
+            "quality_control": []
+          },
+          {
+            "method_name": "ICP-AES (Inductively Coupled Plasma - Atomic Emission Spectrometry)",
+            "target_parameters": [
+              "K in crop samples",
+              "K in soil extracts (Ac-K, Aq-K)"
+            ],
+            "procedure_description": "Wet-digestion of crop samples or extraction of soil samples, then K analysis by ICP-AES.",
+            "instrumentation": "ICP-AES",
+            "precision": {},
+            "detection_limits": {},
+            "quality_control": []
+          },
+          {
+            "method_name": "Acetic Acid Extractable K (Ac-K)",
+            "target_parameters": [
+              "Exchangeable K"
+            ],
+            "procedure_description": "Air-dried soil (2.5 g) extracted by 100 ml 2.5% acetic acid.",
+            "instrumentation": "Flame photometer or ICP-AES",
+            "precision": {},
+            "detection_limits": {},
+            "quality_control": []
+          },
+          {
+            "method_name": "Aqua-regia K (Aq-K)",
+            "target_parameters": [
+              "Total K (acid-digestible)"
+            ],
+            "procedure_description": "Extraction by 3:1 50% HCl:conc. HNO3 (by volume).",
+            "instrumentation": "ICP-AES",
+            "precision": {},
+            "detection_limits": {},
+            "quality_control": []
+          },
+          {
+            "method_name": "Total-K (Tot-K)",
+            "target_parameters": [
+              "Total K"
+            ],
+            "procedure_description": "Sample fusion and corrections for interelement effects.",
+            "instrumentation": "Philips PW 1404 X-ray fluorescence (XRF) spectrometer",
+            "precision": {},
+            "detection_limits": {},
+            "quality_control": []
+          },
+          {
+            "method_name": "X-ray Powder Diffraction (XRPD)",
+            "target_parameters": [
+              "Mineralogical composition",
+              "K-bearing mineral phases"
+            ],
+            "procedure_description": "3 g soil (<2 mm) ground in agate McCrone mill, spray dried. XRPD patterns recorded from 2-75°2θ using Cobalt Kα radiation. Quantified by full-pattern fitting.",
+            "instrumentation": "Siemens D5000 instrument",
+            "precision": {
+              "uncertainty_95_percent_confidence": "0.35 wt%"
+            },
+            "detection_limits": {},
+            "quality_control": [
+              "Followed methods by Hillier (1999, 2003) and Omotoso et al. (2006)."
+            ]
+          },
+          {
+            "method_name": "QUEFTS model (Quantitative Evaluation of the Fertility of Tropical Soils)",
+            "target_parameters": [
+              "Relationship between grain yield and nutrient accumulation",
+              "Internal nutrient efficiency (IE)",
+              "Reciprocal internal efficiency (RIE)"
+            ],
+            "procedure_description": "Modified and described by Witt et al. (1999). Used with large data sets to develop relationships and determine RIEs. Predicts linear-parabolic-plateau model.",
+            "instrumentation": "Model-based calculation",
+            "precision": {},
+            "detection_limits": {},
+            "quality_control": [
+              "Constants a and d calculated by excluding upper and lower 2.5 percentiles of IE data.",
+              "Yield potential set to 10 t ha-1 for rice."
+            ]
+          },
+          {
+            "method_name": "Available K (Shanxi, China)",
+            "target_parameters": [
+              "Available K"
+            ],
+            "procedure_description": "Extracted using 0.25 M/L NaHCO3, 0.01 M/L EDTA and 0.01 M/L NH4F. Concentration determined using an atomic absorption spectrophotometer.",
+            "instrumentation": "Atomic Absorption Spectrophotometer",
+            "precision": {},
+            "detection_limits": {},
+            "quality_control": [
+              "Procedures applied by Chinese Academy of Agricultural Sciences (CAAS) and International Plant Nutrition Institute (IPNI) Cooperative Soil and Plant Analysis Laboratory and National Laboratory of Soil Testing and Fertilizer Recommendation of CAAS."
+            ]
+          },
+          {
+            "method_name": "Sequential Stepwise Extraction (Step K, CR-K)",
+            "target_parameters": [
+              "K release from non-exchangeable sources",
+              "K from mineral lattice source"
+            ],
+            "procedure_description": "Sequential stepwise extraction with boiling HNO3.",
+            "instrumentation": "Not specified",
+            "precision": {},
+            "detection_limits": {},
+            "quality_control": []
+          }
+        ],
+        "sampling_design": {
+          "spatial_sampling": "RIE data: Plot-level observations from various research projects. Long-term grass experiment: Surface soil (0-15 cm) collected annually. In 1998, samples taken from 0-5 cm (Ap1), 5-15 (Ap2), 15-25 cm (Ap3), 25-40 cm (Bs), 40-60 cm (BC), and 60-80 cm (C). Soil fertility mapping: 280 plow layer (0-20 cm) soil samples collected on a 100x100 m grid, guided by DGPS.",
+          "temporal_sampling": "RIE data: Years vary by country and experiment type (e.g., 1991-2007). Long-term grass experiment: Annual soil sampling (autumn) for 18 years, then specific years. Herbage cuts annually (2 or 3 cuts/year).",
+          "sample_processing": "Herbage samples dried at 60°C and milled. Soil samples sieved fresh at 2 mm and air-dried at 30°C. For mineralogical analysis, soil ground in agate McCrone mill and spray dried.",
+          "storage_handling": "Not explicitly detailed, but implies standard laboratory storage for dried and processed samples.",
+          "representativeness": "For RIE, data from NPK fertilized plots with HI 0.4-0.63 were selected to represent modern high-yielding rice cultivars under good agronomic practices. For soil fertility mapping, grid sampling aimed to capture spatial variability at village level. For long-term grass experiment, the site was a freely draining iron humus podsol from granitic bedrock, relevant for large areas of agricultural land."
+        },
+        "data_quality": {
+          "precision_measures": [
+            "Mineralogical analysis (XRPD): Uncertainty at 95% confidence is X ± 0.35, where X is concentration in weight percent."
+          ],
+          "accuracy_assessments": [
+            "Total K based on partitioning of K amongst minerals (XRPD) resulted in 100 ±10% of directly measured Tot-K from XRF, indicating very good agreement."
+          ],
+          "method_comparisons": [
+            {
+              "comparison_methods": [
+                "Acetic acid extraction (Ac-K)",
+                "1 M ammonium acetate (NH4Ac pH 7) extraction"
+              ],
+              "comparison_results": "Ac-K extracted on average 94% of 1 M NH4Ac.",
+              "notes": "Indicates Ac-K is a good proxy for exchangeable K."
+            },
+            {
+              "comparison_methods": [
+                "PROFILE model",
+                "Field-based estimates of K weathering rates"
+              ],
+              "comparison_results": "Large discrepancy observed.",
+              "notes": "Possibly due to PROFILE model's sensitivity to clay content/specific surface area and representation of mica weathering."
+            }
+          ],
+          "uncertainty_sources": [
+            "Estimation of attainable yield and yield gain in SSNM.",
+            "Estimation of some components of the nutrient balance, such as K addition from irrigation water.",
+            "Variability in K concentration of irrigation water.",
+            "Uncertainty regarding P supply from organic materials (variation in P concentration and release rate).",
+            "Small clay content and specific surface area of soil for PROFILE model predictions.",
+            "Representativeness of mica weathering representation in models."
+          ]
+        }
+      },
+      "environmental_context": {
+        "climate_conditions": {
+          "temperature": "Mean annual average temperature 7.9°C (NE Scotland). Average temperature 8.5°C (Shanxi, China).",
+          "precipitation": "Mean annual rainfall 791 mm (NE Scotland). Average annual rainfall 405 mm (Shanxi, China). High rainfall (1497 mm) in Orissa, India.",
+          "seasonality": "Semiarid monsoon (Shanxi, China). Tropical monsoon (Orissa, India). Growing season 215 days (NE Scotland). Rainfall can differ markedly between growing seasons in Asian rice production areas (monsoonal wet seasons vs dry seasons).",
+          "extremes": "Very dry summer could affect Ac-K concentrations (long-term grass experiment)."
+        },
+        "soil_properties": {
+          "classification": "Dystric Cambisol (FAO) or Typic Fragiorthod (Soil Taxonomy) / freely draining iron humus podsol (NE Scotland). Fluvo-aquic soil (Shanxi, China). Inceptisols (48%), Alfisols (36%), Entisols (10%), Vertisols (6%) in Orissa, India. Alluvial, red and lateritic, coastal saline, hill and terai soils in West Bengal. Alluvial and saline-sodic soils in Haryana and Punjab. Alluvial and saline-sodic/residual soils in Uttar Pradesh. Wide range of soil types in Karnataka. Black soils, lateritic, coastal alluvial, saline alkali, mixed red and black soils in Maharashtra. Dune and associated soils to medium black soils in Rajasthan.",
+          "texture": "Loamy sand (NE Scotland). Sandy loam (Shanxi, China, in areas with low P/K). Coarse textured (Jharkhand, India). Light textured (Northwest India, Punjab). Heavy clay soil (continuous rice, low percolation).",
+          "mineralogy": "Granitic bedrock derived (NE Scotland). K-bearing minerals: K-feldspar, muscovite, illite, biotite, hydrobiotite (NE Scotland). Dioctahedral micas (muscovite, glauconite, illite), trioctahedral mica (biotite, phlogopite), feldspar (sanidine, orthoclase, microlone) in India. Illite, smectite, kaolinite, chlorite, vermiculite (West Bengal). Orthoclase, mica (muscovite, biotite) in Orissa soils (Alfisols, Inceptisols, Entisols, Vertisols).",
+          "organic_matter": {
+            "content_shanxi_china": "Low (100% samples below critical value of 1.5%)",
+            "content_keonjhar_orissa_ltfe": "Increased from 0.23 to 0.55%"
+          },
+          "chemical_properties": {
+            "pH": "4.9-5.3 (NE Scotland). 7.7-8.2 (Shanxi, China). High soil acidity in uplands/transitional medium lands (Assam). 70-75% of soils in Orissa are acidic. Near neutral pH values in agricultural soils (general context).",
+            "CEC": "9-19 (NE Scotland). Low CEC in well-drained soils of humid tropics (Orissa).",
+            "Exchangeable_K": "0.1-0.2 cmol(+) kg-1 (NE Scotland). Low to medium/high in India. Coastal saline soils high (56.6 to 624 mg kg-1).",
+            "K_fixation_capacity": "Illite soils fixed 23-29% of applied K, kaolinite 17-23%, smectite 26-32% (India).",
+            "Base_saturation": "50-58% (NE Scotland). High base saturation with Ca2+ and Mg2+ dominating in Inceptisols and Entisols of Orissa."
+          },
+          "physical_properties": {
+            "bulk_density": "0.65-0.80 (NE Scotland).",
+            "soil_structure": "Puddling destroys soil structure in rice soils.",
+            "drainage": "Freely draining (NE Scotland). Puddled rice soils reduce percolation rate and leaching loss. Well drained soils in humid tropics (Orissa)."
+          }
+        },
+        "landscape_context": {
+          "topography": "Not explicitly detailed for K, but general landscape variability mentioned for nutrient balances.",
+          "drainage": "Freely draining iron humus podsol (NE Scotland). Puddled rice soils reduce percolation rate and leaching loss. Well drained soils in humid tropics (Orissa) can have K leaching problems.",
+          "position": "Uplands and transitional medium lands (Assam). Foothill soils, sedentary foot hill and forest soils, alluvial origin in Indo-Gangetic plains (Bihar).",
+          "land_use_history": "Differences in retention of crop residues, historical fertilizer use, input of organic materials, inherent soil fertility, and crop yield attainable with farmers' management practices contribute to spatial variability in nutrient balances."
+        }
+      },
+      "research_integration": {
+        "relationship_to_other_measurements": "Soil K measurements are integrated with plant K accumulation (RIE, HI), crop yield, and other nutrient balances (N, P). K dynamics are linked to soil mineralogy, soil properties (pH, CEC, texture), and water management. K balances are used to determine fertilizer requirements and assess sustainability.",
+        "integration_with_plant_studies": "Directly links soil K availability to herbage yield, K concentration in herbage, and K uptake rates in ryegrass. For rice, K is linked to grain yield, harvest index, and nutrient accumulation in above-ground biomass. Crop response to applied K is a key metric.",
+        "connection_to_broader_objectives": "Aims to improve productivity and profitability from fertilizer use, ensure food security, and promote sustainable management of soil fertility and natural resources. Addresses concerns about nutrient depletion and declining factor productivity in intensive agricultural systems.",
+        "comparative_context": "Compares K dynamics and management across different cropping systems (rice-rice, rice-wheat, rice-maize), different K fertilization regimes (nil vs. applied K), and different approaches to fertilizer recommendation (yield gain vs. nutrient balance). Compares soil K status and balances across different states in India and with previous studies.",
+        "literature_positioning": "Builds upon existing SSNM frameworks and QUEFTS model. Confirms robustness of RIE values from previous studies. Highlights the need to re-examine full maintenance approaches for K and P. Contributes to the understanding of K release from soil minerals, especially trioctahedral micas, and its long-term implications for sustainability."
+      },
+      "data_limitations": {
+        "measurement_constraints": [
+          "Straw weight for cereals was estimated using a grain:straw ratio of 1:1 for budget calculations.",
+          "K removal from grass/barley in 1981/1985 was estimated using average K removal from other years.",
+          "Ac-K is a proxy for exchangeable K, extracting on average 94% of 1 M NH4Ac.",
+          "Leaching loss of K and P inputs from rainfall/irrigation water were treated as negligible in some balance calculations, or estimated from adjacent experiments/literature.",
+          "Uncertainty exists regarding P supply from organic materials due to variation in P concentration and release rate.",
+          "Consumption data on secondary and micronutrient fertilizers are not available for state-wise balances."
+        ],
+        "temporal_limitations": [
+          "RIE values derived from the linear portion of the QUEFTS model are intended for use up to about 60-70% of yield potential, which is seldom exceeded in farmers' fields, but RIE does increase slightly at higher yield potentials.",
+          "The hypothetical calculation of mineral K depletion assumes a continued low input management system with similar net K off-take, which may not hold true indefinitely.",
+          "The long-term K release from soil resources observed in experiments will not be constant over time but dependent on the types and amount of K-bearing minerals."
+        ],
+        "spatial_limitations": [
+          "K input through irrigation water will not be known to individual farmers and would likely need to be made across a region rather than for a specific field, introducing uncertainty.",
+          "Soil-test approaches using algorithms derived from factorial fertilizer trials across multiple locations may not account for field-specific variability.",
+          "Small-scale farm size and cost of soil testing make it impossible to give fertilizer recommendations based on each farmer without advanced technology like GIS mapping."
+        ],
+        "methodological_constraints": [
+          "The framework presented for K and P fertilizer requirements does not specifically consider soil–plant–nutrient interactions and biological processes mediating nutrient availability, though it aims to consider their net effect.",
+          "The PROFILE model for K weathering rates showed a large discrepancy with field-based estimates, possibly due to its sensitivity to clay content/specific surface area and representation of mica weathering.",
+          "Nutrient balance calculations sometimes do not give the real picture as they may neglect contributions from sources other than fertilizers (e.g., organic manures, crop residues, irrigation water, biological processes)."
+        ],
+        "interpretation_caveats": [
+          "The application of fertilizer at full maintenance can result in financial loss when the crop does not respond to the added nutrient.",
+          "Failure to apply K or P can result in nutrient depletion and eventual loss in yield, which could take a number of seasons before detection.",
+          "The 'unaccounted for' K in the long-term grass experiment is presumed to be from fixed and mineral bound K sources and/or uptake from deeper soil horizons, but this is an inference.",
+          "The perception of 'plant available K' needs to be reassessed to include the dynamics of soil K resources beyond readily exchangeable forms."
+        ]
+      },
+      "extraction_assessment": {
+        "data_completeness": 0.95,
+        "quantitative_content": 0.98,
+        "temporal_coverage": 0.95,
+        "spatial_coverage": 0.95,
+        "methodological_detail": 0.98,
+        "extraction_confidence": 0.97,
+        "native_context_preservation": 0.98,
+        "extraction_notes": "Comprehensive extraction of soil K information was performed, maintaining the native research context. All quantitative data with original units and measurement contexts were captured. Methodological approaches and identified limitations were documented. The extraction covers all specified soil K parameters across the multiple papers provided."
+      },
+      "enhancement_summary": {
+        "corrections_applied": [],
+        "enhancements_added": [
+          "Added specific coefficient of variation for Ghoragacha village in 'Available Potassium (kg ha-1) among farmers' plots (India)'.",
+          "Clarified the yield potential context for the QUEFTS-derived RIE value of 15.9 kg K per tonne of grain.",
+          "Restructured the method comparison for Ac-K vs NH4Ac into a dedicated 'method_comparisons' array for better organization."
+        ],
+        "areas_enriched": [
+          "Quantitative data (statistical measures)",
+          "Contextual information for quantitative data",
+          "Methodological details (structure of method comparisons)"
+        ],
+        "enhancement_justification": "The original extraction was highly accurate and complete. Enhancements focused on adding minor missing statistical details and improving the structural organization of some methodological information to further enhance clarity and precision, aligning with the goal of providing the most complete and accurate soil K characterization possible."
+      }
+    },
+    "validation_certification": {
+      "scientific_accuracy_score": 9.9,
+      "context_preservation_score": 9.8,
+      "completeness_score": 9.7,
+      "extraction_enhancement_value": "high",
+      "overall_validation_confidence": 9.7,
+      "validation_status": "approved",
+      "critical_issues_count": 0,
+      "enhancement_recommendations": [],
+      "validator_notes": "The Stage 2A extraction was exceptionally well-done, demonstrating high fidelity to the source material. The enhancements made were minor, primarily adding specific statistical values and refining the structure of existing information, rather than correcting errors or filling major omissions. The extraction accurately and comprehensively captures the soil K biogeochemistry information from the paper."
+    },
+    "_usage_metadata": {
+      "timestamp": "2025-07-10T12:13:46.484215",
+      "stage_name": "unknown",
+      "paper_id": "unknown",
+      "prompt_length_chars": 147705,
+      "processing_time_seconds": 137.63,
+      "thinking_enabled": true,
+      "input_tokens": 41125,
+      "output_tokens": 30215,
+      "thinking_tokens": 0,
+      "input_cost_usd": 0.006169,
+      "output_cost_usd": 0.105752,
+      "thinking_cost_usd": 0.0,
+      "total_cost_usd": 0.111921
+    },
+    "success": true,
+    "stage": "2B",
+    "paper_id": "Field-specific potassium and phosphorus balances.pdf",
+    "validation_timestamp": "2025-07-10T12:13:46.488106",
+    "temperature_used": 0.05,
+    "validated_stage": "2A"
+  }
+}

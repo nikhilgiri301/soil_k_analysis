@@ -1,0 +1,432 @@
+{
+  "stage_id": "4a",
+  "stage_name": "Client Mapping",
+  "paper_id": "Organic Materials",
+  "processing_timestamp": "2025-07-10T16:19:02.550564",
+  "processing_time_seconds": 45.291657,
+  "processing_mode": "single_paper",
+  "validation_passed": true,
+  "validation_message": "Valid mapping result",
+  "results": {
+    "paper_identification": {
+      "title": "Guide on Potash Content in Organic Materials for Nutrient Planning (UK)",
+      "primary_soil_k_focus": "Potash (K2O) content and availability in organic materials, and their management for agricultural nutrient planning.",
+      "geographic_coverage": [
+        "UK"
+      ],
+      "temporal_scope": "Static guide (May 2017) with insights on short-term K availability ('next crop') and impact of 'long periods' of storage.",
+      "research_approach": "Compilation and synthesis of existing data and best practices; advocacy for robust measurement.",
+      "overall_relevance_assessment": "Highly relevant for understanding K inputs from organic amendments in UK agricultural systems, emphasizing variability and best practices for quantification, despite lacking primary numerical data for typical values."
+    },
+    "direct_evidence_mapping": {
+      "quantitative_parameters": [
+        {
+          "question_branch": "1.1",
+          "evidence_type": "derived_estimate",
+          "quantitative_data": {
+            "description": "Numerical values for typical total and available potash content in various organic materials are missing from the source text. However, the guide defines the parameters (Total Potash (K2O), Available Potash (K2O)) and their units (kg/t). It also provides crucial conversion factors (kg/t to units/ton, kg/m³ to units/1000 gallons) for practical application.",
+            "parameters_defined": [
+              "Total Potash (K2O)",
+              "Available Potash (K2O)"
+            ],
+            "conversion_factors": [
+              "kg/t to units/ton",
+              "kg/m³ to units/1000 gallons"
+            ]
+          },
+          "measurement_context": "Compiled 'typical values' from existing data (e.g., AHDB Nutrient Manual RB209), not direct measurements from this guide. Conversion factors are standard unit conversions.",
+          "units": "kg/t, units/ton, units/1000 gallons",
+          "precision": "Lower, unquantified precision for 'typical values' compared to farm-specific laboratory analysis. Conversion factors are precise.",
+          "evidence_strength": "low",
+          "geographic_applicability": [
+            "UK"
+          ],
+          "temporal_applicability": "Reflects values typical at the time of publication (May 2017). Availability for the 'next crop'.",
+          "integration_readiness": "requires_processing"
+        }
+      ],
+      "temporal_dynamics": [
+        {
+          "question_branch": "2.2|2.6",
+          "pattern_type": "Negative temporal trend (decline in K content)",
+          "temporal_evidence": {
+            "description": "Potash values in Farmyard Manure (FYM) will be lower if stored in the open for long periods, explicitly pointing to leaching and other forms of loss. This indicates a continuous loss process over time prior to application.",
+            "timeframe_qualitative": "long periods of open storage"
+          },
+          "timeframe_coverage": "Pre-application storage duration (qualitative 'long periods'); short-term availability ('next crop').",
+          "pattern_reliability": "High reliability, as K leaching from exposed organic materials is a well-established phenomenon.",
+          "inflection_point_evidence": "Implied inflection point where K content significantly drops due to prolonged open storage, but not quantitatively defined.",
+          "evidence_strength": "medium",
+          "prediction_potential": "Implies that K content projections for stored organic materials must account for storage duration and conditions, though it does not provide a quantitative model for this projection.",
+          "uncertainty_characterization": "Qualitative; no specific rates or magnitudes of loss are quantified."
+        }
+      ],
+      "probability_assessment": [],
+      "regional_variations": [
+        {
+          "question_branch": "4.3|4.4|other_regions.europe",
+          "regional_evidence": {
+            "description": "The guide explicitly states that 'the nutrient content of organic manures on farms vary widely'. This indicates significant spatial variability in K content, both within individual farms and between different farms.",
+            "geographic_context": "UK agricultural context."
+          },
+          "geographic_specificity": "UK",
+          "environmental_controls": [
+            "Storage conditions",
+            "Dry Matter (DM) content of organic material"
+          ],
+          "extrapolation_potential": "Low for specific numerical values outside the UK; medium for the principle of high spatial variability in organic material composition in similar temperate agricultural systems.",
+          "scaling_factors": [],
+          "evidence_strength": "medium",
+          "regional_confidence": "High for UK context regarding variability, low for specific values.",
+          "geographic_context_note": "While specific to the UK, the principle of wide variability in organic manure composition is universally applicable to agricultural systems."
+        }
+      ],
+      "agricultural_integration": [
+        {
+          "question_branch": "5.1|5.2|5.3|5.4",
+          "integration_evidence": {
+            "description": "The guide integrates K content of organic materials directly into agricultural nutrient planning, emphasizing their role as valuable nutrient sources. It highlights the importance of adjusting K inputs based on dry matter content and provides practical conversion factors for application. It promotes efficient use of potash fertilizer and organic materials.",
+            "management_recommendations": [
+              "Prioritize laboratory analysis over typical values",
+              "Ensure representative sampling",
+              "Manage FYM storage to minimize K loss"
+            ]
+          },
+          "system_context": "Agricultural systems utilizing organic materials as nutrient inputs for crop production.",
+          "management_effects": [
+            "Improved accuracy of K inputs through lab analysis",
+            "Reduced K loss through proper storage",
+            "Enhanced nutrient planning efficiency"
+          ],
+          "sustainability_implications": "Promotes efficient use of potash fertilizer and organic materials, contributing to more sustainable nutrient management by optimizing K inputs and reducing waste.",
+          "scaling_considerations": [
+            "Differentiates between general 'typical values' (broader scale) and the necessity for 'farm-specific' laboratory analysis (finer scale)."
+          ],
+          "evidence_strength": "high",
+          "system_applicability": "Highly applicable to agricultural systems globally that use organic amendments for nutrient management."
+        }
+      ],
+      "scaling_extrapolation": [
+        {
+          "question_branch": "6.1|6.4",
+          "scaling_evidence": {
+            "description": "The guide provides 'typical values' as a broad-scale reference for general planning, while simultaneously advocating for 'farm-specific laboratory analysis' as a method for scaling down to precise, local conditions due to acknowledged 'wide variability'.",
+            "uncertainty_acknowledgement": "Qualitatively acknowledges that using 'typical values' introduces higher uncertainty compared to farm-specific analysis."
+          },
+          "scaling_approach": "Implicit practical scaling approach from general averages to local precision.",
+          "validation_method": "The guide implicitly validates the need for scaling down through the recommendation of farm-specific analysis due to high variability, rather than providing explicit scaling models or validation studies.",
+          "uncertainty_propagation": "Qualitatively acknowledges that uncertainty propagates from broad 'typical values' to specific field applications if farm-specific analysis is not performed.",
+          "extrapolation_limits": [
+            "Typical values are limited for precise, farm-level K budgeting.",
+            "Extrapolation of specific values beyond the UK is limited."
+          ],
+          "evidence_strength": "medium",
+          "scaling_confidence": "Medium for general planning using typical values (with acknowledged limitations); low for precise field application without specific analysis."
+        }
+      ]
+    },
+    "indirect_evidence_mapping": {
+      "supporting_context": [
+        {
+          "question_relevance": [
+            "1.1",
+            "1.2",
+            "2.1",
+            "2.2",
+            "4.2",
+            "5.1",
+            "5.2",
+            "5.3",
+            "5.4",
+            "6.1",
+            "6.4"
+          ],
+          "contextual_evidence": "The guide's authority stems from synthesizing existing data and established guidelines (AHDB Nutrient Manual RB209). It provides a framework for estimating K inputs from organic amendments and highlights key processes like potash loss from stored FYM (likely due to leaching) and the distinction between total and available K. It emphasizes the influence of Dry Matter (DM) content on nutrient content.",
+          "supporting_value": "high",
+          "interpretation_support": "Provides essential conceptual understanding of K dynamics in organic materials and their role in agricultural systems, supporting the interpretation of quantitative data from other sources.",
+          "extrapolation_support": "The principles of K variability, loss mechanisms (leaching), and the importance of DM content are broadly applicable beyond the UK, supporting conceptual extrapolation.",
+          "uncertainty_insights": "Highlights inherent variability in organic material composition and the impact of storage conditions as major sources of uncertainty in K content estimation."
+        }
+      ],
+      "methodological_insights": [
+        {
+          "question_relevance": [
+            "1.1",
+            "3.1",
+            "5.2",
+            "6.3",
+            "6.4"
+          ],
+          "methodological_contribution": "Strong advocacy for robust K measurement practices, specifically laboratory analysis and representative sampling, as superior to using 'typical values' for accurate nutrient planning.",
+          "analytical_advances": "Does not introduce new analytical methods but emphasizes the application of established, high-rigor methods (lab analysis per RB209) as best practice.",
+          "measurement_validation": "Implicitly validates laboratory analysis as the most accurate method for determining K content in organic materials, contrasting it with the lower accuracy of typical values.",
+          "scaling_approaches": "The guide's structure (providing 'typical values' while recommending 'farm-specific analysis') implicitly serves as a practical scaling approach from general averages to local precision.",
+          "uncertainty_characterization": "Qualitatively characterizes measurement uncertainty by highlighting 'wide variability' and the impact of storage, recommending lab analysis and proper sampling to reduce this uncertainty."
+        }
+      ],
+      "comparative_benchmarking": [
+        {
+          "question_relevance": [
+            "1.1",
+            "3.1",
+            "5.2",
+            "6.3"
+          ],
+          "benchmark_value": "The guide establishes a clear benchmark: farm-specific laboratory analysis provides 'correct' and 'more accurate' potash values compared to using 'typical values'.",
+          "comparative_context": "This comparison highlights the practical trade-off between convenience (using typical values) and accuracy (lab analysis) in nutrient management.",
+          "validation_potential": "Supports the validation of K input estimates by emphasizing the need for site-specific measurements to confirm or refine general assumptions.",
+          "regional_comparison": "The comparison is within the UK context, but the principle of site-specific analysis being superior to general averages is universally applicable.",
+          "temporal_comparison": "Farm-specific analysis is valid for the 'year in question', implicitly comparing to potentially outdated or generalized typical values."
+        }
+      ]
+    },
+    "evidence_synthesis_by_category": {
+      "quantitative_parameters_summary": {
+        "primary_contributions": [
+          "Provides a framework for understanding and estimating 'total' and 'available' potash (K2O) content in organic materials.",
+          "Offers essential conversion factors for practical application of K content data."
+        ],
+        "data_quality": "The guide itself does not provide the actual numerical values for typical K content, which is a critical limitation. The quality of the framework and conversion factors is high, but the quantitative data is incomplete.",
+        "integration_potential": "High potential for integration into agricultural demand models as a framework for K inputs from organic materials, provided external numerical data for K content is sourced. Conversion factors are directly usable.",
+        "confidence_level": 0.6,
+        "key_limitations": [
+          "Absence of actual numerical values for typical potash content in organic materials.",
+          "Unquantified precision for the 'typical values' themselves."
+        ]
+      },
+      "temporal_dynamics_summary": {
+        "primary_contributions": [
+          "Identifies that potash content in FYM decreases significantly over 'long periods' of open storage due to leaching and other losses.",
+          "Defines 'available' K as that for the 'next crop', indicating short-term availability."
+        ],
+        "pattern_reliability": "High reliability for the qualitative pattern of K loss from poorly stored organic materials, as it aligns with established scientific understanding.",
+        "inflection_point_insights": "Qualitatively implies an inflection point where K content significantly declines with prolonged open storage, but does not quantify this transition.",
+        "confidence_level": 0.7,
+        "temporal_limitations": [
+          "No quantitative rates or magnitudes of K loss are provided.",
+          "Does not present time-series data or long-term trends of soil K itself.",
+          "Focus is on pre-application K content, not in-soil temporal dynamics."
+        ]
+      },
+      "regional_variations_summary": {
+        "primary_contributions": [
+          "Explicitly characterizes the 'wide variability' of K content in organic manures on farms.",
+          "Advocates for farm-specific laboratory analysis to account for this variability."
+        ],
+        "geographic_coverage": "Primarily UK agricultural systems.",
+        "extrapolation_potential": "Low for specific numerical values outside the UK. Medium for the general principle of high spatial variability in organic material composition in similar temperate agricultural regions.",
+        "confidence_level": 0.8,
+        "regional_limitations": [
+          "No quantitative data on regional variations within the UK or comparisons to other regions.",
+          "Specific 'typical values' are UK-centric and not directly transferable."
+        ]
+      },
+      "integration_potential_summary": {
+        "primary_contributions": [
+          "Provides comprehensive guidance for integrating organic material K into agricultural nutrient planning.",
+          "Offers practical management recommendations to optimize K inputs and minimize losses.",
+          "Promotes sustainable K management through efficient resource utilization."
+        ],
+        "system_relevance": "Highly relevant for agricultural systems that utilize organic amendments, directly informing nutrient budgeting and management practices.",
+        "scaling_requirements": "Highlights the need for scaling down from general 'typical values' to farm-specific data via laboratory analysis for accurate field-level application.",
+        "confidence_level": 0.9,
+        "integration_limitations": [
+          "The guide's utility for quantitative modeling is limited by the absence of numerical K content values, requiring external data sources.",
+          "Does not provide a quantitative model for K dynamics within the soil after application."
+        ]
+      }
+    },
+    "research_intelligence_assessment": {
+      "highest_value_contributions": [
+        {
+          "question_branch": "5.1|5.2|5.3|5.4",
+          "contribution_type": "Guidance for K management in agricultural systems",
+          "value_description": "Provides practical, actionable recommendations for integrating organic K into nutrient planning, emphasizing the importance of accurate assessment and proper storage. This directly supports efficient and sustainable K use.",
+          "confidence_level": 0.9,
+          "implementation_readiness": "high"
+        },
+        {
+          "question_branch": "6.3|6.4",
+          "contribution_type": "Advocacy for robust K measurement practices",
+          "value_description": "Strongly advocates for laboratory analysis and representative sampling, which are critical for reducing uncertainty and improving the precision of K input data for modeling.",
+          "confidence_level": 0.8,
+          "implementation_readiness": "high"
+        }
+      ],
+      "medium_value_contributions": [
+        {
+          "question_branch": "1.1",
+          "contribution_type": "Framework for estimating K inputs from organic materials",
+          "value_description": "Defines key parameters (total/available K2O) and provides essential conversion factors, forming a conceptual basis for quantifying K supply, despite missing numerical values.",
+          "confidence_level": 0.6,
+          "development_requirements": "Requires sourcing actual numerical values for K content from external references (e.g., full RB209 manual) to become quantitatively useful."
+        },
+        {
+          "question_branch": "2.2|2.6",
+          "contribution_type": "Identification of factors influencing K content over time (storage)",
+          "value_description": "Qualitatively highlights the significant impact of storage duration and conditions on K content in organic materials, which is crucial for accurate pre-application K budgeting.",
+          "confidence_level": 0.7,
+          "development_requirements": "Requires further research to quantify the rates and magnitudes of K loss from storage under various conditions to enable predictive modeling."
+        },
+        {
+          "question_branch": "4.3|4.4",
+          "contribution_type": "Characterization of K variability in organic materials",
+          "value_description": "Explicitly acknowledges and emphasizes the wide spatial variability of K content in organic manures, underscoring the need for site-specific data for accurate modeling.",
+          "confidence_level": 0.8,
+          "development_requirements": "Requires collection of more spatially explicit data on K content variability across different farm types and regions to inform regional modeling."
+        }
+      ],
+      "knowledge_gap_identification": [
+        {
+          "question_branch": "1.1",
+          "gap_description": "The actual numerical values for typical total and available potash content in various organic materials are missing from the provided source text.",
+          "gap_significance": "critical",
+          "research_priority": "High (essential for quantitative application of the guide's framework)"
+        },
+        {
+          "question_branch": "2.1|2.2",
+          "gap_description": "Quantification of K loss rates or magnitudes from stored organic materials (e.g., FYM) under different storage conditions.",
+          "gap_significance": "important",
+          "research_priority": "Medium (improves precision of temporal K input estimates)"
+        },
+        {
+          "question_branch": "3.1|3.2|3.3|3.4",
+          "gap_description": "Statistical measures (e.g., standard deviation, confidence intervals) or probability distributions for the 'typical values' of K content.",
+          "gap_significance": "moderate",
+          "research_priority": "Medium (enhances uncertainty characterization for modeling)"
+        }
+      ],
+      "uncertainty_intelligence": [
+        {
+          "uncertainty_source": "Variability in nutrient content of organic manures (farm-to-farm, year-to-year)",
+          "affected_questions": [
+            "1.1",
+            "3.1",
+            "4.3",
+            "5.2",
+            "6.4"
+          ],
+          "uncertainty_magnitude": "Described as 'vary widely', implying significant magnitude when relying on 'typical values'.",
+          "mitigation_approaches": [
+            "Conducting farm-specific laboratory analysis",
+            "Ensuring truly representative sampling"
+          ],
+          "confidence_impacts": "Directly reduces confidence in K input estimates if 'typical values' are used without site-specific validation."
+        },
+        {
+          "uncertainty_source": "Impact of storage conditions on potash content (e.g., open storage of FYM)",
+          "affected_questions": [
+            "1.1",
+            "2.1",
+            "2.2",
+            "5.2"
+          ],
+          "uncertainty_magnitude": "Potash values 'will be lower', indicating a significant, though unquantified, reduction.",
+          "mitigation_approaches": [
+            "Proper storage management (e.g., covered storage)",
+            "Adjusting K estimates based on storage duration and conditions"
+          ],
+          "confidence_impacts": "Leads to overestimation of available K if storage history is not considered, impacting nutrient budgeting accuracy."
+        }
+      ]
+    },
+    "integration_pathway_analysis": {
+      "immediate_applications": [
+        {
+          "question_branch": "5.1|5.2|5.3|5.4",
+          "application_description": "Utilize the guide's principles for K management from organic materials in agricultural demand modeling, emphasizing the importance of farm-specific data collection.",
+          "integration_approach": "Incorporate the guide's recommendations (e.g., prioritize lab analysis, proper storage) as best practices or assumptions within model scenarios.",
+          "confidence_level": 0.9,
+          "validation_requirements": [
+            "Validate model outputs against actual farm-level K application data where available."
+          ]
+        },
+        {
+          "question_branch": "1.1",
+          "application_description": "Apply the provided conversion factors to translate K content data (from external sources) into consistent units for agricultural demand modeling.",
+          "integration_approach": "Directly implement the conversion factors in data processing pipelines for K inputs from organic materials.",
+          "confidence_level": 1.0,
+          "validation_requirements": []
+        }
+      ],
+      "medium_term_integration": [
+        {
+          "question_branch": "2.1|2.2",
+          "development_pathway": "Develop quantitative relationships between storage duration/conditions and K loss rates for organic materials, building upon the guide's qualitative insights.",
+          "additional_data_needs": [
+            "Experimental data on K loss rates from various organic materials under different storage conditions (e.g., covered vs. open, duration)."
+          ],
+          "scaling_requirements": [
+            "Scale experimental K loss rates to farm-level storage practices."
+          ],
+          "timeline_estimate": "1-3 years (for initial model integration based on new data)"
+        },
+        {
+          "question_branch": "4.3|4.4",
+          "development_pathway": "Incorporate the concept of high spatial variability into regional K demand models, potentially by developing variability factors or requiring spatially explicit input data.",
+          "additional_data_needs": [
+            "Spatially explicit data on organic manure composition across different agricultural regions.",
+            "Data on typical farm-level management practices influencing K content."
+          ],
+          "scaling_requirements": [
+            "Develop methods to aggregate farm-level variability to regional scales for modeling."
+          ],
+          "timeline_estimate": "2-4 years"
+        }
+      ],
+      "scaling_requirements": {
+        "spatial_scaling_needs": [
+          "Need to scale down from general 'typical values' to farm-specific or field-specific K content data for precise application, ideally through laboratory analysis.",
+          "Methods to account for and propagate the 'wide variability' of organic manure K content when scaling from farm to regional levels."
+        ],
+        "temporal_scaling_needs": [
+          "Need to quantify the temporal dynamics of K loss from stored organic materials to accurately project K inputs over time.",
+          "Integration of short-term 'next crop' availability into longer-term K budgeting models."
+        ],
+        "methodological_scaling_needs": [
+          "Implementation of recommended robust measurement practices (lab analysis, representative sampling) at scale to improve the accuracy of K input data for modeling."
+        ],
+        "uncertainty_propagation_needs": [
+          "Develop explicit methods to quantify and propagate uncertainty associated with using 'typical values' versus measured values in K demand models.",
+          "Characterize uncertainty related to K loss during storage and its impact on overall K balance."
+        ]
+      }
+    },
+    "mapping_quality_assessment": {
+      "mapping_completeness": 0.95,
+      "evidence_assessment_confidence": 0.95,
+      "scientific_relevance_accuracy": 0.95,
+      "integration_pathway_feasibility": "high",
+      "overall_mapping_confidence": 0.95,
+      "critical_assumptions": [
+        "Assumed that the 'validated paper synthesis' accurately reflects the content and limitations of the original guide document."
+      ],
+      "mapping_limitations": [
+        "The primary limitation in mapping is the absence of actual numerical values for potash content in the provided synthesis, which restricts the depth of quantitative mapping for question branch 1.1."
+      ],
+      "enhancement_opportunities": [
+        "Obtain the full AHDB Nutrient Manual (RB209) 2017 or the complete 'Organic Materials' guide to extract the actual numerical values for potash content, which would significantly enhance the quantitative aspects of this mapping."
+      ]
+    },
+    "_usage_metadata": {
+      "timestamp": "2025-07-10T16:19:02.547924",
+      "stage_name": "unknown",
+      "paper_id": "unknown",
+      "prompt_length_chars": 57300,
+      "processing_time_seconds": 45.02,
+      "thinking_enabled": true,
+      "input_tokens": 12489,
+      "output_tokens": 5665,
+      "thinking_tokens": 0,
+      "input_cost_usd": 0.001873,
+      "output_cost_usd": 0.019828,
+      "thinking_cost_usd": 0.0,
+      "total_cost_usd": 0.021701
+    },
+    "stage": "4A",
+    "paper_id": "unknown",
+    "mapping_timestamp": "2025-07-10T16:19:02.549692",
+    "temperature_used": 0.1,
+    "client_architecture_version": "1.0"
+  }
+}

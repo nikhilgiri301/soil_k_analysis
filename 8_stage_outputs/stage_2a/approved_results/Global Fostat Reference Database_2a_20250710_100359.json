@@ -1,0 +1,488 @@
+{
+  "stage_id": "2a",
+  "stage_name": "Soil K-Specific Extraction",
+  "paper_id": "Global Fostat Reference Database",
+  "processing_timestamp": "2025-07-10T10:03:59.199058",
+  "processing_time_seconds": 44.64273166656494,
+  "processing_mode": "single_paper",
+  "validation_passed": true,
+  "validation_message": "Valid soil K extraction",
+  "results": {
+    "paper_metadata": {
+      "title": "A global FAOSTAT reference database of cropland nutrient budgets and nutrient use efficiency (1961–2020): nitrogen, phosphorus and potassium",
+      "authors": [
+        "Cameron I. Ludemann",
+        "Nathan Wanner",
+        "Pauline Chivenge",
+        "Achim Dobermann",
+        "Rasmus Einarsson",
+        "Patricio Grassini",
+        "Armelle Gruere",
+        "Kevin Jackson",
+        "Luis Lassaletta",
+        "Federico Maggi",
+        "Griffiths Obli-Laryea",
+        "Martin K. van Ittersum",
+        "Srishti Vishwakarma",
+        "Xin Zhang",
+        "Francesco N. Tubiello"
+      ],
+      "journal": "Earth Syst. Sci. Data",
+      "publication_year": 2024,
+      "research_focus": "Development of a global database of country-level nutrient budget estimates for nitrogen (N), phosphorus (P), and potassium (K) on cropland, covering the period from 1961 to 2020, to provide a global reference for monitoring agricultural productivity and sustainability.",
+      "soil_k_relevance": "Potassium (K) is one of the three primary nutrients (N, P, K) for which comprehensive cropland nutrient budgets and nutrient use efficiency estimates are developed and presented in this global database. The study quantifies K inputs, outputs, balances (surpluses/deficits), and use efficiencies over time and across countries, highlighting its role in agricultural sustainability."
+    },
+    "research_context": {
+      "study_objectives": "To quantify nutrient flows (N, P, K) in agriculture, identify excess or insufficient use of fertilizers and other nutrient sources, calculate nutrient balances (surplus/deficit) and nutrient use efficiency, and provide a global reference database for monitoring agricultural performance and supporting Sustainable Development Goals indicators.",
+      "soil_k_research_role": "Potassium (K) is a core component of the nutrient budget analysis, alongside N and P. The research specifically addresses the lack of long-term time series data for K in global nutrient budget databases, aiming to provide the most complete dataset to date for K budgets, budget components, and nutrient use efficiencies.",
+      "geographic_setting": "Global, covering 205 countries and territories, as well as regional and global aggregates.",
+      "environmental_conditions": "The study focuses on cropland, where nutrient flows and environmental impacts are typically highest. It implicitly considers environmental impacts of nutrient surpluses (e.g., water and air quality, climate change, biodiversity loss) and deficits (soil nutrient mining, decreased soil health).",
+      "agricultural_context": "Cropland agriculture, defined as land used for cultivation of temporary and permanent crops in rotation with fallow, meadows, and pastures within cycles of up to five years. The study considers synthetic fertilizer application, manure from livestock, and crop harvest as key components of the nutrient budget.",
+      "study_design": "A global, country-level, time-series analysis of partial nutrient budgets (N, P, K) on cropland. The nutrient balance is calculated as the difference between inputs (synthetic fertilizer, manure, atmospheric deposition for N, biological N fixation for N) and outputs (crop removal). Nutrient use efficiency is computed as nutrient outputs as a percentage of nutrient inputs.",
+      "temporal_scope": "Long-term, covering the period from 1961 to 2020, with plans for annual updates.",
+      "spatial_scope": "Country-level data for 205 countries and territories, aggregated to regional and global scales. Focus on cropland as a land use category."
+    },
+    "quantitative_soil_k_data": {
+      "concentration_measurements": [],
+      "pool_characterizations": [],
+      "process_rates": [],
+      "balance_calculations": [
+        {
+          "balance_type": "Global Cropland K Balance (Total)",
+          "components": {
+            "inputs_1961": 28.0,
+            "inputs_2020": 58.0,
+            "synthetic_fertilizers_1961": 6.6,
+            "synthetic_fertilizers_2020": 32.0,
+            "manure_1961": 21.0,
+            "manure_2020": 25.0,
+            "outputs_1961": 13.0,
+            "outputs_2020": 46.0,
+            "crop_removal_1961": 13.0,
+            "crop_removal_2020": 46.0
+          },
+          "net_result": -20.0,
+          "units": "million tonnes (Mt)",
+          "calculation_period": "1961-2020 (change)",
+          "assumptions": [
+            "Values rounded to 2 significant figures."
+          ]
+        },
+        {
+          "balance_type": "Global Cropland K Balance (Per Hectare)",
+          "components": {
+            "inputs_1961": 20.0,
+            "inputs_2020": 37.0,
+            "synthetic_fertilizers_1961": 4.9,
+            "synthetic_fertilizers_2020": 21.0,
+            "manure_applied_to_soils_1961": 16.0,
+            "manure_applied_to_soils_2020": 16.0,
+            "outputs_1961": 9.3,
+            "outputs_2020": 29.0,
+            "crop_removal_1961": 9.3,
+            "crop_removal_2020": 29.0
+          },
+          "net_result": -27.0,
+          "units": "kg ha-1",
+          "calculation_period": "1961-2020 (change)",
+          "assumptions": [
+            "Values rounded to 2 significant figures."
+          ]
+        },
+        {
+          "balance_type": "Global Cropland K Use Efficiency",
+          "components": {
+            "efficiency_1961": 46.0,
+            "efficiency_2020": 79.0
+          },
+          "net_result": 72.0,
+          "units": "%",
+          "calculation_period": "1961-2020 (change)",
+          "assumptions": [
+            "Values rounded to 2 significant figures.",
+            "Nutrient use efficiency defined as nutrient outputs as a percentage of nutrient inputs."
+          ]
+        },
+        {
+          "balance_type": "Country-level K Surpluses (2020)",
+          "components": {
+            "negative_surpluses_countries": 59,
+            "surplus_range_Africa": "<40 kg ha-1 yr-1 (except Egypt)",
+            "surplus_China": "35 kg K ha-1 yr-1 (by 1995)"
+          },
+          "net_result": null,
+          "units": "kg ha-1 yr-1",
+          "calculation_period": "2020",
+          "assumptions": [
+            "Quantile-based color coding for maps (Fig. 2c)."
+          ]
+        },
+        {
+          "balance_type": "Country-level K Use Efficiency (2020)",
+          "components": {
+            "efficiency_greater_than_100_percent_countries": 59,
+            "efficiency_less_than_50_percent_countries": 59,
+            "Indonesia_efficiency_1961_1980": ">100%"
+          },
+          "net_result": null,
+          "units": "%",
+          "calculation_period": "2020",
+          "assumptions": [
+            "Quantile-based color coding for maps (Fig. 3c)."
+          ]
+        },
+        {
+          "balance_type": "Manure K in China (2005-2014 mean annual application)",
+          "components": {
+            "Zhang_et_al_2023_K_manure": 4.7,
+            "Current_study_K_manure": 4.3,
+            "Zhang_et_al_2023_K_manure_percent_of_total_K": 31.0,
+            "Current_study_K_manure_percent_of_total_K": 43.0
+          },
+          "net_result": null,
+          "units": "Mt",
+          "calculation_period": "2005-2014 (mean annual)",
+          "assumptions": [
+            "Comparison with Zhang et al. (2023) data."
+          ]
+        }
+      ]
+    },
+    "temporal_patterns": {
+      "study_duration": "1961-2020 (60 years)",
+      "monitoring_frequency": "Annual",
+      "seasonal_observations": [],
+      "long_term_trends": [
+        {
+          "parameter": "Global Cropland K Surpluses (Total)",
+          "trend_description": "Progressively increasing over 1961-2020, except for K which decreased.",
+          "time_period": "1961-2020",
+          "trend_magnitude": -20.0,
+          "statistical_significance": "Not explicitly stated, but presented as observed trend."
+        },
+        {
+          "parameter": "Global Cropland K Surpluses (Per Hectare)",
+          "trend_description": "Decreased by 27% from 1961 to 2020.",
+          "time_period": "1961-2020",
+          "trend_magnitude": -27.0,
+          "statistical_significance": "Not explicitly stated, but presented as observed trend."
+        },
+        {
+          "parameter": "Global Cropland K Use Efficiency",
+          "trend_description": "Increased over the same period, in particular since the 1980s.",
+          "time_period": "1961-2020",
+          "trend_magnitude": 72.0,
+          "statistical_significance": "Not explicitly stated, but presented as observed trend."
+        },
+        {
+          "parameter": "Global K Surpluses (Absolute Increases)",
+          "trend_description": "Fastest increase between 1961 and 1988, followed by a short-term decrease and then a less marked increase until 2020.",
+          "time_period": "1961-2020",
+          "trend_magnitude": null,
+          "statistical_significance": "Not explicitly stated, but presented as observed trend."
+        },
+        {
+          "parameter": "EU K Surpluses (Per Hectare)",
+          "trend_description": "Decreased over the last 3 decades.",
+          "time_period": "Last 3 decades (approx. 1990-2020)",
+          "trend_magnitude": -60.0,
+          "statistical_significance": "Not explicitly stated, but presented as observed trend."
+        },
+        {
+          "parameter": "K Surpluses in China, India, Pakistan, Brazil",
+          "trend_description": "Increased by nearly 300% (mean across N, P, K) over the same period.",
+          "time_period": "1990-2020",
+          "trend_magnitude": 300.0,
+          "statistical_significance": "Not explicitly stated, but presented as observed trend."
+        }
+      ],
+      "event_responses": [
+        {
+          "event_type": "Decline in fertilizer consumption (late 1980s/early 1990s)",
+          "soil_k_response": "Fall in K surpluses.",
+          "response_timing": "Late 1980s/early 1990s",
+          "magnitude": {},
+          "recovery_pattern": "Followed by relatively stable or declining trends in K balances."
+        },
+        {
+          "event_type": "EU policy implementation (late 1980s)",
+          "soil_k_response": "Decreased K surpluses.",
+          "response_timing": "Late 1980s onwards",
+          "magnitude": {
+            "EU_K_surplus_decrease_percent": 60.0
+          },
+          "recovery_pattern": null
+        }
+      ]
+    },
+    "spatial_variations": {
+      "within_site_variability": [],
+      "between_site_differences": [
+        {
+          "parameter": "Cropland K Balance",
+          "site_comparison": "Africa and the Americas vs. other regions",
+          "difference_magnitude": {
+            "Africa_Americas_status": "K deficits"
+          },
+          "explanatory_factors": [
+            "Historically low inputs in Africa (Vitousek et al., 2009).",
+            "Returns on investment for K application often less than N and P."
+          ]
+        },
+        {
+          "parameter": "Cropland K Balance",
+          "site_comparison": "China vs. France (among top 10 SF N users)",
+          "difference_magnitude": {
+            "China_K_surplus_1995": "35 kg K ha-1 yr-1",
+            "France_K_surplus_1961_1986": "Greater than China's until 1995"
+          },
+          "explanatory_factors": [
+            "Substantial increases in SF use in China in recent decades."
+          ]
+        }
+      ],
+      "scaling_considerations": [
+        {
+          "scale_transition": "From aggregated data to georeferenced grids",
+          "scaling_approach": "Future capability for local-scale information from spatialization of aggregated data.",
+          "uncertainty": "Generally associated with lower uncertainty at local scale, especially in countries with large surface area where only small portions are used for agriculture.",
+          "limitations": []
+        }
+      ]
+    },
+    "process_characterization": {
+      "cycling_processes": [
+        {
+          "process_name": "K Balance (Inputs vs. Outputs)",
+          "description": "Quantification of K flows in agriculture, defined as the difference between nutrient inputs (synthetic fertilizer, manure) and productive outputs (crop removal). Surpluses indicate excess use, deficits indicate insufficient use or soil nutrient mining.",
+          "quantification": {
+            "inputs": "Synthetic fertilizer, manure from livestock",
+            "outputs": "Nutrients removed via crop harvest"
+          },
+          "controlling_factors": [
+            "Application rates of synthetic fertilizers and manure.",
+            "Crop production statistics.",
+            "Crop nutrient removal coefficients."
+          ],
+          "measurement_approach": "Calculated as: balance = SF * CF + MAS - CR"
+        }
+      ],
+      "plant_soil_interactions": [
+        {
+          "interaction_type": "K removal by crops",
+          "description": "Nutrients removed from the soil by harvested crops, representing an output in the nutrient budget.",
+          "quantitative_data": {
+            "global_crop_removal_1961": "13 Mt K",
+            "global_crop_removal_2020": "46 Mt K",
+            "global_crop_removal_per_ha_1961": "9.3 kg ha-1",
+            "global_crop_removal_per_ha_2020": "29 kg ha-1"
+          },
+          "temporal_patterns": "Increased by 250% (total) and 210% (per-hectare) from 1961 to 2020.",
+          "influencing_factors": [
+            "Crop production statistics (FAOSTAT).",
+            "Crop nutrient removal coefficients (derived from meta-analysis by Ludemann et al., 2023a)."
+          ]
+        }
+      ],
+      "chemical_processes": [
+        {
+          "process": "K conversion from K2O to elemental K",
+          "characterization": "Conversion of potassium oxide (K2O) to elemental potassium (K) for standardization of nutrient quantities.",
+          "rates": {
+            "conversion_factor": "0.83 kg of elemental K per kilogram of K2O"
+          },
+          "environmental_controls": [],
+          "implications": "Ensures consistent elemental nutrient quantities for budget calculations."
+        }
+      ]
+    },
+    "treatment_management_effects": {
+      "experimental_treatments": [],
+      "management_practices": [
+        {
+          "practice": "Synthetic Fertilizer Application",
+          "soil_k_impacts": {
+            "global_inputs_1961": "6.6 Mt K",
+            "global_inputs_2020": "32 Mt K",
+            "global_inputs_per_ha_1961": "4.9 kg ha-1",
+            "global_inputs_per_ha_2020": "21 kg ha-1"
+          },
+          "implementation_details": "Information sourced from FAOSTAT and IFASTAT, taking the mean value. Fraction applied to cropland (CF) used to determine inputs for CNB.",
+          "temporal_effects": "Increased by 380% (total) and 330% (per-hectare) from 1961 to 2020. Main driver of increased K inputs.",
+          "spatial_effects": "Application rates in China, India, Pakistan, and Brazil increased by 230% (mean across N, P, K) between 1990 and 2020."
+        },
+        {
+          "practice": "Manure Application",
+          "soil_k_impacts": {
+            "global_inputs_1961": "21 Mt K",
+            "global_inputs_2020": "25 Mt K",
+            "global_inputs_per_ha_1961": "16 kg ha-1",
+            "global_inputs_per_ha_2020": "16 kg ha-1"
+          },
+          "implementation_details": "Estimated as K from treated manure in manure management systems applied to soil, using published K:N conversion ratios (Statistics Netherlands, 2012; Sheldrick et al., 2003). Apportioned to cropland based on the same CF values as SF.",
+          "temporal_effects": "Increased by 19% (total) and 0% (per-hectare) from 1961 to 2020. In 1961, manure was the main K input source.",
+          "spatial_effects": "Comparison for China (2005-2014) showed current study's manure K estimates (4.3 Mt) were less than Zhang et al. (2023) (4.7 Mt)."
+        }
+      ],
+      "comparative_analysis": [
+        {
+          "comparison_type": "Global K Surpluses vs. N and P",
+          "treatments_compared": [
+            "N, P, K nutrient balances"
+          ],
+          "soil_k_differences": {
+            "K_surpluses_vs_P_surpluses": "Consistently greater than P surpluses across 1961-2020.",
+            "K_surpluses_vs_N_surpluses": "Consistently less than N surpluses across 1961-2020."
+          },
+          "statistical_significance": "Observed trends."
+        },
+        {
+          "comparison_type": "K Use Efficiency vs. N and P",
+          "treatments_compared": [
+            "N, P, K nutrient use efficiency"
+          ],
+          "soil_k_differences": {
+            "K_efficiency_trend": "Increased from 46% in 1961 to 80% in 2020, unlike N which decreased.",
+            "K_efficiency_range": "Greater range over time compared with N use efficiency."
+          },
+          "statistical_significance": "Observed trends."
+        }
+      ]
+    },
+    "methodological_details": {
+      "analytical_methods": [
+        {
+          "method_name": "Nutrient Budget Calculation (CNB)",
+          "target_parameters": [
+            "Cropland K balance (surplus/deficit)",
+            "K use efficiency"
+          ],
+          "procedure_description": "Balance for country i, nutrient j, year y = SF_i,j * CF_i.j.y + MAS_i,j,y - CR_i,j,y. Nutrient use efficiency = (Outputs / Inputs) * 100%.",
+          "instrumentation": "Not applicable (model-based calculation)",
+          "precision": {},
+          "detection_limits": {},
+          "quality_control": [
+            "SF data from FAOSTAT and IFASTAT (mean value used).",
+            "K conversion factor: 0.83 kg elemental K per kg K2O.",
+            "Manure K estimated using published K:N ratios (Table 2).",
+            "Crop removal coefficients from Ludemann et al. (2023a) meta-analysis, gap-filled for missing species.",
+            "All coefficients applied consistently across the full time series (1961-2020)."
+          ]
+        }
+      ],
+      "sampling_design": {
+        "spatial_sampling": "Country-level data collection, aggregated to regional and global scales. Cropland area defined per FAO land use category.",
+        "temporal_sampling": "Annual data from 1961 to 2020.",
+        "sample_processing": "Not explicitly detailed for soil samples, but data processing involves conversion to elemental quantities and application of coefficients.",
+        "storage_handling": "Not explicitly detailed.",
+        "representativeness": "Aims to be a global reference database, but acknowledges uncertainties due to varying definitions of cropland and lack of specific data for some components (e.g., manure application to specific land uses)."
+      },
+      "data_quality": {
+        "precision_measures": [
+          "Coefficient of Variation (CV) for key items: Livestock manure nutrient coefficients (50%), Synthetic fertilizer (SF) use (25%), Fraction of SF applied to cropland (10%), Crop removal coefficients (20%).",
+          "Uncertainty in nutrient balances for Burkina Faso: 115% for K (Lesschen et al., 2007)."
+        ],
+        "accuracy_assessments": [
+          "Comparison with previous studies (e.g., Zhang et al., 2023 for manure K in China) to assess consistency and identify differences."
+        ],
+        "method_comparisons": [],
+        "uncertainty_sources": [
+          "Uncertainty in cropland area measurement and varying definitions across land cover products (CV ~25%).",
+          "Assumption that same CF values for SF are used to apportion nutrients from manure to cropland.",
+          "Exclusion of nutrient outputs from herbage removed from some cropland categories (e.g., temporary meadows and pasture or silage maize).",
+          "No accounting for exchange of manure between countries.",
+          "Nutrient concentrations of crop products not country-specific.",
+          "Exclusion of nutrients removed as crop residues.",
+          "Exclusion of other nutrient inputs (e.g., irrigation water, composted crop residues, human manure)."
+        ]
+      }
+    },
+    "environmental_context": {
+      "climate_conditions": {
+        "temperature": "Not explicitly detailed as a direct variable affecting K, but implicitly part of agricultural productivity context.",
+        "precipitation": "Not explicitly detailed as a direct variable affecting K, but implicitly part of agricultural productivity context.",
+        "seasonality": "Not explicitly detailed.",
+        "extremes": "Not explicitly detailed."
+      },
+      "soil_properties": {
+        "classification": "Not explicitly detailed.",
+        "texture": "Not explicitly detailed.",
+        "mineralogy": "Not explicitly detailed.",
+        "organic_matter": "Not explicitly detailed.",
+        "chemical_properties": {
+          "native_k_resources": "Many soils still have substantial native K resources, influencing the returns on investment for K application."
+        },
+        "physical_properties": {}
+      },
+      "landscape_context": {
+        "topography": "Not explicitly detailed.",
+        "drainage": "Not explicitly detailed.",
+        "position": "Not explicitly detailed.",
+        "land_use_history": "Historical context of nutrient inputs and agricultural practices (e.g., excessive historical P inputs in northwestern Europe leading to environmental problems) is mentioned as relevant for interpreting nutrient use efficiency."
+      }
+    },
+    "research_integration": {
+      "relationship_to_other_measurements": "Integrates synthetic fertilizer use, manure application, and crop production statistics from FAOSTAT and IFASTAT. Uses external models/data for biological N fixation and atmospheric N deposition (though not directly for K).",
+      "integration_with_plant_studies": "Directly integrates with plant studies through the use of crop nutrient removal coefficients, which quantify the K removed by harvested crops based on crop production data.",
+      "connection_to_broader_objectives": "Aims to support the 2030 Sustainable Development Goals indicators by providing comparable data on soil nutrient budgets and nutrient use efficiency to assess and monitor agricultural performance and sustainability.",
+      "comparative_context": "Compares global and regional K trends with N and P trends, highlighting differences in their dynamics and management priorities. Also compares current study's estimates with previous global nutrient budget studies.",
+      "literature_positioning": "Positions itself as the most complete dataset to date for N, P, and K nutrient budgets, filling a gap for long-term K time series data. Builds on previous work while adding refinements to key nutrient coefficients."
+    },
+    "data_limitations": {
+      "measurement_constraints": [
+        "Significant uncertainty in cropland area measurement and varying definitions across land cover products (CV ~25%).",
+        "Uncertainty in livestock manure nutrient coefficients (CV ~50%).",
+        "Uncertainty in synthetic fertilizer use (CV ~25%).",
+        "Uncertainty in fraction of SF applied to cropland (CV ~10%).",
+        "Uncertainty in crop removal coefficients (CV ~20%).",
+        "Extreme values for some countries may represent data errors rather than actual agronomic differences.",
+        "Uncertainties in estimates of manure and SF application rates for China."
+      ],
+      "temporal_limitations": [],
+      "spatial_limitations": [
+        "Challenges in spatially disaggregating nutrient budgets and accurately estimating separate budgets for cropland and permanent meadows/pastures.",
+        "Lack of global data on productivity and biological N fixation for permanent meadows and pastures.",
+        "Lack of suitable survey data for estimating quantities of manure applied to each crop globally.",
+        "Variations in manure management during housing and storage affect nutrient concentrations, leading to uncertainty in applied quantities."
+      ],
+      "methodological_constraints": [
+        "Focus on 'partial' nutrient budgets, meaning specific nutrient losses (gaseous emissions, leaching, runoff) are not explicitly accounted for but are embedded in overall estimates.",
+        "Exclusion of crops with no production data in FAOSTAT (e.g., forage crops like alfalfa, clover, grass-clover mixtures) leads to underestimation of cropland nutrient removal.",
+        "Assumption that the same CF values for SF are used to apportion nutrients from manure to cropland, which may not hold for every country.",
+        "Current database does not include estimates of nutrients removed as crop residues.",
+        "Nutrient concentrations of crop products used are not country-specific.",
+        "Does not include estimates of nutrients in irrigation water, composted crop residues, or human manure."
+      ],
+      "interpretation_caveats": [
+        "Nutrient use efficiency values greater than 100% may indicate undesirable soil nutrient mining or targeted (desired) soil depletion (e.g., in regions with excessive historical inputs).",
+        "The confounding effect of manure applied to permanent meadows and pastures is not accounted for, which could substantially affect estimates of nutrient surplus and NUE.",
+        "Insufficient understanding of how deficient soils are in available K relative to other nutrients may play a role in K application decisions."
+      ]
+    },
+    "extraction_assessment": {
+      "data_completeness": 0.95,
+      "quantitative_content": 0.9,
+      "temporal_coverage": 1.0,
+      "spatial_coverage": 0.9,
+      "methodological_detail": 0.9,
+      "extraction_confidence": 0.95,
+      "native_context_preservation": 0.98,
+      "extraction_notes": "All explicit mentions of potassium (K) and its related parameters, measurements, trends, and methodological details were extracted. The paper's primary focus is on nutrient budgets (inputs, outputs, balance, use efficiency) for N, P, and K, rather than detailed soil K pool characterization or specific soil K processes (e.g., sorption/desorption) at a mechanistic level. Therefore, sections like 'concentration_measurements' and 'pool_characterizations' under 'quantitative_soil_k_data' are empty as the paper reports aggregated budget components rather than direct soil K concentrations or specific pool measurements. Similarly, 'environmental_controls' on K behavior are inferred from the context of K deficits/surpluses rather than detailed soil chemistry. The extraction maintains the paper's focus on macro-scale nutrient flows."
+    },
+    "_usage_metadata": {
+      "timestamp": "2025-07-10T10:03:59.196690",
+      "stage_name": "stage_2a",
+      "paper_id": "Global Fostat Reference Database",
+      "prompt_length_chars": 91956,
+      "processing_time_seconds": 44.59,
+      "thinking_enabled": true,
+      "input_tokens": 28055,
+      "output_tokens": 6875,
+      "thinking_tokens": 0,
+      "input_cost_usd": 0.004208,
+      "output_cost_usd": 0.024063,
+      "thinking_cost_usd": 0.0,
+      "total_cost_usd": 0.028271
+    }
+  }
+}

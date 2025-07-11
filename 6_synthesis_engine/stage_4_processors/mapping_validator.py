@@ -13,7 +13,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from utils.prompt_loader import PromptLoader
 from utils.gemini_client import GeminiClient
-from utils.config import STAGE_TEMPERATURES
+from utils.json_config import STAGE_TEMPERATURES
 
 class MappingValidator:
     """Stage 4B: Validates client mapping results"""
@@ -32,24 +32,28 @@ class MappingValidator:
             raise
     
     async def validate(self, stage_4a_result: Dict[str, Any], 
+                      stage_3b_result: Dict[str, Any],
                       client_architecture: Dict[str, Any]) -> Dict[str, Any]:
-        """Validate Stage 4A client mapping results"""
+        """Validate and enhance Stage 4A client mapping results"""
         
         try:
-            # Check if stage_4a failed
-            if not stage_4a_result.get('success', False):
+            # Check if stage_4a failed by looking for error field or missing key data
+            if 'error' in stage_4a_result or 'paper_identification' not in stage_4a_result:
                 return {
                     "success": False,
                     "stage": "4B",
-                    "validation_errors": ["Stage 4A client mapping failed - cannot validate"],
+                    "validation_errors": ["Stage 4A client mapping failed or incomplete - cannot validate"],
                     "confidence_score": 0.0,
                     "validation_timestamp": datetime.now().isoformat()
                 }
             
-            # Format validation prompt
-            formatted_prompt = self.prompt_template.format(
-                mapping_result=json.dumps(stage_4a_result, indent=2),
-                client_questions=json.dumps(client_architecture, indent=2)
+            # Format validation prompt using string replacement to avoid JSON brace conflicts
+            formatted_prompt = self.prompt_template.replace(
+                '{client_question_tree}', json.dumps(client_architecture.get('question_tree', {}), indent=2)
+            ).replace(
+                '{stage_3b_results}', json.dumps(stage_3b_result, indent=2)
+            ).replace(
+                '{stage_4a_results}', json.dumps(stage_4a_result, indent=2)
             )
             
             # Generate validation

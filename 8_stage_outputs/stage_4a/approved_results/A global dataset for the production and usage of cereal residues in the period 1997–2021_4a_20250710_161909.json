@@ -1,0 +1,400 @@
+{
+  "stage_id": "4a",
+  "stage_name": "Client Mapping",
+  "paper_id": "A global dataset for the production and usage of cereal residues in the period 1997–2021",
+  "processing_timestamp": "2025-07-10T16:19:09.191949",
+  "processing_time_seconds": 51.923815,
+  "processing_mode": "single_paper",
+  "validation_passed": true,
+  "validation_message": "Valid mapping result",
+  "results": {
+    "paper_identification": {
+      "title": "Global Cereal Residue Production and Management Dataset (1997-2021)",
+      "primary_soil_k_focus": "No direct focus on soil potassium (K) dynamics; provides foundational data on cereal residue production and management, which indirectly informs potential K inputs/outputs.",
+      "geographic_coverage": [
+        "Global",
+        "China",
+        "India",
+        "Australia",
+        "Europe",
+        "North America"
+      ],
+      "temporal_scope": "1997-2021 (25 years) with annual resolution",
+      "research_approach": "Data synthesis, mass balance modeling, ensemble approach for uncertainty quantification, and validation against literature values.",
+      "overall_relevance_assessment": "This paper is highly relevant as an enabling dataset for soil K biogeochemistry and agricultural demand modeling. While it does not directly measure or model soil K, its comprehensive, spatiotemporally explicit quantification of cereal residue production and management practices (e.g., residues left on field, burnt) provides critical input parameters for future K cycling models, allowing for more accurate assessments of K supply from organic sources and K losses."
+    },
+    "direct_evidence_mapping": {
+      "quantitative_parameters": [
+        {
+          "question_branch": "1.1|1.2|1.3|1.4",
+          "evidence_type": "derived_estimate",
+          "quantitative_data": {
+            "global_average_residue_left_on_field": "1490 Tg/year",
+            "range_residue_left_on_field": "1310-1720 Tg/year",
+            "global_average_residue_burnt_on_field": "210 Tg/year",
+            "range_residue_burnt_on_field": "154-312 Tg/year",
+            "global_total_residue_production_2020": "3900 Tg/year"
+          },
+          "measurement_context": "Quantification of cereal residues left on field or burnt, which are direct inputs for estimating potential soil K return or removal. This data is highly precise for residue, but requires further processing (e.g., K content of residues) to derive K-specific parameters.",
+          "units": "Tg/year",
+          "precision": "Uncertainty quantified by ensemble of 18 schemes, providing robust ranges for residue estimates.",
+          "evidence_strength": "low",
+          "geographic_applicability": [
+            "Global"
+          ],
+          "temporal_applicability": "1997-2021 (annual)",
+          "integration_readiness": "requires_processing"
+        }
+      ],
+      "temporal_dynamics": [
+        {
+          "question_branch": "2.1|2.2|2.3|2.4|2.5|2.6",
+          "pattern_type": "Inferred long-term trends in potential K return/removal",
+          "temporal_evidence": {
+            "global_residue_production_trend": "Increasing from ~2930 Tg (1997/2001 average) to ~3900 Tg (2020)",
+            "residue_usage_fraction_trends": "Varying over 1997-2021, implying shifts in K return/removal"
+          },
+          "timeframe_coverage": "25 years (1997-2021)",
+          "pattern_reliability": "High for residue production and usage trends; moderate for inferred K dynamics due to indirect nature.",
+          "inflection_point_evidence": "No direct evidence for K inflection points. However, significant shifts in residue management practices (e.g., policy changes affecting burning) could imply future K inflection points, for which this dataset provides a historical baseline.",
+          "evidence_strength": "low",
+          "prediction_potential": "The historical trends in residue management provide a robust basis for projecting future scenarios of K return to soil under different management strategies, enabling future K dynamics predictions.",
+          "uncertainty_characterization": "Uncertainty in residue estimates is quantified by an ensemble approach, which propagates to inferred K dynamics."
+        }
+      ],
+      "probability_assessment": [
+        {
+          "question_branch": "3.1|3.2|3.3|3.4",
+          "probability_evidence": {
+            "uncertainty_quantification_method": "Ensemble of 18 calculational schemes for residue estimates, providing a range of values for production and usage categories.",
+            "quantified_uncertainty_ranges": {
+              "global_residue_production": "3080-3900 Tg",
+              "residue_left_on_field": "1310-1720 Tg",
+              "residue_burnt_on_field": "154-312 Tg"
+            }
+          },
+          "reliability_assessment": "High for the reliability of residue data and its uncertainty characterization. This provides a strong foundation for assessing the probability and reliability of *inferred* K dynamics, as the uncertainty in residue inputs can be propagated.",
+          "condition_dependencies": [
+            "Assumptions for 'other off-field uses' and 'left on field' fractions.",
+            "Choice of dataset for on-field burning."
+          ],
+          "uncertainty_bounds": "Explicitly quantified for residue data, which would serve as input uncertainty for K models.",
+          "confidence_level": "0.7",
+          "evidence_strength": "medium",
+          "conviction_contribution": "Provides a robust framework for quantifying uncertainty in K supply/loss estimates derived from residue data, enhancing the conviction in future K modeling results."
+        }
+      ],
+      "regional_variations": [
+        {
+          "question_branch": "4.1.1|4.1.2|4.1.3|4.1.4|4.1.5|4.2|4.3|4.4|other_regions.europe|other_regions.general_other",
+          "regional_evidence": {
+            "spatial_variability_in_residue_management": "Significant spatial variations in cereal residue production and its allocation to different usage categories at 0.5° global grid resolution.",
+            "regional_differences_highlighted": [
+              "Burnt fractions in China (2-5%) vs. literature (9-27%)",
+              "Burnt fractions in India (5-7%) vs. literature (9-20%)",
+              "Left on field in China (47-51%) vs. literature (46-52%)",
+              "Left on field in Australia (74%) vs. ABS (76%)"
+            ]
+          },
+          "geographic_specificity": "Global, with detailed 0.5° resolution and specific regional examples (China, India, Australia, Europe, North America, etc.).",
+          "environmental_controls": [
+            "Crop residue management practices (burning vs. retention)",
+            "Local demand for livestock feed/bedding",
+            "Socio-economic factors (e.g., GDP influencing 'other off-field uses')"
+          ],
+          "extrapolation_potential": "High for residue data, which enables robust spatial extrapolation of K implications when integrated with K-specific models. The fine resolution allows for sub-country assessments.",
+          "scaling_factors": [
+            "0.5° global grid resolution",
+            "Country-level statistics scaled to grid cells"
+          ],
+          "evidence_strength": "low",
+          "regional_confidence": "High for residue data, moderate for inferred K patterns due to the indirect nature.",
+          "geographic_context_note": "The paper provides highly resolved and validated spatial data on residue management, which is a critical determinant of regional K dynamics. While not direct K measurements, this dataset is foundational for understanding and modeling regional K variations."
+        }
+      ],
+      "agricultural_integration": [
+        {
+          "question_branch": "5.1|5.2|5.3|5.4",
+          "integration_evidence": {
+            "quantified_management_categories": [
+              "Burnt on field (global average 210 Tg/year)",
+              "Livestock feed/bedding",
+              "Other off-field purposes",
+              "Left on field (global average 1490 Tg/year)"
+            ],
+            "impact_on_nutrient_retention": "Leaving residues on field linked to 'better retention of nutrients' (implicitly K) due to enhanced SOC stocks.",
+            "impact_on_nutrient_leaching": "Residue management affects nutrient leaching (implicitly K), with burning potentially increasing losses."
+          },
+          "system_context": "Cereal cropping systems globally, with implications for livestock production systems where residues are used as feed/bedding.",
+          "management_effects": [
+            "Residue retention: Supports K retention and cycling, contributing to long-term soil fertility.",
+            "Residue burning/removal: Leads to K export and potential depletion if not compensated, impacting nutrient balance."
+          ],
+          "sustainability_implications": "The dataset provides a quantitative basis for assessing the sustainability of K cycling by showing the magnitude of K inputs (from retained residues) and outputs (from removed/burnt residues). This is crucial for understanding long-term soil fertility and reducing reliance on external K inputs.",
+          "scaling_considerations": "The data is available at global, regional, country, and 0.5° grid-cell scales, allowing for integration with agricultural models at various resolutions.",
+          "evidence_strength": "low",
+          "system_applicability": "Highly applicable to global cereal cropping systems and relevant to integrated crop-livestock systems."
+        }
+      ],
+      "scaling_extrapolation": [
+        {
+          "question_branch": "6.1|6.2|6.3|6.4",
+          "scaling_evidence": {
+            "spatial_resolution": "0.5° global grid cells",
+            "temporal_resolution": "Annual data (1997-2021)",
+            "scaling_approaches_used": [
+              "Scaling grain production to match FAOSTAT country data.",
+              "Apportioning country-level livestock data to grid cells using GLW 3.",
+              "Modeling trade of crop residues between grid cells (up to 1000 km)."
+            ],
+            "validation_results": {
+              "residue_production_r2": "0.96 (vs. literature)",
+              "fractional_usage_r2": "0.70 (vs. literature)"
+            }
+          },
+          "scaling_approach": "A robust, multi-faceted scaling methodology combining top-down (FAOSTAT) and bottom-up (gridded data) approaches with a mass balance framework and trade model.",
+          "validation_method": "Comparison of scaled estimates against independent literature values at country and regional levels.",
+          "uncertainty_propagation": "Uncertainty is quantified by an ensemble of 18 calculational schemes, providing a range of values at different scales, which propagates to any K-related inferences.",
+          "extrapolation_limits": [
+            "Assumptions for 'other off-field uses' and 'left on field' fractions due to data gaps.",
+            "Trade model limited to 1000 km."
+          ],
+          "evidence_strength": "medium",
+          "scaling_confidence": "High for residue data; moderate for K inferences as the scaling framework is directly applicable to K modeling, but K-specific parameters are not included."
+        }
+      ]
+    },
+    "indirect_evidence_mapping": {
+      "supporting_context": [
+        {
+          "question_relevance": [
+            "1.1|1.2|1.3|1.4",
+            "2.1|2.2|2.3|2.4|2.5|2.6",
+            "4.1.1|4.1.2|4.1.3|4.1.4|4.1.5|4.2|4.3|4.4",
+            "5.1|5.2|5.3|5.4"
+          ],
+          "contextual_evidence": "General statements about 'nutrient retention' and 'nutrient leaching' in the context of crop residue management. Leaving residues on the field helps maintain or enhance soil organic carbon (SOC) stocks, leading to better nutrient retention. Residue removal (e.g., burning) can affect nutrient leaching.",
+          "supporting_value": "high",
+          "interpretation_support": "These general principles provide the scientific rationale for why the quantified residue management data is relevant to soil K dynamics, even without direct K measurements. They frame the environmental significance of the dataset.",
+          "extrapolation_support": "Supports the conceptual basis for extrapolating the impact of residue management on K cycling across different regions and timeframes, assuming general soil science principles apply.",
+          "uncertainty_insights": "Highlights the broad environmental impacts that are influenced by residue management, implicitly including K, and thus where uncertainties in residue data would propagate."
+        }
+      ],
+      "methodological_insights": [
+        {
+          "question_relevance": [
+            "1.1|1.2|1.3|1.4",
+            "2.1|2.2|2.3|2.4|2.5|2.6",
+            "3.1|3.2|3.3|3.4",
+            "4.1.1|4.1.2|4.1.3|4.1.4|4.1.5|4.2|4.3|4.4",
+            "5.1|5.2|5.3|5.4",
+            "6.1|6.2|6.3|6.4"
+          ],
+          "methodological_contribution": "Development of a novel, comprehensive global dataset for cereal residue production and usage, employing a robust ensemble modeling approach for uncertainty quantification.",
+          "analytical_advances": "The use of an ensemble of 18 calculational schemes to quantify uncertainty in residue estimates is a significant analytical advance, providing a more robust assessment of data reliability.",
+          "measurement_validation": "Residue production and fractional usage estimates were validated against literature values at country and regional levels, demonstrating the rigor of the data generation process.",
+          "scaling_approaches": "Effective scaling from country-level statistics to a 0.5° global grid, incorporating a mass balance approach and a trade model, provides a valuable framework for future K modeling at various scales.",
+          "uncertainty_characterization": "The explicit quantification of uncertainty in residue data is a key methodological strength, directly informing the reliability of any K-related inferences derived from this dataset."
+        }
+      ],
+      "comparative_benchmarking": [
+        {
+          "question_relevance": [
+            "4.1.1|4.1.2|4.1.3|4.1.4|4.1.5|4.2|4.3|4.4"
+          ],
+          "benchmark_value": "Comparison of modeled residue production and usage fractions against existing literature values and national statistics (e.g., FAOSTAT, ABS).",
+          "comparative_context": "The paper validates its global and regional residue estimates against independent data sources, providing confidence in the dataset's accuracy.",
+          "validation_potential": "The validated residue data serves as a reliable input for K models, allowing for more robust validation of K cycling simulations that rely on residue inputs.",
+          "regional_comparison": "Specific regional comparisons (e.g., burnt fractions in China and India, left on field in Australia) highlight the dataset's ability to capture regional specificities in residue management, which is crucial for regional K assessments.",
+          "temporal_comparison": "The 25-year time series allows for comparison of residue management trends over time against historical records or other temporal datasets, indirectly supporting temporal K analyses."
+        }
+      ]
+    },
+    "evidence_synthesis_by_category": {
+      "quantitative_parameters_summary": {
+        "primary_contributions": [
+          "Quantification of global and spatially explicit cereal residue production (e.g., ~3900 Tg in 2020).",
+          "Quantification of residue allocation to 'left on field' (global average 1490 Tg/year) and 'burnt on field' (global average 210 Tg/year), which are direct inputs for estimating potential K return and removal."
+        ],
+        "data_quality": "High for residue data, with robust uncertainty quantification. Requires external K content data for conversion to K-specific parameters.",
+        "integration_potential": "High, as the residue data provides essential quantitative inputs for K supply rate models and K balance calculations.",
+        "confidence_level": 0.7,
+        "key_limitations": [
+          "No direct measurements or quantification of soil K parameters (e.g., K supply rates, K pools).",
+          "K content of residues is not provided, requiring external data for K conversion."
+        ]
+      },
+      "temporal_dynamics_summary": {
+        "primary_contributions": [
+          "Provides a 25-year (1997-2021) annual time series of global and regional cereal residue production and usage.",
+          "Identifies long-term trends in residue availability and management practices, which indirectly inform potential temporal shifts in K inputs/outputs."
+        ],
+        "pattern_reliability": "High for residue trends; moderate for inferred K dynamics due to the indirect nature.",
+        "inflection_point_insights": "No direct evidence for K inflection points. However, the long-term residue trends provide a historical baseline to identify periods of significant change in K inputs/outputs from residue management, which could precede K inflection points.",
+        "confidence_level": 0.6,
+        "temporal_limitations": [
+          "No direct temporal measurements or modeling of soil K dynamics.",
+          "Inferred K dynamics rely on assumptions about K content in residues and decomposition rates, which are not provided."
+        ]
+      },
+      "regional_variations_summary": {
+        "primary_contributions": [
+          "Provides a 0.5° global gridded dataset of cereal residue production and usage, revealing significant spatial heterogeneity.",
+          "Highlights regional differences in residue management practices (e.g., burning rates in Asia vs. retention in North America), which are critical for understanding regional variations in K cycling."
+        ],
+        "geographic_coverage": "Global, with high spatial resolution and specific regional insights.",
+        "extrapolation_potential": "High for residue data, which enables robust spatial extrapolation of K implications when integrated with K-specific models. The fine resolution supports localized nutrient management strategies.",
+        "confidence_level": 0.7,
+        "regional_limitations": [
+          "No direct regional measurements or models of soil K.",
+          "Inferences about regional K dynamics require integration with region-specific K content data and soil properties."
+        ]
+      },
+      "integration_potential_summary": {
+        "primary_contributions": [
+          "Quantifies the global and regional scale of different residue management practices (e.g., left on field, burnt, off-field uses) that directly impact soil K cycling.",
+          "Provides a quantitative basis for assessing the sustainability implications of residue management on nutrient cycling (implicitly K) and soil health."
+        ],
+        "system_relevance": "Highly relevant for understanding K dynamics within cereal cropping systems and their interaction with livestock systems. It provides the necessary input data for assessing K balances under various management scenarios.",
+        "scaling_requirements": "The dataset's multi-scale availability (global to 0.5° grid) makes it highly compatible for integration with agricultural demand models at various spatial resolutions. Requires K-specific parameters (e.g., K content of residues) for direct K modeling.",
+        "confidence_level": 0.8,
+        "integration_limitations": [
+          "Does not provide direct links or models for K-specific crop-soil relationships.",
+          "Requires external data on K content of residues and K cycling processes (mineralization, leaching) for full integration into K demand models."
+        ]
+      }
+    },
+    "research_intelligence_assessment": {
+      "highest_value_contributions": [
+        {
+          "question_branch": "1.1|1.2|1.3|1.4|2.1|2.2|2.3|2.4|2.5|2.6|4.1.1|4.1.2|4.1.3|4.1.4|4.1.5|4.2|4.3|4.4|5.1|5.2|5.3|5.4|6.1|6.2|6.3|6.4",
+          "contribution_type": "Enabling Dataset",
+          "value_description": "The paper provides the first publicly available, comprehensive, global, spatiotemporally explicit dataset on cereal residue production and its allocation to various management categories (left on field, burnt, off-field uses). This dataset is a critical, foundational input for any future modeling or assessment of soil K supply rates, temporal dynamics, and regional variations, as residue management is a primary driver of K inputs and outputs in agricultural systems.",
+          "confidence_level": 0.9,
+          "implementation_readiness": "high"
+        }
+      ],
+      "medium_value_contributions": [
+        {
+          "question_branch": "3.1|3.2|3.3|3.4|6.1|6.2|6.3|6.4",
+          "contribution_type": "Methodological Framework",
+          "value_description": "The paper's robust methodology for uncertainty quantification (ensemble approach) and multi-scale data integration (0.5° grid, trade model) provides a valuable framework that can be adapted and applied to future soil K modeling efforts, enhancing the reliability and spatial resolution of K assessments.",
+          "confidence_level": 0.7,
+          "development_requirements": "Requires adaptation of the framework to K-specific parameters and processes."
+        }
+      ],
+      "knowledge_gap_identification": [
+        {
+          "question_branch": "1.1|1.2|1.3|1.4|2.1|2.2|2.3|2.4|2.5|2.6|3.1|3.2|3.3|3.4",
+          "gap_description": "The paper lacks direct measurements, specific quantitative data, or detailed process characterizations for soil potassium (K) dynamics, supply rates, or pool transformations. It does not provide K content of residues or K-specific mineralization/leaching rates.",
+          "gap_significance": "critical",
+          "research_priority": "High priority: Integrate this residue dataset with K-specific models and data (e.g., K content of residues, K cycling rates, K leaching models) to quantify the precise impact of residue management on soil K dynamics and sustainability."
+        }
+      ],
+      "uncertainty_intelligence": [
+        {
+          "uncertainty_source": "Choice of method for crop residue production and on-field burning datasets.",
+          "affected_questions": [
+            "1.1|1.2|1.3|1.4",
+            "2.1|2.2|2.3|2.4|2.5|2.6",
+            "3.1|3.2|3.3|3.4",
+            "4.1.1|4.1.2|4.1.3|4.1.4|4.1.5|4.2|4.3|4.4"
+          ],
+          "uncertainty_magnitude": "Contributes to the overall range of residue production (e.g., 3080-3900 Tg) and usage estimates (e.g., Left on Field: 1310-1720 Tg). Discrepancies noted with literature for burnt fractions.",
+          "mitigation_approaches": [
+            "Ensemble approach to quantify the range of results.",
+            "Reporting ranges for estimates rather than single values."
+          ],
+          "confidence_impacts": "The quantified uncertainty in residue data directly propagates to any K-related inferences, providing a realistic assessment of confidence in derived K parameters."
+        }
+      ]
+    },
+    "integration_pathway_analysis": {
+      "immediate_applications": [
+        {
+          "question_branch": "1.1|1.2|1.3|1.4|4.1.1|4.1.2|4.1.3|4.1.4|4.1.5|4.2|4.3|4.4",
+          "application_description": "Estimate potential annual soil K inputs from retained residues and K losses from burnt/removed residues at global, regional, and grid-cell scales.",
+          "integration_approach": "Combine the paper's 'left on field' and 'burnt on field' residue data with literature-derived K content values for cereal residues. This allows for a first-order estimation of K fluxes.",
+          "confidence_level": 0.7,
+          "validation_requirements": [
+            "Validation of assumed K content in residues against regional data.",
+            "Comparison of estimated K fluxes with existing K balance studies."
+          ]
+        }
+      ],
+      "medium_term_integration": [
+        {
+          "question_branch": "2.1|2.2|2.3|2.4|2.5|2.6|5.1|5.2|5.3|5.4",
+          "development_pathway": "Integrate the annual residue management time series (1997-2021) into dynamic soil K models to simulate long-term K availability, depletion/replenishment patterns, and potential inflection points under historical and projected residue management scenarios.",
+          "additional_data_needs": [
+            "K mineralization/immobilization rates specific to different residue types and environmental conditions.",
+            "Soil K pool dynamics (e.g., exchangeable, non-exchangeable K) and transformation rates.",
+            "K leaching and runoff models.",
+            "Crop K uptake requirements."
+          ],
+          "scaling_requirements": [
+            "Adaptation of K cycling models to the 0.5° grid resolution.",
+            "Parameterization of K processes for diverse soil types and climates represented in the global grid."
+          ],
+          "timeline_estimate": "6-12 months for initial model integration and simulation."
+        }
+      ],
+      "scaling_requirements": {
+        "spatial_scaling_needs": [
+          "Parameterization of K content in residues and K cycling processes (mineralization, leaching) at the 0.5° grid cell level, accounting for variations in soil type, climate, and crop varieties.",
+          "Integration with existing gridded soil property datasets (e.g., soil texture, organic carbon) to refine K dynamics at finer scales."
+        ],
+        "temporal_scaling_needs": [
+          "Development of K-specific models that can utilize the annual residue data to simulate K dynamics over multi-decadal timeframes.",
+          "Incorporation of seasonal variations in residue decomposition and K release, if higher temporal resolution K models are desired."
+        ],
+        "methodological_scaling_needs": [
+          "Adaptation of the paper's ensemble modeling approach to quantify uncertainty in derived K parameters.",
+          "Development of K-specific mass balance models that can leverage the residue allocation data."
+        ],
+        "uncertainty_propagation_needs": [
+          "Explicit propagation of uncertainty from residue estimates (as provided by the paper's ensemble) through K conversion factors and K cycling models to quantify uncertainty in final K supply rates and balances."
+        ]
+      }
+    },
+    "mapping_quality_assessment": {
+      "mapping_completeness": 0.95,
+      "evidence_assessment_confidence": 0.98,
+      "scientific_relevance_accuracy": 0.98,
+      "integration_pathway_feasibility": "high",
+      "overall_mapping_confidence": 0.97,
+      "critical_assumptions": [
+        "The primary assumption is that the paper's robust data on cereal residue production and management serves as a critical, enabling input for understanding soil K dynamics, even though K is not directly measured or modeled in the paper itself.",
+        "Assumed general scientific principles regarding nutrient retention and leaching apply to K in the context of residue management."
+      ],
+      "mapping_limitations": [
+        "The mapping is constrained by the inherent lack of direct soil K data in the source paper, requiring inferences and emphasis on the 'enabling' nature of the contribution.",
+        "Specific quantitative K parameters cannot be directly extracted without additional external data (e.g., K content of residues)."
+      ],
+      "enhancement_opportunities": [
+        "Future mapping could include a detailed list of external K-specific datasets or models that would be required to fully leverage this paper's residue data for K quantification.",
+        "Develop a conceptual model illustrating how the residue data flows into a K cycling model."
+      ]
+    },
+    "_usage_metadata": {
+      "timestamp": "2025-07-10T16:19:09.189817",
+      "stage_name": "unknown",
+      "paper_id": "unknown",
+      "prompt_length_chars": 55017,
+      "processing_time_seconds": 51.66,
+      "thinking_enabled": true,
+      "input_tokens": 12428,
+      "output_tokens": 6635,
+      "thinking_tokens": 0,
+      "input_cost_usd": 0.001864,
+      "output_cost_usd": 0.023223,
+      "thinking_cost_usd": 0.0,
+      "total_cost_usd": 0.025087
+    },
+    "stage": "4A",
+    "paper_id": "unknown",
+    "mapping_timestamp": "2025-07-10T16:19:09.191315",
+    "temperature_used": 0.1,
+    "client_architecture_version": "1.0"
+  }
+}

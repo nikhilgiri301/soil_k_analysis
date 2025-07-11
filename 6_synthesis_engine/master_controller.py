@@ -17,7 +17,8 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from utils.prompt_loader import PromptLoader
 from utils.gemini_client import GeminiClient
 from utils.data_adapter import Phase1DataAdapter
-from utils.config import STAGE_TEMPERATURES, GEMINI_CONFIG, PATHS
+from utils.stage_cache_manager import StageCacheManager
+from utils.json_config import STAGE_TEMPERATURES, GEMINI_CONFIG, PATHS
 
 # Import all processors
 from stage_1_processors.generic_extractor import GenericExtractor
@@ -40,11 +41,21 @@ from validation_framework.confidence_scorer import ConfidenceScorer
 class SoilKAnalysisEngine:
     """Enhanced orchestration engine for 5-stage, 10-pass synthesis system"""
     
-    def __init__(self, api_key: str, resume_from_checkpoint: Optional[str] = None):
+    def __init__(self, api_key: str, resume_from_checkpoint: Optional[str] = None, max_papers: Optional[int] = None, enable_cache: bool = True):
         # Initialize core components
         self.gemini_client = GeminiClient(api_key)
         self.prompt_loader = PromptLoader()
         self.data_adapter = Phase1DataAdapter()
+        self.max_papers = max_papers
+        
+        # Initialize stage-level caching
+        self.enable_cache = enable_cache
+        if self.enable_cache:
+            self.cache_manager = StageCacheManager()
+            logging.info("Stage-level caching enabled")
+        else:
+            self.cache_manager = None
+            logging.info("Stage-level caching disabled")
         
         # Initialize validation components
         self.quality_controller = QualityController()
@@ -121,12 +132,15 @@ class SoilKAnalysisEngine:
         
         try:
             # Load Phase 1 data using adapter
-            papers = self.data_adapter.load_and_adapt_papers()
+            papers = self.data_adapter.load_and_adapt_papers(max_papers=self.max_papers)
             
             if not papers:
                 return {"success": False, "error": "No papers loaded from Phase 1 data"}
             
-            logging.info(f"Starting 10-pass analysis of {len(papers)} papers")
+            if self.max_papers:
+                logging.info(f"Starting 10-pass analysis of {len(papers)} papers (limited to {self.max_papers})")
+            else:
+                logging.info(f"Starting 10-pass analysis of {len(papers)} papers")
             
             # Process stages 1-4 for all papers
             client_mappings = await self.process_stages_1_to_4(papers)
@@ -157,38 +171,43 @@ class SoilKAnalysisEngine:
                 paper_id = paper.get('filename', f'paper_{i+1}')
                 logging.info(f"Processing stages 1-4 for paper {i+1}/{len(papers)}: {paper_id}")
                 
+                # Process stages with caching - handle dependencies properly
                 # Stage 1A: Generic extraction
-                stage_1a_result = await self.processors['1a'].extract(paper)
+                stage_1a_result = await self._process_stage_with_cache('1a', paper_id, paper, 
+                    lambda: self.processors['1a'].extract(paper))
                 
                 # Stage 2A: Soil K extraction (parallel to 1A)
-                stage_2a_result = await self.processors['2a'].extract(paper)
+                stage_2a_result = await self._process_stage_with_cache('2a', paper_id, paper, 
+                    lambda: self.processors['2a'].extract(paper))
                 
-                # Stage 1B: Generic validation
-                stage_1b_result = await self.processors['1b'].validate(stage_1a_result, paper)
+                # Stage 1B: Generic validation (depends on 1A)
+                stage_1b_result = await self._process_stage_with_cache('1b', paper_id, paper, 
+                    lambda: self.processors['1b'].validate(stage_1a_result, paper))
                 
-                # Stage 2B: Soil K validation
-                stage_2b_result = await self.processors['2b'].validate(stage_2a_result, paper)
+                # Stage 2B: Soil K validation (depends on 2A)
+                stage_2b_result = await self._process_stage_with_cache('2b', paper_id, paper, 
+                    lambda: self.processors['2b'].validate(stage_2a_result, paper))
                 
-                # Stage 3A: Paper synthesis (merge parallel tracks)
-                stage_3a_result = await self.processors['3a'].synthesize({
-                    'stage_1a_results': stage_1a_result,
-                    'stage_1b_results': stage_1b_result,
-                    'stage_2a_results': stage_2a_result,
-                    'stage_2b_results': stage_2b_result
-                })
+                # Stage 3A: Paper synthesis (depends on 1A, 1B, 2A, 2B)
+                stage_3a_result = await self._process_stage_with_cache('3a', paper_id, paper, 
+                    lambda: self.processors['3a'].synthesize({
+                        'stage_1a_results': stage_1a_result,
+                        'stage_1b_results': stage_1b_result,
+                        'stage_2a_results': stage_2a_result,
+                        'stage_2b_results': stage_2b_result
+                    }))
                 
-                # Stage 3B: Synthesis validation
-                stage_3b_result = await self.processors['3b'].validate(stage_3a_result)
+                # Stage 3B: Synthesis validation (depends on 3A)
+                stage_3b_result = await self._process_stage_with_cache('3b', paper_id, paper, 
+                    lambda: self.processors['3b'].validate(stage_3a_result))
                 
-                # Stage 4A: Client mapping
-                stage_4a_result = await self.processors['4a'].map_to_client(
-                    stage_3a_result, self.client_architecture
-                )
+                # Stage 4A: Client mapping (depends on 3A, 3B)
+                stage_4a_result = await self._process_stage_with_cache('4a', paper_id, paper, 
+                    lambda: self.processors['4a'].map_to_client(stage_3a_result, self.client_architecture))
                 
-                # Stage 4B: Mapping validation
-                stage_4b_result = await self.processors['4b'].validate(
-                    stage_4a_result, self.client_architecture
-                )
+                # Stage 4B: Mapping validation (depends on 4A)
+                stage_4b_result = await self._process_stage_with_cache('4b', paper_id, paper, 
+                    lambda: self.processors['4b'].validate(stage_4a_result, self.client_architecture))
                 
                 # Compile paper results
                 paper_mapping = {
@@ -423,6 +442,64 @@ class SoilKAnalysisEngine:
                 
         except Exception as e:
             logging.warning(f"Could not save stage output: {str(e)}")
+    
+    async def _process_stage_with_cache(self, stage_id: str, paper_id: str, paper_data: Dict[str, Any], stage_processor_func):
+        """Process stage with intelligent caching"""
+        
+        # Check cache first
+        if self.enable_cache and self.cache_manager.is_stage_cached(paper_id, stage_id):
+            cached_result = self.cache_manager.get_cached_result(paper_id, stage_id)
+            if cached_result:
+                return cached_result
+        
+        # Process the stage
+        try:
+            result = await stage_processor_func()
+            
+            # Cache the result if caching is enabled
+            if self.enable_cache:
+                self.cache_manager.cache_stage_result(paper_id, stage_id, result, paper_data)
+            
+            return result
+            
+        except Exception as e:
+            logging.error(f"Stage {stage_id} processing failed for {paper_id}: {str(e)}")
+            error_result = {
+                "error": str(e),
+                "stage": stage_id,
+                "paper_id": paper_id,
+                "processing_timestamp": datetime.now().isoformat()
+            }
+            
+            # Cache the error result to avoid reprocessing
+            if self.enable_cache:
+                self.cache_manager.cache_stage_result(paper_id, stage_id, error_result, paper_data)
+            
+            return error_result
+    
+    def get_cache_statistics(self) -> Dict[str, Any]:
+        """Get cache statistics for monitoring"""
+        if self.enable_cache:
+            return self.cache_manager.get_cache_statistics()
+        return {"caching_disabled": True}
+    
+    def get_papers_summary(self) -> Dict[str, Any]:
+        """Get summary of all papers and their completion status"""
+        if self.enable_cache:
+            return self.cache_manager.get_all_papers_summary()
+        return {"caching_disabled": True}
+    
+    def clear_paper_cache(self, paper_id: str) -> bool:
+        """Clear cache for specific paper"""
+        if self.enable_cache:
+            return self.cache_manager.clear_paper_cache(paper_id)
+        return False
+    
+    def get_next_stage_for_paper(self, paper_id: str) -> Optional[str]:
+        """Get next stage that needs processing for a paper"""
+        if self.enable_cache:
+            return self.cache_manager.get_next_stage_to_process(paper_id)
+        return "1a"  # Default to first stage if no caching
 
 # For testing and development
 async def test_synthesis():

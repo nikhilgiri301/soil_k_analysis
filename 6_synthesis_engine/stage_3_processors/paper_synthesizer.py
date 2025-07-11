@@ -13,7 +13,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from utils.prompt_loader import PromptLoader
 from utils.gemini_client import GeminiClient
-from utils.config import STAGE_TEMPERATURES
+from utils.json_config import STAGE_TEMPERATURES
 
 class PaperSynthesizer:
     """Stage 3A: Synthesizes generic and soil K extractions into coherent paper understanding"""
@@ -41,18 +41,33 @@ class PaperSynthesizer:
             stage_2a_results = stage_results.get('stage_2a_results', {})
             stage_2b_results = stage_results.get('stage_2b_results', {})
             
+            logging.info(f"Formatting prompt with 1B data: {len(str(stage_1b_results))} chars, 2B data: {len(str(stage_2b_results))} chars")
+            
             # Format synthesis prompt with both validated extractions
-            formatted_prompt = self.prompt_template.format(
-                paper_title=stage_1a_results.get('paper_id', 'Unknown'),
-                validated_generic_extraction=json.dumps(stage_1b_results, indent=2),
-                validated_soilk_extraction=json.dumps(stage_2b_results, indent=2)
-            )
+            # Use simple string replacement instead of .format() to avoid issues with JSON braces
+            try:
+                formatted_prompt = self.prompt_template.replace(
+                    '{stage_1b_results}', json.dumps(stage_1b_results, indent=2)
+                ).replace(
+                    '{stage_2b_results}', json.dumps(stage_2b_results, indent=2)
+                )
+            except Exception as format_error:
+                logging.error(f"Prompt formatting failed: {str(format_error)}")
+                raise
             
             # Generate synthesis with creative temperature
+            logging.info(f"Sending synthesis prompt of length: {len(formatted_prompt)} characters")
             synthesis_result = await self.client.generate_json_content(
                 formatted_prompt,
-                temperature=self.temperature
+                temperature=self.temperature,
+                stage_name="stage_3a_paper_synthesis",
+                paper_id=stage_1a_results.get('paper_id', 'Unknown')
             )
+            
+            # Check if we got an error from the API
+            if 'error' in synthesis_result:
+                logging.error(f"API returned error: {synthesis_result.get('error')}")
+                return synthesis_result
             
             # Add synthesis metadata
             synthesis_result['stage'] = '3A'

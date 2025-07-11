@@ -15,7 +15,7 @@ import time
 from datetime import datetime
 from typing import Dict, Any, Optional
 import google.generativeai as genai
-from .config import GEMINI_CONFIG
+from .json_config import GEMINI_CONFIG
 from pathlib import Path
 
 class TokenUsageTracker:
@@ -107,6 +107,57 @@ class TokenUsageTracker:
         
         return summary
 
+def fix_unicode_issues(text):
+    """Conservative fix for JSON Unicode issues - scientific symbols + escapes"""
+    
+    # Fix 1: Escape problematic Unicode sequences
+    text = text.replace('\\u', '\\\\u')
+    
+    # Fix 2: Replace common scientific Unicode with standard notation
+    scientific_replacements = {
+        '\\\\u00b2': '^2',      # ² → ^2 (R² becomes R^2)
+        '\\\\u00b3': '^3',      # ³ → ^3  
+        '\\\\u00b1': '+/-',     # ± → +/-
+        '\\\\u03b1': 'alpha',   # α → alpha
+        '\\\\u03b2': 'beta',    # β → beta
+        '\\\\u2082': '_2',      # ₂ → _2 (K₂O becomes K_2O)
+        '\\\\u2080': '_0',      # ₀ → _0
+        '\\\\u2081': '_1',      # ₁ → _1
+    }
+    
+    for unicode_seq, replacement in scientific_replacements.items():
+        text = text.replace(unicode_seq, replacement)
+    
+    return text
+
+def fix_json_structure(text):
+    """Conservative fix for JSON structure issues - missing commas"""
+    import re
+    
+    # Fix missing commas between objects/arrays
+    text = re.sub(r'}\s*{', '}, {', text)  # }{ → }, {
+    text = re.sub(r']\s*\[', '], [', text)  # ][ → ], [
+    text = re.sub(r'}\s*\[', '}, [', text)  # }[ → }, [
+    text = re.sub(r']\s*{', '], {', text)  # ]{ → ], {
+    
+    return text
+
+def strip_markdown_json(text):
+    """Conservative fix for markdown-wrapped JSON - remove code block wrappers"""
+    
+    # Remove ```json at start and ``` at end
+    text = text.strip()
+    
+    if text.startswith('```json'):
+        text = text[7:]  # Remove ```json
+    elif text.startswith('```'):
+        text = text[3:]  # Remove ```
+    
+    if text.endswith('```'):
+        text = text[:-3]  # Remove ```
+    
+    return text.strip()
+
 class GeminiClient:
     """Enhanced Gemini API client with thinking mode for complex reasoning tasks"""
     
@@ -161,9 +212,9 @@ class GeminiClient:
                         'response_mime_type': 'application/json',
                     }
                     
-                    # Add thinking mode if enabled (this will work with current API or gracefully degrade)
+                    # Note: thinking mode is enabled by default in gemini-2.5-flash
+                    # No additional configuration needed for thinking mode
                     if use_thinking:
-                        generation_config['thinking_budget'] = -1  # Unlimited thinking
                         logging.debug(f"Using thinking mode for {stage_name} (temperature: {temperature})")
                     
                     # Generate content with enhanced API
@@ -207,6 +258,39 @@ class GeminiClient:
                         
                     except json.JSONDecodeError as e:
                         logging.warning(f"JSON decode error (attempt {attempt + 1}): {str(e)}")
+                        
+                        # COMBINED CONSERVATIVE FIX: Try fixing markdown + Unicode + structure issues
+                        try:
+                            # First strip markdown wrappers if present
+                            markdown_stripped = strip_markdown_json(response_text)
+                            result = json.loads(markdown_stripped)
+                            result['_usage_metadata'] = usage_record
+                            return result
+                        except:
+                            # Then try Unicode fix on stripped text
+                            try:
+                                cleaned_text = fix_unicode_issues(markdown_stripped)
+                                result = json.loads(cleaned_text)
+                                result['_usage_metadata'] = usage_record
+                                return result
+                            except:
+                                # Finally try structure fix
+                                try:
+                                    structure_fixed = fix_json_structure(cleaned_text)
+                                    result = json.loads(structure_fixed)
+                                    result['_usage_metadata'] = usage_record
+                                    return result
+                                except:
+                                    # Final fallback: Return raw response for manual processing
+                                    logging.warning("All JSON fixes failed, returning raw response for manual processing")
+                                    return {
+                                        "manual_processing_required": True,
+                                        "raw_ai_response": response_text,
+                                        "parsing_attempts": ["unicode", "structure", "markdown"],
+                                        "stage": stage_name,
+                                        "error_details": str(e),
+                                        "_usage_metadata": usage_record
+                                    }
                         
                         # Try to extract JSON from malformed response
                         extracted_json = self._extract_json_from_response(response_text)

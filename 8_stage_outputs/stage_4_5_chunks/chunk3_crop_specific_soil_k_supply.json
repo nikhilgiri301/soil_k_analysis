@@ -1,0 +1,2801 @@
+{
+  "chunk_metadata": {
+    "chunk_id": "crop_specific_soil_k_supply",
+    "chunk_description": "All crop system specific soil K evidence from 25 papers",
+    "extraction_timestamp": "2025-07-10T17:40:34.549463",
+    "extractor_version": "1.0",
+    "papers_processed": [
+      "A global dataset for the production and usage of cereal residues in the period 1997–2021",
+      "Balance of potassium in two long-term field experiments with different fertilization treatments",
+      "Considering_Soil_Potassium_Pools_with_Dissimilar_P",
+      "Dynamics of Soil Potassium under Different Cropping Systems in Y.S.R Kadapa District of Andhra Pradesh",
+      "Exchangeable potassium reserve in a Brazilian savanna Oxisol after nine years under different cotton production systems",
+      "Global Fostat Reference Database",
+      "Impact of Long-Term Intensive Cropping on Soil Potassium and Sustainability of Crop Production",
+      "Impact of potassium management on soil dynamics and crop uptake in rice systems",
+      "Interannual dynamics of available potassium in a long-term fertilization experiment",
+      "Kinetics of Non-exchangeable Potassium Release in Selected Soil Orders of Southern Iran",
+      "Long-term K dynamics in organic and conventional mixed cropping systems as related to management and soil properties",
+      "Majumdar2021_Chapter_AssessingPotassiumMassBalances",
+      "Nutrient Partitioning and Stoichiometry in Unburnt Sugarcane Ratoon at Varying Yield Levels",
+      "Optimizing rice yield, quality and nutrient use efficiency through combined application of nitrogen and potassium",
+      "Organic Materials",
+      "PotassiumDynamicsinSoils",
+      "principles-of-potash-use",
+      "Release Kinetics of Nonexchangeable Potassium by Different Extractants from Soils of Varying Mineralogy and Depth",
+      "Root K Affinity Drivers and Photosynthetic Characteristics in Response to Low Potassium Stress in K High-Efficiency Vegetable Soybean",
+      "Soil K Balance in Sichuan",
+      "Standing Biomass, Dry-Matter Production, and Nutrient Demand of Tenera Oil Palm",
+      "Subsoil‑potassium depletion accounts for the nutrient budget in high‑potassium agricultural soils",
+      "Temporal andspatial variation of potassium balance in agricultural land at national and regional levels in China"
+    ],
+    "extraction_statistics": {
+      "papers_processed": 23,
+      "papers_with_evidence": 13,
+      "total_evidence_pieces": 96,
+      "unique_parameters": 34,
+      "crop_systems_covered": 6
+    }
+  },
+  "evidence_by_paper": {
+    "A global dataset for the production and usage of cereal residues in the period 1997–2021": {
+      "paper_metadata": {
+        "paper_id": "A global dataset for the production and usage of cereal residues in the period 1997–2021",
+        "processing_timestamp": "2025-07-10T16:41:22.730588",
+        "stage_4b_validation_passed": true
+      },
+      "evidence_pieces": [
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "annual_kg_k2o_per_ha",
+          "crop_systems_mentioned": [
+            "cereals"
+          ],
+          "confidence_level": 0.2,
+          "direct_evidence": [],
+          "supporting_evidence": [
+            {
+              "evidence_type": "derived_estimate_from_residue_data",
+              "description": "The paper quantifies the amount of cereal residues 'left on field' (global average 1490 Tg/year, range 1310-1720 Tg/year). This data serves as a critical input for estimating potential annual K inputs to soil, which can then be converted to kg K2O/ha/year using external K content data for residues and land area.",
+              "quantitative_data": {
+                "global_average_residue_left_on_field": "1490 Tg/year",
+                "range_residue_left_on_field": "1310-1720 Tg/year"
+              },
+              "measurement_context": "Quantification of cereal residues, not direct K. Requires external K content data (e.g., 1-2% K2O by dry weight) and land area data for conversion to K2O/ha/year.",
+              "units": "Tg/year (for residue)",
+              "precision": "High for residue estimates, with uncertainty quantified by ensemble approach.",
+              "evidence_strength": "low_for_direct_k_quantification_high_for_enabling_data",
+              "geographic_applicability": [
+                "Global",
+                "China",
+                "India",
+                "Australia",
+                "Europe",
+                "North America"
+              ],
+              "temporal_applicability": "1997-2021 (annual)",
+              "integration_readiness": "requires_processing_with_external_k_data"
+            }
+          ],
+          "temporal_relevance": "Annual potential K input from residues (1997-2021)",
+          "geographic_applicability": [
+            "Global",
+            "Regional (as per residue data)"
+          ],
+          "integration_readiness": "enabling_input_for_k_models",
+          "uncertainty_range": {
+            "residue_data_uncertainty": "±10-15% (from ensemble range)",
+            "k_content_uncertainty": "External (requires assumption/literature range)",
+            "conversion_uncertainty": "External (requires assumption/literature range)"
+          }
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "depletion_rate",
+          "crop_systems_mentioned": [
+            "cereals"
+          ],
+          "confidence_level": 0.1,
+          "direct_evidence": [],
+          "supporting_evidence": [
+            {
+              "evidence_type": "inferred_from_residue_removal_data",
+              "description": "The paper quantifies residues 'burnt on field' (global average 210 Tg/year, range 154-312 Tg/year) and 'other off-field uses'. These represent K removal pathways. This data is crucial for calculating K depletion rates when combined with K content of residues and K uptake by crops. While not directly providing K depletion rates, it quantifies a major driver of K loss.",
+              "quantitative_data": {
+                "global_average_residue_burnt_on_field": "210 Tg/year",
+                "range_residue_burnt_on_field": "154-312 Tg/year"
+              },
+              "measurement_context": "Quantification of cereal residues removed, not direct K. Requires external K content data and K uptake data for conversion to K depletion rates.",
+              "units": "Tg/year (for residue)",
+              "precision": "High for residue estimates, with uncertainty quantified by ensemble approach.",
+              "evidence_strength": "low_for_direct_k_quantification_high_for_enabling_data",
+              "geographic_applicability": [
+                "Global",
+                "Regional (as per residue data)"
+              ],
+              "temporal_applicability": "1997-2021 (annual)",
+              "integration_readiness": "requires_processing_with_external_k_data"
+            }
+          ],
+          "temporal_relevance": "Annual potential K removal from residues (1997-2021)",
+          "geographic_applicability": [
+            "Global",
+            "Regional (as per residue data)"
+          ],
+          "integration_readiness": "enabling_input_for_k_balance_models",
+          "uncertainty_range": {
+            "residue_data_uncertainty": "±10-15%",
+            "k_content_uncertainty": "External",
+            "k_uptake_uncertainty": "External"
+          }
+        },
+        {
+          "evidence_type": "regional_crop_evidence",
+          "crop_parameters": [],
+          "crop_context": [
+            "cereals"
+          ],
+          "evidence_strength": "low_for_direct_k_moderate_for_residue_context",
+          "confidence_assessment": {
+            "residue_data_accuracy": 0.7,
+            "inferred_k_relevance": 0.5,
+            "direct_k_quantification": 0.0
+          },
+          "regional_context_note": "The paper's global 0.5° gridded data covers Mediterranean regions. The residue data provides context for potential K inputs/outputs from cereal systems in these dry climates, serving as an input for K modeling, though specific K dynamics in olive/vineyard systems are not addressed.",
+          "integration_requirements": [
+            "Combine residue data with regional K content of residues.",
+            "Integrate with K cycling models considering dry climates and specific cropping systems."
+          ]
+        },
+        {
+          "evidence_type": "regional_crop_evidence",
+          "crop_parameters": [],
+          "crop_context": [
+            "cereals"
+          ],
+          "evidence_strength": "low_for_direct_k_moderate_for_residue_context",
+          "confidence_assessment": {
+            "residue_data_accuracy": 0.6,
+            "inferred_k_relevance": 0.4,
+            "direct_k_quantification": 0.0
+          },
+          "regional_context_note": "The paper's global 0.5° gridded data covers Northern European regions. The residue data provides context for potential K inputs/outputs from cereal systems in these cool climates, serving as an input for K modeling, though specific K dynamics in forest soils are not addressed.",
+          "integration_requirements": [
+            "Combine residue data with regional K content of residues.",
+            "Integrate with K cycling models considering cool climates and specific agricultural systems."
+          ]
+        },
+        {
+          "evidence_type": "regional_crop_evidence",
+          "crop_parameters": [],
+          "crop_context": [
+            "cereals"
+          ],
+          "evidence_strength": "low_for_direct_k_moderate_for_residue_context",
+          "confidence_assessment": {
+            "residue_data_accuracy": 0.7,
+            "inferred_k_relevance": 0.5,
+            "direct_k_quantification": 0.0
+          },
+          "regional_context_note": "The paper's global 0.5° gridded dataset provides foundational data on cereal residue production and management for all regions worldwide. While not directly addressing soil K, this comprehensive dataset offers crucial context for understanding potential K inputs and removals from agricultural systems globally, enabling future K research and modeling efforts in any region.",
+          "integration_requirements": [
+            "Combine residue data with regional K content of residues.",
+            "Integrate with K cycling models for diverse global contexts."
+          ]
+        }
+      ],
+      "evidence_summary": {
+        "total_pieces": 5,
+        "crop_specific_parameters": 2,
+        "crop_system_synthesis": 0,
+        "regional_crop_evidence": 3,
+        "crop_systems_identified": [
+          "cereals"
+        ]
+      }
+    },
+    "Balance of potassium in two long-term field experiments with different fertilization treatments": {
+      "paper_metadata": {
+        "paper_id": "Balance of potassium in two long-term field experiments with different fertilization treatments",
+        "processing_timestamp": "2025-07-10T16:42:02.124476",
+        "stage_4b_validation_passed": true
+      },
+      "evidence_pieces": [
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "annual_kg_k2o_per_ha",
+          "crop_systems_mentioned": [
+            "mixed_cropping"
+          ],
+          "confidence_level": 0.85,
+          "direct_evidence": [
+            {
+              "source": "integrated_soil_k_findings.process_understanding.Potassium Balance (Input vs. Output)",
+              "data": {
+                "Hněvčeves_Control_Annual_Net_Balance": "-64.47 kg K2O/ha/year",
+                "Hněvčeves_FYM1_Annual_Net_Balance": "+49.09 kg K2O/ha/year",
+                "Humpolec_N_Annual_Net_Balance": "-136.29 kg K2O/ha/year",
+                "Humpolec_FYM1_Annual_Net_Balance": "+2.75 kg K2O/ha/year"
+              },
+              "measurement_context": "Derived annual net K balance (inputs from fertilizers minus outputs via crop uptake) over 21 years (1996-2017) for plough layer (0-30 cm) under specific fertilization regimes and crop rotation. K converted to K2O (K * 1.2046).",
+              "units": "kg K2O/ha/year",
+              "precision": "Good for long-term averages. Precision for annual fluctuations is not available due to cumulative calculation. Lack of explicit standard errors for underlying data limits precise uncertainty quantification.",
+              "evidence_strength": "high",
+              "geographic_applicability": [
+                "Czech Republic",
+                "Central Europe (similar temperate Luvisols and Cambisols)"
+              ],
+              "temporal_relevance": "Long-term (21-year average annual rate), reflecting cumulative effects.",
+              "integration_readiness": "direct"
+            }
+          ],
+          "supporting_evidence": [],
+          "temporal_relevance": "Annual rates derived from 21-year cumulative data, representing long-term average supply/depletion.",
+          "geographic_applicability": [
+            "Czech Republic",
+            "Central Europe"
+          ],
+          "integration_readiness": "direct",
+          "uncertainty_range": {
+            "qualitative": "Uncertainty exists due to lack of explicit standard errors for underlying K balance components and unmeasured subsoil K mobilization.",
+            "quantitative_estimate": "±25% (estimated based on typical field variability and data limitations)"
+          }
+        }
+      ],
+      "evidence_summary": {
+        "total_pieces": 1,
+        "crop_specific_parameters": 1,
+        "crop_system_synthesis": 0,
+        "regional_crop_evidence": 0,
+        "crop_systems_identified": [
+          "mixed_cropping"
+        ]
+      }
+    },
+    "Dynamics of Soil Potassium under Different Cropping Systems in Y.S.R Kadapa District of Andhra Pradesh": {
+      "paper_metadata": {
+        "paper_id": "Dynamics of Soil Potassium under Different Cropping Systems in Y.S.R Kadapa District of Andhra Pradesh",
+        "processing_timestamp": "2025-07-10T16:42:00.613586",
+        "stage_4b_validation_passed": true
+      },
+      "evidence_pieces": [
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "sustainability_years",
+          "crop_systems_mentioned": [
+            "rice"
+          ],
+          "confidence_level": 0.3,
+          "direct_evidence": [],
+          "supporting_evidence": [
+            {
+              "source": "regional_evidence_synthesis.india.dry_regions",
+              "description": "Observed differences in K levels across cropping systems (e.g., depletion in Sunflower-Sesame, maintenance in Paddy-Paddy) implicitly suggest varying sustainability.",
+              "relevance_to_parameter": "Medium. Provides qualitative indication of sustainability status.",
+              "confidence_contribution": 0.85
+            }
+          ],
+          "temporal_relevance": "Inferred from snapshot data, not direct sustainability projections.",
+          "geographic_applicability": [
+            "Y.S.R Kadapa district, Andhra Pradesh, India"
+          ],
+          "integration_readiness": "requires_long_term_monitoring_and_modeling",
+          "uncertainty_range": {
+            "qualitative": "High uncertainty due to lack of long-term data and direct sustainability projections."
+          }
+        }
+      ],
+      "evidence_summary": {
+        "total_pieces": 1,
+        "crop_specific_parameters": 1,
+        "crop_system_synthesis": 0,
+        "regional_crop_evidence": 0,
+        "crop_systems_identified": [
+          "rice"
+        ]
+      }
+    },
+    "Exchangeable potassium reserve in a Brazilian savanna Oxisol after nine years under different cotton production systems": {
+      "paper_metadata": {
+        "paper_id": "Exchangeable potassium reserve in a Brazilian savanna Oxisol after nine years under different cotton production systems",
+        "processing_timestamp": "2025-07-10T16:42:02.622683",
+        "stage_4b_validation_passed": true
+      },
+      "evidence_pieces": [
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "depletion_rate",
+          "crop_systems_mentioned": [
+            "cotton"
+          ],
+          "confidence_level": 0.7,
+          "direct_evidence": [
+            {
+              "quantitative_data": {
+                "K_retention_below_30cm_CSTCM": "Almost half of detected K found below 30 cm in conventional tillage cotton monoculture (CSTCM).",
+                "CST_treatments_K_retention_0-20cm_surplus": "Maximum 34% of K2O surplus retained in 0-20 cm layer."
+              },
+              "measurement_context": "Comparative analysis of K distribution in soil profile after 9 years under different tillage systems.",
+              "units": "qualitative proportion, percentage",
+              "precision": "High for observed differences, but not a direct numerical depletion rate.",
+              "evidence_strength": "high"
+            }
+          ],
+          "supporting_evidence": [
+            "Mechanistic insights on K leaching and mobilization under conventional tillage due to soil disturbance and reduced organic matter."
+          ],
+          "temporal_relevance": "Long-term (9-year) cumulative effect of management on K distribution, indicating differential depletion risk from the root zone.",
+          "geographic_applicability": [
+            "Brazilian Cerrado (clayey Oxisols)"
+          ],
+          "integration_readiness": "requires_processing",
+          "uncertainty_range": {
+            "direct_rate_quantification": "not available",
+            "extrapolation_to_zero_input": "high"
+          }
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "high_k_demand_supply",
+          "crop_systems_mentioned": [
+            "cotton"
+          ],
+          "confidence_level": 0.9,
+          "direct_evidence": [
+            {
+              "quantitative_data": {
+                "K2O_removal_rates_cotton": "17 kg K2O/ton seed cotton",
+                "NTS_K_efficiency": "No-tillage with ruzigrass improved K use efficiency by retaining 63% of K2O surplus in the 0-20 cm layer.",
+                "NTS_mean_cotton_yield": "3,885 kg ha⁻¹ (highest among treatments)"
+              },
+              "measurement_context": "K removal rates from literature, K efficiency calculated from K balance, yield measured experimentally.",
+              "units": "kg K2O/ton, percentage, kg ha⁻¹",
+              "precision": "Reliable for K removal rates and measured yields; calculated efficiency is robust.",
+              "evidence_strength": "high"
+            }
+          ],
+          "supporting_evidence": [
+            "All systems maintained K levels above critical thresholds and supported high cotton yields."
+          ],
+          "temporal_relevance": "Long-term (9-year) K demand and supply dynamics in cotton-based systems.",
+          "geographic_applicability": [
+            "Brazilian Cerrado (cotton systems)"
+          ],
+          "integration_readiness": "direct",
+          "uncertainty_range": {
+            "cultivar_specific_demand": "not specified"
+          }
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "boll_development_k_needs",
+          "crop_systems_mentioned": [
+            "cotton"
+          ],
+          "confidence_level": 0.6,
+          "direct_evidence": [
+            {
+              "quantitative_data": {
+                "K2O_removal_rates_cotton": "17 kg K2O/ton seed cotton"
+              },
+              "measurement_context": "K removal coefficient from literature, representing total K removed by harvested cotton.",
+              "units": "kg K2O/ton",
+              "precision": "Reliable as a general coefficient.",
+              "evidence_strength": "medium"
+            }
+          ],
+          "supporting_evidence": [
+            "Cotton is a high K demand crop, implying significant K needs during reproductive stages like boll development."
+          ],
+          "temporal_relevance": "Implied K demand during the cotton growing season.",
+          "geographic_applicability": [
+            "General cotton production"
+          ],
+          "integration_readiness": "requires_processing",
+          "uncertainty_range": {
+            "stage_specific_quantification": "not directly quantified"
+          }
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "irrigation_k_mobilization",
+          "crop_systems_mentioned": [],
+          "confidence_level": 0.4,
+          "direct_evidence": [],
+          "supporting_evidence": [
+            "The study site receives 1800 mm annual rainfall concentrated from October to March, leading to K leaching in well-drained Oxisols, particularly under conventional tillage.",
+            "Mechanistic insights on K leaching and mobilization due to water movement."
+          ],
+          "temporal_relevance": "General process understanding, not specific temporal patterns related to irrigation.",
+          "geographic_applicability": [
+            "General principles of K mobility in response to water flow in well-drained soils."
+          ],
+          "integration_readiness": "requires_external_data",
+          "uncertainty_range": {
+            "direct_irrigation_effects": "not studied"
+          }
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "residue_k_contributions",
+          "crop_systems_mentioned": [
+            "mixed_cropping",
+            "cereals",
+            "soybean"
+          ],
+          "confidence_level": 0.9,
+          "direct_evidence": [
+            {
+              "quantitative_data": {
+                "Ruzigrass_sowing_rate_soybean_off_season": "6 kg ha⁻¹ of seeds",
+                "Ruzigrass_sowing_rate_maize_intercropping": "7 kg ha⁻¹ of seeds"
+              },
+              "measurement_context": "Experimental management details.",
+              "units": "kg ha⁻¹",
+              "precision": "Directly observed experimental parameter.",
+              "evidence_strength": "high"
+            }
+          ],
+          "supporting_evidence": [
+            "The deep and abundant root system of Urochloa ruziziensis in NTS recovers K from deeper soil layers and cycles it back to the topsoil through residue decomposition.",
+            "Trash blanket K cycling (implied by NTS and cover crop management)."
+          ],
+          "temporal_relevance": "Continuous K cycling throughout the year due to perennial cover crop growth in the off-season.",
+          "geographic_applicability": [
+            "Brazilian Cerrado (cotton-based systems with ruzigrass cover crop)"
+          ],
+          "integration_readiness": "direct",
+          "uncertainty_range": {
+            "specific_release_rates": "not quantified"
+          }
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "plant_k_efficiency_factors",
+          "crop_systems_mentioned": [
+            "cotton"
+          ],
+          "confidence_level": 0.7,
+          "direct_evidence": [
+            {
+              "quantitative_data": {
+                "NTS_K_efficiency": "No-tillage with ruzigrass improved K use efficiency by retaining 63% of K2O surplus in the 0-20 cm layer.",
+                "NTS_mean_cotton_yield": "3,885 kg ha⁻¹ (highest among treatments), suggesting efficient K utilization."
+              },
+              "measurement_context": "Calculated K retention efficiency and measured crop yields.",
+              "units": "percentage, kg ha⁻¹",
+              "precision": "Reliable for calculated efficiency and measured yields.",
+              "evidence_strength": "medium"
+            }
+          ],
+          "supporting_evidence": [
+            "The study highlights the role of cover crops in K cycling and deep K recovery, contributing to overall system efficiency."
+          ],
+          "temporal_relevance": "Long-term (9-year) demonstration of improved K use efficiency under NTS.",
+          "geographic_applicability": [
+            "Brazilian Cerrado (cotton-based systems)"
+          ],
+          "integration_readiness": "requires_processing",
+          "uncertainty_range": {
+            "direct_factor_quantification": "not directly quantified as a factor"
+          }
+        },
+        {
+          "evidence_type": "regional_crop_evidence",
+          "crop_parameters": [
+            "high_k_demand_supply",
+            "boll_development_k_needs"
+          ],
+          "crop_context": [],
+          "evidence_strength": "high",
+          "confidence_assessment": {
+            "overall_confidence": 0.95,
+            "geographic_representativeness": "High for clayey dystrophic Red Latosols (Typic Haplorthox/Oxisols) in the Brazilian Cerrado biome.",
+            "extrapolation_confidence": {
+              "within_cerrado_oxisols": "High",
+              "to_other_tropical_weathered_soils": "Medium-High (principles apply, but specific values may vary)",
+              "to_temperate_regions": "Low"
+            }
+          },
+          "regional_context_note": "",
+          "integration_requirements": [
+            "Direct application of K retention efficiencies and K stock values into regional K balance models.",
+            "Use of observed K distribution patterns to inform fertilizer placement strategies.",
+            "Further validation across diverse Oxisol sub-types within the Cerrado for broader quantitative applicability."
+          ]
+        }
+      ],
+      "evidence_summary": {
+        "total_pieces": 7,
+        "crop_specific_parameters": 6,
+        "crop_system_synthesis": 0,
+        "regional_crop_evidence": 1,
+        "crop_systems_identified": [
+          "mixed_cropping",
+          "cotton",
+          "soybean",
+          "cereals"
+        ]
+      }
+    },
+    "Impact of Long-Term Intensive Cropping on Soil Potassium and Sustainability of Crop Production": {
+      "paper_metadata": {
+        "paper_id": "Impact of Long-Term Intensive Cropping on Soil Potassium and Sustainability of Crop Production",
+        "processing_timestamp": "2025-07-10T16:42:52.117924",
+        "stage_4b_validation_passed": true
+      },
+      "evidence_pieces": [
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "seasonal_release_patterns",
+          "crop_systems_mentioned": [
+            "rice",
+            "mixed_cropping"
+          ],
+          "confidence_level": 0.6,
+          "direct_evidence": [
+            {
+              "source": "integrated_soil_k_findings.contextualized_measurements",
+              "description": "Available K concentration changes in rice-rice rotations (Kharif/Rabi seasons) at Bhubaneswar (acidic Inceptisol).",
+              "quantitative_data": {
+                "Bhubaneswar_Aeric_Haplaquept_1971": "25 Kg ha-1",
+                "Bhubaneswar_Aeric_Haplaquept_1994_Control": "32 Kg ha-1",
+                "Bhubaneswar_Aeric_Haplaquept_1994_100%N": "20 Kg ha-1",
+                "Bhubaneswar_Aeric_Haplaquept_1994_100%NPK": "40 Kg ha-1"
+              },
+              "units": "Kg ha-1",
+              "precision": "Not explicitly quantified in review.",
+              "evidence_strength": "high"
+            }
+          ],
+          "supporting_evidence": [
+            {
+              "source": "geographic_and_temporal_authority.temporal_applicability",
+              "description": "Multi-seasonal coverage, particularly for rice-rice systems, allowing for assessment of seasonal K dynamics."
+            }
+          ],
+          "temporal_relevance": "Seasonal (Kharif/Rabi cycles) and long-term cumulative effects.",
+          "geographic_applicability": [
+            "India (Bhubaneswar - monsoon regions, rice-rice systems)"
+          ],
+          "integration_readiness": "Inform seasonal K management strategies and dynamic K models for monsoon-influenced agricultural systems.",
+          "uncertainty_range": {
+            "acceptable_range": "±40%",
+            "confidence_minimum": 0.5,
+            "notes": "While seasonal changes are evident, explicit 'seasonal release patterns' (e.g., rates per season) are not directly quantified in the review, but inferred from available K changes over time in multi-seasonal cropping systems."
+          }
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "monsoon_leaching_effects",
+          "crop_systems_mentioned": [
+            "rice",
+            "mixed_cropping"
+          ],
+          "confidence_level": 0.5,
+          "direct_evidence": [
+            {
+              "source": "integrated_soil_k_findings.contextualized_measurements",
+              "description": "Available K concentration changes in rice-rice rotations (flooded conditions) in acidic Inceptisol at Bhubaneswar, a monsoon-influenced region.",
+              "quantitative_data": {
+                "Bhubaneswar_Aeric_Haplaquept_1971": "25 Kg ha-1",
+                "Bhubaneswar_Aeric_Haplaquept_1994_Control": "32 Kg ha-1",
+                "Bhubaneswar_Aeric_Haplaquept_1994_100%N": "20 Kg ha-1"
+              },
+              "units": "Kg ha-1",
+              "precision": "Not explicitly quantified in review.",
+              "evidence_strength": "medium"
+            }
+          ],
+          "supporting_evidence": [
+            {
+              "source": "geographic_and_temporal_authority.temporal_applicability",
+              "description": "Multi-seasonal coverage, particularly for rice-rice systems, allowing for assessment of seasonal K dynamics in monsoon climates."
+            }
+          ],
+          "temporal_relevance": "Seasonal (monsoon period) and long-term cumulative effects.",
+          "geographic_applicability": [
+            "India (Bhubaneswar - monsoon regions, rice-rice systems)"
+          ],
+          "integration_readiness": "Inform K management strategies in high rainfall or flooded agricultural systems where leaching is a concern. Requires further research for direct quantification of leaching losses.",
+          "uncertainty_range": {
+            "acceptable_range": "±50%",
+            "confidence_minimum": 0.4,
+            "notes": "The paper provides context of K dynamics in monsoon-affected rice systems, but does not explicitly quantify leaching rates or direct 'monsoon leaching effects' as a standalone parameter. Inferred from overall K balance in high rainfall/flooded systems."
+          }
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "pre_monsoon_k_levels",
+          "crop_systems_mentioned": [
+            "rice",
+            "mixed_cropping"
+          ],
+          "confidence_level": 0.7,
+          "direct_evidence": [
+            {
+              "source": "integrated_soil_k_findings.contextualized_measurements",
+              "description": "Initial available K concentration at Bhubaneswar (acidic Inceptisol) before long-term rice-rice rotations.",
+              "quantitative_data": {
+                "Bhubaneswar_Aeric_Haplaquept_1971": "25 Kg ha-1"
+              },
+              "units": "Kg ha-1",
+              "precision": "Not explicitly quantified in review.",
+              "evidence_strength": "high"
+            }
+          ],
+          "supporting_evidence": [],
+          "temporal_relevance": "Initial state, serving as a reference for subsequent seasonal and long-term changes.",
+          "geographic_applicability": [
+            "India (Bhubaneswar - monsoon regions)"
+          ],
+          "integration_readiness": "Direct input for seasonal K balance models and for assessing initial K status in monsoon-affected areas.",
+          "uncertainty_range": {
+            "acceptable_range": "±20%",
+            "confidence_minimum": 0.7,
+            "notes": "Represents a baseline K level for a monsoon-influenced region."
+          }
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "post_monsoon_k_depletion",
+          "crop_systems_mentioned": [
+            "rice",
+            "mixed_cropping"
+          ],
+          "confidence_level": 0.7,
+          "direct_evidence": [
+            {
+              "source": "integrated_soil_k_findings.contextualized_measurements",
+              "description": "Available K concentration after 21 crop cycles (rice-rice rotations) in 100%N plots at Bhubaneswar (acidic Inceptisol).",
+              "quantitative_data": {
+                "Bhubaneswar_Aeric_Haplaquept_1994_100%N": "20 Kg ha-1",
+                "Bhubaneswar_Aeric_Haplaquept_1971": "25 Kg ha-1",
+                "inferred_depletion": "5 Kg ha-1 over 21 years in 100%N plot"
+              },
+              "units": "Kg ha-1",
+              "precision": "Inferred depletion is an approximation; original data lacks explicit statistical measures.",
+              "evidence_strength": "high"
+            }
+          ],
+          "supporting_evidence": [
+            {
+              "source": "integrated_soil_k_findings.temporal_dynamics_synthesis",
+              "description": "Declining available K status in soil, particularly in plots receiving continuous nitrogenous fertilizers alone (N) or N+P (NP)."
+            }
+          ],
+          "temporal_relevance": "Long-term cumulative effect of seasonal K removal in monsoon-affected systems.",
+          "geographic_applicability": [
+            "India (Bhubaneswar - monsoon regions, rice-rice systems)"
+          ],
+          "integration_readiness": "Inform seasonal K balance models and highlight the need for K replenishment in monsoon-dominated rice systems.",
+          "uncertainty_range": {
+            "acceptable_range": "±20%",
+            "confidence_minimum": 0.7,
+            "notes": "Depletion is evident, but specific post-monsoon depletion rates are inferred from long-term trends rather than direct seasonal measurements."
+          }
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "irrigation_k_mobilization",
+          "crop_systems_mentioned": [],
+          "confidence_level": 0.0,
+          "direct_evidence": [],
+          "supporting_evidence": [],
+          "temporal_relevance": "",
+          "geographic_applicability": [],
+          "integration_readiness": "No direct evidence for this parameter in the provided paper.",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "anaerobic_k_release",
+          "crop_systems_mentioned": [
+            "rice",
+            "mixed_cropping"
+          ],
+          "confidence_level": 0.7,
+          "direct_evidence": [
+            {
+              "source": "integrated_soil_k_findings.contextualized_measurements",
+              "description": "Available K concentration changes in flooded rice-rice rotations at Bhubaneswar (acidic Inceptisol).",
+              "quantitative_data": {
+                "Bhubaneswar_Aeric_Haplaquept_1971": "25 Kg ha-1",
+                "Bhubaneswar_Aeric_Haplaquept_1994_Control": "32 Kg ha-1",
+                "Bhubaneswar_Aeric_Haplaquept_1994_100%N": "20 Kg ha-1",
+                "Bhubaneswar_Aeric_Haplaquept_1994_100%NPK": "40 Kg ha-1",
+                "Bhubaneswar_Aeric_Haplaquept_1994_100%NPK+FYM": "67 Kg ha-1"
+              },
+              "units": "Kg ha-1",
+              "precision": "Not explicitly quantified in review.",
+              "evidence_strength": "high"
+            }
+          ],
+          "supporting_evidence": [
+            {
+              "source": "geographic_and_temporal_authority.temporal_applicability",
+              "description": "Multi-seasonal coverage, particularly for rice-rice systems, allowing for assessment of seasonal K dynamics under flooded conditions."
+            }
+          ],
+          "temporal_relevance": "Seasonal (rice growing season) and long-term cumulative effects.",
+          "geographic_applicability": [
+            "India (Bhubaneswar - rice systems)"
+          ],
+          "integration_readiness": "Inform K management strategies for flooded rice systems. Requires further research for direct quantification of anaerobic release rates.",
+          "uncertainty_range": {
+            "acceptable_range": "±20%",
+            "confidence_minimum": 0.7,
+            "notes": "The paper provides strong evidence of K dynamics in flooded rice systems, implying anaerobic conditions, but does not explicitly quantify 'anaerobic K release rates'."
+          }
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "puddling_k_effects",
+          "crop_systems_mentioned": [],
+          "confidence_level": 0.0,
+          "direct_evidence": [],
+          "supporting_evidence": [],
+          "temporal_relevance": "",
+          "geographic_applicability": [],
+          "integration_readiness": "No direct evidence for this parameter in the provided paper.",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "water_k_concentration",
+          "crop_systems_mentioned": [],
+          "confidence_level": 0.0,
+          "direct_evidence": [],
+          "supporting_evidence": [],
+          "temporal_relevance": "",
+          "geographic_applicability": [],
+          "integration_readiness": "No direct evidence for this parameter in the provided paper.",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "aerobic_k_availability",
+          "crop_systems_mentioned": [
+            "cereals",
+            "soybean"
+          ],
+          "confidence_level": 0.7,
+          "direct_evidence": [
+            {
+              "source": "integrated_soil_k_findings.contextualized_measurements",
+              "description": "Available K concentration changes in various intensive aerobic cropping systems (e.g., soybean-wheat, maize-wheat) across different Indian sites.",
+              "quantitative_data": {
+                "Jabalpur_Typic_Haplustert_1971": "370 Kg ha-1",
+                "Jabalpur_Typic_Haplustert_1999_Control": "252 Kg ha-1"
+              },
+              "units": "Kg ha-1",
+              "precision": "Not explicitly quantified in review.",
+              "evidence_strength": "high"
+            }
+          ],
+          "supporting_evidence": [
+            {
+              "source": "integrated_soil_k_findings.process_understanding",
+              "description": "General K balance and non-exchangeable K release processes apply to aerobic conditions."
+            }
+          ],
+          "temporal_relevance": "Long-term, reflecting continuous cropping effects.",
+          "geographic_applicability": [
+            "India (general across diverse aerobic agroecological regions and soil types)"
+          ],
+          "integration_readiness": "Directly informs K management strategies for aerobic agricultural systems.",
+          "uncertainty_range": {
+            "acceptable_range": "±20%",
+            "confidence_minimum": 0.6,
+            "notes": "The paper extensively covers K dynamics in aerobic intensive cropping systems, providing strong evidence for K availability and depletion under these conditions."
+          }
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "residue_k_recycling",
+          "crop_systems_mentioned": [],
+          "confidence_level": 0.6,
+          "direct_evidence": [
+            {
+              "source": "agricultural_system_integration.management_system_insights",
+              "description": "Integrated Nutrient Management (FYM + NPK) maintained higher available K pools and K release, and further reduced the magnitude of non-exchangeable K reduction compared to NPK alone. FYM is a form of organic residue.",
+              "quantitative_data": {
+                "Jabalpur_Typic_Haplustert_1999_100%NPK+FYM": "324 Kg ha-1",
+                "Bhubaneswar_Aeric_Haplaquept_1994_100%NPK+FYM": "67 Kg ha-1"
+              },
+              "units": "Kg ha-1",
+              "precision": "Not explicitly quantified in review.",
+              "evidence_strength": "high"
+            }
+          ],
+          "supporting_evidence": [
+            {
+              "source": "scientific_contribution_assessment.agricultural_integration_contribution",
+              "description": "Highlighted the crucial role of Farmyard Manure (FYM) in maintaining higher available K pools and K release rates, emphasizing the benefits of integrated nutrient management for K sustainability."
+            }
+          ],
+          "temporal_relevance": "Long-term, contributing to sustained K availability.",
+          "geographic_applicability": [
+            "India (general, where organic amendments are applied)"
+          ],
+          "integration_readiness": "Inform models on the role of organic amendments in K cycling and availability. Requires further research for specific residue types and decomposition rates.",
+          "uncertainty_range": {
+            "acceptable_range": "±40%",
+            "confidence_minimum": 0.6,
+            "notes": "FYM's role in K cycling is well-demonstrated, but specific 'residue K recycling' rates or mechanisms beyond general organic matter contribution are not detailed."
+          }
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "high_k_demand_supply",
+          "crop_systems_mentioned": [
+            "rice",
+            "cereals"
+          ],
+          "confidence_level": 0.7,
+          "direct_evidence": [
+            {
+              "source": "integrated_soil_k_findings.contextualized_measurements",
+              "description": "Crop yield response to K application and efficiency of K use (kg grain per kg K applied) for various crops.",
+              "quantitative_data": {
+                "K_response_magnitude_Rice_Barrackpore": "100 kg/ha",
+                "K_response_magnitude_Fingermillet_Bangalore": "3100 kg/ha",
+                "K_response_grain_per_kg_K_Rice_Barrackpore": "2.0",
+                "K_response_grain_per_kg_K_Fingermillet_Bangalore": "147.6"
+              },
+              "units": "kg/ha, kg grain/kg K applied",
+              "precision": "Not explicitly quantified in review.",
+              "evidence_strength": "high"
+            }
+          ],
+          "supporting_evidence": [
+            {
+              "source": "agricultural_system_integration.crop_soil_k_relationships",
+              "description": "K uptake by crops at 100% optimal NPK dose was far in excess of fertilizer K applied, indicating continuous mining of soil K from non-exchangeable reserves, especially in high-yielding systems."
+            }
+          ],
+          "temporal_relevance": "Long-term average responses under intensive cropping.",
+          "geographic_applicability": [
+            "India (Barrackpore, Bangalore, general across intensive cropping systems)"
+          ],
+          "integration_readiness": "Directly informs crop-specific K demand and efficiency parameters in agricultural models. Useful for economic evaluation of K fertilization.",
+          "uncertainty_range": {
+            "acceptable_range": "±20%",
+            "confidence_minimum": 0.7,
+            "notes": "Strong evidence for K demand and supply interaction, with quantitative responses provided for specific crops and sites."
+          }
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "boll_development_k_needs",
+          "crop_systems_mentioned": [],
+          "confidence_level": 0.0,
+          "direct_evidence": [],
+          "supporting_evidence": [],
+          "temporal_relevance": "",
+          "geographic_applicability": [],
+          "integration_readiness": "No direct evidence for this parameter in the provided paper (cotton specific).",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "ratoon_k_depletion",
+          "crop_systems_mentioned": [],
+          "confidence_level": 0.0,
+          "direct_evidence": [],
+          "supporting_evidence": [],
+          "temporal_relevance": "",
+          "geographic_applicability": [],
+          "integration_readiness": "No direct evidence for this parameter in the provided paper (sugarcane specific).",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "trash_blanket_k_cycling",
+          "crop_systems_mentioned": [],
+          "confidence_level": 0.0,
+          "direct_evidence": [],
+          "supporting_evidence": [],
+          "temporal_relevance": "",
+          "geographic_applicability": [],
+          "integration_readiness": "No direct evidence for this parameter in the provided paper (sugarcane specific).",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "long_rotation_k_balance",
+          "crop_systems_mentioned": [],
+          "confidence_level": 0.0,
+          "direct_evidence": [],
+          "supporting_evidence": [],
+          "temporal_relevance": "",
+          "geographic_applicability": [],
+          "integration_readiness": "No direct evidence for this parameter in the provided paper (sugarcane specific).",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "intercrop_k_competition",
+          "crop_systems_mentioned": [],
+          "confidence_level": 0.0,
+          "direct_evidence": [],
+          "supporting_evidence": [],
+          "temporal_relevance": "",
+          "geographic_applicability": [],
+          "integration_readiness": "No direct evidence for this parameter in the provided paper (mixed cropping specific).",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "rotation_k_cycling_efficiency",
+          "crop_systems_mentioned": [
+            "rice",
+            "mixed_cropping",
+            "cereals",
+            "soybean"
+          ],
+          "confidence_level": 0.6,
+          "direct_evidence": [
+            {
+              "source": "paper_authority.research_scope_authority",
+              "description": "Synthesis of findings from multiple long-term fertilizer experiments (LTFEs) covering diverse intensive cropping systems, including various rotations (e.g., soybean-wheat, maize-wheat, rice-rice).",
+              "evidence_strength": "high"
+            }
+          ],
+          "supporting_evidence": [
+            {
+              "source": "agricultural_system_integration.management_system_insights",
+              "description": "Demonstrates the long-term impact of continuous cropping and different fertilizer regimes on K balance and availability, implicitly reflecting rotation effects."
+            }
+          ],
+          "temporal_relevance": "Long-term, reflecting cumulative effects of rotations.",
+          "geographic_applicability": [
+            "India (general across intensive cropping systems)"
+          ],
+          "integration_readiness": "Inform models on the long-term K balance implications of different cropping rotations. Requires further research for specific rotation efficiencies.",
+          "uncertainty_range": {
+            "acceptable_range": "±40%",
+            "confidence_minimum": 0.5,
+            "notes": "While the paper covers various rotations, explicit 'rotation K cycling efficiency' as a quantified parameter is not provided. Inferred from overall K balance and depletion trends in different cropping systems."
+          }
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "cover_crop_k_contributions",
+          "crop_systems_mentioned": [],
+          "confidence_level": 0.0,
+          "direct_evidence": [],
+          "supporting_evidence": [],
+          "temporal_relevance": "",
+          "geographic_applicability": [],
+          "integration_readiness": "No direct evidence for this parameter in the provided paper.",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "plant_k_efficiency_factors",
+          "crop_systems_mentioned": [
+            "rice",
+            "cereals"
+          ],
+          "confidence_level": 0.7,
+          "direct_evidence": [
+            {
+              "source": "integrated_soil_k_findings.contextualized_measurements",
+              "description": "Efficiency of K use (kg grain per kg K applied) for various crops.",
+              "quantitative_data": {
+                "K_response_grain_per_kg_K_Rice_Barrackpore": "2.0",
+                "K_response_grain_per_kg_K_Fingermillet_Bangalore": "147.6"
+              },
+              "units": "kg grain/kg K applied",
+              "precision": "Not explicitly quantified in review.",
+              "evidence_strength": "high"
+            },
+            {
+              "source": "integrated_soil_k_findings.temporal_dynamics_synthesis",
+              "description": "Declining crop response to K application after about 10 years, critically associated with the emergence of zinc (Zn) deficiency, indicating that other nutrient limitations can mask or alter K response over time.",
+              "evidence_strength": "high"
+            }
+          ],
+          "supporting_evidence": [
+            {
+              "source": "scientific_contribution_assessment.agricultural_integration_contribution",
+              "description": "Quantified the K response in terms of kg grain/kg K applied across various crops and locations, providing practical metrics for economic evaluation of K fertilization."
+            }
+          ],
+          "temporal_relevance": "Long-term, reflecting cumulative effects and dynamic nutrient interactions.",
+          "geographic_applicability": [
+            "India (Barrackpore, Bangalore, Ludhiana, Pantnagar, general across intensive cropping systems)"
+          ],
+          "integration_readiness": "Directly informs crop K use efficiency parameters in agricultural models. Highlights the need for integrated nutrient management to optimize K utilization.",
+          "uncertainty_range": {
+            "acceptable_range": "±20%",
+            "confidence_minimum": 0.7,
+            "notes": "Quantitative efficiency values are provided, and the masking effect of other nutrients is a critical insight into plant K efficiency."
+          }
+        },
+        {
+          "evidence_type": "regional_crop_evidence",
+          "crop_parameters": [
+            "anaerobic_k_release",
+            "high_k_demand_supply"
+          ],
+          "crop_context": [],
+          "evidence_strength": "high",
+          "confidence_assessment": {
+            "overall": 0.7,
+            "notes": "Strong evidence from Bhubaneswar (acidic Inceptisol, rice-rice), Ludhiana (alluvial illitic, maize-wheat/rice-wheat), and Barrackpore (alluvial, rice), representing key monsoon-influenced agricultural areas."
+          },
+          "regional_context_note": "",
+          "integration_requirements": [
+            "Directly applicable for regional K management strategies in Indian monsoon regions.",
+            "Requires integration with high-resolution climate and soil data for precise spatial modeling."
+          ]
+        },
+        {
+          "evidence_type": "regional_crop_evidence",
+          "crop_parameters": [
+            "high_k_demand_supply"
+          ],
+          "crop_context": [],
+          "evidence_strength": "high",
+          "confidence_assessment": {
+            "overall": 0.6,
+            "notes": "Strong evidence from Bangalore (Alfisols, finger millet-maize) and Ranchi (Alfisols, maize-wheat-cowpea), representing regions with distinct dry seasons and pronounced K responses."
+          },
+          "regional_context_note": "",
+          "integration_requirements": [
+            "Directly applicable for regional K management strategies in Indian dry regions.",
+            "Requires further research to address specific dryland agricultural challenges related to K."
+          ]
+        },
+        {
+          "evidence_type": "regional_crop_evidence",
+          "crop_parameters": [
+            "high_k_demand_supply"
+          ],
+          "crop_context": [],
+          "evidence_strength": "medium",
+          "confidence_assessment": {
+            "overall": 0.5,
+            "notes": "Evidence from Palampur (Alfisols, maize-wheat-cowpea) provides general K dynamics for a site within the Himalayan region. However, specific parameters related to altitude, snowmelt, or terracing are not covered."
+          },
+          "regional_context_note": "",
+          "integration_requirements": [
+            "Provides foundational data for K management in Himalayan agricultural systems.",
+            "Requires targeted research to address unique high-altitude and mountainous agricultural challenges related to K."
+          ]
+        }
+      ],
+      "evidence_summary": {
+        "total_pieces": 22,
+        "crop_specific_parameters": 19,
+        "crop_system_synthesis": 0,
+        "regional_crop_evidence": 3,
+        "crop_systems_identified": [
+          "mixed_cropping",
+          "cereals",
+          "soybean",
+          "rice"
+        ]
+      }
+    },
+    "Impact of potassium management on soil dynamics and crop uptake in rice systems": {
+      "paper_metadata": {
+        "paper_id": "Impact of potassium management on soil dynamics and crop uptake in rice systems",
+        "processing_timestamp": "2025-07-10T16:42:06.970440",
+        "stage_4b_validation_passed": true
+      },
+      "evidence_pieces": [
+        {
+          "evidence_type": "regional_crop_evidence",
+          "crop_parameters": [],
+          "crop_context": [
+            "rice"
+          ],
+          "evidence_strength": "high",
+          "confidence_assessment": {
+            "overall_confidence": 0.95,
+            "geographic_extrapolation_confidence": 0.5,
+            "rationale": "High confidence for the specific site and agroclimatic zone due to robust experimental design and comprehensive measurements. Medium confidence for extrapolation to other tropical rice systems with similar soils requires verification of mineralogy and K buffering capacity, as quantitative values are site-specific."
+          },
+          "regional_context_note": "This study provides excellent, high-resolution data for the Eastern and South-Eastern Coastal Plain agroclimatic zone of Odisha, India, representing a typical puddled rice-rice system in a hot and humid monsoon climate. It serves as a valuable case study for understanding K dynamics and management in similar agro-ecological zones across India and potentially other tropical rice-growing regions.",
+          "integration_requirements": [
+            "Direct input of annual K balance and initial K pool data for agricultural demand models.",
+            "Parameterization of seasonal K dynamics for optimizing fertilizer timing.",
+            "Validation against regional field data for broader applicability."
+          ]
+        },
+        {
+          "evidence_type": "regional_crop_evidence",
+          "crop_parameters": [],
+          "crop_context": [
+            "rice"
+          ],
+          "evidence_strength": "not_applicable",
+          "confidence_assessment": {},
+          "regional_context_note": "This paper's findings are highly specific to the study site in India and do not provide general insights for 'other_regions' beyond their direct applicability to similar tropical rice systems.",
+          "integration_requirements": []
+        }
+      ],
+      "evidence_summary": {
+        "total_pieces": 2,
+        "crop_specific_parameters": 0,
+        "crop_system_synthesis": 0,
+        "regional_crop_evidence": 2,
+        "crop_systems_identified": [
+          "rice"
+        ]
+      }
+    },
+    "Majumdar2021_Chapter_AssessingPotassiumMassBalances": {
+      "paper_metadata": {
+        "paper_id": "Majumdar2021_Chapter_AssessingPotassiumMassBalances",
+        "processing_timestamp": "2025-07-10T16:24:23.603467",
+        "stage_4b_validation_passed": true
+      },
+      "evidence_pieces": [
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "annual_kg_k2o_per_ha",
+          "crop_systems_mentioned": [
+            "cereals"
+          ],
+          "confidence_level": 0.75,
+          "direct_evidence": [
+            {
+              "source": "PNBI K values",
+              "data": {
+                "australia_national": "-0.6 kg K ha-1",
+                "china_1980_deficit": "-13.6 kg K2O ha-1",
+                "china_2010_surplus": "22.9 kg K2O ha-1",
+                "sub_saharan_africa_average": "less than -15 kg K ha-1",
+                "morocco_without_k_range": "-516 to -9479 kg K ha-1 (12-17 years)",
+                "morocco_with_k_range": "-266 to 1345 kg K ha-1 (12-17 years)"
+              },
+              "context": "Calculated as sum of K inputs minus sum of K outputs, on an area basis. Derived from national/regional statistics, farm surveys, and long-term experiments.",
+              "units": "kg K ha-1, kg K2O ha-1",
+              "precision_note": "Considerable uncertainty, especially at aggregated scales, due to data limitations (manure, losses, fertilizer use data quality). Estimated 10-15% error in derived PNB K due to crop K concentration variability."
+            },
+            {
+              "source": "K removal rates",
+              "data": {
+                "k_removal_ranges_northern_australia": "8-20 kg K ha-1 year-1",
+                "k_removal_ranges_sub_saharan_africa_cereals": "20-30 kg K ha-1 year-1",
+                "k_removal_ranges_india_k_omission_plots": "158-349 kg K ha-1 (total K removed over a cycle)"
+              },
+              "context": "K concentration in harvested biomass, calculated from yield and K content.",
+              "units": "kg K ha-1 year-1, kg K ha-1",
+              "precision_note": "Wheat grain K concentration varied by ±14% of the mean, leading to an estimated 10-15% error in derived PNB K or PFP K metrics."
+            }
+          ],
+          "supporting_evidence": [
+            "Process understanding of K input-output balance.",
+            "Temporal patterns of K balance shifts (China) and persistent deficits (India, SSA)."
+          ],
+          "temporal_relevance": "Annual rates, reflecting year-to-year K balance.",
+          "geographic_applicability": [
+            "Australia",
+            "China",
+            "India",
+            "Sub-Saharan Africa",
+            "North Africa (Morocco)",
+            "Uruguay",
+            "Southeast Asia",
+            "USA"
+          ],
+          "integration_readiness": "Direct input for K balance models, requires contextualization and scaling for specific regional/farm applications.",
+          "uncertainty_range": {
+            "acceptable_range": "±20%",
+            "paper_estimated_error": "10-15% for derived PNB K"
+          }
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "sustainability_years",
+          "crop_systems_mentioned": [
+            "cereals"
+          ],
+          "confidence_level": 0.65,
+          "direct_evidence": [
+            {
+              "source": "Implied from long-term trends",
+              "data": {
+                "china_k_balance_shift": "From deficit to surplus (1980-2010), demonstrating potential for long-term sustainability with intervention.",
+                "india_fertilizer_response_decrease": "From 13.4 to 3.7 kg grain (kg NPK)-1 (1970-2005), indicating declining sustainability.",
+                "morocco_without_k_pnbi_k_range": "-516 to -9479 kg K ha-1 over 12-17 years, indicating rapid depletion without K input."
+              },
+              "context": "Observed multi-decadal trends in K balance and crop response.",
+              "units": "years, kg grain (kg NPK)-1",
+              "precision_note": "Projections of sustainability years are inferred from trends, not directly calculated by the paper. Uncertainty in future projections depends on assumptions about management changes."
+            }
+          ],
+          "supporting_evidence": [
+            "The concept of K mining from soil reserves in the absence of fertilization.",
+            "The paper's emphasis on continuous negative K balances being unsustainable."
+          ],
+          "temporal_relevance": "Medium to long-term (5-10+ years) sustainability assessment.",
+          "geographic_applicability": [
+            "Global (general principles)",
+            "China",
+            "India",
+            "Morocco",
+            "USA"
+          ],
+          "integration_readiness": "Requires modeling and scenario analysis to project specific sustainability years based on observed depletion rates and soil reserve estimates.",
+          "uncertainty_range": {
+            "acceptable_range": "±30%",
+            "paper_implied_variability": "High, as sustainability depends on future management and inherent soil reserves."
+          }
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "depletion_rate",
+          "crop_systems_mentioned": [
+            "rice",
+            "cereals"
+          ],
+          "confidence_level": 0.7,
+          "direct_evidence": [
+            {
+              "source": "Observed K balance deficits",
+              "data": {
+                "china_1980_deficit_pnbi_k": "-13.6 kg K2O ha-1",
+                "sub_saharan_africa_average_pnbi_k": "less than -15 kg K ha-1",
+                "india_total_deficit_1999_2000": "-9.7 Mt (69% K)",
+                "uruguay_2010_deficit_pnbi_k": "-24 kt K2O",
+                "morocco_without_k_pnbi_k_range": "-516 to -9479 kg K ha-1 (12-17 years)"
+              },
+              "context": "Calculated annual net K removal from the system.",
+              "units": "kg K2O ha-1, Mt, kt K2O",
+              "precision_note": "Considerable uncertainty, especially at aggregated scales, due to data limitations (manure, losses, fertilizer use data quality)."
+            },
+            {
+              "source": "Soil K decrease in K-omission plots",
+              "data": {
+                "india_k_omission_decrease_exchangeable": "13-18 mg kg-1 decrease during one rice-wheat cycle",
+                "india_k_omission_decrease_non_exchangeable": "26-41 mg kg-1 decrease during one rice-wheat cycle"
+              },
+              "context": "Directly measured decline in soil K fractions in long-term K omission plots.",
+              "units": "mg kg-1",
+              "precision_note": "High precision for direct measurement of decline in controlled experiments."
+            },
+            {
+              "source": "Increasing K removal exceeding K input",
+              "data": {
+                "usa_pnb_k_increasing_trend": "1.3% year-1 from 1987-2012 for the contiguous 48 states."
+              },
+              "context": "Trend in Partial Nutrient Balance (PNB K) indicating increasing K removal relative to input.",
+              "units": "% year-1",
+              "precision_note": "High reliability supported by regression analysis (R2 values up to 0.825)."
+            }
+          ],
+          "supporting_evidence": [
+            "Process understanding of K input-output balance and K uptake by crops.",
+            "Long-term trends of persistent negative K balances."
+          ],
+          "temporal_relevance": "Annual or multi-year average depletion rates.",
+          "geographic_applicability": [
+            "Global (observed in various regions)",
+            "India",
+            "Sub-Saharan Africa",
+            "China (historical)",
+            "USA",
+            "Uruguay",
+            "Morocco"
+          ],
+          "integration_readiness": "Direct input for modeling K depletion scenarios and assessing soil K sustainability.",
+          "uncertainty_range": {
+            "acceptable_range": "±20%",
+            "paper_estimated_error": "10-15% for PNB K calculations; direct measurements have higher precision."
+          }
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "seasonal_release_patterns",
+          "crop_systems_mentioned": [
+            "rice",
+            "cereals"
+          ],
+          "confidence_level": 0.5,
+          "direct_evidence": [
+            {
+              "source": "Environmental controls on K balance",
+              "data": {
+                "climate_influence": "e.g., rainfall influencing leaching/erosion (implicitly seasonal)",
+                "seasonal_water_stress_effects": "Mentioned as a parameter for Mediterranean climate."
+              },
+              "context": "Factors influencing K dynamics, implying seasonal variations.",
+              "units": "N/A",
+              "precision_note": "Qualitative insights; specific quantitative seasonal release patterns are not detailed."
+            },
+            {
+              "source": "India monsoon regions parameters (client architecture)",
+              "data": {
+                "pre_monsoon_k_levels": "Client parameter, not directly quantified in synthesis.",
+                "post_monsoon_k_depletion": "Client parameter, not directly quantified in synthesis."
+              },
+              "context": "Client-defined parameters, with general evidence of K depletion in India over cropping cycles.",
+              "units": "N/A",
+              "precision_note": "Limited direct quantitative evidence for specific seasonal release patterns."
+            }
+          ],
+          "supporting_evidence": [
+            "General understanding of climate's influence on nutrient cycling.",
+            "K omission plot data showing K decrease over a rice-wheat cycle (implies seasonal dynamics)."
+          ],
+          "temporal_relevance": "Seasonal dynamics.",
+          "geographic_applicability": [
+            "Mediterranean climate (North Africa)",
+            "India (monsoon regions)",
+            "Tropical soils (general)"
+          ],
+          "integration_readiness": "Requires further research and specific seasonal monitoring data for quantitative modeling.",
+          "uncertainty_range": {
+            "acceptable_range": "±40%",
+            "paper_implied_variability": "High, due to lack of specific seasonal data."
+          }
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "pre_monsoon_k_levels",
+          "crop_systems_mentioned": [
+            "rice",
+            "cereals"
+          ],
+          "confidence_level": 0.0,
+          "direct_evidence": [],
+          "supporting_evidence": [
+            "General understanding of seasonal K dynamics and depletion in India's rice-wheat systems."
+          ],
+          "temporal_relevance": "",
+          "geographic_applicability": [],
+          "integration_readiness": "Requires specific seasonal monitoring data.",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "post_monsoon_k_depletion",
+          "crop_systems_mentioned": [
+            "rice",
+            "cereals"
+          ],
+          "confidence_level": 0.6,
+          "direct_evidence": [
+            {
+              "source": "Soil K decrease in K-omission plots in India",
+              "data": {
+                "india_k_omission_decrease_exchangeable": "13-18 mg kg-1 decrease during one rice-wheat cycle",
+                "india_k_omission_decrease_non_exchangeable": "26-41 mg kg-1 decrease during one rice-wheat cycle"
+              },
+              "context": "Observed depletion over a cropping cycle, which includes monsoon and post-monsoon periods.",
+              "units": "mg kg-1",
+              "precision_note": "Directly measured decline provides strong evidence of K mining from reserves."
+            }
+          ],
+          "supporting_evidence": [
+            "Persistent negative K balances in India."
+          ],
+          "temporal_relevance": "Post-monsoon period (implied by cropping cycle).",
+          "geographic_applicability": [
+            "India (monsoon regions)"
+          ],
+          "integration_readiness": "Provides evidence of depletion, but specific post-monsoon K levels require more granular seasonal data.",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "irrigation_k_mobilization",
+          "crop_systems_mentioned": [],
+          "confidence_level": 0.5,
+          "direct_evidence": [
+            {
+              "source": "Agricultural system integration insights",
+              "data": {
+                "irrigation_effect": "Irrigation can contribute K or intensify removal."
+              },
+              "context": "Qualitative statement on the role of irrigation in K dynamics.",
+              "units": "N/A",
+              "precision_note": "Qualitative insight; specific quantitative mobilization rates are not provided."
+            }
+          ],
+          "supporting_evidence": [],
+          "temporal_relevance": "Seasonal/annual.",
+          "geographic_applicability": [
+            "Global (irrigated areas)"
+          ],
+          "integration_readiness": "Requires specific studies on K content in irrigation water and its interaction with soil K.",
+          "uncertainty_range": {
+            "acceptable_range": "±50%"
+          }
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "cleared_land_k_depletion",
+          "crop_systems_mentioned": [
+            "soybean"
+          ],
+          "confidence_level": 0.5,
+          "direct_evidence": [
+            {
+              "source": "Conversion K losses",
+              "data": {
+                "conversion_k_losses": "Mentioned as a parameter for Amazon fringe, implying depletion upon conversion."
+              },
+              "context": "Qualitative insight into K losses during land-use change.",
+              "units": "N/A",
+              "precision_note": "Qualitative insight; specific quantitative depletion rates are not provided."
+            }
+          ],
+          "supporting_evidence": [
+            "Expansion of agriculture into new areas and replacement of pastures by annual crops (e.g., soybean in Southern Cone) increased K removal and induced K deficiencies."
+          ],
+          "temporal_relevance": "Post-clearing/conversion.",
+          "geographic_applicability": [
+            "Amazon fringe",
+            "Southern Cone of Latin America"
+          ],
+          "integration_readiness": "Requires specific studies on K dynamics in cleared forest/pasture lands.",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "conversion_k_losses",
+          "crop_systems_mentioned": [
+            "soybean"
+          ],
+          "confidence_level": 0.6,
+          "direct_evidence": [
+            {
+              "source": "Agricultural system integration insights",
+              "data": {
+                "expansion_of_agriculture": "Expansion of agriculture into new areas and replacement of pastures by annual crops (e.g., soybean in Southern Cone) increased K removal and induced K deficiencies."
+              },
+              "context": "Observed impact of land-use change on K balance.",
+              "units": "N/A",
+              "precision_note": "Qualitative insight; specific quantitative losses are not provided."
+            }
+          ],
+          "supporting_evidence": [],
+          "temporal_relevance": "Post-conversion.",
+          "geographic_applicability": [
+            "Southern Cone of Latin America",
+            "Brazil (Amazon fringe)"
+          ],
+          "integration_readiness": "Requires specific studies to quantify K losses during land conversion.",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "temporal_dynamics",
+          "crop_systems_mentioned": [
+            "rice"
+          ],
+          "confidence_level": 0.95,
+          "direct_evidence": [
+            {
+              "source": "Temporal dynamics synthesis section",
+              "data": {
+                "long_term_shift_china": "From deficit to surplus (1980-2010).",
+                "persistent_negative_balances_india": "Declining fertilizer response (1970-2005), soil K decrease.",
+                "increasing_k_removal_usa": "1.3% year-1 (1987-2012).",
+                "k_fertilizer_use_fluctuations": "Influenced by external factors (drought, prices)."
+              },
+              "context": "Observed patterns and trends in K balance over time.",
+              "units": "N/A",
+              "precision_note": "High for identified patterns; explicit future projections are not provided."
+            }
+          ],
+          "supporting_evidence": [],
+          "temporal_relevance": "Short to multi-decadal.",
+          "geographic_applicability": [
+            "Global"
+          ],
+          "integration_readiness": "Provides critical context for modeling long-term soil K sustainability.",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "growing_season_supply",
+          "crop_systems_mentioned": [
+            "rice",
+            "cereals"
+          ],
+          "confidence_level": 0.7,
+          "direct_evidence": [
+            {
+              "source": "Soil test K (exchangeable K)",
+              "data": {
+                "critical_concentration_china": "80 mg L-1",
+                "india_k_omission_decrease_exchangeable": "13-18 mg kg-1 decrease during one rice-wheat cycle"
+              },
+              "context": "Soil samples analyzed before sowing (China), and changes observed during a cropping cycle (India), reflecting growing season availability.",
+              "units": "mg L-1, mg kg-1",
+              "precision_note": "Reliable for indicating K status; specific daily/weekly supply rates are not provided."
+            }
+          ],
+          "supporting_evidence": [
+            "K uptake by crops process understanding."
+          ],
+          "temporal_relevance": "Growing season.",
+          "geographic_applicability": [
+            "China",
+            "India",
+            "Global (general)"
+          ],
+          "integration_readiness": "Provides indicators of K supply, requires dynamic models for precise daily/weekly supply.",
+          "uncertainty_range": {
+            "acceptable_range": "±40%"
+          }
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "cumulative_k_depletion",
+          "crop_systems_mentioned": [
+            "rice",
+            "cereals"
+          ],
+          "confidence_level": 0.7,
+          "direct_evidence": [
+            {
+              "source": "Long-term trends of negative K balances",
+              "data": {
+                "india_fertilizer_response_decrease": "From 13.4 to 3.7 kg grain (kg NPK)-1 (1970-2005), indicating cumulative depletion.",
+                "india_soil_k_decrease_exchangeable": "13-18 mg kg-1 decrease during one rice-wheat cycle",
+                "india_soil_k_decrease_non_exchangeable": "26-41 mg kg-1 decrease during one rice-wheat cycle",
+                "usa_pnb_k_increasing_trend": "1.3% year-1 from 1987-2012, indicating increasing cumulative removal."
+              },
+              "context": "Observed declines in soil K and fertilizer response over multi-year periods.",
+              "units": "kg grain (kg NPK)-1, mg kg-1, % year-1",
+              "precision_note": "High reliability for observed trends; cumulative values are derived from these trends."
+            }
+          ],
+          "supporting_evidence": [
+            "The concept of K mining from soil reserves."
+          ],
+          "temporal_relevance": "Medium-term (5-year) to long-term cumulative depletion.",
+          "geographic_applicability": [
+            "India",
+            "USA",
+            "Sub-Saharan Africa",
+            "Global (general)"
+          ],
+          "integration_readiness": "Directly informs assessment of soil K sustainability and long-term productivity decline.",
+          "uncertainty_range": {
+            "acceptable_range": "±30%"
+          }
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "soil_reserve_drawdown",
+          "crop_systems_mentioned": [
+            "rice",
+            "cereals"
+          ],
+          "confidence_level": 0.7,
+          "direct_evidence": [
+            {
+              "source": "Non-exchangeable K decrease in India K-omission plots",
+              "data": {
+                "india_k_omission_decrease_non_exchangeable": "26-41 mg kg-1 decrease during one rice-wheat cycle"
+              },
+              "context": "Directly measured decline in non-exchangeable K, indicating drawdown from soil reserves.",
+              "units": "mg kg-1",
+              "precision_note": "High precision for direct measurement of drawdown in controlled experiments."
+            },
+            {
+              "source": "K uptake from soil reserve in rice-wheat system",
+              "data": {
+                "k_uptake_from_soil_reserve_rice_wheat_system": "258 kg K2O ha-1 (Tiwari et al. 2006)"
+              },
+              "context": "Quantified K uptake from soil reserves in K-omission plots.",
+              "units": "kg K2O ha-1",
+              "precision_note": "Reliable for specific experimental conditions."
+            }
+          ],
+          "supporting_evidence": [
+            "The concept of K mining from soil reserves."
+          ],
+          "temporal_relevance": "Over cropping cycles, contributing to medium-term sustainability.",
+          "geographic_applicability": [
+            "India",
+            "Global (where K-deficient soils are present)"
+          ],
+          "integration_readiness": "Provides direct evidence of soil reserve drawdown, crucial for modeling long-term K availability.",
+          "uncertainty_range": {
+            "acceptable_range": "±30%"
+          }
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "productivity_decline_rate",
+          "crop_systems_mentioned": [
+            "rice",
+            "cereals"
+          ],
+          "confidence_level": 0.6,
+          "direct_evidence": [
+            {
+              "source": "Decreasing response to applied NPK fertilizer in India",
+              "data": {
+                "india_fertilizer_response_decrease": "From 13.4 to 3.7 kg grain (kg of added NPK)-1 between 1970 and 2005."
+              },
+              "context": "Indicates a decline in productivity per unit of fertilizer due to underlying soil fertility issues, including K depletion.",
+              "units": "kg grain (kg NPK)-1",
+              "precision_note": "High reliability for observed trend."
+            },
+            {
+              "source": "Rice grain yield decrease in Bangladesh K-omission plots",
+              "data": {
+                "rice_grain_yield_decrease_bangladesh": "From 10 t ha-1 to 6.2 t ha-1 (1985-2000) in K-omission plots."
+              },
+              "context": "Direct evidence of yield decline in absence of K fertilization.",
+              "units": "t ha-1",
+              "precision_note": "High reliability for experimental conditions."
+            }
+          ],
+          "supporting_evidence": [
+            "Sustained negative K balances leading to unsustainable K mining."
+          ],
+          "temporal_relevance": "Medium-term (5-year) to long-term productivity decline.",
+          "geographic_applicability": [
+            "India",
+            "Bangladesh",
+            "Global (where K is limiting)"
+          ],
+          "integration_readiness": "Directly informs the economic impact of K depletion and the need for K replenishment.",
+          "uncertainty_range": {
+            "acceptable_range": "±30%"
+          }
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "total_extractable_k_decline",
+          "crop_systems_mentioned": [
+            "rice",
+            "cereals"
+          ],
+          "confidence_level": 0.7,
+          "direct_evidence": [
+            {
+              "source": "Soil test K (exchangeable K) decrease in India K-omission plots",
+              "data": {
+                "india_k_omission_decrease_exchangeable": "13-18 mg kg-1 decrease during one rice-wheat cycle"
+              },
+              "context": "Directly measured decline in extractable K.",
+              "units": "mg kg-1",
+              "precision_note": "High precision for direct measurement of decline in controlled experiments."
+            },
+            {
+              "source": "Soil test K in Argentina",
+              "data": {
+                "argentina_pristine_reduction": "32-62% reduction from pristine levels of 990-1140 mg K kg-1."
+              },
+              "context": "Long-term decline in agricultural fields compared to pristine levels.",
+              "units": "% reduction, mg K kg-1",
+              "precision_note": "Reliable for indicating long-term decline."
+            }
+          ],
+          "supporting_evidence": [
+            "Persistent negative K balances in various regions."
+          ],
+          "temporal_relevance": "Long-term (10-year) decline.",
+          "geographic_applicability": [
+            "India",
+            "Argentina",
+            "Global (where K is mined)"
+          ],
+          "integration_readiness": "Directly informs assessment of long-term soil K exhaustion.",
+          "uncertainty_range": {
+            "acceptable_range": "±30%"
+          }
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "anaerobic_k_release",
+          "crop_systems_mentioned": [
+            "rice"
+          ],
+          "confidence_level": 0.0,
+          "direct_evidence": [],
+          "supporting_evidence": [
+            "General understanding of K dynamics in flooded conditions."
+          ],
+          "temporal_relevance": "",
+          "geographic_applicability": [],
+          "integration_readiness": "Requires specific research.",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "puddling_k_effects",
+          "crop_systems_mentioned": [
+            "rice"
+          ],
+          "confidence_level": 0.0,
+          "direct_evidence": [],
+          "supporting_evidence": [
+            "General understanding of K dynamics in flooded conditions."
+          ],
+          "temporal_relevance": "",
+          "geographic_applicability": [],
+          "integration_readiness": "Requires specific research.",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "water_k_concentration",
+          "crop_systems_mentioned": [
+            "rice"
+          ],
+          "confidence_level": 0.0,
+          "direct_evidence": [],
+          "supporting_evidence": [
+            "Client requirement for 'water_analysis' in flooded conditions."
+          ],
+          "temporal_relevance": "",
+          "geographic_applicability": [],
+          "integration_readiness": "Requires specific research.",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "aerobic_k_availability",
+          "crop_systems_mentioned": [],
+          "confidence_level": 0.0,
+          "direct_evidence": [],
+          "supporting_evidence": [
+            "General understanding of K dynamics in aerobic conditions."
+          ],
+          "temporal_relevance": "",
+          "geographic_applicability": [],
+          "integration_readiness": "Requires specific research.",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "drought_stress_k_uptake",
+          "crop_systems_mentioned": [
+            "rice"
+          ],
+          "confidence_level": 0.0,
+          "direct_evidence": [],
+          "supporting_evidence": [
+            "Client requirement for 'drought_stress_k_uptake' in upland rice."
+          ],
+          "temporal_relevance": "",
+          "geographic_applicability": [],
+          "integration_readiness": "Requires specific research.",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "residue_k_recycling",
+          "crop_systems_mentioned": [
+            "rice"
+          ],
+          "confidence_level": 0.6,
+          "direct_evidence": [
+            {
+              "source": "Organic amendments (crop residues) as K inputs",
+              "data": {
+                "crop_residue_retention": "Significant source of K input (China)."
+              },
+              "context": "Crop residue retention contributes to K input and helps maintain soil K fertility.",
+              "units": "N/A",
+              "precision_note": "Reliable for indicating contribution; specific recycling rates are not detailed."
+            }
+          ],
+          "supporting_evidence": [
+            "Client parameter for 'residue_k_recycling' in upland rice and 'residue_k_contributions' in general."
+          ],
+          "temporal_relevance": "Annual/seasonal.",
+          "geographic_applicability": [
+            "China",
+            "Global (where residue retention is practiced)"
+          ],
+          "integration_readiness": "Provides evidence of contribution, requires specific research on recycling rates and timing.",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "high_k_demand_supply",
+          "crop_systems_mentioned": [
+            "cotton"
+          ],
+          "confidence_level": 0.7,
+          "direct_evidence": [
+            {
+              "source": "PNB K trends in USA cotton-growing states",
+              "data": {
+                "usa_pnb_k_regional_increase": "Highest increase in cotton-growing states (1.8% year-1) for PNB K."
+              },
+              "context": "Indicates high K removal exceeding input, implying high K demand.",
+              "units": "% year-1",
+              "precision_note": "Reliable for trend; specific K demand values are not provided."
+            }
+          ],
+          "supporting_evidence": [
+            "Client requirement for 'high_k_demand_supply' in cotton systems."
+          ],
+          "temporal_relevance": "Long-term (1987-2012).",
+          "geographic_applicability": [
+            "USA (cotton-growing states)"
+          ],
+          "integration_readiness": "Provides strong indication of high K demand, requires specific crop nutrition studies for precise demand quantification.",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "boll_development_k_needs",
+          "crop_systems_mentioned": [
+            "cotton"
+          ],
+          "confidence_level": 0.0,
+          "direct_evidence": [],
+          "supporting_evidence": [
+            "Client requirement for 'boll_development_k_needs' in cotton systems."
+          ],
+          "temporal_relevance": "",
+          "geographic_applicability": [],
+          "integration_readiness": "Requires specific research.",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "ratoon_k_depletion",
+          "crop_systems_mentioned": [
+            "sugarcane"
+          ],
+          "confidence_level": 0.6,
+          "direct_evidence": [
+            {
+              "source": "PNBI K variation in Australia and India",
+              "data": {
+                "australia_pnbi_k_variation": "Sugarcane-growing areas showed the largest K deficits.",
+                "pnbi_k_by_cropping_system_india": "Highest for sugarcane (-121 kg K2O ha-1)."
+              },
+              "context": "High K deficits in sugarcane systems, which often involve ratooning, implying ratoon K depletion.",
+              "units": "kg K ha-1, kg K2O ha-1",
+              "precision_note": "Reliable for indicating high K removal; specific ratoon depletion rates are not detailed."
+            }
+          ],
+          "supporting_evidence": [
+            "Client requirement for 'ratoon_k_depletion' in sugarcane systems."
+          ],
+          "temporal_relevance": "Annual/multi-year (ratoon cycles).",
+          "geographic_applicability": [
+            "Australia (sugarcane)",
+            "India (sugarcane)"
+          ],
+          "integration_readiness": "Provides strong evidence of depletion, requires specific research on ratoon K dynamics.",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "trash_blanket_k_cycling",
+          "crop_systems_mentioned": [
+            "sugarcane"
+          ],
+          "confidence_level": 0.5,
+          "direct_evidence": [
+            {
+              "source": "Organic amendments (crop residues) as K inputs",
+              "data": {
+                "crop_residue_retention": "Significant source of K input (China)."
+              },
+              "context": "General principle of residue retention contributing to K cycling, applicable to trash blankets.",
+              "units": "N/A",
+              "precision_note": "Qualitative insight; specific cycling rates for trash blankets are not detailed."
+            }
+          ],
+          "supporting_evidence": [
+            "Client requirement for 'trash_blanket_k_cycling' in sugarcane systems."
+          ],
+          "temporal_relevance": "Annual/seasonal.",
+          "geographic_applicability": [
+            "Global (where trash blankets are used)"
+          ],
+          "integration_readiness": "Provides evidence of contribution, requires specific research on trash blanket K cycling.",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "long_rotation_k_balance",
+          "crop_systems_mentioned": [
+            "sugarcane",
+            "mixed_cropping"
+          ],
+          "confidence_level": 0.6,
+          "direct_evidence": [
+            {
+              "source": "PNBI K variation in Australia and India",
+              "data": {
+                "australia_pnbi_k_variation": "Sugarcane-growing areas showed the largest K deficits.",
+                "pnbi_k_by_cropping_system_india": "Highest for sugarcane (-121 kg K2O ha-1)."
+              },
+              "context": "High K deficits in sugarcane systems, which are long-rotation crops, indicating challenges for long-term K balance.",
+              "units": "kg K ha-1, kg K2O ha-1",
+              "precision_note": "Reliable for indicating high K removal; specific long-rotation balance dynamics are not detailed."
+            }
+          ],
+          "supporting_evidence": [
+            "Client requirement for 'long_rotation_k_balance' in sugarcane systems."
+          ],
+          "temporal_relevance": "Long-term (rotation length).",
+          "geographic_applicability": [
+            "Australia (sugarcane)",
+            "India (sugarcane)"
+          ],
+          "integration_readiness": "Provides evidence of challenges, requires specific research on long-rotation K balance.",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "intercrop_k_competition",
+          "crop_systems_mentioned": [
+            "mixed_cropping"
+          ],
+          "confidence_level": 0.0,
+          "direct_evidence": [],
+          "supporting_evidence": [
+            "Client requirement for 'intercrop_k_competition' in mixed cropping."
+          ],
+          "temporal_relevance": "",
+          "geographic_applicability": [],
+          "integration_readiness": "Requires specific research.",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "rotation_k_cycling_efficiency",
+          "crop_systems_mentioned": [
+            "mixed_cropping"
+          ],
+          "confidence_level": 0.5,
+          "direct_evidence": [
+            {
+              "source": "Cropping system design and intensity insights",
+              "data": {
+                "cropping_system_design_effects": "Different crop sequences remove varying amounts of K."
+              },
+              "context": "Implies that rotation design influences K cycling efficiency.",
+              "units": "N/A",
+              "precision_note": "Qualitative insight; specific efficiency values are not provided."
+            }
+          ],
+          "supporting_evidence": [
+            "Client requirement for 'rotation_k_cycling_efficiency' in mixed cropping."
+          ],
+          "temporal_relevance": "Long-term (rotation length).",
+          "geographic_applicability": [
+            "Global (where crop rotations are practiced)"
+          ],
+          "integration_readiness": "Provides evidence of influence, requires specific research on rotation K cycling efficiency.",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "cover_crop_k_contributions",
+          "crop_systems_mentioned": [],
+          "confidence_level": 0.0,
+          "direct_evidence": [],
+          "supporting_evidence": [
+            "General principle of organic amendments contributing to K input."
+          ],
+          "temporal_relevance": "",
+          "geographic_applicability": [],
+          "integration_readiness": "Requires specific research.",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "root_zone_k_depletion",
+          "crop_systems_mentioned": [
+            "rice",
+            "cereals"
+          ],
+          "confidence_level": 0.7,
+          "direct_evidence": [
+            {
+              "source": "Soil test K (exchangeable K) decrease in India K-omission plots",
+              "data": {
+                "india_k_omission_decrease_exchangeable": "13-18 mg kg-1 decrease during one rice-wheat cycle"
+              },
+              "context": "Directly measured decline in extractable K in the topsoil (0-20 cm), representing root zone depletion.",
+              "units": "mg kg-1",
+              "precision_note": "High precision for direct measurement of depletion in controlled experiments."
+            },
+            {
+              "source": "Non-exchangeable K decrease in India K-omission plots",
+              "data": {
+                "india_k_omission_decrease_non_exchangeable": "26-41 mg kg-1 decrease during one rice-wheat cycle"
+              },
+              "context": "Directly measured decline in non-exchangeable K, indicating drawdown from soil reserves within the root zone.",
+              "units": "mg kg-1",
+              "precision_note": "High precision for direct measurement of drawdown in controlled experiments."
+            }
+          ],
+          "supporting_evidence": [
+            "Process understanding of K uptake by crops."
+          ],
+          "temporal_relevance": "Over cropping cycles.",
+          "geographic_applicability": [
+            "India",
+            "Global (where K is limiting)"
+          ],
+          "integration_readiness": "Directly informs modeling of K uptake and soil K availability.",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "plant_k_efficiency_factors",
+          "crop_systems_mentioned": [],
+          "confidence_level": 0.6,
+          "direct_evidence": [
+            {
+              "source": "Nutrient Use Efficiency (NUE) indicators",
+              "data": {
+                "pfp_ae_re": "Paper applies Partial Factor Productivity (PFP), Agronomic Efficiency (AE), and Recovery Efficiency (RE) as metrics."
+              },
+              "context": "These metrics implicitly reflect plant K efficiency, though they do not directly reference soil health or soil nutrient concentrations.",
+              "units": "N/A",
+              "precision_note": "Reliable for efficiency assessment; specific plant K efficiency factors are not provided."
+            }
+          ],
+          "supporting_evidence": [
+            "Client requirement for 'plant_k_efficiency_factors' in crop uptake relationships."
+          ],
+          "temporal_relevance": "Annual/seasonal.",
+          "geographic_applicability": [
+            "Global"
+          ],
+          "integration_readiness": "Provides indirect evidence, requires specific research on plant K efficiency factors.",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "regional_crop_evidence",
+          "crop_parameters": [
+            "post_monsoon_k_depletion (implied by K omission plot data over rice-wheat cycle)"
+          ],
+          "crop_context": [],
+          "evidence_strength": "high",
+          "confidence_assessment": {
+            "confidence_level": 0.7,
+            "rationale": "Strong evidence from long-term K omission trials and national K balance data consistently shows K depletion in India, particularly in intensive rice-wheat systems common in monsoon regions."
+          },
+          "regional_context_note": "",
+          "integration_requirements": [
+            "Directly informs K depletion modeling for monsoon-dominated agricultural systems.",
+            "Requires more granular seasonal data for precise pre/post monsoon K levels."
+          ]
+        }
+      ],
+      "evidence_summary": {
+        "total_pieces": 32,
+        "crop_specific_parameters": 31,
+        "crop_system_synthesis": 0,
+        "regional_crop_evidence": 1,
+        "crop_systems_identified": [
+          "cotton",
+          "mixed_cropping",
+          "soybean",
+          "rice",
+          "cereals",
+          "sugarcane"
+        ]
+      }
+    },
+    "Nutrient Partitioning and Stoichiometry in Unburnt Sugarcane Ratoon at Varying Yield Levels": {
+      "paper_metadata": {
+        "paper_id": "Nutrient Partitioning and Stoichiometry in Unburnt Sugarcane Ratoon at Varying Yield Levels",
+        "processing_timestamp": "2025-07-10T16:41:53.984194",
+        "stage_4b_validation_passed": true
+      },
+      "evidence_pieces": [
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "annual_kg_k2o_per_ha",
+          "crop_systems_mentioned": [
+            "sugarcane"
+          ],
+          "confidence_level": 0.8,
+          "direct_evidence": [
+            {
+              "type": "natural_supply_from_residues",
+              "value": "Mean 244 kg K2O ha-1",
+              "range": "Dry leaves: 2-116 kg K2O ha-1; Tops: 90-477 kg K2O ha-1",
+              "context": "K returned in crop residues (dry leaves + tops) at harvest in green cane systems."
+            },
+            {
+              "type": "annual_k_demand_by_crop",
+              "value": "Mean 565 kg K2O ha-1",
+              "range": "191-1043 kg K2O ha-1",
+              "context": "Aboveground K removal by sugarcane crop at harvest."
+            }
+          ],
+          "supporting_evidence": [
+            "Long-term soil K enrichment at Site 1 due to historical organic amendments (vinasse/press mud) indicates a significant historical natural K input/accumulation."
+          ],
+          "temporal_relevance": "Annual cycle (K removal at harvest, residue K returned annually), long-term historical trend for enrichment.",
+          "geographic_applicability": [
+            "Southeast Brazil (São Paulo state)"
+          ],
+          "integration_readiness": "Direct for K demand and residue K input; requires modeling for actual soil mineral K release rates.",
+          "uncertainty_range": {
+            "description": "Ranges provided for K removal and residue K. The rate of K release from residues is not explicitly quantified, only the total amount returned. Direct natural soil mineral K release rates are not measured.",
+            "magnitude": "±25% for K removal/residue K; higher for mineral K release."
+          }
+        },
+        {
+          "evidence_type": "regional_crop_evidence",
+          "crop_parameters": [],
+          "crop_context": [
+            "sugarcane"
+          ],
+          "evidence_strength": "High",
+          "confidence_assessment": {
+            "overall_confidence": 0.9,
+            "data_robustness": "High, based on multi-site field trials, detailed sampling, and standard analytical methods.",
+            "applicability_to_cerrado": "Good, given the presence of Typic Hapludox soils and sugarcane cultivation in the region, aligning with 'savanna_k_cycling' and 'deep_soil_k_reserves' parameters."
+          },
+          "regional_context_note": "This study provides excellent data for sugarcane systems in Southeast Brazil (São Paulo state), specifically on highly weathered tropical soils (Typic Hapludox and Typic Eutrustox). While mapped to 'cerrado' as the most appropriate existing subcategory given the soil types, its direct applicability is to the studied region and similar sugarcane environments within Brazil.",
+          "integration_requirements": [
+            "Site-specific soil testing and management history for accurate application.",
+            "Further research on K release rates from straw and soil minerals for precise modeling.",
+            "Calibration of K demand models with local yield targets and environmental conditions."
+          ]
+        }
+      ],
+      "evidence_summary": {
+        "total_pieces": 2,
+        "crop_specific_parameters": 1,
+        "crop_system_synthesis": 0,
+        "regional_crop_evidence": 1,
+        "crop_systems_identified": [
+          "sugarcane"
+        ]
+      }
+    },
+    "PotassiumDynamicsinSoils": {
+      "paper_metadata": {
+        "paper_id": "PotassiumDynamicsinSoils",
+        "processing_timestamp": "2025-07-10T16:42:26.377001",
+        "stage_4b_validation_passed": true
+      },
+      "evidence_pieces": [
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "depletion_rate",
+          "crop_systems_mentioned": [
+            "rice",
+            "cotton"
+          ],
+          "confidence_level": 0.9,
+          "direct_evidence": [
+            {
+              "value": "7-49% decrease in soil available K",
+              "context": "Across different agroecological zones in Punjab, Pakistan, from 1990 to 2005 (15-year period). Specific declines: Rainfed (7%), Rice (33%), Central (49%), Cotton (27%).",
+              "source": "integrated_soil_k_findings.temporal_dynamics_synthesis.Long-term depletion of soil available K"
+            }
+          ],
+          "supporting_evidence": [],
+          "temporal_relevance": "Observed over a 15-year period (1990-2005).",
+          "geographic_applicability": [
+            "Punjab, Pakistan (direct evidence)",
+            "Similar semi-arid, intensively cultivated regions with comparable soil types and management histories (extrapolation)"
+          ],
+          "integration_readiness": "Direct (quantitative input for K balance and depletion models).",
+          "uncertainty_range": {
+            "qualitative": "Not explicitly quantified in paper, but large sample sizes (1500-2250 samples per zone per year) imply robustness for mean values and observed trends."
+          }
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "irrigation_k_mobilization",
+          "crop_systems_mentioned": [],
+          "confidence_level": 0.2,
+          "direct_evidence": [],
+          "supporting_evidence": [],
+          "temporal_relevance": "",
+          "geographic_applicability": [],
+          "integration_readiness": "Knowledge Gap (not addressed).",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "anaerobic_k_release",
+          "crop_systems_mentioned": [],
+          "confidence_level": 0.2,
+          "direct_evidence": [],
+          "supporting_evidence": [],
+          "temporal_relevance": "",
+          "geographic_applicability": [],
+          "integration_readiness": "Knowledge Gap (not addressed).",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "puddling_k_effects",
+          "crop_systems_mentioned": [],
+          "confidence_level": 0.2,
+          "direct_evidence": [],
+          "supporting_evidence": [],
+          "temporal_relevance": "",
+          "geographic_applicability": [],
+          "integration_readiness": "Knowledge Gap (not addressed).",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "water_k_concentration",
+          "crop_systems_mentioned": [],
+          "confidence_level": 0.8,
+          "direct_evidence": [
+            {
+              "value": "3-30 mg kg-1",
+              "context": "Soil solution K in normal soils.",
+              "source": "integrated_soil_k_findings.contextualized_measurements.Soil solution K"
+            }
+          ],
+          "supporting_evidence": [],
+          "temporal_relevance": "Dynamic, influenced by K pools and plant uptake.",
+          "geographic_applicability": [
+            "Global (general soils)"
+          ],
+          "integration_readiness": "Direct (provides benchmark range for soil solution K).",
+          "uncertainty_range": {
+            "qualitative": "Range provided, no specific precision metrics."
+          }
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "aerobic_k_availability",
+          "crop_systems_mentioned": [],
+          "confidence_level": 0.6,
+          "direct_evidence": [],
+          "supporting_evidence": [
+            {
+              "description": "The paper discusses general K dynamics and availability in soils, which implicitly covers aerobic conditions, contrasting with the lack of specific anaerobic discussion.",
+              "source": "integrated_soil_k_findings.process_understanding"
+            }
+          ],
+          "temporal_relevance": "Timeless principle.",
+          "geographic_applicability": [
+            "Global (general soils)"
+          ],
+          "integration_readiness": "Conceptual (provides foundational understanding, but requires quantitative data for parameterization).",
+          "uncertainty_range": {
+            "qualitative": "General conceptual understanding, no specific quantitative data for aerobic K availability."
+          }
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "residue_k_recycling",
+          "crop_systems_mentioned": [],
+          "confidence_level": 0.8,
+          "direct_evidence": [],
+          "supporting_evidence": [
+            {
+              "description": "Removal of crop residues from the field is identified as a factor contributing to the depletion of indigenous soil K contents, implying the importance of residue K recycling.",
+              "source": "enhanced_synthesis.agricultural_system_integration.management_system_insights.Removal of crop residues from the field"
+            }
+          ],
+          "temporal_relevance": "Long-term impact.",
+          "geographic_applicability": [
+            "Global (general principle)",
+            "Punjab, Pakistan (empirical evidence of impact)"
+          ],
+          "integration_readiness": "Supporting (provides empirical evidence for the importance of residue recycling, but requires quantitative data for parameterization).",
+          "uncertainty_range": {
+            "qualitative": "Strong empirical evidence for the impact of residue removal, but no quantitative data on recycling rates."
+          }
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "high_k_demand_supply",
+          "crop_systems_mentioned": [
+            "cotton"
+          ],
+          "confidence_level": 0.8,
+          "direct_evidence": [],
+          "supporting_evidence": [
+            {
+              "description": "44% of cotton growing areas in Pakistan are K deficient, indicating high K demand relative to supply in these systems.",
+              "source": "integrated_soil_k_findings.contextualized_measurements.Soil K status in Pakistan"
+            }
+          ],
+          "temporal_relevance": "Current status.",
+          "geographic_applicability": [
+            "Pakistan (cotton areas)",
+            "Global (general principle for high-demand crops)"
+          ],
+          "integration_readiness": "Supporting (provides empirical evidence of K deficiency in high-demand systems, useful for identifying critical areas).",
+          "uncertainty_range": {
+            "qualitative": "Empirical evidence of deficiency, implying high demand, but no specific quantitative demand rates."
+          }
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "boll_development_k_needs",
+          "crop_systems_mentioned": [],
+          "confidence_level": 0.2,
+          "direct_evidence": [],
+          "supporting_evidence": [],
+          "temporal_relevance": "",
+          "geographic_applicability": [],
+          "integration_readiness": "Knowledge Gap (not addressed).",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "ratoon_k_depletion",
+          "crop_systems_mentioned": [],
+          "confidence_level": 0.2,
+          "direct_evidence": [],
+          "supporting_evidence": [],
+          "temporal_relevance": "",
+          "geographic_applicability": [],
+          "integration_readiness": "Knowledge Gap (not addressed).",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "trash_blanket_k_cycling",
+          "crop_systems_mentioned": [],
+          "confidence_level": 0.7,
+          "direct_evidence": [],
+          "supporting_evidence": [
+            {
+              "description": "Removal of crop residues from the field contributes to K depletion, implying the importance of residue (trash) cycling for K.",
+              "source": "enhanced_synthesis.agricultural_system_integration.management_system_insights.Removal of crop residues from the field"
+            }
+          ],
+          "temporal_relevance": "Long-term impact.",
+          "geographic_applicability": [
+            "Global (where crop residues are managed)"
+          ],
+          "integration_readiness": "Supporting (provides empirical evidence for the importance of residue management, but requires quantitative data for parameterization).",
+          "uncertainty_range": {
+            "qualitative": "Implied, but no specific quantitative data on trash blanket K cycling."
+          }
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "long_rotation_k_balance",
+          "crop_systems_mentioned": [],
+          "confidence_level": 0.2,
+          "direct_evidence": [],
+          "supporting_evidence": [],
+          "temporal_relevance": "",
+          "geographic_applicability": [],
+          "integration_readiness": "Knowledge Gap (not addressed).",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "intercrop_k_competition",
+          "crop_systems_mentioned": [],
+          "confidence_level": 0.2,
+          "direct_evidence": [],
+          "supporting_evidence": [],
+          "temporal_relevance": "",
+          "geographic_applicability": [],
+          "integration_readiness": "Knowledge Gap (not addressed).",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "rotation_k_cycling_efficiency",
+          "crop_systems_mentioned": [
+            "mixed_cropping"
+          ],
+          "confidence_level": 0.5,
+          "direct_evidence": [],
+          "supporting_evidence": [
+            {
+              "description": "The paper discusses general agricultural K management and its impact on soil K levels, which implicitly includes the role of rotations in K cycling efficiency.",
+              "source": "enhanced_synthesis.agricultural_system_integration.management_system_insights"
+            }
+          ],
+          "temporal_relevance": "Long-term.",
+          "geographic_applicability": [
+            "Global (general principle)"
+          ],
+          "integration_readiness": "Conceptual (provides qualitative insights, but requires quantitative data for parameterization).",
+          "uncertainty_range": {
+            "qualitative": "General conceptual understanding, no specific quantitative data on rotation effects."
+          }
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "cover_crop_k_contributions",
+          "crop_systems_mentioned": [],
+          "confidence_level": 0.2,
+          "direct_evidence": [],
+          "supporting_evidence": [],
+          "temporal_relevance": "",
+          "geographic_applicability": [],
+          "integration_readiness": "Knowledge Gap (not addressed).",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "plant_k_efficiency_factors",
+          "crop_systems_mentioned": [],
+          "confidence_level": 0.2,
+          "direct_evidence": [],
+          "supporting_evidence": [],
+          "temporal_relevance": "",
+          "geographic_applicability": [],
+          "integration_readiness": "Knowledge Gap (not addressed).",
+          "uncertainty_range": {}
+        },
+        {
+          "evidence_type": "regional_crop_evidence",
+          "crop_parameters": [
+            "high_k_demand_supply",
+            "trash_blanket_k_cycling"
+          ],
+          "crop_context": [],
+          "evidence_strength": "high",
+          "confidence_assessment": {
+            "level": 0.9,
+            "rationale": "High confidence for Pakistan-specific quantitative data due to large sample sizes and empirical observation of trends. General principles are also highly reliable."
+          },
+          "regional_context_note": "This category includes specific, high-value quantitative data from Punjab, Pakistan, which is highly representative of semi-arid, intensively cultivated agricultural systems in South Asia. While geographically specific, the observed depletion trends and management insights have broader applicability to regions facing similar challenges.",
+          "integration_requirements": [
+            "Direct input for regional K balance models for semi-arid, intensively cultivated regions (e.g., South Asia).",
+            "Calibration of K dynamics models based on observed depletion rates.",
+            "Informs regional fertilizer recommendations and policy."
+          ]
+        }
+      ],
+      "evidence_summary": {
+        "total_pieces": 17,
+        "crop_specific_parameters": 16,
+        "crop_system_synthesis": 0,
+        "regional_crop_evidence": 1,
+        "crop_systems_identified": [
+          "mixed_cropping",
+          "cotton",
+          "rice"
+        ]
+      }
+    },
+    "principles-of-potash-use": {
+      "paper_metadata": {
+        "paper_id": "principles-of-potash-use",
+        "processing_timestamp": "2025-07-10T16:41:48.128583",
+        "stage_4b_validation_passed": true
+      },
+      "evidence_pieces": [
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "annual_kg_k2o_per_ha",
+          "crop_systems_mentioned": [
+            "cereals"
+          ],
+          "confidence_level": 0.95,
+          "direct_evidence": [
+            {
+              "source": "integrated_soil_k_findings.contextualized_measurements.soil_solution_k_range",
+              "data": "6-24 kg K2O/ha (in soil solution)",
+              "context": "Represents immediately available K for plant uptake, highly dynamic."
+            },
+            {
+              "source": "integrated_soil_k_findings.process_understanding.plant_soil_k_interactions.quantitative_characterization.peak_uptake_rates",
+              "data": "5-10 kg K2O/ha/day (for root crops and oilseed rape during peak growth)",
+              "context": "Indicates maximum daily demand during growing season."
+            },
+            {
+              "source": "integrated_soil_k_findings.process_understanding.plant_soil_k_interactions.quantitative_characterization.total_uptake_by_crops",
+              "data": "150-500 kg K2O/ha (total seasonal uptake, e.g., Cereals: 300-350 kg K2O/ha, Potatoes/Sugar beet: 400-450 kg K2O/ha)",
+              "context": "Total K accumulated by various crops over a growing season."
+            },
+            {
+              "source": "scientific_contribution_assessment.supply_rate_contribution.quantitative_insights.standard_offtake_figures",
+              "data": "e.g., Winter wheat/barley - Grain & straw: 11.3 kg K2O/t; Potatoes: 5.8 kg K2O/t",
+              "context": "Standard K2O removal per tonne of harvested material, critical for nutrient budgeting."
+            },
+            {
+              "source": "integrated_soil_k_findings.process_understanding.potassium_cycle_and_pool_dynamics.quantitative_characterization.weathering_release",
+              "data": "< 5 kg/ha/year (from mineral weathering)",
+              "context": "Estimated annual K release from mineral weathering in UK soils, too small to meet average crop needs."
+            }
+          ],
+          "supporting_evidence": [
+            {
+              "source": "integrated_soil_k_findings.process_understanding.potassium_cycle_and_pool_dynamics",
+              "description": "Detailed understanding of K cycle and pool dynamics (soil solution, exchangeable, non-exchangeable, mineral K)."
+            }
+          ],
+          "temporal_relevance": "Annual, seasonal (peak uptake), long-term (weathering).",
+          "geographic_applicability": [
+            "United Kingdom",
+            "Temperate agricultural systems (for general principles)"
+          ],
+          "integration_readiness": "Direct for K budgeting and demand modeling within UK context; requires local validation for other regions.",
+          "uncertainty_range": {
+            "measurement_variability": "K Index is a 'general guide', crop response varies due to other factors.",
+            "unmeasured_k_pools": "Slowly available (non-exchangeable) K is variable and impractical to measure."
+          }
+        }
+      ],
+      "evidence_summary": {
+        "total_pieces": 1,
+        "crop_specific_parameters": 1,
+        "crop_system_synthesis": 0,
+        "regional_crop_evidence": 0,
+        "crop_systems_identified": [
+          "cereals"
+        ]
+      }
+    },
+    "Root K Affinity Drivers and Photosynthetic Characteristics in Response to Low Potassium Stress in K High-Efficiency Vegetable Soybean": {
+      "paper_metadata": {
+        "paper_id": "Root K Affinity Drivers and Photosynthetic Characteristics in Response to Low Potassium Stress in K High-Efficiency Vegetable Soybean",
+        "processing_timestamp": "2025-07-10T16:42:24.280145",
+        "stage_4b_validation_passed": true
+      },
+      "evidence_pieces": [
+        {
+          "evidence_type": "regional_crop_evidence",
+          "crop_parameters": [],
+          "crop_context": [
+            "soybean",
+            "vegetables"
+          ],
+          "evidence_strength": "high",
+          "confidence_assessment": {
+            "overall": 0.8,
+            "soil_properties": 0.7,
+            "plant_kinetics_fluxes": 0.9,
+            "root_traits": 0.85,
+            "temporal_patterns": 0.85,
+            "genotypic_variation": 0.8
+          },
+          "regional_context_note": "Data from Harbin, China, specifically for Mollisol (Black soil) under vegetable soybean cultivation. Provides strong insights into plant-mediated K dynamics relevant to temperate agricultural systems in Northeast China.",
+          "integration_requirements": [
+            "Modeling plant K demand based on kinetic parameters.",
+            "Scaling plant-level data to field/regional K budgets.",
+            "Field trials for validation of K-efficient genotypes.",
+            "Integration with soil K dynamics models."
+          ]
+        }
+      ],
+      "evidence_summary": {
+        "total_pieces": 1,
+        "crop_specific_parameters": 0,
+        "crop_system_synthesis": 0,
+        "regional_crop_evidence": 1,
+        "crop_systems_identified": [
+          "soybean",
+          "vegetables"
+        ]
+      }
+    },
+    "Soil K Balance in Sichuan": {
+      "paper_metadata": {
+        "paper_id": "Soil K Balance in Sichuan",
+        "processing_timestamp": "2025-07-10T16:41:39.265739",
+        "stage_4b_validation_passed": true
+      },
+      "evidence_pieces": [
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "annual_kg_k2o_per_ha",
+          "crop_systems_mentioned": [
+            "rice",
+            "mixed_cropping",
+            "cereals"
+          ],
+          "confidence_level": 0.85,
+          "direct_evidence": [
+            {
+              "source": "integrated_soil_k_findings.contextualized_measurements.Soil Potassium Balance",
+              "data": {
+                "overall_balance_range_k2o": "-225.59 to 122.63 kg K2O ha⁻¹ yr⁻¹",
+                "rice_wheat_rotation_surplus_k2o": "38.04 kg K2O ha⁻¹ yr⁻¹"
+              },
+              "units": "kg K2O ha⁻¹ yr⁻¹",
+              "measurement_context": "Annual soil potassium balance calculated as K input – K output for various cropping systems (May 2018 to April 2019). K converted to K2O (K * 1.2046).",
+              "precision": "Calculated values, subject to input data precision (literature values for uptake, survey data). SEM model explained 20.8% of variance."
+            }
+          ],
+          "supporting_evidence": [
+            {
+              "source": "integrated_soil_k_findings.process_understanding.Potassium Input",
+              "data": {
+                "annual_potassium_input_range_k2o": "76.88 to 120.46 kg K2O ha⁻¹ yr⁻¹ (mostly), some areas > 265.01 kg K2O ha⁻¹ yr⁻¹",
+                "straw_return_input_range_k2o": "16.54 to 69.76 kg K2O ha⁻¹ yr⁻¹"
+              },
+              "units": "kg K2O ha⁻¹ yr⁻¹",
+              "context": "Detailed quantification of K inputs from chemical fertilizer, rainfall, irrigation water, and straw return (with crop-specific K content)."
+            },
+            {
+              "source": "integrated_soil_k_findings.process_understanding.Potassium Output",
+              "data": {
+                "annual_soil_potassium_output_range_k2o": "120.46 to 245.74 kg K2O ha⁻¹ yr⁻¹ (mostly)",
+                "leaching_loss_paddy_fields_k2o": "12.05 kg K2O ha⁻¹ yr⁻¹"
+              },
+              "units": "kg K2O ha⁻¹ yr⁻¹",
+              "context": "Detailed quantification of K outputs from crop uptake (with crop-specific rates) and leaching."
+            }
+          ],
+          "temporal_relevance": "Annual balance for May 2018 to April 2019.",
+          "geographic_applicability": [
+            "Shehong County, Sichuan Province, China"
+          ],
+          "integration_readiness": "direct",
+          "uncertainty_range": {
+            "acceptable_range": "±20%",
+            "study_specific_uncertainty": "79.2% of variance in soil K balance unexplained by SEM model; reliance on literature values for K uptake."
+          }
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "sustainability_years",
+          "crop_systems_mentioned": [
+            "mixed_cropping",
+            "cereals"
+          ],
+          "confidence_level": 0.6,
+          "direct_evidence": [],
+          "supporting_evidence": [
+            {
+              "source": "integrated_soil_k_findings.temporal_dynamics_synthesis.Long-term Soil Potassium Depletion (Inferred)",
+              "data": {
+                "long_term_trend": "Inferred long-term trend of soil potassium reserve depletion in hilly areas of China due to intensive cropping and neglected K fertilizer inputs."
+              },
+              "context": "Current annual deficits (e.g., rapeseed–maize rotation: -156.06 kg K2O ha⁻¹ yr⁻¹) exacerbate this historical depletion."
+            },
+            {
+              "source": "integrated_soil_k_findings.contextualized_measurements.Soil Rapidly Available Potassium (RAK) content",
+              "data": {
+                "mean_rak": "63.63 mg kg⁻¹"
+              },
+              "context": "Mean RAK is below the 80 mg kg⁻¹ deprivation threshold, indicating widespread low levels and ongoing depletion."
+            }
+          ],
+          "temporal_relevance": "Inferred long-term trend, with annual deficits providing current status. Does not provide a specific number of sustainability years but highlights the ongoing challenge.",
+          "geographic_applicability": [
+            "Shehong County, Sichuan Province, China",
+            "Similar hilly agricultural regions in Central Sichuan Province"
+          ],
+          "integration_readiness": "inferred_for_projection",
+          "uncertainty_range": {
+            "acceptable_range": "±30%",
+            "study_specific_uncertainty": "Sustainability years are inferred from annual deficits and historical context, not directly modeled or measured over multi-year periods. Future projections depend on changes in management and climate."
+          }
+        },
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "depletion_rate",
+          "crop_systems_mentioned": [
+            "rice",
+            "mixed_cropping",
+            "cereals"
+          ],
+          "confidence_level": 0.85,
+          "direct_evidence": [
+            {
+              "source": "integrated_soil_k_findings.contextualized_measurements.Soil Potassium Balance",
+              "data": {
+                "rapeseed_maize_rotation_deficit_k2o": "-156.06 kg K2O ha⁻¹ yr⁻¹ (greatest deficit)",
+                "rice_rapeseed_rotation_deficit_k2o": "-56.37 kg K2O ha⁻¹ yr⁻¹",
+                "wheat_maize_rotation_deficit_k2o": "-53.09 kg K2O ha⁻¹ yr⁻¹",
+                "rapeseed_monocrop_deficit_k2o": "-84.46 kg K2O ha⁻¹ yr⁻¹"
+              },
+              "units": "kg K2O ha⁻¹ yr⁻¹",
+              "measurement_context": "Annual net K balance (input - output) for specific cropping systems, representing the rate of depletion (negative values). K converted to K2O (K * 1.2046).",
+              "precision": "Calculated values, subject to input data precision (literature values for uptake, survey data). SEM model explained 20.8% of variance."
+            }
+          ],
+          "supporting_evidence": [
+            {
+              "source": "scientific_contribution_assessment.temporal_dynamics_contribution",
+              "data": {
+                "annual_balance_status": "Predominantly deficit across most cropping systems."
+              },
+              "context": "The study quantifies the annual K balance, directly providing depletion rates for most systems."
+            }
+          ],
+          "temporal_relevance": "Annual depletion rates for May 2018 to April 2019.",
+          "geographic_applicability": [
+            "Shehong County, Sichuan Province, China"
+          ],
+          "integration_readiness": "direct",
+          "uncertainty_range": {
+            "acceptable_range": "±20%",
+            "study_specific_uncertainty": "Calculated rates are for a single annual cycle and rely on literature-derived K uptake values and assumptions about organic manure input."
+          }
+        },
+        {
+          "evidence_type": "regional_crop_evidence",
+          "crop_parameters": [
+            "monsoon_leaching_effects (implied by rainfall/irrigation inputs and paddy fields)"
+          ],
+          "crop_context": [],
+          "evidence_strength": "high",
+          "confidence_assessment": {
+            "overall": 0.9,
+            "applicability_to_shehong_county": "high",
+            "applicability_to_similar_subtropical_humid_hilly_regions": "medium-high"
+          },
+          "regional_context_note": "The study is directly applicable to Shehong County, Sichuan Province, China, a typical hilly agricultural area with a subtropical humid climate. The findings on K balance, depletion rates, and the role of straw return are highly relevant for understanding soil K dynamics in similar intensive agricultural systems in subtropical/tropical humid hilly regions, particularly those with significant rainfall and diverse cropping patterns.",
+          "integration_requirements": [
+            "Direct integration of annual K balance and input/output rates for similar cropping systems.",
+            "Methodological framework (remote sensing, geostatistics, SEM) is highly transferable for regional K assessment.",
+            "Requires local calibration of crop K uptake values and organic manure inputs for new regions."
+          ]
+        }
+      ],
+      "evidence_summary": {
+        "total_pieces": 4,
+        "crop_specific_parameters": 3,
+        "crop_system_synthesis": 0,
+        "regional_crop_evidence": 1,
+        "crop_systems_identified": [
+          "mixed_cropping",
+          "cereals",
+          "rice"
+        ]
+      }
+    },
+    "Subsoil‑potassium depletion accounts for the nutrient budget in high‑potassium agricultural soils": {
+      "paper_metadata": {
+        "paper_id": "Subsoil‑potassium depletion accounts for the nutrient budget in high‑potassium agricultural soils",
+        "processing_timestamp": "2025-07-10T16:41:37.162276",
+        "stage_4b_validation_passed": true
+      },
+      "evidence_pieces": [
+        {
+          "evidence_type": "crop_specific_parameter",
+          "parameter_name": "annual_kg_k2o_per_ha",
+          "crop_systems_mentioned": [
+            "cereals"
+          ],
+          "confidence_level": 0.85,
+          "direct_evidence": [
+            {
+              "source": "enhanced_synthesis.integrated_soil_k_findings.process_understanding.k_removal_by_harvest.quantitative_characterization.annual_removal_NPS",
+              "value": "34.93 to 74.69 kg K2O ha-1 year-1 (converted from 29 to 62 kg K ha-1 year-1)"
+            },
+            {
+              "source": "enhanced_synthesis.integrated_soil_k_findings.contextualized_measurements.cumulative_k_removal_by_grain.values_in_context.NPS_range",
+              "value": "562.65 to 670.06 kg K2O ha-1 (converted from 467 to 556 kg K ha-1) cumulative over 9 years"
+            },
+            {
+              "source": "enhanced_synthesis.integrated_soil_k_findings.contextualized_measurements.cumulative_k_removal_by_grain.values_in_context.Control_range",
+              "value": "310.79 to 507.24 kg K2O ha-1 (converted from 258 to 421 kg K ha-1) cumulative over 9 years"
+            }
+          ],
+          "supporting_evidence": [
+            "enhanced_synthesis.paper_authority.authority_limitations.0 (Assumed constant grain K content)",
+            "enhanced_synthesis.paper_authority.authority_limitations.1 (Assumed negligible K losses from leaching/runoff)",
+            "enhanced_synthesis.integrated_soil_k_findings.process_understanding.k_removal_by_harvest.mechanistic_insights"
+          ],
+          "temporal_relevance": "Annual rates derived from a 9-year study (2000-2009), cumulative over this period.",
+          "geographic_applicability": [
+            "Pampas region, Argentina (Mollisols)"
+          ],
+          "integration_readiness": "Direct, with K to K2O conversion applied.",
+          "uncertainty_range": {
+            "source": "enhanced_synthesis.uncertainty_and_limitations.measurement_uncertainties.0",
+            "description": "Primary uncertainty from assumed constant grain K content for 2003-2009 and assumed negligible leaching/runoff losses. Could lead to over- or underestimation of actual K removal."
+          }
+        }
+      ],
+      "evidence_summary": {
+        "total_pieces": 1,
+        "crop_specific_parameters": 1,
+        "crop_system_synthesis": 0,
+        "regional_crop_evidence": 0,
+        "crop_systems_identified": [
+          "cereals"
+        ]
+      }
+    }
+  }
+}

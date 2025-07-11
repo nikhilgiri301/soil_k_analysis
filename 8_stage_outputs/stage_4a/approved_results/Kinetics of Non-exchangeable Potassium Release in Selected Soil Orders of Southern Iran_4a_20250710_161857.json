@@ -1,0 +1,487 @@
+{
+  "stage_id": "4a",
+  "stage_name": "Client Mapping",
+  "paper_id": "Kinetics of Non-exchangeable Potassium Release in Selected Soil Orders of Southern Iran",
+  "processing_timestamp": "2025-07-10T16:18:57.005191",
+  "processing_time_seconds": 39.815535,
+  "processing_mode": "single_paper",
+  "validation_passed": true,
+  "validation_message": "Valid mapping result",
+  "results": {
+    "paper_identification": {
+      "title": "Not provided in synthesis, inferring from context: Kinetics of Non-Exchangeable Potassium Release in Calcareous Soils of Southern Iran",
+      "primary_soil_k_focus": "Kinetics of non-exchangeable potassium (K) release, influence of soil properties and clay mineralogy, and implications for agricultural sustainability.",
+      "geographic_coverage": [
+        "Gharebagh Plain, Fars Province, southern Iran"
+      ],
+      "temporal_scope": "Short-to-medium term (up to 1368 hours / 57 days) laboratory kinetic study.",
+      "research_approach": "Laboratory-controlled successive extraction experiments, kinetic modeling, correlation analysis, and statistical comparisons.",
+      "overall_relevance_assessment": "Highly relevant for understanding the inherent K supply capacity and temporal dynamics from non-exchangeable pools in calcareous, semi-arid agricultural soils. Provides foundational data for K demand modeling, particularly concerning native K contributions and depletion risks in irrigated systems."
+    },
+    "direct_evidence_mapping": {
+      "quantitative_parameters": [
+        {
+          "question_branch": "1.1",
+          "evidence_type": "direct_measurement",
+          "quantitative_data": {
+            "non_exchangeable_k_range": "95 to 506 mg/kg soil",
+            "mean_cumulative_k_release_cacl2_surface": "226 mg/kg",
+            "mean_cumulative_k_release_cacl2_subsurface": "183 mg/kg",
+            "mean_cumulative_k_release_oxalic_acid_surface": "210 mg/kg",
+            "mean_cumulative_k_release_oxalic_acid_subsurface": "164 mg/kg"
+          },
+          "measurement_context": "Initial non-exchangeable K content and cumulative K released after 1368 hours (57 days) via successive extraction with 10 mmol/l CaCl2 or oxalic acid at 25 ± 1°C.",
+          "units": "mg/kg soil",
+          "precision": "Good, based on standard analytical methods and high R^2 values for kinetic model fits.",
+          "evidence_strength": "high",
+          "geographic_applicability": [
+            "Gharebagh Plain, Fars Province, southern Iran"
+          ],
+          "temporal_applicability": "Short-to-medium term (up to 57 days) K release.",
+          "integration_readiness": "requires_processing"
+        },
+        {
+          "question_branch": "1.2",
+          "evidence_type": "derived_estimate",
+          "quantitative_data": {
+            "b_constant_elovich_cacl2_range": "9.5 to 36.3 mg/kg",
+            "b_constant_elovich_oxalic_acid_range": "10.6 to 35.5 mg/kg",
+            "mean_b_constant_elovich_cacl2": "23.02 mg/kg",
+            "mean_b_constant_elovich_oxalic_acid": "26.3 mg/kg"
+          },
+          "measurement_context": "The 'b' constant from the simplified Elovich equation (Y = a + b ln t), representing the rate of K release from non-exchangeable pools over the 1368-hour study period.",
+          "units": "mg/kg",
+          "precision": "Good, with average SE for Elovich model with CaCl2 of 8.48 mg/kg, and R^2 > 0.96.",
+          "evidence_strength": "high",
+          "geographic_applicability": [
+            "Gharebagh Plain, Fars Province, southern Iran"
+          ],
+          "temporal_applicability": "Represents the overall rate constant for K release over 57 days.",
+          "integration_readiness": "requires_processing"
+        },
+        {
+          "question_branch": "1.3",
+          "evidence_type": "calculated_parameter",
+          "quantitative_data": {
+            "mean_percentage_release_cacl2": "60.1%",
+            "mean_percentage_release_oxalic_acid": "55.6%",
+            "range_percentage_release_cacl2": "50.4% to 91.2%",
+            "range_percentage_release_oxalic_acid": "39.6% to 85.4%"
+          },
+          "measurement_context": "Percentage of initial non-exchangeable K released after 1368 hours, indicating the proportion of the reservoir mobilized.",
+          "units": "%",
+          "precision": "Reliable, derived from robust cumulative release and initial K measurements.",
+          "evidence_strength": "high",
+          "geographic_applicability": [
+            "Gharebagh Plain, Fars Province, southern Iran"
+          ],
+          "temporal_applicability": "Overall efficiency over the 57-day kinetic study.",
+          "integration_readiness": "direct"
+        }
+      ],
+      "temporal_dynamics": [
+        {
+          "question_branch": "2.1|2.2|2.3|2.4",
+          "pattern_type": "Non-linear, biphasic K release",
+          "temporal_evidence": {
+            "initial_fast_phase_duration": "2-192 hours",
+            "slow_phase_duration": "192-1368 hours",
+            "cumulative_release_pattern": "Decreasing rate of K supply over time from the non-exchangeable pool."
+          },
+          "timeframe_coverage": "Short-to-medium term (up to 57 days) with 18 discrete measurement points.",
+          "pattern_reliability": "High, evidenced by strong fit of kinetic models (R^2 > 0.96).",
+          "inflection_point_evidence": "Clear discontinuity in the slope of cumulative K release, indicating a transition from fast to slow release phase around 192 hours (8 days).",
+          "evidence_strength": "high",
+          "prediction_potential": "Provides a robust basis for short-term (weeks to months) predictions of K availability from non-exchangeable pools in similar soil types.",
+          "uncertainty_characterization": "Measurement uncertainty quantified by SE of model fits; extrapolation uncertainty to field conditions is acknowledged."
+        }
+      ],
+      "probability_assessment": [
+        {
+          "question_branch": "3.1|3.2|3.3|3.4",
+          "probability_evidence": {
+            "model_fit_reliability": "R^2 > 0.96 for kinetic models indicates high probability that observed K release patterns are accurately described by the models.",
+            "consistency_across_samples": "Consistent biphasic pattern observed across 22 diverse soil samples, suggesting high reliability of the general temporal pattern."
+          },
+          "reliability_assessment": "High reliability for the observed kinetic patterns under laboratory conditions. The statistical significance of correlations (e.g., with CaCO3, clay) indicates reliable relationships.",
+          "condition_dependencies": [
+            "Specific soil properties (clay content, mineralogy, CaCO3, pH)",
+            "Controlled laboratory temperature (25 ± 1°C)",
+            "Specific extractant type and concentration (10 mmol/l CaCl2 or oxalic acid)"
+          ],
+          "uncertainty_bounds": "Standard error of the estimate for kinetic models (e.g., 8.48 mg/kg for Elovich with CaCl2).",
+          "confidence_level": "High (0.96+ for model fit, 0.98 for validation confidence).",
+          "evidence_strength": "high",
+          "conviction_contribution": "Strongly supports the existence of distinct K release phases and the influence of key soil properties on K release rates and amounts in calcareous soils."
+        }
+      ],
+      "regional_variations": [
+        {
+          "question_branch": "4.4",
+          "regional_evidence": {
+            "depth_effect": "Significantly higher non-exchangeable K and cumulative release in surface soils (mean 226 mg/kg CaCl2) compared to subsurface soils (183 mg/kg CaCl2).",
+            "soil_order_effect": "Highest K release rates (b constant) in Inceptisols and Alfisols, lowest in Entisols and Histosols.",
+            "controlling_factors_correlation": "Strong negative correlation with CaCO3 content (r = -0.81** for CaCl2) and positive correlation with clay content (r = 0.67** for CaCl2)."
+          },
+          "geographic_specificity": "Specific to the Gharebagh Plain, Fars Province, southern Iran, a semi-arid region with diverse calcareous soil orders.",
+          "environmental_controls": [
+            "Clay content",
+            "Clay mineralogy (illite, smectite dominance)",
+            "Calcium Carbonate Equivalent (CaCO3) content",
+            "Soil depth",
+            "Soil pH"
+          ],
+          "extrapolation_potential": "The identified relationships between K release and soil properties (clay, CaCO3, illite) are mechanistically sound and broadly applicable to similar calcareous soil types globally, though specific magnitudes will vary.",
+          "scaling_factors": [
+            "Soil depth",
+            "Soil order/type",
+            "CaCO3 content",
+            "Clay content"
+          ],
+          "evidence_strength": "high",
+          "regional_confidence": "High for the studied region; moderate for conceptually similar regions globally.",
+          "geographic_context_note": "This is excellent data for semi-arid, calcareous regions. Its applicability to other regions requires separate assessment based on soil type, climate, and management similarities."
+        }
+      ],
+      "agricultural_integration": [
+        {
+          "question_branch": "5.1|5.2|5.3|5.4",
+          "integration_evidence": {
+            "k_depletion_risk": "Suggests that continuous K removal under irrigated production systems has led to depletion of native non-exchangeable K reserves.",
+            "native_k_supply_capacity": "Quantifies the rate and amount of K released from native pools (e.g., up to 60% of non-exchangeable K over 57 days), providing a baseline for assessing inherent K supply capacity.",
+            "future_fertilization_need": "Implies that future K fertilization may be necessary to sustain agricultural productivity."
+          },
+          "system_context": "Irrigated agricultural systems in semi-arid, calcareous regions.",
+          "management_effects": [
+            "Intensive irrigated production and continuous crop removal contribute to K depletion.",
+            "K management strategies should consider inherent K release capacity of different soil types and depths."
+          ],
+          "sustainability_implications": "Highlights a long-term sustainability challenge for K fertility, emphasizing the need for proactive nutrient management.",
+          "scaling_considerations": "Insights are at the pedon/soil horizon scale; direct scaling to regional agricultural systems requires further field validation and modeling.",
+          "evidence_strength": "medium",
+          "system_applicability": "Directly applicable to K management in similar irrigated, calcareous agricultural systems."
+        }
+      ],
+      "scaling_extrapolation": [
+        {
+          "question_branch": "6.1|6.2|6.3|6.4",
+          "scaling_evidence": {
+            "measurement_scale": "Laboratory scale (2g soil samples)",
+            "application_scales": [
+              "Pedon scale (understanding K dynamics within a soil profile)",
+              "Soil horizon scale (comparing surface vs. subsurface K release)"
+            ]
+          },
+          "scaling_approach": "No explicit scaling validation from laboratory to field conditions was performed or discussed.",
+          "validation_method": "None for scaling.",
+          "uncertainty_propagation": "Uncertainty is characterized at the measurement level (e.g., SE for model fits), but not explicitly propagated for scaling to larger spatial or temporal scales.",
+          "extrapolation_limits": [
+            "Direct quantitative extrapolation to dynamic field conditions (e.g., fluctuating moisture, temperature, biological activity, crop uptake) requires further validation.",
+            "Limited to short-to-medium term kinetic processes (57 days)."
+          ],
+          "evidence_strength": "low",
+          "scaling_confidence": "Low for direct quantitative field or regional scaling; high for conceptual understanding at pedon scale."
+        }
+      ]
+    },
+    "indirect_evidence_mapping": {
+      "supporting_context": [
+        {
+          "question_relevance": [
+            "1.1",
+            "1.2",
+            "1.3",
+            "2.1",
+            "2.2",
+            "2.3",
+            "2.4",
+            "4.1.5",
+            "4.2",
+            "4.3",
+            "4.4"
+          ],
+          "contextual_evidence": "The study was conducted in highly calcareous soils (10.8-61.2% CaCO3, pH 7.1-8.3) from a semi-arid region, where specific mineralogical compositions (e.g., illite, smectite, palygorskite) play a crucial role in K dynamics. The biphasic nature of K release is a widely recognized phenomenon in soils containing 2:1 clay minerals, making the conceptual understanding broadly applicable.",
+          "supporting_value": "high",
+          "interpretation_support": "Provides essential environmental and mineralogical context for interpreting the observed K release rates and patterns, explaining the influence of CaCO3 and clay mineralogy.",
+          "extrapolation_support": "Supports conceptual extrapolation of the biphasic K release model to other regions with similar 2:1 clay mineralogy, but cautions against quantitative extrapolation due to soil-specific rates.",
+          "uncertainty_insights": "Highlights the influence of high CaCO3 on extractant effectiveness (oxalic acid limitation) as a source of uncertainty."
+        }
+      ],
+      "methodological_insights": [
+        {
+          "question_relevance": [
+            "1.1",
+            "1.2",
+            "1.3",
+            "2.1",
+            "2.2",
+            "2.3",
+            "2.4",
+            "3.1",
+            "3.2",
+            "3.3",
+            "3.4",
+            "6.1",
+            "6.2",
+            "6.3",
+            "6.4"
+          ],
+          "methodological_contribution": "Validation and robust application of kinetic models (simplified Elovich, power function) for characterizing non-exchangeable K release in diverse calcareous soils. Rigorous experimental control, including initial K removal and triplicates, enhances data reliability.",
+          "analytical_advances": "Confirms suitability and strong predictive power (R^2 > 0.96) of selected kinetic models. Provides quantitative measures of model fit precision (SE of 8.48 mg/kg for Elovich with CaCl2).",
+          "measurement_validation": "Comparison of CaCl2 vs. oxalic acid successive extraction highlights the limitations of oxalic acid in calcareous soils due to Ca-oxalate precipitation, informing appropriate extractant selection.",
+          "scaling_approaches": "The study primarily operates at the laboratory sample scale and does not propose or validate explicit scaling techniques for extrapolating findings to larger field or regional scales.",
+          "uncertainty_characterization": "Contributes to uncertainty characterization by reporting standard errors for kinetic model fits and discussing methodological limitations (Ca-oxalate precipitation)."
+        }
+      ],
+      "comparative_benchmarking": [
+        {
+          "question_relevance": [
+            "1.1",
+            "1.2",
+            "1.3",
+            "2.1",
+            "2.2",
+            "2.3",
+            "2.4"
+          ],
+          "benchmark_value": "CaCl2 released slightly more non-exchangeable K (60.1% mean) than oxalic acid (55.6% mean) over 1368 hours.",
+          "comparative_context": "This comparison provides a benchmark for extractant effectiveness in highly calcareous soils, demonstrating that CaCl2 is more efficient than oxalic acid under these specific conditions.",
+          "validation_potential": "Validates the choice of CaCl2 as a suitable extractant for K kinetic studies in calcareous soils and highlights a limitation for oxalic acid in such environments.",
+          "regional_comparison": "Specific to calcareous soils of southern Iran, but the principle of organic acid interaction with carbonates is broadly applicable.",
+          "temporal_comparison": "Both extractants showed similar biphasic temporal patterns, but with different magnitudes of release."
+        }
+      ]
+    },
+    "evidence_synthesis_by_category": {
+      "quantitative_parameters_summary": {
+        "primary_contributions": [
+          "Quantification of initial non-exchangeable K content (95-506 mg/kg).",
+          "Measurement of cumulative K release over 57 days (87-300 mg/kg).",
+          "Derivation of K release rates ('b' constant of Elovich model, 9.5-36.3 mg/kg).",
+          "Calculation of percentage of non-exchangeable K released (50.4-91.2%)."
+        ],
+        "data_quality": "High, supported by rigorous experimental design, standard analytical methods, and strong kinetic model fits (R^2 > 0.96).",
+        "integration_potential": "Directly provides parameters for K supply rate components in agricultural demand models, particularly for short-to-medium term native K contributions. Requires processing to convert to annual rates and scaling for regional application.",
+        "confidence_level": 4.8,
+        "key_limitations": [
+          "Quantitative values are specific to the studied calcareous soils and laboratory conditions.",
+          "Does not directly provide annual field-scale K supply rates."
+        ]
+      },
+      "temporal_dynamics_summary": {
+        "primary_contributions": [
+          "Clear identification of a non-linear, biphasic K release pattern (fast phase: 2-192 hours; slow phase: 192-1368 hours).",
+          "Demonstrates a decreasing rate of K supply over time from the non-exchangeable pool.",
+          "Provides evidence for an inflection point around 192 hours (8 days) where the release rate significantly slows."
+        ],
+        "pattern_reliability": "High, confirmed by robust kinetic modeling and consistent observations across diverse samples.",
+        "inflection_point_insights": "The identified inflection point is crucial for understanding the short-term dynamics of K availability and predicting when the readily available non-exchangeable K pool might be exhausted, shifting reliance to slower release mechanisms.",
+        "confidence_level": 4.5,
+        "temporal_limitations": [
+          "Study duration (57 days) is short for assessing long-term (multi-year) field dynamics or seasonal variations.",
+          "Laboratory conditions do not fully replicate dynamic field environmental factors."
+        ]
+      },
+      "regional_variations_summary": {
+        "primary_contributions": [
+          "Quantification of significant variability in K content and release rates across soil depths (surface > subsurface) and soil orders.",
+          "Identification of key controlling factors: strong negative correlation with CaCO3 content and positive correlation with clay content and illite mineralogy."
+        ],
+        "geographic_coverage": "Highly representative for the Gharebagh Plain, Fars Province, southern Iran, encompassing diverse calcareous soil orders.",
+        "extrapolation_potential": "Conceptual understanding of controlling factors is broadly applicable to similar calcareous soils globally. Quantitative rates are region-specific.",
+        "confidence_level": 4.5,
+        "regional_limitations": [
+          "Direct quantitative extrapolation to other major agricultural regions (e.g., China, India, Brazil, Europe, USA) is not supported without further validation due to differences in soil types, climate, and management."
+        ]
+      },
+      "integration_potential_summary": {
+        "primary_contributions": [
+          "Provides foundational data on the inherent supply capacity of non-exchangeable K pools, critical for agricultural demand modeling.",
+          "Suggests K depletion risk in irrigated systems due to continuous crop removal.",
+          "Implies future need for K fertilization to maintain productivity."
+        ],
+        "system_relevance": "Highly relevant for K fertility management in semi-arid, calcareous irrigated agricultural systems.",
+        "scaling_requirements": "Requires significant scaling and field validation to integrate laboratory findings into regional agricultural system models and long-term K budgeting.",
+        "confidence_level": 3.5,
+        "integration_limitations": [
+          "Absence of direct crop yield data or specific crop K uptake measurements.",
+          "Laboratory-based findings require field validation for direct agricultural management recommendations.",
+          "Does not quantify exact long-term K fertilizer requirements or specific sustainability timeframes."
+        ]
+      }
+    },
+    "research_intelligence_assessment": {
+      "highest_value_contributions": [
+        {
+          "question_branch": "1.1|1.2|1.3|2.1|2.2|2.3|2.4",
+          "contribution_type": "Quantitative characterization of K release kinetics and temporal patterns",
+          "value_description": "Provides precise quantitative data on K release rates, cumulative amounts, and the distinct biphasic temporal pattern (fast and slow phases) from non-exchangeable pools. This is fundamental for modeling the native K supply component.",
+          "confidence_level": 4.8,
+          "implementation_readiness": "requires_processing"
+        },
+        {
+          "question_branch": "4.4",
+          "contribution_type": "Identification of key environmental controls on K release",
+          "value_description": "Strongly correlates K release with critical soil properties like clay content, clay mineralogy (illite, smectite), and CaCO3 content. This allows for better prediction of K supply variability across different soil types and depths.",
+          "confidence_level": 4.5,
+          "implementation_readiness": "direct"
+        }
+      ],
+      "medium_value_contributions": [
+        {
+          "question_branch": "5.1|5.2|5.3|5.4",
+          "contribution_type": "Insights into K depletion and sustainability in irrigated systems",
+          "value_description": "Highlights the risk of non-exchangeable K depletion under intensive irrigated agriculture, providing a conceptual basis for future K fertilizer needs and sustainable management strategies.",
+          "confidence_level": 3.5,
+          "development_requirements": "Requires field validation, integration with crop demand data, and long-term monitoring to quantify specific depletion rates and fertilizer requirements."
+        }
+      ],
+      "knowledge_gap_identification": [
+        {
+          "question_branch": "6.1|6.2|6.3|6.4",
+          "gap_description": "Absence of field-scale validation of laboratory-derived K release kinetics under actual crop growth and fluctuating environmental conditions.",
+          "gap_significance": "critical",
+          "research_priority": "High priority for practical agricultural sustainability in the region and for robust agricultural demand modeling."
+        },
+        {
+          "question_branch": "5.1|5.2|5.3|5.4",
+          "gap_description": "Lack of specific crop-K interactions and direct yield responses to K availability.",
+          "gap_significance": "important",
+          "research_priority": "Medium priority for enhancing practical agricultural application and refining crop-specific K management recommendations."
+        }
+      ],
+      "uncertainty_intelligence": [
+        {
+          "uncertainty_source": "Laboratory-to-field extrapolation",
+          "affected_questions": [
+            "1.1",
+            "1.2",
+            "1.3",
+            "2.1",
+            "2.2",
+            "2.3",
+            "2.4",
+            "5.1",
+            "5.2",
+            "5.3",
+            "5.4",
+            "6.1",
+            "6.2",
+            "6.3",
+            "6.4"
+          ],
+          "uncertainty_magnitude": "High, as controlled lab conditions do not fully replicate dynamic field environments.",
+          "mitigation_approaches": [
+            "Acknowledged as a limitation within the study.",
+            "Requires future field validation studies."
+          ],
+          "confidence_impacts": "Reduces confidence in directly applying quantitative K release rates to real-world field-scale K budgeting or long-term agricultural planning without further validation."
+        },
+        {
+          "uncertainty_source": "Potential for Ca-oxalate precipitation affecting oxalic acid extraction efficiency in highly calcareous soils.",
+          "affected_questions": [
+            "1.1",
+            "1.2",
+            "1.3"
+          ],
+          "uncertainty_magnitude": "Moderate, as oxalic acid released slightly less K (55.6%) compared to CaCl2 (60.1%).",
+          "mitigation_approaches": [
+            "Acknowledged as a methodological limitation.",
+            "Comparison with CaCl2 provides a benchmark.",
+            "Suggests careful selection of extractants in calcareous soils."
+          ],
+          "confidence_impacts": "May lead to underestimation of true K release potential if oxalic acid is used as a sole extractant in such conditions."
+        }
+      ]
+    },
+    "integration_pathway_analysis": {
+      "immediate_applications": [
+        {
+          "question_branch": "1.1|1.2|1.3|2.1|2.2|2.3|2.4",
+          "application_description": "Quantify the short-to-medium term native K supply rates from non-exchangeable pools for agricultural demand models.",
+          "integration_approach": "Incorporate the derived kinetic parameters (e.g., 'b' constant, cumulative release percentages) into K supply sub-models, adjusting for soil type and depth based on identified correlations (clay, CaCO3).",
+          "confidence_level": 4.0,
+          "validation_requirements": [
+            "Sensitivity analysis of model outputs to variations in K release parameters.",
+            "Conceptual validation against existing field observations (if available) for similar soil types."
+          ]
+        }
+      ],
+      "medium_term_integration": [
+        {
+          "question_branch": "5.1|5.2|5.3|5.4",
+          "development_pathway": "Develop K budgeting tools that incorporate the identified K depletion risks and the biphasic release patterns, informing the timing and amount of K fertilizer application.",
+          "additional_data_needs": [
+            "Field-scale K uptake data for major crops in the region.",
+            "Long-term K balance studies under different management practices.",
+            "Economic analysis of K fertilizer application."
+          ],
+          "scaling_requirements": [
+            "Develop robust scaling methodologies to translate laboratory kinetic rates to field-scale annual K supply.",
+            "Integrate spatial variability data into regional K management zones."
+          ],
+          "timeline_estimate": "1-3 years for initial field validation and model integration; 3-5+ years for comprehensive regional K budgeting tools."
+        }
+      ],
+      "scaling_requirements": {
+        "spatial_scaling_needs": [
+          "Extensive field sampling campaigns to validate laboratory findings across broader agricultural landscapes.",
+          "Development of pedotransfer functions to estimate K release parameters from readily available soil data (e.g., texture, CaCO3).",
+          "Geostatistical methods to map K supply variability at regional scales."
+        ],
+        "temporal_scaling_needs": [
+          "Long-term field trials (multi-year) to observe actual K depletion rates and validate long-term K supply projections.",
+          "Integration of seasonal variations (e.g., moisture, temperature, biological activity) into kinetic models.",
+          "Coupling K release models with crop growth models to simulate dynamic K uptake."
+        ],
+        "methodological_scaling_needs": [
+          "Development of standardized protocols for assessing non-exchangeable K release under field-relevant conditions.",
+          "Refinement of extractant methods for calcareous soils to ensure accurate K availability assessment."
+        ],
+        "uncertainty_propagation_needs": [
+          "Formal uncertainty propagation analysis from laboratory measurements through scaling processes to regional K supply estimates.",
+          "Sensitivity analysis of agricultural demand models to uncertainties in K supply parameters."
+        ]
+      }
+    },
+    "mapping_quality_assessment": {
+      "mapping_completeness": 0.95,
+      "evidence_assessment_confidence": 0.98,
+      "scientific_relevance_accuracy": 0.98,
+      "integration_pathway_feasibility": "medium",
+      "overall_mapping_confidence": 0.97,
+      "critical_assumptions": [
+        "The 'CLIENT QUESTION ARCHITECTURE' and 'RESEARCH FOCUS' imply specific numerical question branches (e.g., 1.1, 2.1, 3.1, 4.1.1, 5.1, 6.1) which were used for mapping, even if not explicitly defined in the prompt's JSON structure for those branches.",
+        "The paper's title was inferred as it was not explicitly provided in the synthesis."
+      ],
+      "mapping_limitations": [
+        "The source paper is a laboratory study, which inherently limits direct quantitative extrapolation to field conditions and long-term sustainability without further validation.",
+        "Absence of direct crop-specific data limits the precision of agricultural management insights."
+      ],
+      "enhancement_opportunities": [
+        "Further refinement of the 'probability_assessment' section if more explicit statistical confidence intervals or probabilistic statements were available in the original paper.",
+        "Integration with other papers that provide field validation or long-term K dynamics for similar regions to strengthen the 'scaling_extrapolation' and 'integration_pathway_analysis' sections."
+      ]
+    },
+    "_usage_metadata": {
+      "timestamp": "2025-07-10T16:18:57.002875",
+      "stage_name": "unknown",
+      "paper_id": "unknown",
+      "prompt_length_chars": 62843,
+      "processing_time_seconds": 39.7,
+      "thinking_enabled": true,
+      "input_tokens": 14281,
+      "output_tokens": 6897,
+      "thinking_tokens": 0,
+      "input_cost_usd": 0.002142,
+      "output_cost_usd": 0.02414,
+      "thinking_cost_usd": 0.0,
+      "total_cost_usd": 0.026282
+    },
+    "stage": "4A",
+    "paper_id": "unknown",
+    "mapping_timestamp": "2025-07-10T16:18:57.004496",
+    "temperature_used": 0.1,
+    "client_architecture_version": "1.0"
+  }
+}

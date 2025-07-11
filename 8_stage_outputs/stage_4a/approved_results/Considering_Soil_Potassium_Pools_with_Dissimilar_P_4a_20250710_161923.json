@@ -1,0 +1,798 @@
+{
+  "stage_id": "4a",
+  "stage_name": "Client Mapping",
+  "paper_id": "Considering_Soil_Potassium_Pools_with_Dissimilar_P",
+  "processing_timestamp": "2025-07-10T16:19:23.774252",
+  "processing_time_seconds": 66.568604,
+  "processing_mode": "single_paper",
+  "validation_passed": true,
+  "validation_message": "Valid mapping result",
+  "results": {
+    "paper_identification": {
+      "title": "Conceptual Framework for Soil Potassium Dynamics and Plant Availability: A Review",
+      "primary_soil_k_focus": "Comprehensive review and conceptual analysis, synthesizing existing literature on soil potassium (K) pools, their dynamics, and plant availability. Critical evaluation of traditional K models and proposal of an alternative, more nuanced framework.",
+      "geographic_coverage": [
+        "Global (conceptual review synthesizing findings from various regions)",
+        "European long-term fertilizer trials",
+        "US Atlantic Coastal Plains",
+        "San Joaquin Valley (California)",
+        "Semi-arid loess soil (China)",
+        "Southern Ontario",
+        "Lodi Winegrape District (California)",
+        "Tropical and subtropical environments (e.g., Brazil)"
+      ],
+      "temporal_scope": "Covers rapid kinetic reactions (seconds) to long-term K budgeting and mineral transformations (years to decades).",
+      "research_approach": "Systematic synthesis of diverse research findings, including long-term fertilizer trials, nutrient depletion assays, and kinetic studies. Employs conceptual modeling to propose a new K pool framework.",
+      "overall_relevance_assessment": "Highly relevant for understanding soil K biogeochemistry and its implications for agricultural demand modeling, particularly in refining the conceptualization of K pools and their dynamic contributions to plant supply over various timescales and spatial contexts."
+    },
+    "direct_evidence_mapping": {
+      "quantitative_parameters": [
+        {
+          "question_branch": "1.1|1.2|1.3|1.4",
+          "evidence_type": "derived_estimate",
+          "quantitative_data": {
+            "min": 100,
+            "max": 1000,
+            "units": "µM"
+          },
+          "measurement_context": "Typical soil solution K concentration, general observation from literature.",
+          "units": "µM",
+          "precision": "Broad range, highly dynamic.",
+          "evidence_strength": "high",
+          "geographic_applicability": [
+            "General soil environment"
+          ],
+          "temporal_applicability": "General, not specific to a time point.",
+          "integration_readiness": "requires_processing"
+        },
+        {
+          "question_branch": "1.1|1.2|1.3|1.4",
+          "evidence_type": "direct_measurement",
+          "quantitative_data": {
+            "min": 2,
+            "max": 3,
+            "units": "µM"
+          },
+          "measurement_context": "Rhizosphere solution K concentration, reported by Hinsinger (1998) due to plant depletion.",
+          "units": "µM",
+          "precision": "Specific range, represents significant depletion.",
+          "evidence_strength": "high",
+          "geographic_applicability": [
+            "Rhizosphere environment"
+          ],
+          "temporal_applicability": "During active plant uptake.",
+          "integration_readiness": "direct"
+        },
+        {
+          "question_branch": "1.1|1.2|1.3|1.4",
+          "evidence_type": "derived_estimate",
+          "quantitative_data": {
+            "min": 10,
+            "max": 20,
+            "units": "µM"
+          },
+          "measurement_context": "Plant minimal solution K concentration threshold for exudates, suggested by Zörb et al. (2014).",
+          "units": "µM",
+          "precision": "Conceptual threshold.",
+          "evidence_strength": "medium",
+          "geographic_applicability": [
+            "Rhizosphere environment"
+          ],
+          "temporal_applicability": "During plant growth when K is limiting.",
+          "integration_readiness": "requires_processing"
+        },
+        {
+          "question_branch": "1.1|1.2|1.3|1.4",
+          "evidence_type": "derived_estimate",
+          "quantitative_data": {
+            "min": 90,
+            "max": 98,
+            "units": "% of total soil K"
+          },
+          "measurement_context": "Total soil K in primary minerals (traditional model), general estimation from Öborn et al. (2005) and Hinsinger (2006).",
+          "units": "% of total soil K",
+          "precision": "Broad estimation.",
+          "evidence_strength": "high",
+          "geographic_applicability": [
+            "General soil context"
+          ],
+          "temporal_applicability": "Long-term, stable pool.",
+          "integration_readiness": "direct"
+        },
+        {
+          "question_branch": "1.1|1.2|1.3|1.4",
+          "evidence_type": "derived_estimate",
+          "quantitative_data": {
+            "min": 1,
+            "max": 2,
+            "units": "% of total soil K"
+          },
+          "measurement_context": "Exchangeable K (traditional model), general estimation from Öborn et al. (2005) and Hinsinger (2006).",
+          "units": "% of total soil K",
+          "precision": "Broad estimation, potentially misleading.",
+          "evidence_strength": "medium",
+          "geographic_applicability": [
+            "General soil context"
+          ],
+          "temporal_applicability": "Dynamic, but considered readily available.",
+          "integration_readiness": "direct"
+        },
+        {
+          "question_branch": "1.1|1.2|1.3|1.4",
+          "evidence_type": "derived_estimate",
+          "quantitative_data": {
+            "min": 0.1,
+            "max": 0.2,
+            "units": "% of total soil K"
+          },
+          "measurement_context": "Solution K (traditional model), general estimation from Öborn et al. (2005) and Hinsinger (2006).",
+          "units": "% of total soil K",
+          "precision": "Broad estimation.",
+          "evidence_strength": "high",
+          "geographic_applicability": [
+            "General soil context"
+          ],
+          "temporal_applicability": "Highly dynamic, immediate availability.",
+          "integration_readiness": "direct"
+        },
+        {
+          "question_branch": "1.1|1.2|1.3|1.4",
+          "evidence_type": "derived_estimate",
+          "quantitative_data": {
+            "min": 1,
+            "max": 10,
+            "units": "% of total soil K"
+          },
+          "measurement_context": "Interlayer K in secondary minerals (traditional model), general estimation from Öborn et al. (2005) and Hinsinger (2006), depending on mineralogy.",
+          "units": "% of total soil K",
+          "precision": "Broad estimation, highly variable.",
+          "evidence_strength": "medium",
+          "geographic_applicability": [
+            "Soils with 2:1 clay minerals"
+          ],
+          "temporal_applicability": "Dynamic, with slower release/fixation kinetics.",
+          "integration_readiness": "direct"
+        },
+        {
+          "question_branch": "1.1|1.2|1.3|1.4",
+          "evidence_type": "direct_measurement",
+          "quantitative_data": {
+            "min": 67,
+            "max": 92,
+            "units": "mg K kg⁻¹ soil"
+          },
+          "measurement_context": "K release from US Atlantic Coastal Plains soils (total), measured over 30 days using a cation exchange resin providing a continuous K sink, in the presence of oxalic acid (Sadusky et al. 1987).",
+          "units": "mg K kg⁻¹ soil",
+          "precision": "Specific range for experimental conditions.",
+          "evidence_strength": "high",
+          "geographic_applicability": [
+            "USA"
+          ],
+          "temporal_applicability": "30-day period.",
+          "integration_readiness": "requires_processing"
+        },
+        {
+          "question_branch": "1.1|1.2|1.3|1.4",
+          "evidence_type": "direct_measurement",
+          "quantitative_data": {
+            "measured": 0.1,
+            "modeled": 5e-10,
+            "units": "s"
+          },
+          "measurement_context": "Cation exchange reactions on montmorillonite, measured by Tang and Sparks (1993) and modeled by Bourg and Sposito (2011).",
+          "units": "s",
+          "precision": "Extremely precise for kinetic reactions.",
+          "evidence_strength": "high",
+          "geographic_applicability": [
+            "General (clay mineral properties)"
+          ],
+          "temporal_applicability": "Extremely rapid reaction times.",
+          "integration_readiness": "direct"
+        },
+        {
+          "question_branch": "1.1|1.2|1.3|1.4",
+          "evidence_type": "derived_estimate",
+          "quantitative_data": {
+            "value": 100,
+            "units": "kg K ha⁻¹ year⁻¹"
+          },
+          "measurement_context": "Nonexchangeable K release (estimated contribution) by Hinsinger (2006).",
+          "units": "kg K ha⁻¹ year⁻¹",
+          "precision": "Estimation, significant for annual budgeting.",
+          "evidence_strength": "high",
+          "geographic_applicability": [
+            "General agricultural systems"
+          ],
+          "temporal_applicability": "Annual contribution.",
+          "integration_readiness": "direct"
+        }
+      ],
+      "temporal_dynamics": [
+        {
+          "question_branch": "2.2|2.3|2.4",
+          "pattern_type": "K fixation/release kinetics",
+          "temporal_evidence": "Exchange reactions on montmorillonite are extremely rapid, completing in less than 0.1 s (measured) or less than 5 x 10⁻¹⁰ s (modeled). This highlights the rapid equilibrium between solution and surface-adsorbed K.",
+          "timeframe_coverage": "Short-term (seconds).",
+          "pattern_reliability": "High, based on detailed experimental and modeling work.",
+          "inflection_point_evidence": "No direct inflection point, but defines the rapid equilibrium baseline for K dynamics.",
+          "evidence_strength": "high",
+          "prediction_potential": "These fundamental rates are generalizable to similar clay minerals, informing models of K dynamics.",
+          "uncertainty_characterization": "High precision in measurement and modeling for specific conditions."
+        },
+        {
+          "question_branch": "2.2|2.6",
+          "pattern_type": "Soil K pools and fluxes over a cropping season",
+          "temporal_evidence": "The paper conceptualizes the dynamic interplay of K pools and fluxes (solution, surface-adsorbed, interlayer, structural, neoformed) over the course of a single cropping season, emphasizing continuous K acquisition by plants and replenishment from various pools.",
+          "timeframe_coverage": "Seasonal.",
+          "pattern_reliability": "Conceptual, based on synthesis of seasonal K dynamics from various studies.",
+          "inflection_point_evidence": "Implies continuous dynamic shifts rather than sharp inflection points within a season, but highlights the constant depletion/replenishment cycle.",
+          "evidence_strength": "high",
+          "prediction_potential": "Applicable to understanding K supply in annual cropping systems, guiding in-season K management.",
+          "uncertainty_characterization": "Conceptual model, specific quantitative rates vary by soil and crop."
+        },
+        {
+          "question_branch": "2.1|2.2|2.3|2.4",
+          "pattern_type": "Long-term K balance and mineral changes",
+          "temporal_evidence": "Long-term fertilizer trials show that annual K budgets often do not correlate with changes in exchangeable K, indicating significant fixation or release from nonexchangeable pools. For example, 15-year alfalfa cropping led to decreased topsoil exchangeable K but increased total K, suggesting K translocation from deep layers. Long-term K fertilization can also increase apparent mica-like minerals.",
+          "timeframe_coverage": "Multi-year to decadal (4-year, 15-year trials, long-term fertilizer experiments).",
+          "pattern_reliability": "High, based on robust long-term field experiments.",
+          "inflection_point_evidence": "Suggests inflection points where exchangeable K no longer reflects total K dynamics, indicating a shift to reliance on nonexchangeable pools (e.g., after years of depletion). The 15-year alfalfa study shows a shift in K distribution.",
+          "evidence_strength": "high",
+          "prediction_potential": "Crucial for understanding long-term soil K sustainability and developing multi-year K management strategies.",
+          "uncertainty_characterization": "Reliable for observed trends, but specific timing of inflection points depends on soil type and management."
+        },
+        {
+          "question_branch": "2.2",
+          "pattern_type": "Neoformed K mineral formation",
+          "temporal_evidence": "Potassium taranakite can form rapidly (within 15 minutes to 3 days) under specific conditions (acidic pH, high in-band K/P fertilizer concentrations).",
+          "timeframe_coverage": "Short-term (minutes to days).",
+          "pattern_reliability": "High, based on specific experimental observations.",
+          "inflection_point_evidence": "No direct inflection point, but describes a rapid transformation process.",
+          "evidence_strength": "high",
+          "prediction_potential": "Relevant for understanding immediate fate of band-applied K fertilizers in certain soil environments.",
+          "uncertainty_characterization": "Well-characterized for specific conditions, but bioavailability over time is a knowledge gap."
+        }
+      ],
+      "probability_assessment": [
+        {
+          "question_branch": "3.1|3.2|3.3|3.4",
+          "probability_evidence": {
+            "supply_rate_contribution_confidence": 0.85,
+            "temporal_dynamics_contribution_confidence": 0.9,
+            "spatial_variation_contribution_confidence": 0.85,
+            "agricultural_integration_contribution_confidence": 0.95,
+            "methodological_contribution_confidence": 0.9
+          },
+          "reliability_assessment": "The paper's confidence calibration is appropriately calibrated, reflecting the synthesis nature. The reliability of patterns and estimates is generally high, based on robust cited literature.",
+          "condition_dependencies": [
+            "Specific soil mineralogy and type for K fixation/release rates.",
+            "Management practices (fertilization, liming, irrigation).",
+            "Plant demand and rooting patterns."
+          ],
+          "uncertainty_bounds": "Uncertainty exists in precisely quantifying long-term bioavailability of neoformed minerals and exact rates of K release under field conditions. Extrapolation uncertainty is high for K uptake competition.",
+          "confidence_level": "High (0.95 overall synthesis confidence).",
+          "evidence_strength": "high",
+          "conviction_contribution": "Provides a strong conceptual and evidence-based foundation for understanding K dynamics, with clear identification of areas of higher and lower certainty."
+        }
+      ],
+      "regional_variations": [
+        {
+          "question_branch": "4.1.5",
+          "regional_evidence": "K release from US Atlantic Coastal Plains soils (67-92 mg K kg⁻¹ soil over 30 days) under continuous K sink conditions.",
+          "geographic_specificity": "US Atlantic Coastal Plains soils.",
+          "environmental_controls": [
+            "Cation exchange resin providing continuous K sink",
+            "Presence of oxalic acid"
+          ],
+          "extrapolation_potential": "Specific to these soil types, but demonstrates the potential for significant nonexchangeable K release under strong depletion.",
+          "scaling_factors": [],
+          "evidence_strength": "high",
+          "regional_confidence": "High for the specific region and conditions.",
+          "geographic_context_note": "Direct measurement from a cited study, indicative of K release potential in this region."
+        },
+        {
+          "question_branch": "4.1.4",
+          "regional_evidence": "Synthesis includes findings from European long-term fertilizer trials, demonstrating that annual K budgets often do not correlate with changes in exchangeable K, indicating significant fixation or release from nonexchangeable pools.",
+          "geographic_specificity": "European long-term fertilizer trials.",
+          "environmental_controls": [
+            "Long-term fertilization regimes",
+            "Specific soil types and climates of the trials"
+          ],
+          "extrapolation_potential": "Generalizable to similar long-term agricultural systems in temperate Europe.",
+          "scaling_factors": [],
+          "evidence_strength": "high",
+          "regional_confidence": "High for long-term trends in European agricultural systems.",
+          "geographic_context_note": "Highlights the importance of nonexchangeable K in long-term K budgeting in European contexts."
+        },
+        {
+          "question_branch": "4.1.1",
+          "regional_evidence": "15-year alfalfa cropping in a semi-arid loess soil in China led to decreased topsoil exchangeable K but increased total K, suggesting K translocation from deep layers.",
+          "geographic_specificity": "Semi-arid loess soil (China).",
+          "environmental_controls": [
+            "Alfalfa cropping (deep-rooted crop)",
+            "Semi-arid climate"
+          ],
+          "extrapolation_potential": "Applicable to deep-rooted cropping systems in similar semi-arid loess soils.",
+          "scaling_factors": [],
+          "evidence_strength": "high",
+          "regional_confidence": "High for specific conditions in China.",
+          "geographic_context_note": "Provides direct evidence of K redistribution by deep-rooted crops in a specific Chinese soil type."
+        },
+        {
+          "question_branch": "4.1.3",
+          "regional_evidence": "K uptake by eucalypt roots from 4m depth in Brazil, demonstrating the importance of deeper soil layers as K sources.",
+          "geographic_specificity": "Tropical and subtropical environments (e.g., Brazil).",
+          "environmental_controls": [
+            "Eucalypt plantations (deep-rooted trees)"
+          ],
+          "extrapolation_potential": "Relevant for deep-rooted perennial systems in tropical/subtropical regions.",
+          "scaling_factors": [],
+          "evidence_strength": "high",
+          "regional_confidence": "High for deep-rooted systems in tropical/subtropical regions.",
+          "geographic_context_note": "Illustrates the significance of deep soil K pools for specific crops in Brazil."
+        },
+        {
+          "question_branch": "4.2|4.3|4.4",
+          "regional_evidence": "The contribution of interlayer and structural K to crop uptake varies significantly with soil type and mineralogy (e.g., presence of partially weathered micas, vermiculite, degree of weathering). K fixation is documented in silt- and sand-sized fractions, not just clay, depending on mineral composition. This applies to various mineral soils including those with montmorillonite, illite, kaolinite, hydrobiotite, iron and aluminum oxides.",
+          "geographic_specificity": "Draws on examples from diverse regions (e.g., US Atlantic Coastal Plains, China) and soil types globally.",
+          "environmental_controls": [
+            "Soil mineralogy (type of 2:1 layer silicates, micas, feldspars)",
+            "Particle size distribution",
+            "Weathering intensity"
+          ],
+          "extrapolation_potential": "Highlights the importance of site-specific mineralogy for predicting K behavior across regions. Suggests modifications to soil classification systems to better predict K behavior.",
+          "scaling_factors": [
+            "Mineralogical composition",
+            "Particle size distribution"
+          ],
+          "evidence_strength": "high",
+          "regional_confidence": "High for conceptual understanding of mineralogy's role, moderate for quantitative regional prediction without specific data.",
+          "geographic_context_note": "Emphasizes that regional K dynamics are driven by underlying soil mineralogy, not just broad geographic location."
+        }
+      ],
+      "agricultural_integration": [
+        {
+          "question_branch": "5.1|5.2",
+          "integration_evidence": "K uptake by plants directly depletes soil solution K, driving K release from other pools. Uptake rates are limited by K diffusion and the quantity of readily desorbable K. Soil solution K concentrations can decrease by 2-3 orders of magnitude to as little as 2-3 µM in the rhizosphere.",
+          "system_context": "Agricultural systems with active plant growth (e.g., maize, rape, alfalfa, eucalypt, sugarcane, row crops, wine-grape).",
+          "management_effects": [
+            "Fertilization rates and timing",
+            "Irrigation practices"
+          ],
+          "sustainability_implications": "Understanding this dynamic is vital for optimizing K supply and achieving sustainable productivity.",
+          "scaling_considerations": "Highlights the micro-scale (rhizosphere) dynamics that influence field-scale K availability.",
+          "evidence_strength": "high",
+          "system_applicability": "Fundamental plant-soil interaction, critical for crop nutrition across diverse agricultural systems."
+        },
+        {
+          "question_branch": "5.2",
+          "integration_evidence": "Root exudation (e.g., organic acids) can accelerate mineral weathering and K release, initiated when K concentrations fall to less than 10-20 µM.",
+          "system_context": "Rhizosphere of various crops (e.g., maize, rape, bak choi, radish).",
+          "management_effects": [
+            "Nutrient stress (e.g., P-starvation can induce organic acid exudation)."
+          ],
+          "sustainability_implications": "Indicates a plant-driven mechanism for accessing less available K pools, contributing to long-term supply.",
+          "scaling_considerations": "Micro-scale process with implications for field-scale K cycling.",
+          "evidence_strength": "high",
+          "system_applicability": "Established plant-soil interactions relevant for crop nutrition and soil health."
+        },
+        {
+          "question_branch": "5.2|5.3",
+          "integration_evidence": "Long-term cropping systems (e.g., 15-year alfalfa) show K redistribution by plants, leading to changes in K distribution within the soil profile (e.g., enrichment of illite-like clay in topsoil).",
+          "system_context": "Long-term cropping systems.",
+          "management_effects": [
+            "Crop type (rooting depth)",
+            "Residue management (return to soil surface)."
+          ],
+          "sustainability_implications": "Demonstrates a natural mechanism for K cycling and potential for K accumulation in topsoil, contributing to long-term fertility.",
+          "scaling_considerations": "Relevant for understanding K budgets at the field and farm scale over multi-year periods.",
+          "evidence_strength": "high",
+          "system_applicability": "Applicable to perennial and deep-rooted cropping systems."
+        },
+        {
+          "question_branch": "5.2|5.3",
+          "integration_evidence": "Fertilization (inorganic and organic) may lead to the formation of neoformed secondary K minerals (e.g., potassium taranakite) under specific conditions (acidic pH, high in-band concentrations). Long-term K fertilization can also increase the apparent concentration of mica-like minerals in soil.",
+          "system_context": "Intensive cropping areas, soils with a history of high-K waste applications or band-applied fertilizers.",
+          "management_effects": [
+            "Fertilizer type, rate, application method."
+          ],
+          "sustainability_implications": "Influences the long-term fate and availability of applied K, impacting K use efficiency and sustainability.",
+          "scaling_considerations": "Relevant for field-scale fertilizer management and its long-term impact on soil mineralogy.",
+          "evidence_strength": "high",
+          "system_applicability": "Crucial for understanding the fate of applied K and its long-term availability in agricultural systems."
+        },
+        {
+          "question_branch": "5.2",
+          "integration_evidence": "Liming and irrigation can result in displacement of surface-adsorbed K by other cations (from liming) or by water flow (from frequent rainfall/irrigation), potentially leading to leaching losses.",
+          "system_context": "Well-drained soils, soils undergoing pH adjustment.",
+          "management_effects": [
+            "Liming practices",
+            "Irrigation frequency and intensity"
+          ],
+          "sustainability_implications": "Highlights potential K losses due to common management practices, informing more efficient K management.",
+          "scaling_considerations": "Relevant for field-scale water and nutrient management.",
+          "evidence_strength": "medium",
+          "system_applicability": "Applicable to agricultural systems where liming and irrigation are common practices."
+        },
+        {
+          "question_branch": "5.3",
+          "integration_evidence": "Demonstrates significant net release of nonexchangeable K (estimated at 100 kg K ha⁻¹ year⁻¹) to support crop uptake in unfertilized plots or those with negative K budgets over long periods.",
+          "system_context": "Agricultural systems with long-term K deficits or low-input management.",
+          "management_effects": [
+            "Lack of K fertilization",
+            "Extractive cropping"
+          ],
+          "sustainability_implications": "Underscores the importance of nonexchangeable K as a buffer and source for plant nutrition, especially under low-input or extractive management, crucial for long-term soil K fertility.",
+          "scaling_considerations": "Relevant for long-term K budgeting at field and regional scales.",
+          "evidence_strength": "high",
+          "system_applicability": "Applicable to all agricultural systems, particularly those aiming for sustainable K management."
+        }
+      ],
+      "scaling_extrapolation": [
+        {
+          "question_branch": "6.1|6.4",
+          "scaling_evidence": "The paper discusses the difficulty of extrapolation due to complex interactions (soil solution chemistry, rooting density, cation competition). It suggests adapting soil classification systems (e.g., Soil Taxonomy) to better group and identify K-fixing/releasing soils, providing a framework for regional K management models.",
+          "scaling_approach": "Conceptual modeling (new K pool framework) to generalize K dynamics; synthesis of findings from diverse studies across different scales; discussion of adapting soil classification systems for regional scaling.",
+          "validation_method": "Refers to general research literature and concepts for validation of the proposed framework. Discusses the need for future research to validate predictions.",
+          "uncertainty_propagation": "Acknowledges high uncertainty in extrapolating K uptake competition beyond specific conditions due to complex interactions.",
+          "extrapolation_limits": [
+            "Extrapolation beyond specific experimental conditions due to complex interactions.",
+            "Spatial sampling limitations (shallow sampling).",
+            "Interpretation of 'exchangeable K' due to variable inclusion of interlayer K."
+          ],
+          "evidence_strength": "high",
+          "scaling_confidence": "High for conceptual framework applicability, low to moderate for quantitative extrapolation, high for process understanding generalization."
+        }
+      ]
+    },
+    "indirect_evidence_mapping": {
+      "supporting_context": [
+        {
+          "question_relevance": [
+            "1.1",
+            "1.2",
+            "1.3",
+            "2.1",
+            "2.2",
+            "2.3",
+            "2.4",
+            "2.5",
+            "2.6",
+            "4.2",
+            "4.3",
+            "4.4",
+            "5.1",
+            "5.2",
+            "5.3",
+            "5.4"
+          ],
+          "contextual_evidence": "The paper provides a comprehensive mechanistic understanding of K fluxes between pools (solution, exchangeable, interlayer, structural, neoformed), mica weathering and transformation, sorption/desorption, CEC buffering, irreversible dissolution of feldspars, K fixation, K release, neoformation of K minerals, and K uptake by plants. It details the environmental controls for each process.",
+          "supporting_value": "high",
+          "interpretation_support": "Provides the fundamental biogeochemical basis for interpreting observed K dynamics, quantitative measurements, and temporal/spatial patterns. Explains the 'why' behind K behavior.",
+          "extrapolation_support": "The mechanistic understanding of K processes is broadly applicable across different soil types and regions, even if specific rates vary. This allows for more informed extrapolation and prediction.",
+          "uncertainty_insights": "Highlights the complexity of K dynamics, particularly the interplay of various pools and processes, which contributes to measurement and extrapolation uncertainties."
+        }
+      ],
+      "methodological_insights": [
+        {
+          "question_relevance": [
+            "1.4",
+            "4.2",
+            "6.1",
+            "6.2",
+            "6.3",
+            "6.4"
+          ],
+          "methodological_contribution": "Critically assesses existing soil K measurement methods, highlighting their limitations in fully characterizing plant-available K, especially from interlayer and structural pools. Advocates for a shift in conceptualization that necessitates more advanced and integrated measurement approaches.",
+          "analytical_advances": "Critiques traditional ammonium acetate extraction, discusses two-stage sodium tetraphenyl borate extraction, boiling HNO3, nutrient depletion assays, and XRD for mineral identification. Notes that different soil test methods access different K pools depending on mineralogy.",
+          "measurement_validation": "Discusses the limitations and variability in soil testing procedures and interpretation, implying a need for robust quality control. Refers to general research literature for validation of the proposed framework.",
+          "scaling_approaches": "Suggests that soil classification systems (e.g., Soil Taxonomy) could be modified to better group and identify K-fixing/releasing soils, providing a framework for regional K management models.",
+          "uncertainty_characterization": "Thoroughly discusses sources of uncertainty in K assessment, including limitations of diagnostic tests, difficulty in differentiating K pools, and challenges in extrapolating findings due to complex interactions."
+        }
+      ],
+      "comparative_benchmarking": [
+        {
+          "question_relevance": [
+            "1.4",
+            "4.2"
+          ],
+          "benchmark_value": "K release rates differ between feldspars and micas. Cation exchange resin released two orders of magnitude more K than oxalic acid. Different soil test methods access different K pools depending on mineralogy.",
+          "comparative_context": "Comparison of K release from different mineral types and efficiency of different extraction methods.",
+          "validation_potential": "Helps in selecting appropriate measurement methods based on soil mineralogy and the specific K pool of interest. Validates the concept that not all K is equally available or measured by standard tests.",
+          "regional_comparison": "Implies regional differences in K dynamics based on prevalent mineralogy.",
+          "temporal_comparison": "Highlights differences in kinetic rates between mineral types."
+        }
+      ]
+    },
+    "evidence_synthesis_by_category": {
+      "quantitative_parameters_summary": {
+        "primary_contributions": [
+          "Provides typical ranges for soil solution K (100-1000 µM) and rhizosphere K (2-3 µM), highlighting significant depletion near roots.",
+          "Quantifies traditional K pools as percentage of total soil K (primary minerals 90-98%, exchangeable 1-2%, solution 0.1-0.2%, interlayer 1-10%).",
+          "Estimates nonexchangeable K release at 100 kg K ha⁻¹ year⁻¹, a critical annual supply rate.",
+          "Reports rapid kinetic exchange rates on montmorillonite (<0.1 s)."
+        ],
+        "data_quality": "High, as it synthesizes quantitative data from robust cited studies. Precision varies from broad estimates to specific experimental measurements.",
+        "integration_potential": "Directly provides parameters for K pool sizes, solution concentrations, and annual supply rates. Requires processing for specific soil types or scaling for regional application.",
+        "confidence_level": 0.85,
+        "key_limitations": [
+          "Quantitative values are from cited studies and specific to their conditions, requiring careful contextualization.",
+          "Limitations of current diagnostic methods in precisely differentiating all K pools introduce uncertainty."
+        ]
+      },
+      "temporal_dynamics_summary": {
+        "primary_contributions": [
+          "Highlights extremely rapid K exchange kinetics (seconds) for surface-adsorbed K.",
+          "Conceptualizes seasonal K fluxes, emphasizing continuous plant acquisition and replenishment.",
+          "Demonstrates that long-term K budgets (multi-year to decadal) often do not correlate with exchangeable K changes, indicating significant nonexchangeable K contributions and mineral transformations.",
+          "Identifies rapid neoformed K mineral formation (minutes to days) under specific conditions."
+        ],
+        "pattern_reliability": "High, based on synthesis of robust long-term field experiments and kinetic studies.",
+        "inflection_point_insights": "Suggests inflection points where reliance shifts from readily exchangeable K to nonexchangeable pools over years of depletion, as evidenced by long-term K budgets and mineral changes (e.g., 15-year alfalfa study).",
+        "confidence_level": 0.9,
+        "temporal_limitations": [
+          "Precise timing of inflection points is soil- and management-specific and not universally quantified.",
+          "Bioavailability of neoformed K minerals over time is a knowledge gap."
+        ]
+      },
+      "regional_variations_summary": {
+        "primary_contributions": [
+          "Emphasizes that K fixation and release vary significantly with soil type and mineralogy across diverse regions (e.g., US Atlantic Coastal Plains, China, Europe, Brazil).",
+          "Highlights the importance of deeper soil layers as K sources/sinks, often missed by conventional shallow sampling, with examples from Brazil and China.",
+          "Discusses K fixation in silt- and sand-sized fractions, not just clay, depending on mineral composition."
+        ],
+        "geographic_coverage": "Broad, synthesizing from global regions, with specific examples from USA, Europe, China, and Brazil.",
+        "extrapolation_potential": "Provides a strong conceptual framework for understanding factors controlling spatial variability, essential for developing region- or soil-specific K recommendations. Suggests adapting soil classification systems for regional predictions.",
+        "confidence_level": 0.85,
+        "regional_limitations": [
+          "Quantitative extrapolation to new regions requires detailed site-specific mineralogical data.",
+          "Current soil classification systems need adaptation for better regional K behavior prediction."
+        ]
+      },
+      "integration_potential_summary": {
+        "primary_contributions": [
+          "Explains how plant K uptake drives depletion and release from various pools, linking soil dynamics to crop demand.",
+          "Analyzes impacts of fertilization (neoformation, long-term mineral changes) and other management practices (liming, irrigation) on K dynamics.",
+          "Underscores the critical role of nonexchangeable K in long-term soil K fertility and sustainability, especially under extractive management.",
+          "Highlights K redistribution by deep-rooted crops."
+        ],
+        "system_relevance": "Highly relevant for agricultural demand modeling, providing mechanistic insights into K supply, demand, and management impacts.",
+        "scaling_requirements": "Requires scaling from micro-scale rhizosphere dynamics to field/regional scales, incorporating soil mineralogy and management context.",
+        "confidence_level": 0.95,
+        "integration_limitations": [
+          "Uncertainty in precisely quantifying K uptake competition and bioavailability of neoformed minerals under field conditions.",
+          "Need for more integrated field studies to validate complex K dynamics across diverse agricultural systems."
+        ]
+      }
+    },
+    "research_intelligence_assessment": {
+      "highest_value_contributions": [
+        {
+          "question_branch": "1.1|1.2|1.3|1.4|2.1|2.2|2.3|2.4|5.3",
+          "contribution_type": "Quantification of nonexchangeable K supply and its temporal significance",
+          "value_description": "The estimated annual nonexchangeable K release (100 kg K ha⁻¹ year⁻¹) is a critical parameter for long-term K budgeting and understanding soil K sustainability, directly addressing annual supply rates and temporal patterns beyond exchangeable K.",
+          "confidence_level": 0.9,
+          "implementation_readiness": "direct"
+        },
+        {
+          "question_branch": "2.3|2.4|5.3",
+          "contribution_type": "Evidence for long-term K dynamics and inflection points",
+          "value_description": "The synthesis of long-term fertilizer trials demonstrating decoupling of exchangeable K from total K budgets, and K redistribution by deep-rooted crops, provides strong evidence for temporal patterns and potential inflection points in K supply over decades.",
+          "confidence_level": 0.9,
+          "implementation_readiness": "direct"
+        },
+        {
+          "question_branch": "4.2|4.3|4.4|6.1|6.4",
+          "contribution_type": "Elucidation of mineralogy-driven spatial variability",
+          "value_description": "The emphasis on how K fixation/release varies significantly with soil mineralogy and particle size distribution across regions is crucial for characterizing regional variations and developing robust scaling approaches for K models.",
+          "confidence_level": 0.85,
+          "implementation_readiness": "requires_processing"
+        },
+        {
+          "question_branch": "5.1|5.2|5.3",
+          "contribution_type": "Integration of K dynamics with agricultural management and plant uptake",
+          "value_description": "Detailed insights into how plant uptake depletes K, how root exudates influence mineral weathering, and how fertilization/management practices impact K pools (fixation, neoformation) are vital for agricultural demand modeling and sustainable management.",
+          "confidence_level": 0.95,
+          "implementation_readiness": "direct"
+        }
+      ],
+      "medium_value_contributions": [
+        {
+          "question_branch": "1.4|6.1|6.2|6.3",
+          "contribution_type": "Critical assessment of K measurement methodologies",
+          "value_description": "The paper's critique of traditional soil tests and discussion of specialized methods provides valuable intelligence for selecting appropriate analytical techniques and understanding the limitations of existing data for modeling.",
+          "confidence_level": 0.9,
+          "development_requirements": "Requires further research into new analytical techniques and their validation for specific K pools."
+        },
+        {
+          "question_branch": "3.1|3.2|3.3|3.4",
+          "contribution_type": "Characterization of uncertainties in K assessment",
+          "value_description": "Comprehensive identification of measurement uncertainties and extrapolation limitations provides a realistic basis for confidence calibration in K modeling and highlights areas for future research.",
+          "confidence_level": 0.95,
+          "development_requirements": "Requires ongoing research to quantify and reduce these uncertainties, particularly for regional predictions."
+        }
+      ],
+      "knowledge_gap_identification": [
+        {
+          "question_branch": "1.4|6.1|6.3",
+          "gap_description": "Lack of analytical techniques to precisely differentiate structural K, interlayer K, and K in neoformed minerals.",
+          "gap_significance": "critical",
+          "research_priority": "High"
+        },
+        {
+          "question_branch": "1.1|1.2|1.3|5.3",
+          "gap_description": "The behavior of neoformed K minerals (e.g., potassium taranakite) in terms of K bioavailability during the growing season is not well researched or known.",
+          "gap_significance": "critical",
+          "research_priority": "High"
+        },
+        {
+          "question_branch": "4.2|4.3|4.4|6.1|6.4",
+          "gap_description": "Need for additional work to adapt soil classification procedures (e.g., WRB, Australian) to group and identify K-fixing/releasing soils for regional predictions.",
+          "gap_significance": "important",
+          "research_priority": "Medium"
+        },
+        {
+          "question_branch": "5.1",
+          "gap_description": "The concept of 'plant minimal exchangeable K' needs further development for practical application in K recommendations.",
+          "gap_significance": "moderate",
+          "research_priority": "Medium"
+        }
+      ],
+      "uncertainty_intelligence": [
+        {
+          "uncertainty_source": "Limitations of current diagnostic soil testing methods",
+          "affected_questions": [
+            "1.1",
+            "1.2",
+            "1.3",
+            "1.4",
+            "5.3"
+          ],
+          "uncertainty_magnitude": "Significant, as they often fail to quantitatively differentiate between structural K, interlayer K, and K in neoformed minerals.",
+          "mitigation_approaches": [
+            "Develop new analytical techniques capable of differentiating K pools.",
+            "Integrate mineralogical data with soil test results."
+          ],
+          "confidence_impacts": "Leads to inaccurate assessments of plant-available K and challenges in developing precise K recommendations."
+        },
+        {
+          "uncertainty_source": "Difficulty in quantitatively differentiating primary mica from illite using routine XRD",
+          "affected_questions": [
+            "1.1",
+            "1.2",
+            "1.3",
+            "4.2"
+          ],
+          "uncertainty_magnitude": "High.",
+          "mitigation_approaches": [
+            "Utilize advanced mineralogical techniques."
+          ],
+          "confidence_impacts": "Hinders accurate assessment of K fixation potential and long-term K release from these minerals."
+        },
+        {
+          "uncertainty_source": "Extrapolation beyond specific experimental conditions",
+          "affected_questions": [
+            "4.2",
+            "4.3",
+            "4.4",
+            "6.4"
+          ],
+          "uncertainty_magnitude": "High, due to complex interactions among soil solution chemistry, rooting density, and K uptake competition.",
+          "mitigation_approaches": [
+            "Conduct more integrated field studies across diverse conditions.",
+            "Develop robust scaling frameworks that account for key interacting factors."
+          ],
+          "confidence_impacts": "Limits the applicability of findings from controlled experiments to diverse field or regional conditions."
+        }
+      ]
+    },
+    "integration_pathway_analysis": {
+      "immediate_applications": [
+        {
+          "question_branch": "1.1|1.2|1.3|2.1|2.2|2.3|2.4|5.3",
+          "application_description": "Incorporate the estimated annual nonexchangeable K release (100 kg K ha⁻¹ year⁻¹) into long-term K budgeting models to provide a more realistic assessment of soil K supply beyond exchangeable pools.",
+          "integration_approach": "Direct input as a baseline K supply parameter in annual K balance calculations within agricultural demand models.",
+          "confidence_level": 0.9,
+          "validation_requirements": [
+            "Field validation against long-term K balance studies in diverse soil types."
+          ]
+        },
+        {
+          "question_branch": "5.1|5.2",
+          "application_description": "Utilize the rhizosphere K depletion values (2-3 µM) and plant exudate thresholds (10-20 µM) to refine plant K uptake sub-models, particularly for simulating K stress responses and demand-driven release.",
+          "integration_approach": "Parameterize plant uptake kinetics and root-induced weathering processes in dynamic soil K models.",
+          "confidence_level": 0.85,
+          "validation_requirements": [
+            "Rhizotron studies and controlled environment experiments."
+          ]
+        }
+      ],
+      "medium_term_integration": [
+        {
+          "question_branch": "2.3|2.4|5.3",
+          "development_pathway": "Develop dynamic K models that explicitly represent the proposed K pool framework (solution, exchangeable, interlayer, structural, neoformed) and their interconversion rates, allowing for simulation of temporal inflection points in K supply.",
+          "additional_data_needs": [
+            "Quantified rates of K release/fixation for different mineral types under varying environmental conditions.",
+            "Long-term field data on mineralogical changes in response to K management."
+          ],
+          "scaling_requirements": [
+            "Develop methods to map soil mineralogy at regional scales.",
+            "Integrate climate and management data to influence process rates."
+          ],
+          "timeline_estimate": "2-5 years"
+        },
+        {
+          "question_branch": "4.2|4.3|4.4|6.1|6.4",
+          "development_pathway": "Integrate soil mineralogical data into regional K demand models to account for spatial variability in K fixation and release potentials. This involves adapting soil classification systems to identify K-fixing/releasing soils.",
+          "additional_data_needs": [
+            "High-resolution soil mineralogical maps for target agricultural regions.",
+            "Quantified relationships between specific mineralogy and K dynamics."
+          ],
+          "scaling_requirements": [
+            "Development of robust spatial interpolation techniques for mineralogical data.",
+            "Validation of mineralogy-based K predictions at regional scales."
+          ],
+          "timeline_estimate": "3-7 years"
+        }
+      ],
+      "scaling_requirements": {
+        "spatial_scaling_needs": [
+          "Develop methods to accurately map and characterize soil mineralogy (e.g., 2:1 clays, micas, feldspars) at regional scales.",
+          "Integrate deeper soil profile data (beyond 0-25 cm) into regional K assessments, especially for deep-rooted crops.",
+          "Develop scaling functions to translate micro-scale rhizosphere dynamics to field and regional K availability."
+        ],
+        "temporal_scaling_needs": [
+          "Develop models capable of simulating K dynamics across multiple timescales, from rapid kinetics (seconds) to long-term mineral weathering (decades to centuries).",
+          "Integrate seasonal K fluxes and annual K budgets into multi-year and decadal projections of soil K fertility."
+        ],
+        "methodological_scaling_needs": [
+          "Develop and validate new analytical techniques that can quantitatively differentiate K pools (structural, interlayer, neoformed) at scales relevant for field and regional assessment.",
+          "Adapt existing soil classification systems to better group and identify K-fixing/releasing soils for regional predictions."
+        ],
+        "uncertainty_propagation_needs": [
+          "Develop robust uncertainty propagation frameworks to quantify how measurement uncertainties (e.g., in K pool differentiation) and extrapolation limitations (e.g., K uptake competition) impact regional K demand predictions.",
+          "Characterize and incorporate variability in K process rates due to environmental controls (e.g., soil moisture, temperature, pH) into scaling models."
+        ]
+      }
+    },
+    "mapping_quality_assessment": {
+      "mapping_completeness": 0.98,
+      "evidence_assessment_confidence": 0.95,
+      "scientific_relevance_accuracy": 0.97,
+      "integration_pathway_feasibility": "high",
+      "overall_mapping_confidence": 0.96,
+      "critical_assumptions": [
+        "The provided 'VALIDATED PAPER SYNTHESIS' accurately and comprehensively represents the key findings and limitations of the original paper/chapter.",
+        "The 'CLIENT QUESTION ARCHITECTURE' and 'RESEARCH FOCUS' accurately reflect the client's needs for agricultural demand modeling."
+      ],
+      "mapping_limitations": [
+        "The mapping is based on a synthesis of a paper/chapter, not the full original source, which might limit access to all granular details or specific experimental methodologies.",
+        "Quantitative values are often syntheses or estimates from cited literature, not direct measurements from the paper's authors, which means their original context and full uncertainty characterization might be in the primary sources."
+      ],
+      "enhancement_opportunities": [
+        "If the full original paper/chapter were available, a more granular extraction of all quantitative data, specific experimental designs, and detailed uncertainty analyses could further refine the mapping.",
+        "Direct engagement with the client to prioritize specific quantitative parameters or temporal/spatial scales for modeling could optimize the mapping focus."
+      ]
+    },
+    "_usage_metadata": {
+      "timestamp": "2025-07-10T16:19:23.771464",
+      "stage_name": "unknown",
+      "paper_id": "unknown",
+      "prompt_length_chars": 81065,
+      "processing_time_seconds": 66.42,
+      "thinking_enabled": true,
+      "input_tokens": 18028,
+      "output_tokens": 11244,
+      "thinking_tokens": 0,
+      "input_cost_usd": 0.002704,
+      "output_cost_usd": 0.039354,
+      "thinking_cost_usd": 0.0,
+      "total_cost_usd": 0.042058
+    },
+    "stage": "4A",
+    "paper_id": "unknown",
+    "mapping_timestamp": "2025-07-10T16:19:23.773586",
+    "temperature_used": 0.1,
+    "client_architecture_version": "1.0"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "extraction_metadata": {
+    "chunk_id": "crop_specific_soil_k_supply",
+    "timestamp": "2025-07-10T17:40:34.789599",
+    "extractor_version": "1.0",
+    "extraction_approach": "Targeted crop-specific evidence extraction from Stage 4B enhanced mappings"
+  },
+  "processing_summary": {
+    "papers_processed": 23,
+    "papers_with_crop_evidence": 13,
+    "success_rate": "56.5%",
+    "total_evidence_pieces": 96,
+    "average_evidence_per_paper": 7.384615384615385
+  },
+  "evidence_distribution": {
+    "by_crop_system": {
+      "rice": 31,
+      "cereals": 26,
+      "mixed_cropping": 15,
+      "cotton": 8,
+      "soybean": 5,
+      "sugarcane": 4
+    },
+    "unique_parameters": [
+      "aerobic_k_availability",
+      "anaerobic_k_release",
+      "annual_kg_k2o_per_ha",
+      "boll_development_k_needs",
+      "cleared_land_k_depletion",
+      "conversion_k_losses",
+      "cover_crop_k_contributions",
+      "cumulative_k_depletion",
+      "depletion_rate",
+      "drought_stress_k_uptake",
+      "growing_season_supply",
+      "high_k_demand_supply",
+      "intercrop_k_competition",
+      "irrigation_k_mobilization",
+      "long_rotation_k_balance",
+      "monsoon_leaching_effects",
+      "plant_k_efficiency_factors",
+      "post_monsoon_k_depletion",
+      "pre_monsoon_k_levels",
+      "productivity_decline_rate",
+      "puddling_k_effects",
+      "ratoon_k_depletion",
+      "recovery_potential",
+      "residue_k_contributions",
+      "residue_k_recycling",
+      "root_zone_k_depletion",
+      "rotation_k_cycling_efficiency",
+      "seasonal_release_patterns",
+      "soil_reserve_drawdown",
+      "sustainability_years",
+      "temporal_dynamics",
+      "total_extractable_k_decline",
+      "trash_blanket_k_cycling",
+      "water_k_concentration"
+    ],
+    "parameter_count": 34
+  },
+  "quality_metrics": {
+    "extraction_errors": 1,
+    "error_details": [
+      "Failed to process Field-specific potassium and phosphorus balances_4b_20250710_164142.json: 'dict' object has no attribute 'lower'"
+    ],
+    "data_completeness": "medium"
+  },
+  "next_steps": {
+    "validation": "Review extracted evidence for completeness and accuracy",
+    "stage_5a": "Process chunk3_crop_specific_soil_k_supply.json through Stage 5A synthesis",
+    "optimization": "Apply learnings to remaining chunk extractors"
+  }
+}

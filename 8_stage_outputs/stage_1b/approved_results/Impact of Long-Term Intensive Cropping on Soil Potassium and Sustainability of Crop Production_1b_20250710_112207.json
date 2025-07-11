@@ -1,0 +1,1939 @@
+{
+  "stage_id": "1b",
+  "stage_name": "Generic Validation",
+  "paper_id": "Impact of Long-Term Intensive Cropping on Soil Potassium and Sustainability of Crop Production",
+  "processing_timestamp": "2025-07-10T11:22:07.271453",
+  "processing_time_seconds": 108.6583981513977,
+  "processing_mode": "single_paper",
+  "validation_passed": true,
+  "validation_message": "Valid validation result",
+  "results": {
+    "accuracy_verification": {
+      "numerical_accuracy": {
+        "verification_status": false,
+        "discrepancies_found": [
+          "Quantitative findings included data from 'Table 4' and 'Table 5' which are not present in the provided original paper text. These values were hallucinated.",
+          "Quantitative findings included K release percentages for 'smectitic' and 'illitic' soils (25%, 13%) which are not present in the provided original paper text.",
+          "Specific percentages for non-exchangeable K contribution (97% to 81% for Jabalpur, 100% to 27% for Bhubaneswar) were extracted, but the original text only provides general figures (above 90% to about 80%) in the abstract, without these specific site-level details.",
+          "The 'K response (kg/ha)' and 'Response grain/kg K applied' arrays in Table 1 were missing a null value for 'Wheat at Jabalpur' where the original table had a dash ('—')."
+        ],
+        "corrections_needed": [
+          "Remove all quantitative data attributed to 'Table 4' and 'Table 5'.",
+          "Remove K release percentages for 'smectitic' and 'illitic' soils.",
+          "Correct the specific percentages for non-exchangeable K contribution to reflect the general statement in the abstract.",
+          "Insert 'null' values for missing data points in Table 1 arrays."
+        ]
+      },
+      "unit_consistency": {
+        "verification_status": true,
+        "inconsistencies_found": [],
+        "standardization_needed": []
+      },
+      "statistical_accuracy": {
+        "verification_status": true,
+        "errors_identified": [],
+        "missing_statistics": [
+          "No explicit standard errors or confidence intervals were extracted, consistent with their absence in the review text."
+        ]
+      },
+      "methodological_accuracy": {
+        "verification_status": false,
+        "description_errors": [
+          "The soil type for Delhi was incorrectly listed as 'Alluvial soils (illite dominant, Typic Ustocrept)' alongside Ludhiana and Gurgoan. Table 1 clearly lists Delhi under 'INCEPTISOLS'.",
+          "The location 'Gurgoan' was listed as a study site, but it is not mentioned in the provided text as one of the 11 study centers."
+        ],
+        "clarifications_needed": [
+          "Correct Delhi's soil classification to Inceptisol.",
+          "Remove 'Gurgoan' from the list of study sites."
+        ]
+      },
+      "contextual_accuracy": {
+        "verification_status": false,
+        "context_errors": [
+          "The 'FYM_rate' of '15 t/ha' was extracted, but this specific rate is not mentioned in the provided text.",
+          "The region 'Gujarat' was listed under geographic details, but it is only mentioned in a reference (Mehta, 1976) and not as a study region for the experiments reviewed in the paper.",
+          "The K-bearing mineral 'mica' was listed, but only 'illite' is explicitly mentioned in the provided text for the study soils.",
+          "The mineralogy 'smectite' was listed, but it's only mentioned in the context of K release from a 'smectitic soil' in a general statement, not explicitly as a mineralogy of the study sites."
+        ],
+        "missing_context": []
+      }
+    },
+    "completeness_assessment": {
+      "quantitative_data_completeness": {
+        "completeness_score": 0.6,
+        "missing_data_identified": [
+          "The original extraction attempted to extract data from 'Table 0', 'Table 1', 'Table 2' (which are figures in the paper) and 'Table 4', 'Table 5', 'Table 7', 'Table 10', 'Table 11' (which are not present in the provided text). This led to significant hallucinated data.",
+          "The granular context for each numerical value in Table 1 (specific crop and center) was not fully captured in the initial extraction's array structure, making interpretation difficult without referring back to the source."
+        ],
+        "critical_omissions": [
+          "The hallucinated data from non-existent tables represents a critical omission of validation and a severe accuracy issue in the original extraction."
+        ]
+      },
+      "methodological_completeness": {
+        "completeness_score": 0.8,
+        "missing_methods": [],
+        "incomplete_descriptions": [
+          "Specific experimental design details (e.g., number of replicates, plot size) for each underlying LTFE are not provided in the review paper, and thus could not be extracted.",
+          "Detailed climate data for each site is not provided in the review paper.",
+          "Specific crop varieties/cultivars are not mentioned.",
+          "Analytical instrumentation and detailed quality control procedures are not specified in the review paper."
+        ]
+      },
+      "contextual_completeness": {
+        "completeness_score": 0.8,
+        "missing_context": [],
+        "insufficient_detail": [
+          "The specific rates for 'optimal' NPK doses are not defined in kg/ha.",
+          "Detailed soil physical properties beyond texture are not provided."
+        ]
+      },
+      "literature_integration_completeness": {
+        "completeness_score": 0.9,
+        "missing_references": [],
+        "inadequate_benchmarking": []
+      }
+    },
+    "scientific_precision": {
+      "terminology_precision": {
+        "precision_assessment": "good",
+        "terminology_issues": [],
+        "precision_improvements": []
+      },
+      "relationship_accuracy": {
+        "accuracy_assessment": "good",
+        "relationship_errors": [],
+        "clarification_needs": []
+      },
+      "uncertainty_characterization": {
+        "characterization_quality": "adequate",
+        "uncertainty_omissions": [
+          "Lack of explicit statistical measures (e.g., standard errors, confidence intervals) for quantitative findings, which is a limitation of the source paper itself as a review."
+        ],
+        "confidence_calibration": []
+      },
+      "limitation_documentation": {
+        "documentation_quality": "good",
+        "missing_limitations": [],
+        "inadequate_caveats": []
+      }
+    },
+    "quality_enhancement": {
+      "high_priority_corrections": [
+        {
+          "correction_type": "Data Hallucination",
+          "description": "Removal of all quantitative data points and related contexts that were attributed to 'Table 4', 'Table 5', and other non-existent tables/figures (e.g., K release rates, available K, K uptake, non-exchangeable K contribution, smectitic/illitic K release). These tables/figures were not present in the provided original paper text.",
+          "impact_on_interpretation": "Crucially improves the accuracy and fidelity of the extracted quantitative findings to the source material, preventing misrepresentation of results.",
+          "recommended_action": "Strictly adhere to data present within the provided document's text and explicitly labeled tables (Table 1, 2, 3)."
+        },
+        {
+          "correction_type": "Factual Error (Site/Soil Type)",
+          "description": "Corrected Delhi's soil type from 'Alluvial soils' to 'Inceptisols' and removed 'Gurgoan' as a study site, as per Table 1 and text.",
+          "impact_on_interpretation": "Ensures accurate representation of study locations and their soil characteristics, critical for agroecological context.",
+          "recommended_action": "Cross-verify all site-specific details against explicit mentions in tables and text."
+        }
+      ],
+      "medium_priority_improvements": [
+        {
+          "improvement_type": "Quantitative Data Granularity",
+          "description": "Restructured the 'primary_measurements' for Table 1 to explicitly link each numerical value to its specific crop and center, rather than grouping all values into single arrays.",
+          "benefit": "Significantly enhances the interpretability and usability of the quantitative data, making it easier to understand the context of each measurement.",
+          "implementation": "Created an array of objects, each containing 'parameter', 'values', 'units', and 'measurement_context' for individual crop-center combinations from Table 1."
+        },
+        {
+          "improvement_type": "Contextual Accuracy",
+          "description": "Removed 'Gujarat' from study regions, '15 t/ha' FYM rate, 'mica' and 'smectite' mineralogy from soil properties, as these details were not explicitly stated for the study sites in the provided text.",
+          "benefit": "Ensures that all extracted contextual information is directly supported by the source material, improving overall fidelity.",
+          "implementation": "Verified each contextual detail against the provided text and removed unsupported inferences."
+        }
+      ],
+      "data_enrichment_opportunities": [
+        {
+          "opportunity_type": "Detailed Table Parsing",
+          "additional_data_source": "Original research papers cited within this review (e.g., Swarup 1998, Srinivasa Rao et al. 2001, Brar and Pasricha 1998, etc.)",
+          "potential_value": "To obtain specific experimental design details (e.g., replication levels, plot sizes, full statistical results), detailed climate data, and specific NPK rates (kg/ha) for 'optimal' doses, which are not present in this review paper.",
+          "extraction_approach": "Requires accessing and extracting data from the primary research articles referenced."
+        },
+        {
+          "opportunity_type": "Graphical Data Extraction",
+          "additional_data_source": "Figures 1-7 within the original paper.",
+          "potential_value": "To extract quantitative trends and specific data points visually represented in the figures (e.g., yield trends over time for different treatments).",
+          "extraction_approach": "Requires image processing and data extraction from graphs, which was beyond the scope of the initial text-based extraction."
+        }
+      ]
+    },
+    "internal_consistency": {
+      "numerical_consistency": {
+        "consistency_status": false,
+        "inconsistencies_found": [
+          "Discrepancies between extracted quantitative data and the actual content of the provided tables (Table 1, 2, 3) due to hallucinated data from non-existent tables."
+        ],
+        "resolution_needed": [
+          "Removal of all hallucinated numerical data to ensure consistency with the provided source text."
+        ]
+      },
+      "temporal_consistency": {
+        "consistency_status": true,
+        "timeline_issues": [],
+        "clarification_needed": []
+      },
+      "geographic_consistency": {
+        "consistency_status": false,
+        "location_conflicts": [
+          "Inconsistent soil classification for Delhi and inclusion of 'Gurgoan' as a study site."
+        ],
+        "standardization_needed": [
+          "Standardize site and soil type information based on explicit mentions in Table 1."
+        ]
+      },
+      "methodological_consistency": {
+        "consistency_status": true,
+        "method_conflicts": [],
+        "harmonization_needed": []
+      }
+    },
+    "enhanced_extraction": {
+      "paper_metadata": {
+        "title": "Impact of Long-Term Intensive Cropping on Soil Potassium and Sustainability of Crop Production",
+        "authors": [
+          "J.S. Samra",
+          "Anand Swarup"
+        ],
+        "journal": "Not specified (likely a chapter in a book or conference proceeding from ICAR)",
+        "publication_year": 2001,
+        "doi": "Not available",
+        "study_region": "India",
+        "primary_focus": "Impact of long-term intensive cropping and fertilizer management on soil potassium dynamics and crop productivity sustainability in various Indian agroecological regions."
+      },
+      "research_methodology": {
+        "study_type": "review_analysis",
+        "experimental_design": "Synthesis and review of data from multiple long-term fertilizer experiments (LTFEs) conducted under the All India Coordinated Research Project of ICAR.",
+        "temporal_scope": {
+          "study_duration_years": 30,
+          "data_collection_frequency": "Continuous monitoring over multiple years/crop cycles (e.g., 14, 20, 21, 27, 30 years depending on the specific experiment/center).",
+          "seasonal_coverage": "Multi-seasonal, including Kharif and Rabi crops, reflecting intensive cropping systems.",
+          "monitoring_timeline": [
+            "1971-1999 (Ludhiana)",
+            "1972-1999 (Barrackpore, Coimbatore, Jabalpur, Pantnagar)",
+            "1973-1994 (Bhubaneswar)",
+            "1973-1999 (Palampur, Ranchi)",
+            "1986-1999 (Bangalore)",
+            "1994-1999 (Delhi)",
+            "1994-1997 (Bhubaneswar superimposed treatments)"
+          ]
+        },
+        "spatial_scope": {
+          "number_of_sites": 11,
+          "geographic_coverage": "Different agroecological regions across India.",
+          "site_characteristics": [
+            "Alfisols (Bangalore, Ranchi, Palampur)",
+            "Acidic Inceptisols (Aeric Haplaquept) (Bhubaneswar)",
+            "Alluvial soils (illite dominant, Typic Ustocrept) (Ludhiana)",
+            "Inceptisol (Delhi, Hyderabad, Barrackpore, Coimbatore)",
+            "Mollisol (Pantnagar)",
+            "Vertisol (Typic Haplustert) (Jabalpur)"
+          ],
+          "coordinates": "Not provided",
+          "regional_representativeness": "High, as the study synthesizes data from a nationwide coordinated research project covering diverse soil types and cropping systems."
+        },
+        "sample_design": {
+          "sample_sizes": {
+            "crop_cycles_Jabalpur": "27 crop cycles (soybean-wheat-maize fodder)",
+            "crop_cycles_Bhubaneswar": "21 crop cycles (rice-rice rotations)",
+            "maize_wheat_cycles_Ludhiana": "10 cycles"
+          },
+          "replication_levels": "Not explicitly stated for individual experiments, but implied by 'long-term fertilizer experiments' which typically involve replication.",
+          "randomization_approach": "Not explicitly stated, but implied by standard experimental design of LTFEs.",
+          "controls_and_treatments": [
+            "Control (no fertilizer)",
+            "100% N (Nitrogen alone)",
+            "100% NP (Nitrogen + Phosphorus)",
+            "100% NPK (Nitrogen + Phosphorus + Potassium)",
+            "100% NPK + FYM (Farmyard Manure)",
+            "50% NPK",
+            "150% NPK",
+            "Superimposed treatments: e.g., 100% N, 50% P, 50% K (Ludhiana)",
+            "Superimposed treatments: e.g., 100% N, 50% P, 100% K + Zn (Ludhiana)",
+            "Superimposed treatments: e.g., 150% N, 50% P, 150% K + Zn (Ludhiana)",
+            "Superimposed treatments: e.g., 100% N + 50% P + 100% K + FYM (Bhubaneswar)",
+            "Superimposed treatments: e.g., 100% N + 50% P + 150% K + FYM (Bhubaneswar)"
+          ],
+          "statistical_power": "Not explicitly stated, but long-term nature and multiple sites enhance power for detecting trends."
+        },
+        "analytical_methods": {
+          "measurement_protocols": [
+            "K release kinetics",
+            "Quantity/Intensity (Q/I) parameters",
+            "Electro-ultra filtration (EUF) for K fractions (0-30 min for exchangeable K, 30-35 min for non-exchangeable K)",
+            "0.01 M CaCl2 extraction for K release",
+            "0.01 M citric acid extraction for non-exchangeable K release rate constants (zero order)",
+            "Soil testing methodology for available K"
+          ],
+          "instrumentation": [],
+          "quality_control": [],
+          "detection_limits": {},
+          "analytical_precision": {}
+        },
+        "statistical_approach": {
+          "analysis_methods": [
+            "Comparison of mean responses",
+            "Trend analysis (e.g., yield declines, increasing trends)",
+            "5-year moving average (for graphical representation)",
+            "Assessment of K balance (additions vs. removals)"
+          ],
+          "significance_testing": "Qualitative statements of 'significant responses', 'more pronounced', 'considerable decrease' imply statistical significance testing was performed in the original studies.",
+          "uncertainty_quantification": "Not explicitly reported in the review text (e.g., standard errors, confidence intervals for all values), but implied by the nature of the underlying experiments.",
+          "model_validation": "Implied by the use of Q/I relationships to predict K supply and fate of added K."
+        }
+      },
+      "quantitative_findings": {
+        "primary_measurements": [
+          {
+            "parameter": "Average grain yield (NP treatment)",
+            "values": [
+              3.8
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Rice at Barrackpore (1972-99)"
+          },
+          {
+            "parameter": "Average grain yield (NP treatment)",
+            "values": [
+              2.3
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Wheat at Barrackpore (1972-99)"
+          },
+          {
+            "parameter": "Average grain yield (NP treatment)",
+            "values": [
+              2.2
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Rice at Bhubaneswar (1973-94)"
+          },
+          {
+            "parameter": "Average grain yield (NP treatment)",
+            "values": [
+              2.8
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Rice at Coimbatore (1972-99)"
+          },
+          {
+            "parameter": "Average grain yield (NP treatment)",
+            "values": [
+              2.9
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Fingermillet at Coimbatore (1972-99)"
+          },
+          {
+            "parameter": "Average grain yield (NP treatment)",
+            "values": [
+              2.8
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Maize at Delhi (1994-99)"
+          },
+          {
+            "parameter": "Average grain yield (NP treatment)",
+            "values": [
+              1.8
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Wheat at Delhi (1994-99)"
+          },
+          {
+            "parameter": "Average grain yield (NP treatment)",
+            "values": [
+              4.3
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Rice at Hyderabad (1972-95)"
+          },
+          {
+            "parameter": "Average grain yield (NP treatment)",
+            "values": [
+              3.4
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Rice at Hyderabad (1972-95)"
+          },
+          {
+            "parameter": "Average grain yield (NP treatment)",
+            "values": [
+              2.2
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Maize at Ludhiana (1971-99)"
+          },
+          {
+            "parameter": "Average grain yield (NP treatment)",
+            "values": [
+              1.8
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Wheat at Ludhiana (1971-99)"
+          },
+          {
+            "parameter": "Average grain yield (NP treatment)",
+            "values": [
+              4.1
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Soybean at Jabalpur (1972-99)"
+          },
+          {
+            "parameter": "Average grain yield (NP treatment)",
+            "values": [
+              1.9
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Wheat at Jabalpur (1972-99)"
+          },
+          {
+            "parameter": "Average grain yield (NP treatment)",
+            "values": [
+              3.9
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Rice at Pantnagar (1972-99)"
+          },
+          {
+            "parameter": "Average grain yield (NP treatment)",
+            "values": [
+              5.0
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Wheat at Pantnagar (1972-99)"
+          },
+          {
+            "parameter": "Average grain yield (NP treatment)",
+            "values": [
+              3.8
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Maize at Palampur (1973-99)"
+          },
+          {
+            "parameter": "Average grain yield (NP treatment)",
+            "values": [
+              2.0
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Wheat at Palampur (1973-99)"
+          },
+          {
+            "parameter": "Average grain yield (NP treatment)",
+            "values": [
+              1.8
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Soybean at Ranchi (1973-99)"
+          },
+          {
+            "parameter": "Average grain yield (NP treatment)",
+            "values": [
+              0.9
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Wheat at Ranchi (1973-99)"
+          },
+          {
+            "parameter": "Average grain yield (NP treatment)",
+            "values": [
+              2.3
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Fingermillet at Bangalore (1986-99)"
+          },
+          {
+            "parameter": "Average grain yield (NP treatment)",
+            "values": [
+              1.2
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Maize at Bangalore (1986-99)"
+          },
+          {
+            "parameter": "Average grain yield (NP treatment)",
+            "values": [
+              0.8
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Maize at Bangalore (1986-99)"
+          },
+          {
+            "parameter": "Average grain yield (NPK treatment)",
+            "values": [
+              3.9
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Rice at Barrackpore (1972-99)"
+          },
+          {
+            "parameter": "Average grain yield (NPK treatment)",
+            "values": [
+              2.4
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Wheat at Barrackpore (1972-99)"
+          },
+          {
+            "parameter": "Average grain yield (NPK treatment)",
+            "values": [
+              2.8
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Rice at Bhubaneswar (1973-94)"
+          },
+          {
+            "parameter": "Average grain yield (NPK treatment)",
+            "values": [
+              3.0
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Rice at Coimbatore (1972-99)"
+          },
+          {
+            "parameter": "Average grain yield (NPK treatment)",
+            "values": [
+              3.0
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Fingermillet at Coimbatore (1972-99)"
+          },
+          {
+            "parameter": "Average grain yield (NPK treatment)",
+            "values": [
+              3.0
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Maize at Delhi (1994-99)"
+          },
+          {
+            "parameter": "Average grain yield (NPK treatment)",
+            "values": [
+              2.1
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Wheat at Delhi (1994-99)"
+          },
+          {
+            "parameter": "Average grain yield (NPK treatment)",
+            "values": [
+              4.6
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Rice at Hyderabad (1972-95)"
+          },
+          {
+            "parameter": "Average grain yield (NPK treatment)",
+            "values": [
+              3.6
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Rice at Hyderabad (1972-95)"
+          },
+          {
+            "parameter": "Average grain yield (NPK treatment)",
+            "values": [
+              2.6
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Maize at Ludhiana (1971-99)"
+          },
+          {
+            "parameter": "Average grain yield (NPK treatment)",
+            "values": [
+              2.6
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Wheat at Ludhiana (1971-99)"
+          },
+          {
+            "parameter": "Average grain yield (NPK treatment)",
+            "values": [
+              4.8
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Soybean at Jabalpur (1972-99)"
+          },
+          {
+            "parameter": "Average grain yield (NPK treatment)",
+            "values": [
+              2.1
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Wheat at Jabalpur (1972-99)"
+          },
+          {
+            "parameter": "Average grain yield (NPK treatment)",
+            "values": [
+              4.2
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Rice at Pantnagar (1972-99)"
+          },
+          {
+            "parameter": "Average grain yield (NPK treatment)",
+            "values": [
+              5.3
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Wheat at Pantnagar (1972-99)"
+          },
+          {
+            "parameter": "Average grain yield (NPK treatment)",
+            "values": [
+              3.8
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Maize at Palampur (1973-99)"
+          },
+          {
+            "parameter": "Average grain yield (NPK treatment)",
+            "values": [
+              3.2
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Wheat at Palampur (1973-99)"
+          },
+          {
+            "parameter": "Average grain yield (NPK treatment)",
+            "values": [
+              2.5
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Soybean at Ranchi (1973-99)"
+          },
+          {
+            "parameter": "Average grain yield (NPK treatment)",
+            "values": [
+              1.6
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Wheat at Ranchi (1973-99)"
+          },
+          {
+            "parameter": "Average grain yield (NPK treatment)",
+            "values": [
+              2.6
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Fingermillet at Bangalore (1986-99)"
+          },
+          {
+            "parameter": "Average grain yield (NPK treatment)",
+            "values": [
+              4.3
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Maize at Bangalore (1986-99)"
+          },
+          {
+            "parameter": "Average grain yield (NPK treatment)",
+            "values": [
+              2.2
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Maize at Bangalore (1986-99)"
+          },
+          {
+            "parameter": "K response (NPK over NP)",
+            "values": [
+              100
+            ],
+            "units": "kg/ha",
+            "statistical_measures": {},
+            "measurement_context": "Rice at Barrackpore (1972-99)"
+          },
+          {
+            "parameter": "K response (NPK over NP)",
+            "values": [
+              100
+            ],
+            "units": "kg/ha",
+            "statistical_measures": {},
+            "measurement_context": "Wheat at Barrackpore (1972-99)"
+          },
+          {
+            "parameter": "K response (NPK over NP)",
+            "values": [
+              600
+            ],
+            "units": "kg/ha",
+            "statistical_measures": {},
+            "measurement_context": "Rice at Bhubaneswar (1973-94)"
+          },
+          {
+            "parameter": "K response (NPK over NP)",
+            "values": [
+              200
+            ],
+            "units": "kg/ha",
+            "statistical_measures": {},
+            "measurement_context": "Rice at Coimbatore (1972-99)"
+          },
+          {
+            "parameter": "K response (NPK over NP)",
+            "values": [
+              100
+            ],
+            "units": "kg/ha",
+            "statistical_measures": {},
+            "measurement_context": "Fingermillet at Coimbatore (1972-99)"
+          },
+          {
+            "parameter": "K response (NPK over NP)",
+            "values": [
+              200
+            ],
+            "units": "kg/ha",
+            "statistical_measures": {},
+            "measurement_context": "Maize at Delhi (1994-99)"
+          },
+          {
+            "parameter": "K response (NPK over NP)",
+            "values": [
+              300
+            ],
+            "units": "kg/ha",
+            "statistical_measures": {},
+            "measurement_context": "Wheat at Delhi (1994-99)"
+          },
+          {
+            "parameter": "K response (NPK over NP)",
+            "values": [
+              300
+            ],
+            "units": "kg/ha",
+            "statistical_measures": {},
+            "measurement_context": "Rice at Hyderabad (1972-95)"
+          },
+          {
+            "parameter": "K response (NPK over NP)",
+            "values": [
+              200
+            ],
+            "units": "kg/ha",
+            "statistical_measures": {},
+            "measurement_context": "Rice at Hyderabad (1972-95)"
+          },
+          {
+            "parameter": "K response (NPK over NP)",
+            "values": [
+              400
+            ],
+            "units": "kg/ha",
+            "statistical_measures": {},
+            "measurement_context": "Maize at Ludhiana (1971-99)"
+          },
+          {
+            "parameter": "K response (NPK over NP)",
+            "values": [
+              800
+            ],
+            "units": "kg/ha",
+            "statistical_measures": {},
+            "measurement_context": "Wheat at Ludhiana (1971-99)"
+          },
+          {
+            "parameter": "K response (NPK over NP)",
+            "values": [
+              700
+            ],
+            "units": "kg/ha",
+            "statistical_measures": {},
+            "measurement_context": "Soybean at Jabalpur (1972-99)"
+          },
+          {
+            "parameter": "K response (NPK over NP)",
+            "values": [
+              null
+            ],
+            "units": "kg/ha",
+            "statistical_measures": {},
+            "measurement_context": "Wheat at Jabalpur (1972-99)"
+          },
+          {
+            "parameter": "K response (NPK over NP)",
+            "values": [
+              200
+            ],
+            "units": "kg/ha",
+            "statistical_measures": {},
+            "measurement_context": "Rice at Pantnagar (1972-99)"
+          },
+          {
+            "parameter": "K response (NPK over NP)",
+            "values": [
+              300
+            ],
+            "units": "kg/ha",
+            "statistical_measures": {},
+            "measurement_context": "Wheat at Pantnagar (1972-99)"
+          },
+          {
+            "parameter": "K response (NPK over NP)",
+            "values": [
+              300
+            ],
+            "units": "kg/ha",
+            "statistical_measures": {},
+            "measurement_context": "Maize at Palampur (1973-99)"
+          },
+          {
+            "parameter": "K response (NPK over NP)",
+            "values": [
+              1200
+            ],
+            "units": "kg/ha",
+            "statistical_measures": {},
+            "measurement_context": "Wheat at Palampur (1973-99)"
+          },
+          {
+            "parameter": "K response (NPK over NP)",
+            "values": [
+              700
+            ],
+            "units": "kg/ha",
+            "statistical_measures": {},
+            "measurement_context": "Soybean at Ranchi (1973-99)"
+          },
+          {
+            "parameter": "K response (NPK over NP)",
+            "values": [
+              700
+            ],
+            "units": "kg/ha",
+            "statistical_measures": {},
+            "measurement_context": "Wheat at Ranchi (1973-99)"
+          },
+          {
+            "parameter": "K response (NPK over NP)",
+            "values": [
+              300
+            ],
+            "units": "kg/ha",
+            "statistical_measures": {},
+            "measurement_context": "Fingermillet at Bangalore (1986-99)"
+          },
+          {
+            "parameter": "K response (NPK over NP)",
+            "values": [
+              3100
+            ],
+            "units": "kg/ha",
+            "statistical_measures": {},
+            "measurement_context": "Maize at Bangalore (1986-99)"
+          },
+          {
+            "parameter": "K response (NPK over NP)",
+            "values": [
+              1400
+            ],
+            "units": "kg/ha",
+            "statistical_measures": {},
+            "measurement_context": "Maize at Bangalore (1986-99)"
+          },
+          {
+            "parameter": "Response grain/kg K applied",
+            "values": [
+              2.0
+            ],
+            "units": "kg grain/kg K",
+            "statistical_measures": {},
+            "measurement_context": "Rice at Barrackpore (1972-99)"
+          },
+          {
+            "parameter": "Response grain/kg K applied",
+            "values": [
+              2.2
+            ],
+            "units": "kg grain/kg K",
+            "statistical_measures": {},
+            "measurement_context": "Wheat at Barrackpore (1972-99)"
+          },
+          {
+            "parameter": "Response grain/kg K applied",
+            "values": [
+              12.0
+            ],
+            "units": "kg grain/kg K",
+            "statistical_measures": {},
+            "measurement_context": "Rice at Bhubaneswar (1973-94)"
+          },
+          {
+            "parameter": "Response grain/kg K applied",
+            "values": [
+              4.0
+            ],
+            "units": "kg grain/kg K",
+            "statistical_measures": {},
+            "measurement_context": "Rice at Coimbatore (1972-99)"
+          },
+          {
+            "parameter": "Response grain/kg K applied",
+            "values": [
+              7.1
+            ],
+            "units": "kg grain/kg K",
+            "statistical_measures": {},
+            "measurement_context": "Fingermillet at Coimbatore (1972-99)"
+          },
+          {
+            "parameter": "Response grain/kg K applied",
+            "values": [
+              6.9
+            ],
+            "units": "kg grain/kg K",
+            "statistical_measures": {},
+            "measurement_context": "Maize at Delhi (1994-99)"
+          },
+          {
+            "parameter": "Response grain/kg K applied",
+            "values": [
+              9.0
+            ],
+            "units": "kg grain/kg K",
+            "statistical_measures": {},
+            "measurement_context": "Wheat at Delhi (1994-99)"
+          },
+          {
+            "parameter": "Response grain/kg K applied",
+            "values": [
+              9.0
+            ],
+            "units": "kg grain/kg K",
+            "statistical_measures": {},
+            "measurement_context": "Rice at Hyderabad (1972-95)"
+          },
+          {
+            "parameter": "Response grain/kg K applied",
+            "values": [
+              8.0
+            ],
+            "units": "kg grain/kg K",
+            "statistical_measures": {},
+            "measurement_context": "Rice at Hyderabad (1972-95)"
+          },
+          {
+            "parameter": "Response grain/kg K applied",
+            "values": [
+              16.0
+            ],
+            "units": "kg grain/kg K",
+            "statistical_measures": {},
+            "measurement_context": "Maize at Ludhiana (1971-99)"
+          },
+          {
+            "parameter": "Response grain/kg K applied",
+            "values": [
+              12.6
+            ],
+            "units": "kg grain/kg K",
+            "statistical_measures": {},
+            "measurement_context": "Wheat at Ludhiana (1971-99)"
+          },
+          {
+            "parameter": "Response grain/kg K applied",
+            "values": [
+              22.5
+            ],
+            "units": "kg grain/kg K",
+            "statistical_measures": {},
+            "measurement_context": "Soybean at Jabalpur (1972-99)"
+          },
+          {
+            "parameter": "Response grain/kg K applied",
+            "values": [
+              null
+            ],
+            "units": "kg grain/kg K",
+            "statistical_measures": {},
+            "measurement_context": "Wheat at Jabalpur (1972-99)"
+          },
+          {
+            "parameter": "Response grain/kg K applied",
+            "values": [
+              11.7
+            ],
+            "units": "kg grain/kg K",
+            "statistical_measures": {},
+            "measurement_context": "Rice at Pantnagar (1972-99)"
+          },
+          {
+            "parameter": "Response grain/kg K applied",
+            "values": [
+              9.0
+            ],
+            "units": "kg grain/kg K",
+            "statistical_measures": {},
+            "measurement_context": "Wheat at Pantnagar (1972-99)"
+          },
+          {
+            "parameter": "Response grain/kg K applied",
+            "values": [
+              7.8
+            ],
+            "units": "kg grain/kg K",
+            "statistical_measures": {},
+            "measurement_context": "Maize at Palampur (1973-99)"
+          },
+          {
+            "parameter": "Response grain/kg K applied",
+            "values": [
+              36.3
+            ],
+            "units": "kg grain/kg K",
+            "statistical_measures": {},
+            "measurement_context": "Wheat at Palampur (1973-99)"
+          },
+          {
+            "parameter": "Response grain/kg K applied",
+            "values": [
+              18.4
+            ],
+            "units": "kg grain/kg K",
+            "statistical_measures": {},
+            "measurement_context": "Soybean at Ranchi (1973-99)"
+          },
+          {
+            "parameter": "Response grain/kg K applied",
+            "values": [
+              21.2
+            ],
+            "units": "kg grain/kg K",
+            "statistical_measures": {},
+            "measurement_context": "Wheat at Ranchi (1973-99)"
+          },
+          {
+            "parameter": "Response grain/kg K applied",
+            "values": [
+              9.0
+            ],
+            "units": "kg grain/kg K",
+            "statistical_measures": {},
+            "measurement_context": "Fingermillet at Bangalore (1986-99)"
+          },
+          {
+            "parameter": "Response grain/kg K applied",
+            "values": [
+              147.6
+            ],
+            "units": "kg grain/kg K",
+            "statistical_measures": {},
+            "measurement_context": "Maize at Bangalore (1986-99)"
+          },
+          {
+            "parameter": "Response grain/kg K applied",
+            "values": [
+              66.6
+            ],
+            "units": "kg grain/kg K",
+            "statistical_measures": {},
+            "measurement_context": "Maize at Bangalore (1986-99)"
+          },
+          {
+            "parameter": "Maize grain yield (Ludhiana, 1994-99)",
+            "values": [
+              1.58
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Under original treatment T1 50% NPK (Table 2)"
+          },
+          {
+            "parameter": "Maize grain yield (Ludhiana, 1994-99)",
+            "values": [
+              2.28
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Under superimposed treatment S2 (100% N, 50% P, 50% K) from original T1 (50% NPK) (Table 2)"
+          },
+          {
+            "parameter": "Maize grain yield (Ludhiana, 1994-99)",
+            "values": [
+              2.24
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Under superimposed treatment S3 (100% N, 50% P, 100% K + Zn) from original T1 (50% NPK) (Table 2)"
+          },
+          {
+            "parameter": "Maize grain yield (Ludhiana, 1994-99)",
+            "values": [
+              2.18
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Under original treatment T2 100% NPK (Table 2)"
+          },
+          {
+            "parameter": "Maize grain yield (Ludhiana, 1994-99)",
+            "values": [
+              2.2
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Under superimposed treatment S2 (100% N, 50% P, 100% K) from original T2 (100% NPK) (Table 2)"
+          },
+          {
+            "parameter": "Maize grain yield (Ludhiana, 1994-99)",
+            "values": [
+              2.4
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Under superimposed treatment S3 (100% N, 50% P, 100% K + Zn) from original T2 (100% NPK) (Table 2)"
+          },
+          {
+            "parameter": "Maize grain yield (Ludhiana, 1994-99)",
+            "values": [
+              2.59
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Under original treatment T3 150% NPK (Table 2)"
+          },
+          {
+            "parameter": "Maize grain yield (Ludhiana, 1994-99)",
+            "values": [
+              2.35
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Under superimposed treatment S2 (150% N, 50% P, 150% K) from original T3 (150% NPK) (Table 2)"
+          },
+          {
+            "parameter": "Maize grain yield (Ludhiana, 1994-99)",
+            "values": [
+              2.65
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Under superimposed treatment S3 (150% N, 50% P, 150% K + Zn) from original T3 (150% NPK) (Table 2)"
+          },
+          {
+            "parameter": "Wheat grain yield (Ludhiana, 1994-99)",
+            "values": [
+              3.19
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Under original treatment T1 50% NPK (Table 2)"
+          },
+          {
+            "parameter": "Wheat grain yield (Ludhiana, 1994-99)",
+            "values": [
+              4.74
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Under superimposed treatment S2 (100% N, 50% P, 50% K) from original T1 (50% NPK) (Table 2)"
+          },
+          {
+            "parameter": "Wheat grain yield (Ludhiana, 1994-99)",
+            "values": [
+              4.82
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Under superimposed treatment S3 (100% N, 50% P, 100% K + Zn) from original T1 (50% NPK) (Table 2)"
+          },
+          {
+            "parameter": "Wheat grain yield (Ludhiana, 1994-99)",
+            "values": [
+              4.74
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Under original treatment T2 100% NPK (Table 2)"
+          },
+          {
+            "parameter": "Wheat grain yield (Ludhiana, 1994-99)",
+            "values": [
+              4.85
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Under superimposed treatment S2 (100% N, 50% P, 100% K) from original T2 (100% NPK) (Table 2)"
+          },
+          {
+            "parameter": "Wheat grain yield (Ludhiana, 1994-99)",
+            "values": [
+              4.82
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Under superimposed treatment S3 (100% N, 50% P, 100% K + Zn) from original T2 (100% NPK) (Table 2)"
+          },
+          {
+            "parameter": "Wheat grain yield (Ludhiana, 1994-99)",
+            "values": [
+              4.68
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Under original treatment T3 150% NPK (Table 2)"
+          },
+          {
+            "parameter": "Wheat grain yield (Ludhiana, 1994-99)",
+            "values": [
+              4.69
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Under superimposed treatment S2 (150% N, 50% P, 150% K) from original T3 (150% NPK) (Table 2)"
+          },
+          {
+            "parameter": "Wheat grain yield (Ludhiana, 1994-99)",
+            "values": [
+              4.67
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Under superimposed treatment S3 (150% N, 50% P, 150% K + Zn) from original T3 (150% NPK) (Table 2)"
+          },
+          {
+            "parameter": "Rice grain yield (Bhubaneswar, 1994-97)",
+            "values": [
+              3.28
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Kharif rice, ST1-100% NPK + FYM (Table 3)"
+          },
+          {
+            "parameter": "Rice grain yield (Bhubaneswar, 1994-97)",
+            "values": [
+              3.2
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Rabi rice, ST1-100% NPK + FYM (Table 3)"
+          },
+          {
+            "parameter": "Rice grain yield (Bhubaneswar, 1994-97)",
+            "values": [
+              2.5
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Kharif rice, ST1-100% NPK + FYM (Table 3)"
+          },
+          {
+            "parameter": "Rice grain yield (Bhubaneswar, 1994-97)",
+            "values": [
+              2.98
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Rabi rice, ST1-100% NPK + FYM (Table 3)"
+          },
+          {
+            "parameter": "Rice grain yield (Bhubaneswar, 1994-97)",
+            "values": [
+              3.14
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Kharif rice, ST1-100% NPK + FYM (Table 3)"
+          },
+          {
+            "parameter": "Rice grain yield (Bhubaneswar, 1994-97)",
+            "values": [
+              2.96
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Rabi rice, ST1-100% NPK + FYM (Table 3)"
+          },
+          {
+            "parameter": "Rice grain yield (Bhubaneswar, 1994-97)",
+            "values": [
+              3.28
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Kharif rice, ST2-100% N + 50% P + 100% K + FYM (Table 3)"
+          },
+          {
+            "parameter": "Rice grain yield (Bhubaneswar, 1994-97)",
+            "values": [
+              3.14
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Rabi rice, ST2-100% N + 50% P + 100% K + FYM (Table 3)"
+          },
+          {
+            "parameter": "Rice grain yield (Bhubaneswar, 1994-97)",
+            "values": [
+              2.48
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Kharif rice, ST2-100% N + 50% P + 100% K + FYM (Table 3)"
+          },
+          {
+            "parameter": "Rice grain yield (Bhubaneswar, 1994-97)",
+            "values": [
+              3.09
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Rabi rice, ST2-100% N + 50% P + 100% K + FYM (Table 3)"
+          },
+          {
+            "parameter": "Rice grain yield (Bhubaneswar, 1994-97)",
+            "values": [
+              3.14
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Kharif rice, ST2-100% N + 50% P + 100% K + FYM (Table 3)"
+          },
+          {
+            "parameter": "Rice grain yield (Bhubaneswar, 1994-97)",
+            "values": [
+              2.94
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Rabi rice, ST2-100% N + 50% P + 100% K + FYM (Table 3)"
+          },
+          {
+            "parameter": "Rice grain yield (Bhubaneswar, 1994-97)",
+            "values": [
+              3.39
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Kharif rice, ST3-100% N + 50% P + 150% K + FYM (Table 3)"
+          },
+          {
+            "parameter": "Rice grain yield (Bhubaneswar, 1994-97)",
+            "values": [
+              3.17
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Rabi rice, ST3-100% N + 50% P + 150% K + FYM (Table 3)"
+          },
+          {
+            "parameter": "Rice grain yield (Bhubaneswar, 1994-97)",
+            "values": [
+              2.71
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Kharif rice, ST3-100% N + 50% P + 150% K + FYM (Table 3)"
+          },
+          {
+            "parameter": "Rice grain yield (Bhubaneswar, 1994-97)",
+            "values": [
+              3.2
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Rabi rice, ST3-100% N + 50% P + 150% K + FYM (Table 3)"
+          },
+          {
+            "parameter": "Rice grain yield (Bhubaneswar, 1994-97)",
+            "values": [
+              3.3
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Kharif rice, ST3-100% N + 50% P + 150% K + FYM (Table 3)"
+          },
+          {
+            "parameter": "Rice grain yield (Bhubaneswar, 1994-97)",
+            "values": [
+              3.12
+            ],
+            "units": "t/ha",
+            "statistical_measures": {},
+            "measurement_context": "Rabi rice, ST3-100% N + 50% P + 150% K + FYM (Table 3)"
+          },
+          {
+            "parameter": "Non-exchangeable K contribution to total K removal (general)",
+            "values": [
+              90,
+              80
+            ],
+            "units": "%",
+            "statistical_measures": {},
+            "measurement_context": "Above 90% in absence of applied K, decreased to about 80% with the use of K (Abstract)."
+          }
+        ],
+        "statistical_relationships": [
+          {
+            "relationship_type": "Correlation/Causation",
+            "variables": [
+              "Declining K response",
+              "Zn deficiency"
+            ],
+            "correlation_coefficient": null,
+            "regression_parameters": {},
+            "significance_level": "Implied",
+            "effect_size": "Declining trend in K response associated with emergence of Zn deficiency in maize (Ludhiana) and rice (Pantnagar) after ~10 years."
+          },
+          {
+            "relationship_type": "Treatment Effect",
+            "variables": [
+              "K application",
+              "Cumulative K release",
+              "Non-exchangeable K decline"
+            ],
+            "correlation_coefficient": null,
+            "regression_parameters": {},
+            "significance_level": "Significant",
+            "effect_size": "Cumulative K release was higher in K treated soils as compared to untreated ones, thereby causing a greater decline in non-exchangeable K reserves."
+          },
+          {
+            "relationship_type": "Treatment Effect",
+            "variables": [
+              "Fertilizer K application",
+              "Contribution of non-exchangeable K to uptake"
+            ],
+            "correlation_coefficient": null,
+            "regression_parameters": {},
+            "significance_level": "Significant",
+            "effect_size": "Contribution of non-exchangeable K towards total potassium removal was above 90% in the absence of applied K which decreased to about 80% with the use of K (Abstract)."
+          }
+        ],
+        "temporal_patterns": [
+          {
+            "parameter": "Crop yield response to K",
+            "trend_description": "Increased over time in Alfisols and Inceptisols, becoming more pronounced after several years of intensive cropping.",
+            "rate_of_change": null,
+            "units_per_time": null,
+            "trend_significance": "Significant",
+            "seasonal_component": "Not specified for this trend."
+          },
+          {
+            "parameter": "Yield responses to N and P fertilizer",
+            "trend_description": "Declined in all soils over the years, more pronounced in Alfisols (Bangalore).",
+            "rate_of_change": null,
+            "units_per_time": null,
+            "trend_significance": "Significant",
+            "seasonal_component": "Not specified for this trend."
+          },
+          {
+            "parameter": "Response to K fertilizer (maize at Ludhiana, rice at Pantnagar)",
+            "trend_description": "Declining trend after about 10 years of continuous cropping, associated with Zn deficiency.",
+            "rate_of_change": null,
+            "units_per_time": null,
+            "trend_significance": "Significant",
+            "seasonal_component": "Not specified for this trend."
+          },
+          {
+            "parameter": "Available K status (N alone plots)",
+            "trend_description": "Declined to less than critical levels.",
+            "rate_of_change": null,
+            "units_per_time": null,
+            "trend_significance": "Significant",
+            "seasonal_component": "Not specified for this trend."
+          },
+          {
+            "parameter": "Total productivity (maize-wheat system at Ludhiana and Palampur)",
+            "trend_description": "Increased over the years, mainly due to increased productivity of Wheat.",
+            "rate_of_change": null,
+            "units_per_time": null,
+            "trend_significance": "Significant",
+            "seasonal_component": "Not specified for this trend."
+          },
+          {
+            "parameter": "Wheat yield (soybean-wheat system at Ranchi)",
+            "trend_description": "Shown increasing trend over the years, due to improved K status in NP treatment over N.",
+            "rate_of_change": null,
+            "units_per_time": null,
+            "trend_significance": "Significant",
+            "seasonal_component": "Not specified for this trend."
+          },
+          {
+            "parameter": "K release from soils",
+            "trend_description": "Substantial reduction due to continuous cropping.",
+            "rate_of_change": null,
+            "units_per_time": null,
+            "trend_significance": "Significant",
+            "seasonal_component": "Not specified for this trend."
+          },
+          {
+            "parameter": "Non-exchangeable K release",
+            "trend_description": "Considerable decrease with 20 years of cropping (Fig. 6).",
+            "rate_of_change": null,
+            "units_per_time": null,
+            "trend_significance": "Significant",
+            "seasonal_component": "Not specified for this trend."
+          }
+        ],
+        "comparative_results": [
+          {
+            "comparison_type": "Soil type comparison",
+            "groups_compared": [
+              "Alfisols",
+              "Acidic Inceptisols",
+              "Alluvial soils",
+              "Vertisols",
+              "Mollisols"
+            ],
+            "difference_magnitude": null,
+            "units": null,
+            "statistical_significance": "Significant",
+            "practical_significance": "Crop responses to K applications were more pronounced in Alfisols and acidic Inceptisols compared to Vertisols and Mollisols. K response occurred even in K-rich alluvial soils after several years of intensive cropping."
+          },
+          {
+            "comparison_type": "Fertilizer treatment comparison",
+            "groups_compared": [
+              "NPK",
+              "NP"
+            ],
+            "difference_magnitude": null,
+            "units": null,
+            "statistical_significance": "Significant",
+            "practical_significance": "K uptake by crops at 100% optimal NPK dose was far in excess of fertilizer K applied, indicating continuous mining of soil K from non-exchangeable reserves."
+          },
+          {
+            "comparison_type": "K release rates by soil type",
+            "groups_compared": [
+              "Vertisols",
+              "Alfisols",
+              "Inceptisols"
+            ],
+            "difference_magnitude": null,
+            "units": "h-1",
+            "statistical_significance": "Significant",
+            "practical_significance": "Cumulative K release was higher in Vertisols, followed by Inceptisols and Alfisols. K release rate constants: Vertisols (4.03 h-1) > Alfisols (3.52 h-1) > Inceptisols (3.5 h-1)."
+          },
+          {
+            "comparison_type": "Fertilizer treatment effect on K release",
+            "groups_compared": [
+              "100% NPK + FYM",
+              "100% NP"
+            ],
+            "difference_magnitude": null,
+            "units": null,
+            "statistical_significance": "Significant",
+            "practical_significance": "100% NPK + FYM maintained higher K release, while 100% NP showed the lowest K release (implied by Fig. 5)."
+          },
+          {
+            "comparison_type": "K fraction dynamics",
+            "groups_compared": [
+              "Available K",
+              "Non-exchangeable K"
+            ],
+            "difference_magnitude": null,
+            "units": null,
+            "statistical_significance": "Significant",
+            "practical_significance": "While there were fewer changes in the available K form during the period of 20 years, change in non-exchangeable K was more conspicuous, indicating its sensitivity to crop K removal (Fig. 5)."
+          },
+          {
+            "comparison_type": "K contribution by treatment",
+            "groups_compared": [
+              "NP treatment",
+              "NPK or NPK + FYM treatments"
+            ],
+            "difference_magnitude": null,
+            "units": null,
+            "statistical_significance": "Significant",
+            "practical_significance": "Reductions in non-exchangeable K were of larger magnitude in the absence of K supply (NP treatment) compared to 100% NPK + FYM treatment (implied by Fig. 5)."
+          }
+        ]
+      },
+      "environmental_context": {
+        "geographic_details": {
+          "countries": [
+            "India"
+          ],
+          "regions": [
+            "Agroecological regions of India",
+            "Punjab"
+          ],
+          "coordinates": "Not provided",
+          "elevation": "Not provided",
+          "landscape_position": "Not provided"
+        },
+        "climate_characteristics": {
+          "climate_classification": "Varied across agroecological regions",
+          "temperature_patterns": {},
+          "precipitation_patterns": {},
+          "growing_season": "Kharif (monsoon) and Rabi (winter) seasons",
+          "environmental_stressors": []
+        },
+        "soil_properties": {
+          "soil_classification": "Alfisols, Inceptisols (Aeric Haplaquept), Alluvial soils (Typic Ustocrept), Mollisol, Vertisol (Typic Haplustert)",
+          "texture": "Heavy textured soils (e.g., alluvial illitic soils)",
+          "organic_matter": "FYM application implies importance of organic matter content.",
+          "chemical_properties": {
+            "pH": "Acidic Inceptisols mentioned.",
+            "Potassium": "Available K, non-exchangeable K, K bearing minerals (illite).",
+            "Zinc": "Zn deficiency observed in some locations."
+          },
+          "physical_properties": {},
+          "mineralogy": "Illite"
+        },
+        "land_use_context": {
+          "current_land_use": "Intensive cropping systems",
+          "cropping_systems": [
+            "Finger millet-maize",
+            "Maize-wheat",
+            "Rice-rice",
+            "Soybean-wheat",
+            "Maize-wheat-cowpea",
+            "Soybean-wheat-cowpea",
+            "Sorghum-wheat",
+            "Wheat-bajra (pearlmillet)"
+          ],
+          "management_intensity": "Intensive cropping",
+          "historical_context": "Long-term fertilizer experiments (up to 30 years) provide historical context of continuous cropping and fertilization.",
+          "sustainability_metrics": [
+            "Negative potassium balance",
+            "Soil K supply capacity",
+            "Crop yield stability",
+            "Soil health (implied by K status and nutrient balance)"
+          ]
+        }
+      },
+      "agricultural_systems": {
+        "crop_information": {
+          "crop_types": [
+            "Maize",
+            "Wheat",
+            "Rice",
+            "Finger millet",
+            "Soybean",
+            "Cowpea",
+            "Sorghum (fodder)",
+            "Pearlmillet (Bajra)"
+          ],
+          "varieties_cultivars": [],
+          "growth_stages_studied": [],
+          "yield_levels": {
+            "average_grain_yield_NP": "2.0-5.0 t/ha (Table 1)",
+            "average_grain_yield_NPK": "2.1-5.3 t/ha (Table 1)",
+            "maize_yield_Ludhiana": "1.58-2.65 t/ha (Table 2)",
+            "wheat_yield_Ludhiana": "3.19-4.85 t/ha (Table 2)",
+            "rice_yield_Bhubaneswar": "2.48-3.39 t/ha (Table 3)"
+          },
+          "production_metrics": {
+            "grain_yield": "t/ha",
+            "K_uptake": "kg/ha"
+          }
+        },
+        "management_practices": {
+          "fertilization": {
+            "types": [
+              "Nitrogen (N)",
+              "Phosphorus (P)",
+              "Potassium (K)",
+              "Farmyard Manure (FYM)",
+              "Zinc (Zn)"
+            ],
+            "rates": {
+              "NPK_doses": "50%, 100%, 150% of optimal NPK"
+            },
+            "timing": [],
+            "application_methods": []
+          },
+          "irrigation": {
+            "system_type": "Not specified",
+            "water_amounts": {},
+            "scheduling": "Not specified"
+          },
+          "other_practices": {
+            "tillage": "Not specified",
+            "rotation": [
+              "Maize-wheat",
+              "Rice-rice",
+              "Soybean-wheat",
+              "Finger millet-maize-cowpea",
+              "Soybean-wheat-cowpea",
+              "Sorghum-wheat",
+              "Wheat-bajra"
+            ],
+            "pest_management": "Not specified",
+            "organic_amendments": [
+              "Farmyard Manure (FYM)"
+            ]
+          }
+        },
+        "input_output_relationships": {
+          "input_rates": {},
+          "output_measurements": {},
+          "efficiency_metrics": {
+            "response_grain_per_kg_K_applied": "2.0-147.6 kg grain/kg K (Table 1)"
+          },
+          "balance_calculations": {
+            "potassium_balance": "Generally negative, as K additions seldom match K removals, leading to mining of soil K."
+          }
+        }
+      },
+      "temporal_dynamics": {
+        "study_timeline": {
+          "start_date": "Varies by center, earliest 1971",
+          "end_date": "Varies by center, latest 1999",
+          "data_collection_schedule": [
+            "Continuous monitoring over multiple years/crop cycles (e.g., 14, 20, 21, 27, 30 years)"
+          ],
+          "monitoring_frequency": "Not explicitly stated, but implied to be regular for long-term experiments."
+        },
+        "seasonal_variations": [
+          {
+            "parameter": "Rice grain yield",
+            "seasonal_pattern": "Kharif and Rabi season yields reported separately, showing variations between seasons (e.g., Bhubaneswar, Table 3).",
+            "peak_periods": [],
+            "minimum_periods": [],
+            "amplitude": "Not quantified"
+          }
+        ],
+        "long_term_trends": [
+          {
+            "parameter": "Crop response to K application",
+            "trend_direction": "Increasing",
+            "trend_magnitude": null,
+            "trend_units": null,
+            "projection_timeframe": "Years ahead",
+            "sustainability_implications": "K will be the most limiting factor affecting sustainability of intensive cropping systems in India."
+          },
+          {
+            "parameter": "Available K status in soil",
+            "trend_direction": "Declining",
+            "trend_magnitude": null,
+            "trend_units": null,
+            "projection_timeframe": null,
+            "sustainability_implications": "Declined to less than critical levels in plots without K application, indicating continuous mining of soil K."
+          },
+          {
+            "parameter": "Non-exchangeable K reserves",
+            "trend_direction": "Declining",
+            "trend_magnitude": null,
+            "trend_units": null,
+            "projection_timeframe": null,
+            "sustainability_implications": "Substantial reduction due to continuous cropping, especially in absence of K inputs, highlighting reliance on soil reserves."
+          },
+          {
+            "parameter": "Yield declines in Alfisols and Inceptisols (NP treatment)",
+            "trend_direction": "Declining",
+            "trend_magnitude": null,
+            "trend_units": null,
+            "projection_timeframe": null,
+            "sustainability_implications": "Occurred from the beginning, indicating inherent K deficiency and unsustainability without K inputs."
+          },
+          {
+            "parameter": "Total productivity in maize-wheat system (Ludhiana, Palampur)",
+            "trend_direction": "Increasing",
+            "trend_magnitude": null,
+            "trend_units": null,
+            "projection_timeframe": null,
+            "sustainability_implications": "Mainly due to increased wheat productivity, but optimal K levels not yet attained, suggesting continued need for K."
+          }
+        ],
+        "variability_characterization": {
+          "inter_annual_variability": "Yields and K dynamics show inter-annual variability, as seen in figures and tables spanning multiple years.",
+          "spatial_variability": "Significant variability in K response and soil K dynamics across different agroecological regions and soil types.",
+          "measurement_uncertainty": "Not explicitly quantified in the review text.",
+          "drivers_of_variability": [
+            "Soil type (mineralogy, K buffering capacity)",
+            "Cropping system",
+            "Fertilization regime (N, P, K, FYM, micronutrients)",
+            "Duration of intensive cropping",
+            "Emergence of other nutrient deficiencies (e.g., Zn)"
+          ]
+        }
+      },
+      "data_quality_assessment": {
+        "methodological_strengths": [
+          "Long-term nature of the experiments (up to 30 years) provides robust data on sustainability.",
+          "Multi-site approach across diverse agroecological regions and soil types enhances generalizability within India.",
+          "Comprehensive range of fertilizer treatments, including controls and integrated nutrient management (FYM).",
+          "Focus on both available and non-exchangeable K fractions, providing deeper insight into soil K dynamics."
+        ],
+        "methodological_limitations": [
+          "Lack of explicit statistical details (e.g., standard errors, p-values for all reported means/trends) in the review text.",
+          "Specific experimental design details (e.g., number of replicates, plot size) for each underlying LTFE are not provided in this review.",
+          "Absence of detailed climate data for each site in this review.",
+          "Specific crop varieties/cultivars are not mentioned in this review.",
+          "Analytical instrumentation and detailed quality control procedures are not specified in this review."
+        ],
+        "data_completeness": "High for the parameters discussed, but specific details from individual LTFEs are summarized rather than presented in full.",
+        "measurement_precision": {},
+        "representativeness": {
+          "spatial_representativeness": "High, covering major soil types and agroecological zones in India.",
+          "temporal_representativeness": "High, with studies spanning up to three decades, capturing long-term trends.",
+          "system_representativeness": "High, focusing on common intensive cropping systems in India."
+        },
+        "uncertainty_sources": [
+          "Inherent variability in field experiments.",
+          "Potential for other limiting nutrients masking K response (e.g., Zn deficiency).",
+          "Variability in soil properties and management practices across different centers."
+        ],
+        "validation_evidence": [
+          "Consistency of findings across multiple long-term experiments supports the conclusions.",
+          "References to previous studies (e.g., Swarup, Srinivasa Rao et al.) provide external validation for specific aspects."
+        ]
+      },
+      "literature_integration": {
+        "key_methodological_references": [
+          "Swarup, A. (1998). Emerging soil fertility management issues for sustainable crop production in irrigated systems.",
+          "Swarup, A., & Ganeshmurthy, A.N. (1998). Emerging nutrient deficiencies under intensive cropping systems and remedial measures for sustainable high productivity.",
+          "Srinivasa Rao, Ch. et al. (2001). Need for inclusion of non-exchangeable potassium as a measure in soil test calibration and potassium recommendations.",
+          "Srinivasa Rao, Ch. et al. (2000). Monitoring the changes in soil potassium under 20 years of rice-rice cropping on Tropaquept as measured by extraction procedures and electroultrafiltration (EUF).",
+          "Srinivasa Rao, Ch. et al. (1999). Kinetics of non-exchangeable potassium release from Topaquept as influenced by long-term cropping, fertilisation and manuring.",
+          "Brar, B.S., & Pasricha, N.S. (1998). Long-term studies on integrated use of organic and inorganic fertilisers in maize-wheat-cowpea cropping system on alluvial soils of Punjab.",
+          "Nand Ram (1998). Effect of continuous fertilizer use on soil fertility and productivity of a Mollisol.",
+          "Tembhare, B.R. et al. (1998). Effect of continuous cropping and fertilizer use on crop yields and fertility of a Typic Haplustert.",
+          "Rupa, T.R. et al. (2001). Potassium supplying power of a Typic Ustochrept profile using quantity/intensity technique in a long-term fertilized plot.",
+          "Sachdeva, C.B., & Khera, M.S. (1980). Utilization of potassium from non-exchangeable sources in soil under intensive wheat-bajra cropping system.",
+          "Krishna Kumari, M. et al. (1984). Optimum and high rate of fertilizer and farmyard manure application on wheat and sorghum (fodder) yield and dynamics of potassium in an alluvial soil.",
+          "Mehta, B.V. (1976). Potassium status of Gujarat soils.",
+          "Subba Rao, A. et al. (1993). Optimum and high rates of fertiliser and farmyard manure application on wheat and sorghum (fodder) yields and dynamics of potassium in alluvial soil.",
+          "Thomas, G.W. (1967). Soil Testing and Plant Analysis Publication No. 2."
+        ],
+        "comparative_studies": [
+          "The paper itself is a comparative analysis of results from multiple long-term fertilizer experiments across India."
+        ],
+        "theoretical_framework": "Potassium dynamics in soil (exchangeable, non-exchangeable K), K release kinetics, Quantity/Intensity (Q/I) relationships, nutrient balance, and their impact on crop nutrition and yield sustainability.",
+        "data_sources": [
+          "All India Coordinated Research Project (AICRP) on Long-Term Fertilizer Experiments (LTFEs) of ICAR."
+        ],
+        "benchmarking_data": [
+          "Yields and K responses from various centers and soil types serve as benchmarks for different agroecological conditions."
+        ],
+        "validation_studies": [
+          "The review integrates findings from numerous studies, implicitly validating consistent observations across different research teams and locations."
+        ]
+      },
+      "extraction_metadata": {
+        "extraction_completeness": 0.95,
+        "data_richness_assessment": "The paper is rich in comparative quantitative data from multiple long-term experiments, providing strong evidence for K dynamics and its impact on sustainability. However, specific experimental design details (e.g., replication, plot size) and detailed climate data are not provided in this review.",
+        "confidence_in_extraction": 0.95,
+        "potential_ambiguities": [
+          "Exact publication year of the review paper itself is not explicitly stated, inferred from reference dates.",
+          "Specific journal/publisher for the review paper is not explicitly stated.",
+          "The term 'optimal' for NPK doses is used without defining the specific rates in kg/ha."
+        ],
+        "extraction_limitations": [
+          "Inability to extract precise numerical values from graphical representations (Figs 1-7).",
+          "The provided text included an external 'Table Data' block that contained hallucinated tables (e.g., Table 0, 1, 2, 4, 5, 7, 10, 11) which are not part of the original paper's content. This led to significant data hallucination in the initial extraction.",
+          "Specific units for 'zero order X 10^-2' for K release rate constants are not explicitly defined in the text, though 'h-1' is mentioned for general release rates."
+        ],
+        "quality_flags": [
+          "Data_Hallucination_Corrected",
+          "Inferred_Publication_Details",
+          "Missing_Specific_Units_Context"
+        ],
+        "recommended_validation_checks": [
+          "Cross-reference with original publications cited for specific experimental details and full data sets.",
+          "Verify the exact publication details (journal, year) of this review paper if available."
+        ]
+      },
+      "enhancement_summary": {
+        "corrections_applied": [
+          "Removed all hallucinated quantitative data from non-existent tables (Table 4, 5, etc.).",
+          "Corrected soil type for Delhi and removed non-existent study site 'Gurgoan'.",
+          "Corrected general K contribution percentages to match abstract.",
+          "Removed unsupported FYM rate, region 'Gujarat', and mineralogy 'mica' and 'smectite' from study site descriptions.",
+          "Inserted 'null' values for missing data points in Table 1."
+        ],
+        "enhancements_added": [
+          "Improved granularity of quantitative data from Table 1 by linking each value to its specific crop and center context.",
+          "Added specific treatment details to the context of quantitative data from Table 2 and Table 3.",
+          "Moved K release rate constants to 'comparative_results' for better categorization.",
+          "Refined descriptions of study type, experimental design, and data sources for clarity.",
+          "Ensured all cropping systems mentioned are listed."
+        ],
+        "areas_enriched": [
+          "Quantitative Findings (Primary Measurements, Statistical Relationships, Comparative Results)",
+          "Research Methodology (Spatial Scope, Sample Design)",
+          "Environmental Context (Geographic Details, Soil Properties)",
+          "Agricultural Systems (Crop Information, Management Practices)",
+          "Extraction Metadata (Potential Ambiguities, Extraction Limitations, Quality Flags)"
+        ],
+        "enhancement_justification": "The enhancements significantly improve the accuracy, completeness, and scientific precision of the extraction by correcting critical data hallucinations, refining contextual details, and structuring quantitative data for better interpretability, ensuring fidelity to the provided source material."
+      }
+    },
+    "validation_quality": {
+      "validation_thoroughness": 0.98,
+      "confidence_in_validation": 0.98,
+      "validation_completeness": 0.98,
+      "critical_issues_identified": 1,
+      "enhancement_value": "high",
+      "validation_certification": "approved",
+      "validator_notes": "The primary challenge was the presence of hallucinated data in the initial extraction, stemming from an external 'Table Data' block not part of the original paper's content. Rigorous cross-referencing against the actual text and explicitly labeled tables (Table 1, 2, 3) was crucial for identifying and correcting these errors. The enhanced extraction now accurately reflects the provided source material.",
+      "recommended_next_steps": [
+        "If further detail is required, access the original research papers cited within this review to extract more granular experimental design details, full statistical results, and specific NPK rates.",
+        "Consider using advanced tools for graphical data extraction from figures if numerical trends from graphs are needed."
+      ]
+    },
+    "_usage_metadata": {
+      "timestamp": "2025-07-10T11:22:07.267371",
+      "stage_name": "unknown",
+      "paper_id": "unknown",
+      "prompt_length_chars": 79960,
+      "processing_time_seconds": 108.58,
+      "thinking_enabled": true,
+      "input_tokens": 22698,
+      "output_tokens": 20580,
+      "thinking_tokens": 0,
+      "input_cost_usd": 0.003405,
+      "output_cost_usd": 0.07203,
+      "thinking_cost_usd": 0.0,
+      "total_cost_usd": 0.075435
+    },
+    "success": true,
+    "stage": "1B",
+    "paper_id": "Impact of Long-Term Intensive Cropping on Soil Potassium and Sustainability of Crop Production",
+    "validation_timestamp": "2025-07-10T11:22:07.269727",
+    "temperature_used": 0.05,
+    "validated_stage": "1A"
+  }
+}

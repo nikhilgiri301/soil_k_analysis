@@ -1,0 +1,159 @@
+{
+  "paper_metadata": {
+    "title": "A global dataset for the production and usage of cereal residues in the period 1997–2021",
+    "authors": [
+      "Andrew Smerald",
+      "Jaber Rahimi",
+      "Clemens Scheer"
+    ],
+    "journal": "Scientific Data",
+    "publication_year": 2023,
+    "research_focus": "Global dataset for the production and usage of cereal residues and their management (livestock feed/bedding, burnt on field, other off-field purposes, left on field) to assess environmental impacts (GHG emissions, soil carbon stocks) and trade-offs.",
+    "soil_k_relevance": "The paper generally mentions 'better retention of nutrients in the soil' as a benefit of leaving crop residues on the field, but does not specifically study or report on soil potassium measurements, dynamics, or processes."
+  },
+  "research_context": {
+    "study_objectives": "To construct a global dataset showing crop residue management for cereals on a 0.5° global grid at an annual timescale for the period 1997–2021, estimating production and fractions used for burning, animal feed/bedding, other off-field purposes, and left on the field. This dataset aims to improve assessments of environmental impacts (GHG emissions, nutrient leaching) and evaluate trade-offs between management options.",
+    "soil_k_research_role": "Soil potassium was not a direct focus of this research. It is only implicitly related through the general concept of 'nutrient retention' as a benefit of leaving crop residues on the field.",
+    "geographic_setting": "Global, on a 0.5° resolution grid.",
+    "environmental_conditions": "Not explicitly detailed for soil K, but the study context is agricultural systems globally.",
+    "agricultural_context": "Cereal crop production and residue management (burning, livestock feed, other off-field uses, left on field).",
+    "study_design": "Construction of a global dataset using existing data sources (SPAM, FAOSTAT, GFED4s, FINNv2.5, GRPS 5, GLW 3) and multiple calculational methods (3 for residue production, 2 for burning, 3 for livestock feed) to create an ensemble of results and define uncertainty.",
+    "temporal_scope": "1997–2021, annual timescale.",
+    "spatial_scope": "0.5° global grid."
+  },
+  "quantitative_soil_k_data": {
+    "concentration_measurements": [],
+    "pool_characterizations": [],
+    "process_rates": [],
+    "balance_calculations": []
+  },
+  "temporal_patterns": {
+    "study_duration": "1997-2021 (25 years)",
+    "monitoring_frequency": "Annual timescale for residue management data; underlying datasets have monthly/yearly frequencies.",
+    "seasonal_observations": [],
+    "long_term_trends": [],
+    "event_responses": []
+  },
+  "spatial_variations": {
+    "within_site_variability": [],
+    "between_site_differences": [],
+    "scaling_considerations": []
+  },
+  "process_characterization": {
+    "cycling_processes": [],
+    "plant_soil_interactions": [],
+    "chemical_processes": []
+  },
+  "treatment_management_effects": {
+    "experimental_treatments": [],
+    "management_practices": [
+      {
+        "practice": "Leaving crop residues on the field",
+        "soil_k_effects": {
+          "general_effect": "Better retention of nutrients in the soil"
+        },
+        "implementation_details": "Fraction of residues left on the field is one of the four management categories studied.",
+        "temporal_effects": "Implied long-term benefit for nutrient retention.",
+        "spatial_effects": "Spatially explicit data on residue management is provided, implying spatially varying impacts on nutrient retention."
+      }
+    ],
+    "comparative_analysis": []
+  },
+  "methodological_details": {
+    "analytical_methods": [],
+    "sampling_design": {
+      "spatial_sampling": "Data aggregated to 0.5° global grid from finer resolution datasets (e.g., 5 arcmin, 0.25°).",
+      "temporal_sampling": "Annual data for 1997-2021, derived from datasets with monthly/yearly frequencies.",
+      "sample_processing": "Not applicable for direct soil K measurements; data processing involved aggregation and scaling of existing datasets.",
+      "storage_handling": "Not applicable for direct soil K measurements.",
+      "representativeness": "Global dataset aims for comprehensive representation of cereal residue management."
+    },
+    "data_quality": {
+      "precision_measures": [],
+      "accuracy_assessments": [],
+      "method_comparisons": [],
+      "uncertainty_sources": [
+        "Ensemble of 18 possible combinations of input data/methods used to define a measure of uncertainty for residue production and usage estimates."
+      ]
+    }
+  },
+  "environmental_context": {
+    "climate_conditions": {
+      "temperature": "Not specified in relation to soil K.",
+      "precipitation": "Not specified in relation to soil K.",
+      "seasonality": "Not specified in relation to soil K.",
+      "extremes": "Not specified in relation to soil K."
+    },
+    "soil_properties": {
+      "classification": "Not specified.",
+      "texture": "Not specified.",
+      "mineralogy": "Not specified.",
+      "organic_matter": "Mentioned that residues help maintain or enhance soil organic carbon (SOC) stocks, but no specific measurements or characterizations provided.",
+      "chemical_properties": {
+        "general_nutrient_retention": "Better retention of nutrients in the soil (general statement, not specific to K)."
+      },
+      "physical_properties": {
+        "drought_sensitivity": "Reduced sensitivity of plant growth to drought (as a benefit of residues).",
+        "erosion_rates": "Lower erosion rates (as a benefit of residues).",
+        "soil_aeration": "Better soil aeration (as a benefit of residues)."
+      }
+    },
+    "landscape_context": {
+      "topography": "Not specified.",
+      "drainage": "Not specified.",
+      "position": "Not specified.",
+      "land_use_history": "Implied by agricultural land use over the study period."
+    }
+  },
+  "research_integration": {
+    "relationship_to_other_measurements": "The dataset is intended to improve assessments of environmental impacts (e.g., GHG emissions, nutrient leaching) and evaluate trade-offs between residue management options. It is linked to soil carbon stocks (C and N source) and atmospheric pollutants (NH3, NO3-).",
+    "integration_with_plant_studies": "Crop residue production is estimated from grain production. Residues are linked to plant growth (e.g., drought sensitivity).",
+    "connection_to_broader_objectives": "Addresses knowledge gap in crop residue management to inform global issues like climate change and land loss, and to improve global crop modelling.",
+    "comparative_context": "Compares different methods for estimating residue production, burning, and livestock feed requirements.",
+    "literature_positioning": "First publicly-available global dataset for crop residue management, addressing a knowledge gap."
+  },
+  "data_limitations": {
+    "measurement_constraints": [
+      "Limiting total biomass burning in each grid cell to a maximum of 90% of cereal residue production to partially account for other residue types (e.g., sugar cane)."
+    ],
+    "temporal_limitations": [],
+    "spatial_limitations": [],
+    "methodological_constraints": [
+      "Reliance on existing datasets and empirical formulas for estimations.",
+      "Uncertainty due to multiple calculational schemes (18 combinations)."
+    ],
+    "interpretation_caveats": [
+      "Trade-offs between management options typically occur at a local level due to high transport costs, which the fine spatial scale (0.5°) aims to address."
+    ]
+  },
+  "extraction_assessment": {
+    "data_completeness": 0.0,
+    "quantitative_content": 0.0,
+    "temporal_coverage": 0.0,
+    "spatial_coverage": 0.0,
+    "methodological_detail": 0.0,
+    "extraction_confidence": 1.0,
+    "native_context_preservation": 1.0,
+    "extraction_notes": "The research paper focuses on cereal residue production and usage, its impact on soil carbon stocks, greenhouse gas emissions, and general nutrient retention. There is no specific mention, study, or reporting of soil potassium measurements, pools, dynamics, or processes. The only relevant mention is a general statement about 'better retention of nutrients in the soil' as a benefit of leaving crop residues on the field, which implicitly includes potassium but is not elaborated upon."
+  },
+  "_usage_metadata": {
+    "timestamp": "2025-07-07T20:08:57.080907",
+    "stage_name": "unknown",
+    "paper_id": "unknown",
+    "prompt_length_chars": 29931,
+    "processing_time_seconds": 20.44,
+    "thinking_enabled": true,
+    "input_tokens": 8374,
+    "output_tokens": 2067,
+    "thinking_tokens": 0,
+    "input_cost_usd": 0.001256,
+    "output_cost_usd": 0.007234,
+    "thinking_cost_usd": 0.0,
+    "total_cost_usd": 0.008491
+  },
+  "stage": "2A",
+  "paper_id": "A global dataset for the production and usage of cereal residues in the period 1997–2021.pdf",
+  "processing_timestamp": "2025-07-07T20:08:57.081953",
+  "temperature_used": 0.15,
+  "extraction_type": "soil_k_specific"
+}

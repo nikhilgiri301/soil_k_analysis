@@ -1,0 +1,124 @@
+{
+  "batch_processing": {
+    "description": "Configuration for batch-enabled stage-by-stage processing",
+    "gemini_api": {
+      "model": "gemini-2.5-flash",
+      "rate_limits": {
+        "requests_per_minute": 1000,
+        "tokens_per_minute": 1000000,
+        "concurrent_requests": 25
+      },
+      "batch_mode": {
+        "enabled": true,
+        "cost_savings": 0.5,
+        "max_file_size_gb": 2,
+        "typical_turnaround_hours": 24
+      },
+      "implicit_caching": {
+        "enabled": true,
+        "min_tokens_for_caching": 1024,
+        "cost_savings": 0.75,
+        "optimization_strategy": "common_prefix"
+      }
+    },
+    "processing_strategy": {
+      "approach": "stage_by_stage",
+      "stage_order": ["1a", "1b", "2a", "2b", "3a", "3b", "4a", "4b"],
+      "dependency_resolution": "automatic",
+      "error_handling": "continue_on_stage_failure",
+      "checkpoint_resume": true
+    },
+    "cost_optimization": {
+      "target_savings": 0.7,
+      "strategies": [
+        "batch_mode_50_percent_savings",
+        "implicit_caching_75_percent_savings",
+        "efficient_prompt_structure",
+        "optimal_concurrency_control"
+      ]
+    },
+    "output_management": {
+      "main_output_dir": "8_stage_outputs",
+      "stage_subdirectories": true,
+      "timestamp_format": "%Y%m%d_%H%M%S",
+      "cache_integration": true,
+      "dual_save": {
+        "stage_outputs": true,
+        "cache_system": true
+      }
+    },
+    "monitoring": {
+      "progress_tracking": true,
+      "cost_tracking": true,
+      "performance_metrics": true,
+      "error_reporting": true,
+      "stage_completion_rates": true
+    },
+    "testing": {
+      "test_mode_available": true,
+      "limit_papers_option": true,
+      "dry_run_mode": true,
+      "resume_from_stage": true
+    }
+  },
+  "prompt_optimization": {
+    "structure_for_caching": {
+      "common_instructions_first": true,
+      "paper_specific_content_last": true,
+      "consistent_formatting": true,
+      "minimal_variation": true
+    },
+    "generation_config": {
+      "extraction_stages": {
+        "temperature": 0.1,
+        "top_p": 0.8,
+        "top_k": 40,
+        "max_output_tokens": 8192
+      },
+      "validation_stages": {
+        "temperature": 0.1,
+        "top_p": 0.8,
+        "top_k": 40,
+        "max_output_tokens": 8192
+      },
+      "synthesis_stages": {
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "top_k": 50,
+        "max_output_tokens": 8192
+      }
+    }
+  },
+  "expected_outcomes": {
+    "processing_scope": {
+      "total_papers": 25,
+      "total_stages": 8,
+      "total_operations": 200
+    },
+    "cost_projections": {
+      "standard_cost_estimate": "$50-100",
+      "batch_savings": "$25-50",
+      "cache_savings": "$15-30",
+      "total_projected_cost": "$15-25"
+    },
+    "performance_targets": {
+      "completion_rate": 0.95,
+      "processing_time_per_stage": "5-15 minutes",
+      "total_pipeline_time": "1-2 hours",
+      "error_rate": "<5%"
+    }
+  },
+  "next_steps": {
+    "after_completion": [
+      "Verify all Stage 4B outputs are available",
+      "Execute Stage 4.5 chunk extraction script",
+      "Prepare for new Stages 5A-7B implementation",
+      "Validate cost savings achieved"
+    ],
+    "gold_standard_readiness": {
+      "stage_4b_outputs_complete": true,
+      "chunk_extraction_ready": true,
+      "new_architecture_prepared": true
+    }
+  }
+}

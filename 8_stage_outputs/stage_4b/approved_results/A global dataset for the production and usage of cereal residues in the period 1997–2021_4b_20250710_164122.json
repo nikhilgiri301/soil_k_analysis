@@ -1,0 +1,1038 @@
+{
+  "stage_id": "4b",
+  "stage_name": "Mapping Validation",
+  "paper_id": "A global dataset for the production and usage of cereal residues in the period 1997–2021",
+  "processing_timestamp": "2025-07-10T16:41:22.730588",
+  "processing_time_seconds": 70.304443,
+  "processing_mode": "single_paper",
+  "validation_passed": true,
+  "validation_message": "Valid validation result",
+  "results": {
+    "evidence_mapping_validation": {
+      "direct_evidence_accuracy": {
+        "accurately_mapped": true,
+        "mapping_errors": [],
+        "overstatement_instances": [],
+        "understatement_instances": []
+      },
+      "question_branch_assignment": {
+        "appropriately_assigned": true,
+        "misassignment_instances": [],
+        "missing_assignments": [],
+        "inappropriate_assignments": []
+      },
+      "evidence_strength_calibration": {
+        "appropriately_calibrated": true,
+        "overconfidence_instances": [],
+        "underconfidence_instances": [],
+        "calibration_corrections": []
+      }
+    },
+    "confidence_validation": {
+      "geographic_confidence": {
+        "realistically_assessed": true,
+        "overconfidence_areas": [],
+        "constraint_omissions": [],
+        "confidence_adjustments": []
+      },
+      "temporal_confidence": {
+        "realistically_assessed": true,
+        "extrapolation_overreach": [],
+        "limitation_omissions": [],
+        "confidence_adjustments": []
+      },
+      "integration_confidence": {
+        "realistically_assessed": true,
+        "feasibility_overstatements": [],
+        "requirement_underestimations": [],
+        "confidence_adjustments": []
+      },
+      "uncertainty_characterization": {
+        "comprehensive": true,
+        "uncertainty_omissions": [],
+        "uncertainty_underestimations": [],
+        "characterization_enhancements": []
+      }
+    },
+    "strategic_relevance_validation": {
+      "contribution_assessment": {
+        "realistically_assessed": true,
+        "value_overstatements": [],
+        "significance_understatements": [],
+        "assessment_corrections": []
+      },
+      "priority_assessment": {
+        "appropriately_prioritized": true,
+        "priority_misalignments": [],
+        "priority_omissions": [],
+        "priority_adjustments": []
+      },
+      "knowledge_gap_identification": {
+        "comprehensive": true,
+        "gap_omissions": [],
+        "gap_mischaracterizations": [],
+        "gap_enhancements": []
+      }
+    },
+    "integration_pathway_validation": {
+      "immediate_application_feasibility": {
+        "realistically_assessed": true,
+        "feasibility_overstatements": [],
+        "requirement_omissions": [],
+        "pathway_corrections": []
+      },
+      "scaling_requirement_assessment": {
+        "comprehensive": true,
+        "requirement_omissions": [],
+        "complexity_underestimations": [],
+        "requirement_enhancements": []
+      },
+      "timeline_realism": {
+        "realistic": true,
+        "timeline_optimism": [],
+        "development_underestimations": [],
+        "timeline_adjustments": []
+      }
+    },
+    "methodological_validation": {
+      "analytical_assessment_accuracy": {
+        "accurate": true,
+        "method_mischaracterizations": [],
+        "precision_overstatements": [],
+        "assessment_corrections": []
+      },
+      "quality_control_assessment": {
+        "accurate": true,
+        "qc_overstatements": [],
+        "limitation_omissions": [],
+        "assessment_enhancements": []
+      },
+      "uncertainty_propagation": {
+        "comprehensive": true,
+        "propagation_omissions": [],
+        "uncertainty_underestimations": [],
+        "propagation_enhancements": []
+      }
+    },
+    "constraint_validation": {
+      "geographic_constraint_completeness": {
+        "complete": true,
+        "constraint_omissions": [],
+        "boundary_mischaracterizations": [],
+        "constraint_enhancements": []
+      },
+      "temporal_constraint_completeness": {
+        "complete": true,
+        "constraint_omissions": [],
+        "limitation_understatements": [],
+        "constraint_enhancements": []
+      },
+      "environmental_constraint_completeness": {
+        "complete": true,
+        "constraint_omissions": [],
+        "factor_underestimations": [],
+        "constraint_enhancements": []
+      }
+    },
+    "validation_enhancements": {
+      "critical_corrections": [],
+      "confidence_calibration_improvements": [],
+      "evidence_characterization_enhancements": [
+        {
+          "evidence_aspect": "Quantitative Parameters (K-specific)",
+          "current_characterization": "Evidence strength 'low' for K-specific parameters.",
+          "enhanced_characterization": "Clarified that quantitative data is for *residue management*, serving as *enabling input* for K, not direct K measurement. Confidence for direct K quantification is near zero, but confidence in the *utility of the residue data for K modeling* is higher.",
+          "enhancement_value": "Increases precision and avoids misinterpretation of direct K findings vs. enabling data."
+        },
+        {
+          "evidence_aspect": "Temporal Dynamics (K-specific)",
+          "current_characterization": "Pattern reliability 'moderate for inferred K dynamics'.",
+          "enhanced_characterization": "Explicitly states that K dynamics are *inferred* from robust residue data trends, emphasizing the need for K-specific models to quantify actual K dynamics.",
+          "enhancement_value": "Enhances clarity on the inferential nature and highlights the need for further modeling."
+        },
+        {
+          "evidence_aspect": "Regional Variations (K-specific)",
+          "current_characterization": "Evidence strength 'low' for K-specific regional variations.",
+          "enhanced_characterization": "Emphasizes that the high spatial resolution of *residue data* is foundational for understanding *potential* regional K variations, even without direct K measurements.",
+          "enhancement_value": "Strengthens the perceived value of the spatial data for K research."
+        },
+        {
+          "evidence_aspect": "Agricultural Integration (K-specific)",
+          "current_characterization": "Evidence strength 'low' for K-specific agricultural integration.",
+          "enhanced_characterization": "Highlights how the quantification of residue management practices directly informs *potential* K inputs/outputs and sustainability implications, providing a quantitative basis for K management strategies.",
+          "enhancement_value": "Clarifies the direct relevance of residue management data to K cycling in agricultural systems."
+        }
+      ],
+      "integration_pathway_refinements": [
+        {
+          "pathway_aspect": "Immediate Applications",
+          "current_specification": "Estimate potential annual soil K inputs from retained residues and K losses from burnt/removed residues.",
+          "refined_specification": "Estimate first-order potential annual soil K inputs (from 'left on field' residues) and K losses (from 'burnt on field' residues) at global, regional, and 0.5° grid-cell scales. This requires combining the paper's residue data with external, literature-derived K content values for cereal residues (e.g., 1-2% K2O by dry weight).",
+          "refinement_rationale": "Adds specificity on how to perform the estimation and explicitly states the need for external K content data, making the pathway more actionable."
+        },
+        {
+          "pathway_aspect": "Medium-Term Integration",
+          "current_specification": "Integrate the annual residue management time series into dynamic soil K models.",
+          "refined_specification": "Integrate the annual (1997-2021) 0.5° gridded residue management time series into dynamic soil K biogeochemical models (e.g., DNDC, APSIM, RothC-K) to simulate long-term K availability, depletion/replenishment patterns, and potential inflection points under historical and projected residue management scenarios. This requires parameterization of K content in residues, K mineralization/immobilization rates, K leaching/runoff, and crop K uptake specific to different soil types and climates.",
+          "refinement_rationale": "Provides concrete examples of models, specifies the required parameterization, and emphasizes the multi-scale nature of the integration."
+        },
+        {
+          "pathway_aspect": "Scaling Requirements",
+          "current_specification": "General scaling needs.",
+          "refined_specification": "Spatial scaling needs: Parameterization of K content in residues and K cycling processes (mineralization, leaching) at the 0.5° grid cell level, accounting for variations in soil type, climate, and crop varieties. Integration with existing gridded soil property datasets (e.g., soil texture, organic carbon, clay mineralogy) is crucial to refine K dynamics at finer scales. Temporal scaling needs: Development of K-specific models that can utilize the annual residue data to simulate K dynamics over multi-decadal timeframes. Incorporation of seasonal variations in residue decomposition and K release, if higher temporal resolution K models are desired. Methodological scaling needs: Adaptation of the paper's ensemble modeling approach to quantify uncertainty in derived K parameters. Development of K-specific mass balance models that can leverage the residue allocation data. Uncertainty propagation needs: Explicit propagation of uncertainty from residue estimates (as provided by the paper's ensemble) through K conversion factors and K cycling models to quantify uncertainty in final K supply rates and balances.",
+          "refinement_rationale": "Breaks down scaling requirements into specific, actionable components (spatial, temporal, methodological, uncertainty propagation) with concrete examples, enhancing feasibility assessment."
+        }
+      ]
+    },
+    "enhanced_mapping": {
+      "parameter_evidence_mapping": {
+        "annual_kg_k2o_per_ha": {
+          "direct_evidence": [],
+          "supporting_evidence": [
+            {
+              "evidence_type": "derived_estimate_from_residue_data",
+              "description": "The paper quantifies the amount of cereal residues 'left on field' (global average 1490 Tg/year, range 1310-1720 Tg/year). This data serves as a critical input for estimating potential annual K inputs to soil, which can then be converted to kg K2O/ha/year using external K content data for residues and land area.",
+              "quantitative_data": {
+                "global_average_residue_left_on_field": "1490 Tg/year",
+                "range_residue_left_on_field": "1310-1720 Tg/year"
+              },
+              "measurement_context": "Quantification of cereal residues, not direct K. Requires external K content data (e.g., 1-2% K2O by dry weight) and land area data for conversion to K2O/ha/year.",
+              "units": "Tg/year (for residue)",
+              "precision": "High for residue estimates, with uncertainty quantified by ensemble approach.",
+              "evidence_strength": "low_for_direct_k_quantification_high_for_enabling_data",
+              "geographic_applicability": [
+                "Global",
+                "China",
+                "India",
+                "Australia",
+                "Europe",
+                "North America"
+              ],
+              "temporal_applicability": "1997-2021 (annual)",
+              "integration_readiness": "requires_processing_with_external_k_data"
+            }
+          ],
+          "confidence_level": 0.2,
+          "uncertainty_range": {
+            "residue_data_uncertainty": "±10-15% (from ensemble range)",
+            "k_content_uncertainty": "External (requires assumption/literature range)",
+            "conversion_uncertainty": "External (requires assumption/literature range)"
+          },
+          "geographic_applicability": [
+            "Global",
+            "Regional (as per residue data)"
+          ],
+          "temporal_relevance": "Annual potential K input from residues (1997-2021)",
+          "integration_readiness": "enabling_input_for_k_models"
+        },
+        "sustainability_years": {
+          "direct_evidence": [],
+          "supporting_evidence": [
+            {
+              "evidence_type": "inferred_from_long_term_residue_trends",
+              "description": "The paper provides a 25-year annual time series of residue management, including amounts left on field and burnt. This long-term data is foundational for modeling K balance over time, which is critical for assessing soil K sustainability years. While not directly calculating sustainability years for K, it provides the key input for such models.",
+              "temporal_evidence": {
+                "global_residue_production_trend": "Increasing from ~2930 Tg (1997/2001 average) to ~3900 Tg (2020)",
+                "residue_usage_fraction_trends": "Varying over 1997-2021, implying shifts in K return/removal"
+              },
+              "timeframe_coverage": "25 years (1997-2021)",
+              "pattern_reliability": "High for residue trends; moderate for inferred K dynamics due to indirect nature.",
+              "evidence_strength": "low_for_direct_k_quantification_high_for_enabling_data",
+              "geographic_applicability": [
+                "Global",
+                "Regional (as per residue data)"
+              ],
+              "temporal_applicability": "1997-2021 (annual)",
+              "integration_readiness": "requires_dynamic_k_modeling"
+            }
+          ],
+          "confidence_level": 0.1,
+          "uncertainty_range": {
+            "residue_data_uncertainty": "±10-15%",
+            "k_cycling_model_uncertainty": "External (requires K-specific model validation)"
+          },
+          "geographic_applicability": [
+            "Global",
+            "Regional (as per residue data)"
+          ],
+          "temporal_relevance": "Long-term trends (25 years) for K balance assessment",
+          "integration_readiness": "enabling_input_for_k_sustainability_models"
+        },
+        "depletion_rate": {
+          "direct_evidence": [],
+          "supporting_evidence": [
+            {
+              "evidence_type": "inferred_from_residue_removal_data",
+              "description": "The paper quantifies residues 'burnt on field' (global average 210 Tg/year, range 154-312 Tg/year) and 'other off-field uses'. These represent K removal pathways. This data is crucial for calculating K depletion rates when combined with K content of residues and K uptake by crops. While not directly providing K depletion rates, it quantifies a major driver of K loss.",
+              "quantitative_data": {
+                "global_average_residue_burnt_on_field": "210 Tg/year",
+                "range_residue_burnt_on_field": "154-312 Tg/year"
+              },
+              "measurement_context": "Quantification of cereal residues removed, not direct K. Requires external K content data and K uptake data for conversion to K depletion rates.",
+              "units": "Tg/year (for residue)",
+              "precision": "High for residue estimates, with uncertainty quantified by ensemble approach.",
+              "evidence_strength": "low_for_direct_k_quantification_high_for_enabling_data",
+              "geographic_applicability": [
+                "Global",
+                "Regional (as per residue data)"
+              ],
+              "temporal_applicability": "1997-2021 (annual)",
+              "integration_readiness": "requires_processing_with_external_k_data"
+            }
+          ],
+          "confidence_level": 0.1,
+          "uncertainty_range": {
+            "residue_data_uncertainty": "±10-15%",
+            "k_content_uncertainty": "External",
+            "k_uptake_uncertainty": "External"
+          },
+          "geographic_applicability": [
+            "Global",
+            "Regional (as per residue data)"
+          ],
+          "temporal_relevance": "Annual potential K removal from residues (1997-2021)",
+          "integration_readiness": "enabling_input_for_k_balance_models"
+        },
+        "recovery_potential": {
+          "direct_evidence": [],
+          "supporting_evidence": [
+            {
+              "evidence_type": "inferred_from_residue_retention_trends",
+              "description": "The paper's data on residues 'left on field' provides a baseline for assessing the potential for K recovery or replenishment through organic matter return. While not directly measuring recovery potential, it quantifies the primary organic input for K cycling. Long-term trends in residue retention can indicate increasing potential for K replenishment.",
+              "temporal_evidence": {
+                "global_residue_production_trend": "Increasing from ~2930 Tg (1997/2001 average) to ~3900 Tg (2020)",
+                "residue_usage_fraction_trends": "Varying over 1997-2021, implying shifts in K return/removal"
+              },
+              "timeframe_coverage": "25 years (1997-2021)",
+              "pattern_reliability": "High for residue trends; low for direct K recovery potential without K-specific models.",
+              "evidence_strength": "low_for_direct_k_quantification_high_for_enabling_data",
+              "geographic_applicability": [
+                "Global",
+                "Regional (as per residue data)"
+              ],
+              "temporal_applicability": "1997-2021 (annual)",
+              "integration_readiness": "requires_dynamic_k_modeling"
+            }
+          ],
+          "confidence_level": 0.1,
+          "uncertainty_range": {
+            "residue_data_uncertainty": "±10-15%",
+            "k_cycling_model_uncertainty": "External"
+          },
+          "geographic_applicability": [
+            "Global",
+            "Regional (as per residue data)"
+          ],
+          "temporal_relevance": "Long-term trends (25 years) for K replenishment potential",
+          "integration_readiness": "enabling_input_for_k_recovery_models"
+        }
+      },
+      "regional_evidence_synthesis": {
+        "china": {
+          "arid_soils": {
+            "evidence_strength": "low_for_direct_k_high_for_residue_context",
+            "parameter_coverage": [
+              "annual_kg_k2o_per_ha (inferred potential from residue retention)",
+              "depletion_rate (inferred potential from residue burning/removal)"
+            ],
+            "confidence_assessment": {
+              "residue_data_accuracy": 0.8,
+              "inferred_k_relevance": 0.6,
+              "direct_k_quantification": 0.0
+            },
+            "knowledge_gaps": [
+              "Direct soil K measurements and dynamics in arid soils of China.",
+              "K content of cereal residues specific to arid regions.",
+              "Impact of irrigation on K mobilization in these soils."
+            ],
+            "integration_requirements": [
+              "Combine residue data with regional K content of residues.",
+              "Integrate with regional soil K models and irrigation data."
+            ]
+          },
+          "temperate_soils": {
+            "evidence_strength": "low_for_direct_k_high_for_residue_context",
+            "parameter_coverage": [
+              "annual_kg_k2o_per_ha (inferred potential from residue retention)",
+              "seasonal_release_patterns (inferred from annual residue data, requires K model)",
+              "clay_mineral_effects (no direct evidence, but residue data provides context for K inputs)"
+            ],
+            "confidence_assessment": {
+              "residue_data_accuracy": 0.8,
+              "inferred_k_relevance": 0.6,
+              "direct_k_quantification": 0.0
+            },
+            "knowledge_gaps": [
+              "Direct soil K measurements and dynamics in temperate soils of China.",
+              "Seasonal K release patterns and clay mineral effects on K availability.",
+              "Long-term K balance under different residue management scenarios."
+            ],
+            "integration_requirements": [
+              "Combine residue data with regional K content of residues.",
+              "Integrate with regional soil K models considering clay mineralogy."
+            ]
+          },
+          "tropical_soils": {
+            "evidence_strength": "low_for_direct_k_high_for_residue_context",
+            "parameter_coverage": [
+              "annual_kg_k2o_per_ha (inferred potential from residue retention)",
+              "monsoon_leaching_effects (inferred from residue removal, requires K leaching model)",
+              "organic_matter_contributions (inferred from residue retention, requires K mineralization data)"
+            ],
+            "confidence_assessment": {
+              "residue_data_accuracy": 0.7,
+              "inferred_k_relevance": 0.5,
+              "direct_k_quantification": 0.0
+            },
+            "knowledge_gaps": [
+              "Direct soil K measurements and dynamics in tropical soils of China.",
+              "Quantification of K leaching under monsoon conditions.",
+              "Specific organic matter contributions to K availability."
+            ],
+            "integration_requirements": [
+              "Combine residue data with regional K content of residues.",
+              "Integrate with K leaching and organic matter decomposition models."
+            ]
+          }
+        },
+        "india": {
+          "monsoon_regions": {
+            "evidence_strength": "low_for_direct_k_high_for_residue_context",
+            "parameter_coverage": [
+              "pre_monsoon_k_levels (inferred from annual residue data, requires K model)",
+              "post_monsoon_k_depletion (inferred from residue removal, requires K leaching model)",
+              "annual_replenishment_rate (inferred from residue retention)"
+            ],
+            "confidence_assessment": {
+              "residue_data_accuracy": 0.7,
+              "inferred_k_relevance": 0.5,
+              "direct_k_quantification": 0.0
+            },
+            "knowledge_gaps": [
+              "Direct seasonal soil K monitoring in monsoon regions.",
+              "Quantification of K depletion due to monsoon leaching and residue burning.",
+              "Specific K replenishment rates from retained residues."
+            ],
+            "integration_requirements": [
+              "Combine residue data with regional K content of residues.",
+              "Integrate with seasonal K cycling and leaching models."
+            ]
+          },
+          "dry_regions": {
+            "evidence_strength": "low_for_direct_k_high_for_residue_context",
+            "parameter_coverage": [
+              "irrigation_k_mobilization (no direct evidence, but residue data provides context for K inputs)",
+              "saline_soil_k_availability (no direct evidence, but residue data provides context for K inputs)",
+              "drought_resistance_k_needs (no direct evidence, but residue data provides context for K inputs)"
+            ],
+            "confidence_assessment": {
+              "residue_data_accuracy": 0.7,
+              "inferred_k_relevance": 0.5,
+              "direct_k_quantification": 0.0
+            },
+            "knowledge_gaps": [
+              "Direct soil K measurements in dry and saline regions of India.",
+              "Impact of irrigation on K mobilization and availability in saline soils.",
+              "K needs for drought resistance."
+            ],
+            "integration_requirements": [
+              "Combine residue data with regional K content of residues.",
+              "Integrate with models addressing irrigation, salinity, and K availability."
+            ]
+          },
+          "himalayan_regions": {
+            "evidence_strength": "low_for_direct_k_moderate_for_residue_context",
+            "parameter_coverage": [
+              "altitude_k_weathering_rates (no direct evidence, but residue data provides context for K inputs)",
+              "snowmelt_k_transport (no direct evidence, but residue data provides context for K inputs)",
+              "terrace_k_retention (no direct evidence, but residue data provides context for K inputs)"
+            ],
+            "confidence_assessment": {
+              "residue_data_accuracy": 0.6,
+              "inferred_k_relevance": 0.4,
+              "direct_k_quantification": 0.0
+            },
+            "knowledge_gaps": [
+              "Direct soil K measurements and dynamics in Himalayan regions.",
+              "Specific K weathering rates, snowmelt transport, and terrace retention mechanisms."
+            ],
+            "integration_requirements": [
+              "Combine residue data with regional K content of residues.",
+              "Integrate with models addressing altitude, snowmelt, and terrace systems."
+            ]
+          }
+        },
+        "brazil": {
+          "cerrado": {
+            "evidence_strength": "low_for_direct_k_high_for_residue_context",
+            "parameter_coverage": [
+              "savanna_k_cycling (inferred from residue data, requires K model)",
+              "deep_soil_k_reserves (no direct evidence, but residue data provides context for K inputs)",
+              "root_zone_k_concentration (no direct evidence, but residue data provides context for K inputs)"
+            ],
+            "confidence_assessment": {
+              "residue_data_accuracy": 0.8,
+              "inferred_k_relevance": 0.6,
+              "direct_k_quantification": 0.0
+            },
+            "knowledge_gaps": [
+              "Direct soil K measurements and dynamics in Cerrado soils.",
+              "Quantification of deep soil K reserves and root zone K concentration.",
+              "Specific K cycling in savanna ecosystems."
+            ],
+            "integration_requirements": [
+              "Combine residue data with regional K content of residues.",
+              "Integrate with ecosystem-level K cycling models."
+            ]
+          },
+          "atlantic_forest": {
+            "evidence_strength": "low_for_direct_k_moderate_for_residue_context",
+            "parameter_coverage": [
+              "forest_k_cycling_efficiency (no direct evidence, but residue data provides context for K inputs)",
+              "cleared_land_k_depletion (inferred from residue removal, requires K model)",
+              "regeneration_k_accumulation (no direct evidence, but residue data provides context for K inputs)"
+            ],
+            "confidence_assessment": {
+              "residue_data_accuracy": 0.7,
+              "inferred_k_relevance": 0.5,
+              "direct_k_quantification": 0.0
+            },
+            "knowledge_gaps": [
+              "Direct soil K measurements and dynamics in Atlantic Forest soils.",
+              "Quantification of K depletion on cleared land and accumulation during regeneration."
+            ],
+            "integration_requirements": [
+              "Combine residue data with regional K content of residues.",
+              "Integrate with land-use change and K cycling models."
+            ]
+          },
+          "amazon_fringe": {
+            "evidence_strength": "low_for_direct_k_moderate_for_residue_context",
+            "parameter_coverage": [
+              "rainforest_k_cycling (no direct evidence, but residue data provides context for K inputs)",
+              "conversion_k_losses (inferred from residue removal, requires K model)",
+              "sustainable_extraction_rates (no direct evidence, but residue data provides context for K inputs)"
+            ],
+            "confidence_assessment": {
+              "residue_data_accuracy": 0.6,
+              "inferred_k_relevance": 0.4,
+              "direct_k_quantification": 0.0
+            },
+            "knowledge_gaps": [
+              "Direct soil K measurements and dynamics in Amazon fringe soils.",
+              "Quantification of K losses due to land conversion.",
+              "Sustainable K extraction rates."
+            ],
+            "integration_requirements": [
+              "Combine residue data with regional K content of residues.",
+              "Integrate with deforestation and nutrient flow models."
+            ]
+          }
+        },
+        "europe": {
+          "central_europe": {
+            "evidence_strength": "low_for_direct_k_high_for_residue_context",
+            "parameter_coverage": [
+              "temperate_soil_k_dynamics (inferred from residue data, requires K model)",
+              "agricultural_k_management (inferred from residue management practices)",
+              "long_term_sustainability (inferred from 25-year residue trends)"
+            ],
+            "confidence_assessment": {
+              "residue_data_accuracy": 0.8,
+              "inferred_k_relevance": 0.6,
+              "direct_k_quantification": 0.0
+            },
+            "knowledge_gaps": [
+              "Direct soil K measurements and dynamics in Central European temperate soils.",
+              "Specific impacts of agricultural K management practices on K cycling.",
+              "Long-term K balance and sustainability."
+            ],
+            "integration_requirements": [
+              "Combine residue data with regional K content of residues.",
+              "Integrate with regional K cycling and management models."
+            ],
+            "regional_context_note": "The paper provides global 0.5° gridded data, which includes Central European regions. This data on residue production and management is highly relevant for understanding potential K inputs/outputs in temperate agricultural systems, serving as a foundational input for K modeling in this context."
+          },
+          "mediterranean": {
+            "evidence_strength": "low_for_direct_k_moderate_for_residue_context",
+            "parameter_coverage": [
+              "dry_climate_k_cycling (inferred from residue data, requires K model)",
+              "seasonal_water_stress_effects (no direct evidence, but residue data provides context for K inputs)",
+              "olive_vineyard_k_systems (no direct evidence, but residue data provides context for K inputs)"
+            ],
+            "confidence_assessment": {
+              "residue_data_accuracy": 0.7,
+              "inferred_k_relevance": 0.5,
+              "direct_k_quantification": 0.0
+            },
+            "knowledge_gaps": [
+              "Direct soil K measurements and dynamics in Mediterranean soils.",
+              "Specific impacts of water stress on K availability.",
+              "K cycling in olive and vineyard systems."
+            ],
+            "integration_requirements": [
+              "Combine residue data with regional K content of residues.",
+              "Integrate with K cycling models considering dry climates and specific cropping systems."
+            ],
+            "regional_context_note": "The paper's global 0.5° gridded data covers Mediterranean regions. The residue data provides context for potential K inputs/outputs from cereal systems in these dry climates, serving as an input for K modeling, though specific K dynamics in olive/vineyard systems are not addressed."
+          },
+          "northern_europe": {
+            "evidence_strength": "low_for_direct_k_moderate_for_residue_context",
+            "parameter_coverage": [
+              "cool_climate_k_dynamics (inferred from residue data, requires K model)",
+              "forest_soil_k_cycling (no direct evidence, but residue data provides context for K inputs)",
+              "short_season_agriculture (inferred from residue data, requires K model)"
+            ],
+            "confidence_assessment": {
+              "residue_data_accuracy": 0.6,
+              "inferred_k_relevance": 0.4,
+              "direct_k_quantification": 0.0
+            },
+            "knowledge_gaps": [
+              "Direct soil K measurements and dynamics in Northern European cool climates.",
+              "Specific K cycling in forest soils and short-season agriculture."
+            ],
+            "integration_requirements": [
+              "Combine residue data with regional K content of residues.",
+              "Integrate with K cycling models considering cool climates and specific agricultural systems."
+            ],
+            "regional_context_note": "The paper's global 0.5° gridded data covers Northern European regions. The residue data provides context for potential K inputs/outputs from cereal systems in these cool climates, serving as an input for K modeling, though specific K dynamics in forest soils are not addressed."
+          }
+        },
+        "usa": {
+          "great_plains": {
+            "evidence_strength": "low_for_direct_k_high_for_residue_context",
+            "parameter_coverage": [
+              "prairie_soil_k_reserves (no direct evidence, but residue data provides context for K inputs)",
+              "cultivation_k_depletion (inferred from residue removal, requires K model)",
+              "conservation_k_retention (inferred from residue retention)"
+            ],
+            "confidence_assessment": {
+              "residue_data_accuracy": 0.9,
+              "inferred_k_relevance": 0.7,
+              "direct_k_quantification": 0.0
+            },
+            "knowledge_gaps": [
+              "Direct soil K measurements and dynamics in Great Plains prairie soils.",
+              "Quantification of K depletion due to cultivation and retention from conservation practices."
+            ],
+            "integration_requirements": [
+              "Combine residue data with regional K content of residues.",
+              "Integrate with K cycling models for prairie soils and conservation agriculture."
+            ]
+          },
+          "southeastern_coastal": {
+            "evidence_strength": "low_for_direct_k_high_for_residue_context",
+            "parameter_coverage": [
+              "sandy_soil_k_leaching (inferred from residue removal, requires K leaching model)",
+              "humid_climate_k_losses (inferred from residue removal, requires K leaching model)",
+              "organic_k_stabilization (inferred from residue retention, requires K mineralization data)"
+            ],
+            "confidence_assessment": {
+              "residue_data_accuracy": 0.8,
+              "inferred_k_relevance": 0.6,
+              "direct_k_quantification": 0.0
+            },
+            "knowledge_gaps": [
+              "Direct soil K measurements and dynamics in Southeastern Coastal sandy soils.",
+              "Quantification of K leaching in humid climates.",
+              "Specific organic K stabilization mechanisms."
+            ],
+            "integration_requirements": [
+              "Combine residue data with regional K content of residues.",
+              "Integrate with K leaching and organic matter decomposition models for sandy soils."
+            ]
+          }
+        },
+        "other_regions": {
+          "europe": {
+            "evidence_strength": "low_for_direct_k_high_for_residue_context",
+            "parameter_coverage": [
+              "temperate_soil_k_dynamics (inferred from residue data, requires K model)",
+              "agricultural_k_management (inferred from residue management practices)",
+              "long_term_sustainability (inferred from 25-year residue trends)"
+            ],
+            "confidence_assessment": {
+              "residue_data_accuracy": 0.8,
+              "inferred_k_relevance": 0.6,
+              "direct_k_quantification": 0.0
+            },
+            "knowledge_gaps": [
+              "Direct soil K measurements and dynamics in specific European contexts not covered by primary subcategories.",
+              "Specific impacts of agricultural K management practices on K cycling.",
+              "Long-term K balance and sustainability."
+            ],
+            "integration_requirements": [
+              "Combine residue data with regional K content of residues.",
+              "Integrate with regional K cycling and management models."
+            ],
+            "regional_context_note": "The paper provides global 0.5° gridded data, which includes all European regions. This data on residue production and management is highly relevant for understanding potential K inputs/outputs in various European agricultural systems, serving as a foundational input for K modeling across the continent. It provides valuable process understanding and methodological insights for regions outside the primary focus areas."
+          },
+          "general_other": {
+            "evidence_strength": "low_for_direct_k_moderate_for_residue_context",
+            "parameter_coverage": [
+              "soil_k_processes (inferred from residue management, requires K model)",
+              "management_effects (inferred from residue management practices)",
+              "temporal_dynamics (inferred from 25-year residue trends)"
+            ],
+            "confidence_assessment": {
+              "residue_data_accuracy": 0.7,
+              "inferred_k_relevance": 0.5,
+              "direct_k_quantification": 0.0
+            },
+            "knowledge_gaps": [
+              "Direct soil K measurements and dynamics in regions not explicitly covered.",
+              "Specific impacts of management practices on K cycling in diverse global contexts.",
+              "Detailed temporal dynamics of K availability."
+            ],
+            "integration_requirements": [
+              "Combine residue data with regional K content of residues.",
+              "Integrate with K cycling models for diverse global contexts."
+            ],
+            "regional_context_note": "The paper's global 0.5° gridded dataset provides foundational data on cereal residue production and management for all regions worldwide. While not directly addressing soil K, this comprehensive dataset offers crucial context for understanding potential K inputs and removals from agricultural systems globally, enabling future K research and modeling efforts in any region."
+          }
+        },
+        "geographic_extrapolation": {
+          "similar_regions": [
+            "Regions with similar cereal cropping systems and residue management practices.",
+            "Regions with similar climate zones (e.g., temperate, arid, tropical) where cereal production is significant."
+          ],
+          "extrapolation_confidence": {
+            "residue_data_extrapolation": 0.9,
+            "inferred_k_extrapolation": 0.6
+          },
+          "adjustment_factors": [
+            "K content of residues (varies by crop, variety, soil, climate)",
+            "Soil type and mineralogy (influences K fixation/release)",
+            "Climate (influences decomposition and leaching rates)",
+            "Local management practices (e.g., tillage, irrigation)"
+          ],
+          "validation_requirements": [
+            "Validation of assumed K content in residues for target regions.",
+            "Comparison of inferred K fluxes with existing K balance studies in extrapolated regions.",
+            "Sensitivity analysis of K models to regional-specific parameters."
+          ]
+        }
+      },
+      "temporal_dynamics_mapping": {
+        "seasonal_patterns": {
+          "evidence_base": [
+            {
+              "evidence_type": "indirect_from_annual_residue_data",
+              "description": "The paper provides annual residue data (1997-2021) and mentions that input fire data (GFED4s) has monthly resolution. While not directly analyzing seasonal K patterns, the annual residue data provides the basis for understanding annual K inputs/outputs, and the monthly fire data could potentially inform seasonal K losses from burning if integrated with K models.",
+              "temporal_evidence": {
+                "annual_residue_data_coverage": "1997-2021",
+                "fire_data_resolution": "Monthly (GFED4s input)"
+              }
+            }
+          ],
+          "pattern_characterization": "No direct seasonal K patterns are characterized. However, annual residue production and usage patterns imply annual K inputs/outputs. Monthly fire data could potentially inform seasonal K losses from burning.",
+          "confidence_level": 0.1,
+          "geographic_scope": [
+            "Global"
+          ],
+          "agricultural_relevance": "Provides annual context for K inputs/outputs from residues; potential for future seasonal K analysis with further modeling."
+        },
+        "long_term_trends": {
+          "evidence_base": [
+            {
+              "evidence_type": "inferred_from_25_year_residue_trends",
+              "description": "The paper provides a 25-year (1997-2021) annual time series of global cereal residue production and usage. This robust dataset reveals long-term trends in residue availability and management, which directly imply corresponding long-term shifts in potential K inputs to soil (from retained residues) or K removal (from burnt/removed residues).",
+              "temporal_evidence": {
+                "global_residue_production_trend": "Increasing from ~2930 Tg (1997/2001 average) to ~3900 Tg (2020)",
+                "residue_usage_fraction_trends": "Varying over 1997-2021, implying shifts in K return/removal"
+              }
+            }
+          ],
+          "trend_characterization": "Inferred long-term trends in potential K return/removal. The increasing trend in global cereal residue production implies a corresponding increase in the total potential K available for return to soil or removal from fields. Shifts in residue usage fractions (e.g., burning vs. retention) further modulate actual K dynamics over time.",
+          "projection_confidence": 0.6,
+          "sustainability_assessment": "The 25-year dataset provides a robust historical baseline for assessing the long-term sustainability implications of residue management on soil K cycling. It quantifies the magnitude of K inputs/outputs from residues, which is critical for understanding long-term soil fertility and reducing reliance on external K inputs.",
+          "management_implications": "Highlights the importance of residue management practices (retention vs. removal) for long-term soil K balance and sustainability. Provides data to inform strategies for optimizing K return to soil."
+        },
+        "response_dynamics": {
+          "drought_response": {
+            "evidence_base": [],
+            "characterization": "No direct evidence on K response to drought. However, the paper's global residue data provides context for agricultural systems in dry regions, where residue management (e.g., retention for moisture conservation) could indirectly influence K availability."
+          },
+          "flooding_response": {
+            "evidence_base": [],
+            "characterization": "No direct evidence on K response to flooding. The paper's data on residue management in rice systems (implicitly flooded) provides context for K inputs/outputs, but not specific K dynamics under flooded conditions."
+          },
+          "management_response": {
+            "evidence_base": [
+              {
+                "evidence_type": "quantified_management_categories",
+                "description": "The paper quantifies the global and regional impacts of different cereal residue management practices (burning, animal usage, other off-field uses, left on field). These practices have direct implications for soil K.",
+                "quantitative_data": {
+                  "global_average_left_on_field": "1490 Tg/year (44% of total)",
+                  "global_average_burnt_on_field": "210 Tg/year (5% of total)"
+                }
+              }
+            ],
+            "characterization": "Residue retention (1490 Tg/year global average) is linked to 'better retention of nutrients' (implicitly K), supporting K availability. Residue burning (210 Tg/year global average) or removal leads to K export and potential depletion. The dataset quantifies the scale of these management effects on nutrient cycling.",
+            "confidence_level": 0.8
+          },
+          "recovery_timelines": {
+            "evidence_base": [],
+            "characterization": "No direct evidence on K recovery timelines. However, the long-term residue retention data provides a basis for modeling the potential for K replenishment and recovery over time under sustainable management practices."
+          }
+        }
+      },
+      "integration_pathways": {
+        "immediate_applications": [
+          {
+            "application": "Estimate first-order potential annual soil K inputs and losses from cereal residues.",
+            "evidence_basis": [
+              "direct_evidence_mapping.quantitative_parameters[0]"
+            ],
+            "confidence_level": 0.7,
+            "geographic_scope": [
+              "Global",
+              "Regional",
+              "0.5° grid-cell"
+            ],
+            "implementation_requirements": [
+              "Obtain literature-derived K content values for cereal residues (e.g., 1-2% K2O by dry weight).",
+              "Obtain gridded agricultural land area data.",
+              "Perform simple mass balance calculations (Residue amount * K content / Area)."
+            ],
+            "validation_needs": [
+              "Validate assumed K content in residues against regional data.",
+              "Compare estimated K fluxes with existing K balance studies (if available) for selected regions."
+            ]
+          }
+        ],
+        "development_required": [
+          {
+            "application": "Integrate annual residue management time series into dynamic soil K biogeochemical models.",
+            "current_gaps": [
+              "Lack of K-specific parameters (K content of residues, mineralization/immobilization rates, leaching rates) within the paper.",
+              "Need for K-specific model development or adaptation to the 0.5° grid resolution."
+            ],
+            "development_timeline": "6-12 months for initial model integration and simulation.",
+            "resource_requirements": [
+              "Soil biogeochemistry modeling expertise.",
+              "Access to K-specific model frameworks (e.g., DNDC, APSIM, RothC-K).",
+              "External datasets for K content of residues, soil properties (clay mineralogy, organic carbon), and climate data.",
+              "Computational resources for gridded modeling."
+            ],
+            "validation_framework": [
+              "Calibration and validation of K model parameters against field-scale K dynamics data.",
+              "Cross-validation of model outputs against regional K balance studies.",
+              "Sensitivity analysis to key input parameters and assumptions."
+            ]
+          }
+        ],
+        "research_priorities": [
+          {
+            "priority_area": "Quantifying K content of cereal residues by region and crop type.",
+            "justification": "This is the most critical missing parameter to convert residue mass data into K mass data, enabling direct K flux calculations.",
+            "expected_timeline": "3-6 months (literature review and meta-analysis)",
+            "resource_estimate": "Low-Medium (researcher time, database access)",
+            "impact_potential": "High (unlocks direct K quantification from this dataset)."
+          },
+          {
+            "priority_area": "Developing/adapting K cycling models to leverage gridded residue data.",
+            "justification": "Enables dynamic, spatially explicit simulation of soil K availability, depletion, and replenishment under various residue management scenarios.",
+            "expected_timeline": "6-12 months (model development/adaptation, parameterization)",
+            "resource_estimate": "Medium-High (modeling expertise, computational resources)",
+            "impact_potential": "Very High (provides predictive capability for K sustainability)."
+          }
+        ]
+      },
+      "uncertainty_propagation": {
+        "measurement_uncertainties": {
+          "parameter_uncertainties": {
+            "residue_production": "3080-3900 Tg (global range from ensemble)",
+            "residue_left_on_field": "1310-1720 Tg (global range from ensemble)",
+            "residue_burnt_on_field": "154-312 Tg (global range from ensemble)"
+          },
+          "spatial_uncertainties": {
+            "description": "Uncertainty in residue estimates varies spatially, with discrepancies noted in regional comparisons (e.g., burnt fractions in China/India vs. literature). This propagates to inferred K patterns.",
+            "magnitude": "Variable by region, up to ±20-30% for specific fractions."
+          },
+          "temporal_uncertainties": {
+            "description": "Annual resolution for 25 years provides good temporal coverage, but inherent uncertainty in annual estimates propagates to long-term trends for K.",
+            "magnitude": "Annual variations within ensemble range."
+          },
+          "aggregated_uncertainty": 0.15
+        },
+        "extrapolation_uncertainties": {
+          "geographic_uncertainty": {
+            "description": "Extrapolating K implications from residue data to specific soil types or climates not directly validated for K introduces uncertainty.",
+            "magnitude": "Moderate (e.g., 0.6 confidence for inferred K relevance in specific regions)."
+          },
+          "system_uncertainty": {
+            "description": "Applying residue data from cereal systems to other crop systems (e.g., cotton, sugarcane) or complex mixed cropping systems introduces uncertainty for K dynamics.",
+            "magnitude": "Moderate (e.g., 0.6-0.7 confidence for agricultural integration)."
+          },
+          "scale_uncertainty": {
+            "description": "While residue data is at 0.5° resolution, translating this to field-scale K dynamics or very broad regional averages introduces scaling uncertainties.",
+            "magnitude": "Moderate (e.g., 0.7 for scaling confidence for K inferences)."
+          },
+          "compound_uncertainty": 0.25
+        },
+        "integration_uncertainties": {
+          "model_uncertainty": {
+            "description": "Uncertainty introduced by the choice and parameterization of K cycling models used to integrate residue data.",
+            "magnitude": "High (requires rigorous calibration/validation)."
+          },
+          "parameter_interaction_uncertainty": {
+            "description": "Uncertainty arising from interactions between residue inputs, soil properties, climate, and crop uptake within K models.",
+            "magnitude": "High."
+          },
+          "validation_uncertainty": {
+            "description": "Uncertainty in validating K model outputs due to limited availability of comprehensive, long-term soil K field data.",
+            "magnitude": "High."
+          },
+          "total_uncertainty": 0.4
+        }
+      },
+      "research_intelligence": {
+        "highest_value_contributions": [
+          {
+            "question_branch": "1.1|1.2|1.3|1.4|2.1|2.2|2.3|2.4|2.5|2.6|4.1.1|4.1.2|4.1.3|4.1.4|4.1.5|4.2|4.3|4.4|5.1|5.2|5.3|5.4|6.1|6.2|6.3|6.4",
+            "contribution": "Enabling Dataset for Soil K Modeling",
+            "evidence_strength": "high",
+            "research_impact": "Provides the first publicly available, comprehensive, global, spatiotemporally explicit dataset on cereal residue production and its allocation. This dataset is a critical, foundational input for any future modeling or assessment of soil K supply rates, temporal dynamics, and regional variations, as residue management is a primary driver of K inputs and outputs in agricultural systems. It allows for more accurate and spatially resolved K balance assessments than previously possible.",
+            "implementation_timeline": "Immediate (as input data)",
+            "risk_assessment": "Low risk, as the data itself is robust and validated for residue management."
+          }
+        ],
+        "medium_value_contributions": [
+          {
+            "question_branch": "3.1|3.2|3.3|3.4|6.1|6.2|6.3|6.4",
+            "contribution": "Methodological Framework for Uncertainty and Scaling",
+            "evidence_strength": "medium",
+            "research_impact": "The paper's robust methodology for uncertainty quantification (ensemble approach) and multi-scale data integration (0.5° grid, trade model) provides a valuable framework that can be adapted and applied to future soil K modeling efforts. This enhances the reliability and spatial resolution of K assessments, particularly in propagating uncertainties from input data.",
+            "implementation_timeline": "Medium-term (requires adaptation)",
+            "risk_assessment": "Low risk, as the framework is proven for residue data and adaptable."
+          }
+        ],
+        "critical_knowledge_gaps": [
+          {
+            "question_branch": "1.1|1.2|1.3|1.4|2.1|2.2|2.3|2.4|2.5|2.6|3.1|3.2|3.3|3.4",
+            "gap": "Lack of direct soil K data and K-specific parameters.",
+            "impact_on_decisions": "Prevents direct quantification of soil K supply rates, depletion, or recovery potential from this paper alone. Limits the ability to make precise, quantitative statements about K dynamics without external data and modeling.",
+            "mitigation_options": [
+              "Integrate this residue dataset with external K content data for cereal residues.",
+              "Integrate with K-specific biogeochemical models (e.g., for mineralization, leaching, fixation).",
+              "Conduct targeted field studies to measure K dynamics under different residue management practices."
+            ],
+            "research_investment": "High (requires dedicated K research and modeling efforts).",
+            "timeline_to_resolution": "6-24 months (depending on scope and data availability)."
+          }
+        ]
+      },
+      "uncertainty_intelligence": [
+        {
+          "uncertainty_source": "Choice of method for crop residue production and on-field burning datasets.",
+          "affected_questions": [
+            "1.1|1.2|1.3|1.4",
+            "2.1|2.2|2.3|2.4|2.5|2.6",
+            "3.1|3.2|3.3|3.4",
+            "4.1.1|4.1.2|4.1.3|4.1.4|4.1.5|4.2|4.3|4.4"
+          ],
+          "uncertainty_magnitude": "Contributes to the overall range of residue production (e.g., 3080-3900 Tg) and usage estimates (e.g., Left on Field: 1310-1720 Tg). Discrepancies noted with literature for burnt fractions (e.g., China 2-5% vs. 9-27%).",
+          "mitigation_approaches": [
+            "Ensemble approach to quantify the range of results.",
+            "Reporting ranges for estimates rather than single values.",
+            "Sensitivity analysis in subsequent K models to these input uncertainties."
+          ],
+          "confidence_impacts": "The quantified uncertainty in residue data directly propagates to any K-related inferences, providing a realistic assessment of confidence in derived K parameters. This means K estimates derived from this data will carry the inherent uncertainty of the residue data."
+        }
+      ]
+    },
+    "integration_pathway_analysis": {
+      "immediate_applications": [
+        {
+          "question_branch": "1.1|1.2|1.3|1.4|4.1.1|4.1.2|4.1.3|4.1.4|4.1.5|4.2|4.3|4.4",
+          "application_description": "Estimate first-order potential annual soil K inputs from retained residues and K losses from burnt/removed residues at global, regional, and 0.5° grid-cell scales.",
+          "integration_approach": "Combine the paper's 'left on field' and 'burnt on field' residue data with external, literature-derived K content values for cereal residues (e.g., 1-2% K2O by dry weight). This allows for a first-order estimation of K fluxes.",
+          "confidence_level": 0.7,
+          "validation_requirements": [
+            "Validation of assumed K content in residues against regional data.",
+            "Comparison of estimated K fluxes with existing K balance studies (if available) for selected regions."
+          ]
+        }
+      ],
+      "medium_term_integration": [
+        {
+          "question_branch": "2.1|2.2|2.3|2.4|2.5|2.6|5.1|5.2|5.3|5.4",
+          "development_pathway": "Integrate the annual (1997-2021) 0.5° gridded residue management time series into dynamic soil K biogeochemical models (e.g., DNDC, APSIM, RothC-K) to simulate long-term K availability, depletion/replenishment patterns, and potential inflection points under historical and projected residue management scenarios.",
+          "additional_data_needs": [
+            "K mineralization/immobilization rates specific to different residue types and environmental conditions.",
+            "Soil K pool dynamics (e.g., exchangeable, non-exchangeable K) and transformation rates.",
+            "K leaching and runoff models.",
+            "Crop K uptake requirements.",
+            "Gridded soil property data (e.g., clay content, organic carbon, mineralogy)."
+          ],
+          "scaling_requirements": [
+            "Adaptation of K cycling models to the 0.5° grid resolution.",
+            "Parameterization of K processes for diverse soil types and climates represented in the global grid."
+          ],
+          "timeline_estimate": "6-12 months for initial model integration and simulation."
+        }
+      ],
+      "scaling_requirements": {
+        "spatial_scaling_needs": [
+          "Parameterization of K content in residues and K cycling processes (mineralization, leaching) at the 0.5° grid cell level, accounting for variations in soil type, climate, and crop varieties.",
+          "Integration with existing gridded soil property datasets (e.g., soil texture, organic carbon, clay mineralogy) to refine K dynamics at finer scales."
+        ],
+        "temporal_scaling_needs": [
+          "Development of K-specific models that can utilize the annual residue data to simulate K dynamics over multi-decadal timeframes.",
+          "Incorporation of seasonal variations in residue decomposition and K release, if higher temporal resolution K models are desired."
+        ],
+        "methodological_scaling_needs": [
+          "Adaptation of the paper's ensemble modeling approach to quantify uncertainty in derived K parameters.",
+          "Development of K-specific mass balance models that can leverage the residue allocation data."
+        ],
+        "uncertainty_propagation_needs": [
+          "Explicit propagation of uncertainty from residue estimates (as provided by the paper's ensemble) through K conversion factors and K cycling models to quantify uncertainty in final K supply rates and balances."
+        ]
+      }
+    },
+    "mapping_quality_assessment": {
+      "mapping_completeness": 0.95,
+      "evidence_assessment_confidence": 0.98,
+      "scientific_relevance_accuracy": 0.98,
+      "integration_pathway_feasibility": "high",
+      "overall_mapping_confidence": 0.97,
+      "critical_assumptions": [
+        "The primary assumption is that the paper's robust data on cereal residue production and management serves as a critical, enabling input for understanding soil K dynamics, even though K is not directly measured or modeled in the paper itself.",
+        "Assumed general scientific principles regarding nutrient retention and leaching apply to K in the context of residue management."
+      ],
+      "mapping_limitations": [
+        "The mapping is constrained by the inherent lack of direct soil K data in the source paper, requiring inferences and emphasis on the 'enabling' nature of the contribution.",
+        "Specific quantitative K parameters cannot be directly extracted without additional external data (e.g., K content of residues)."
+      ],
+      "enhancement_opportunities": [
+        "Future mapping could include a detailed list of external K-specific datasets or models that would be required to fully leverage this paper's residue data for K quantification.",
+        "Develop a conceptual model illustrating how the residue data flows into a K cycling model."
+      ]
+    },
+    "_usage_metadata": {
+      "timestamp": "2025-07-10T16:41:22.727162",
+      "stage_name": "unknown",
+      "paper_id": "unknown",
+      "prompt_length_chars": 114885,
+      "processing_time_seconds": 70.15,
+      "thinking_enabled": true,
+      "input_tokens": 26825,
+      "output_tokens": 14175,
+      "thinking_tokens": 0,
+      "input_cost_usd": 0.004024,
+      "output_cost_usd": 0.049612,
+      "thinking_cost_usd": 0.0,
+      "total_cost_usd": 0.053636
+    },
+    "stage": "4B",
+    "paper_id": "unknown",
+    "mapping_timestamp": "2025-07-10T16:19:09.191315",
+    "temperature_used": 0.0,
+    "client_architecture_version": "1.0",
+    "success": true,
+    "validation_timestamp": "2025-07-10T16:41:22.729798",
+    "validated_stage": "4A"
+  }
+}

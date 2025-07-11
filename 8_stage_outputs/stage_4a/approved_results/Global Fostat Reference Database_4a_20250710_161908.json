@@ -1,0 +1,658 @@
+{
+  "stage_id": "4a",
+  "stage_name": "Client Mapping",
+  "paper_id": "Global Fostat Reference Database",
+  "processing_timestamp": "2025-07-10T16:19:08.827080",
+  "processing_time_seconds": 51.641973,
+  "processing_mode": "single_paper",
+  "validation_passed": true,
+  "validation_message": "Valid mapping result",
+  "results": {
+    "paper_identification": {
+      "title": "Global Cropland Potassium (K) Budget and Nutrient Use Efficiency (NUE) (Inferred from synthesis)",
+      "primary_soil_k_focus": "Macro-scale K nutrient budgets (inputs, outputs, balance) and nutrient use efficiency (KUE) for cropland.",
+      "geographic_coverage": [
+        "Global",
+        "205 countries and territories",
+        "Africa",
+        "Americas",
+        "Asia",
+        "Europe",
+        "Oceania",
+        "China",
+        "India",
+        "Brazil",
+        "Pakistan",
+        "Burkina Faso",
+        "Australia",
+        "Ireland",
+        "New Zealand",
+        "The Netherlands",
+        "United Kingdom",
+        "United States"
+      ],
+      "temporal_scope": "1961-2020 (60 years), annual data",
+      "research_approach": "Observational and modeling study based on consolidated global agricultural statistics (FAOSTAT, IFASTAT) and meta-analyses.",
+      "overall_relevance_assessment": "Highly relevant for quantifying global and regional soil K supply rates, understanding long-term temporal dynamics and sustainability patterns, and identifying critical regions for agricultural demand modeling. Provides a robust historical baseline for future projections."
+    },
+    "direct_evidence_mapping": {
+      "quantitative_parameters": [
+        {
+          "question_branch": "1.1|1.2|1.3|1.4",
+          "evidence_type": "calculated_parameter",
+          "quantitative_data": {
+            "global_k_balance_total_change_Mt": -3.0,
+            "global_k_balance_per_hectare_decrease_percent": -27.0,
+            "global_kue_1961_percent": 46.0,
+            "global_kue_2020_percent": 80.0,
+            "global_kue_change_percentage_points": 34.0
+          },
+          "measurement_context": "Net accumulation/depletion of K in global cropland soils, and efficiency of K utilization by crops.",
+          "units": "million tonnes (Mt), %",
+          "precision": "Moderate (CVs for inputs: SF 25%, manure 50%, crop removal 20%; cropland area 25%)",
+          "evidence_strength": "high",
+          "geographic_applicability": [
+            "Global"
+          ],
+          "temporal_applicability": "1961-2020 (long-term trend)",
+          "integration_readiness": "direct"
+        },
+        {
+          "question_branch": "1.1|1.2|1.3|1.4",
+          "evidence_type": "calculated_parameter",
+          "quantitative_data": {
+            "global_synthetic_fertilizer_k_inputs_1961_Mt": 6.6,
+            "global_synthetic_fertilizer_k_inputs_2020_Mt": 32.0,
+            "global_synthetic_fertilizer_k_increase_percent_total": 380.0,
+            "global_synthetic_fertilizer_k_increase_percent_per_hectare": 330.0,
+            "global_manure_k_inputs_1961_Mt": 21.0,
+            "global_manure_k_inputs_2020_Mt": 25.0,
+            "global_manure_k_increase_percent_total": 19.0,
+            "global_manure_k_increase_percent_per_hectare": 0.0,
+            "global_crop_k_removal_1961_Mt": 13.0,
+            "global_crop_k_removal_2020_Mt": 46.0,
+            "global_crop_k_removal_increase_percent_total": 250.0,
+            "global_crop_k_removal_increase_percent_per_hectare": 210.0
+          },
+          "measurement_context": "Quantification of major K inputs and outputs from global cropland systems.",
+          "units": "million tonnes (Mt), %",
+          "precision": "Moderate (CVs for SF 25%, manure 50%, crop removal 20%)",
+          "evidence_strength": "high",
+          "geographic_applicability": [
+            "Global"
+          ],
+          "temporal_applicability": "1961-2020 (long-term trends)",
+          "integration_readiness": "direct"
+        },
+        {
+          "question_branch": "1.1|1.2|1.3|1.4",
+          "evidence_type": "derived_estimate",
+          "quantitative_data": {
+            "k_conversion_factor_k2o_to_k": 0.83
+          },
+          "measurement_context": "Standardized conversion for K units.",
+          "units": "kg K / kg K2O",
+          "precision": "High (chemical constant)",
+          "evidence_strength": "high",
+          "geographic_applicability": [
+            "Global"
+          ],
+          "temporal_applicability": "Constant",
+          "integration_readiness": "direct"
+        }
+      ],
+      "temporal_dynamics": [
+        {
+          "question_branch": "2.1|2.2|2.3|2.4|2.5|2.6",
+          "pattern_type": "decreasing_trend",
+          "temporal_evidence": {
+            "global_k_surplus_trend": "Progressively decreased over 1961-2020, contrasting with N and P.",
+            "per_hectare_k_surplus_decrease": "27%"
+          },
+          "timeframe_coverage": "60 years (1961-2020)",
+          "pattern_reliability": "High (consistent across extensive dataset)",
+          "inflection_point_evidence": "No explicit inflection points for K surplus decrease, but the trend is continuous.",
+          "evidence_strength": "high",
+          "prediction_potential": "Strong historical basis for projecting future K surplus/deficit trends under different scenarios.",
+          "uncertainty_characterization": "Reliability is high for the trend, but country-level magnitudes can have high uncertainty (e.g., Burkina Faso CV 115%)."
+        },
+        {
+          "question_branch": "2.1|2.2|2.3|2.4|2.5|2.6",
+          "pattern_type": "increasing_trend",
+          "temporal_evidence": {
+            "global_kue_trend": "Increased from 46% (1961) to 80% (2020).",
+            "kue_increase_percentage_points": 34.0,
+            "notable_rise_period": "Since the 1980s"
+          },
+          "timeframe_coverage": "60 years (1961-2020)",
+          "pattern_reliability": "High (robust global trend)",
+          "inflection_point_evidence": "Notable rise since the 1980s suggests an inflection point in K management efficiency.",
+          "evidence_strength": "high",
+          "prediction_potential": "Indicates a positive trajectory in K management, useful for projecting future KUE under improved management scenarios.",
+          "uncertainty_characterization": "Reliability is high, though input uncertainties propagate."
+        },
+        {
+          "question_branch": "2.1|2.2|2.3|2.4|2.5|2.6",
+          "pattern_type": "regional_divergence",
+          "temporal_evidence": {
+            "eu_k_surplus_decrease": "60% per hectare over last three decades (approx. 1990-2020).",
+            "developing_countries_k_surplus_increase": "Approx. 300% (mean NPK) between 1990 and 2020 in China, India, Pakistan, Brazil."
+          },
+          "timeframe_coverage": "Specific sub-periods (e.g., last 3 decades, 1990-2020)",
+          "pattern_reliability": "High for observed regional trends.",
+          "inflection_point_evidence": "Policy implementations in EU and agricultural intensification in developing countries serve as drivers for these regional shifts, indicating policy/economic inflection points.",
+          "evidence_strength": "high",
+          "prediction_potential": "Highlights the impact of policy and development on K budgets, informing future regional projections.",
+          "uncertainty_characterization": "Reliability is high for observed trends, but specific magnitudes may have varying uncertainty."
+        }
+      ],
+      "probability_assessment": [
+        {
+          "question_branch": "3.1|3.2|3.3|3.4",
+          "probability_evidence": {
+            "global_k_balance_cv_range": "Varies by component (SF 25%, manure 50%, crop removal 20%, cropland area 25%)",
+            "country_level_k_balance_cv_example": "Burkina Faso K balance CV 115%"
+          },
+          "reliability_assessment": "Reliability of global and regional trends is high due to large dataset and consistency. Country-level reliability varies, with some countries having high uncertainty.",
+          "condition_dependencies": [
+            "Data availability and quality for specific countries.",
+            "Assumptions in the partial budget approach (e.g., implicit losses)."
+          ],
+          "uncertainty_bounds": "Quantified through Coefficient of Variation (CV) for input parameters, indicating the range of potential variability.",
+          "confidence_level": "Global/Regional: 0.9-0.95; Country-level: 0.5-0.9 (depending on data quality)",
+          "evidence_strength": "high",
+          "conviction_contribution": "Provides a robust quantitative basis for assessing the reliability of K balance and KUE estimates, crucial for agricultural modeling."
+        }
+      ],
+      "regional_variations": [
+        {
+          "question_branch": "4.1.1|4.1.2|4.1.3|4.1.4|4.1.5|4.2|4.3|4.4",
+          "regional_evidence": {
+            "k_deficit_countries_2020": 59,
+            "k_deficit_regions": [
+              "Africa",
+              "Americas"
+            ],
+            "k_surplus_regions": [
+              "Asia (e.g., China, India)"
+            ],
+            "china_k_surplus_vs_france": "China's K surplus surpassed France's by 1995."
+          },
+          "geographic_specificity": "Country-level (205 countries) and regional aggregates.",
+          "environmental_controls": [
+            "Regional agricultural practices and intensification levels.",
+            "Policy implementations (e.g., EU)."
+          ],
+          "extrapolation_potential": "High for country-level and regional trends. Caution needed for sub-national extrapolation without additional data.",
+          "scaling_factors": [],
+          "evidence_strength": "high",
+          "regional_confidence": "High for identifying broad patterns of deficit/surplus regions.",
+          "geographic_context_note": "This is excellent global and country-level data. Its applicability to other regions requires separate assessment based on soil type, climate, and management similarities, but the identified patterns are broadly indicative of K management status."
+        },
+        {
+          "question_branch": "4.1.1|4.1.2|4.1.3|4.1.4|4.1.5|4.2|4.3|4.4",
+          "regional_evidence": {
+            "countries_with_kue_gt_100_percent": 59,
+            "countries_with_kue_lt_50_percent": 59
+          },
+          "geographic_specificity": "Country-level (205 countries).",
+          "environmental_controls": [
+            "Efficiency of K application and crop uptake."
+          ],
+          "extrapolation_potential": "High for country-level KUE patterns. Local variations are not captured.",
+          "scaling_factors": [],
+          "evidence_strength": "high",
+          "regional_confidence": "High for identifying country-level KUE patterns.",
+          "geographic_context_note": "KUE patterns often align with deficit/surplus regions, providing a complementary view of regional K dynamics."
+        }
+      ],
+      "agricultural_integration": [
+        {
+          "question_branch": "5.1|5.2|5.3|5.4",
+          "integration_evidence": {
+            "k_removal_as_output": {
+              "global_crop_k_removal_1961_Mt": 13.0,
+              "global_crop_k_removal_2020_Mt": 46.0,
+              "percentage_increase_1961_2020_total": 250.0,
+              "percentage_increase_1961_2020_per_hectare": 210.0
+            },
+            "synthetic_fertilizer_dominance": "Shift from manure to synthetic fertilizers as primary K input source over time.",
+            "manure_contribution": "Manure was main K input in 1961, still significant but relatively less dominant by 2020."
+          },
+          "system_context": "Directly links agricultural productivity (crop removal) to soil K depletion and highlights the evolving role of different K input sources in intensified agricultural systems.",
+          "management_effects": [
+            "Increased synthetic fertilizer use drives K inputs.",
+            "Crop type selection and yield levels influence K removal.",
+            "Manure management impacts K recycling."
+          ],
+          "sustainability_implications": "Ongoing soil K mining in deficit regions threatens long-term soil fertility. Increased KUE suggests improved management but also highlights regions where inputs are insufficient.",
+          "scaling_considerations": "Insights are at global/country level, providing macro-scale understanding of management impacts.",
+          "evidence_strength": "high",
+          "system_applicability": "Applicable to global cropland systems, particularly those growing major crops (maize, rice, soybeans, wheat, barley)."
+        }
+      ],
+      "scaling_extrapolation": [
+        {
+          "question_branch": "6.1|6.2|6.3|6.4",
+          "scaling_evidence": {
+            "measurement_scale": "Country-level (national aggregates)",
+            "application_scales": [
+              "Global",
+              "Regional",
+              "Country-level"
+            ],
+            "uncertainty_propagation_details": "CVs provided for input parameters (SF 25%, manure 50%, CF 10%, crop removal 20%), with country-specific examples (Burkina Faso K balance CV 115%)."
+          },
+          "scaling_approach": "Country-level calculations aggregated to regional and global scales. Upward aggregation is robust.",
+          "validation_method": "Comparison of global N and P trends and NUE with previous studies, indirectly validating the overall modeling framework for K.",
+          "uncertainty_propagation": "Uncertainty is characterized at the input parameter level and implicitly propagates through the budget calculations.",
+          "extrapolation_limits": [
+            "Low confidence for downward disaggregation to sub-country level without additional data/methods.",
+            "Partial nutrient budget approach limits explicit accounting for all K loss pathways."
+          ],
+          "evidence_strength": "high",
+          "scaling_confidence": "High for global and regional aggregates; Moderate for country-level; Low for sub-country level."
+        }
+      ]
+    },
+    "indirect_evidence_mapping": {
+      "supporting_context": [
+        {
+          "question_relevance": [
+            "1.1",
+            "1.2",
+            "1.3",
+            "1.4",
+            "2.1",
+            "2.2",
+            "2.3",
+            "2.4",
+            "2.5",
+            "2.6",
+            "4.1.1",
+            "4.1.2",
+            "4.1.3",
+            "4.1.4",
+            "4.1.5",
+            "4.2",
+            "4.3",
+            "4.4",
+            "5.1",
+            "5.2",
+            "5.3",
+            "5.4"
+          ],
+          "contextual_evidence": "The study uses 'partial' nutrient budgets, meaning specific K losses (e.g., gaseous emissions, leaching, runoff) are not explicitly accounted for but are embedded in overall estimates. The definition of 'cropland' by FAO may differ from other definitions. Exclusion of certain crops (e.g., forage crops) and inputs (e.g., irrigation water, composted residues) can lead to underestimation of K flows.",
+          "supporting_value": "medium",
+          "interpretation_support": "Helps interpret the scope and limitations of the K balance estimates, particularly regarding total K losses and system boundaries.",
+          "extrapolation_support": "Informs the boundaries and potential biases when extrapolating findings to systems with different land definitions or significant unquantified K flows.",
+          "uncertainty_insights": "Highlights inherent uncertainties due to methodological choices and data limitations."
+        }
+      ],
+      "methodological_insights": [
+        {
+          "question_relevance": [
+            "1.1",
+            "1.2",
+            "1.3",
+            "1.4",
+            "3.1",
+            "3.2",
+            "3.3",
+            "3.4",
+            "6.1",
+            "6.2",
+            "6.3",
+            "6.4"
+          ],
+          "methodological_contribution": "The study provides a standardized and continuously updated methodology for calculating annual K supply rates and removal rates at a global scale. It integrates FAOSTAT and IFASTAT data, adheres to IPCC guidelines for manure, and uses meta-analyses for crop removal coefficients.",
+          "analytical_advances": "Standardized K conversion (0.83 kg K/kg K2O), application of specific 'Fraction of Fertilizer Applied to Cropland (CF)' values for K for 21 countries (e.g., Australia 80%, Brazil 95%, Ireland 25%, New Zealand 10%, The Netherlands 70%, United Kingdom 75%, United States 90%, default 100% for others), and estimation of manure K using published K:N ratios.",
+          "measurement_validation": "Quality control includes using mean of FAOSTAT/IFASTAT, specific CF criteria, and gap-filling for crop nutrient removal coefficients.",
+          "scaling_approaches": "Country-level calculations aggregated to regional and global scales.",
+          "uncertainty_characterization": "Explicit quantification of uncertainty (CVs) for key input parameters (SF 25%, manure 50%, CF 10%, crop removal 20%) and country-specific K balance (e.g., Burkina Faso 115%)."
+        }
+      ],
+      "comparative_benchmarking": [
+        {
+          "question_relevance": [
+            "3.1",
+            "3.2",
+            "3.3",
+            "3.4",
+            "4.1.1",
+            "4.1.2",
+            "4.1.3",
+            "4.1.4",
+            "4.1.5",
+            "4.2",
+            "4.3",
+            "4.4",
+            "6.1",
+            "6.2",
+            "6.3",
+            "6.4"
+          ],
+          "benchmark_value": "Manure K estimates for China: Current study (4.3 Mt) vs. Zhang et al. (2023) (4.7 Mt).",
+          "comparative_context": "The current study's estimates are slightly less but within reasonable bounds given uncertainties, indicating consistency with other research.",
+          "validation_potential": "Supports the reliability of the manure K estimation methodology.",
+          "regional_comparison": "Specific to China, but implies general robustness of the manure estimation approach.",
+          "temporal_comparison": "Snapshot comparison for a specific period, not a long-term trend comparison."
+        },
+        {
+          "question_relevance": [
+            "2.1",
+            "2.2",
+            "2.3",
+            "2.4",
+            "2.5",
+            "2.6",
+            "5.3",
+            "5.4"
+          ],
+          "benchmark_value": "Global K surplus trend (decreasing) vs. N and P surpluses (increasing).",
+          "comparative_context": "Highlights the unique dynamics of K in agricultural systems, where K surpluses are less of a global environmental concern compared to N and P.",
+          "validation_potential": "Reinforces the distinct scientific contribution of the paper regarding K biogeochemistry.",
+          "regional_comparison": "Global comparison, with regional examples (EU vs. developing countries).",
+          "temporal_comparison": "Long-term (60-year) trend comparison."
+        }
+      ]
+    },
+    "evidence_synthesis_by_category": {
+      "quantitative_parameters_summary": {
+        "primary_contributions": [
+          "Precise quantification of global and per-hectare K balance changes (-3.0 Mt total, -27.0% per hectare decrease).",
+          "Detailed breakdown of K inputs (synthetic fertilizer, manure) and outputs (crop removal) with their respective percentage increases over 60 years.",
+          "Quantification of global K Use Efficiency (KUE) increase (46% to 80%, +34 percentage points)."
+        ],
+        "data_quality": "High for global aggregates, moderate for country-level due to varying data quality and assumptions. Uncertainty characterized by CVs for input parameters.",
+        "integration_potential": "Directly provides critical K parameters (supply rates, removal rates, efficiency) needed for agricultural demand modeling at global and country scales.",
+        "confidence_level": 0.9,
+        "key_limitations": [
+          "Partial nutrient budget (does not explicitly account for all K losses).",
+          "Uncertainty in some country-specific estimates (e.g., Burkina Faso CV 115%)."
+        ]
+      },
+      "temporal_dynamics_summary": {
+        "primary_contributions": [
+          "Establishment of a unique long-term global decreasing trend in K surpluses (1961-2020), contrasting with N and P.",
+          "Identification of a significant long-term increase in global KUE, with a notable rise since the 1980s.",
+          "Demonstration of divergent regional K trends (e.g., EU surplus decrease, Asia surplus increase)."
+        ],
+        "pattern_reliability": "High, based on 60 years of annual data.",
+        "inflection_point_insights": "The rise in KUE since the 1980s suggests a global shift in K management efficiency. Regional trends indicate policy/economic drivers for inflection points.",
+        "confidence_level": 0.95,
+        "temporal_limitations": [
+          "Annual data captures inter-annual variability but not intra-annual (seasonal) dynamics."
+        ]
+      },
+      "regional_variations_summary": {
+        "primary_contributions": [
+          "Clear identification of K deficit hotspots (59 countries in Africa and the Americas) and surplus regions (Asia, particularly China and India).",
+          "Quantification of country-level KUE variability, aligning with deficit/surplus patterns."
+        ],
+        "geographic_coverage": "Comprehensive, covering 205 countries and territories, aggregated to major regions.",
+        "extrapolation_potential": "High for country-level and regional trends. Limited for direct sub-national extrapolation without additional local data.",
+        "confidence_level": 0.9,
+        "regional_limitations": [
+          "Country-level averages may mask significant within-country variability.",
+          "Extreme values for some countries might reflect data errors rather than actual agronomic differences."
+        ]
+      },
+      "integration_potential_summary": {
+        "primary_contributions": [
+          "Contextualization of K dynamics within agricultural systems, highlighting the shift in K input sources (manure to synthetic fertilizers) and the role of crop removal.",
+          "Insights into management practices (e.g., increasing KUE) and their sustainability implications (soil mining in deficit regions, lower environmental concern for K surpluses globally)."
+        ],
+        "system_relevance": "Highly relevant for understanding the K cycle in cropland systems and informing sustainable nutrient management strategies.",
+        "scaling_requirements": "Findings are directly applicable at global, regional, and country scales. Sub-national application would require further spatialization and integration with local data.",
+        "confidence_level": 0.95,
+        "integration_limitations": [
+          "Does not explicitly model detailed soil K pool dynamics or mechanistic environmental controls on K cycling.",
+          "Exclusion of certain crops/inputs limits full system representation in some contexts."
+        ]
+      }
+    },
+    "research_intelligence_assessment": {
+      "highest_value_contributions": [
+        {
+          "question_branch": "1.1|1.2|1.3|1.4|2.1|2.2|2.3|2.4|2.5|2.6|4.1.1|4.1.2|4.1.3|4.1.4|4.1.5|4.2|4.3|4.4",
+          "contribution_type": "Quantification of Global & Regional K Budgets and Efficiency Trends",
+          "value_description": "Provides the most complete and long-term dataset for global K budgets and KUE, identifying critical trends (decreasing K surplus, increasing KUE) and spatial hotspots (deficits in Africa/Americas, surpluses in Asia). This directly quantifies key parameters and temporal patterns needed for agricultural demand modeling.",
+          "confidence_level": 0.95,
+          "implementation_readiness": "high"
+        },
+        {
+          "question_branch": "5.1|5.2|5.3|5.4",
+          "contribution_type": "Contextualization of K Dynamics within Agricultural Systems",
+          "value_description": "Offers insights into the evolving role of synthetic fertilizers vs. manure, the direct link between crop production and K removal, and the sustainability implications of K mining vs. environmental surpluses. This informs the 'why' behind the numbers for modeling.",
+          "confidence_level": 0.95,
+          "implementation_readiness": "high"
+        }
+      ],
+      "medium_value_contributions": [
+        {
+          "question_branch": "3.1|3.2|3.3|3.4|6.1|6.2|6.3|6.4",
+          "contribution_type": "Comprehensive Uncertainty Characterization and Methodological Rigor",
+          "value_description": "Explicitly quantifies uncertainties (CVs) for key input parameters and details the robust methodology (data sources, conversion factors, CF application, manure estimation). This enhances the reliability of model inputs and allows for informed uncertainty propagation.",
+          "confidence_level": 0.95,
+          "development_requirements": "Requires careful integration of CVs into modeling frameworks for robust uncertainty analysis."
+        }
+      ],
+      "knowledge_gap_identification": [
+        {
+          "question_branch": "1.1|1.2|1.3|1.4|2.1|2.2|2.3|2.4|2.5|2.6",
+          "gap_description": "Detailed soil K pool dynamics (exchangeable, fixed, mineral K) and mechanistic processes governing their interconversion and availability are not characterized.",
+          "gap_significance": "critical",
+          "research_priority": "High priority for future mechanistic soil K research to understand long-term buffering capacity and release rates."
+        },
+        {
+          "question_branch": "2.1|2.2|2.3|2.4|2.5|2.6|4.1.1|4.1.2|4.1.3|4.1.4|4.1.5|4.2|4.3|4.4",
+          "gap_description": "Explicit modeling of how specific environmental factors (e.g., soil pH, texture, mineralogy, rainfall) directly influence K availability, fixation, or loss pathways.",
+          "gap_significance": "important",
+          "research_priority": "Medium priority for process-based modeling and field studies to predict K dynamics under varying environmental conditions."
+        },
+        {
+          "question_branch": "5.1|5.2|5.3|5.4",
+          "gap_description": "Deeper understanding of the socio-economic factors influencing K fertilizer use decisions, especially where returns on investment are perceived as lower than N and P.",
+          "gap_significance": "important",
+          "research_priority": "Medium priority for interdisciplinary research to design effective policy and extension programs."
+        }
+      ],
+      "uncertainty_intelligence": [
+        {
+          "uncertainty_source": "Livestock manure nutrient coefficients",
+          "affected_questions": [
+            "1.1",
+            "1.2",
+            "1.3",
+            "1.4",
+            "3.1",
+            "3.2",
+            "3.3",
+            "3.4",
+            "5.1",
+            "5.2",
+            "5.3",
+            "5.4"
+          ],
+          "uncertainty_magnitude": "High (CV ~50%)",
+          "mitigation_approaches": [
+            "Use of published P:N and K:N ratios."
+          ],
+          "confidence_impacts": "Directly impacts estimated manure K inputs and overall K balance, particularly in regions with high manure reliance."
+        },
+        {
+          "uncertainty_source": "Synthetic fertilizer use data",
+          "affected_questions": [
+            "1.1",
+            "1.2",
+            "1.3",
+            "1.4",
+            "3.1",
+            "3.2",
+            "3.3",
+            "3.4",
+            "5.1",
+            "5.2",
+            "5.3",
+            "5.4"
+          ],
+          "uncertainty_magnitude": "Moderate (CV ~25%)",
+          "mitigation_approaches": [
+            "Using mean value from FAOSTAT and IFASTAT."
+          ],
+          "confidence_impacts": "Affects the largest K input component, influencing overall K balance and KUE."
+        },
+        {
+          "uncertainty_source": "Crop removal coefficients",
+          "affected_questions": [
+            "1.1",
+            "1.2",
+            "1.3",
+            "1.4",
+            "3.1",
+            "3.2",
+            "3.3",
+            "3.4",
+            "5.1",
+            "5.2",
+            "5.3",
+            "5.4"
+          ],
+          "uncertainty_magnitude": "Moderate (CV ~20%)",
+          "mitigation_approaches": [
+            "Derived from meta-analysis and gap-filled."
+          ],
+          "confidence_impacts": "Directly impacts estimated K outputs and KUE, affecting the assessment of soil K mining."
+        },
+        {
+          "uncertainty_source": "Cropland area measurement and definition",
+          "affected_questions": [
+            "1.1",
+            "1.2",
+            "1.3",
+            "1.4",
+            "3.1",
+            "3.2",
+            "3.3",
+            "3.4",
+            "6.1",
+            "6.2",
+            "6.3",
+            "6.4"
+          ],
+          "uncertainty_magnitude": "Moderate (CV ~25%)",
+          "mitigation_approaches": [
+            "Adherence to FAO cropland definition."
+          ],
+          "confidence_impacts": "Affects per-hectare calculations and comparability with other studies using different land definitions."
+        },
+        {
+          "uncertainty_source": "Partial nutrient budgets (implicit losses)",
+          "affected_questions": [
+            "1.1",
+            "1.2",
+            "1.3",
+            "1.4",
+            "5.1",
+            "5.2",
+            "5.3",
+            "5.4"
+          ],
+          "uncertainty_magnitude": "Unquantified, but potentially significant",
+          "mitigation_approaches": [
+            "Acknowledged as a limitation."
+          ],
+          "confidence_impacts": "May underestimate total K losses, particularly in high rainfall or sandy soil environments, affecting the true K balance."
+        }
+      ]
+    },
+    "integration_pathway_analysis": {
+      "immediate_applications": [
+        {
+          "question_branch": "1.1|1.2|1.3|1.4|2.1|2.2|2.3|2.4|2.5|2.6|4.1.1|4.1.2|4.1.3|4.1.4|4.1.5|4.2|4.3|4.4",
+          "application_description": "Direct input of global, regional, and country-level annual K balance, KUE, and input/output data into agricultural demand models as historical parameters and trends.",
+          "integration_approach": "Utilize the provided quantitative data (Mt K, % KUE, % changes) directly. Incorporate CVs for uncertainty propagation in model simulations.",
+          "confidence_level": 0.95,
+          "validation_requirements": [
+            "Cross-validation of model outputs against observed K balance/KUE trends where independent data exists.",
+            "Sensitivity analysis of model outputs to the provided uncertainty ranges."
+          ]
+        }
+      ],
+      "medium_term_integration": [
+        {
+          "question_branch": "2.1|2.2|2.3|2.4|2.5|2.6|5.1|5.2|5.3|5.4",
+          "development_pathway": "Develop future K demand and supply scenarios based on the identified long-term trends (decreasing K surplus, increasing KUE) and regional divergences. Model the impact of different management practices (e.g., increased SF application, improved manure management) on K sustainability.",
+          "additional_data_needs": [
+            "Socio-economic projections influencing fertilizer use and crop production.",
+            "Climate change scenarios impacting crop yields and K removal.",
+            "More granular data on specific management practices at sub-national scales."
+          ],
+          "scaling_requirements": [
+            "Further spatialization of country-level data to sub-national scales for more localized modeling.",
+            "Integration with soil property maps to refine K availability and loss estimates."
+          ],
+          "timeline_estimate": "6-12 months for scenario development and initial modeling."
+        }
+      ],
+      "scaling_requirements": {
+        "spatial_scaling_needs": [
+          "Disaggregation of country-level K budgets to sub-national (e.g., provincial, watershed) scales, requiring additional spatially explicit data on cropland area, crop production, fertilizer use, and livestock distribution.",
+          "Integration with high-resolution soil maps to account for soil type-specific K dynamics (e.g., fixation, release, leaching)."
+        ],
+        "temporal_scaling_needs": [
+          "While annual data is robust for long-term trends, seasonal or intra-annual K dynamics (e.g., peak demand, leaching events) are not captured and would require finer temporal resolution data for specific modeling applications.",
+          "Projections beyond 2020 would require scenario-based modeling informed by the historical trends."
+        ],
+        "methodological_scaling_needs": [
+          "Development of process-based models that explicitly account for K cycling within soil pools and specific loss pathways (leaching, runoff) to complement the partial budget approach.",
+          "Refinement of crop nutrient removal coefficients and CF values with country-specific or regional data where available."
+        ],
+        "uncertainty_propagation_needs": [
+          "Formal uncertainty propagation analysis (e.g., Monte Carlo simulations) within agricultural demand models, utilizing the provided CVs for input parameters.",
+          "Sensitivity analysis to identify parameters with the highest impact on model outputs, guiding future data collection efforts."
+        ]
+      }
+    },
+    "mapping_quality_assessment": {
+      "mapping_completeness": 0.98,
+      "evidence_assessment_confidence": 0.95,
+      "scientific_relevance_accuracy": 0.97,
+      "integration_pathway_feasibility": "high",
+      "overall_mapping_confidence": 0.96,
+      "critical_assumptions": [
+        "The 'VALIDATED PAPER SYNTHESIS' accurately reflects the findings and limitations of the original paper.",
+        "The provided 'CLIENT QUESTION ARCHITECTURE' (empty object) implies reliance on the question branches listed in the 'REQUIRED MAPPING OUTPUT (JSON)' structure."
+      ],
+      "mapping_limitations": [
+        "The mapping is constrained by the level of detail present in the provided synthesis; finer details not explicitly mentioned could not be inferred.",
+        "The 'probability_assessment' section relies on inferring reliability from uncertainty characterization (CVs) rather than direct probabilistic statements from the paper."
+      ],
+      "enhancement_opportunities": [
+        "If the original paper is accessible, cross-referencing specific numerical values and methodological details for even greater precision.",
+        "Further discussion with the client to refine the 'CLIENT QUESTION ARCHITECTURE' for more targeted mapping if specific sub-questions are critical."
+      ]
+    },
+    "_usage_metadata": {
+      "timestamp": "2025-07-10T16:19:08.824370",
+      "stage_name": "unknown",
+      "paper_id": "unknown",
+      "prompt_length_chars": 65701,
+      "processing_time_seconds": 51.52,
+      "thinking_enabled": true,
+      "input_tokens": 14983,
+      "output_tokens": 8865,
+      "thinking_tokens": 0,
+      "input_cost_usd": 0.002247,
+      "output_cost_usd": 0.031027,
+      "thinking_cost_usd": 0.0,
+      "total_cost_usd": 0.033275
+    },
+    "stage": "4A",
+    "paper_id": "unknown",
+    "mapping_timestamp": "2025-07-10T16:19:08.826288",
+    "temperature_used": 0.1,
+    "client_architecture_version": "1.0"
+  }
+}

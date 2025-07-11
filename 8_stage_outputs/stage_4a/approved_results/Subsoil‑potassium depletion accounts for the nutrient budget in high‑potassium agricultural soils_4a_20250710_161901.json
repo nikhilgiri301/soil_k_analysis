@@ -1,0 +1,474 @@
+{
+  "stage_id": "4a",
+  "stage_name": "Client Mapping",
+  "paper_id": "Subsoil‑potassium depletion accounts for the nutrient budget in high‑potassium agricultural soils",
+  "processing_timestamp": "2025-07-10T16:19:01.876456",
+  "processing_time_seconds": 44.669441,
+  "processing_mode": "single_paper",
+  "validation_passed": true,
+  "validation_message": "Valid mapping result",
+  "results": {
+    "paper_identification": {
+      "title": "Long-term soil potassium dynamics in high-K agricultural Mollisols under intensive grain cropping",
+      "primary_soil_k_focus": "Long-term K depletion, K pool dynamics (exchangeable and slowly-exchangeable), subsoil K importance, and K budget impacts in intensive grain cropping systems.",
+      "geographic_coverage": [
+        "Central Pampas, Argentina",
+        "East-Central Argentina"
+      ],
+      "temporal_scope": "9 years (2000-2009) of experimental data, with implications for longer historical cropping periods.",
+      "research_approach": "Long-term, multi-site, on-farm experimental design with mixed-effect modeling, comparing agricultural plots to pristine baselines, and analyzing both exchangeable and slowly-exchangeable K pools across soil profiles.",
+      "overall_relevance_assessment": "Highly relevant for understanding K sustainability in high-K agricultural soils globally, particularly those transitioning from K-rich to K-deficient states under continuous cropping without K fertilization. Provides critical data for K budget modeling and management strategy development."
+    },
+    "direct_evidence_mapping": {
+      "quantitative_parameters": [
+        {
+          "question_branch": "1.1",
+          "evidence_type": "calculated_parameter",
+          "quantitative_data": {
+            "annual_k_removal_NPS_range": "29 to 62 kg K ha-1 year-1",
+            "cumulative_k_removal_control_range": "258 to 421 kg K ha-1",
+            "cumulative_k_removal_NPS_range": "467 to 556 kg K ha-1"
+          },
+          "measurement_context": "Estimated from crop grain yield and assumed constant grain K concentrations for 2003-2009. NPS treatment refers to N, P, S fertilization without K.",
+          "units": "kg K ha-1 year-1, kg K ha-1",
+          "precision": "Indicated by standard errors from ANOVA for cumulative K budget, but subject to uncertainty from assumed constant grain K content.",
+          "evidence_strength": "high",
+          "geographic_applicability": [
+            "Pampean Mollisols, Argentina"
+          ],
+          "temporal_applicability": "Cumulative over 9 years (2000-2009), annual rates derived from this period.",
+          "integration_readiness": "direct"
+        },
+        {
+          "question_branch": "1.2",
+          "evidence_type": "direct_measurement",
+          "quantitative_data": {
+            "NH4_OAc_K_depletion_0_100cm_range": "55-83%",
+            "NaBPh4_K_depletion_0_100cm_range": "74-95%"
+          },
+          "measurement_context": "Depletion relative to adjacent pristine (uncultivated) soils, measured in 2009 after 9 years of experiment and varying historical cropping durations.",
+          "units": "% depletion",
+          "precision": "High reliability due to direct measurement and comparison to pristine baseline.",
+          "evidence_strength": "high",
+          "geographic_applicability": [
+            "Pampean Mollisols, Argentina"
+          ],
+          "temporal_applicability": "Reflects long-term agricultural impact up to 2009.",
+          "integration_readiness": "direct"
+        },
+        {
+          "question_branch": "1.3",
+          "evidence_type": "direct_measurement",
+          "quantitative_data": {
+            "NaBPh4_K_to_NH4_OAc_K_ratio_average": "2.1 times larger",
+            "NaBPh4_K_to_NH4_OAc_K_ratio_range": "1.2x-6.2x"
+          },
+          "measurement_context": "Direct comparison of measured NaBPh4-K and NH4-OAc-K contents across sites and depths in 2009.",
+          "units": "ratio",
+          "precision": "Reliable, indicating the significant contribution of the slowly-exchangeable pool.",
+          "evidence_strength": "high",
+          "geographic_applicability": [
+            "Pampean Mollisols, Argentina"
+          ],
+          "temporal_applicability": "Snapshot in 2009.",
+          "integration_readiness": "direct"
+        }
+      ],
+      "temporal_dynamics": [
+        {
+          "question_branch": "2.1",
+          "pattern_type": "Long-term K depletion trend",
+          "temporal_evidence": {
+            "pattern_description": "Over 9 years, and longer considering historical cropping, soil K pools (NH4-OAc-K and NaBPh4-K) have been progressively depleted, especially in the subsoil (20-100 cm). This depletion is continuous due to negative K budgets.",
+            "study_timeline_context": "Observed from 2000 to 2009, with soil sampling in 2000, 2004 (topsoil), and 2009 (full profile). K budgets were estimated annually."
+          },
+          "timeframe_coverage": "Medium-term (9 years) with implications for longer historical periods.",
+          "pattern_reliability": "High reliability due to long-term data, consistent negative K budgets, and significant statistical differences between agricultural and pristine conditions.",
+          "inflection_point_evidence": "The observed continuous depletion and negative K budgets strongly imply an approaching inflection point where K deficiency will become limiting. The paper states 'K responsiveness will be expected in the near future'.",
+          "evidence_strength": "high",
+          "prediction_potential": "Suggests that without K fertilization, depletion will continue, leading to K deficiency in the near future, even in high-K soils. Provides a baseline for future projections of K fertilizer needs.",
+          "uncertainty_characterization": "Uncertainty in the exact timing of K deficiency onset, influenced by site-specific soil properties, future yields, and climate variability."
+        },
+        {
+          "question_branch": "2.2",
+          "pattern_type": "Site-specific topsoil K trends",
+          "temporal_evidence": {
+            "pattern_description": "Topsoil NH4-OAc-K (0-20 cm) showed significant reductions only at sites with longer agricultural history (Balducchi and La Hansa) from 2000 to 2009. Sites with shorter history (San Alfredo and La Blanca) showed no significant changes in topsoil K.",
+            "study_timeline_context": "Comparison of 2000 and 2009 topsoil K levels."
+          },
+          "timeframe_coverage": "Medium-term (9 years).",
+          "pattern_reliability": "Reliable, supported by statistical significance (p < 0.05) for the observed reductions.",
+          "inflection_point_evidence": "Highlights that topsoil K tests may not be sensitive enough for short-medium term depletion in high-K soils, especially those with shorter cropping histories or strong root K uplift, implying that topsoil K may not be the first indicator of an inflection point.",
+          "evidence_strength": "high",
+          "prediction_potential": "Informs that topsoil K may not be a reliable early warning indicator for K depletion in all high-K soil contexts.",
+          "uncertainty_characterization": "None explicitly stated for this pattern, but the masking effect of root K uplift introduces complexity."
+        }
+      ],
+      "probability_assessment": [
+        {
+          "question_branch": "3.1",
+          "probability_evidence": {
+            "depletion_likelihood": "High probability of continued K depletion under current management (no K fertilization) due to consistent negative K budgets and observed significant reductions in K pools.",
+            "responsiveness_likelihood": "High probability of K responsiveness in the 'near future' for these soils, based on observed depletion rates and cumulative K removal."
+          },
+          "reliability_assessment": "High reliability based on 9 years of consistent experimental data, statistical significance of observed depletions, and comparison to pristine baselines.",
+          "condition_dependencies": [
+            "Continuation of intensive grain cropping.",
+            "Absence of K fertilization.",
+            "Maintenance of high yield levels (which exacerbate K removal)."
+          ],
+          "uncertainty_bounds": "Exact timing of K deficiency onset is uncertain (e.g., 10-20 years timeframe is implied as 'near future').",
+          "confidence_level": 0.9,
+          "evidence_strength": "high",
+          "conviction_contribution": "Provides strong conviction that K depletion is a significant and ongoing issue in these systems, making future K deficiency highly probable."
+        }
+      ],
+      "regional_variations": [
+        {
+          "question_branch": "other_regions.general_other",
+          "regional_evidence": {
+            "geographic_location": "Central Pampas, Argentina (Balducchi, San Alfredo, La Blanca, La Hansa sites).",
+            "soil_type_influence": "Hapludolls (Balducchi, La Blanca) showed higher NH4-OAc-K depletion rates (averaging 63% and 37%) exacerbated towards the subsoil (60-100 cm). Argiudolls (San Alfredo, La Hansa) showed lower reductions (averaging 25% and 27%) mainly towards the topsoil.",
+            "vertical_depletion_consistency": "Both NH4-OAc-K and NaBPh4-K showed significant depletion throughout the soil profile (0-100 cm) under agriculture, with depletion being more pronounced in the subsoil (20-100 cm) across all four sites."
+          },
+          "geographic_specificity": "Highly specific to agricultural Mollisols in the Central Pampas of Argentina, characterized by predominantly illite clay mineralogy and temperate climate.",
+          "environmental_controls": [
+            "Soil texture (clay and silt content)",
+            "Mineralogy (illite)",
+            "Pristine K levels",
+            "Agricultural history (duration of cropping)"
+          ],
+          "extrapolation_potential": "Medium to other temperate regions with high-K soils and intensive grain cropping, provided soil mineralogy (illite) and texture are similar. Low to highly weathered soils or soils with different dominant clay mineralogy.",
+          "scaling_factors": [
+            "Soil type (Hapludolls vs. Argiudolls)",
+            "Depth of soil profile",
+            "Initial K levels"
+          ],
+          "evidence_strength": "high",
+          "regional_confidence": "High for Pampean Mollisols; Medium for other regions with similar soil/climate characteristics.",
+          "geographic_context_note": "This is excellent data for the Pampean region of Argentina. Its applicability to other regions (e.g., China, India, Brazil, Europe, USA) requires separate assessment based on soil type, climate, and management similarities. The process understanding (e.g., subsoil K depletion, role of slowly-exchangeable K) has broader applicability than the specific quantitative values."
+        }
+      ],
+      "agricultural_integration": [
+        {
+          "question_branch": "5.1",
+          "integration_evidence": {
+            "k_budget_impact": "Continuous negative K budgets, driven by high yields and negligible K fertilization, lead to significant soil K depletion.",
+            "subsoil_importance": "Critical role of subsoil K in sustaining high yields in the absence of K fertilization, as crops extract K from deeper layers.",
+            "tillage_effects": "Implied no-tillage systems enhance K stratification and root K uplift, influencing topsoil K dynamics."
+          },
+          "system_context": "Intensive grain cropping systems (maize, wheat, soybean) in the Pampas, characterized by high yields and historically negligible K fertilization.",
+          "management_effects": [
+            "Absence of K fertilization leads to progressive K depletion.",
+            "NPS fertilization (without K) accelerates K depletion due to increased yields and K removal.",
+            "No-tillage influences K distribution and masks topsoil depletion."
+          ],
+          "sustainability_implications": "Current agricultural practices are unsustainable regarding K. Progressive depletion of indigenous K fertility will necessitate K fertilizer inputs to maintain productivity, shifting from a K-rich to a K-deficient system.",
+          "scaling_considerations": [
+            "Findings are applicable at the field scale for K management decisions.",
+            "Regional implications for K fertilizer demand are significant."
+          ],
+          "evidence_strength": "high",
+          "system_applicability": "Highly applicable to intensive grain cropping systems globally that rely on native soil K reserves."
+        }
+      ],
+      "scaling_extrapolation": [
+        {
+          "question_branch": "6.1",
+          "scaling_evidence": {
+            "measurement_scale": "Plot-level (25-30 m wide, 65-70 m long) and soil profile (0-100 cm) measurements.",
+            "application_scales": [
+              "Field-scale K management recommendations (emphasizing subsoil K)",
+              "Regional-scale assessment of K fertility status in the Pampean Mollisols"
+            ]
+          },
+          "scaling_approach": "Direct comparison of agricultural plots to adjacent pristine areas; analysis of K dynamics across multiple soil depths (0-100 cm); multi-site study across varying soil properties and cropping histories.",
+          "validation_method": "Consistency of findings across multiple sites with varying characteristics supports the generalizability of the observed K depletion patterns within the region.",
+          "uncertainty_propagation": "Uncertainty in scaling arises from site-specific variability in depletion rates and the assumption of negligible K losses from leaching/runoff, which could vary regionally.",
+          "extrapolation_limits": [
+            "Direct numerical scaling without accounting for site-specific factors (e.g., cropping history, soil texture) would introduce uncertainty.",
+            "Limited to regions with similar soil types (Mollisols, illite mineralogy) and temperate climates."
+          ],
+          "evidence_strength": "high",
+          "scaling_confidence": "High for plot-to-field; Medium to High for field-to-regional within the Pampean Mollisols; Medium for regional-to-national (Argentina) due to broader variability; Low for inter-continental scaling without further validation."
+        }
+      ]
+    },
+    "indirect_evidence_mapping": {
+      "supporting_context": [
+        {
+          "question_relevance": [
+            "1.1",
+            "1.2",
+            "2.1",
+            "5.1"
+          ],
+          "contextual_evidence": "The paper provides detailed process understanding of K removal by harvest, K release from soil reserves and depletion, and K stratification and root K uplift. These mechanistic insights explain the observed quantitative and temporal patterns of K dynamics.",
+          "supporting_value": "high",
+          "interpretation_support": "Helps interpret why topsoil K might not show immediate depletion despite negative K budgets (due to root K uplift) and why subsoil K is so critical for crop supply.",
+          "extrapolation_support": "The underlying processes (K removal, release from reserves, stratification) are universal, allowing for qualitative extrapolation of concepts, even if quantitative values differ by region.",
+          "uncertainty_insights": "Highlights assumptions in K budget calculations (e.g., constant grain K content, negligible leaching) which are critical for understanding the overall uncertainty."
+        }
+      ],
+      "methodological_insights": [
+        {
+          "question_relevance": [
+            "1.1",
+            "1.2",
+            "1.3",
+            "6.1"
+          ],
+          "methodological_contribution": "The simultaneous assessment of both exchangeable (NH4-OAc-K) and slowly-exchangeable (NaBPh4-K) K pools across the soil profile (0-100 cm) provides a more complete understanding of K availability and depletion than single-pool analyses, which is crucial for accurate modeling.",
+          "analytical_advances": "Robust application of established methods (NH4-OAc-K, modified NaBPh4-K) in a long-term, multi-site, full-profile context.",
+          "measurement_validation": "Statistical rigor (mixed-effect modeling, Tukey's HSD, p < 0.05) and quality control (Shapiro-Wilks test, AIC for model selection) enhance the reliability of the measurements.",
+          "scaling_approaches": "The comparison of agricultural fields to pristine conditions across multiple sites and depths provides a robust framework for assessing the 'agricultural footprint' on K resources at a regional scale.",
+          "uncertainty_characterization": "Acknowledges key assumptions (e.g., constant grain K content, negligible leaching) and limitations, contributing to a transparent characterization of uncertainty in K budget calculations."
+        }
+      ],
+      "comparative_benchmarking": [
+        {
+          "question_relevance": [
+            "1.2",
+            "1.3"
+          ],
+          "benchmark_value": "Depletion of NH4-OAc-K (55-83%) and NaBPh4-K (74-95%) relative to pristine sites. NaBPh4-K contents are 2.1 times (range 1.2x-6.2x) larger than NH4-OAc-K.",
+          "comparative_context": "Provides a direct benchmark of agricultural impact on K pools by comparing cultivated soils to undisturbed pristine areas. The ratio of NaBPh4-K to NH4-OAc-K highlights the relative importance of the slowly-exchangeable pool.",
+          "validation_potential": "These values can be used to validate K depletion models or to calibrate initial K pool sizes in agricultural demand models for similar soil types.",
+          "regional_comparison": "Specific to Pampean Mollisols, but the methodology of using pristine sites for benchmarking is broadly applicable.",
+          "temporal_comparison": "The depletion values are a snapshot in 2009, reflecting cumulative long-term impact."
+        }
+      ]
+    },
+    "evidence_synthesis_by_category": {
+      "quantitative_parameters_summary": {
+        "primary_contributions": [
+          "Quantification of cumulative K removal by crops (258-556 kg K ha-1 over 9 years).",
+          "Direct measurement of significant depletion in both exchangeable (55-83%) and slowly-exchangeable (74-95%) K pools in the 0-100 cm profile relative to pristine conditions.",
+          "Establishment of the ratio between slowly-exchangeable and exchangeable K (average 2.1x), highlighting the larger contribution of the slowly-exchangeable pool."
+        ],
+        "data_quality": "High, based on direct measurements and robust statistical analysis, though K removal calculations rely on assumptions for part of the study period.",
+        "integration_potential": "Directly usable as input parameters for K budget models and for assessing K supply capacity in agricultural demand models.",
+        "confidence_level": 0.9,
+        "key_limitations": [
+          "Assumed constant grain K content for 2003-2009 introduces uncertainty in K removal calculations.",
+          "Assumed negligible K losses from leaching/runoff may underestimate total K removal."
+        ]
+      },
+      "temporal_dynamics_summary": {
+        "primary_contributions": [
+          "Clear demonstration of continuous, progressive K depletion over a 9-year period, particularly in the subsoil, driven by negative K budgets.",
+          "Identification of site-specific temporal patterns in topsoil K, showing that topsoil tests may not always reflect overall profile depletion in the short-medium term."
+        ],
+        "pattern_reliability": "High, supported by long-term data, consistent negative K budgets, and statistical significance.",
+        "inflection_point_insights": "Strongly implies an approaching inflection point where K deficiency will become limiting, projecting K responsiveness in the 'near future' (likely 10-20 years).",
+        "confidence_level": 0.9,
+        "temporal_limitations": [
+          "Study duration (9 years) is medium-term, limiting direct observation of very long-term (15+ year) equilibrium or recovery dynamics.",
+          "Exact timing of K deficiency onset is an inference, not a direct measurement."
+        ]
+      },
+      "regional_variations_summary": {
+        "primary_contributions": [
+          "Detailed mapping of vertical K depletion patterns across the 0-100 cm profile, consistently showing greater depletion in subsoil.",
+          "Demonstration of how soil type (Hapludolls vs. Argiudolls) influences K depletion rates and patterns, highlighting the need for site-specific considerations."
+        ],
+        "geographic_coverage": "Four representative sites within the Central Pampas of Argentina, covering key Mollisol types.",
+        "extrapolation_potential": "High for similar Mollisol regions in the Pampas; Medium for other temperate regions with similar illite mineralogy and soil textures; Low for vastly different soil types or climates.",
+        "confidence_level": 0.9,
+        "regional_limitations": [
+          "Findings are specific to Pampean Mollisols and temperate climate, limiting direct quantitative extrapolation to other major agricultural regions without further validation."
+        ]
+      },
+      "integration_potential_summary": {
+        "primary_contributions": [
+          "Elucidation of the direct link between negative K budgets (due to high yields and no K fertilization) and significant soil K depletion.",
+          "Highlighting the critical role of subsoil K in sustaining crop productivity in K-deficient systems.",
+          "Implications for evolving K management strategies to include subsoil K assessment and future K fertilization."
+        ],
+        "system_relevance": "Highly relevant for agricultural systems globally that have historically relied on native soil K and are now facing depletion challenges.",
+        "scaling_requirements": "Findings are directly applicable at the field scale. Regional scaling requires consideration of soil type variability and historical management. Integration into demand models requires parameter compatibility (units, resolution).",
+        "confidence_level": 0.9,
+        "integration_limitations": [
+          "Absence of K fertilization treatments limits direct recommendations on optimal K application rates or replenishment strategies.",
+          "Assumptions in K budget calculations need to be considered when integrating into models."
+        ]
+      }
+    },
+    "research_intelligence_assessment": {
+      "highest_value_contributions": [
+        {
+          "question_branch": "1.2",
+          "contribution_type": "Quantification of K pool depletion",
+          "value_description": "Provides direct, quantitative evidence of significant long-term depletion of both exchangeable and slowly-exchangeable K pools across the entire soil profile (0-100 cm) relative to pristine conditions. This is crucial for understanding the finite nature of soil K reserves.",
+          "confidence_level": 0.95,
+          "implementation_readiness": "Directly usable as parameters for K budget and supply models."
+        },
+        {
+          "question_branch": "2.1",
+          "contribution_type": "Characterization of medium-term K depletion trends",
+          "value_description": "Demonstrates a clear, continuous downward trend in soil K over 9 years, driven by negative K budgets, and implies an approaching inflection point where K deficiency will become limiting. This informs temporal sustainability patterns.",
+          "confidence_level": 0.9,
+          "implementation_readiness": "Provides strong evidence for projecting future K fertilizer needs and assessing sustainability timeframes."
+        },
+        {
+          "question_branch": "5.1",
+          "contribution_type": "Elucidation of K budget impacts and subsoil importance",
+          "value_description": "Clearly links high yields and lack of K fertilization to negative K budgets and subsequent K depletion, emphasizing the critical role of subsoil K as a buffer. This is fundamental for agricultural system modeling.",
+          "confidence_level": 0.9,
+          "implementation_readiness": "Informs model assumptions about K uptake from different soil depths and the consequences of unbalanced nutrient management."
+        }
+      ],
+      "medium_value_contributions": [
+        {
+          "question_branch": "4.1.5",
+          "contribution_type": "Influence of soil type on K dynamics",
+          "value_description": "Shows that K depletion patterns vary by Mollisol suborder (Hapludolls vs. Argiudolls), providing insights into regional variations influenced by inherent soil properties.",
+          "confidence_level": 0.9,
+          "development_requirements": "Requires integration with soil mapping data for broader regional application; can inform spatially explicit K management zones."
+        },
+        {
+          "question_branch": "6.1",
+          "contribution_type": "Methodological framework for subsoil K assessment",
+          "value_description": "The systematic sampling and analysis of K down to 100 cm depth for both K pools provides a robust methodological framework for comprehensive K assessment, which is often overlooked.",
+          "confidence_level": 0.85,
+          "development_requirements": "Encourages adoption of deeper sampling and dual K pool analysis in K research and advisory services."
+        }
+      ],
+      "knowledge_gap_identification": [
+        {
+          "question_branch": "1.1",
+          "gap_description": "While depletion of K pools is quantified, the precise annual rates at which K is released from these pools to meet crop demand are not directly measured or modeled.",
+          "gap_significance": "important",
+          "research_priority": "High, for developing more precise K cycling models and fertilizer recommendations."
+        },
+        {
+          "question_branch": "2.6",
+          "gap_description": "The study focuses on depletion. The long-term dynamics of K recovery or the establishment of new equilibrium states if K fertilization were introduced are not explored.",
+          "gap_significance": "important",
+          "research_priority": "Medium, for informing sustainable K management strategies and K fertilizer response curves."
+        }
+      ],
+      "uncertainty_intelligence": [
+        {
+          "uncertainty_source": "Assumed constant grain K content (2003-2009)",
+          "affected_questions": [
+            "1.1",
+            "5.1"
+          ],
+          "uncertainty_magnitude": "Potential over- or underestimation of cumulative K removal, affecting K budget accuracy.",
+          "mitigation_approaches": [
+            "Direct measurement of grain K content for all years and crops."
+          ],
+          "confidence_impacts": "Slightly reduces confidence in the absolute numerical values of K removal, but the overall trend of negative K budgets remains robust."
+        },
+        {
+          "uncertainty_source": "Assumed negligible K losses from leaching and/or runoff",
+          "affected_questions": [
+            "1.1",
+            "5.1"
+          ],
+          "uncertainty_magnitude": "Potentially underestimates total K removal from the system, making the K budget appear less negative.",
+          "mitigation_approaches": [
+            "Inclusion of lysimeter studies or runoff collection to quantify K losses."
+          ],
+          "confidence_impacts": "Could lead to a slight underestimation of the severity of K depletion, but the general conclusion of depletion remains strong."
+        }
+      ]
+    },
+    "integration_pathway_analysis": {
+      "immediate_applications": [
+        {
+          "question_branch": "1.1",
+          "application_description": "Use quantified cumulative K removal rates and K pool depletion percentages as direct inputs for K budget calculations and initial parameterization of K supply in agricultural demand models.",
+          "integration_approach": "Direct input of ranges for K removal and depletion. Use the ratio of slowly-exchangeable to exchangeable K to refine K pool dynamics in models.",
+          "confidence_level": 0.9,
+          "validation_requirements": [
+            "Cross-validation with other regional K budget studies.",
+            "Sensitivity analysis of model outputs to the range of K removal values."
+          ]
+        },
+        {
+          "question_branch": "5.1",
+          "application_description": "Incorporate the understanding of subsoil K's critical role into K management recommendations and model assumptions, moving beyond topsoil-only approaches.",
+          "integration_approach": "Adjust K uptake functions in models to account for subsoil K contributions. Develop K fertilizer recommendations that consider full profile K status.",
+          "confidence_level": 0.9,
+          "validation_requirements": [
+            "Field trials validating K fertilizer response based on subsoil K levels.",
+            "Model calibration against observed yield responses in K-deficient subsoils."
+          ]
+        }
+      ],
+      "medium_term_integration": [
+        {
+          "question_branch": "2.1",
+          "development_pathway": "Develop predictive models for the onset of K deficiency and K responsiveness based on observed depletion rates and projected K budgets.",
+          "additional_data_needs": [
+            "More precise long-term yield data and grain K content for various crops.",
+            "Data on K fertilizer response curves in these soils as K levels decline."
+          ],
+          "scaling_requirements": [
+            "Spatially explicit soil K maps for the Pampas region.",
+            "Integration with climate change scenarios to assess impacts on K dynamics."
+          ],
+          "timeline_estimate": "2-5 years for initial predictive model development and validation."
+        }
+      ],
+      "scaling_requirements": {
+        "spatial_scaling_needs": [
+          "Detailed soil mapping (texture, mineralogy, initial K status) to extrapolate site-specific depletion patterns to broader regional scales.",
+          "Geospatial data on historical cropping intensity and management practices."
+        ],
+        "temporal_scaling_needs": [
+          "Longer-term monitoring data (beyond 9 years) to validate projections of K deficiency onset.",
+          "Integration with climate models to understand how future climate variability might influence K dynamics and supply rates."
+        ],
+        "methodological_scaling_needs": [
+          "Standardization of K measurement methods (NH4-OAc-K, NaBPh4-K) across regions for comparative analysis.",
+          "Development of robust upscaling methodologies for K budget components from plot to regional scales, accounting for spatial heterogeneity."
+        ],
+        "uncertainty_propagation_needs": [
+          "Quantification and propagation of uncertainties from assumed parameters (e.g., grain K content, leaching losses) through K budget and demand models.",
+          "Sensitivity analysis of model outputs to key input parameters and assumptions."
+        ]
+      }
+    },
+    "mapping_quality_assessment": {
+      "mapping_completeness": 0.95,
+      "evidence_assessment_confidence": 0.95,
+      "scientific_relevance_accuracy": 0.95,
+      "integration_pathway_feasibility": "high",
+      "overall_mapping_confidence": 0.95,
+      "critical_assumptions": [
+        "The 'near future' for K responsiveness is interpreted as a 10-20 year timeframe for modeling purposes.",
+        "The generalizability of process understanding (e.g., subsoil K importance) is assumed to be broader than the specific quantitative values, requiring further validation for other regions."
+      ],
+      "mapping_limitations": [
+        "The input synthesis lacked specific numerical data from tables (e.g., initial soil properties, full statistical outputs), which limited the granularity of some quantitative mappings.",
+        "The paper did not directly provide explicit probabilities for temporal patterns, requiring inference from reliability assessments."
+      ],
+      "enhancement_opportunities": [
+        "Access to the full paper (including all tables and figures) would allow for a more complete and numerically precise mapping, particularly for initial soil properties, detailed K stock values, and specific statistical measures (e.g., p-values for all comparisons)."
+      ]
+    },
+    "_usage_metadata": {
+      "timestamp": "2025-07-10T16:19:01.874623",
+      "stage_name": "unknown",
+      "paper_id": "unknown",
+      "prompt_length_chars": 68061,
+      "processing_time_seconds": 44.57,
+      "thinking_enabled": true,
+      "input_tokens": 15505,
+      "output_tokens": 7265,
+      "thinking_tokens": 0,
+      "input_cost_usd": 0.002326,
+      "output_cost_usd": 0.025427,
+      "thinking_cost_usd": 0.0,
+      "total_cost_usd": 0.027753
+    },
+    "stage": "4A",
+    "paper_id": "unknown",
+    "mapping_timestamp": "2025-07-10T16:19:01.875932",
+    "temperature_used": 0.1,
+    "client_architecture_version": "1.0"
+  }
+}

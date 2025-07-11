@@ -1,0 +1,956 @@
+{
+  "stage_id": "1a",
+  "stage_name": "Generic Extraction",
+  "paper_id": "Global Fostat Reference Database",
+  "processing_timestamp": "2025-07-10T10:31:44.322066",
+  "processing_time_seconds": 51.76454758644104,
+  "processing_mode": "single_paper",
+  "validation_passed": true,
+  "validation_message": "Valid generic extraction",
+  "results": {
+    "paper_metadata": {
+      "title": "A global FAOSTAT reference database of cropland nutrient budgets and nutrient use efficiency (1961–2020): nitrogen, phosphorus and potassium",
+      "authors": [
+        "Cameron I. Ludemann",
+        "Nathan Wanner",
+        "Pauline Chivenge",
+        "Achim Dobermann",
+        "Rasmus Einarsson",
+        "Patricio Grassini",
+        "Armelle Gruere",
+        "Kevin Jackson",
+        "Luis Lassaletta",
+        "Federico Maggi",
+        "Griffiths Obli-Laryea",
+        "Martin K. van Ittersum",
+        "Srishti Vishwakarma",
+        "Xin Zhang",
+        "Francesco N. Tubiello"
+      ],
+      "journal": "Earth System Science Data",
+      "publication_year": 2024,
+      "doi": "10.5194/essd-16-525-2024",
+      "study_region": "Global (205 countries and territories, regional and global aggregates)",
+      "primary_focus": "Development and presentation of a global database for cropland nutrient budgets (N, P, K) and nutrient use efficiency"
+    },
+    "research_methodology": {
+      "study_type": "modeling_study",
+      "experimental_design": "Database development and calculation of nutrient budgets and efficiencies based on existing statistical data and models. Not a traditional experimental design with treatments and controls in a field setting.",
+      "temporal_scope": {
+        "study_duration_years": 60,
+        "data_collection_frequency": "Annual",
+        "seasonal_coverage": "Not applicable (annual aggregates)",
+        "monitoring_timeline": [
+          "1961-2020"
+        ]
+      },
+      "spatial_scope": {
+        "number_of_sites": 205,
+        "geographic_coverage": "Global, covering 205 countries and territories, as well as regional and global aggregates.",
+        "site_characteristics": [
+          "Cropland (FAO land use category: land used for cultivation of temporary and permanent crops in rotation with fallow, meadows and pastures within cycles of up to five years)"
+        ],
+        "coordinates": "Not provided (country-level data)",
+        "regional_representativeness": "Comprehensive global coverage, with country-level detail and regional/global aggregates."
+      },
+      "sample_design": {
+        "sample_sizes": {
+          "countries": 205,
+          "years": 60
+        },
+        "replication_levels": "Not applicable (database compilation and modeling)",
+        "randomization_approach": "Not applicable",
+        "controls_and_treatments": [
+          "Nutrient types: Nitrogen (N)",
+          "Nutrient types: Phosphorus (P)",
+          "Nutrient types: Potassium (K)"
+        ],
+        "statistical_power": "Not explicitly stated, but uncertainty analysis is provided."
+      },
+      "analytical_methods": {
+        "measurement_protocols": [
+          "Cropland nutrient budget (CNB) calculation: Balance = (SF * CF) + MAS + AD + BF - CR",
+          "Nutrient Use Efficiency (NUE) calculation: (Nutrient Outputs / Nutrient Inputs) * 100%",
+          "Synthetic Fertilizer (SF) inputs: Mean of FAOSTAT and IFASTAT data, converted to elemental quantities (P2O5 to P: 0.436 kg P/kg P2O5; K2O to K: 0.83 kg K/kg K2O).",
+          "Fraction of Fertilizer Applied to Cropland (CF): Default 100% for most countries; specific values for 21 countries based on Zhang et al. (2021), Einarsson et al. (2021), Ludemann et al. (2022a), FAO (2022a), and direct country communication (Ireland, New Zealand). CF for P based on Zou et al. (2022), CF for K as average of N and P coefficients.",
+          "Manure Applied to Cropland Soils (MAS): Estimated as N from treated manure following IPCC Guidelines Tier 1 (FAO, 2022c). P and K estimated using published P:N and K:N ratios (Statistics Netherlands, 2012; Sheldrick et al., 2003). Apportioned to cropland using same CF values as SF.",
+          "Atmospheric Deposition (AD): N inputs from dry and wet N deposition (reduced and oxidized forms) from Vishwakarma et al. (2023), using LUH2, Wang et al. (2019), Shang et al. (2019), Wang et al. (2017) data. P and K deposition considered negligible.",
+          "Biological Fixation (BF): N by grain legume crops estimated using yield-dependent, regionally specific model (Peoples et al., 2021; Herridge et al., 2022) for 8 categories (chickpea, common bean, faba bean, groundnut, lupin, pigeon pea, soybean, other). Soybean model distinguishes Brazil, Europe, rest of world. Fixed global per-hectare coefficients for rice and sugarcane (25 kg N ha-1 yr-1).",
+          "Crop Removal (CR): Calculated using crop nutrient removal coefficients (Ludemann et al., 2023a meta-analysis) multiplied by FAOSTAT crop production statistics (FAO, 2022e). Gap-filled using weighted-average nutrient concentrations for 'Item Group'."
+        ],
+        "instrumentation": [],
+        "quality_control": [
+          "Use of mean value from FAOSTAT and IFASTAT for SF inputs.",
+          "Selection criteria for specific CF values (significant deviation from 100%, agreement across sources).",
+          "Gap-filling for crop nutrient removal coefficients."
+        ],
+        "detection_limits": {},
+        "analytical_precision": {
+          "cropland_area_CV": "25%",
+          "crop_production_CV": "7%",
+          "livestock_numbers_CV": "10%",
+          "livestock_manure_nutrient_coefficients_CV": "50%",
+          "synthetic_fertilizer_use_CV": "25%",
+          "fraction_of_SF_applied_to_cropland_CV": "10%",
+          "atmospheric_deposition_of_N_CV": "70%",
+          "biological_N_fixation_coefficients_CV": "60%",
+          "crop_removal_coefficients_CV": "20%"
+        }
+      },
+      "statistical_approach": {
+        "analysis_methods": [
+          "Calculation of nutrient balance (surplus/deficit)",
+          "Calculation of nutrient use efficiency (NUE)",
+          "Temporal trend analysis (1961-2020)",
+          "Regional and country-level comparisons"
+        ],
+        "significance_testing": "Not explicitly mentioned for trends, but differences are discussed.",
+        "uncertainty_quantification": "Relative uncertainty (coefficient of variation, CV%) for key input items.",
+        "model_validation": "Comparison of global N, P trends and NUE with previous studies."
+      }
+    },
+    "quantitative_findings": {
+      "primary_measurements": [
+        {
+          "parameter": "Global N balance (average)",
+          "values": [
+            50,
+            55
+          ],
+          "units": "kg ha-1 yr-1",
+          "statistical_measures": {},
+          "measurement_context": "Past 15 years"
+        },
+        {
+          "parameter": "Global N balance (1961)",
+          "values": [
+            13
+          ],
+          "units": "kg ha-1",
+          "statistical_measures": {},
+          "measurement_context": "Total cropland"
+        },
+        {
+          "parameter": "Global N balance (2020)",
+          "values": [
+            54
+          ],
+          "units": "kg ha-1",
+          "statistical_measures": {},
+          "measurement_context": "Total cropland"
+        },
+        {
+          "parameter": "Global P balance (1961)",
+          "values": [
+            2.4
+          ],
+          "units": "kg ha-1",
+          "statistical_measures": {},
+          "measurement_context": "Total cropland"
+        },
+        {
+          "parameter": "Global P balance (2020)",
+          "values": [
+            5.0
+          ],
+          "units": "kg ha-1",
+          "statistical_measures": {},
+          "measurement_context": "Total cropland"
+        },
+        {
+          "parameter": "Global K balance (1961)",
+          "values": [
+            11
+          ],
+          "units": "kg ha-1",
+          "statistical_measures": {},
+          "measurement_context": "Total cropland"
+        },
+        {
+          "parameter": "Global K balance (2020)",
+          "values": [
+            8
+          ],
+          "units": "kg ha-1",
+          "statistical_measures": {},
+          "measurement_context": "Total cropland"
+        },
+        {
+          "parameter": "Global N use efficiency (1961)",
+          "values": [
+            59
+          ],
+          "units": "%",
+          "statistical_measures": {},
+          "measurement_context": "Cropland"
+        },
+        {
+          "parameter": "Global N use efficiency (1988)",
+          "values": [
+            43
+          ],
+          "units": "%",
+          "statistical_measures": {},
+          "measurement_context": "Cropland (low point)"
+        },
+        {
+          "parameter": "Global N use efficiency (2020)",
+          "values": [
+            55
+          ],
+          "units": "%",
+          "statistical_measures": {},
+          "measurement_context": "Cropland"
+        },
+        {
+          "parameter": "Global P use efficiency (1961)",
+          "values": [
+            64
+          ],
+          "units": "%",
+          "statistical_measures": {},
+          "measurement_context": "Cropland"
+        },
+        {
+          "parameter": "Global P use efficiency (2020)",
+          "values": [
+            75
+          ],
+          "units": "%",
+          "statistical_measures": {},
+          "measurement_context": "Cropland"
+        },
+        {
+          "parameter": "Global K use efficiency (1961)",
+          "values": [
+            46
+          ],
+          "units": "%",
+          "statistical_measures": {},
+          "measurement_context": "Cropland"
+        },
+        {
+          "parameter": "Global K use efficiency (2020)",
+          "values": [
+            80
+          ],
+          "units": "%",
+          "statistical_measures": {},
+          "measurement_context": "Cropland"
+        },
+        {
+          "parameter": "Global cropland area (2020)",
+          "values": [
+            1562000000.0
+          ],
+          "units": "ha",
+          "statistical_measures": {},
+          "measurement_context": "FAOSTAT"
+        },
+        {
+          "parameter": "N inputs from manure (1961)",
+          "values": [
+            17
+          ],
+          "units": "Mt",
+          "statistical_measures": {},
+          "measurement_context": "Global cropland"
+        },
+        {
+          "parameter": "N inputs from manure (2020)",
+          "values": [
+            26
+          ],
+          "units": "Mt",
+          "statistical_measures": {},
+          "measurement_context": "Global cropland"
+        },
+        {
+          "parameter": "N inputs from SF (1961)",
+          "values": [
+            10
+          ],
+          "units": "Mt",
+          "statistical_measures": {},
+          "measurement_context": "Global cropland"
+        },
+        {
+          "parameter": "N inputs from SF (2020)",
+          "values": [
+            110
+          ],
+          "units": "Mt",
+          "statistical_measures": {},
+          "measurement_context": "Global cropland"
+        },
+        {
+          "parameter": "N surplus in Africa (average)",
+          "values": [
+            10
+          ],
+          "units": "kg N ha-1 yr-1",
+          "statistical_measures": {},
+          "measurement_context": "Recent average"
+        },
+        {
+          "parameter": "N surplus in Asia (average)",
+          "values": [
+            90
+          ],
+          "units": "kg N ha-1 yr-1",
+          "statistical_measures": {},
+          "measurement_context": "Recent average"
+        },
+        {
+          "parameter": "N surplus in China (2020)",
+          "values": [
+            140
+          ],
+          "units": "kg N ha-1 yr-1",
+          "statistical_measures": {},
+          "measurement_context": "Average"
+        },
+        {
+          "parameter": "N surplus in India (2020)",
+          "values": [
+            120
+          ],
+          "units": "kg N ha-1 yr-1",
+          "statistical_measures": {},
+          "measurement_context": "Average"
+        },
+        {
+          "parameter": "N deficit countries (2020)",
+          "values": [
+            14
+          ],
+          "units": "count",
+          "statistical_measures": {},
+          "measurement_context": "Total number of countries"
+        },
+        {
+          "parameter": "P deficit countries (2020)",
+          "values": [
+            64
+          ],
+          "units": "count",
+          "statistical_measures": {},
+          "measurement_context": "Total number of countries"
+        },
+        {
+          "parameter": "K deficit countries (2020)",
+          "values": [
+            59
+          ],
+          "units": "count",
+          "statistical_measures": {},
+          "measurement_context": "Total number of countries"
+        },
+        {
+          "parameter": "NUE > 100% countries (2020)",
+          "values": [
+            14
+          ],
+          "units": "count",
+          "statistical_measures": {},
+          "measurement_context": "Total number of countries for N"
+        },
+        {
+          "parameter": "PUE > 100% countries (2020)",
+          "values": [
+            64
+          ],
+          "units": "count",
+          "statistical_measures": {},
+          "measurement_context": "Total number of countries for P"
+        },
+        {
+          "parameter": "KUE > 100% countries (2020)",
+          "values": [
+            59
+          ],
+          "units": "count",
+          "statistical_measures": {},
+          "measurement_context": "Total number of countries for K"
+        },
+        {
+          "parameter": "NUE < 50% countries (2020)",
+          "values": [
+            80
+          ],
+          "units": "count",
+          "statistical_measures": {},
+          "measurement_context": "Total number of countries for N"
+        },
+        {
+          "parameter": "PUE < 50% countries (2020)",
+          "values": [
+            44
+          ],
+          "units": "count",
+          "statistical_measures": {},
+          "measurement_context": "Total number of countries for P"
+        },
+        {
+          "parameter": "KUE < 50% countries (2020)",
+          "values": [
+            59
+          ],
+          "units": "count",
+          "statistical_measures": {},
+          "measurement_context": "Total number of countries for K"
+        },
+        {
+          "parameter": "N surplus in France (1986)",
+          "values": [
+            110
+          ],
+          "units": "kg N ha-1 yr-1",
+          "statistical_measures": {},
+          "measurement_context": "Peak surplus"
+        },
+        {
+          "parameter": "P surplus in China (1995)",
+          "values": [
+            21
+          ],
+          "units": "kg P ha-1 yr-1",
+          "statistical_measures": {},
+          "measurement_context": "When China's surplus became greater than France's"
+        },
+        {
+          "parameter": "K surplus in China (2014)",
+          "values": [
+            35
+          ],
+          "units": "kg K ha-1 yr-1",
+          "statistical_measures": {},
+          "measurement_context": "When China's surplus became greater than France's"
+        },
+        {
+          "parameter": "EU N surplus decrease (last 3 decades)",
+          "values": [
+            40
+          ],
+          "units": "%",
+          "statistical_measures": {},
+          "measurement_context": "Per-hectare basis"
+        },
+        {
+          "parameter": "EU P surplus decrease (last 3 decades)",
+          "values": [
+            80
+          ],
+          "units": "%",
+          "statistical_measures": {},
+          "measurement_context": "Per-hectare basis"
+        },
+        {
+          "parameter": "EU K surplus decrease (last 3 decades)",
+          "values": [
+            60
+          ],
+          "units": "%",
+          "statistical_measures": {},
+          "measurement_context": "Per-hectare basis"
+        },
+        {
+          "parameter": "SF application rate increase (China, India, Pakistan, Brazil, 1990-2020)",
+          "values": [
+            230
+          ],
+          "units": "%",
+          "statistical_measures": {},
+          "measurement_context": "Mean across countries and N, P, K"
+        },
+        {
+          "parameter": "N, P, K surpluses increase (China, India, Pakistan, Brazil, 1990-2020)",
+          "values": [
+            300
+          ],
+          "units": "%",
+          "statistical_measures": {},
+          "measurement_context": "Mean across countries"
+        }
+      ],
+      "statistical_relationships": [],
+      "temporal_patterns": [
+        {
+          "parameter": "Global N, P, K nutrient loading",
+          "trend_description": "Progressively increasing over 1961-2020, except for K which decreased by 20% overall.",
+          "rate_of_change": 320,
+          "units_per_time": "% change for N (1961-2020)",
+          "trend_significance": "Significant",
+          "seasonal_component": "Not applicable"
+        },
+        {
+          "parameter": "Global P nutrient loading",
+          "trend_description": "Progressively increasing over 1961-2020.",
+          "rate_of_change": 110,
+          "units_per_time": "% change for P (1961-2020)",
+          "trend_significance": "Significant",
+          "seasonal_component": "Not applicable"
+        },
+        {
+          "parameter": "Global K nutrient loading",
+          "trend_description": "Decreased by 27% on a per-hectare basis from 1961 to 2020.",
+          "rate_of_change": -27,
+          "units_per_time": "% change for K (1961-2020)",
+          "trend_significance": "Significant",
+          "seasonal_component": "Not applicable"
+        },
+        {
+          "parameter": "Global N balance",
+          "trend_description": "Fastest increase between 1961 and 1988, followed by a short-term decrease, then a less marked increase until 2020. Remained fairly steady at 50-55 kg ha-1 yr-1 during the past 15 years.",
+          "rate_of_change": 320,
+          "units_per_time": "% change (1961-2020)",
+          "trend_significance": "Significant",
+          "seasonal_component": "Not applicable"
+        },
+        {
+          "parameter": "Global N use efficiency",
+          "trend_description": "Decreased from 59% in 1961 to a low of 43% in 1988, then risen to 55% in 2020.",
+          "rate_of_change": -13,
+          "units_per_time": "% change (1961-2020)",
+          "trend_significance": "Significant",
+          "seasonal_component": "Not applicable"
+        },
+        {
+          "parameter": "Global P use efficiency",
+          "trend_description": "Increased from 64% in 1961 to 75% in 2020, particularly since the 1980s.",
+          "rate_of_change": 22,
+          "units_per_time": "% change (1961-2020)",
+          "trend_significance": "Significant",
+          "seasonal_component": "Not applicable"
+        },
+        {
+          "parameter": "Global K use efficiency",
+          "trend_description": "Increased from 46% in 1961 to 80% in 2020, particularly since the 1980s.",
+          "rate_of_change": 72,
+          "units_per_time": "% change (1961-2020)",
+          "trend_significance": "Significant",
+          "seasonal_component": "Not applicable"
+        },
+        {
+          "parameter": "Manure as source of total N inputs",
+          "trend_description": "Decreased from ~38% in 1961 to ~14% in 2020.",
+          "rate_of_change": -63.16,
+          "units_per_time": "% change (1961-2020)",
+          "trend_significance": "Significant",
+          "seasonal_component": "Not applicable"
+        },
+        {
+          "parameter": "SF as source of total N inputs",
+          "trend_description": "Increased from 22% in 1961 to 58% in 2020.",
+          "rate_of_change": 163.64,
+          "units_per_time": "% change (1961-2020)",
+          "trend_significance": "Significant",
+          "seasonal_component": "Not applicable"
+        }
+      ],
+      "comparative_results": [
+        {
+          "comparison_type": "Regional differences in N surplus (2020)",
+          "groups_compared": [
+            "Africa",
+            "Asia"
+          ],
+          "difference_magnitude": 80,
+          "units": "kg N ha-1 yr-1",
+          "statistical_significance": "Implied by range",
+          "practical_significance": "Wide range in nutrient use and efficiencies across regions."
+        },
+        {
+          "comparison_type": "Country-level N surpluses (2020)",
+          "groups_compared": [
+            "Africa (most countries)",
+            "Egypt",
+            "Most European countries",
+            "China",
+            "India"
+          ],
+          "difference_magnitude": 190,
+          "units": "kg N ha-1 yr-1",
+          "statistical_significance": "Implied by range",
+          "practical_significance": "Africa < 40, Egypt ~200, Europe 40-80, China ~140, India ~120."
+        },
+        {
+          "comparison_type": "Global N trends vs. previous studies",
+          "groups_compared": [
+            "Current study",
+            "Zhang et al. (2015, 2021)",
+            "Conant et al. (2013)",
+            "Lassaletta et al. (2014, 2016)",
+            "Mueller et al. (2012)",
+            "FAO (2021)",
+            "Bodirsky et al. (2012)",
+            "Bouwman et al. (2013, 2017)",
+            "Lu and Tian (2017)",
+            "Nishina et al. (2017)"
+          ],
+          "difference_magnitude": 0,
+          "units": "N inputs, outputs, balances, NUE",
+          "statistical_significance": "Not quantified, but discussed as 'broadly consistent' with 'some exceptions'.",
+          "practical_significance": "Current study's N inputs were mid-range, N outputs generally greater, N balances mid-range, and NUE generally greater than other studies. All studies showed similar temporal trends (fastest increase in N surpluses 1961-1988, then drop, then less steep increase; NUE decreased until 1988, then increased)."
+        },
+        {
+          "comparison_type": "Global P trends vs. previous studies",
+          "groups_compared": [
+            "Current study",
+            "Zou et al. (2022)"
+          ],
+          "difference_magnitude": 0,
+          "units": "P inputs, outputs, balances, PUE",
+          "statistical_significance": "Not quantified, but discussed as 'broadly consistent' with differences.",
+          "practical_significance": "Current study's P inputs and outputs, and PUE were generally greater than Zou et al. (2022). P surplus was less in current study, with difference increasing after 1990. Differences attributed to crop P removal coefficients and fertilizer allocation methods."
+        },
+        {
+          "comparison_type": "Manure nutrient application in China vs. Zhang et al. (2023)",
+          "groups_compared": [
+            "Current study",
+            "Zhang et al. (2023)"
+          ],
+          "difference_magnitude": 2.0,
+          "units": "Mt N manure (mean 2005-2014)",
+          "statistical_significance": "Not quantified, but noted as 'not surprising given known uncertainties'.",
+          "practical_significance": "Current study's N and P manure estimates were less than Zhang et al. (2023), while K manure estimates were similar. Manure N and P as % of total (manure+SF) were less in current study, K was greater."
+        }
+      ]
+    },
+    "environmental_context": {
+      "geographic_details": {
+        "countries": [
+          "205 countries and territories"
+        ],
+        "regions": [
+          "Global",
+          "Regional aggregates (e.g., Africa, Asia, Europe, Americas, Oceania)"
+        ],
+        "coordinates": "Not provided (country-level data)",
+        "elevation": "Not specified",
+        "landscape_position": "Cropland"
+      },
+      "climate_characteristics": {
+        "climate_classification": "Not specified",
+        "temperature_patterns": {},
+        "precipitation_patterns": {},
+        "growing_season": "Not specified",
+        "environmental_stressors": [
+          "Nutrient surpluses threaten environmental quality (water/air quality, climate change, biodiversity loss)",
+          "Nutrient deficits or surpluses close to zero could indicate soil nutrient mining"
+        ]
+      },
+      "soil_properties": {
+        "soil_classification": "Not specified",
+        "texture": "Not specified",
+        "organic_matter": "Not specified",
+        "chemical_properties": {
+          "pH": "Not specified",
+          "mineralogy": "Not specified",
+          "native_K_resources": "Mentioned as substantial in many soils"
+        },
+        "physical_properties": {},
+        "mineralogy": "Not specified"
+      },
+      "land_use_context": {
+        "current_land_use": "Cropland (FAO land use category)",
+        "cropping_systems": [
+          "Temporary crops",
+          "Permanent crops",
+          "Fallow land within rotations",
+          "Temporary pastures within crop rotations"
+        ],
+        "management_intensity": "Increased scale and intensity of food production reflected in increased nutrient inputs (SF, manure) and outputs (crop removal).",
+        "historical_context": "1961-2020, showing shifts from manure to synthetic fertilizers as primary input source. Impact of political changes (e.g., breakup of Soviet Union, EU policies) on fertilizer use and surpluses.",
+        "sustainability_metrics": [
+          "Nutrient balance (surplus/deficit)",
+          "Nutrient use efficiency (NUE)"
+        ]
+      }
+    },
+    "agricultural_systems": {
+      "crop_information": {
+        "crop_types": [
+          "Grain legumes (chickpea, common bean, faba bean, groundnut, lupin, pigeon pea, soybean, other)",
+          "Rice",
+          "Sugarcane",
+          "Maize",
+          "Wheat",
+          "Barley"
+        ],
+        "varieties_cultivars": [],
+        "growth_stages_studied": [],
+        "yield_levels": {
+          "yield_dependent_BF_model": "Used for grain legumes"
+        },
+        "production_metrics": {
+          "crop_production_data_source": "FAOSTAT (FAO, 2022e)",
+          "total_grain_production_major_crops": "Maize, rice, soybeans, wheat"
+        }
+      },
+      "management_practices": {
+        "fertilization": {
+          "types": [
+            "Synthetic fertilizer (SF)",
+            "Manure from livestock"
+          ],
+          "rates": {
+            "SF_N_increase_1961_2020": "1000%",
+            "SF_P_increase_1961_2020": "370%",
+            "SF_K_increase_1961_2020": "380%"
+          },
+          "timing": [],
+          "application_methods": []
+        },
+        "irrigation": {
+          "system_type": "Not specified",
+          "water_amounts": {},
+          "scheduling": "Mentioned as a potential future input (nutrients in irrigation water)"
+        },
+        "other_practices": {
+          "tillage": "Not specified",
+          "rotation": [
+            "Temporary crops in rotation with fallow, meadows, and pastures"
+          ],
+          "pest_management": "Not specified",
+          "organic_amendments": [
+            "Manure from livestock",
+            "Composted crop residues (future consideration)",
+            "Human manure (future consideration)"
+          ]
+        }
+      },
+      "input_output_relationships": {
+        "input_rates": {
+          "synthetic_fertilizer": "Sourced from FAOSTAT and IFASTAT",
+          "manure_applied_to_soils": "Estimated based on IPCC Guidelines Tier 1 and P:N, K:N ratios",
+          "atmospheric_deposition": "N inputs from dry and wet N deposition",
+          "biological_fixation": "N by grain legumes, rice, and sugarcane"
+        },
+        "output_measurements": {
+          "crop_removal": "Calculated using crop nutrient removal coefficients and FAOSTAT production data"
+        },
+        "efficiency_metrics": {
+          "nutrient_use_efficiency": "Outputs as a percentage of inputs"
+        },
+        "balance_calculations": {
+          "nutrient_balance": "Inputs minus outputs (surplus if positive, deficit if negative)"
+        }
+      }
+    },
+    "temporal_dynamics": {
+      "study_timeline": {
+        "start_date": "1961",
+        "end_date": "2020",
+        "data_collection_schedule": [
+          "Annual updates planned"
+        ],
+        "monitoring_frequency": "Annual"
+      },
+      "seasonal_variations": [],
+      "long_term_trends": [
+        {
+          "parameter": "Global N, P, K surpluses",
+          "trend_direction": "Increasing (N, P), Decreasing (K)",
+          "trend_magnitude": 320,
+          "trend_units": "% change for N (1961-2020)",
+          "projection_timeframe": "Not explicitly projected, but historical trends analyzed.",
+          "sustainability_implications": "Increased N and P surpluses indicate potential environmental problems; K deficits indicate soil mining risk."
+        },
+        {
+          "parameter": "Global N use efficiency",
+          "trend_direction": "Decreased then increased",
+          "trend_magnitude": -13,
+          "trend_units": "% change (1961-2020)",
+          "projection_timeframe": "Not explicitly projected.",
+          "sustainability_implications": "Initial decrease indicates worsening efficiency, subsequent increase is encouraging."
+        },
+        {
+          "parameter": "Global P use efficiency",
+          "trend_direction": "Increased",
+          "trend_magnitude": 22,
+          "trend_units": "% change (1961-2020)",
+          "projection_timeframe": "Not explicitly projected.",
+          "sustainability_implications": "Improved efficiency."
+        },
+        {
+          "parameter": "Global K use efficiency",
+          "trend_direction": "Increased",
+          "trend_magnitude": 72,
+          "trend_units": "% change (1961-2020)",
+          "projection_timeframe": "Not explicitly projected.",
+          "sustainability_implications": "Improved efficiency."
+        }
+      ],
+      "variability_characterization": {
+        "inter_annual_variability": {
+          "N_balance_Burkina_Faso_CV": "27%",
+          "P_balance_Burkina_Faso_CV": "167%",
+          "K_balance_Burkina_Faso_CV": "115%"
+        },
+        "spatial_variability": {
+          "country_level_heterogeneity": "Large heterogeneity in CNB values by country (e.g., N surpluses from ~10 kg N ha-1 yr-1 in Africa to >90 kg N ha-1 yr-1 in Asia)."
+        },
+        "measurement_uncertainty": {
+          "N_deposition_CV": "70%",
+          "crop_production_CV": "7%",
+          "SF_use_CV": "25%",
+          "crop_removal_coefficients_CV": "20%"
+        },
+        "drivers_of_variability": [
+          "Differences in nutrient use and use efficiencies across geographic regions, nutrients, and time.",
+          "Changes in crop production and fertilizer data updates in FAOSTAT.",
+          "Variation in N concentration of crop products between studies.",
+          "Methodological differences in assigning fertilizer fractions to cropland.",
+          "Breakup of former Soviet Union and political changes in Eastern Europe (late 1980s/early 1990s).",
+          "Growing awareness of environmental effects and policy implementations (e.g., EU policies)."
+        ]
+      }
+    },
+    "data_quality_assessment": {
+      "methodological_strengths": [
+        "Provides a global reference database for N, P, K budgets and NUE.",
+        "Covers a long time series (1961-2020).",
+        "Synthesizes and continuously updates state-of-the-art information.",
+        "Introduces improvements over previous work (nutrient coefficients, manure nutrient content, atmospheric deposition, biological N fixation rates).",
+        "Data are freely available and updated annually.",
+        "Focuses on cropland where nutrient flows and environmental impacts are highest.",
+        "Uses consolidated data from FAOSTAT and IFASTAT for SF inputs.",
+        "Uses yield-dependent and regionally specific models for biological N fixation."
+      ],
+      "methodological_limitations": [
+        "Partial nutrient budgets (specific losses like gaseous emissions, leaching, runoff are not explicitly accounted for).",
+        "Cropland definition uncertainty (FAO definition vs. remote sensing/biophysical modeling definitions).",
+        "Exclusion of crops with no production data in FAOSTAT (e.g., forage crops like alfalfa, clover, grass-clover mixtures), leading to underestimation of nutrient removal and biological N fixation in some countries.",
+        "Assumption that same CF values for SF are used to apportion nutrients from manure to cropland (may not hold for all countries).",
+        "No nutrient outputs from herbage removed from some cropland categories (e.g., temporary meadows and pasture, silage maize) are accounted for.",
+        "Exchange of manure between countries is not accounted for.",
+        "Nutrient concentrations of crop products are not country-specific (gap-filled using weighted-averages).",
+        "Exclusion of some nutrient inputs (e.g., nutrients in irrigation water, composted crop residues, human manure) which could be significant in some countries.",
+        "Extreme values for some countries may represent data errors rather than actual agronomic differences.",
+        "Uncertainty in estimates of manure and SF application rates for some countries (e.g., China)."
+      ],
+      "data_completeness": "Covers 205 countries and territories, as well as regional and global aggregates, for the period from 1961 to 2020.",
+      "measurement_precision": {
+        "cropland_area_CV": "25%",
+        "crop_production_CV": "7%",
+        "livestock_numbers_CV": "10%",
+        "livestock_manure_nutrient_coefficients_CV": "50%",
+        "synthetic_fertilizer_use_CV": "25%",
+        "fraction_of_SF_applied_to_cropland_CV": "10%",
+        "atmospheric_deposition_of_N_CV": "70%",
+        "biological_N_fixation_coefficients_CV": "60%",
+        "crop_removal_coefficients_CV": "20%"
+      },
+      "representativeness": {
+        "spatial_representativeness": "Global coverage at country level, but challenges with quantifying nutrient flows within the FAO cropland definition.",
+        "temporal_representativeness": "Long-term (60 years) annual data, capturing major historical trends.",
+        "system_representativeness": "Focuses on cropland, excluding permanent meadows and pastures, which limits full agricultural system representation."
+      },
+      "uncertainty_sources": [
+        "Cropland area measurement and definition variability.",
+        "Lack of specific information for CF in most countries (default 100% assumption).",
+        "Uncertainty in livestock manure nutrient coefficients.",
+        "High relative uncertainty in atmospheric N deposition estimates (though small contribution to overall budget).",
+        "Uncertainty in biological N fixation coefficients.",
+        "Uncertainty in crop removal coefficients.",
+        "Assumption of same CF for SF and manure.",
+        "Exclusion of forage crop nutrient removal and biological N fixation.",
+        "Exclusion of manure exchange between countries.",
+        "Non-country-specific crop nutrient concentrations.",
+        "Exclusion of other nutrient inputs (irrigation water, compost, human manure)."
+      ],
+      "validation_evidence": [
+        "Comparison of global N, P trends and NUE with estimates from multiple previous studies (Zhang et al., Conant et al., Lassaletta et al., Mueller et al., Bouwman et al., Bodirsky et al., Lu and Tian, Nishina et al., Zou et al.).",
+        "General concordance in direction of nutrient balances (deficit/surplus) with other studies for specific countries (e.g., Burkina Faso)."
+      ]
+    },
+    "literature_integration": {
+      "key_methodological_references": [
+        "FAOSTAT (FAO, 2022a, 2022d, 2022e)",
+        "IFASTAT (IFA, 2022a)",
+        "IPCC Guidelines for National Greenhouse Gas Emission Inventories at Tier 1 (FAO, 2022c)",
+        "Vishwakarma et al. (2023) for atmospheric N deposition",
+        "Peoples et al. (2021) and Herridge et al. (2022) for biological N fixation model",
+        "Ludemann et al. (2023a) for crop nutrient removal coefficients meta-analysis",
+        "Statistics Netherlands (2012) and Sheldrick et al. (2003) for manure P:N and K:N ratios"
+      ],
+      "comparative_studies": [
+        "Zhang et al. (2015, 2021, 2023)",
+        "Conant et al. (2013)",
+        "Lassaletta et al. (2014, 2016)",
+        "Mueller et al. (2012)",
+        "Bouwman et al. (2013, 2017)",
+        "Bodirsky et al. (2012)",
+        "Lu and Tian (2017)",
+        "Nishina et al. (2017)",
+        "Zou et al. (2022)",
+        "Einarsson et al. (2020, 2021)",
+        "Lesschen et al. (2007)"
+      ],
+      "theoretical_framework": "Nutrient budgets (partial), nutrient balance (surplus/deficit), nutrient use efficiency (NUE).",
+      "data_sources": [
+        "FAOSTAT (FAO, 2022a, 2022d, 2022e)",
+        "IFASTAT (IFA, 2022a)",
+        "Land-Use Harmonization (LUH2; Hurtt et al., 2020)",
+        "Wang et al. (2019)",
+        "Shang et al. (2019)",
+        "Wang et al. (2017)",
+        "Statistics Netherlands (2012)",
+        "Sheldrick et al. (2003)",
+        "Dryad (Ludemann et al., 2023b)",
+        "Zenodo (Einarsson, 2023a, 2023b; Ludemann, 2024; Jackson, 2024)"
+      ],
+      "benchmarking_data": [
+        "EU Nitrogen Expert Panel (2016) for NUE ranges."
+      ],
+      "validation_studies": [
+        "Comparison with other global N and P budget studies."
+      ]
+    },
+    "extraction_metadata": {
+      "extraction_completeness": 0.95,
+      "data_richness_assessment": "High. The paper provides extensive quantitative data, methodological details, and discusses limitations and comparisons with other studies.",
+      "confidence_in_extraction": 0.9,
+      "potential_ambiguities": [
+        "The term 'partial nutrient budget' is used, meaning specific losses are embedded, not explicitly accounted for.",
+        "The definition of 'cropland' by FAO differs from remote sensing/biophysical modeling, leading to uncertainty.",
+        "The assumption that the same CF values for SF are used for manure apportionment introduces uncertainty.",
+        "The exclusion of forage crops and their nutrient removal/fixation is a significant limitation for some countries.",
+        "The lack of country-specific crop nutrient concentrations is a simplification.",
+        "The exact 'rate of change' for some temporal patterns is described qualitatively (e.g., 'less marked increase') rather than with a precise numerical rate, requiring interpretation.",
+        "The 'statistical significance' of trends and comparisons is often implied rather than explicitly stated with p-values."
+      ],
+      "extraction_limitations": [
+        "No specific coordinates for study sites are provided, only country-level information.",
+        "Detailed climate and soil properties are not provided, as the study is at a global/country aggregate level.",
+        "Specific crop varieties/cultivars are not detailed beyond general crop types.",
+        "Detailed management practices (e.g., specific tillage methods, pest management) are not within the scope of this database paper."
+      ],
+      "quality_flags": [
+        "Uncertainty estimates (CV%) are provided for key input parameters, indicating varying levels of data quality.",
+        "Limitations regarding data availability (e.g., for forage crops, manure exchange) are explicitly stated by the authors."
+      ],
+      "recommended_validation_checks": [
+        "Cross-reference the reported numerical values (especially percentages and rates of change) with the tables and figures in the original paper to ensure accuracy.",
+        "Verify the interpretation of 'partial nutrient budget' and its implications for the reported balances.",
+        "Confirm the specific definitions of 'cropland' and how it impacts the scope of the study."
+      ]
+    },
+    "_usage_metadata": {
+      "timestamp": "2025-07-10T10:31:44.319435",
+      "stage_name": "stage_1a",
+      "paper_id": "Global Fostat Reference Database",
+      "prompt_length_chars": 89716,
+      "processing_time_seconds": 51.73,
+      "thinking_enabled": true,
+      "input_tokens": 27520,
+      "output_tokens": 10591,
+      "thinking_tokens": 0,
+      "input_cost_usd": 0.004128,
+      "output_cost_usd": 0.037068,
+      "thinking_cost_usd": 0.0,
+      "total_cost_usd": 0.041196
+    }
+  }
+}

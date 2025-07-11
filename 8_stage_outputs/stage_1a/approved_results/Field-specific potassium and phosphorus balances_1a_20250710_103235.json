@@ -1,0 +1,943 @@
+{
+  "stage_id": "1a",
+  "stage_name": "Generic Extraction",
+  "paper_id": "Field-specific potassium and phosphorus balances",
+  "processing_timestamp": "2025-07-10T10:32:35.268314",
+  "processing_time_seconds": 102.97545337677002,
+  "processing_mode": "single_paper",
+  "validation_passed": true,
+  "validation_message": "Valid generic extraction",
+  "results": {
+    "paper_metadata": {
+      "title": "Field-specific potassium and phosphorus balances and fertilizer requirements for irrigated rice-based cropping systems",
+      "authors": [
+        "Roland J Buresh",
+        "Mirasol F Pampolino",
+        "Christian Witt"
+      ],
+      "journal": "Plant Soil",
+      "publication_year": 2010,
+      "doi": "Not explicitly provided in text",
+      "study_region": "Asia (multi-country, multi-state), Scotland",
+      "primary_focus": "Potassium and Phosphorus management in rice-based cropping systems, soil nutrient dynamics, and site-specific nutrient management (SSNM)"
+    },
+    "research_methodology": {
+      "study_type": "field_experiment|laboratory_study|modeling_study|review_analysis|survey_research|long_term_monitoring",
+      "experimental_design": "Multi-site, multi-year field experiments, randomized block designs, nutrient omission trials, grid-based soil sampling, long-term monitoring, and modeling approaches (QUEFTS).",
+      "temporal_scope": {
+        "study_duration_years": "Varies, from single season to 40 years (long-term experiments)",
+        "data_collection_frequency": "Annually, seasonally (multiple cuts), single time point for soil sampling",
+        "seasonal_coverage": "Wet and dry seasons (rice), full cropping cycles",
+        "monitoring_timeline": [
+          "1968-1998 (long-term grass rotation experiment)",
+          "1991-2007 (QUEFTS model data compilation)",
+          "1997-2007 (on-farm trials for QUEFTS data)",
+          "1969-2008 (nutrient balance statistics for India)"
+        ]
+      },
+      "spatial_scope": {
+        "number_of_sites": "Multiple sites across Asia and Europe, including >8000 plot-level observations, 443 farmer's plots in one village, and 5 replicates in a long-term experiment.",
+        "geographic_coverage": "Asia (Bangladesh, China, India, Indonesia, Philippines, Thailand, Vietnam), Europe (Scotland)",
+        "site_characteristics": [
+          "Irrigated rice production areas",
+          "Farmers' fields",
+          "On-station experiments",
+          "Loamy sand soil derived from granitic bedrock",
+          "Alluvial soils",
+          "Red and lateritic soils",
+          "Coastal saline soils",
+          "Black soils",
+          "Brown forest soils",
+          "Fluvo-aquic soil"
+        ],
+        "coordinates": "57°8'N, 2°9'W (Aberdeen, Scotland); 112°17' to 112°58' E longitude, 38°13' to 38°41' N latitude (Shanxi, China)",
+        "regional_representativeness": "Aims to cover diverse tropical and subtropical environments, various agro-climatic regions, and different soil types to develop widely applicable SSNM principles."
+      },
+      "sample_design": {
+        "sample_sizes": {
+          "QUEFTS_observations": {
+            "N": 15507,
+            "P": 8948,
+            "K": 8983
+          },
+          "K_omission_trials": 525,
+          "P_omission_trials": 531,
+          "irrigation_water_samples": 245,
+          "soil_samples_China": 280,
+          "long_term_experiment_replicates": 5,
+          "long_term_experiment_soil_subsamples": "variable (5-20 per plot per depth)"
+        },
+        "replication_levels": "5 replicates in long-term grass experiment; variable in other field trials (not always specified but implied by 'multi-location trials').",
+        "randomization_approach": "Randomized block design (long-term grass experiment); not explicitly stated for all other trials but implied by 'trials'.",
+        "controls_and_treatments": [
+          "Nutrient omission plots (-N, -P, -K)",
+          "Full fertilization (NPK)",
+          "Fractional K/P depletion",
+          "Limited K/P depletion",
+          "Partial maintenance plus yield gain",
+          "K0 (no K fertilizer)",
+          "K65 (65 kg K ha-1 yr-1)",
+          "Farmer's conventional practice",
+          "Recommended management practice"
+        ],
+        "statistical_power": "Not explicitly quantified, but large sample sizes and long-term studies suggest reasonable power."
+      },
+      "analytical_methods": {
+        "measurement_protocols": [
+          "Plant sampling and yield determination (grain yield, above-ground dry matter, harvest index)",
+          "Plant nutrient analysis (N, P, K, by wet-digestion, flame photometry, ICP-AES)",
+          "Soil sampling (0-20 cm plow layer, 0-60 cm profile, grid sampling, DGPS)",
+          "Soil chemical analysis (pH, organic matter, available P, K, Ca, Mg, S, Zn, Mn, Fe, Cu, B, nitrate-N)",
+          "Soil extraction methods (acetic acid, aqua-regia, ammonium acetate, NaHCO3, EDTA, NH4F, KCl)",
+          "Soil physical properties (bulk density, particle size distribution)",
+          "Soil mineralogical analysis (X-ray powder diffraction - XRPD, full-pattern fitting, X-ray fluorescence - XRF)"
+        ],
+        "instrumentation": [
+          "ICP-AES",
+          "Flame photometry",
+          "Atomic absorption spectrophotometer",
+          "UV spectrophotometer",
+          "Glass pH electrode",
+          "Differential Global Positioning System (DGPS) - Trimble 132 GPS receiver",
+          "Siemens D5000 XRPD instrument",
+          "Philips PW 1404 XRF spectrometer"
+        ],
+        "quality_control": [
+          "Comparable methodologies for plant sampling, yield determination, and analysis across countries (Witt et al. 1999)",
+          "Exclusion of data with harvest index <0.4 or unbalanced fertilization for QUEFTS analysis",
+          "Standardized soil analysis procedures (CAAS, IPNI Cooperative Soil and Plant Analysis Laboratory, National Laboratory of Soil Testing and Fertilizer Recommendation of CAAS)",
+          "XRPD quantification by full-pattern fitting with uncertainty estimates (Hillier 2003)"
+        ],
+        "detection_limits": {},
+        "analytical_precision": {
+          "XRPD_uncertainty": "X ± 0.35 (where X is concentration in weight percent at 95% confidence)"
+        }
+      },
+      "statistical_approach": {
+        "analysis_methods": [
+          "QUEFTS model (linear-parabolic-plateau)",
+          "Nutrient balance calculations (input-output)",
+          "Descriptive statistics (mean, median, SD, quartiles, CV)",
+          "Geo-statistics (semivariograms, kriging interpolation)",
+          "ANOVA (GLM, Tukey test)",
+          "Multiple correlation studies",
+          "Regression analysis"
+        ],
+        "significance_testing": "p<0.05 for statistical significance (long-term grass experiment); not always explicitly stated for other studies but implied by 'significant' findings.",
+        "uncertainty_quantification": "Standard errors, standard deviations, quartiles, XRPD uncertainty.",
+        "model_validation": "QUEFTS model confirmed with larger dataset, consistency with previous studies."
+      }
+    },
+    "quantitative_findings": {
+      "primary_measurements": [
+        {
+          "parameter": "Reciprocal Internal Efficiency (RIE) for irrigated rice (NPK fertilized, HI 0.4-0.63)",
+          "values": [],
+          "units": "kg nutrient per tonne of grain",
+          "statistical_measures": {
+            "mean": null,
+            "standard_error": null,
+            "confidence_interval": null,
+            "sample_size": null
+          },
+          "measurement_context": "N: 14.6, P: 2.7, K: 15.9 (from QUEFTS model, Table 3)"
+        },
+        {
+          "parameter": "Nutrient Harvest Index (HI) for irrigated rice (NPK fertilized, HI 0.4-0.63)",
+          "values": [],
+          "units": "kg nutrient in grain per kg nutrient in total above-ground dry matter",
+          "statistical_measures": {
+            "mean": null,
+            "standard_error": null,
+            "confidence_interval": null,
+            "sample_size": null
+          },
+          "measurement_context": "N: 0.63, P: 0.69, K: 0.15 (median values, Table 4)"
+        },
+        {
+          "parameter": "Yield gain from K fertilization in irrigated rice",
+          "values": [
+            12
+          ],
+          "units": "%",
+          "statistical_measures": {
+            "mean": 12,
+            "standard_error": null,
+            "confidence_interval": null,
+            "sample_size": 525
+          },
+          "measurement_context": "Average for 525 K omission plot trials"
+        },
+        {
+          "parameter": "Yield gain from P fertilization in irrigated rice",
+          "values": [
+            9
+          ],
+          "units": "%",
+          "statistical_measures": {
+            "mean": 9,
+            "standard_error": null,
+            "confidence_interval": null,
+            "sample_size": 531
+          },
+          "measurement_context": "Average for 531 P omission plot trials"
+        },
+        {
+          "parameter": "Median K concentration in irrigation water (across 8 Asian rice-growing areas)",
+          "values": [
+            1.8
+          ],
+          "units": "mg L-1",
+          "statistical_measures": {
+            "mean": 2.5,
+            "standard_error": null,
+            "confidence_interval": null,
+            "sample_size": 245
+          },
+          "measurement_context": "Table 7"
+        },
+        {
+          "parameter": "Accumulated net K off-take in long-term grass experiment (30 years)",
+          "values": [
+            1160,
+            1189
+          ],
+          "units": "kg K ha-1",
+          "statistical_measures": {
+            "mean": null,
+            "standard_error": null,
+            "confidence_interval": null,
+            "sample_size": null
+          },
+          "measurement_context": "K0: 1160 kg K ha-1; K65: 1189 kg K ha-1 (Table 9)"
+        },
+        {
+          "parameter": "Annual K release from non-exchangeable/structural K in long-term grass experiment",
+          "values": [
+            35
+          ],
+          "units": "kg K ha-1 yr-1",
+          "statistical_measures": {
+            "mean": 35,
+            "standard_error": null,
+            "confidence_interval": null,
+            "sample_size": null
+          },
+          "measurement_context": "Estimated from unaccounted K deficit over 30 years"
+        },
+        {
+          "parameter": "Soil Organic Matter (OM) in Shanxi, China (0-20 cm)",
+          "values": [
+            0.22
+          ],
+          "units": "%",
+          "statistical_measures": {
+            "mean": 0.22,
+            "standard_error": 0.1,
+            "confidence_interval": null,
+            "sample_size": 280
+          },
+          "measurement_context": "Mean value, 100% of samples below critical value (Table 23)"
+        },
+        {
+          "parameter": "Available P in Shanxi, China (0-20 cm)",
+          "values": [
+            8
+          ],
+          "units": "mg L-1",
+          "statistical_measures": {
+            "mean": 8,
+            "standard_error": 4,
+            "confidence_interval": null,
+            "sample_size": 280
+          },
+          "measurement_context": "Mean value, 86% of samples below critical value (Table 23)"
+        },
+        {
+          "parameter": "Available K in Shanxi, China (0-20 cm)",
+          "values": [
+            88.3
+          ],
+          "units": "mg L-1",
+          "statistical_measures": {
+            "mean": 88.3,
+            "standard_error": 16.6,
+            "confidence_interval": null,
+            "sample_size": 280
+          },
+          "measurement_context": "Mean value, 23% of samples below critical value (Table 23)"
+        },
+        {
+          "parameter": "Total NPK fertilizer consumption in India (2007-08)",
+          "values": [
+            23
+          ],
+          "units": "Mt",
+          "statistical_measures": {
+            "mean": 23,
+            "standard_error": null,
+            "confidence_interval": null,
+            "sample_size": null
+          },
+          "measurement_context": "Record consumption"
+        },
+        {
+          "parameter": "Projected NPK nutrient demand for India (2025)",
+          "values": [
+            45
+          ],
+          "units": "Mt",
+          "statistical_measures": {
+            "mean": 45,
+            "standard_error": null,
+            "confidence_interval": null,
+            "sample_size": null
+          },
+          "measurement_context": "To produce 300 Mt food grains"
+        }
+      ],
+      "statistical_relationships": [
+        {
+          "relationship_type": "Yield gain vs. full fertilization yield (irrigated rice)",
+          "variables": [
+            "Yield gain",
+            "Full fertilization yield"
+          ],
+          "correlation_coefficient": null,
+          "regression_parameters": {
+            "K_slope": 0.88,
+            "P_slope": 0.91
+          },
+          "significance_level": "Directly proportional",
+          "effect_size": "Average 12% for K, 9% for P"
+        },
+        {
+          "relationship_type": "Correlation between HNO3-K and K balance/yield (Orissa)",
+          "variables": [
+            "HNO3-K",
+            "K balance",
+            "Yield"
+          ],
+          "correlation_coefficient": "r=0.85** (0-0.15m layer), 0.72** (0.15-0.30m layer), 0.74** (0.30-0.45m layer)",
+          "regression_parameters": {},
+          "significance_level": "Highly significant (p<0.01)",
+          "effect_size": "Around 68% of variation in HNO3-K of 0-0.15m layer accounted for K balance."
+        },
+        {
+          "relationship_type": "Spatial variability of soil nutrients (China)",
+          "variables": [
+            "Soil nutrients",
+            "Fertilization history",
+            "Fertilizer application level",
+            "Soil texture"
+          ],
+          "correlation_coefficient": "Close relationship",
+          "regression_parameters": {},
+          "significance_level": null,
+          "effect_size": "Higher P, K, Zn in vegetable production areas due to heavy input; lower in sandy loam areas with low input."
+        },
+        {
+          "relationship_type": "Acetic acid extractable K vs. Ammonium acetate extractable K (Scotland)",
+          "variables": [
+            "Ac-K",
+            "NH4Ac-K"
+          ],
+          "correlation_coefficient": null,
+          "regression_parameters": {},
+          "significance_level": null,
+          "effect_size": "Acetic acid (2.5%) extracted on average 94% of 1 M NH4Ac."
+        },
+        {
+          "relationship_type": "Total K from mineral partitioning vs. XRF Total K (Scotland)",
+          "variables": [
+            "Mineral K",
+            "XRF Total K"
+          ],
+          "correlation_coefficient": null,
+          "regression_parameters": {},
+          "significance_level": null,
+          "effect_size": "Resulted in 100 ±10% agreement, indicating good agreement between independent estimates."
+        }
+      ],
+      "temporal_patterns": [
+        {
+          "parameter": "Herbage yield and K concentration (long-term grass experiment)",
+          "trend_description": "Declined with time in both K0 and K65 treatments, with K0 stabilizing at lower levels.",
+          "rate_of_change": null,
+          "units_per_time": null,
+          "trend_significance": "Significant differences between K0 and K65 from 7th year (Grass I) and 3rd year (Grass II).",
+          "seasonal_component": "K concentration highest in first cut, decreasing in subsequent cuts for K65; consistent low K in K0."
+        },
+        {
+          "parameter": "K fertility status in Indian soils",
+          "trend_description": "General decline over the years, with increasing deficiency and crop responses to K application.",
+          "rate_of_change": null,
+          "units_per_time": null,
+          "trend_significance": "Low and high K categories decreased, medium increased, indicating overall decline in high K areas.",
+          "seasonal_component": null
+        },
+        {
+          "parameter": "K balance in rice-rice cropping system (Bhubaneswar)",
+          "trend_description": "Mean annual K balance was negative in all treatments, even with NPK+FYM.",
+          "rate_of_change": null,
+          "units_per_time": null,
+          "trend_significance": "K depletion decreased at super-optimal NPK levels but remained negative.",
+          "seasonal_component": null
+        }
+      ],
+      "comparative_results": [
+        {
+          "comparison_type": "K65 vs K0 treatments (long-term grass experiment)",
+          "groups_compared": [
+            "K65 (65 kg K ha-1 yr-1)",
+            "K0 (no K fertilizer)"
+          ],
+          "difference_magnitude": 2,
+          "units": "t ha-1 yr-1",
+          "statistical_significance": "Significant (p<0.05)",
+          "practical_significance": "K65 had significantly higher herbage yield (9 vs 7 t ha-1 yr-1) and K concentration (1.0-1.5% vs 0.5-0.7%)."
+        },
+        {
+          "comparison_type": "SSNM vs. Conventional/Farmer Practice",
+          "groups_compared": [
+            "Site-Specific Nutrient Management (SSNM)",
+            "Farmer's Conventional Practice"
+          ],
+          "difference_magnitude": 12.4,
+          "units": "% yield increase",
+          "statistical_significance": "Significant",
+          "practical_significance": "SSNM increased maize yield by 12.4% and farmer's income by 798 Yuan/ha (China). SSKM improved yield and economics in India."
+        },
+        {
+          "comparison_type": "Nutrient omission plots vs. full fertilization",
+          "groups_compared": [
+            "Nutrient omission plots",
+            "Full fertilized plots"
+          ],
+          "difference_magnitude": null,
+          "units": null,
+          "statistical_significance": null,
+          "practical_significance": "Mean and median RIE for N, P, and K were consistently lower for rice grown without addition of the nutrient due to dilution."
+        },
+        {
+          "comparison_type": "Nutrient balances across cropping systems",
+          "groups_compared": [
+            "Rice-rice",
+            "Rice-wheat",
+            "Rice-maize"
+          ],
+          "difference_magnitude": null,
+          "units": null,
+          "statistical_significance": null,
+          "practical_significance": "Rice-maize system with high maize yield is more extractive of nutrients (e.g., ~200 kg K ha-1 and 40 kg P ha-1 net export) than rice-rice or rice-wheat systems."
+        },
+        {
+          "comparison_type": "Fertilizer recommendation approaches",
+          "groups_compared": [
+            "Yield gain approach",
+            "Nutrient maintenance (full/partial)",
+            "Partial maintenance plus yield gain"
+          ],
+          "difference_magnitude": null,
+          "units": null,
+          "statistical_significance": null,
+          "practical_significance": "Yield gain approach can lead to nutrient depletion at high yields. Full maintenance can be unprofitable. Partial maintenance with limited depletion avoids increasing depletion with yield. Combined approach is recommended when yield gain is certain."
+        }
+      ]
+    },
+    "environmental_context": {
+      "geographic_details": {
+        "countries": [
+          "Bangladesh",
+          "China",
+          "India",
+          "Indonesia",
+          "Philippines",
+          "Thailand",
+          "Vietnam",
+          "United Kingdom (Scotland)"
+        ],
+        "regions": [
+          "Tropical Asia",
+          "Subtropical Asia",
+          "Indo-Gangetic Plains (IGP)",
+          "Northwest India (Punjab, Haryana)",
+          "West Bengal (Nadia, Murshidabad, Birbhum)",
+          "Jharkhand (Ranchi)",
+          "Orissa",
+          "Shanxi Province (Xinzhou city)",
+          "Mekong Delta",
+          "Red River Delta",
+          "Cauvery Delta",
+          "West Java",
+          "Bohol",
+          "Iloilo",
+          "Central Plain (Thailand)",
+          "Aberdeen (NE Scotland)"
+        ],
+        "coordinates": "57°8'N, 2°9'W (Aberdeen, Scotland); 112°17' to 112°58' E longitude, 38°13' to 38°41' N latitude (Shanxi, China)",
+        "elevation": "Not specified",
+        "landscape_position": "Irrigated lowlands, flood plains, delta areas, uplands, medium lands, low lands, central plain region"
+      },
+      "climate_characteristics": {
+        "climate_classification": "Tropical monsoon, Semiarid monsoon, Humid sub-tropical",
+        "temperature_patterns": {
+          "Shanxi_China_average_annual": "8.5°C",
+          "Scotland_average_annual": "7.9°C (1961-80)"
+        },
+        "precipitation_patterns": {
+          "Shanxi_China_average_annual": "405 mm",
+          "Orissa_average_annual": "1497 mm",
+          "Scotland_average_annual": "791 mm (1961-80)",
+          "Monsoonal_wet_seasons": "Much water from rainfall",
+          "Dry_season": "Much water from irrigation"
+        },
+        "growing_season": "Approx. 160 days (Shanxi, China); 215 days (April 8 to Nov 10) (Scotland)",
+        "environmental_stressors": [
+          "Reduced solar radiation/cloudiness (wet season rice)",
+          "Water deficit",
+          "Soil acidity",
+          "High phosphorus fixation",
+          "Groundwater nitrate-N contamination",
+          "Eutrophication of rivers"
+        ]
+      },
+      "soil_properties": {
+        "soil_classification": "Dystric Cambisol (FAO), Typic Fragiorthod (Soil Taxonomy), Fluvo-aquic, Inceptisols, Alfisols, Entisols, Vertisols, Alluvial, Red and lateritic, Coastal saline, Black, Brown forest, Hill and terai soils, Saline-sodic soils",
+        "texture": "Loamy sand, heavy clay, coarse-textured soil, light-textured soil, sandy loam",
+        "organic_matter": "Low in Shanxi (mean 0.22%), increased from 0.23 to 0.55% in long-term rice-mustard system (Keonjhar)",
+        "chemical_properties": {
+          "pH": "4.9-5.3 (Scotland); 7.7-8.2 (Shanxi); Acidic (Orissa); Neutral to slightly alkaline (Inceptisols, Orissa)",
+          "CEC": "9-19 (Scotland)",
+          "K_status": "Moderate to low (Scotland, initial); Low, medium, high (India); Medium to high (Orissa); High in coastal saline soils (Orissa)",
+          "P_status": "Deficient in Shanxi (86% samples below critical value)",
+          "Zn_status": "Deficient in Shanxi (94% samples below critical value)",
+          "Fe_status": "Deficient in Shanxi (77% samples below critical value)",
+          "Ca_Mg_status": "High in Shanxi",
+          "S_Mn_Cu_status": "Above medium in Shanxi"
+        },
+        "physical_properties": {
+          "Bulk_density": "0.65-0.80 (Scotland)",
+          "Water_retention_capacity": "Low (red and lateritic soils, Jharkhand)",
+          "Percolation_rate": "Reduced by puddling"
+        },
+        "mineralogy": "Dioctahedral micas (muscovite, illite), Trioctahedral micas (biotite, phlogopite), K-feldspar (sanidine, orthoclase, microcline), Hydrobiotite, Smectite, Vermiculite, Kaolinite, Chlorite, Quartz, Allophane"
+      },
+      "land_use_context": {
+        "current_land_use": "Agricultural land, rice-based cropping systems, grassland",
+        "cropping_systems": [
+          "Continuous rice (2-3 crops/year)",
+          "Rice-wheat",
+          "Rice-maize",
+          "Rice-rice",
+          "Rice-pulse",
+          "Rice-oilseed",
+          "Rice-vegetable",
+          "Maize-wheat-green gram",
+          "Pigeon pea-wheat",
+          "P. Millet-wheat-green gram",
+          "P. Millet-wheat-cowpea (Fodder)",
+          "Soybean-wheat",
+          "Maize-rape-wheat",
+          "Grass rotation (perennial ryegrass)"
+        ],
+        "management_intensity": "Intensive agriculture, continuous cultivation, liberal/excessive irrigation, small-scale farmer's farmland, family responsibility system (China), blanket fertilizer recommendations, low use-efficiency of inputs.",
+        "historical_context": "Green Revolution, stagnation/decline in productivity since 1990s in some areas.",
+        "sustainability_metrics": [
+          "Nutrient balances (N, P, K, S, Zn, B)",
+          "Soil health (OM, pH, available nutrients)",
+          "Environmental impacts (nitrate-N contamination, eutrophication)",
+          "Financial profitability of fertilizer use"
+        ]
+      }
+    },
+    "agricultural_systems": {
+      "crop_information": {
+        "crop_types": [
+          "Rice",
+          "Wheat",
+          "Maize",
+          "Perennial Ryegrass",
+          "Pulses (Green gram, Black gram, Chickpea, Lentil, Pigeon pea)",
+          "Oilseeds (Mustard, Groundnut, Soybean, Sunflower, Rape)",
+          "Vegetables (Potato, Cabbage, Cauliflower, Brinjal, Tomato, Turmeric, Ginger, Elephant-foot yam)",
+          "Fruits (Banana, Pineapple)",
+          "Cotton",
+          "Sugarcane",
+          "Jute",
+          "Tea",
+          "Coffee",
+          "Rubber",
+          "Betel nut",
+          "Cocoa",
+          "Cashew",
+          "Spices (Cardamom, Clove, Nutmeg, Chilli)"
+        ],
+        "varieties_cultivars": [
+          "Semi-dwarf, modern high-yielding indica rice cultivars",
+          "Hybrid maize",
+          "Timothy (Phleum pratense L.)",
+          "Meadow fescue (Festuca pratensis L.)"
+        ],
+        "growth_stages_studied": [
+          "Maturity (for RIE determination)",
+          "Peak tillering (rice)",
+          "Panicle initiation (PI) stage (rice)"
+        ],
+        "yield_levels": {
+          "Rice_yield_potential": "10 t ha-1",
+          "Irrigated_rice_yields_Asia": "4-8 t ha-1",
+          "Wheat_yield_example": "5 t ha-1",
+          "Hybrid_maize_yield": "Up to 12 t ha-1",
+          "Grass_yield_Scotland": "7-9 t ha-1 yr-1 (average annual)",
+          "Banana_yield": "58 t ha-1",
+          "India_food_grain_production_2007-08": "230 Mt",
+          "India_food_grain_demand_2025": "300 Mt"
+        },
+        "production_metrics": {
+          "Grain_yield": "t ha-1",
+          "Above_ground_dry_matter": "kg ha-1",
+          "Harvest_index": "kg grain per kg total above-ground dry matter",
+          "Chaff_production": "t ha-1",
+          "Grain_straw_ratio": "ratio",
+          "Fruit_weight": "g",
+          "Total_soluble_solids": "percentage",
+          "Total_sugar": "percentage",
+          "Ascorbic_acid": "mg/100 g pulp"
+        }
+      },
+      "management_practices": {
+        "fertilization": {
+          "types": [
+            "NPK fertilizers",
+            "N fertilizer",
+            "P fertilizer",
+            "K fertilizer",
+            "S fertilizer",
+            "Zn fertilizer",
+            "B fertilizer",
+            "Organic materials (composted animal manure, green manures, FYM, crop residues, forest litters, press mud, poultry manure)",
+            "Biofertilizers"
+          ],
+          "rates": {
+            "K_fertilizer_Scotland": "65 kg K ha-1 yr-1",
+            "N_fertilizer_Scotland": "50 kg N ha-1 yr-1 (basal), 100 kg N ha-1 yr-1 (Grass I), 150 kg N ha-1 yr-1 (Grass II)",
+            "Cereal_NPK_basal_Scotland": "75-85 kg N, 19-21 kg P, 63-74 kg K",
+            "K_or_P_to_raise_yield_by_1t_ha-1": "25 kg K or 9 kg P",
+            "Organic_material_K_input": "20 kg K ha-1 (from 2 t ha-1 organic material with 10 g K kg-1)",
+            "Organic_material_P_input": "10 kg P ha-1 (from 2 t ha-1 organic material with 5 g P kg-1)",
+            "Rice_K_application_Orissa": "30 to 60 kg ha-1",
+            "Groundnut_NPK_application_Orissa": "20:40:40 kg ha-1 (N:P2O5:K2O)",
+            "Green_gram_K_application_Orissa": "20 kg K ha-1",
+            "Mustard_K_application_Orissa": "30 kg K ha-1",
+            "Sunflower_K_application_Orissa": "60 kg K ha-1"
+          },
+          "timing": [
+            "Annually during spring (grass)",
+            "After each cut (grass)",
+            "Basal application at start of growing season",
+            "Split application (1:1 at peak tillering and PI stage for rice)",
+            "Split application (1:1:1 at planting, 30 and 60 days after planting for vegetables/spices)"
+          ],
+          "application_methods": [
+            "Blanket recommendations",
+            "Site-specific nutrient management (SSNM)",
+            "Regionalized balanced fertilization"
+          ]
+        },
+        "irrigation": {
+          "system_type": "Gravity-fed irrigation systems, tube wells",
+          "water_amounts": {
+            "Typical_irrigated_rice_Asia": "1300-1500 mm",
+            "Example_irrigation_water_input": "1000 mm (for K input calculation)",
+            "Rice_production_cycle_NW_India": "1600-1900 mm",
+            "Wheat_production_NW_India": "200-300 mm"
+          },
+          "scheduling": "Continuous submergence (rice), water-saving technologies"
+        },
+        "other_practices": {
+          "tillage": "Puddling (rice), incorporation of maize residue (problematic)",
+          "rotation": [
+            "Rice-rice",
+            "Rice-wheat",
+            "Rice-maize",
+            "Rice-pulse",
+            "Rice-oilseed"
+          ],
+          "pest_management": "Good agronomic practices to avoid yield loss from pests and diseases",
+          "organic_amendments": [
+            "Crop residue retention/removal/burning",
+            "Composted animal manure",
+            "Green manures"
+          ]
+        }
+      },
+      "input_output_relationships": {
+        "input_rates": {
+          "Fertilizer_NPK_India_2007-08": "23 Mt",
+          "Fertilizer_NPK_India_1999-2000": "18 Mt",
+          "Irrigation_water_K_input": "18 kg K ha-1 (for 1000 mm water at 1.8 mg K L-1)",
+          "Organic_material_K_input": "20 kg K ha-1",
+          "Organic_material_P_input": "10 kg P ha-1"
+        },
+        "output_measurements": {
+          "Crop_removal_NPK_India_1999-2000": "28 Mt",
+          "K_removal_banana": "1180 kg K ha-1 (at 58 t ha-1 yield)",
+          "K_removal_vegetables": "90-480 kg ha-1",
+          "K_removal_tuber_crops": "310-350 kg K2O ha-1",
+          "K_removal_pineapple": "530 kg K2O ha-1"
+        },
+        "efficiency_metrics": {
+          "Recovery_efficiency_K": "0.35-0.66 kg kg-1",
+          "Recovery_efficiency_P": "0.22-0.35 kg kg-1",
+          "Agronomic_efficiency_K": "40 kg grain/kg K",
+          "Agronomic_efficiency_P": "110 kg grain/kg P",
+          "Fertilizer_use_efficiency_N": "50-60%",
+          "Fertilizer_use_efficiency_P": "15-25%",
+          "Fertilizer_use_efficiency_K": "60-70%"
+        },
+        "balance_calculations": {
+          "K_balance_continuous_rice": "Small net export with complete residue retention, substantial export with residue removal.",
+          "P_balance_continuous_rice": "Not strongly affected by residue management.",
+          "K_balance_rice_wheat_NW_India": "Can be near neutral with high K input from irrigation and rice residue retention, but negative with water-saving technologies or residue removal.",
+          "P_balance_rice_wheat_NW_India": "Consistently negative regardless of residue retention.",
+          "K_P_balance_rice_maize": "Large net exporter of K and P (e.g., ~200 kg K ha-1 and 40 kg P ha-1 at 12 t ha-1 maize yield).",
+          "India_annual_nutrient_gap_1999-2000": "10 Mt",
+          "Orissa_annual_K_depletion": "242.8 thousand tonnes",
+          "India_projected_K_deficit_2020": "8.1 million tonnes"
+        }
+      }
+    },
+    "temporal_dynamics": {
+      "study_timeline": {
+        "start_date": "1968 (long-term grass experiment)",
+        "end_date": "2008 (nutrient balance statistics)",
+        "data_collection_schedule": [
+          "Annually (soil, herbage)",
+          "Seasonally (multiple cuts)"
+        ],
+        "monitoring_frequency": "Annual, seasonal, long-term"
+      },
+      "seasonal_variations": [
+        {
+          "parameter": "Rice yields",
+          "seasonal_pattern": "Higher in dry seasons (7-8 t ha-1) than wet seasons (4-6 t ha-1) due to solar radiation.",
+          "peak_periods": [
+            "Dry season"
+          ],
+          "minimum_periods": [
+            "Wet season"
+          ],
+          "amplitude": null
+        },
+        {
+          "parameter": "Grass K concentration",
+          "seasonal_pattern": "Highest in first cut, decreasing in subsequent cuts for K65 treatment; consistent low K in K0 treatment.",
+          "peak_periods": [
+            "First cut"
+          ],
+          "minimum_periods": [
+            "Third cut"
+          ],
+          "amplitude": null
+        },
+        {
+          "parameter": "K 'uptake rate' in grass",
+          "seasonal_pattern": "Declined substantially from the first to the third cut.",
+          "peak_periods": [
+            "First cut"
+          ],
+          "minimum_periods": [
+            "Third cut"
+          ],
+          "amplitude": null
+        }
+      ],
+      "long_term_trends": [
+        {
+          "parameter": "Herbage yield and K concentration (Scotland)",
+          "trend_direction": "Declining",
+          "trend_magnitude": null,
+          "trend_units": null,
+          "projection_timeframe": "30 years",
+          "sustainability_implications": "K became the growth-limiting nutrient element in low-input systems."
+        },
+        {
+          "parameter": "K fertility in Indian soils",
+          "trend_direction": "Declining",
+          "trend_magnitude": "17-28% decline in available K after two crop cycles (Tiwari 1985)",
+          "trend_units": "%",
+          "projection_timeframe": "Decades",
+          "sustainability_implications": "Increasing deficiency and crop responses to K application, leading to negative K balances and threat to sustainability."
+        },
+        {
+          "parameter": "Yield trends in rice-based systems (India)",
+          "trend_direction": "Stagnation or decline",
+          "trend_magnitude": null,
+          "trend_units": null,
+          "projection_timeframe": "Since 1990s",
+          "sustainability_implications": "Due to wide-scale nutrient depletion and inadequate replenishment."
+        },
+        {
+          "parameter": "Trioctahedral micas (biotite and hydrobiotite) in Scotland soil",
+          "trend_direction": "Depletion",
+          "trend_magnitude": null,
+          "trend_units": null,
+          "projection_timeframe": "Within two centuries (hypothetical, at 35 kg K ha-1 yr-1 off-take)",
+          "sustainability_implications": "These easily weatherable minerals, main K source, will be depleted, potentially leading to drastic decrease in K release."
+        }
+      ],
+      "variability_characterization": {
+        "inter_annual_variability": {
+          "Ac_K_Scotland": "Annual variation observed, lower under grass than cereals."
+        },
+        "spatial_variability": {
+          "Soil_K_India": "High variability among fields within villages (e.g., available K range 24-640 kg ha-1).",
+          "Soil_nutrients_China": "Great variation in OM, P, S, Zn, B; small variation in K. Spatial variability related to fertilization history, application level, soil texture."
+        },
+        "measurement_uncertainty": {
+          "K_concentration_irrigation_water": "Substantial variation within and among rice-growing areas (e.g., Bohol 0.3-1.5 mg L-1, Iloilo 2.0-6.1 mg L-1)."
+        },
+        "drivers_of_variability": [
+          "Retention of crop residues",
+          "Historical fertilizer use",
+          "Input of organic materials",
+          "Inherent soil fertility",
+          "Crop yield attainable with farmers' management practices",
+          "Irrigation water source and quantity",
+          "Soil mineralogy and weathering state",
+          "Cropping system and fertilization custom"
+        ]
+      }
+    },
+    "data_quality_assessment": {
+      "methodological_strengths": [
+        "Use of large, multi-location datasets for QUEFTS model validation.",
+        "Long-term field experiments provide insights into sustained productivity and nutrient dynamics.",
+        "Integration of chemical and mineralogical analyses for comprehensive understanding of K pools.",
+        "Site-specific approaches (SSNM, GIS mapping) address spatial variability.",
+        "Consideration of multiple nutrient inputs (fertilizers, organic materials, irrigation water, rainfall) and outputs (crop removal, leaching)."
+      ],
+      "methodological_limitations": [
+        "QUEFTS model's linear portion is valid only up to 60-70% of yield potential.",
+        "Full maintenance approach for fertilizer recommendations may not be financially optimal.",
+        "Yield gain approach alone can lead to nutrient depletion at high yields.",
+        "Quantification of sustainable drawdown limits for partial maintenance approaches requires further research.",
+        "Soil testing infrastructure limitations in India for widespread SSNM implementation.",
+        "Uncertainty in K input from irrigation water due to variable concentration and quantity.",
+        "Delayed release and variable availability of P from organic materials.",
+        "Simplified assumptions for straw weight estimation in some budget calculations.",
+        "Rough estimation of K 'uptake rate' in some cases.",
+        "Discrepancy between field-based K release estimates and PROFILE model predictions."
+      ],
+      "data_completeness": "Comprehensive, drawing from multiple studies and datasets, but specific details (e.g., exact coordinates for all sites, full analytical uncertainty for all measurements) are not always provided.",
+      "measurement_precision": {
+        "XRPD_uncertainty": "X ± 0.35 (where X is concentration in weight percent at 95% confidence)"
+      },
+      "representativeness": {
+        "spatial_representativeness": "Aims for broad regional representativeness across Asia and specific detailed site studies (e.g., Scotland, Shanxi village). Acknowledges high spatial variability at local scales.",
+        "temporal_representativeness": "Covers short-term seasonal dynamics to multi-decadal trends, providing insights into long-term sustainability.",
+        "system_representativeness": "Focuses on intensive rice-based cropping systems and a long-term grass rotation, representing key agricultural systems."
+      },
+      "uncertainty_sources": [
+        "Variability in K concentration of irrigation water.",
+        "Estimation of K input from irrigation water.",
+        "Delayed release of plant-available P from organic materials.",
+        "Assumptions for K leaching loss (e.g., negligible in puddled soils).",
+        "Estimation of straw weight using grain:straw ratio.",
+        "Rough estimation of K 'uptake rate'.",
+        "Model limitations in representing complex soil processes (e.g., mica weathering)."
+      ],
+      "validation_evidence": [
+        "QUEFTS model RIEs confirmed with larger datasets and consistency with previous studies.",
+        "Field experiment results (Scotland) show similarity with pot experiment results on similar soil types.",
+        "SSNM approaches validated through yield and economic benefits in field trials."
+      ]
+    },
+    "literature_integration": {
+      "key_methodological_references": [
+        "Janssen et al. (1990) - QUEFTS model",
+        "Witt et al. (1999) - QUEFTS model for rice",
+        "Dobermann et al. (2004) - SSNM approach",
+        "Witt et al. (2007) - SSNM for rice fertilization",
+        "Portch and Hunter (2002) - Soil nutrient evaluation",
+        "Chilès and Delfiner (1999) - Geostatistics (semivariograms, kriging)",
+        "Hillier (1999) - XRPD sample preparation",
+        "Norrish and Hutton (1969) - XRF method",
+        "McGrath and Cunliffe (1985) - Aqua-regia extraction",
+        "MISR/SAC (1985) - Acetic acid extraction",
+        "Rowell (1994) - Ammonium acetate extraction"
+      ],
+      "comparative_studies": [
+        "Witt et al. (1999), Haefele et al. (2003) - RIE for rice",
+        "Pathak et al. (2003), Liu et al. (2006) - RIE for wheat",
+        "Setiyono et al. (2010), Liu et al. (2006) - RIE for maize",
+        "Dobermann and Fairhurst (2000) - Nutrient harvest indices",
+        "Pasricha et al. (2001) - K concentration in irrigation water",
+        "My Hoa et al. (2006), Witt and Dobermann (2004), Bijay-Singh et al. (2004) - K leaching loss",
+        "Ghosh and Hasan (1980), Hasan (2002) - K status in Indian soils",
+        "Subba-Rao et al. (2001), Ladha et al. (2003), Tiwari et al. (2006), Sekhon (1999), Sen et al. (2008) - K depletion in India",
+        "Whitehead (2000), Øgaard et al. (2002), Ghorayshi and Lotse (1986), Andersson et al. (2007) - Grass K concentration and yield response",
+        "Sinclair (1979a, 1979b), Andrist-Rangel et al. (2007), Simonsson et al. (2007), Murashkina et al. (2007) - K release from soil minerals",
+        "Holmquist et al. (2003) - K weathering rates using PROFILE model"
+      ],
+      "theoretical_framework": "Site-Specific Nutrient Management (SSNM), Quantitative Evaluation of the Fertility of Tropical Soils (QUEFTS) model, Nutrient balance (input-output) principles, Partial maintenance and yield gain approaches for fertilizer recommendations, K dynamics in soil (soluble, exchangeable, non-exchangeable, structural pools), Mineral weathering and K release mechanisms.",
+      "data_sources": [
+        "International Rice Research Institute (IRRI)",
+        "International Plant Nutrition Institute (IPNI)",
+        "International Potash Institute (IPI)",
+        "International Maize and Wheat Improvement Center (CIMMYT)",
+        "Fertiliser Association of India (FAI)",
+        "Indian Council of Agricultural Research (ICAR)",
+        "Macaulay Institute (Scotland)"
+      ],
+      "benchmarking_data": [
+        "Critical K limits for grass (Whitehead 2000)",
+        "Typical range of K in mineral soils globally (Sparks 1987)"
+      ],
+      "validation_studies": [
+        "QUEFTS model validation with large datasets.",
+        "Comparison of field experiment results with pot experiment results on similar soil types."
+      ]
+    },
+    "extraction_metadata": {
+      "extraction_completeness": 0.9,
+      "data_richness_assessment": "High, due to the compilation of multiple research papers covering diverse aspects of K and P management, soil science, and agricultural systems across various geographical regions.",
+      "confidence_in_extraction": 0.85,
+      "potential_ambiguities": [
+        "The provided 'PAPER DATA' contains multiple distinct research papers from a symposium proceedings, but the output format implies a single paper. Information was synthesized from all papers, with the first paper's title and authors used as primary metadata.",
+        "Specific numerical values from all figures and tables were not exhaustively transcribed; representative or summary values were selected.",
+        "Some general statements about 'Asia' or 'India' may encompass a wide range of conditions not fully detailed in the text."
+      ],
+      "extraction_limitations": [
+        "Inability to extract all granular data points from figures and large tables without manual transcription.",
+        "Lack of specific DOIs for all individual papers within the compilation.",
+        "Generalization of some findings across diverse studies might lose specific nuances."
+      ],
+      "quality_flags": [
+        "Multi-paper compilation treated as a single comprehensive document.",
+        "Authors and title reflect the first paper in the compilation."
+      ],
+      "recommended_validation_checks": [
+        "Verify the interpretation of 'paper' as a compilation for future similar inputs.",
+        "Cross-reference specific numerical values with original tables/figures if higher precision is required.",
+        "Confirm the applicability of generalized findings to specific regional contexts."
+      ]
+    },
+    "_usage_metadata": {
+      "timestamp": "2025-07-10T10:32:35.265536",
+      "stage_name": "stage_1a",
+      "paper_id": "Field-specific potassium and phosphorus balances",
+      "prompt_length_chars": 395883,
+      "processing_time_seconds": 102.93,
+      "thinking_enabled": true,
+      "input_tokens": 127128,
+      "output_tokens": 11752,
+      "thinking_tokens": 0,
+      "input_cost_usd": 0.019069,
+      "output_cost_usd": 0.041132,
+      "thinking_cost_usd": 0.0,
+      "total_cost_usd": 0.060201
+    }
+  }
+}

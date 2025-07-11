@@ -1,0 +1,369 @@
+You are a specialist in soil potassium biogeochemistry and agricultural nutrient cycling. Your task is to extract ALL soil potassium-related information from this research paper as it was studied and reported by the researchers, maintaining the native research context without bias toward any particular application.
+
+PAPER DATA:
+Title: {paper_title}
+Full Text: {paper_text}
+Table Data: {table_data}
+
+SOIL K PARAMETERS FOR COMPREHENSIVE EXTRACTION:
+Extract all soil potassium information regardless of the specific research focus, including:
+1. Soil K measurements and pool characterizations
+2. Temporal patterns and dynamics as studied
+3. Spatial variations and geographic context as reported
+4. Integration with other soil and plant processes
+5. Management or treatment effects on soil K
+6. Methodological approaches to soil K analysis
+7. Relationships with other nutrients and soil properties
+8. Environmental controls on soil K behavior
+
+SOIL K PARAMETER DEFINITIONS:
+- Soil K Supply: Potassium released from soil reserves and made available for processes
+- Exchangeable K: Potassium readily available in soil solution and on exchange sites
+- Non-exchangeable K: Potassium in clay minerals and organic matter requiring time for release
+- Total Soil K: Complete soil K inventory including all chemical forms and pools
+- K Balance: Net soil K change from all inputs minus all outputs over time
+- K Release: Transfer of K from less available to more available soil pools
+- K Cycling: Movement of K through soil-plant-atmosphere systems
+
+COMPREHENSIVE SOIL K EXTRACTION:
+
+1. QUANTITATIVE SOIL K MEASUREMENTS:
+   Extract all measurements exactly as reported by researchers:
+   - Soil K concentrations, pools, and content measurements with original units
+   - K release rates, supply rates, and flux measurements as studied
+   - Temporal measurements: seasonal, annual, or long-term monitoring data
+   - Spatial measurements: plot, field, landscape, or regional variations
+   - Treatment or management effects on soil K parameters
+   - Comparative measurements across different conditions, sites, or treatments
+   - Analytical method precision, detection limits, and quality control data
+   - Statistical measures: means, ranges, standard deviations, confidence intervals
+
+2. RESEARCH CONTEXT AND STUDY DESIGN:
+   - Geographic location and environmental setting as described
+   - Study objectives related to soil K research
+   - Experimental or observational design affecting soil K measurements
+   - Temporal scope: study duration, monitoring frequency, seasonal coverage
+   - Spatial scope: plot sizes, number of sites, regional coverage
+   - Treatment or management factors studied in relation to soil K
+   - Sample sizes and replication for soil K measurements
+   - Integration with other research objectives and measurements
+
+3. ENVIRONMENTAL AND AGRICULTURAL CONTEXT:
+   - Climate conditions and environmental factors during the study
+   - Soil properties: texture, mineralogy, organic matter, chemical properties
+   - Land use and agricultural practices as part of the research context
+   - Cropping systems, vegetation, or land management during study period
+   - Historical context or baseline conditions affecting soil K
+   - Landscape position, topography, and drainage as relevant to soil K
+   - Seasonal and weather conditions affecting soil K dynamics
+
+4. TEMPORAL DYNAMICS AS STUDIED:
+   - Study timeline and soil K monitoring approach
+   - Seasonal patterns in soil K parameters as observed
+   - Annual or multi-year trends in soil K measurements
+   - Short-term dynamics: daily, weekly, monthly measurements
+   - Long-term assessments: multi-year studies, historical comparisons
+   - Event-driven changes: responses to specific treatments or conditions
+   - Recovery or restoration patterns in soil K over time
+
+5. SOIL K PROCESSES AND MECHANISMS:
+   - K cycling processes studied: mineralization, immobilization, transformation
+   - Plant-soil K interactions as part of the research
+   - K movement: vertical migration, lateral flow, erosion, leaching
+   - Microbial processes affecting soil K availability and cycling
+   - Chemical processes: sorption, desorption, precipitation, dissolution
+   - Physical processes affecting K movement and availability
+   - Interactions with other nutrients and soil components
+
+6. METHODOLOGICAL APPROACHES:
+   - Analytical methods for different soil K pools and measurements
+   - Sampling protocols: timing, depth, spatial design, processing
+   - Laboratory procedures and analytical instrumentation
+   - Quality control measures and method validation
+   - Measurement precision, accuracy, and detection limits
+   - Standardization and calibration approaches
+   - Comparisons between different analytical methods
+
+7. TREATMENT AND MANAGEMENT EFFECTS:
+   - Fertilizer applications and their effects on soil K pools
+   - Organic amendment effects: manure, compost, crop residues
+   - Tillage, cultivation, or soil management impacts on soil K
+   - Irrigation and water management effects on soil K dynamics
+   - Crop rotation, cover crops, or vegetation management impacts
+   - Conservation practices affecting soil K behavior
+   - Restoration or remediation effects on soil K
+
+8. SPATIAL VARIATIONS AND SCALING:
+   - Within-plot or within-field variability in soil K measurements
+   - Between-site or regional differences in soil K parameters
+   - Landscape-scale patterns in soil K distribution
+   - Relationships between soil K and topographic, climatic, or management factors
+   - Scaling considerations from point measurements to broader areas
+   - Representativeness of measurements for larger areas or systems
+
+REQUIRED OUTPUT FORMAT (JSON):
+{{
+  "paper_metadata": {{
+    "title": "",
+    "authors": [],
+    "journal": "",
+    "publication_year": 0,
+    "research_focus": "",
+    "soil_k_relevance": ""
+  }},
+  "research_context": {{
+    "study_objectives": "",
+    "soil_k_research_role": "",
+    "geographic_setting": "",
+    "environmental_conditions": "",
+    "agricultural_context": "",
+    "study_design": "",
+    "temporal_scope": "",
+    "spatial_scope": ""
+  }},
+  "quantitative_soil_k_data": {{
+    "concentration_measurements": [
+      {{
+        "parameter": "",
+        "values": [],
+        "original_units": "",
+        "measurement_method": "",
+        "sample_context": "",
+        "temporal_context": "",
+        "spatial_context": "",
+        "statistical_measures": {{}}
+      }}
+    ],
+    "pool_characterizations": [
+      {{
+        "pool_type": "",
+        "values": [],
+        "units": "",
+        "analytical_method": "",
+        "measurement_conditions": "",
+        "temporal_variation": "",
+        "treatment_effects": {{}}
+      }}
+    ],
+    "process_rates": [
+      {{
+        "process": "",
+        "rate_values": [],
+        "units": "",
+        "measurement_approach": "",
+        "environmental_conditions": "",
+        "duration": ""
+      }}
+    ],
+    "balance_calculations": [
+      {{
+        "balance_type": "",
+        "components": {{}},
+        "net_result": 0,
+        "units": "",
+        "calculation_period": "",
+        "assumptions": []
+      }}
+    ]
+  }},
+  "temporal_patterns": {{
+    "study_duration": "",
+    "monitoring_frequency": "",
+    "seasonal_observations": [
+      {{
+        "parameter": "",
+        "seasonal_pattern": "",
+        "timing": [],
+        "magnitude": {{}},
+        "drivers": []
+      }}
+    ],
+    "long_term_trends": [
+      {{
+        "parameter": "",
+        "trend_description": "",
+        "time_period": "",
+        "trend_magnitude": 0,
+        "statistical_significance": ""
+      }}
+    ],
+    "event_responses": [
+      {{
+        "event_type": "",
+        "soil_k_response": "",
+        "response_timing": "",
+        "magnitude": {{}},
+        "recovery_pattern": ""
+      }}
+    ]
+  }},
+  "spatial_variations": {{
+    "within_site_variability": [
+      {{
+        "parameter": "",
+        "variability_description": "",
+        "coefficient_of_variation": 0,
+        "spatial_pattern": "",
+        "controlling_factors": []
+      }}
+    ],
+    "between_site_differences": [
+      {{
+        "parameter": "",
+        "site_comparison": "",
+        "difference_magnitude": {{}},
+        "explanatory_factors": []
+      }}
+    ],
+    "scaling_considerations": [
+      {{
+        "scale_transition": "",
+        "scaling_approach": "",
+        "uncertainty": "",
+        "limitations": []
+      }}
+    ]
+  }},
+  "process_characterization": {{
+    "cycling_processes": [
+      {{
+        "process_name": "",
+        "description": "",
+        "quantification": {{}},
+        "controlling_factors": [],
+        "measurement_approach": ""
+      }}
+    ],
+    "plant_soil_interactions": [
+      {{
+        "interaction_type": "",
+        "description": "",
+        "quantitative_data": {{}},
+        "temporal_patterns": "",
+        "influencing_factors": []
+      }}
+    ],
+    "chemical_processes": [
+      {{
+        "process": "",
+        "characterization": "",
+        "rates": {{}},
+        "environmental_controls": [],
+        "implications": ""
+      }}
+    ]
+  }},
+  "treatment_management_effects": {{
+    "experimental_treatments": [
+      {{
+        "treatment_description": "",
+        "soil_k_effects": {{}},
+        "effect_magnitude": 0,
+        "effect_duration": "",
+        "mechanisms": []
+      }}
+    ],
+    "management_practices": [
+      {{
+        "practice": "",
+        "soil_k_impacts": {{}},
+        "implementation_details": "",
+        "temporal_effects": "",
+        "spatial_effects": ""
+      }}
+    ],
+    "comparative_analysis": [
+      {{
+        "comparison_type": "",
+        "treatments_compared": [],
+        "soil_k_differences": {{}},
+        "statistical_significance": ""
+      }}
+    ]
+  }},
+  "methodological_details": {{
+    "analytical_methods": [
+      {{
+        "method_name": "",
+        "target_parameters": [],
+        "procedure_description": "",
+        "instrumentation": "",
+        "precision": {{}},
+        "detection_limits": {{}},
+        "quality_control": []
+      }}
+    ],
+    "sampling_design": {{
+      "spatial_sampling": "",
+      "temporal_sampling": "",
+      "sample_processing": "",
+      "storage_handling": "",
+      "representativeness": ""
+    }},
+    "data_quality": {{
+      "precision_measures": [],
+      "accuracy_assessments": [],
+      "method_comparisons": [],
+      "uncertainty_sources": []
+    }}
+  }},
+  "environmental_context": {{
+    "climate_conditions": {{
+      "temperature": "",
+      "precipitation": "",
+      "seasonality": "",
+      "extremes": ""
+    }},
+    "soil_properties": {{
+      "classification": "",
+      "texture": "",
+      "mineralogy": "",
+      "organic_matter": "",
+      "chemical_properties": {{}},
+      "physical_properties": {{}}
+    }},
+    "landscape_context": {{
+      "topography": "",
+      "drainage": "",
+      "position": "",
+      "land_use_history": ""
+    }}
+  }},
+  "research_integration": {{
+    "relationship_to_other_measurements": "",
+    "integration_with_plant_studies": "",
+    "connection_to_broader_objectives": "",
+    "comparative_context": "",
+    "literature_positioning": ""
+  }},
+  "data_limitations": {{
+    "measurement_constraints": [],
+    "temporal_limitations": [],
+    "spatial_limitations": [],
+    "methodological_constraints": [],
+    "interpretation_caveats": []
+  }},
+  "extraction_assessment": {{
+    "data_completeness": 0.0,
+    "quantitative_content": 0.0,
+    "temporal_coverage": 0.0,
+    "spatial_coverage": 0.0,
+    "methodological_detail": 0.0,
+    "extraction_confidence": 0.0,
+    "native_context_preservation": 0.0,
+    "extraction_notes": ""
+  }}
+}}
+
+EXTRACTION QUALITY STANDARDS:
+- Extract soil K information exactly as studied and reported by researchers
+- Preserve the native research context without imposing external frameworks
+- Maintain scientific precision in soil K terminology and process descriptions
+- Capture quantitative data with original units and measurement contexts
+- Document methodological approaches as described by the researchers
+- Note limitations and uncertainties as identified in the original research
+- Ensure comprehensive coverage of all soil K-related content
+- Maintain objective, unbiased extraction across all soil K aspects
+
+Extract with maximum scientific rigor while preserving the original research context and objectives. 
+ 

@@ -13,7 +13,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from utils.prompt_loader import PromptLoader
 from utils.gemini_client import GeminiClient
-from utils.config import STAGE_TEMPERATURES
+from utils.json_config import STAGE_TEMPERATURES
 
 class SoilKValidator:
     """Stage 2B: Validates soil K specific extraction"""
@@ -35,8 +35,8 @@ class SoilKValidator:
         """Validate Stage 2A soil K extraction"""
         
         try:
-            # Check if stage_2a failed
-            if not stage_2a_result.get('success', False):
+            # Check if stage_2a failed - look for error field or empty result
+            if stage_2a_result.get('error') or not stage_2a_result.get('paper_metadata'):
                 return {
                     "success": False,
                     "stage": "2B",

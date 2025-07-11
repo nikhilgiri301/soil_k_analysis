@@ -1,0 +1,94 @@
+2025-07-10 17:40:34,549 - INFO - ================================================================================
+2025-07-10 17:40:34,550 - INFO - Starting Crop-Specific Soil K Supply Evidence Extraction
+2025-07-10 17:40:34,550 - INFO - ================================================================================
+2025-07-10 17:40:34,558 - INFO - Found 25 Stage 4B files to process
+2025-07-10 17:40:34,559 - INFO - 
+Processing [1/25]: A global dataset for the production and usage of cereal residues in the period 1997–2021_4b_20250710_164122.json
+2025-07-10 17:40:34,568 - INFO -   ✓ Extracted 5 evidence pieces
+2025-07-10 17:40:34,569 - INFO - 
+Processing [2/25]: Agricultural Pollution Field Burning_4b_20250710_164152.json
+2025-07-10 17:40:34,577 - WARNING - No 'enhanced_mapping' section in Agricultural Pollution Field Burning_4b_20250710_164152.json
+2025-07-10 17:40:34,577 - INFO - 
+Processing [3/25]: Balance of potassium in two long-term field experiments with different fertilization treatments_4b_20250710_164202.json
+2025-07-10 17:40:34,585 - INFO -   ✓ Extracted 1 evidence pieces
+2025-07-10 17:40:34,585 - INFO - 
+Processing [4/25]: Considering_Soil_Potassium_Pools_with_Dissimilar_P_4b_20250710_164303.json
+2025-07-10 17:40:34,597 - WARNING -   ⚠ No crop-specific evidence found
+2025-07-10 17:40:34,597 - INFO - 
+Processing [5/25]: Dynamics of Soil Potassium under Different Cropping Systems in Y.S.R Kadapa District of Andhra Pradesh_4b_20250710_164200.json
+2025-07-10 17:40:34,604 - INFO -   ✓ Extracted 1 evidence pieces
+2025-07-10 17:40:34,604 - INFO - 
+Processing [6/25]: Exchangeable potassium reserve in a Brazilian savanna Oxisol after nine years under different cotton production systems_4b_20250710_164202.json
+2025-07-10 17:40:34,612 - INFO -   ✓ Extracted 7 evidence pieces
+2025-07-10 17:40:34,612 - INFO - 
+Processing [7/25]: Field-specific potassium and phosphorus balances_4b_20250710_164142.json
+2025-07-10 17:40:34,619 - ERROR -   ✗ Failed to process Field-specific potassium and phosphorus balances_4b_20250710_164142.json: 'dict' object has no attribute 'lower'
+2025-07-10 17:40:34,634 - ERROR - Traceback (most recent call last):
+  File "/mnt/c/Users/Nikhil/Desktop/Potash-Papers/soil_k_analysis/stage_4_5_chunk3_crop_specific_extractor.py", line 100, in process_all_papers
+    evidence = self._extract_crop_evidence(paper_data, paper_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/Nikhil/Desktop/Potash-Papers/soil_k_analysis/stage_4_5_chunk3_crop_specific_extractor.py", line 241, in _extract_crop_evidence
+    if any(crop_term in param.lower()
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/Nikhil/Desktop/Potash-Papers/soil_k_analysis/stage_4_5_chunk3_crop_specific_extractor.py", line 241, in <genexpr>
+    if any(crop_term in param.lower()
+                       ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'lower'
+
+2025-07-10 17:40:34,634 - INFO - 
+Processing [8/25]: Global Fostat Reference Database_4b_20250710_164145.json
+2025-07-10 17:40:34,642 - WARNING -   ⚠ No crop-specific evidence found
+2025-07-10 17:40:34,643 - INFO - 
+Processing [9/25]: Impact of Long-Term Intensive Cropping on Soil Potassium and Sustainability of Crop Production_4b_20250710_164252.json
+2025-07-10 17:40:34,652 - INFO -   ✓ Extracted 22 evidence pieces
+2025-07-10 17:40:34,653 - INFO - 
+Processing [10/25]: Impact of potassium management on soil dynamics and crop uptake in rice systems_4b_20250710_164206.json
+2025-07-10 17:40:34,661 - INFO -   ✓ Extracted 2 evidence pieces
+2025-07-10 17:40:34,661 - INFO - 
+Processing [11/25]: Interannual dynamics of available potassium in a long-term fertilization experiment_4b_20250710_164158.json
+2025-07-10 17:40:34,669 - WARNING -   ⚠ No crop-specific evidence found
+2025-07-10 17:40:34,669 - INFO - 
+Processing [12/25]: Kinetics of Non-exchangeable Potassium Release in Selected Soil Orders of Southern Iran_4b_20250710_164152.json
+2025-07-10 17:40:34,675 - WARNING -   ⚠ No crop-specific evidence found
+2025-07-10 17:40:34,676 - INFO - 
+Processing [13/25]: Long-term K dynamics in organic and conventional mixed cropping systems as related to management and soil properties_4b_20250710_164207.json
+2025-07-10 17:40:34,682 - WARNING -   ⚠ No crop-specific evidence found
+2025-07-10 17:40:34,682 - INFO - 
+Processing [14/25]: Majumdar2021_Chapter_AssessingPotassiumMassBalances_4b_20250710_162423.json
+2025-07-10 17:40:34,691 - INFO -   ✓ Extracted 32 evidence pieces
+2025-07-10 17:40:34,692 - INFO - 
+Processing [15/25]: Nutrient Partitioning and Stoichiometry in Unburnt Sugarcane Ratoon at Varying Yield Levels_4b_20250710_164153.json
+2025-07-10 17:40:34,699 - INFO -   ✓ Extracted 2 evidence pieces
+2025-07-10 17:40:34,699 - INFO - 
+Processing [16/25]: Optimizing rice yield, quality and nutrient use efficiency through combined application of nitrogen and potassium_4b_20250710_164152.json
+2025-07-10 17:40:34,706 - WARNING -   ⚠ No crop-specific evidence found
+2025-07-10 17:40:34,706 - INFO - 
+Processing [17/25]: Organic Materials_4b_20250710_164127.json
+2025-07-10 17:40:34,713 - WARNING -   ⚠ No crop-specific evidence found
+2025-07-10 17:40:34,713 - INFO - 
+Processing [18/25]: PotassiumDynamicsinSoils_4b_20250710_164226.json
+2025-07-10 17:40:34,724 - INFO -   ✓ Extracted 17 evidence pieces
+2025-07-10 17:40:34,724 - INFO - 
+Processing [19/25]: principles-of-potash-use_4b_20250710_164148.json
+2025-07-10 17:40:34,730 - INFO -   ✓ Extracted 1 evidence pieces
+2025-07-10 17:40:34,730 - INFO - 
+Processing [20/25]: Release Kinetics of Nonexchangeable Potassium by Different Extractants from Soils of Varying Mineralogy and Depth_4b_20250710_164143.json
+2025-07-10 17:40:34,736 - WARNING -   ⚠ No crop-specific evidence found
+2025-07-10 17:40:34,736 - INFO - 
+Processing [21/25]: Root K Affinity Drivers and Photosynthetic Characteristics in Response to Low Potassium Stress in K High-Efficiency Vegetable Soybean_4b_20250710_164224.json
+2025-07-10 17:40:34,743 - INFO -   ✓ Extracted 1 evidence pieces
+2025-07-10 17:40:34,744 - INFO - 
+Processing [22/25]: Soil K Balance in Sichuan_4b_20250710_164139.json
+2025-07-10 17:40:34,751 - INFO -   ✓ Extracted 4 evidence pieces
+2025-07-10 17:40:34,751 - INFO - 
+Processing [23/25]: Standing Biomass, Dry-Matter Production, and Nutrient Demand of Tenera Oil Palm_4b_20250710_164155.json
+2025-07-10 17:40:34,757 - WARNING -   ⚠ No crop-specific evidence found
+2025-07-10 17:40:34,758 - INFO - 
+Processing [24/25]: Subsoil‑potassium depletion accounts for the nutrient budget in high‑potassium agricultural soils_4b_20250710_164137.json
+2025-07-10 17:40:34,765 - INFO -   ✓ Extracted 1 evidence pieces
+2025-07-10 17:40:34,765 - INFO - 
+Processing [25/25]: Temporal andspatial variation of potassium balance in agricultural land at national and regional levels in China_4b_20250710_164215.json
+2025-07-10 17:40:34,772 - WARNING -   ⚠ No crop-specific evidence found
+2025-07-10 17:40:34,788 - INFO - 
+✓ Saved combined output to: 8_stage_outputs/stage_4_5_chunks/chunk3_crop_specific_soil_k_supply.json
+2025-07-10 17:40:34,795 - INFO - ✓ Saved extraction report to: 8_stage_outputs/stage_4_5_chunks/chunk3_extraction_report.json

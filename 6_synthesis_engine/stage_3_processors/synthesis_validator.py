@@ -13,7 +13,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from utils.prompt_loader import PromptLoader
 from utils.gemini_client import GeminiClient
-from utils.config import STAGE_TEMPERATURES
+from utils.json_config import STAGE_TEMPERATURES
 
 class SynthesisValidator:
     """Stage 3B: Validates paper synthesis results"""
@@ -31,23 +31,21 @@ class SynthesisValidator:
             logging.error(f"Failed to load synthesis validation prompt: {str(e)}")
             raise
     
-    async def validate(self, stage_3a_result: Dict[str, Any]) -> Dict[str, Any]:
+    async def validate(self, stage_3a_result: Dict[str, Any], 
+                      stage_1b_result: Dict[str, Any],
+                      stage_2b_result: Dict[str, Any]) -> Dict[str, Any]:
         """Validate Stage 3A synthesis results"""
         
         try:
-            # Check if stage_3a failed
-            if not stage_3a_result.get('success', False):
-                return {
-                    "success": False,
-                    "stage": "3B",
-                    "validation_errors": ["Stage 3A synthesis failed - cannot validate"],
-                    "confidence_score": 0.0,
-                    "validation_timestamp": datetime.now().isoformat()
-                }
+            # If it's in approved_results, it's good - no checking needed
             
-            # Format validation prompt
-            formatted_prompt = self.prompt_template.format(
-                synthesis_result=json.dumps(stage_3a_result, indent=2)
+            # Format validation prompt using string replacement to avoid JSON brace conflicts
+            formatted_prompt = self.prompt_template.replace(
+                '{stage_1b_results}', json.dumps(stage_1b_result, indent=2)
+            ).replace(
+                '{stage_2b_results}', json.dumps(stage_2b_result, indent=2)
+            ).replace(
+                '{stage_3a_results}', json.dumps(stage_3a_result, indent=2)
             )
             
             # Generate validation

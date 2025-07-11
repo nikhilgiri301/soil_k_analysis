@@ -1,0 +1,199 @@
+{
+  "stage_id": "2a",
+  "stage_name": "Soil K-Specific Extraction",
+  "paper_id": "A global dataset for the production and usage of cereal residues in the period 1997–2021",
+  "processing_timestamp": "2025-07-10T09:43:13.012226",
+  "processing_time_seconds": 25.647797346115112,
+  "processing_mode": "single_paper",
+  "validation_passed": true,
+  "validation_message": "Valid soil K extraction",
+  "results": {
+    "paper_metadata": {
+      "title": "A global dataset for the production and usage of cereal residues in the period 1997–2021",
+      "authors": [
+        "Andrew Smerald",
+        "Jaber Rahimi",
+        "Clemens Scheer"
+      ],
+      "journal": "Scientific Data",
+      "publication_year": 2023,
+      "research_focus": "Global dataset for cereal residue production and usage, including fractions burnt, used for livestock feed/bedding, other off-field purposes, and left on the field.",
+      "soil_k_relevance": "Soil potassium (K) is not a primary focus. It is indirectly relevant as one of the 'nutrients' whose retention in soil is improved by leaving crop residues on the field, and whose 'leaching' is an environmental impact affected by crop residue management. No direct measurements or studies of soil K are reported."
+    },
+    "research_context": {
+      "study_objectives": "To construct a global dataset showing crop residue management for cereals on a 0.5° global grid and at an annual timescale for the period 1997–2021. The dataset estimates total production of residues and the fraction used for livestock feed/bedding, burnt on the field, used for other off-field purposes, and left on the field. The dataset aims to improve assessments of environmental impact (e.g., greenhouse gas emissions, nutrient leaching) and evaluate trade-offs between management options.",
+      "soil_k_research_role": "Soil K was not directly studied or measured. Its relevance is inferred through general statements about 'nutrient retention' and 'nutrient leaching' in the context of crop residue management and its environmental impacts.",
+      "geographic_setting": "Global, on a 0.5° resolution grid.",
+      "environmental_conditions": "General agricultural and climatic conditions are implied by the global scope. 'Semi-arid conditions' are mentioned in North America and Oceania as requiring higher residue return for erosion control.",
+      "agricultural_context": "Focus on cereal cropping systems and the management of above-ground crop residues (stalks and stover). Management options include leaving residues on the field, burning, use for animal feed/bedding, and other off-field purposes (domestic fuel, construction, industry, mushroom cultivation).",
+      "study_design": "Data synthesis and modeling approach. Crop residue production was estimated using three methods (residue production ratios, exponential yield dependence, linear yield dependence). On-field burning was estimated using two datasets (GFED4s, FINNv2.5). Ruminant feed usage was estimated using three sources (Herrero et al., Mekonnen and Hoekstra, Mottet et al.). An ensemble of 18 possible combinations of input data was used to define uncertainty. The remainder of residues after accounting for burning, animal usage, and other off-field uses was assumed to be left on the field, with certain minimum/maximum limits imposed.",
+      "temporal_scope": "1997–2021, annual timescale.",
+      "spatial_scope": "Global, 0.5° resolution grid cells."
+    },
+    "quantitative_soil_k_data": {
+      "concentration_measurements": [],
+      "pool_characterizations": [],
+      "process_rates": [],
+      "balance_calculations": []
+    },
+    "temporal_patterns": {
+      "study_duration": "1997–2021 (25 years)",
+      "monitoring_frequency": "Annual timescale for the generated dataset.",
+      "seasonal_observations": [],
+      "long_term_trends": [],
+      "event_responses": []
+    },
+    "spatial_variations": {
+      "within_site_variability": [],
+      "between_site_differences": [],
+      "scaling_considerations": [
+        {
+          "scale_transition": "From local trade-offs to global assessment.",
+          "scaling_approach": "The dataset is constructed on a 0.5° global grid. The high cost of transporting crop residues means trade-offs between management options typically occur at a local level. The dataset allows for trade of residues between grid cells (up to 1000 km) to reduce supply-demand mismatch for animal feed/bedding.",
+          "uncertainty": "Not explicitly quantified for scaling, but the ensemble of 18 calculational schemes provides a measure of uncertainty for residue production and usage at regional and global scales.",
+          "limitations": []
+        }
+      ]
+    },
+    "process_characterization": {
+      "cycling_processes": [
+        {
+          "process_name": "Nutrient retention",
+          "description": "Leaving crop residues on the field helps to maintain or enhance soil organic carbon (SOC) stocks, resulting in better retention of nutrients in the soil.",
+          "quantification": {},
+          "controlling_factors": [
+            "Amount of crop residues left on the field",
+            "Soil organic carbon (SOC) stocks"
+          ],
+          "measurement_approach": "Not directly measured for K; inferred from general benefits of residue retention."
+        }
+      ],
+      "plant_soil_interactions": [
+        {
+          "interaction_type": "Crop residue return to soil",
+          "description": "Above-ground crop residues, when left on the field, are an important source of C and N for agricultural soils, helping to maintain or enhance soil organic carbon (SOC) stocks, resulting in better retention of nutrients in the soil.",
+          "quantitative_data": {},
+          "temporal_patterns": "Not specified for K.",
+          "influencing_factors": [
+            "Crop residue management practices (e.g., fraction left on field)"
+          ]
+        }
+      ],
+      "chemical_processes": [
+        {
+          "process": "Nutrient leaching",
+          "characterization": "Crop residue management affects nutrient leaching, with NO3- mentioned as an example. This implies that K leaching could also be affected, though not specifically studied.",
+          "rates": {},
+          "environmental_controls": [
+            "Crop residue management"
+          ],
+          "implications": "Reduced nutrient leaching is a positive environmental outcome of certain residue management practices."
+        }
+      ]
+    },
+    "treatment_management_effects": {
+      "experimental_treatments": [],
+      "management_practices": [
+        {
+          "practice": "Leaving crop residues on the field",
+          "soil_k_impacts": {
+            "retention": "Improved retention of nutrients in the soil (K implied as a nutrient)."
+          },
+          "implementation_details": "The fraction of residues left on the field is determined by subtracting burnt, animal usage, and other off-field uses from total production. Minimum (10%) and maximum (e.g., 60% in China, 70% in Europe, 80% in North America/Oceania) limits are imposed.",
+          "temporal_effects": "Not specified for K.",
+          "spatial_effects": "Varies globally based on residue production, demand for other uses, and imposed limits."
+        },
+        {
+          "practice": "Crop residue burning",
+          "soil_k_impacts": {
+            "leaching": "Potential for increased nutrient leaching (K implied as a nutrient) due to removal of residues and associated changes in soil properties, though not directly quantified for K."
+          },
+          "implementation_details": "Estimated from satellite data (GFED4s, FINNv2.5). Capped at 90% of cereal residue production in a grid cell.",
+          "temporal_effects": "Not specified for K.",
+          "spatial_effects": "Varies globally, with higher burnt fractions noted in literature for China and India compared to satellite estimates."
+        }
+      ],
+      "comparative_analysis": []
+    },
+    "methodological_details": {
+      "analytical_methods": [],
+      "sampling_design": {
+        "spatial_sampling": "Not applicable for direct soil K measurements. The study uses a 0.5° global grid for data synthesis.",
+        "temporal_sampling": "Not applicable for direct soil K measurements. The study generates annual data for 1997–2021.",
+        "sample_processing": "Not applicable for direct soil K measurements.",
+        "storage_handling": "Not applicable for direct soil K measurements.",
+        "representativeness": "Not applicable for direct soil K measurements."
+      },
+      "data_quality": {
+        "precision_measures": [],
+        "accuracy_assessments": [],
+        "method_comparisons": [],
+        "uncertainty_sources": []
+      }
+    },
+    "environmental_context": {
+      "climate_conditions": {
+        "temperature": "Not specified.",
+        "precipitation": "Not specified.",
+        "seasonality": "Not specified for soil K, but input data like GFED4s provides monthly estimates of biomass burning.",
+        "extremes": "Not specified."
+      },
+      "soil_properties": {
+        "classification": "Not specified.",
+        "texture": "Not specified.",
+        "mineralogy": "Not specified.",
+        "organic_matter": "Crop residues are an important source of C and N for agricultural soils, helping to maintain or enhance soil organic carbon (SOC) stocks. SOC stocks are linked to better retention of nutrients.",
+        "chemical_properties": {},
+        "physical_properties": {}
+      },
+      "landscape_context": {
+        "topography": "Not specified.",
+        "drainage": "Not specified.",
+        "position": "Not specified.",
+        "land_use_history": "Not specified."
+      }
+    },
+    "research_integration": {
+      "relationship_to_other_measurements": "The study integrates various global datasets (SPAM, FAOSTAT, GFED4s, FINNv2.5, GRPS 5, GLW 3) to model crop residue production and usage. The impact on 'nutrient retention' and 'nutrient leaching' is a stated environmental consequence of crop residue management, linking it to broader environmental assessments.",
+      "integration_with_plant_studies": "The study is based on cereal crop residue production and its management, which directly relates to plant biomass.",
+      "connection_to_broader_objectives": "The dataset is intended to improve assessments of the environmental impact of agricultural practices (e.g., greenhouse gas emissions, nutrient leaching) and to evaluate trade-offs between different crop residue management options (e.g., soil carbon sequestration, bioenergy, livestock feed).",
+      "comparative_context": "The study compares its estimates of cereal residue production and fractional usage with existing literature values at global, country, and regional scales.",
+      "literature_positioning": "The paper addresses a knowledge gap regarding how crop residues are currently being used globally, providing a baseline for future assessments of agricultural practices and their environmental impacts."
+    },
+    "data_limitations": {
+      "measurement_constraints": [],
+      "temporal_limitations": [],
+      "spatial_limitations": [],
+      "methodological_constraints": [],
+      "interpretation_caveats": [
+        "The paper notes a discrepancy between satellite-derived burnt fractions and literature values (e.g., farmer surveys), suggesting potential underestimation by satellite data or methodological problems with other approaches.",
+        "The lack of global data for 'other off-field uses' (domestic fuel, construction, biofuels) and 'left on field' fractions means that assumptions and imposed limits (minimum/maximum return rates) were necessary, which could affect the accuracy of the 'left on field' estimates."
+      ]
+    },
+    "extraction_assessment": {
+      "data_completeness": 0.1,
+      "quantitative_content": 0.0,
+      "temporal_coverage": 0.0,
+      "spatial_coverage": 0.0,
+      "methodological_detail": 0.0,
+      "extraction_confidence": 1.0,
+      "native_context_preservation": 1.0,
+      "extraction_notes": "The paper's primary focus is on global cereal residue production and usage. Soil potassium (K) is not a direct subject of study. Mentions of K are indirect, falling under the general categories of 'nutrients' whose retention is improved by residue return or whose leaching is an environmental concern. No specific measurements, pools, processes, or methodological details related to soil K are provided in the paper."
+    },
+    "_usage_metadata": {
+      "timestamp": "2025-07-10T09:43:13.009807",
+      "stage_name": "stage_2a",
+      "paper_id": "A global dataset for the production and usage of cereal residues in the period 1997–2021",
+      "prompt_length_chars": 64577,
+      "processing_time_seconds": 25.61,
+      "thinking_enabled": true,
+      "input_tokens": 19317,
+      "output_tokens": 2789,
+      "thinking_tokens": 0,
+      "input_cost_usd": 0.002898,
+      "output_cost_usd": 0.009761,
+      "thinking_cost_usd": 0.0,
+      "total_cost_usd": 0.012659
+    }
+  }
+}

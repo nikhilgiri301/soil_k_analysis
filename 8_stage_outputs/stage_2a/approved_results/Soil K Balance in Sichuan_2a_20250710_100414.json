@@ -1,0 +1,723 @@
+{
+  "stage_id": "2a",
+  "stage_name": "Soil K-Specific Extraction",
+  "paper_id": "Soil K Balance in Sichuan",
+  "processing_timestamp": "2025-07-10T10:04:14.228196",
+  "processing_time_seconds": 59.8497257232666,
+  "processing_mode": "single_paper",
+  "validation_passed": true,
+  "validation_message": "Valid soil K extraction",
+  "results": {
+    "paper_metadata": {
+      "title": "Soil Potassium Balance in the Hilly Region of Central Sichuan, China, Based on Crop Distribution",
+      "authors": [
+        "Shan Wang",
+        "Zhiping Li",
+        "Lulu Li",
+        "Yuelin Xu",
+        "Guohui Wu",
+        "Qin Liu",
+        "Peihao Peng",
+        "Ting Li"
+      ],
+      "journal": "Sustainability",
+      "publication_year": 2023,
+      "research_focus": "Soil potassium balance, crop distribution, precision fertilization, soil fertility imbalance in hilly agriculture",
+      "soil_k_relevance": "The entire study is centered on understanding and mapping soil potassium balance, its spatial distribution, and influencing factors under different cropping conditions."
+    },
+    "research_context": {
+      "study_objectives": "To accurately estimate soil potassium balance for regional precision fertilization, analyze the spatial distribution characteristics of soil potassium balance under different cropping conditions and its influencing factors in a hilly region, and provide references for rational potassium fertilizer application and improving soil potassium utilization efficiency in the region.",
+      "soil_k_research_role": "Soil potassium balance is the core subject of the research, with the study aiming to quantify its status, spatial patterns, and drivers.",
+      "geographic_setting": "Shehong County, Suining City, Sichuan Province, China. Located between 105°10′ E–105°40′ E and 30°37′ N–31°12′ N. Altitude ranges from 280 m to 664 m, high in the northwest and low in the southeast.",
+      "environmental_conditions": "Subtropical humid climate zone with a mild climate.",
+      "agricultural_context": "Hilly agriculture with diverse planting structures. Main crop types are rice, corn, wheat, and rape. Total arable land area is 70,060.87 hm².",
+      "study_design": "Observational study combining remote sensing for crop distribution, soil sampling for K content, and statistical data for K balance calculation. Spatial analysis (Ordinary Kriging) and Structural Equation Modeling (SEM) were used.",
+      "temporal_scope": "Crop pattern extraction used multi-temporal Sentinel-2 L1C images from May 2018 to April 2019. Potassium balance calculations are annual (kg K ha⁻¹ yr⁻¹).",
+      "spatial_scope": "Shehong County, covering 1496 km². 56 soil sampling points were identified. Spatial analysis was performed using a 500 m × 500 m grid pattern."
+    },
+    "quantitative_soil_k_data": {
+      "concentration_measurements": [
+        {
+          "parameter": "Rapidly Available Potassium (RAK)",
+          "values": [
+            29.37,
+            122.07
+          ],
+          "original_units": "mg kg⁻¹",
+          "measurement_method": "Leached with 1.0 mol L⁻¹ neutral NH₄OAC (10:1 water–soil ratio), filtrate measured using flame photometric method.",
+          "sample_context": "0–20 cm soil layer",
+          "temporal_context": "Not specified, assumed single measurement period.",
+          "spatial_context": "Shehong County, 56 sampling points",
+          "statistical_measures": {
+            "mean": 63.63,
+            "standard_deviation": 11.9,
+            "range": "29.37 to 122.07"
+          }
+        },
+        {
+          "parameter": "Slowly Available Potassium (SAK)",
+          "values": [
+            472.31,
+            772.77
+          ],
+          "original_units": "mg kg⁻¹",
+          "measurement_method": "Leached with 1 mol L⁻¹ boiling HNO₃ (10:1 water–soil ratio), filtrate measured using flame photometric method.",
+          "sample_context": "0–20 cm soil layer",
+          "temporal_context": "Not specified, assumed single measurement period.",
+          "spatial_context": "Shehong County, 56 sampling points",
+          "statistical_measures": {
+            "mean": 649.77,
+            "standard_deviation": 46.43,
+            "range": "472.31 to 772.77"
+          }
+        }
+      ],
+      "pool_characterizations": [
+        {
+          "pool_type": "Rapidly Available Potassium (RAK)",
+          "values": [
+            63.63
+          ],
+          "units": "mg kg⁻¹",
+          "analytical_method": "Flame photometric method after NH₄OAC extraction",
+          "measurement_conditions": "0–20 cm soil layer",
+          "temporal_variation": "N/A",
+          "treatment_effects": {},
+          "classification": "Low level (below 80 mg kg⁻¹ deprivation threshold)",
+          "spatial_variability_nugget_effect": 78.18
+        },
+        {
+          "pool_type": "Slowly Available Potassium (SAK)",
+          "values": [
+            649.77
+          ],
+          "units": "mg kg⁻¹",
+          "analytical_method": "Flame photometric method after boiling HNO₃ extraction",
+          "measurement_conditions": "0–20 cm soil layer",
+          "temporal_variation": "N/A",
+          "treatment_effects": {},
+          "classification": "Low or moderate level",
+          "spatial_variability_nugget_effect": 53.72
+        }
+      ],
+      "process_rates": [
+        {
+          "process": "Potassium input from rainfall",
+          "rate_values": [
+            15.1,
+            13.3,
+            6.5,
+            8.3
+          ],
+          "units": "kg K ha⁻¹ yr⁻¹",
+          "measurement_approach": "Average value obtained via reference literature",
+          "environmental_conditions": "Varies by cropping pattern",
+          "duration": "Annual"
+        },
+        {
+          "process": "Potassium input from irrigation water",
+          "rate_values": [
+            23.25,
+            17.6,
+            17.8,
+            14.8
+          ],
+          "units": "kg K ha⁻¹ yr⁻¹",
+          "measurement_approach": "Calculated based on total irrigation water and K content of water, referenced literature",
+          "environmental_conditions": "Varies by cropping pattern",
+          "duration": "Annual"
+        },
+        {
+          "process": "Potassium input from straw return",
+          "rate_values": [
+            57.91,
+            52.61,
+            34.58,
+            29.28,
+            38.88,
+            15.55,
+            13.73,
+            19.03
+          ],
+          "units": "kg K ha⁻¹ yr⁻¹",
+          "measurement_approach": "Calculated based on straw return rate (48.8%) and K nutrient content of straw (rice 1.9%, maize 0.99%, wheat 1.16%, oilseed rape 2.01%)",
+          "environmental_conditions": "Varies by cropping pattern",
+          "duration": "Annual"
+        },
+        {
+          "process": "Potassium input from chemical fertilizer application",
+          "rate_values": [],
+          "units": "K₂O",
+          "measurement_approach": "Survey data from County Agricultural Bureau, Statistics Bureau, visiting farmers. Converted to K₂O input.",
+          "environmental_conditions": "N/A",
+          "duration": "Annual"
+        },
+        {
+          "process": "Potassium output from leaching",
+          "rate_values": [
+            10
+          ],
+          "units": "kg ha⁻¹ yr⁻¹",
+          "measurement_approach": "Referenced literature, mainly considered in paddy fields",
+          "environmental_conditions": "Paddy fields",
+          "duration": "Annual"
+        },
+        {
+          "process": "Potassium uptake by crop",
+          "rate_values": [
+            26.3,
+            24.7,
+            21.6,
+            58.1
+          ],
+          "units": "kg t⁻¹ (K nutrients required per unit economic yield)",
+          "measurement_approach": "Calculated using K = ∑ Y ∗ AKi / Si, where Y is economic yield, AK is K nutrients per unit yield, Si is sown area. AK values obtained from literature.",
+          "environmental_conditions": "Varies by crop type (rice, wheat, maize, rape)",
+          "duration": "Annual"
+        }
+      ],
+      "balance_calculations": [
+        {
+          "balance_type": "Soil Potassium Balance (overall farmland)",
+          "components": {},
+          "net_result": null,
+          "units": "kg K ha⁻¹ yr⁻¹",
+          "calculation_period": "Annual",
+          "assumptions": [],
+          "range": "-187.22 to 101.81"
+        },
+        {
+          "balance_type": "Soil Potassium Balance (by cropping pattern)",
+          "components": {
+            "Rice monocrop": {
+              "K_Input_per_hectare": 137.92,
+              "K_Output_per_hectare": 116.6,
+              "K_Input_total": 890.3,
+              "K_Output_total": 752.66
+            },
+            "Maize monocrop": {
+              "K_Input_per_hectare": 88.69,
+              "K_Output_per_hectare": 123.8,
+              "K_Input_total": 1163.48,
+              "K_Output_total": 1624.03
+            },
+            "Wheat monocrop": {
+              "K_Input_per_hectare": 115.74,
+              "K_Output_per_hectare": 100.1,
+              "K_Input_total": 1580.23,
+              "K_Output_total": 1366.72
+            },
+            "Rapeseed monocrop": {
+              "K_Input_per_hectare": 86.98,
+              "K_Output_per_hectare": 157.1,
+              "K_Input_total": 306.37,
+              "K_Output_total": 553.39
+            },
+            "Rice–rapeseed rotation": {
+              "K_Input_per_hectare": 216.9,
+              "K_Output_per_hectare": 263.7,
+              "K_Input_total": 255.09,
+              "K_Output_total": 310.12
+            },
+            "Rice–wheat rotation": {
+              "K_Input_per_hectare": 238.28,
+              "K_Output_per_hectare": 206.7,
+              "K_Input_total": 572.05,
+              "K_Output_total": 496.23
+            },
+            "Rapeseed–maize rotation": {
+              "K_Input_per_hectare": 151.4,
+              "K_Output_per_hectare": 280.9,
+              "K_Input_total": 133.92,
+              "K_Output_total": 248.46
+            },
+            "Wheat–maize rotation": {
+              "K_Input_per_hectare": 179.82,
+              "K_Output_per_hectare": 223.9,
+              "K_Input_total": 378.89,
+              "K_Output_total": 471.749
+            }
+          },
+          "net_result": null,
+          "units": "kg K ha⁻¹ yr⁻¹",
+          "calculation_period": "Annual",
+          "assumptions": [],
+          "results_by_pattern": [
+            {
+              "pattern": "Rice monocrop",
+              "balance": 21.32,
+              "total_balance_t": 137.65,
+              "status": "surplus"
+            },
+            {
+              "pattern": "Maize monocrop",
+              "balance": -35.11,
+              "total_balance_t": -460.554,
+              "status": "deficit"
+            },
+            {
+              "pattern": "Wheat monocrop",
+              "balance": 15.64,
+              "total_balance_t": 213.51,
+              "status": "surplus"
+            },
+            {
+              "pattern": "Rapeseed monocrop",
+              "balance": -70.12,
+              "total_balance_t": -247.01,
+              "status": "deficit"
+            },
+            {
+              "pattern": "Rice–rapeseed rotation",
+              "balance": -46.79,
+              "total_balance_t": -55.03,
+              "status": "deficit"
+            },
+            {
+              "pattern": "Rice–wheat rotation",
+              "balance": 31.58,
+              "total_balance_t": 75.818,
+              "status": "surplus"
+            },
+            {
+              "pattern": "Rapeseed–maize rotation",
+              "balance": -129.5,
+              "total_balance_t": -114.543,
+              "status": "most severe deficit"
+            },
+            {
+              "pattern": "Wheat–maize rotation",
+              "balance": -44.07,
+              "total_balance_t": -92.859,
+              "status": "deficit"
+            }
+          ]
+        }
+      ]
+    },
+    "temporal_patterns": {
+      "study_duration": "Crop pattern extraction based on 1 year of satellite imagery (May 2018 to April 2019). K balance calculated annually.",
+      "monitoring_frequency": "Multi-temporal Sentinel-2 images used for crop classification. Soil K measurements are a snapshot.",
+      "seasonal_observations": [],
+      "long_term_trends": [
+        {
+          "parameter": "Soil K reserves",
+          "trend_description": "Implied depletion due to long history of intensive cropping activity and neglected potassium fertilizer inputs.",
+          "time_period": "Long-term historical context",
+          "trend_magnitude": null,
+          "statistical_significance": "N/A"
+        }
+      ],
+      "event_responses": []
+    },
+    "spatial_variations": {
+      "within_site_variability": [
+        {
+          "parameter": "Soil RAK",
+          "variability_description": "Strong spatial variability",
+          "coefficient_of_variation": null,
+          "spatial_pattern": "N/A",
+          "controlling_factors": [
+            "Anthropogenic activity (cropping pattern, field fertilization)"
+          ]
+        },
+        {
+          "parameter": "Soil SAK",
+          "variability_description": "Strong spatial variability, but less influenced by anthropogenic activity due to more stable morphology",
+          "coefficient_of_variation": null,
+          "spatial_pattern": "N/A",
+          "controlling_factors": [
+            "Natural environmental factors"
+          ]
+        }
+      ],
+      "between_site_differences": [
+        {
+          "parameter": "Soil RAK content",
+          "site_comparison": "High in central townships, low in northern and southern townships.",
+          "difference_magnitude": {},
+          "explanatory_factors": [
+            "Crop cultivation",
+            "field fertilization",
+            "topography"
+          ]
+        },
+        {
+          "parameter": "Soil SAK content",
+          "site_comparison": "Significantly high in central and east townships, low in northern and southern townships.",
+          "difference_magnitude": {},
+          "explanatory_factors": [
+            "More stable nature, influenced by natural factors"
+          ]
+        },
+        {
+          "parameter": "Soil potassium balance",
+          "site_comparison": "Varied considerably among different cropping systems and spatially.",
+          "difference_magnitude": {
+            "largest_deficit_location": "southwest",
+            "surplus_location": "central part",
+            "balance_location": "northeast"
+          },
+          "explanatory_factors": [
+            "Cropping patterns",
+            "climate",
+            "topography",
+            "anthropogenic activity",
+            "soil available potassium"
+          ]
+        }
+      ],
+      "scaling_considerations": [
+        {
+          "scale_transition": "Point measurements to regional mapping",
+          "scaling_approach": "Ordinary Kriging interpolation for RAK and SAK. 500 m × 500 m grid pattern for spatial analysis of K balance and environmental factors.",
+          "uncertainty": "N/A",
+          "limitations": []
+        }
+      ]
+    },
+    "process_characterization": {
+      "cycling_processes": [
+        {
+          "process_name": "Potassium Input",
+          "description": "Inflow of potassium into farmland soil from chemical fertilizer application, rainfall, irrigation water, and returning crop straw to the field.",
+          "quantification": {
+            "chemical_fertilizer": "Survey data (K₂O)",
+            "rainfall": "15.1, 13.3, 6.5, 8.3 kg K ha⁻¹ yr⁻¹ (by cropping pattern)",
+            "irrigation_water": "23.25, 17.6, 17.8, 14.8 kg K ha⁻¹ yr⁻¹ (by cropping pattern)",
+            "straw_return": "Calculated based on 48.8% return rate and crop-specific K content (e.g., 57.91 kg K ha⁻¹ yr⁻¹ for rice-rapeseed rotation)"
+          },
+          "controlling_factors": [
+            "Cropping pattern",
+            "fertilizer management practices",
+            "climatic conditions"
+          ],
+          "measurement_approach": "Combination of survey data, literature values, and calculations."
+        },
+        {
+          "process_name": "Potassium Output",
+          "description": "Outflow of potassium from farmland soil primarily due to leaching and crop uptake for economic yield.",
+          "quantification": {
+            "leaching": "10 kg ha⁻¹ yr⁻¹ (mainly in paddy fields)",
+            "crop_uptake": "Calculated based on economic yield and crop-specific K requirements (e.g., 26.3 kg t⁻¹ for rice)"
+          },
+          "controlling_factors": [
+            "Cropping pattern",
+            "crop yield",
+            "soil type",
+            "precipitation"
+          ],
+          "measurement_approach": "Calculations based on statistical yearbook data and literature values."
+        },
+        {
+          "process_name": "Conversion of Slowly Available K to Rapidly Available K",
+          "description": "SAK is dynamically converted from partially slowly available to RAK when the soil is deficient in RAK.",
+          "quantification": {},
+          "controlling_factors": [
+            "Soil RAK deficiency"
+          ],
+          "measurement_approach": "Conceptual, not directly quantified as a rate in this study."
+        }
+      ],
+      "plant_soil_interactions": [
+        {
+          "interaction_type": "Potassium uptake by crops",
+          "description": "Crops absorb potassium from the soil for growth and development, leading to K output from the soil system.",
+          "quantitative_data": {
+            "K_required_per_unit_yield": {
+              "rice": "26.3 kg t⁻¹",
+              "wheat": "24.7 kg t⁻¹",
+              "maize": "21.6 kg t⁻¹",
+              "rape": "58.1 kg t⁻¹"
+            }
+          },
+          "temporal_patterns": "Depends on crop growth stage and yield level.",
+          "influencing_factors": [
+            "Crop type",
+            "yield level",
+            "soil K availability",
+            "precipitation"
+          ]
+        },
+        {
+          "interaction_type": "Soil K supply to plants",
+          "description": "Soil K pools (RAK, SAK) provide potassium for plant growth. Deficiency in RAK can trigger release from SAK.",
+          "quantitative_data": {
+            "RAK_mean": "63.63 mg kg⁻¹",
+            "SAK_mean": "649.77 mg kg⁻¹"
+          },
+          "temporal_patterns": "Dynamic conversion between pools.",
+          "influencing_factors": [
+            "Soil K pool levels",
+            "crop demand",
+            "soil properties (mineralogy, OM, pH)"
+          ]
+        }
+      ],
+      "chemical_processes": [
+        {
+          "process": "Potassium fixation and uptake capacity",
+          "characterization": "Influenced by ion exchange with Al³⁺, Ca²⁺, and Mg²⁺, and by clay minerals.",
+          "rates": {},
+          "environmental_controls": [
+            "Soil cation exchange capacity",
+            "soil organic matter levels",
+            "soil pH",
+            "clay mineralogy"
+          ],
+          "implications": "Affects K availability to plants and K balance."
+        },
+        {
+          "process": "Ion exchange, dissolution release, colloidal sorption",
+          "characterization": "Processes involving clay minerals in potassium balance.",
+          "rates": {},
+          "environmental_controls": [
+            "Clay mineral types (e.g., 2:1 clay minerals as K reservoir, conversion to vermiculite/chlorite upon K depletion)"
+          ],
+          "implications": "Fundamental mechanisms of K retention and release in soil."
+        }
+      ]
+    },
+    "treatment_management_effects": {
+      "experimental_treatments": [],
+      "management_practices": [
+        {
+          "practice": "Chemical fertilizer application",
+          "soil_k_impacts": {
+            "input_increase": "Directly increases potassium inputs and effective soil potassium content."
+          },
+          "implementation_details": "Amount of field fertilizer application collected from survey data (compound fertilizer converted to K₂O).",
+          "temporal_effects": "N/A",
+          "spatial_effects": "N/A"
+        },
+        {
+          "practice": "Organic amendment (straw return)",
+          "soil_k_impacts": {
+            "input_increase": "Significant source of potassium input, especially in rice–rapeseed rotation (57.91 kg K ha⁻¹ yr⁻¹).",
+            "soil_potassium_levels": "Abundant organic matter from straw recycling elevates potassium content in the soil."
+          },
+          "implementation_details": "Rate of returning crop straw in study area was 48.8%.",
+          "temporal_effects": "N/A",
+          "spatial_effects": "N/A"
+        },
+        {
+          "practice": "Cropping systems/rotation",
+          "soil_k_impacts": {
+            "balance_variation": "Significant differences in soil potassium equilibrium status and balance values.",
+            "deficit_severity": "Rapeseed–maize rotation had the most severe deficit (-129.50 kg K ha⁻¹ yr⁻¹).",
+            "surplus_occurrence": "Only rice–wheat rotation showed a potassium surplus (31.58 kg K ha⁻¹ yr⁻¹).",
+            "monoculture_vs_rotation": "Monoculture systems generally had higher soil potassium balance due to lower potassium uptake by crops compared to rotation systems."
+          },
+          "implementation_details": "Studied crop rotations: rice–rapeseed, rice–wheat, rape–maize, wheat–maize. Monocultures: rice, maize, wheat, rape.",
+          "temporal_effects": "Annual balance.",
+          "spatial_effects": "Spatial distribution differences in potassium output due to cropping pattern."
+        },
+        {
+          "practice": "Irrigation",
+          "soil_k_impacts": {
+            "input_increase": "Source of potassium input (e.g., 23.25 kg K ha⁻¹ yr⁻¹ for rice–rape rotation)."
+          },
+          "implementation_details": "Total potassium input determined according to total amount of irrigation water and potassium content of irrigation water.",
+          "temporal_effects": "Annual input.",
+          "spatial_effects": "N/A"
+        }
+      ],
+      "comparative_analysis": [
+        {
+          "comparison_type": "Soil K balance across cropping patterns",
+          "treatments_compared": [
+            "Rice monocrop",
+            "Maize monocrop",
+            "Wheat monocrop",
+            "Rapeseed monocrop",
+            "Rice–rapeseed rotation",
+            "Rice–wheat rotation",
+            "Rapeseed–maize rotation",
+            "Wheat–maize rotation"
+          ],
+          "soil_k_differences": {
+            "rapeseed_maize_deficit": "-129.50 kg K ha⁻¹ yr⁻¹ (greatest deficit)",
+            "rice_rapeseed_deficit": "-46.79 kg K ha⁻¹ yr⁻¹",
+            "wheat_maize_deficit": "-44.07 kg K ha⁻¹ yr⁻¹",
+            "rice_wheat_surplus": "31.58 kg K ha⁻¹ yr⁻¹ (only surplus)",
+            "rapeseed_monocrop_deficit": "-70.12 kg K ha⁻¹ yr⁻¹ (higher deficit than rice-rapeseed and wheat-maize rotations)"
+          },
+          "statistical_significance": "Varied considerably (implied by 'significant differences')."
+        }
+      ]
+    },
+    "methodological_details": {
+      "analytical_methods": [
+        {
+          "method_name": "Flame Photometric Method",
+          "target_parameters": [
+            "Rapidly Available Potassium (RAK)",
+            "Slowly Available Potassium (SAK)"
+          ],
+          "procedure_description": "Filtrate of soil sample solution (after leaching) was measured using this method.",
+          "instrumentation": "N/A (implied standard flame photometer)",
+          "precision": {},
+          "detection_limits": {},
+          "quality_control": []
+        },
+        {
+          "method_name": "NH₄OAC Extraction",
+          "target_parameters": [
+            "Rapidly Available Potassium (RAK)"
+          ],
+          "procedure_description": "Soil RAK was leached with 1.0 mol L⁻¹ neutral NH₄OAC at a 10:1 water–soil ratio.",
+          "instrumentation": "N/A",
+          "precision": {},
+          "detection_limits": {},
+          "quality_control": []
+        },
+        {
+          "method_name": "Boiling HNO₃ Extraction",
+          "target_parameters": [
+            "Slowly Available Potassium (SAK)"
+          ],
+          "procedure_description": "Soil SAK was leached with 1 mol L⁻¹ boiling HNO₃ at a 10:1 water–soil ratio.",
+          "instrumentation": "N/A",
+          "precision": {},
+          "detection_limits": {},
+          "quality_control": []
+        },
+        {
+          "method_name": "Ordinary Kriging Interpolation",
+          "target_parameters": [
+            "Spatial distribution of RAK",
+            "Spatial distribution of SAK"
+          ],
+          "procedure_description": "Performed based on parameters from the best fitted semivariance model after normality, global trend, and spatial autocorrelation tests.",
+          "instrumentation": "ArcGIS10.6 (Esri, Redlands, CA, USA)",
+          "precision": {
+            "MSE_RAK": 0.04,
+            "MSE_SAK": 0.01,
+            "RMMSE_RAK": 1.04,
+            "RMMSE_SAK": 0.99
+          },
+          "detection_limits": {},
+          "quality_control": [
+            "Normality test",
+            "Global trend test",
+            "Spatial autocorrelation test",
+            "Outlier removal",
+            "Trend effect removal",
+            "Cross-validation method with normalized root mean square error (NRMSE)"
+          ]
+        },
+        {
+          "method_name": "Structural Equation Model (SEM)",
+          "target_parameters": [
+            "Relationships between environmental factors and potassium balance"
+          ],
+          "procedure_description": "Constructed using AMOS software to predict interactions. Model fit evaluated using chi-square (χ²), degrees of freedom (df), gradient, RMSEA, and GFI.",
+          "instrumentation": "AMOS software (IBM PSAS AMOS 21, IBM, Chicago, IL, USA)",
+          "precision": {
+            "chi_square_df_ratio": 1.392,
+            "RMSEA": 0.009,
+            "GFI": 1.0
+          },
+          "detection_limits": {},
+          "quality_control": [
+            "Model fit criteria: χ²/df < 3, RMSEA < 0.08, GFI > 0.9"
+          ]
+        }
+      ],
+      "sampling_design": {
+        "spatial_sampling": "56 sampling points identified based on soil type, soil-forming parent material, topographic factors, reachability, and actual site state. Geographic coordinates and elevation measured by GPS. Three soil cores randomly collected from each site.",
+        "temporal_sampling": "Single sampling event for soil K content. Crop patterns extracted from multi-temporal satellite images (May 2018 to April 2019).",
+        "sample_processing": "Soil samples were air-dried, thoroughly homogenized, roots and stones removed, and finely ground to pass through a sieve with openings smaller than 2 mm.",
+        "storage_handling": "N/A",
+        "representativeness": "Sampling points selected to represent diverse conditions in the hilly region."
+      },
+      "data_quality": {
+        "precision_measures": [
+          "Kriging interpolation performance: MSE < 0.04, RMMSE closer to 1."
+        ],
+        "accuracy_assessments": [
+          "Crop extraction accuracy: Rice 89.36%, Maize 87.16%, Rape 87.85%, Wheat 84.65% (compared to Statistical Yearbook)."
+        ],
+        "method_comparisons": [],
+        "uncertainty_sources": [
+          "Potassium uptake by crops obtained from literature, not field measurements, and differences between crop varieties were not considered.",
+          "Calculated potassium inputs and outputs were primarily derived from pertinent literature and field surveys, not direct measurements for all parameters.",
+          "Contribution of soil potassium supplementation through organic fertilizers (livestock and poultry manure) was not taken into account for main grain crops (measured as 0)."
+        ]
+      }
+    },
+    "environmental_context": {
+      "climate_conditions": {
+        "temperature": "Mild climate, Mean Annual Temperature (MAT) obtained from National Meteorological Information Center.",
+        "precipitation": "Subtropical humid climate zone, Mean Annual Precipitation (MAP) obtained from National Meteorological Information Center. Sufficient precipitation can enhance crop productivity and K uptake, but also increase AK leaching loss.",
+        "seasonality": "N/A",
+        "extremes": "N/A"
+      },
+      "soil_properties": {
+        "classification": "Penglai Group soils and three gray-brown alluvium-covered soil types (purplish soils, paddy soils, and alluvial soils) according to China Soil System Classification (1995).",
+        "texture": "Not directly measured, but discussed as influencing K retention (clay soils retain K more effectively than sandy soils). Fine particles (clay and powder) are physical conservators of soil potassium.",
+        "mineralogy": "Not directly measured, but discussed as influencing K balance (2:1 clay minerals as K reservoir, conversion to vermiculite/chlorite).",
+        "organic_matter": "Not directly measured, but discussed as influencing soil potassium fixation and uptake capacity.",
+        "chemical_properties": {
+          "pH": "Discussed as influencing soil potassium fixation and uptake capacity.",
+          "cation_exchange": "Discussed as influencing soil potassium fixation and uptake capacity through ion exchange with Al³⁺, Ca²⁺, and Mg²⁺."
+        },
+        "physical_properties": {
+          "soil_particle_composition": "Closely linked to physical, chemical, and biological properties; fine particles control variation of soil K content."
+        }
+      },
+      "landscape_context": {
+        "topography": "Hilly terrain. Altitude ranges from 280 m to 664 m (high in northwest, low in southeast). Topographic factors (elevation, slope, terrain relief) extracted from ASTER GDEM V2. Topography has direct positive effect on K balance and indirect effects on MAP and soil AK content.",
+        "drainage": "N/A",
+        "position": "Hilly region of Central Sichuan, Shehong County.",
+        "land_use_history": "Long history of intensive cropping activity in hilly areas of China."
+      }
+    },
+    "research_integration": {
+      "relationship_to_other_measurements": "Integrated soil K measurements with crop distribution (extracted from satellite imagery), climate data (MAT, MAP), topographic data (elevation, slope, terrain relief), and anthropogenic activity data (road density, population density) to analyze factors influencing K balance.",
+      "integration_with_plant_studies": "Directly linked to crop types, crop demand for K, K uptake, and yield levels to calculate K output and balance. Crop phenological differences were used for crop classification.",
+      "connection_to_broader_objectives": "Aims to provide references for rational potassium fertilizer application and improving soil potassium utilization efficiency in the region, contributing to precision fertilization at the regional level.",
+      "comparative_context": "Compares soil K balance across different cropping systems (monocultures vs. rotations). References existing literature on soil K balance research (field experiments vs. statistical/survey data).",
+      "literature_positioning": "Addresses the scarcity of studies focusing on potassium balance with crop cultivation types, especially in hilly areas, and the lack of spatial mapping of soil potassium balance in terms of regional crop distribution."
+    },
+    "data_limitations": {
+      "measurement_constraints": [
+        "Potassium uptake by crops was obtained from literature rather than field measurements, and differences between crop varieties were not considered.",
+        "The calculated potassium inputs and outputs were primarily derived from pertinent literature and field surveys, without taking into account the contribution of soil potassium supplementation through organic fertilizers, such as livestock and poultry manure (measured as 0 for main grain crops)."
+      ],
+      "temporal_limitations": [],
+      "spatial_limitations": [
+        "Unexplained variations in the results (79.2% of variance in K balance) are likely attributable to the omission of additional crops, such as vegetables and sweet potatoes, and their different potassium input and output patterns compared to the identified crops."
+      ],
+      "methodological_constraints": [
+        "The study did not explore in depth the effects of soil particle composition, basic chemical properties, and mineralogical characteristics on potassium balance, which may account for the large unexplained variance in the SEM model."
+      ],
+      "interpretation_caveats": []
+    },
+    "extraction_assessment": {
+      "data_completeness": 0.95,
+      "quantitative_content": 0.98,
+      "temporal_coverage": 0.7,
+      "spatial_coverage": 0.95,
+      "methodological_detail": 0.9,
+      "extraction_confidence": 0.98,
+      "native_context_preservation": 0.99,
+      "extraction_notes": "Comprehensive extraction of soil K information, including quantitative data, methodological details, and contextual factors. The paper is highly focused on K balance, ensuring most content is relevant. All numerical values and their units, as well as the methods and contexts, have been extracted as reported by the researchers. Limitations and uncertainties identified in the original research are noted."
+    },
+    "_usage_metadata": {
+      "timestamp": "2025-07-10T10:04:14.225581",
+      "stage_name": "stage_2a",
+      "paper_id": "Soil K Balance in Sichuan",
+      "prompt_length_chars": 73300,
+      "processing_time_seconds": 59.8,
+      "thinking_enabled": true,
+      "input_tokens": 21282,
+      "output_tokens": 8557,
+      "thinking_tokens": 0,
+      "input_cost_usd": 0.003192,
+      "output_cost_usd": 0.02995,
+      "thinking_cost_usd": 0.0,
+      "total_cost_usd": 0.033142
+    }
+  }
+}

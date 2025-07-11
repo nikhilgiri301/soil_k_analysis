@@ -1,0 +1,581 @@
+{
+  "stage_id": "1a",
+  "stage_name": "Generic Extraction",
+  "paper_id": "Subsoil‑potassium depletion accounts for the nutrient budget in high‑potassium agricultural soils",
+  "processing_timestamp": "2025-07-10T10:31:56.099091",
+  "processing_time_seconds": 63.707788705825806,
+  "processing_mode": "single_paper",
+  "validation_passed": true,
+  "validation_message": "Valid generic extraction",
+  "results": {
+    "paper_metadata": {
+      "title": "Subsoil‑potassium depletion accounts for the nutrient budget in high‑potassium agricultural soils",
+      "authors": [
+        "Adrian A. Correndo",
+        "Gerardo Rubio",
+        "Fernando O. García",
+        "Ignacio A. Ciampitti"
+      ],
+      "journal": "Scientific Reports",
+      "publication_year": 2021,
+      "doi": "10.1038/s41598-021-90297-1",
+      "study_region": "Argentine Pampas, Southern Santa Fe region",
+      "primary_focus": "Potassium (K) depletion in agricultural soils, especially subsoil, and its regulation by soil properties"
+    },
+    "research_methodology": {
+      "study_type": "field_experiment",
+      "experimental_design": "Randomized complete block design with three replicates. Plot size 25–30 m wide and 65–70 m long. Three conditions compared: Control (no fertilizer), NPS (N, P, S fertilizers), and Pristine (adjacent uncultivated soils).",
+      "temporal_scope": {
+        "study_duration_years": 9,
+        "data_collection_frequency": "Soil samples collected in 2000, 2004 (0-20 cm), and 2009 (0-100 cm). Annual K budget estimation.",
+        "seasonal_coverage": "Soil samples collected at early spring.",
+        "monitoring_timeline": [
+          "September 2000 (trial onset, initial soil properties)",
+          "2000-2009 (crop seasons, K budget estimation)",
+          "2004 (topsoil K sampling)",
+          "2009 (full soil profile K sampling)"
+        ]
+      },
+      "spatial_scope": {
+        "number_of_sites": 4,
+        "geographic_coverage": "Central Pampas of Argentina, Southern Santa Fe region",
+        "site_characteristics": [
+          "Balducchi (Typic Hapludolls; +60 year cropping history)",
+          "San Alfredo (Typic Argiudolls; 8 year cropping history)",
+          "La Blanca (Typic Hapludolls; +6 year cropping history)",
+          "La Hansa (Aquic Argiudolls; +20 year cropping history)"
+        ],
+        "coordinates": "Balducchi: 34° 9′ 26.0″ S, 61° 36′ 33.8″ W; San Alfredo: 33° 53′ 14.1″ S, 61° 27′ 30.5″ W; La Blanca: 33° 29′ 57.2″ S, 62° 37′ 55.3″ W; La Hansa: 32° 23′ 04.2″ S, 61° 11′ 58.8″ W",
+        "regional_representativeness": "Sites selected to differ in soil properties and management history, representing agricultural Mollisols of the Pampean Region."
+      },
+      "sample_design": {
+        "sample_sizes": {
+          "replicates_per_treatment": 3,
+          "soil_sampling_depths_2009": 5,
+          "soil_subsamples_per_plot": 3
+        },
+        "replication_levels": "Three replicates per treatment at each site.",
+        "randomization_approach": "Randomized complete block design.",
+        "controls_and_treatments": [
+          "Control (no fertilizer applied)",
+          "NPS (application of nitrogen, phosphorus, and sulfur fertilizers)",
+          "Pristine (adjacent soils with no antecedents of agriculture)"
+        ],
+        "statistical_power": "Not explicitly stated, but significance testing (Tukey's HSD, p < 0.05) was applied."
+      },
+      "analytical_methods": {
+        "measurement_protocols": [
+          "Soil sampling: 0–20 cm (2000, 2004), 0–100 cm (2009, five depths: 0–20, 20–40, 40–60, 60–80, and 80–100 cm). Sub-samples fresh mixed, dried at 40 °C, sieved (2 mm).",
+          "Soil organic carbon (SOC): Determined at onset (2000).",
+          "Soil-test P: Determined at onset (2000) using Bray & Kurtz method.",
+          "Soil pH: Determined at onset (2000) using 1:2.5 soil:water ratio.",
+          "Bulk density (BD): Determined at onset (2000) for Control and NPS plots for each soil layer.",
+          "Secondary elements: Determined at onset (2000).",
+          "Exchangeable K (NH4-OAc-K): Determined by pH 7 buffered 1.0 M ammonium-acetate method.",
+          "Slowly-exchangeable K (NaBPh4-K): Determined by modified sodium tetraphenyl boron method (only in 2009).",
+          "Soil texture: Measured at onset (0–20 cm), subsoil layers (20–100 cm) obtained from INTA Soil Survey Summary.",
+          "K removal: Estimated from crop grain yield and assumed constant grain K concentrations (4.0 g K kg-1 for maize, 5.7 g K kg-1 for wheat, 19.0 g K kg-1 for soybean)."
+        ],
+        "instrumentation": [],
+        "quality_control": [
+          "Assumptions of normality and homogeneity of variance evaluated visually (QQ-plots, Student’s residuals vs. fitted values) and formally (Shapiro-Wilks normality test)."
+        ],
+        "detection_limits": {},
+        "analytical_precision": {}
+      },
+      "statistical_approach": {
+        "analysis_methods": [
+          "Mixed effect model with repeated measures over time (for K budget and topsoil NH4-OAc-K) using nlme package in R.",
+          "Mixed effect models with repeated measures over space (soil depth) for vertical distributions of NH4-OAc-K and NaBPh4-K.",
+          "Analysis of variance (ANOVA) partitioned by location.",
+          "Regression analyses (partial linear and linear-plateau relationships) for K depletion drivers.",
+          "Stepwise selection (stepAIC function from MASS package) for variable selection in regression."
+        ],
+        "significance_testing": "Tukey’s HSD (p < 0.05) for mean and interaction comparisons.",
+        "uncertainty_quantification": "Error bars represent standard deviation for grain yields and standard errors from ANOVA for cumulative K budget and topsoil NH4-OAc-K.",
+        "model_validation": "Best models selected based on lowest Akaike Information Criterion (AIC)."
+      }
+    },
+    "quantitative_findings": {
+      "primary_measurements": [
+        {
+          "parameter": "Cumulative K removal by grain (K budget)",
+          "values": [
+            -258,
+            -421,
+            -467,
+            -556
+          ],
+          "units": "kg K ha-1",
+          "statistical_measures": {
+            "mean": null,
+            "standard_error": null,
+            "confidence_interval": null,
+            "sample_size": null
+          },
+          "measurement_context": "After more than 10 harvests (9 years) for Control and NPS treatments across four sites. Control: -258 to -421 kg K ha-1; NPS: -467 to -556 kg K ha-1."
+        },
+        {
+          "parameter": "Average annual K removal (NPS treatment)",
+          "values": [
+            -29,
+            -62
+          ],
+          "units": "kg K ha-1 year-1",
+          "statistical_measures": {
+            "mean": null,
+            "standard_error": null,
+            "confidence_interval": null,
+            "sample_size": null
+          },
+          "measurement_context": "Average annual K removal for NPS treatment."
+        },
+        {
+          "parameter": "Topsoil NH4-OAc-K reduction (0-20 cm) relative to pristine",
+          "values": [
+            48
+          ],
+          "units": "%",
+          "statistical_measures": {
+            "mean": 48,
+            "standard_error": null,
+            "confidence_interval": null,
+            "sample_size": null
+          },
+          "measurement_context": "Overall reduction in topsoil exchangeable-K levels under agriculture compared to pristine conditions."
+        },
+        {
+          "parameter": "Subsoil NH4-OAc-K depletion (20-100 cm) relative to pristine",
+          "values": [
+            55,
+            83
+          ],
+          "units": "%",
+          "statistical_measures": {
+            "mean": null,
+            "standard_error": null,
+            "confidence_interval": null,
+            "sample_size": null
+          },
+          "measurement_context": "Depletion range for exchangeable-K in subsoil."
+        },
+        {
+          "parameter": "Subsoil NaBPh4-K depletion (20-100 cm) relative to pristine",
+          "values": [
+            74,
+            95
+          ],
+          "units": "%",
+          "statistical_measures": {
+            "mean": null,
+            "standard_error": null,
+            "confidence_interval": null,
+            "sample_size": null
+          },
+          "measurement_context": "Depletion range for slowly-exchangeable K in subsoil."
+        },
+        {
+          "parameter": "NH4-OAc-K stock (0-100 cm) - Pristine",
+          "values": [
+            1359,
+            1055,
+            1228,
+            1284
+          ],
+          "units": "g m-2",
+          "statistical_measures": {
+            "mean": null,
+            "standard_error": null,
+            "confidence_interval": null,
+            "sample_size": 4
+          },
+          "measurement_context": "Pristine NH4-OAc-K stocks for Balducchi, San Alfredo, La Blanca, and La Hansa, respectively."
+        },
+        {
+          "parameter": "NaBPh4-K content relative to NH4-OAc-K",
+          "values": [
+            2.1
+          ],
+          "units": "times larger",
+          "statistical_measures": {
+            "mean": 2.1,
+            "standard_error": null,
+            "confidence_interval": "1.2x-6.2x",
+            "sample_size": null
+          },
+          "measurement_context": "Average ratio of NaBPh4-K to NH4-OAc-K contents."
+        },
+        {
+          "parameter": "Grain yield (Balducchi)",
+          "values": [
+            1.9,
+            3.2
+          ],
+          "units": "Mg ha-1",
+          "statistical_measures": {
+            "mean": null,
+            "standard_error": null,
+            "confidence_interval": null,
+            "sample_size": null
+          },
+          "measurement_context": "Average yield for Control (1.9 Mg ha-1) and NPS (3.2 Mg ha-1) in Balducchi."
+        }
+      ],
+      "statistical_relationships": [
+        {
+          "relationship_type": "Regression",
+          "variables": [
+            "NH4-OAc-K depletion rate",
+            "Pristine NH4-OAc-K levels",
+            "Soil clay content"
+          ],
+          "correlation_coefficient": null,
+          "regression_parameters": {},
+          "significance_level": null,
+          "effect_size": "Greater pristine K values resulted in larger NH4-OAc-K depletion. Increases in soil clay (%) levels were associated with lower depletion NH4-OAc-K rate until reaching a threshold about 33% clay."
+        },
+        {
+          "relationship_type": "Regression",
+          "variables": [
+            "NaBPh4-K depletion",
+            "Soil silt content",
+            "Pristine NaBPh4-K content"
+          ],
+          "correlation_coefficient": null,
+          "regression_parameters": {},
+          "significance_level": null,
+          "effect_size": "Silt content (%) was the most relevant factor, showing a depletion trend until reaching a threshold of 50% silt, above which NaBPh4-K depletion becomes minimum. A weak positive association to Pristine-NaBPh4-K content was also observed."
+        }
+      ],
+      "temporal_patterns": [
+        {
+          "parameter": "Topsoil NH4-OAc-K (0-20 cm)",
+          "trend_description": "Site-specific changes; only two out of four sites (Balducchi and La Hansa) showed significant reductions from 2000 to 2009. No differences between Control and NPS treatments.",
+          "rate_of_change": null,
+          "units_per_time": null,
+          "trend_significance": "Significant reductions observed at Balducchi and La Hansa (p < 0.05, Tukey's HSD).",
+          "seasonal_component": "Not applicable, sampled at specific years."
+        },
+        {
+          "parameter": "Cumulative K budget",
+          "trend_description": "Continuously negative, reflecting K removal without replenishment.",
+          "rate_of_change": null,
+          "units_per_time": null,
+          "trend_significance": "Significantly increased K removal for NPS treatment compared to Control (p < 0.05, Tukey's HSD).",
+          "seasonal_component": "Not applicable, cumulative over years."
+        }
+      ],
+      "comparative_results": [
+        {
+          "comparison_type": "Treatment effect on K budget",
+          "groups_compared": [
+            "Control",
+            "NPS"
+          ],
+          "difference_magnitude": null,
+          "units": "kg K ha-1",
+          "statistical_significance": "Significant increase in K removal for NPS treatment (p < 0.05).",
+          "practical_significance": "NPS treatment led to higher K removal due to higher yields, resulting in more negative K budgets."
+        },
+        {
+          "comparison_type": "Agricultural footprint on NH4-OAc-K",
+          "groups_compared": [
+            "Pristine",
+            "Control",
+            "NPS"
+          ],
+          "difference_magnitude": null,
+          "units": "g m-2",
+          "statistical_significance": "Significant decrease in NH4-OAc-K levels for Control and NPS relative to Pristine (p < 0.05). Significant interactions between treatment and soil depth.",
+          "practical_significance": "Agriculture caused considerable K depletion, especially in the subsoil (55–83% for NH4-OAc-K)."
+        },
+        {
+          "comparison_type": "Agricultural footprint on NaBPh4-K",
+          "groups_compared": [
+            "Pristine",
+            "Control",
+            "NPS"
+          ],
+          "difference_magnitude": null,
+          "units": "g m-2",
+          "statistical_significance": "Significant decrease in NaBPh4-K levels for agricultural treatments relative to Pristine (p < 0.05 for Balducchi, La Blanca, La Hansa). Significant interaction at Balducchi and La Blanca.",
+          "practical_significance": "Agriculture caused significant depletion of slowly-exchangeable K, mainly in the subsoil (74–95% for NaBPh4-K)."
+        },
+        {
+          "comparison_type": "Depletion patterns by soil type",
+          "groups_compared": [
+            "Hapludolls (Balducchi, La Blanca)",
+            "Argiudolls (San Alfredo, La Hansa)"
+          ],
+          "difference_magnitude": null,
+          "units": "% depletion",
+          "statistical_significance": null,
+          "practical_significance": "Hapludolls showed higher NH4-OAc-K depletion rates (avg 63% and 37%) exacerbated towards subsoil (60–100 cm). Argiudolls showed lower reductions (avg 25% and 27%) mainly towards topsoil."
+        }
+      ]
+    },
+    "environmental_context": {
+      "geographic_details": {
+        "countries": [
+          "Argentina"
+        ],
+        "regions": [
+          "Pampas region",
+          "East-Central Argentina",
+          "Southern Santa Fe region"
+        ],
+        "coordinates": "Balducchi: 34° 9′ 26.0″ S, 61° 36′ 33.8″ W; San Alfredo: 33° 53′ 14.1″ S, 61° 27′ 30.5″ W; La Blanca: 33° 29′ 57.2″ S, 62° 37′ 55.3″ W; La Hansa: 32° 23′ 04.2″ S, 61° 11′ 58.8″ W",
+        "elevation": null,
+        "landscape_position": null
+      },
+      "climate_characteristics": {
+        "climate_classification": "Temperate",
+        "temperature_patterns": {
+          "annual_mean_temperature": "15-25 °C"
+        },
+        "precipitation_patterns": {
+          "spatial_variability": "Humid to the East, semiarid to the West"
+        },
+        "growing_season": null,
+        "environmental_stressors": []
+      },
+      "soil_properties": {
+        "soil_classification": "Mollisols (Typic Hapludolls, Typic Argiudolls, Aquic Argiudolls)",
+        "texture": "Variable across sites and depths. Example (0-20 cm): Balducchi (Clay 16%, Silt 43.1%, Sand 40.9%), San Alfredo (Clay 24.1%, Silt 63.3%, Sand 12.6%), La Blanca (Clay 17.4%, Silt 55.7%, Sand 26.9%), La Hansa (Clay 24.8%, Silt 72.3%, Sand 2.9%).",
+        "organic_matter": "Soil organic carbon (SOC) at 0-20 cm: Balducchi 13.5 g kg-1, San Alfredo 19.8 g kg-1, La Blanca 13.3 g kg-1, La Hansa 12.2 g kg-1.",
+        "chemical_properties": {
+          "pH_0-20cm": "Balducchi 6.3, San Alfredo 6.0, La Blanca 6.6, La Hansa 5.5",
+          "Ca_0-20cm": "Balducchi 1380 mg kg-1, San Alfredo 2200 mg kg-1, La Blanca 1440 mg kg-1, La Hansa 1520 mg kg-1",
+          "Mg_0-20cm": "Balducchi 252 mg kg-1, San Alfredo 252 mg kg-1, La Blanca 240 mg kg-1, La Hansa 192 mg kg-1",
+          "K_0-20cm": "Balducchi 528 mg kg-1, San Alfredo 678 mg kg-1, La Blanca 760 mg kg-1, La Hansa 792 mg kg-1"
+        },
+        "physical_properties": {
+          "bulk_density": "Balducchi (0-20cm: 1.3 g cm-3, 80-100cm: 1.31 g cm-3), San Alfredo (0-20cm: 1.26 g cm-3, 80-100cm: 1.31 g cm-3), La Blanca (0-20cm: 1.19 g cm-3, 80-100cm: 1.24 g cm-3), La Hansa (0-20cm: 1.25 g cm-3, 80-100cm: 1.3 g cm-3)"
+        },
+        "mineralogy": "Predominantly illite clay mineralogy of parental material (loess)."
+      },
+      "land_use_context": {
+        "current_land_use": "Intensive grain cropping",
+        "cropping_systems": [
+          "Maize–wheat/double-cropped soybean (M-W/DS)",
+          "Maize–full-season soybean–wheat/double-cropped soybean (M-FS-W/DS)"
+        ],
+        "management_intensity": "High-yielding systems with N, P, S fertilization, but negligible K fertilization.",
+        "historical_context": "Agricultural era started around 100 years ago in the region. Specific site histories: Balducchi (+60 year), San Alfredo (8 year), La Blanca (+6 year), La Hansa (+20 year).",
+        "sustainability_metrics": []
+      }
+    },
+    "agricultural_systems": {
+      "crop_information": {
+        "crop_types": [
+          "Maize (Zea mays L.)",
+          "Wheat (Triticum aestivum L.)",
+          "Soybean (Glycine max L.)"
+        ],
+        "varieties_cultivars": [],
+        "growth_stages_studied": [],
+        "yield_levels": {
+          "Balducchi_Control_average": "1.9 Mg ha-1",
+          "Balducchi_NPS_average": "3.2 Mg ha-1"
+        },
+        "production_metrics": {
+          "K_export_wheat_maize": "around 3 kg K Mg-1",
+          "K_export_soybean": "16 kg K Mg-1"
+        }
+      },
+      "management_practices": {
+        "fertilization": {
+          "types": [
+            "Nitrogen (N)",
+            "Phosphorus (P)",
+            "Sulfur (S)"
+          ],
+          "rates": {
+            "N_annual": "90-175 kg N year-1",
+            "P_annual_average": "37 kg P year-1",
+            "S_annual": "17-25 kg S year-1"
+          },
+          "timing": [
+            "Before planting",
+            "At planting"
+          ],
+          "application_methods": [
+            "Solid fertilizer blends"
+          ]
+        },
+        "irrigation": {
+          "system_type": null,
+          "water_amounts": {},
+          "scheduling": null
+        },
+        "other_practices": {
+          "tillage": "Minimum or no-tillage management implied as enhancing K stratification.",
+          "rotation": [
+            "Maize–wheat/double-cropped soybean (M-W/DS)",
+            "Maize–full-season soybean–wheat/double-cropped soybean (M-FS-W/DS)"
+          ],
+          "pest_management": null,
+          "organic_amendments": [
+            "Crop residues not removed or grazed"
+          ]
+        }
+      },
+      "input_output_relationships": {
+        "input_rates": {
+          "N_fertilizer": "90-175 kg N year-1",
+          "P_fertilizer": "average 37 kg P year-1",
+          "S_fertilizer": "17-25 kg S year-1"
+        },
+        "output_measurements": {
+          "cumulative_K_removal_Control": "258-421 kg K ha-1 (9 years)",
+          "cumulative_K_removal_NPS": "467-556 kg K ha-1 (9 years)"
+        },
+        "efficiency_metrics": {},
+        "balance_calculations": {
+          "K_budget": "Continuous negative K budgets due to K removal without replenishment."
+        }
+      }
+    },
+    "temporal_dynamics": {
+      "study_timeline": {
+        "start_date": "2000",
+        "end_date": "2009",
+        "data_collection_schedule": [
+          "Soil samples: 2000, 2004, 2009",
+          "K budget: Annual estimation (2000-2009)"
+        ],
+        "monitoring_frequency": "Annual for K budget, specific years for soil sampling."
+      },
+      "seasonal_variations": [],
+      "long_term_trends": [
+        {
+          "parameter": "Soil K reservoir",
+          "trend_direction": "Depleting",
+          "trend_magnitude": null,
+          "trend_units": null,
+          "projection_timeframe": "Responsiveness to K expected in a near future.",
+          "sustainability_implications": "High indigenous-K fertility is progressively being depleted, requiring future K fertilizer needs."
+        },
+        {
+          "parameter": "Soil K depletion location",
+          "trend_direction": "Concentrated in subsoil",
+          "trend_magnitude": null,
+          "trend_units": null,
+          "projection_timeframe": null,
+          "sustainability_implications": "Highlights the importance of considering subsoil K status for K management guidelines."
+        }
+      ],
+      "variability_characterization": {
+        "inter_annual_variability": {},
+        "spatial_variability": {
+          "soil_K_depletion_patterns": "Varied between sites (e.g., Hapludolls vs. Argiudolls) and soil depths."
+        },
+        "measurement_uncertainty": {},
+        "drivers_of_variability": [
+          "Cropping history",
+          "Soil texture",
+          "Soil mineralogy",
+          "Potential subsoil K supply"
+        ]
+      }
+    },
+    "data_quality_assessment": {
+      "methodological_strengths": [
+        "Long-term (9-year) on-farm trials across multiple sites.",
+        "Evaluation of both topsoil and subsoil (0-100 cm) K dynamics.",
+        "Assessment of different K pools (exchangeable and slowly-exchangeable K).",
+        "Inclusion of pristine soil conditions for comparison.",
+        "Comprehensive soil characterization at the onset of the experiment."
+      ],
+      "methodological_limitations": [
+        "Grain K content was assumed constant for 2003-2009 based on earlier measurements (2000-2002) due to lack of direct measurements.",
+        "No historical yield data available to further explore hypotheses related to the effect of cropping history.",
+        "Assumed negligible K losses from leaching and/or runoff."
+      ],
+      "data_completeness": "High for K fractions and soil properties at specific time points and depths. K budget data is comprehensive.",
+      "measurement_precision": {
+        "K_budget_and_topsoil_K": "Standard errors from ANOVA are reported (implied by error bars in Figure 1)."
+      },
+      "representativeness": {
+        "spatial_representativeness": "Four sites with varying soil properties and cropping histories provide good regional representativeness for Pampean Mollisols.",
+        "temporal_representativeness": "Nine-year study duration captures medium-term trends.",
+        "system_representativeness": "Common crop rotations (maize, wheat, soybean) and management practices (NPS fertilization) in the region are represented."
+      },
+      "uncertainty_sources": [
+        "Assumption of constant grain K content for K removal calculations (2003-2009).",
+        "Assumption of negligible K losses from leaching and/or runoff."
+      ],
+      "validation_evidence": [
+        "Results are consistent with recent surveys in the Pampean Region regarding high K fertility.",
+        "Findings align with previous studies on K stratification and the importance of subsoil K supply."
+      ]
+    },
+    "literature_integration": {
+      "key_methodological_references": [
+        "Bray, R. H. & Kurtz, L. (1945) for soil-test P.",
+        "Thomas, G. W. (1996) for soil pH.",
+        "Grossman, R. B. & Reinsch, T. G. (2002) for bulk density.",
+        "Gupta, U. C. (1967) for hot-water soluble boron.",
+        "Warncke, D. & Brown, J. R. (1998) for potassium and other basic cations.",
+        "Pinheiro, J. et al. (2019) for nlme R package (mixed effects models).",
+        "R Core Team (2021) for R software.",
+        "Lenth, R. (n.d.) for emmeans R package (estimated marginal means).",
+        "Venables, W. N. & Ripley, B. D. (2002) for MASS R package (stepAIC function)."
+      ],
+      "comparative_studies": [
+        "Simonsson et al. (2007) on K depletion factors.",
+        "Sucunza et al. (2018) on phosphorus depletion trends in the same long-term experiment.",
+        "Mallarino & Ul-Haq (1997) on topsoil and subsoil K affected by fertilization.",
+        "Jobbagy & Jackson (2001, 2004) on soil nutrient distribution with depth and K uplift.",
+        "Mallarino & Borges (2006) on P and K distribution with deep-band fertilization.",
+        "Rao et al. (2001) on subsoil K availability in India."
+      ],
+      "theoretical_framework": "K is an essential macronutrient with four soil pools (solution, exchangeable, slowly exchangeable, mineral). Plants acquire K from all soil layers. K stratification occurs due to fertilization and root uptake/residue deposition. Soil K buffer capacity is influenced by clay content and mineralogy.",
+      "data_sources": [
+        "Instituto Nacional de Tecnología Agropecuaria (INTA) Soil Survey Summary for subsoil texture data."
+      ],
+      "benchmarking_data": [
+        "K requirements of crops (40–300 kg ha-1 year-1).",
+        "K removal by wheat/maize (3 kg K Mg-1) and soybean (16 kg K Mg-1).",
+        "NH4-OAc-K critical level (about 130–170 mg K kg-1)."
+      ],
+      "validation_studies": []
+    },
+    "extraction_metadata": {
+      "extraction_completeness": 0.95,
+      "data_richness_assessment": "The paper is rich in quantitative data, particularly regarding soil K fractions across depths and sites, and detailed soil properties. Methodological details are also well-described.",
+      "confidence_in_extraction": 0.9,
+      "potential_ambiguities": [
+        "Exact standard errors/confidence intervals for all reported means are not explicitly provided in the text, only indicated by error bars in figures and general statements about statistical methods.",
+        "The specific 'cropping history' values for Balducchi, La Blanca, and La Hansa are given as '+60 year', '+6 year', and '+20 year' respectively, which are approximate durations."
+      ],
+      "extraction_limitations": [
+        "Inability to extract precise numerical standard errors or confidence intervals for all reported means, as they are often only visually represented in figures or generally stated as 'standard errors from their respective analyses of variance'.",
+        "Lack of specific instrumentation models/manufacturers for all analytical methods."
+      ],
+      "quality_flags": [
+        "Assumption: Constant grain K content for K removal calculations (2003-2009).",
+        "Assumption: Negligible K losses from leaching and/or runoff."
+      ],
+      "recommended_validation_checks": [
+        "Cross-reference numerical values with figures if available (e.g., Figure 1 for K budget and topsoil K trends).",
+        "Verify the interpretation of statistical significance letters in Table 2 against the paper's methodology (Tukey's HSD, p < 0.05)."
+      ]
+    },
+    "_usage_metadata": {
+      "timestamp": "2025-07-10T10:31:56.096984",
+      "stage_name": "stage_1a",
+      "paper_id": "Subsoil‑potassium depletion accounts for the nutrient budget in high‑potassium agricultural soils",
+      "prompt_length_chars": 76141,
+      "processing_time_seconds": 63.68,
+      "thinking_enabled": true,
+      "input_tokens": 27652,
+      "output_tokens": 7678,
+      "thinking_tokens": 0,
+      "input_cost_usd": 0.004148,
+      "output_cost_usd": 0.026873,
+      "thinking_cost_usd": 0.0,
+      "total_cost_usd": 0.031021
+    }
+  }
+}

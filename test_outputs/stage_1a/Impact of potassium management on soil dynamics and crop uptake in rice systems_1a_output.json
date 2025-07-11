@@ -1,0 +1,784 @@
+{
+  "stage_id": "1a",
+  "stage_name": "Generic Extraction",
+  "paper_id": "Impact of potassium management on soil dynamics and crop uptake in rice systems",
+  "run_type": "stage_test",
+  "processing_timestamp": "2025-07-08T13:46:00.681422",
+  "processing_time_seconds": 94.18038868904114,
+  "token_usage": {
+    "input": 12869,
+    "output": 5071,
+    "thinking": 0
+  },
+  "estimated_cost_usd": 0.09117075,
+  "results": {
+    "paper_metadata": {
+      "title": "Impact of potassium management on soil dynamics and crop uptake in rice systems",
+      "authors": [
+        "Suchismita Mohapatra",
+        "Kumbha Karna Rout",
+        "Chandramani Khanda",
+        "Amit Mishra",
+        "Sudhir Yadav",
+        "Rajeev Padbhushan",
+        "Ajay Kumar Mishra",
+        "Sheetal Sharma"
+      ],
+      "journal": "Frontiers in Sustainable Food Systems",
+      "publication_year": 2025,
+      "doi": "10.3389/fsufs.2025.1453311",
+      "study_region": "Odisha, India",
+      "primary_focus": "Evaluation of different potassium (K) management strategies (chemical fertilizers, straw application, foliar spray) on soil K dynamics, K balance, and crop uptake in a puddled, transplanted rice–rice system."
+    },
+    "research_methodology": {
+      "study_type": "field_experiment",
+      "experimental_design": "Randomized Block Design (RBD) with nine treatments and three replications.",
+      "temporal_scope": {
+        "study_duration_years": 1,
+        "data_collection_frequency": "Soil samples were collected at the beginning of the experiment, mid-season (30 and 60 Days After Transplanting - DAT), and after harvest. Plant samples were collected at maximum tillering, panicle initiation, and harvest stages.",
+        "seasonal_coverage": "Dry season (December–April) and wet season (June–October).",
+        "monitoring_timeline": [
+          "Initial soil state",
+          "30 DAT (soil and plant)",
+          "60 DAT (soil)",
+          "Panicle Initiation (plant)",
+          "Harvest (soil and plant)"
+        ]
+      },
+      "spatial_scope": {
+        "number_of_sites": 1,
+        "geographic_coverage": "Central Research Station of Orissa University of Agriculture and Technology (OUAT), Bhubaneswar, India.",
+        "site_characteristics": [
+          "Located in the Eastern and South-Eastern Coastal Plain agroclimatic zone.",
+          "Hot and humid climate.",
+          "Shallow water table (1 m).",
+          "Land is poorly drained during the rainy season and moderately well drained during the summer."
+        ],
+        "coordinates": "20°15′N, 81°52′E",
+        "regional_representativeness": "Representative of puddled, transplanted rice systems in the coastal plain agroclimatic zone of Eastern India."
+      },
+      "sample_design": {
+        "sample_sizes": {
+          "plots": "Experimental plots measured 6 m × 5 m."
+        },
+        "replication_levels": "three replications",
+        "randomization_approach": "Randomized Block Design (RBD)",
+        "controls_and_treatments": [
+          {
+            "id": "T1",
+            "description": "Control (no potassium application)"
+          },
+          {
+            "id": "T2",
+            "description": "40 kg K₂O ha⁻¹"
+          },
+          {
+            "id": "T3",
+            "description": "60 kg K₂O ha⁻¹"
+          },
+          {
+            "id": "T4",
+            "description": "80 kg K₂O ha⁻¹"
+          },
+          {
+            "id": "T5",
+            "description": "20 kg K₂O ha⁻¹ + straw (3 t ha⁻¹)"
+          },
+          {
+            "id": "T6",
+            "description": "30 kg K₂O ha⁻¹ + straw (3 t ha⁻¹)"
+          },
+          {
+            "id": "T7",
+            "description": "40 kg K₂O ha⁻¹ + straw (3 t ha⁻¹)"
+          },
+          {
+            "id": "T8",
+            "description": "Straw alone (3 t ha⁻¹)"
+          },
+          {
+            "id": "T9",
+            "description": "40 kg K₂O ha⁻¹ + 1% KNO₃ foliar spray at panicle initiation"
+          }
+        ],
+        "statistical_power": "Not explicitly stated, but standard RBD with 3 reps was used."
+      },
+      "analytical_methods": {
+        "measurement_protocols": [
+          {
+            "parameter": "Exchangeable Potassium (K)",
+            "method": "Ammonium acetate method",
+            "reference": "Hanway and Heidel, 1952"
+          },
+          {
+            "parameter": "Reserve Potassium (K)",
+            "method": "Nitric acid extraction",
+            "reference": "Wood and De Turk, 1941"
+          },
+          {
+            "parameter": "Non-exchangeable Potassium (K)",
+            "method": "Procedure described by Black (1965)",
+            "reference": "Black, 1965"
+          },
+          {
+            "parameter": "Soil pH",
+            "method": "Not specified, reference provided",
+            "reference": "Jackson, 1968"
+          },
+          {
+            "parameter": "Soil Nitrogen (N)",
+            "method": "Alkaline KMnO4 method",
+            "reference": "Subbiah and Asija, 1956"
+          },
+          {
+            "parameter": "Soil Phosphorus (P)",
+            "method": "Sodium bicarbonate extraction method",
+            "reference": "Page, 1982"
+          },
+          {
+            "parameter": "Plant Potassium (K)",
+            "method": "Digestion with HNO₃–HClO₄ (3:2) followed by flame photometer analysis"
+          },
+          {
+            "parameter": "Plant Phosphorus (P)",
+            "method": "Vanadomolybdate yellow color method"
+          },
+          {
+            "parameter": "Plant Nitrogen (N)",
+            "method": "Micro-Kjeldahl method"
+          }
+        ],
+        "instrumentation": [
+          "Willey mill (for grinding plant samples)",
+          "Flame photometer (for K analysis)"
+        ],
+        "quality_control": [
+          "Standard analytical procedures with cited references were used."
+        ],
+        "detection_limits": {},
+        "analytical_precision": {}
+      },
+      "statistical_approach": {
+        "analysis_methods": [
+          "Analysis of Variance (ANOVA)",
+          "Correlation analysis"
+        ],
+        "significance_testing": "Least Significant Difference (LSD) at a 0.05 probability level.",
+        "uncertainty_quantification": "LSD values are provided for comparing treatment means.",
+        "model_validation": "Not applicable, as it is not a modeling study."
+      }
+    },
+    "quantitative_findings": {
+      "primary_measurements": [
+        {
+          "parameter": "Grain Yield",
+          "values": [
+            {
+              "treatment": "K0 (T1)",
+              "dry_season": 2.7,
+              "wet_season": 4.2
+            },
+            {
+              "treatment": "K40 (T2)",
+              "dry_season": 3.2,
+              "wet_season": 4.3
+            },
+            {
+              "treatment": "K60 (T3)",
+              "dry_season": 3.5,
+              "wet_season": 4.7
+            },
+            {
+              "treatment": "K80 (T4)",
+              "dry_season": 3.4,
+              "wet_season": 4.9
+            },
+            {
+              "treatment": "K20 + Straw (T5)",
+              "dry_season": 3.2,
+              "wet_season": 4.4
+            },
+            {
+              "treatment": "K30 + Straw (T6)",
+              "dry_season": 3.5,
+              "wet_season": 5.2
+            },
+            {
+              "treatment": "K40 + Straw (T7)",
+              "dry_season": 3.1,
+              "wet_season": 4.9
+            },
+            {
+              "treatment": "Straw (T8)",
+              "dry_season": 2.8,
+              "wet_season": 4.6
+            },
+            {
+              "treatment": "K40 + 1% KNO3 spray (T9)",
+              "dry_season": 3.8,
+              "wet_season": 5.4
+            }
+          ],
+          "units": "t ha⁻¹",
+          "statistical_measures": {
+            "LSD_0.05": 0.6
+          },
+          "measurement_context": "Data from Table 1. LSD is the same for both seasons."
+        },
+        {
+          "parameter": "Total Plant K Uptake at Harvest",
+          "values": [
+            {
+              "season": "Dry",
+              "range": "74 (T1) to 147 (T4)"
+            },
+            {
+              "season": "Wet",
+              "range": "87 (T1 and T5) to 156 (T4)"
+            }
+          ],
+          "units": "kg ha⁻¹",
+          "statistical_measures": {},
+          "measurement_context": "Ranges across all treatments at harvest."
+        },
+        {
+          "parameter": "Exchangeable K (0-15 cm)",
+          "values": [
+            {
+              "stage": "Maximum Tillering",
+              "season": "Dry",
+              "range": "68.5 (T1) to 117.8 (T4)"
+            },
+            {
+              "stage": "Maximum Tillering",
+              "season": "Wet",
+              "range": "42.4 (T1) to 81.7 (T6)"
+            },
+            {
+              "stage": "Harvest",
+              "season": "Dry",
+              "range": "47.9 (T1) to 79.6 (T4)"
+            },
+            {
+              "stage": "Harvest",
+              "season": "Wet",
+              "range": "35.6 (T1) to 63.3 (T3)"
+            }
+          ],
+          "units": "kg ha⁻¹",
+          "statistical_measures": {},
+          "measurement_context": "Ranges across treatments at different growth stages and seasons for the surface layer."
+        },
+        {
+          "parameter": "Non-exchangeable K (0-15 cm)",
+          "values": [
+            {
+              "stage": "Maximum Tillering",
+              "season": "Dry",
+              "range": "35.5 (T8) to 97.9 (T5)"
+            },
+            {
+              "stage": "Maximum Tillering",
+              "season": "Wet",
+              "range": "78.8 (T5) to 111.2 (T2)"
+            },
+            {
+              "stage": "Harvest",
+              "season": "Dry",
+              "range": "83.3 (T9) to 152.4 (T3)"
+            },
+            {
+              "stage": "Harvest",
+              "season": "Wet",
+              "range": "164.7 (T1) to 226.2 (T4)"
+            }
+          ],
+          "units": "kg ha⁻¹",
+          "statistical_measures": {},
+          "measurement_context": "Ranges across treatments at different growth stages and seasons for the surface layer."
+        },
+        {
+          "parameter": "Reserve K (0-15 cm)",
+          "values": [
+            {
+              "stage": "Maximum Tillering",
+              "season": "Dry",
+              "range": "144 (T1) to 215 (T4)"
+            },
+            {
+              "stage": "Maximum Tillering",
+              "season": "Wet",
+              "range": "124 (T1) to 173 (T4)"
+            },
+            {
+              "stage": "Harvest",
+              "season": "Dry",
+              "range": "132 (T1) to 232 (T4)"
+            },
+            {
+              "stage": "Harvest",
+              "season": "Wet",
+              "range": "200 (T1) to 306 (T4)"
+            }
+          ],
+          "units": "kg ha⁻¹",
+          "statistical_measures": {},
+          "measurement_context": "Ranges across treatments at different growth stages and seasons for the surface layer."
+        },
+        {
+          "parameter": "Annual K Balance",
+          "values": [
+            {
+              "treatment": "K0 (T1)",
+              "balance": -103
+            },
+            {
+              "treatment": "K40 (T2)",
+              "balance": -60
+            },
+            {
+              "treatment": "K60 (T3)",
+              "balance": -87
+            },
+            {
+              "treatment": "K80 (T4)",
+              "balance": -86
+            },
+            {
+              "treatment": "K20 + Straw (T5)",
+              "balance": 53
+            },
+            {
+              "treatment": "K30 + Straw (T6)",
+              "balance": 65
+            },
+            {
+              "treatment": "K40 + Straw (T7)",
+              "balance": 89
+            },
+            {
+              "treatment": "Straw (T8)",
+              "balance": 11
+            },
+            {
+              "treatment": "K40 + 1% KNO3 spray (T9)",
+              "balance": -140
+            }
+          ],
+          "units": "kg ha⁻¹",
+          "statistical_measures": {},
+          "measurement_context": "Total annual K balance from Table 2. Note: The table shows seasonal balances, but the text reports the annual total balance range from -140 to +89. The table's 'Total' column for balance is mislabeled and seems to be seasonal. I am using the annual total from the text and the table's 'Total' column for 'Total K removed' minus 'Total K added'."
+        }
+      ],
+      "statistical_relationships": [
+        {
+          "relationship_type": "correlation",
+          "variables": [
+            "Total K uptake",
+            "Available K at Maximum Tillering"
+          ],
+          "correlation_coefficient": 0.63,
+          "regression_parameters": {},
+          "significance_level": "significant",
+          "effect_size": "R²"
+        },
+        {
+          "relationship_type": "correlation",
+          "variables": [
+            "Total K uptake",
+            "Available K at Panicle Initiation"
+          ],
+          "correlation_coefficient": 0.49,
+          "regression_parameters": {},
+          "significance_level": "significant",
+          "effect_size": "R²"
+        },
+        {
+          "relationship_type": "correlation",
+          "variables": [
+            "Total K uptake",
+            "Available K at Harvest"
+          ],
+          "correlation_coefficient": 0.5,
+          "regression_parameters": {},
+          "significance_level": "significant",
+          "effect_size": "R²"
+        },
+        {
+          "relationship_type": "correlation",
+          "variables": [
+            "Total K uptake",
+            "Reserve K at Panicle Initiation and Harvest"
+          ],
+          "correlation_coefficient": 0.52,
+          "regression_parameters": {},
+          "significance_level": "significant",
+          "effect_size": "R²"
+        },
+        {
+          "relationship_type": "correlation",
+          "variables": [
+            "Total K uptake",
+            "Non-exchangeable K at Maximum Tillering"
+          ],
+          "correlation_coefficient": 0.43,
+          "regression_parameters": {},
+          "significance_level": "significant",
+          "effect_size": "R²"
+        }
+      ],
+      "temporal_patterns": [],
+      "comparative_results": [
+        {
+          "comparison_type": "Treatment effect on yield",
+          "groups_compared": [
+            "T9 (K40 + foliar spray)",
+            "T1 (Control)"
+          ],
+          "difference_magnitude": 1.1,
+          "units": "t ha⁻¹",
+          "statistical_significance": "significant",
+          "practical_significance": "T9 had the highest yield in the dry season."
+        },
+        {
+          "comparison_type": "Seasonal effect on yield",
+          "groups_compared": [
+            "Wet season",
+            "Dry season"
+          ],
+          "difference_magnitude": 0,
+          "units": "t ha⁻¹",
+          "statistical_significance": "significant",
+          "practical_significance": "Grain yields were consistently higher in the wet season across all treatments."
+        },
+        {
+          "comparison_type": "Treatment effect on K balance",
+          "groups_compared": [
+            "Straw-based treatments (T5, T6, T7, T8)",
+            "Fertilizer-only treatments (T2, T3, T4, T9)"
+          ],
+          "difference_magnitude": 0,
+          "units": "kg ha⁻¹",
+          "statistical_significance": "significant",
+          "practical_significance": "Straw-based treatments resulted in positive K balances, while fertilizer-only treatments resulted in negative K balances."
+        }
+      ]
+    },
+    "environmental_context": {
+      "geographic_details": {
+        "countries": [
+          "India"
+        ],
+        "regions": [
+          "Odisha",
+          "Bhubaneswar"
+        ],
+        "coordinates": "20°15′N, 81°52′E",
+        "elevation": "25.5 m above sea level",
+        "landscape_position": "Coastal Plain"
+      },
+      "climate_characteristics": {
+        "climate_classification": "Hot and humid",
+        "temperature_patterns": {
+          "mean_maximum": "33.2°C",
+          "mean_minimum": "21.4°C"
+        },
+        "precipitation_patterns": {
+          "mean_annual_rainfall": "1,467 mm",
+          "seasonality": "Approximately 70% occurs between July and September."
+        },
+        "growing_season": "Two seasons: Dry (December–April) and Wet (June–October).",
+        "environmental_stressors": [
+          "Poor drainage during rainy season"
+        ]
+      },
+      "soil_properties": {
+        "soil_classification": "Not specified",
+        "texture": "sandy loam",
+        "organic_matter": "medium organic carbon (0.39%)",
+        "chemical_properties": {
+          "pH": 5.87,
+          "Nitrogen (alkaline KMnO4-N)": "170 kg ha⁻¹ (low)",
+          "Phosphorus (0.5-M NaHCO3-P)": "21 kg ha⁻¹ (high)",
+          "Exchangeable K (1 N NH4OAc-K)": "58 kg ha⁻¹ (low) at 0-15 cm; 59 kg ha⁻¹ at 15-30 cm; 53 kg ha⁻¹ at 30-45 cm",
+          "Non-exchangeable K": "123 kg ha⁻¹ at 0-15 cm",
+          "Reserve K": "181 kg ha⁻¹ at 0-15 cm"
+        },
+        "physical_properties": {
+          "drainage": "poorly drained during the rainy season, moderately well drained during the summer",
+          "water_table_depth": "1 m"
+        },
+        "mineralogy": "Not specified"
+      },
+      "land_use_context": {
+        "current_land_use": "Agriculture",
+        "cropping_systems": [
+          "puddled, transplanted rice–rice system"
+        ],
+        "management_intensity": "Intensive rice farming",
+        "historical_context": "Intensive rice farming has led to substantial potassium (K) depletion in soils.",
+        "sustainability_metrics": [
+          "Soil K dynamics",
+          "Nutrient balance (K)"
+        ]
+      }
+    },
+    "agricultural_systems": {
+      "crop_information": {
+        "crop_types": [
+          "Rice"
+        ],
+        "varieties_cultivars": [
+          "Lalat (medium-duration, 120–125 days)"
+        ],
+        "growth_stages_studied": [
+          "Maximum tillering (MT)",
+          "Panicle initiation (PI)",
+          "Harvest"
+        ],
+        "yield_levels": {
+          "dry_season_range": "2.7 to 3.8 t ha⁻¹",
+          "wet_season_range": "4.2 to 5.4 t ha⁻¹"
+        },
+        "production_metrics": {
+          "grain_yield": "Measured in t ha⁻¹"
+        }
+      },
+      "management_practices": {
+        "fertilization": {
+          "types": [
+            "Urea (N)",
+            "Diammonium phosphate (P)",
+            "Muriate of potash (MOP, K)",
+            "ZnSO₄ (Zn)",
+            "KNO₃ (foliar spray)"
+          ],
+          "rates": {
+            "N": "30 kg ha⁻¹ basal + 50 kg ha⁻¹ split application (total 80 kg ha⁻¹)",
+            "P": "40 kg P ha⁻¹",
+            "Zn": "25 kg Zn ha⁻¹",
+            "K": "Varies by treatment: 0, 20, 30, 40, 60, 80 kg K₂O ha⁻¹"
+          },
+          "timing": [
+            "N, P, Zn at transplanting (basal).",
+            "Additional N applied in two splits at 20 and 50 DAT.",
+            "K applied in two equal splits at basal application and 50 DAT.",
+            "KNO₃ foliar spray at panicle initiation stage (for T9)."
+          ],
+          "application_methods": [
+            "Soil application",
+            "Foliar spray"
+          ]
+        },
+        "irrigation": {
+          "system_type": "Puddled, transplanted system implies flooded/irrigated conditions, but specific irrigation management is not detailed.",
+          "water_amounts": {},
+          "scheduling": ""
+        },
+        "other_practices": {
+          "tillage": "Puddled system. Straw incorporated using a power tiller.",
+          "rotation": [
+            "Rice-Rice"
+          ],
+          "pest_management": "Pretilachlor (500 mL ha⁻¹) for weeds, followed by manual weeding. SAAF (2 g L⁻¹), streptocycline (0.15 g L⁻¹), and Furadan (10 kg acre⁻¹) for pests and diseases.",
+          "organic_amendments": [
+            {
+              "type": "Rice straw",
+              "rate": "3 t ha⁻¹",
+              "k_contribution": "~45 kg K ha⁻¹",
+              "management": "Incorporated into soil using a power tiller to a shallow depth, followed by a second plowing after 15 days."
+            }
+          ]
+        }
+      },
+      "input_output_relationships": {
+        "input_rates": {
+          "K_added": "Ranges from 26 to 110 kg ha⁻¹ per season depending on treatment (Table 2)."
+        },
+        "output_measurements": {
+          "K_removed": "Ranges from 20 to 156 kg ha⁻¹ per season depending on treatment (Table 2)."
+        },
+        "efficiency_metrics": {},
+        "balance_calculations": {
+          "K_balance": "Calculated as K added - K removed. Annual balance ranged from -140 kg ha⁻¹ (T9) to +89 kg ha⁻¹ (T7)."
+        }
+      }
+    },
+    "temporal_dynamics": {
+      "study_timeline": {
+        "start_date": "December",
+        "end_date": "October of the following year",
+        "data_collection_schedule": [
+          "Initial",
+          "30 DAT",
+          "60 DAT",
+          "Harvest"
+        ],
+        "monitoring_frequency": "Multiple times within each of the two growing seasons."
+      },
+      "seasonal_variations": [
+        {
+          "parameter": "Grain Yield",
+          "seasonal_pattern": "Higher in the wet season than the dry season.",
+          "peak_periods": [
+            "Wet season"
+          ],
+          "minimum_periods": [
+            "Dry season"
+          ],
+          "amplitude": 0
+        },
+        {
+          "parameter": "Plant K Uptake Partitioning",
+          "seasonal_pattern": "Dry season relies more on late-season uptake, while wet season uptake is more evenly distributed.",
+          "peak_periods": [
+            "Post-panicle initiation to maturity in Dry Season (59-64% of total uptake)",
+            "Maximum tillering to maturity in Wet Season (distributed)"
+          ],
+          "minimum_periods": [],
+          "amplitude": 0
+        },
+        {
+          "parameter": "Exchangeable K",
+          "seasonal_pattern": "Generally higher in the dry season compared to the wet season.",
+          "peak_periods": [
+            "Dry season"
+          ],
+          "minimum_periods": [
+            "Wet season"
+          ],
+          "amplitude": 0
+        },
+        {
+          "parameter": "Non-exchangeable K",
+          "seasonal_pattern": "Greater depletion (conversion to exchangeable forms) observed in the dry season.",
+          "peak_periods": [],
+          "minimum_periods": [],
+          "amplitude": 0
+        }
+      ],
+      "long_term_trends": [],
+      "variability_characterization": {
+        "inter_annual_variability": "Not assessed, study covered one year.",
+        "spatial_variability": "Assessed across three soil depths (0-15, 15-30, 30-45 cm).",
+        "measurement_uncertainty": "LSD at 0.05 probability level provided for yield data.",
+        "drivers_of_variability": [
+          "K management treatment",
+          "Season (climatic conditions, water availability)",
+          "Crop growth stage",
+          "Soil depth"
+        ]
+      }
+    },
+    "data_quality_assessment": {
+      "methodological_strengths": [
+        "Randomized Block Design with replication.",
+        "Comprehensive set of treatments including control, varying fertilizer rates, and integrated (fertilizer + straw) approaches.",
+        "Analysis of multiple soil K pools (exchangeable, non-exchangeable, reserve).",
+        "Seasonal comparison (dry vs. wet).",
+        "Detailed soil and plant sampling at multiple growth stages."
+      ],
+      "methodological_limitations": [
+        "Single-site study, limiting spatial generalizability.",
+        "Short-term (one year), preventing assessment of long-term cumulative effects.",
+        "Data from figures are presented as ranges in the text, not full datasets."
+      ],
+      "data_completeness": "The paper provides comprehensive data for the studied parameters, although figure data is summarized in the text.",
+      "measurement_precision": {
+        "yield": "LSD (0.05) = 0.6 t ha⁻¹"
+      },
+      "representativeness": {
+        "spatial_representativeness": "High for the specific agroclimatic zone (Eastern and South-Eastern Coastal Plain of India), but limited for other regions.",
+        "temporal_representativeness": "Covers one full rice-rice cycle (two seasons), but does not capture inter-annual climate variability.",
+        "system_representativeness": "High for puddled, transplanted rice-rice systems."
+      },
+      "uncertainty_sources": [
+        "Field variability inherent in agricultural experiments.",
+        "Measurement errors in soil and plant analysis.",
+        "Lack of long-term data to account for climate variability."
+      ],
+      "validation_evidence": [
+        "Use of standard, cited analytical methods for soil and plant analysis.",
+        "Results are discussed in the context of and compared with existing literature."
+      ]
+    },
+    "literature_integration": {
+      "key_methodological_references": [
+        {
+          "author": "Hanway and Heidel",
+          "year": 1952,
+          "topic": "Exchangeable K method"
+        },
+        {
+          "author": "Wood and De Turk",
+          "year": 1941,
+          "topic": "Reserve K method"
+        },
+        {
+          "author": "Black",
+          "year": 1965,
+          "topic": "Non-exchangeable K method"
+        },
+        {
+          "author": "Gomez and Gomez",
+          "year": 1984,
+          "topic": "Statistical procedures"
+        }
+      ],
+      "comparative_studies": [
+        "Kumar et al. (2018)",
+        "Saha et al. (2009)",
+        "Witt et al. (1999)",
+        "Wihardjaka et al. (1999)",
+        "Balik et al. (2019)",
+        "Chivenge et al. (2020)"
+      ],
+      "theoretical_framework": "The study is based on the principles of soil potassium dynamics, including the equilibrium between exchangeable, non-exchangeable, and reserve K pools, and the concept of integrated nutrient management (INM) to achieve sustainable crop production and maintain soil health.",
+      "data_sources": [],
+      "benchmarking_data": [
+        "Recommended dose of potassic fertilizer for wetland rice in India is cited as 40–60 kg of K₂O per hectare.",
+        "Rice nutrient removal is cited as approximately 24 kg of K₂O per ton of grain produced."
+      ],
+      "validation_studies": []
+    },
+    "extraction_metadata": {
+      "extraction_completeness": 0.95,
+      "data_richness_assessment": "The paper is very rich in quantitative data, experimental details, and contextual information, allowing for a comprehensive extraction.",
+      "confidence_in_extraction": 0.9,
+      "potential_ambiguities": [
+        "The annual K balance in Table 2 appears to be mislabeled; the text provides a different range for the annual balance. The extraction relies on the text and a recalculation from the table's total columns.",
+        "The exact values for each treatment from the figures (K uptake, soil K forms) are not available, only the ranges across treatments are provided in the text."
+      ],
+      "extraction_limitations": [
+        "Inability to extract point data from figures, as they were not provided, only their text descriptions.",
+        "Some details, like specific irrigation scheduling, are not provided."
+      ],
+      "quality_flags": [
+        "Data from figures is summarized as ranges.",
+        "Potential inconsistency in Table 2 K balance calculation noted."
+      ],
+      "recommended_validation_checks": [
+        "If possible, cross-reference the K balance calculation in Table 2 with the raw data mentioned in the 'Data availability statement'."
+      ]
+    },
+    "_usage_metadata": {
+      "timestamp": "2025-07-08T13:46:00.677607",
+      "stage_name": "unknown",
+      "paper_id": "unknown",
+      "prompt_length_chars": 57928,
+      "processing_time_seconds": 94.18,
+      "thinking_enabled": true,
+      "input_tokens": 17577,
+      "output_tokens": 7482,
+      "thinking_tokens": 0,
+      "input_cost_usd": 0.002637,
+      "output_cost_usd": 0.026187,
+      "thinking_cost_usd": 0.0,
+      "total_cost_usd": 0.028824
+    },
+    "stage": "1A",
+    "paper_id": "Impact of potassium management on soil dynamics and crop uptake in rice systems.pdf",
+    "processing_timestamp": "2025-07-08T13:46:00.679738",
+    "temperature_used": 0.1
+  }
+}

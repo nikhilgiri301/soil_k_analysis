@@ -1,0 +1,694 @@
+{
+  "stage_id": "1a",
+  "stage_name": "Generic Extraction",
+  "paper_id": "Balance of potassium in two long-term field experiments with different fertilization treatments",
+  "run_type": "stage_test",
+  "processing_timestamp": "2025-07-08T10:41:22.736439",
+  "processing_time_seconds": 0,
+  "token_usage": {
+    "input": 0,
+    "output": 0
+  },
+  "estimated_cost_usd": 0.0,
+  "results": {
+    "paper_metadata": {
+      "title": "Balance of potassium in two long-term field experiments with different fertilization treatments",
+      "authors": [
+        "Jiří Balík",
+        "Jindřich Černý",
+        "Martin Kulhánek",
+        "Ondřej Sedlář",
+        "Pavel Suran"
+      ],
+      "journal": "Plant, Soil and Environment",
+      "publication_year": 2019,
+      "doi": "10.17221/109/2019-PSE",
+      "study_region": "Czech Republic",
+      "primary_focus": "Potassium balance in long-term field experiments under different fertilization treatments"
+    },
+    "research_methodology": {
+      "study_type": "long_term_field_experiment",
+      "experimental_design": "Six fertilization treatments applied to a three-crop rotation (potatoes-winter wheat-spring barley), with all three crops grown each year. Experiments conducted at two sites with different soil and climatic conditions.",
+      "temporal_scope": {
+        "study_duration_years": 21,
+        "data_collection_frequency": "Annually for plant harvest; soil samples collected at study initiation (1996) and end (2017).",
+        "seasonal_coverage": "Autumn for organic and mineral P/K application; Spring for mineral N application (potatoes, spring barley); divided N application for winter wheat (BBCH 21, BBCH 31–32).",
+        "monitoring_timeline": [
+          "1996 (Experiment establishment, initial soil sampling)",
+          "2017 (End of 7th crop rotation, final soil sampling, plant harvest)"
+        ]
+      },
+      "spatial_scope": {
+        "number_of_sites": 2,
+        "geographic_coverage": "Hněvčeves and Humpolec, Czech Republic",
+        "site_characteristics": [
+          "Hněvčeves: Haplic Luvisol on loess, Clay loam texture, 265 m a.s.l.",
+          "Humpolec: Stagnic Cambisol on loess on paragneiss, Sandy loam texture, 525 m a.s.l."
+        ],
+        "coordinates": "Hněvčeves: 50°18'46''N, 15°43'3''E; Humpolec: 49°33'16''N, 15°21'2''E",
+        "regional_representativeness": "Corresponds with intensive farming systems used in the Czech Republic."
+      },
+      "sample_design": {
+        "sample_sizes": {
+          "soil_samples_replications": 4
+        },
+        "replication_levels": "Four replications for soil samples.",
+        "randomization_approach": "Not explicitly stated, but implied by 'trials were established'.",
+        "controls_and_treatments": [
+          "Control (no fertilization)",
+          "Farmyard manure (FYM 1)",
+          "Half dose of farmyard manure + nitrogen (N) in mineral nitrogen fertilizers (FYM 1/2)",
+          "Mineral nitrogen fertilizers (N)",
+          "NPK in mineral fertilizers (NPK)",
+          "Straw of spring barley + N in mineral nitrogen fertilizers (N + ST)"
+        ],
+        "statistical_power": "Not explicitly stated."
+      },
+      "analytical_methods": {
+        "measurement_protocols": [
+          "Plant K content: Dry decomposition (Mader et al. 1998), Atomic Adsorption Spectrometry (AA280FS, Agilent Technologies).",
+          "Soil K content (bioavailable): CaCl2/DTPA (CAT) extraction (CSN EN 13651, 2001) - 3.00 g soil + 30 mL 0.01 mol/L CaCl2 and 0.002 mol/L DTPA, shaken 1h, filtered.",
+          "Soil K content (bioavailable): Mehlich 3 extraction (Mehlich 1984) - 3.00 g soil + 30 mL 0.02 mol/L CH3COOH, 0.25 mol/L NH4NO3, 0.015 mol/L NH4F, 0.013 mol/L HNO3, 0.001 mol/L EDTA, shaken 5 min, filtered.",
+          "Soil K content (exchangeable): Ammonium acetate (NH4OAc) extraction (modified Haby et al. 1990) - 3.00 g soil + 30 mL 1 mol/L ammonium acetate (pH 7.00), shaken 2h, centrifuged.",
+          "Soil K content (non-exchangeable): Boiling HNO3 extraction (Helmke and Sparks 2000) - 2.5 g finely ground soil + 25 mL 1 mol/L HNO3, heated 10 min after boiling, cooled 5 min, filtered, diluted to 100 mL with 0.1 mol/L HNO3. Non-exchangeable K determined by subtracting NH4OAc-determined K from HNO3 values."
+        ],
+        "instrumentation": [
+          "Atomic Adsorption Spectrometry (AA280FS, Agilent Technologies, Mulgrave, Australia)",
+          "Optical Emission Spectrometer with Inductively Coupled Plasma (ICP-OES, Agilent Technologies 700, Victoria, Australia)"
+        ],
+        "quality_control": [],
+        "detection_limits": {},
+        "analytical_precision": {}
+      },
+      "statistical_approach": {
+        "analysis_methods": [
+          "ANOVA statistical analysis"
+        ],
+        "significance_testing": "Not explicitly detailed, but 'significant differences' are reported.",
+        "uncertainty_quantification": "Not explicitly detailed for all reported values.",
+        "model_validation": "Not applicable."
+      }
+    },
+    "quantitative_findings": {
+      "primary_measurements": [
+        {
+          "parameter": "K recovery rate from farmyard manure by crops",
+          "values": [
+            24,
+            26
+          ],
+          "units": "%",
+          "statistical_measures": {},
+          "measurement_context": "Range across sites"
+        },
+        {
+          "parameter": "K recovery rate from mineral fertilizers by crops",
+          "values": [
+            27,
+            52
+          ],
+          "units": "%",
+          "statistical_measures": {},
+          "measurement_context": "Range across sites"
+        },
+        {
+          "parameter": "Non-exchangeable K (Kne) content in soil",
+          "values": [
+            850,
+            3000
+          ],
+          "units": "mg K ne/kg",
+          "statistical_measures": {},
+          "measurement_context": "Luvisol site: 850 mg K ne/kg; Cambisol site: 3000 mg K ne/kg (no change recorded at Cambisol site)"
+        },
+        {
+          "parameter": "Maximum negative K balance",
+          "values": [
+            -2376
+          ],
+          "units": "kg K/ha/21 years",
+          "statistical_measures": {},
+          "measurement_context": "Mineral nitrogen fertilization treatment at Humpolec site"
+        },
+        {
+          "parameter": "Total potassium content in soils",
+          "values": [
+            0.01,
+            4
+          ],
+          "units": "%",
+          "statistical_measures": {
+            "mean": 1
+          },
+          "measurement_context": "General range, usually oscillates around 1%"
+        },
+        {
+          "parameter": "Wheat grain yield (dry matter)",
+          "values": [
+            7.07,
+            6.29
+          ],
+          "units": "t/ha",
+          "statistical_measures": {},
+          "measurement_context": "Hněvčeves: 7.07 t/ha; Humpolec: 6.29 t/ha"
+        },
+        {
+          "parameter": "Barley grain yield (dry matter)",
+          "values": [
+            4.54,
+            3.83
+          ],
+          "units": "t/ha",
+          "statistical_measures": {},
+          "measurement_context": "Hněvčeves: 4.54 t/ha; Humpolec: 3.83 t/ha"
+        },
+        {
+          "parameter": "Potato tuber yield (dry matter)",
+          "values": [
+            7.4,
+            7.82
+          ],
+          "units": "t/ha",
+          "statistical_measures": {},
+          "measurement_context": "Hněvčeves: 7.40 t/ha; Humpolec: 7.82 t/ha"
+        },
+        {
+          "parameter": "K content in wheat grain",
+          "values": [
+            0.46,
+            0.48
+          ],
+          "units": "% K",
+          "statistical_measures": {},
+          "measurement_context": "Identical at both sites"
+        },
+        {
+          "parameter": "K content in barley grain",
+          "values": [
+            0.37,
+            0.38
+          ],
+          "units": "% K",
+          "statistical_measures": {},
+          "measurement_context": "Identical at both sites"
+        },
+        {
+          "parameter": "K content in wheat straw",
+          "values": [
+            0.88,
+            1.03
+          ],
+          "units": "% K",
+          "statistical_measures": {},
+          "measurement_context": "Hněvčeves: 0.88% K; Humpolec: 1.03% K"
+        },
+        {
+          "parameter": "K content in barley straw",
+          "values": [
+            0.98,
+            1.18
+          ],
+          "units": "% K",
+          "statistical_measures": {},
+          "measurement_context": "Hněvčeves: 0.98% K; Humpolec: 1.18% K"
+        },
+        {
+          "parameter": "K content in potato tubers",
+          "values": [
+            1.84,
+            2.15
+          ],
+          "units": "% K",
+          "statistical_measures": {},
+          "measurement_context": "Hněvčeves: 1.84% K; Humpolec: 2.15% K"
+        },
+        {
+          "parameter": "Average K uptake by plants (Humpolec vs Hněvčeves)",
+          "values": [
+            348
+          ],
+          "units": "kg K/ha",
+          "statistical_measures": {},
+          "measurement_context": "Humpolec higher by 348 kg K/ha on average for all variants over 21 years"
+        },
+        {
+          "parameter": "Potassium content in plough layer (Mehlich 3) at 2017 (approximated from Figure 1)",
+          "values": [],
+          "units": "mg K/kg",
+          "statistical_measures": {},
+          "measurement_context": "Hněvčeves: Control ~161, FYM 1 ~292, FYM 1/2 ~203, N ~166, NPK ~216, N + St ~174; Humpolec: Control ~122, FYM 1 ~214, FYM 1/2 ~155, N ~123, NPK ~186, N + St ~143"
+        },
+        {
+          "parameter": "Exchangeable potassium content in plough layer (NH4OAc) at 2017 (approximated from Figure 2)",
+          "values": [],
+          "units": "mg K/kg",
+          "statistical_measures": {},
+          "measurement_context": "Hněvčeves: Control ~168, FYM 1 ~296, FYM 1/2 ~206, N ~170, NPK ~219, N + St ~179; Humpolec: Control ~122, FYM 1 ~214, FYM 1/2 ~155, N ~123, NPK ~186, N + St ~143"
+        }
+      ],
+      "statistical_relationships": [
+        {
+          "relationship_type": "Correlation",
+          "variables": [
+            "Non-exchangeable K",
+            "Fixed ammonium ion"
+          ],
+          "correlation_coefficient": null,
+          "regression_parameters": {},
+          "significance_level": "Significant positive correlation",
+          "effect_size": ""
+        },
+        {
+          "relationship_type": "Correlation",
+          "variables": [
+            "Non-exchangeable K",
+            "Clay particles"
+          ],
+          "correlation_coefficient": null,
+          "regression_parameters": {},
+          "significance_level": "Not significant",
+          "effect_size": ""
+        },
+        {
+          "relationship_type": "Treatment Effect",
+          "variables": [
+            "Fertilization intensities",
+            "Content of exchangeable K in soil"
+          ],
+          "correlation_coefficient": null,
+          "regression_parameters": {},
+          "significance_level": "Significant differences",
+          "effect_size": ""
+        },
+        {
+          "relationship_type": "Correlation",
+          "variables": [
+            "K utilization",
+            "Soil sorption capacity"
+          ],
+          "correlation_coefficient": null,
+          "regression_parameters": {},
+          "significance_level": "Clear tendency to higher K utilization at soils with higher sorption capacity",
+          "effect_size": ""
+        }
+      ],
+      "temporal_patterns": [
+        {
+          "parameter": "Non-exchangeable K (Kne)",
+          "trend_description": "Changes recorded only at Luvisol site, not at Cambisol site.",
+          "rate_of_change": null,
+          "units_per_time": "",
+          "trend_significance": "Significant at Luvisol, not significant at Cambisol",
+          "seasonal_component": "Not applicable"
+        }
+      ],
+      "comparative_results": [
+        {
+          "comparison_type": "Site comparison (K uptake)",
+          "groups_compared": [
+            "Humpolec site",
+            "Hněvčeves site"
+          ],
+          "difference_magnitude": 348,
+          "units": "kg K/ha",
+          "statistical_significance": "Not explicitly stated, but 'higher' is used.",
+          "practical_significance": "Higher K uptake at Humpolec despite lower bioavailable K, possibly due to higher precipitation and distribution."
+        },
+        {
+          "comparison_type": "Fertilization treatment (K balance)",
+          "groups_compared": [
+            "Manure fertilization",
+            "Mineral N fertilization",
+            "NPK fertilization",
+            "N + Straw fertilization"
+          ],
+          "difference_magnitude": null,
+          "units": "kg K/ha/21 years",
+          "statistical_significance": "Not explicitly stated, but clear differences shown.",
+          "practical_significance": "Positive K balance only with manure; highest negative balance with mineral N fertilization."
+        }
+      ]
+    },
+    "environmental_context": {
+      "geographic_details": {
+        "countries": [
+          "Czech Republic"
+        ],
+        "regions": [
+          "Hněvčeves",
+          "Humpolec"
+        ],
+        "coordinates": "Hněvčeves: 50°18'46''N, 15°43'3''E; Humpolec: 49°33'16''N, 15°21'2''E",
+        "elevation": "Hněvčeves: 265 m a.s.l.; Humpolec: 525 m a.s.l.",
+        "landscape_position": "Not specified beyond altitude."
+      },
+      "climate_characteristics": {
+        "climate_classification": "Not explicitly stated, but characterized by temperature and precipitation.",
+        "temperature_patterns": {
+          "mean_annual_temperature_Hnevceves": "8.2 °C",
+          "mean_annual_temperature_Humpolec": "7.0 °C"
+        },
+        "precipitation_patterns": {
+          "mean_annual_precipitation_Hnevceves": "573 mm",
+          "mean_annual_precipitation_Humpolec": "665 mm",
+          "distribution_Humpolec": "Regular distribution throughout the vegetation period"
+        },
+        "growing_season": "Implied by crop rotation and annual growth.",
+        "environmental_stressors": []
+      },
+      "soil_properties": {
+        "soil_classification": "Hněvčeves: Haplic Luvisol on loess; Humpolec: Stagnic Cambisol on loess on paragneiss",
+        "texture": "Hněvčeves: Clay loam; Humpolec: Sandy loam",
+        "organic_matter": "Hněvčeves: 1.06% Corg; Humpolec: 1.38% Corg",
+        "chemical_properties": {
+          "pH_CaCl2_Hnevceves": 5.9,
+          "pH_CaCl2_Humpolec": 5.1,
+          "CEC_Hnevceves": "116 mmol+/kg",
+          "CEC_Humpolec": "90 mmol+/kg"
+        },
+        "physical_properties": {
+          "clay_Hnevceves": "4.4% (<0.002 mm)",
+          "silt_Hnevceves": "77.0% (0.002–0.05 mm)",
+          "sand_Hnevceves": "18.7% (0.05–2 mm)",
+          "bulk_density_Hnevceves": "1.50 g/cm3",
+          "clay_Humpolec": "5.8% (<0.002 mm)",
+          "silt_Humpolec": "43.6% (0.002–0.05 mm)",
+          "sand_Humpolec": "50.6% (0.05–2 mm)",
+          "bulk_density_Humpolec": "1.40 g/cm3"
+        },
+        "mineralogy": "Clay minerals of 2:1 types, mica and vermiculite (relevant for non-exchangeable K binding)."
+      },
+      "land_use_context": {
+        "current_land_use": "Agricultural soils",
+        "cropping_systems": [
+          "Potatoes-winter wheat-spring barley rotation",
+          "Intensive farming systems"
+        ],
+        "management_intensity": "Varied by fertilization treatments (no fertilization to NPK, organic, straw incorporation).",
+        "historical_context": "Long-term stationary field experiments (21 years).",
+        "sustainability_metrics": [
+          "Potassium balance",
+          "Changes in exchangeable and non-exchangeable K in soil"
+        ]
+      }
+    },
+    "agricultural_systems": {
+      "crop_information": {
+        "crop_types": [
+          "Potatoes",
+          "Winter wheat",
+          "Spring barley"
+        ],
+        "varieties_cultivars": [],
+        "growth_stages_studied": [
+          "Maturity stage (for harvest)",
+          "BBCH 21 (winter wheat N application)",
+          "BBCH 31–32 (winter wheat N application)"
+        ],
+        "yield_levels": {
+          "wheat_grain_dry_matter_Hnevceves": "7.07 t/ha",
+          "barley_grain_dry_matter_Hnevceves": "4.54 t/ha",
+          "potato_tuber_dry_matter_Hnevceves": "7.40 t/ha",
+          "wheat_grain_dry_matter_Humpolec": "6.29 t/ha",
+          "barley_grain_dry_matter_Humpolec": "3.83 t/ha",
+          "potato_tuber_dry_matter_Humpolec": "7.82 t/ha"
+        },
+        "production_metrics": {
+          "K_content_in_plants": "Measured for grain, straw, and tubers"
+        }
+      },
+      "management_practices": {
+        "fertilization": {
+          "types": [
+            "Farmyard manure (FYM)",
+            "Mineral nitrogen fertilizers (calcium ammonium nitrate, 27% N)",
+            "Mineral phosphorus fertilizers (triple super phosphate, 21% P)",
+            "Mineral potassium fertilizers (potassium chloride, 50% K)",
+            "Spring barley straw"
+          ],
+          "rates": {
+            "total_N_3_year_cycle": "330 kg N/ha (for FYM 1, FYM 1/2, N, NPK, N+St)",
+            "FYM1_P_Hn_3_year_cycle": "90 kg P/ha",
+            "FYM1_P_Hu_3_year_cycle": "108 kg P/ha",
+            "FYM1_K_Hn_3_year_cycle": "382 kg K/ha",
+            "FYM1_K_Hu_3_year_cycle": "320 kg K/ha",
+            "FYM1_2_P_Hn_3_year_cycle": "45 kg P/ha",
+            "FYM1_2_P_Hu_3_year_cycle": "54 kg P/ha",
+            "FYM1_2_K_Hn_3_year_cycle": "191 kg K/ha",
+            "FYM1_2_K_Hu_3_year_cycle": "160 kg K/ha",
+            "NPK_P_3_year_cycle": "90 kg P/ha (both sites)",
+            "NPK_K_3_year_cycle": "270 kg K/ha (both sites)",
+            "N_St_P_Hn_3_year_cycle": "3.6 kg P/ha",
+            "N_St_P_Hu_3_year_cycle": "3.9 kg P/ha",
+            "N_St_K_Hn_3_year_cycle": "47 kg K/ha",
+            "N_St_K_Hu_3_year_cycle": "56 kg K/ha",
+            "mineral_N_wheat_annual": "140 kg N/ha",
+            "mineral_N_barley_annual": "70 kg N/ha",
+            "mineral_N_wheat_FYM1_2_annual": "115 kg N/ha",
+            "mineral_N_barley_FYM1_2_annual": "50 kg N/ha",
+            "mineral_P_NPK_annual": "30 kg P/ha",
+            "mineral_K_NPK_annual": "100 kg K/ha",
+            "FYM_fresh_Hnevceves_3_year_avg": "63.0 t/ha",
+            "FYM_dry_mass_Hnevceves_3_year_avg": "13.4 t/ha",
+            "FYM_N_dry_mass_Hnevceves_avg": "2.462%",
+            "FYM_fresh_Humpolec_3_year_avg": "59.45 t/ha",
+            "FYM_dry_mass_Humpolec_3_year_avg": "13.42 t/ha",
+            "FYM_N_dry_mass_Humpolec_avg": "2.459%",
+            "straw_N_Hnevceves": "23 kg N",
+            "straw_N_Humpolec": "22 kg N"
+          },
+          "timing": [
+            "Organic fertilizers (FYM, straw): Autumn (October) to potatoes.",
+            "Mineral P and K fertilizers: Autumn to each crop.",
+            "Mineral N fertilizers: Spring prior to crop establishment (potatoes, spring barley).",
+            "Mineral N fertilizers (winter wheat): Divided into halves (BBCH 21, BBCH 31–32)."
+          ],
+          "application_methods": []
+        },
+        "irrigation": {
+          "system_type": "Not specified (implied rainfed)",
+          "water_amounts": {},
+          "scheduling": ""
+        },
+        "other_practices": {
+          "tillage": "Not specified",
+          "rotation": [
+            "Potatoes",
+            "Winter wheat",
+            "Spring barley"
+          ],
+          "pest_management": "Not specified",
+          "organic_amendments": [
+            "Farmyard manure",
+            "Spring barley straw"
+          ]
+        }
+      },
+      "input_output_relationships": {
+        "input_rates": {
+          "K_input_Hnevceves_Control": "0 kg K/ha/21 years",
+          "K_input_Hnevceves_FYM1": "2674 kg K/ha/21 years",
+          "K_input_Hnevceves_FYM1_2": "1337 kg K/ha/21 years",
+          "K_input_Hnevceves_N": "0 kg K/ha/21 years",
+          "K_input_Hnevceves_NPK": "1890 kg K/ha/21 years",
+          "K_input_Hnevceves_N_St": "282 kg K/ha/21 years",
+          "K_input_Humpolec_Control": "0 kg K/ha/21 years",
+          "K_input_Humpolec_FYM1": "2240 kg K/ha/21 years",
+          "K_input_Humpolec_FYM1_2": "1120 kg K/ha/21 years",
+          "K_input_Humpolec_N": "0 kg K/ha/21 years",
+          "K_input_Humpolec_NPK": "1890 kg K/ha/21 years",
+          "K_input_Humpolec_N_St": "336 kg K/ha/21 years"
+        },
+        "output_measurements": {
+          "crop_K_uptake_Hnevceves_Control": "1124 kg K/ha/21 years",
+          "crop_K_uptake_Hnevceves_FYM1": "1818 kg K/ha/21 years",
+          "crop_K_uptake_Hnevceves_FYM1_2": "1830 kg K/ha/21 years",
+          "crop_K_uptake_Hnevceves_N": "1744 kg K/ha/21 years",
+          "crop_K_uptake_Hnevceves_NPK": "2111 kg K/ha/21 years",
+          "crop_K_uptake_Hnevceves_N_St": "2037 kg K/ha/21 years",
+          "crop_K_uptake_Humpolec_Control": "1663 kg K/ha/21 years",
+          "crop_K_uptake_Humpolec_FYM1": "2192 kg K/ha/21 years",
+          "crop_K_uptake_Humpolec_FYM1_2": "2452 kg K/ha/21 years",
+          "crop_K_uptake_Humpolec_N": "2376 kg K/ha/21 years",
+          "crop_K_uptake_Humpolec_NPK": "2178 kg K/ha/21 years",
+          "crop_K_uptake_Humpolec_N_St": "1893 kg K/ha/21 years"
+        },
+        "efficiency_metrics": {
+          "K_utilization_FYM_Hnevceves": "26%",
+          "K_utilization_FYM_Humpolec": "24%",
+          "K_utilization_NPK_Hnevceves": "52%",
+          "K_utilization_NPK_Humpolec": "27%"
+        },
+        "balance_calculations": {
+          "K_balance_Hnevceves_Control": "-1124 kg K/ha/21 years",
+          "K_balance_Hnevceves_FYM1": "856 kg K/ha/21 years",
+          "K_balance_Hnevceves_FYM1_2": "-493 kg K/ha/21 years",
+          "K_balance_Hnevceves_N": "-1744 kg K/ha/21 years",
+          "K_balance_Hnevceves_NPK": "-221 kg K/ha/21 years",
+          "K_balance_Hnevceves_N_St": "-1755 kg K/ha/21 years",
+          "K_balance_Humpolec_Control": "-1663 kg K/ha/21 years",
+          "K_balance_Humpolec_FYM1": "48 kg K/ha/21 years",
+          "K_balance_Humpolec_FYM1_2": "-1332 kg K/ha/21 years",
+          "K_balance_Humpolec_N": "-2376 kg K/ha/21 years",
+          "K_balance_Humpolec_NPK": "-288 kg K/ha/21 years",
+          "K_balance_Humpolec_N_St": "-1557 kg K/ha/21 years"
+        }
+      }
+    },
+    "temporal_dynamics": {
+      "study_timeline": {
+        "start_date": "1996",
+        "end_date": "2017",
+        "data_collection_schedule": [
+          "Annual plant harvest",
+          "Soil sampling at study start (1996) and end (2017)"
+        ],
+        "monitoring_frequency": "Annual for yields, biennial for soil (implied by start/end sampling for detailed analysis)."
+      },
+      "seasonal_variations": [],
+      "long_term_trends": [
+        {
+          "parameter": "Exchangeable K in soil",
+          "trend_direction": "Varied by treatment",
+          "trend_magnitude": null,
+          "trend_units": "mg K/kg",
+          "projection_timeframe": "Not projected",
+          "sustainability_implications": "Different fertilization intensities manifested by significant differences in exchangeable K content, indicating long-term impact on soil K reserves."
+        },
+        {
+          "parameter": "Non-exchangeable K (Kne) in soil",
+          "trend_direction": "Changes recorded at Luvisol site, no changes at Cambisol site",
+          "trend_magnitude": null,
+          "trend_units": "mg K ne/kg",
+          "projection_timeframe": "Not projected",
+          "sustainability_implications": "Highlights site-specific differences in K dynamics and potential for K deficit under insufficient K fertilization."
+        },
+        {
+          "parameter": "Potassium balance",
+          "trend_direction": "Mostly negative, except for FYM treatment",
+          "trend_magnitude": null,
+          "trend_units": "kg K/ha/21 years",
+          "projection_timeframe": "Not projected",
+          "sustainability_implications": "Indicates unsustainable K management in most treatments, leading to K deficit in agricultural soils, especially given low annual mineral K doses in CR."
+        }
+      ],
+      "variability_characterization": {
+        "inter_annual_variability": "Yields and K uptake varied between sites, influenced by climatic conditions (precipitation).",
+        "spatial_variability": "Significant differences between Hněvčeves and Humpolec sites in soil properties, climate, yields, and K dynamics.",
+        "measurement_uncertainty": "Not explicitly quantified for all measurements.",
+        "drivers_of_variability": [
+          "Soil type and texture",
+          "Climatic conditions (temperature, precipitation)",
+          "Fertilization treatment",
+          "Crop type"
+        ]
+      }
+    },
+    "data_quality_assessment": {
+      "methodological_strengths": [
+        "Long-term study (21 years) providing valuable insights into long-term K dynamics.",
+        "Conducted at two sites with contrasting soil and climatic conditions, enhancing generalizability.",
+        "Comprehensive analysis of different K forms (bioavailable, exchangeable, non-exchangeable).",
+        "Inclusion of various fertilization treatments, including organic and mineral sources.",
+        "Use of established and recognized analytical methods (Mehlich 3, NH4OAc, Boiling HNO3, ICP-OES)."
+      ],
+      "methodological_limitations": [
+        "Detailed soil analyses (1996 vs 2017) were only based on samples from spring barley plots, potentially limiting representativeness for other crops in rotation.",
+        "Initial soil K values (Mehlich 3, NH4OAc) are not explicitly presented in figures, only the final state, making direct before-after comparison from figures challenging.",
+        "Specific cultivar information for crops is not provided.",
+        "Standard errors or confidence intervals are not consistently provided for all reported numerical values (e.g., yields, K content in plants)."
+      ],
+      "data_completeness": "High for K balance, soil properties, and fertilization rates. Moderate for detailed statistical outputs (e.g., p-values for all comparisons).",
+      "measurement_precision": {},
+      "representativeness": {
+        "spatial_representativeness": "Good, with two distinct sites representing intensive farming systems in the Czech Republic.",
+        "temporal_representativeness": "Excellent, due to the 21-year study duration.",
+        "system_representativeness": "Good, reflecting common crop rotation and fertilization practices in the region."
+      },
+      "uncertainty_sources": [
+        "Approximation of values from bar graphs (Figures 1 and 2).",
+        "Inherent variability in field experiments due to environmental factors.",
+        "Potential for unmeasured factors influencing K dynamics."
+      ],
+      "validation_evidence": [
+        "Findings on K utilization and sorption capacity are consistent with previous research (Blake et al. 1999).",
+        "The importance of non-exchangeable K for plant availability is supported by Liu and Bates (1990)."
+      ]
+    },
+    "literature_integration": {
+      "key_methodological_references": [
+        "Egnér et al. (1960)",
+        "Mehlich (1984)",
+        "Madaras and Lipavský (2009)",
+        "Schroder et al. (2009)",
+        "Kulhánek et al. (2014)",
+        "Madaras and Koubová (2015)",
+        "Binner et al. (2017)",
+        "Blake et al. (1999)",
+        "Liu et al. (2010)",
+        "Madaras et al. (2014)",
+        "Hinsinger and Jaillard (1993)",
+        "Steingrobe and Claasen (2000)",
+        "Srinivasarao et al. (2014)",
+        "Das et al. (2018)",
+        "Kitagawa et al. (2018)",
+        "Liu and Bates (1990)",
+        "Brouder (2011)",
+        "Černý et al. (2010)",
+        "Mader et al. (1998)",
+        "CSN EN 13651 (2001)",
+        "Haby et al. (1990)",
+        "Helmke and Sparks (2000)",
+        "StatSoft Inc. (2015)"
+      ],
+      "comparative_studies": [
+        "Blake et al. (1999) on K utilization and sorption capacity.",
+        "Liu and Bates (1990) on the information content of non-exchangeable K for plant availability."
+      ],
+      "theoretical_framework": "Potassium dynamics in soil, including soil solution, exchangeable K, and non-exchangeable K; plant K uptake mechanisms, including rhizosphere acidification.",
+      "data_sources": [],
+      "benchmarking_data": [
+        "Annual potassium doses in mineral fertilizers in the Czech Republic (5–6 kg K/ha agricultural soil for more than 20 years)."
+      ],
+      "validation_studies": []
+    },
+    "extraction_metadata": {
+      "extraction_completeness": 0.92,
+      "data_richness_assessment": "The paper is rich in methodological details, quantitative results for K balance, soil properties, and crop yields across different treatments and sites over a long period.",
+      "confidence_in_extraction": 0.95,
+      "potential_ambiguities": [
+        "Exact numerical values for bar graphs (Figures 1 and 2) were approximated visually.",
+        "Initial soil K values for Mehlich 3 and NH4OAc methods are mentioned as analyzed but not explicitly presented in the provided figures, which only show the final state."
+      ],
+      "extraction_limitations": [
+        "Lack of specific cultivar names for crops.",
+        "Absence of detailed statistical outputs (e.g., p-values for all comparisons, standard errors for all means) for some reported values."
+      ],
+      "quality_flags": [
+        "Values from Figure 1 and Figure 2 are approximated from the graphs."
+      ],
+      "recommended_validation_checks": [
+        "Verify approximated graph values if original data or more precise figures become available."
+      ]
+    },
+    "_usage_metadata": {
+      "timestamp": "2025-07-08T03:55:14.969788",
+      "stage_name": "unknown",
+      "paper_id": "unknown",
+      "prompt_length_chars": 26807,
+      "processing_time_seconds": 57.46,
+      "thinking_enabled": true,
+      "input_tokens": 8233,
+      "output_tokens": 9081,
+      "thinking_tokens": 0,
+      "input_cost_usd": 0.001235,
+      "output_cost_usd": 0.031783,
+      "thinking_cost_usd": 0.0,
+      "total_cost_usd": 0.033018
+    },
+    "stage": "1A",
+    "paper_id": "Balance of potassium in two long-term field experiments with different fertilization treatments.pdf",
+    "processing_timestamp": "2025-07-08T03:55:14.971969",
+    "temperature_used": 0.1
+  }
+}

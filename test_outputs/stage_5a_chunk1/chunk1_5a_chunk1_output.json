@@ -1,0 +1,1822 @@
+{
+  "stage_id": "5a_chunk1",
+  "stage_name": "Chunk 1 Synthesis",
+  "paper_id": "chunk1",
+  "run_type": "chunk_synthesis",
+  "processing_timestamp": "2025-07-11T15:00:51.139542",
+  "processing_time_seconds": 0,
+  "token_usage": {
+    "input": 0,
+    "output": 0
+  },
+  "estimated_cost_usd": 0.0,
+  "results": {
+    "regional_synthesis_metadata": {
+      "synthesis_scope": "Comprehensive regional synthesis of soil potassium dynamics, supply, variations, and spatial scaling relationships.",
+      "papers_integrated": 24,
+      "evidence_pieces_synthesized": 584,
+      "regional_coverage": [
+        "China",
+        "India",
+        "Brazil",
+        "Europe",
+        "USA",
+        "Other Regions (Pakistan, Australia, Southeast Asia, Sub-Saharan Africa, Southern Cone, Morocco)"
+      ],
+      "synthesis_confidence": 0.85,
+      "synthesis_approach": "Systematic integration of regional evidence from peer-reviewed literature, focusing on geographic patterns, quantitative parameters, and environmental/agricultural controls, with rigorous evidence weighting and uncertainty characterization."
+    },
+    "geographic_pattern_synthesis": {
+      "continental_patterns": [
+        {
+          "continent": "Asia (China, India)",
+          "k_availability_characteristics": "Highly variable, with historical K deficits shifting to surpluses in China due to increased fertilization, while India generally maintains negative balances. Significant regional heterogeneity within both countries.",
+          "dominant_controls": [
+            "Intensive cropping systems",
+            "Fertilizer application rates",
+            "Crop residue management",
+            "Soil mineralogy (illite dominance)",
+            "Monsoon climate patterns"
+          ],
+          "typical_supply_rates": {
+            "annual_k2o_kg_per_ha": {
+              "range": [
+                -69.41,
+                197.91
+              ],
+              "typical": 20
+            },
+            "confidence_level": 0.85
+          },
+          "regional_variation": "China shows a national shift from -24.17 kg K2O ha⁻¹ yr⁻¹ (1980s) to +19.5 kg K2O ha⁻¹ yr⁻¹ (2010s), but regions like Northeast China and Middle-Lower Yangtze River still experience deficits. India consistently shows negative balances, with native K supply ranging from 205-354 kg K2O ha⁻¹ yr⁻¹ in omission plots, but overall K removal often exceeds inputs.",
+          "evidence_strength": "high"
+        },
+        {
+          "continent": "Europe",
+          "k_availability_characteristics": "Generally well-managed K balances, but long-term K mining observed in specific low-input systems. Focus on maintaining soil K reserves and efficient recovery.",
+          "dominant_controls": [
+            "Long-term fertilization practices",
+            "Soil type and mineralogy (e.g., Luvisols, Cambisols, granitic soils)",
+            "Crop rotation and residue management",
+            "Policy impacts on nutrient management"
+          ],
+          "typical_supply_rates": {
+            "annual_k2o_kg_per_ha": {
+              "range": [
+                -64.47,
+                49.09
+              ],
+              "typical": 35
+            },
+            "confidence_level": 0.8
+          },
+          "regional_variation": "Czech Republic long-term experiments show annual net balances from -136.29 to +49.09 kg K2O ha⁻¹ yr⁻¹. UK data indicates mineral weathering supplies <5 kg K2O ha⁻¹ yr⁻¹, with total crop uptake 150-500 kg K2O ha⁻¹ yr⁻¹. EU K surpluses decreased by 60% over three decades, indicating a shift towards more balanced management.",
+          "evidence_strength": "high"
+        },
+        {
+          "continent": "South America (Brazil, Argentina, Uruguay)",
+          "k_availability_characteristics": "Significant K deficits in many agricultural systems, particularly in highly weathered soils and intensive cropping. Importance of deep K reserves and residue cycling.",
+          "dominant_controls": [
+            "Soil weathering and mineralogy (Oxisols)",
+            "Tillage practices (no-tillage vs. conventional)",
+            "Cover cropping and residue return",
+            "Expansion of intensive agriculture into new areas"
+          ],
+          "typical_supply_rates": {
+            "annual_k2o_kg_per_ha": {
+              "range": [
+                -9479,
+                68.6
+              ],
+              "typical": -20
+            },
+            "confidence_level": 0.75
+          },
+          "regional_variation": "Brazilian Cerrado Oxisols show annual K surpluses of 27.4 to 68.6 kg K2O ha⁻¹ yr⁻¹ under no-tillage with cover crops, but conventional tillage leads to K mobilization to deeper layers. Argentina's Pampas Mollisols show 55-95% depletion of K in subsoil. Uruguay had a -24 kt K2O deficit in 2010. Morocco (Mediterranean climate, analogous) shows extreme deficits without K input (-516 to -9479 kg K ha⁻¹ over 12-17 years).",
+          "evidence_strength": "high"
+        },
+        {
+          "continent": "North America (USA)",
+          "k_availability_characteristics": "Increasing K removal exceeding inputs, leading to growing deficits, particularly in high-demand cropping systems.",
+          "dominant_controls": [
+            "Intensive cultivation practices",
+            "High-yielding crop varieties",
+            "Historical K management"
+          ],
+          "typical_supply_rates": {
+            "annual_k2o_kg_per_ha": {
+              "range": [
+                -74.69,
+                -34.93
+              ],
+              "typical": -50
+            },
+            "confidence_level": 0.7
+          },
+          "regional_variation": "USA PNB K increased by 1.3% year⁻¹ from 1987-2012, indicating increasing K removal relative to input. Highest increases in cotton-growing states (1.8% year⁻¹). US Atlantic Coastal Plains soils show K release of 67-92 mg K kg⁻¹ over 30 days under continuous K sink.",
+          "evidence_strength": "medium"
+        },
+        {
+          "continent": "Africa (Sub-Saharan, North Africa)",
+          "k_availability_characteristics": "Widespread and severe K deficits, particularly in high-potential savannahs and humid forests, driven by low inputs and high removal.",
+          "dominant_controls": [
+            "Low fertilizer use",
+            "Crop residue removal",
+            "Erosion losses",
+            "Soil weathering"
+          ],
+          "typical_supply_rates": {
+            "annual_k2o_kg_per_ha": {
+              "range": [
+                -50,
+                -10
+              ],
+              "typical": -25
+            },
+            "confidence_level": 0.6
+          },
+          "regional_variation": "Sub-Saharan Africa averages less than -15 kg K ha⁻¹ yr⁻¹, with largest losses (20–50 kg K ha⁻¹ yr⁻¹) in high potential sub-humid savannahs and highlands. Humid forests show moderate losses (10–20 kg K ha⁻¹ yr⁻¹).",
+          "evidence_strength": "medium"
+        }
+      ],
+      "biogeochemical_zones": [
+        {
+          "zone_classification": "Arid and Semi-arid Regions",
+          "geographic_extent": [
+            "China (Northwest)",
+            "India (Dry Regions)",
+            "Pakistan (Punjab)",
+            "Iran (Southern Iran)",
+            "North Africa (Morocco, Algeria, Tunisia)"
+          ],
+          "climate_characteristics": "Low and erratic precipitation, high evaporation, distinct wet/dry seasons.",
+          "soil_k_dynamics": "K dynamics are strongly influenced by moisture regimes and clay mineralogy. K fixation can occur upon drying, and release upon wetting. Depletion is common under irrigation and intensive cropping without K inputs. Calcareous soils in Iran show biphasic K release kinetics. Pakistan's semi-arid Punjab shows 7-49% available K decline over 15 years.",
+          "agricultural_implications": "High risk of K depletion under intensive irrigated agriculture. K management needs to consider water availability and seasonal moisture fluctuations. Native K supply from minerals is crucial but finite. Drought resistance K needs are important.",
+          "evidence_base": [
+            "A global dataset for the production and usage of cereal residues in the period 1997–2021",
+            "Considering_Soil_Potassium_Pools_with_Dissimilar_P",
+            "Dynamics of Soil Potassium under Different Cropping Systems in Y.S.R Kadapa District of Andhra Pradesh",
+            "Global Fostat Reference Database",
+            "Kinetics of Non-exchangeable Potassium Release in Selected Soil Orders of Southern Iran",
+            "Majumdar2021_Chapter_AssessingPotassiumMassBalances",
+            "PotassiumDynamicsinSoils",
+            "Temporal andspatial variation of potassium balance in agricultural land at national and regional levels in China"
+          ]
+        },
+        {
+          "zone_classification": "Temperate Regions",
+          "geographic_extent": [
+            "China (Northeast, North China, Middle-Lower Yangtze River)",
+            "Europe (Central Europe, Northern Europe, UK)",
+            "USA (Great Plains)",
+            "Argentina (Pampas)"
+          ],
+          "climate_characteristics": "Moderate temperatures, distinct seasons, variable precipitation.",
+          "soil_k_dynamics": "K dynamics are influenced by long-term fertilization, soil mineralogy (illite, vermiculite), and crop rotations. K fixation and release from non-exchangeable pools are significant. Long-term K mining is observed in systems with insufficient K inputs. Soil K levels can be maintained or built up with balanced fertilization and organic amendments.",
+          "agricultural_implications": "Sustainability requires careful K budgeting, considering both fertilizer and organic inputs. Soil test K is a good indicator, but long-term dynamics of non-exchangeable K are crucial. Crop residue retention is vital for K recycling. Depletion rates vary by management and soil type.",
+          "evidence_base": [
+            "A global dataset for the production and usage of cereal residues in the period 1997–2021",
+            "Balance of potassium in two long-term field experiments with different fertilization treatments",
+            "Considering_Soil_Potassium_Pools_with_Dissimilar_P",
+            "Field-specific potassium and phosphorus balances",
+            "Global Fostat Reference Database",
+            "Interannual dynamics of available potassium in a long-term fertilization experiment",
+            "Majumdar2021_Chapter_AssessingPotassiumMassBalances",
+            "Optimizing rice yield, quality and nutrient use efficiency through combined application of nitrogen and potassium",
+            "Organic Materials",
+            "PotassiumDynamicsinSoils",
+            "principles-of-potash-use",
+            "Root K Affinity Drivers and Photosynthetic Characteristics in Response to Low Potassium Stress in K High-Efficiency Vegetable Soybean",
+            "Subsoil‑potassium depletion accounts for the nutrient budget in high‑potassium agricultural soils",
+            "Temporal andspatial variation of potassium balance in agricultural land at national and regional levels in China"
+          ]
+        },
+        {
+          "zone_classification": "Tropical Regions",
+          "geographic_extent": [
+            "China (Southeast, Southwest)",
+            "India (Monsoon Regions, Dry Regions)",
+            "Brazil (Cerrado, Atlantic Forest, Amazon Fringe)",
+            "Southeast Asia",
+            "Sub-Saharan Africa (Humid Forests, Savannahs)"
+          ],
+          "climate_characteristics": "High temperatures, high precipitation (often seasonal), rapid weathering.",
+          "soil_k_dynamics": "Characterized by rapid K cycling, high leaching potential (especially in humid areas), and reliance on organic matter for K retention. Deep soil K reserves can be important for deep-rooted crops. Highly weathered soils (Oxisols) may have low inherent K buffering capacity. K depletion is widespread under intensive cultivation.",
+          "agricultural_implications": "K management is critical due to high crop demand and potential for rapid losses. Residue retention, organic amendments, and efficient fertilizer use are key. Land-use change (e.g., forest conversion) can lead to significant K losses. Sustainability is a major challenge.",
+          "evidence_base": [
+            "A global dataset for the production and usage of cereal residues in the period 1997–2021",
+            "Considering_Soil_Potassium_Pools_with_Dissimilar_P",
+            "Dynamics of Soil Potassium under Different Cropping Systems in Y.S.R Kadapa District of Andhra Pradesh",
+            "Exchangeable potassium reserve in a Brazilian savanna Oxisol after nine years under different cotton production systems",
+            "Field-specific potassium and phosphorus balances",
+            "Global Fostat Reference Database",
+            "Impact of Long-Term Intensive Cropping on Soil Potassium and Sustainability of Crop Production",
+            "Impact of potassium management on soil dynamics and crop uptake in rice systems",
+            "Majumdar2021_Chapter_AssessingPotassiumMassBalances",
+            "Nutrient Partitioning and Stoichiometry in Unburnt Sugarcane Ratoon at Varying Yield Levels",
+            "PotassiumDynamicsinSoils",
+            "Release Kinetics of Nonexchangeable Potassium by Different Extractants from Soils of Varying Mineralogy and Depth",
+            "Soil K Balance in Sichuan",
+            "Standing Biomass, Dry-Matter Production, and Nutrient Demand of Tenera Oil Palm",
+            "Temporal andspatial variation of potassium balance in agricultural land at national and regional levels in China"
+          ]
+        },
+        {
+          "zone_classification": "Monsoon Regions",
+          "geographic_extent": [
+            "India (Monsoon Regions)",
+            "China (Southeast, Southwest, Middle-Lower Yangtze River)",
+            "Southeast Asia (Philippines, Vietnam)"
+          ],
+          "climate_characteristics": "Distinct wet (monsoon) and dry seasons, high seasonal rainfall.",
+          "soil_k_dynamics": "Seasonal K dynamics are pronounced, with potential for leaching during monsoon and K mobilization in flooded rice systems. Available K can fluctuate significantly between pre- and post-monsoon periods. Anaerobic conditions in paddy fields influence K release. Clay mineralogy plays a role in K buffering.",
+          "agricultural_implications": "Timing of K application is crucial to minimize losses and match crop demand. Rice-rice systems often show high K removal. Straw incorporation is a key strategy for K replenishment. Long-term K depletion is a concern if inputs are insufficient.",
+          "evidence_base": [
+            "A global dataset for the production and usage of cereal residues in the period 1997–2021",
+            "Dynamics of Soil Potassium under Different Cropping Systems in Y.S.R Kadapa District of Andhra Pradesh",
+            "Field-specific potassium and phosphorus balances",
+            "Global Fostat Reference Database",
+            "Impact of Long-Term Intensive Cropping on Soil Potassium and Sustainability of Crop Production",
+            "Impact of potassium management on soil dynamics and crop uptake in rice systems",
+            "Majumdar2021_Chapter_AssessingPotassiumMassBalances",
+            "PotassiumDynamicsinSoils",
+            "Release Kinetics of Nonexchangeable Potassium by Different Extractants from Soils of Varying Mineralogy and Depth",
+            "Soil K Balance in Sichuan",
+            "Temporal andspatial variation of potassium balance in agricultural land at national and regional levels in China"
+          ]
+        },
+        {
+          "zone_classification": "Mediterranean Regions",
+          "geographic_extent": [
+            "Europe (Mediterranean)",
+            "North Africa (Morocco, Algeria, Tunisia)"
+          ],
+          "climate_characteristics": "Winter-wet, summer-dry, with seasonal water stress.",
+          "soil_k_dynamics": "K cycling is influenced by seasonal moisture availability, with potential for K fixation during dry periods and release upon rewetting. Water stress can impact K uptake by plants. K balance can be highly negative without sufficient inputs.",
+          "agricultural_implications": "K management needs to consider seasonal water availability and crop water use efficiency. Irrigation can mobilize K but also increase leaching risk. Specific K dynamics in perennial crops (e.g., olive, vineyard) are important.",
+          "evidence_base": [
+            "A global dataset for the production and usage of cereal residues in the period 1997–2021",
+            "Majumdar2021_Chapter_AssessingPotassiumMassBalances",
+            "PotassiumDynamicsinSoils"
+          ]
+        }
+      ],
+      "environmental_gradients": [
+        {
+          "gradient_type": "climatic",
+          "gradient_description": "From humid to arid climates, influencing K leaching, weathering, and plant uptake.",
+          "k_pattern_along_gradient": "Humid regions (e.g., tropical, monsoon) tend to have higher K leaching losses and faster weathering, potentially leading to lower inherent K reserves in highly weathered soils. Arid/semi-arid regions show K dynamics strongly tied to moisture fluctuations (fixation/release with drying/wetting cycles) and depletion under irrigation. Temperate regions exhibit more stable K pools but are susceptible to long-term mining.",
+          "quantitative_relationships": {
+            "humid_forest_k_losses": "10-20 kg K ha⁻¹ yr⁻¹ (Sub-Saharan Africa)",
+            "savannah_k_losses": "20-50 kg K ha⁻¹ yr⁻¹ (Sub-Saharan Africa)",
+            "mineral_weathering_humid_temperate": "<5 kg K2O ha⁻¹ yr⁻¹ (UK)"
+          },
+          "controlling_factors": [
+            "Precipitation intensity and distribution",
+            "Temperature (affecting weathering rates)",
+            "Soil mineralogy (e.g., 2:1 clays in semi-arid vs. 1:1 clays in highly weathered humid tropics)",
+            "Evapotranspiration rates"
+          ],
+          "agricultural_relevance": "K management strategies must be tailored to regional climate. Humid regions require attention to leaching and rapid cycling. Arid regions need to consider irrigation impacts and K fixation. Climate change impacts on rainfall patterns will alter regional K dynamics."
+        },
+        {
+          "gradient_type": "soil_depth",
+          "gradient_description": "Vertical distribution of K pools in soil profiles.",
+          "k_pattern_along_gradient": "Generally, exchangeable K is higher in topsoil due to organic matter and fertilizer inputs, while non-exchangeable K can be higher in subsoil, especially if enriched with illite clay minerals. Intensive cropping can lead to significant subsoil K depletion, as observed in Argentina's Pampas (55-95% depletion in 0-100 cm). Deep-rooted crops can access K from deeper layers, influencing overall K balance.",
+          "quantitative_relationships": {
+            "exchangeable_k_stratification": "1.6–3.2 times more K in topsoil than subsoil (general observation)",
+            "subsoil_k_depletion_pampas": "55-83% (NH4-OAc-K) and 74-95% (NaBPh4-K) in 0-100 cm relative to pristine soils"
+          },
+          "controlling_factors": [
+            "Tillage practices (no-tillage concentrates K in topsoil)",
+            "Rooting depth of crops",
+            "Leaching and upward capillary movement of water",
+            "Clay mineralogy distribution with depth",
+            "Historical K fertilization and residue return"
+          ],
+          "agricultural_relevance": "Subsoil K reserves are critical for long-term sustainability, especially in high-yielding systems. Management practices like no-tillage and cover cropping can enhance K accumulation in the root zone and facilitate deep K recovery. Soil sampling should extend to deeper layers to accurately assess K status."
+        }
+      ]
+    },
+    "regional_k_supply_synthesis": {
+      "supply_rate_regionalization": [
+        {
+          "region_identifier": "china.arid_soils",
+          "geographic_coverage": "China's Northwest (NW) region",
+          "annual_supply_rates": {
+            "typical_range_kg_k2o_per_ha": [
+              4.84,
+              26.02
+            ],
+            "mean_estimate": 13.7,
+            "confidence_interval": [
+              4.84,
+              26.02
+            ],
+            "sample_size": 4,
+            "evidence_strength": "high"
+          },
+          "seasonal_patterns": {
+            "pattern_description": "Not explicitly quantified, but inferred to be influenced by seasonal moisture availability and irrigation practices. K fixation/release with drying/wetting cycles is relevant.",
+            "peak_supply_periods": [],
+            "low_supply_periods": [],
+            "seasonal_amplitude": 0
+          },
+          "sustainability_assessment": {
+            "depletion_evidence": "Historically, some areas experienced deficits, but NW region maintained a slight, stable K surplus (average 13.70 kg K2O ha⁻¹ yr⁻¹) from 1980-2015.",
+            "replenishment_evidence": "Positive K balance indicates replenishment exceeding removal, contributing to sustainability.",
+            "sustainability_timeline": "Appears sustainable under current management, but long-term projections require continued monitoring.",
+            "confidence_assessment": 0.8
+          },
+          "controlling_factors": [
+            "K fertilizer inputs",
+            "Crop residue return",
+            "Irrigation practices",
+            "Soil K fixation capacity"
+          ]
+        },
+        {
+          "region_identifier": "china.temperate_soils",
+          "geographic_coverage": "China's Northeast (NE), North China (NC), Middle-Lower Yangtze River (MLYR) regions; Sichuan Province",
+          "annual_supply_rates": {
+            "typical_range_kg_k2o_per_ha": [
+              -69.41,
+              22.64
+            ],
+            "mean_estimate": 1.25,
+            "confidence_interval": [
+              -69.41,
+              22.64
+            ],
+            "sample_size": 12,
+            "evidence_strength": "high"
+          },
+          "seasonal_patterns": {
+            "pattern_description": "Inter-annual variability in optimal K application and recovery efficiency. Seasonal patterns influenced by crop growth stages and moisture availability. Clay mineral effects (2:1 clays) influence K release.",
+            "peak_supply_periods": [],
+            "low_supply_periods": [],
+            "seasonal_amplitude": 0
+          },
+          "sustainability_assessment": {
+            "depletion_evidence": "NE and MLYR regions remained in K deficit for much of 1980-2015 (average -21.37 and -22.79 kg K2O ha⁻¹ yr⁻¹ respectively), indicating ongoing depletion. Shehong County (Sichuan) showed deficits up to -156.06 kg K2O ha⁻¹ yr⁻¹ in some rotations.",
+            "replenishment_evidence": "NC shifted from deficit to slight surplus (average 1.25 kg K2O ha⁻¹ yr⁻¹), demonstrating recovery potential with increased K inputs. Rice-wheat rotation in Shehong County showed a surplus of 38.04 kg K2O ha⁻¹ yr⁻¹.",
+            "sustainability_timeline": "Variable; some regions/systems are unsustainable, while others have achieved or are moving towards sustainability.",
+            "confidence_assessment": 0.85
+          },
+          "controlling_factors": [
+            "K fertilizer application rates",
+            "Manure and crop residue return",
+            "Cropping system design and intensity",
+            "Soil clay mineralogy (illite, smectite, vermiculite)",
+            "Historical K management"
+          ]
+        },
+        {
+          "region_identifier": "china.tropical_soils",
+          "geographic_coverage": "China's Southeast (SE) and Southwest (SW) regions",
+          "annual_supply_rates": {
+            "typical_range_kg_k2o_per_ha": [
+              -1.53,
+              197.91
+            ],
+            "mean_estimate": 99.22,
+            "confidence_interval": [
+              -1.53,
+              197.91
+            ],
+            "sample_size": 8,
+            "evidence_strength": "high"
+          },
+          "seasonal_patterns": {
+            "pattern_description": "Monsoon climate influences K dynamics, with potential for leaching. Organic matter contributions from straw return are significant.",
+            "peak_supply_periods": [],
+            "low_supply_periods": [],
+            "seasonal_amplitude": 0
+          },
+          "sustainability_assessment": {
+            "depletion_evidence": "Historically, some areas showed slight deficits (e.g., SE in 1980s: -1.53 kg K2O ha⁻¹ yr⁻¹).",
+            "replenishment_evidence": "SE exhibited the largest K surplus (average 99.22 kg K2O ha⁻¹ yr⁻¹) and lowest KUE (average 73.97%), indicating significant K accumulation. SW also shifted to surplus.",
+            "sustainability_timeline": "Generally sustainable with current high K inputs, but potential for over-fertilization and accumulation in some areas.",
+            "confidence_assessment": 0.85
+          },
+          "controlling_factors": [
+            "High K fertilizer inputs",
+            "Significant crop residue return",
+            "Monsoon rainfall patterns",
+            "Intensive cropping systems"
+          ]
+        },
+        {
+          "region_identifier": "india.monsoon_regions",
+          "geographic_coverage": "Odisha, Y.S.R Kadapa district (Andhra Pradesh), Bhubaneswar, Ludhiana, Barrackpore",
+          "annual_supply_rates": {
+            "typical_range_kg_k2o_per_ha": [
+              -140,
+              89
+            ],
+            "mean_estimate": -50,
+            "confidence_interval": [
+              -140,
+              89
+            ],
+            "sample_size": 10,
+            "evidence_strength": "high"
+          },
+          "seasonal_patterns": {
+            "pattern_description": "Pronounced seasonal K dynamics due to monsoon rainfall and rice-rice rotations. Available K can decline from pre- to post-monsoon. Anaerobic conditions in paddy fields influence K release. K uptake by crops is high during growing seasons.",
+            "peak_supply_periods": [
+              "Pre-monsoon (initial K levels)",
+              "During crop growth (from soil reserves and fertilizer)"
+            ],
+            "low_supply_periods": [
+              "Post-monsoon (due to depletion and leaching)"
+            ],
+            "seasonal_amplitude": 50
+          },
+          "sustainability_assessment": {
+            "depletion_evidence": "Pervasive negative K balance in most intensive cropping systems. K uptake far exceeds fertilizer K applied, leading to continuous 'mining' of soil K reserves. Depletion rates up to -140 kg K2O ha⁻¹ yr⁻¹ observed in rice systems. Long-term decline of available K (e.g., 64.8% decrease in Czech Republic control plots over 21 years, analogous to K-deficient systems).",
+            "replenishment_evidence": "Straw incorporation (89 kg K2O ha⁻¹ yr⁻¹ positive balance) and FYM application can maintain or increase available K pools. Native K supply from omission plots ranges from 205-354 kg K2O ha⁻¹ yr⁻¹.",
+            "sustainability_timeline": "Unsustainable over multi-decadal periods without adequate K replenishment. K will become a limiting factor if current negative balances persist.",
+            "confidence_assessment": 0.9
+          },
+          "controlling_factors": [
+            "Monsoon rainfall and associated leaching",
+            "Intensive rice-rice cropping systems",
+            "Soil clay mineralogy (illite dominance)",
+            "Crop residue management (straw incorporation vs. removal)",
+            "Fertilizer application rates and timing"
+          ]
+        },
+        {
+          "region_identifier": "india.dry_regions",
+          "geographic_coverage": "Y.S.R Kadapa district (Andhra Pradesh), Bangalore, Ranchi",
+          "annual_supply_rates": {
+            "typical_range_kg_k2o_per_ha": [
+              -100,
+              50
+            ],
+            "mean_estimate": -20,
+            "confidence_interval": [
+              -100,
+              50
+            ],
+            "sample_size": 3,
+            "evidence_strength": "medium"
+          },
+          "seasonal_patterns": {
+            "pattern_description": "Influenced by irrigation and seasonal drought. K mobilization by irrigation water is a potential input. Saline soil K availability and drought resistance K needs are relevant.",
+            "peak_supply_periods": [],
+            "low_supply_periods": [],
+            "seasonal_amplitude": 0
+          },
+          "sustainability_assessment": {
+            "depletion_evidence": "Lowest K levels observed in Sunflower-Sesame systems, suggesting depletion due to exhaustive cropping. Overall national K deficit in India implies depletion in dry regions too.",
+            "replenishment_evidence": "Strong correlations between non-exchangeable K and available K suggest buffering capacity. FYM application can maintain K levels.",
+            "sustainability_timeline": "Long-term sustainability is challenged by continuous K removal and insufficient replenishment.",
+            "confidence_assessment": 0.6
+          },
+          "controlling_factors": [
+            "Irrigation practices",
+            "Soil salinity",
+            "Drought stress",
+            "Crop type and K demand",
+            "Organic matter inputs"
+          ]
+        },
+        {
+          "region_identifier": "india.himalayan_regions",
+          "geographic_coverage": "Palampur",
+          "annual_supply_rates": {
+            "typical_range_kg_k2o_per_ha": [
+              -50,
+              0
+            ],
+            "mean_estimate": -20,
+            "confidence_interval": [
+              -50,
+              0
+            ],
+            "sample_size": 1,
+            "evidence_strength": "low"
+          },
+          "seasonal_patterns": {
+            "pattern_description": "Not explicitly detailed, but altitude, snowmelt, and terrace systems likely influence K weathering and transport.",
+            "peak_supply_periods": [],
+            "low_supply_periods": [],
+            "seasonal_amplitude": 0
+          },
+          "sustainability_assessment": {
+            "depletion_evidence": "General K depletion trends in India apply, but specific rates for Himalayan regions are not quantified.",
+            "replenishment_evidence": "Organic matter contributions are likely important in traditional systems.",
+            "sustainability_timeline": "Uncertain, requires specific research.",
+            "confidence_assessment": 0.4
+          },
+          "controlling_factors": [
+            "Altitude and temperature",
+            "Snowmelt and water transport",
+            "Terrace farming practices",
+            "Soil weathering rates"
+          ]
+        },
+        {
+          "region_identifier": "brazil.cerrado",
+          "geographic_coverage": "Brazilian Cerrado (clayey Oxisols)",
+          "annual_supply_rates": {
+            "typical_range_kg_k2o_per_ha": [
+              27.4,
+              68.6
+            ],
+            "mean_estimate": 48.0,
+            "confidence_interval": [
+              27.4,
+              68.6
+            ],
+            "sample_size": 1,
+            "evidence_strength": "high"
+          },
+          "seasonal_patterns": {
+            "pattern_description": "Influenced by distinct wet/dry seasons. K leaching can occur during high rainfall periods, especially under conventional tillage. Cover crops (e.g., Urochloa ruziziensis) play a significant role in K cycling and recovery.",
+            "peak_supply_periods": [],
+            "low_supply_periods": [],
+            "seasonal_amplitude": 0
+          },
+          "sustainability_assessment": {
+            "depletion_evidence": "Conventional tillage promotes K mobilization and leaching from the root zone, with almost half of detected K found below 30 cm. However, all systems maintained K levels above critical thresholds over 9 years with positive K balances.",
+            "replenishment_evidence": "No-tillage systems with cover crops showed high K retention efficiency (63% of K2O surplus retained in 0-20 cm) and concentrated K in topsoil. Historical organic amendments (vinasse/press mud) led to long-term soil K enrichment.",
+            "sustainability_timeline": "Sustainable under no-tillage with cover crops and adequate K inputs. Conventional tillage poses a higher risk of root zone depletion.",
+            "confidence_assessment": 0.9
+          },
+          "controlling_factors": [
+            "Tillage system (no-tillage vs. conventional)",
+            "Cover cropping (e.g., Urochloa ruziziensis)",
+            "Soil organic matter content",
+            "Deep soil K reserves and root access",
+            "Rainfall intensity and distribution"
+          ]
+        },
+        {
+          "region_identifier": "brazil.atlantic_forest",
+          "geographic_coverage": "Brazil (Atlantic Forest)",
+          "annual_supply_rates": {
+            "typical_range_kg_k2o_per_ha": [],
+            "mean_estimate": 0,
+            "confidence_interval": [],
+            "sample_size": 0,
+            "evidence_strength": "low"
+          },
+          "seasonal_patterns": {
+            "pattern_description": "Not explicitly detailed, but K cycling efficiency in forests and depletion in cleared land are relevant.",
+            "peak_supply_periods": [],
+            "low_supply_periods": [],
+            "seasonal_amplitude": 0
+          },
+          "sustainability_assessment": {
+            "depletion_evidence": "Implied K depletion in cleared land due to residue removal.",
+            "replenishment_evidence": "Regeneration K accumulation is a potential recovery mechanism.",
+            "sustainability_timeline": "Uncertain, requires specific research.",
+            "confidence_assessment": 0.5
+          },
+          "controlling_factors": [
+            "Land-use change (forest clearing)",
+            "Forest K cycling efficiency",
+            "Regeneration processes"
+          ]
+        },
+        {
+          "region_identifier": "brazil.amazon_fringe",
+          "geographic_coverage": "Brazil (Amazon Fringe)",
+          "annual_supply_rates": {
+            "typical_range_kg_k2o_per_ha": [],
+            "mean_estimate": 0,
+            "confidence_interval": [],
+            "sample_size": 0,
+            "evidence_strength": "low"
+          },
+          "seasonal_patterns": {
+            "pattern_description": "Not explicitly detailed, but rainforest K cycling and conversion K losses are relevant.",
+            "peak_supply_periods": [],
+            "low_supply_periods": [],
+            "seasonal_amplitude": 0
+          },
+          "sustainability_assessment": {
+            "depletion_evidence": "K losses upon conversion of rainforest to agriculture are implied.",
+            "replenishment_evidence": "Sustainable extraction rates are a goal, but not quantified.",
+            "sustainability_timeline": "Uncertain, requires specific research.",
+            "confidence_assessment": 0.4
+          },
+          "controlling_factors": [
+            "Deforestation and land conversion",
+            "Rainforest K cycling",
+            "Sustainable extraction rates"
+          ]
+        },
+        {
+          "region_identifier": "europe.central_europe",
+          "geographic_coverage": "Czech Republic",
+          "annual_supply_rates": {
+            "typical_range_kg_k2o_per_ha": [
+              -136.29,
+              49.09
+            ],
+            "mean_estimate": -40.0,
+            "confidence_interval": [
+              -136.29,
+              49.09
+            ],
+            "sample_size": 4,
+            "evidence_strength": "high"
+          },
+          "seasonal_patterns": {
+            "pattern_description": "Long-term trends show annual K balance and available K dynamics. Crop-induced fluctuations are observed. K release from internal soil sources buffers depletion.",
+            "peak_supply_periods": [],
+            "low_supply_periods": [],
+            "seasonal_amplitude": 0
+          },
+          "sustainability_assessment": {
+            "depletion_evidence": "Control plots showed significant depletion of available K (57.8-71.8% decrease over 21 years), with annual depletion rates of -11.10 to -14.81 mg K/kg/year. Negative K balances are common without sufficient fertilization.",
+            "replenishment_evidence": "FYM and NPK fertilization maintained or increased K levels. Estimated annual K release from reserves is 122 kg K/ha/year, buffering depletion. K recovery rates are 24-26% for FYM and 27-52% for mineral NPK.",
+            "sustainability_timeline": "Unsustainable over multi-decadal periods without K replenishment. Sustainability can be achieved with balanced fertilization.",
+            "confidence_assessment": 0.95
+          },
+          "controlling_factors": [
+            "Fertilization treatments (mineral NPK, FYM)",
+            "Soil type and mineralogy (Haplic Luvisol, Stagnic Cambisol)",
+            "Crop rotation",
+            "Initial soil K status"
+          ]
+        },
+        {
+          "region_identifier": "europe.mediterranean",
+          "geographic_coverage": "Mediterranean Europe",
+          "annual_supply_rates": {
+            "typical_range_kg_k2o_per_ha": [],
+            "mean_estimate": 0,
+            "confidence_interval": [],
+            "sample_size": 0,
+            "evidence_strength": "low"
+          },
+          "seasonal_patterns": {
+            "pattern_description": "Dry climate K cycling and seasonal water stress effects are relevant. K dynamics in olive/vineyard systems are important.",
+            "peak_supply_periods": [],
+            "low_supply_periods": [],
+            "seasonal_amplitude": 0
+          },
+          "sustainability_assessment": {
+            "depletion_evidence": "Implied by general dry climate K cycling principles and analogous data from North Africa.",
+            "replenishment_evidence": "Not directly quantified.",
+            "sustainability_timeline": "Uncertain, requires specific research.",
+            "confidence_assessment": 0.5
+          },
+          "controlling_factors": [
+            "Dry climate conditions",
+            "Seasonal water stress",
+            "Specific cropping systems (e.g., olive, vineyard)"
+          ]
+        },
+        {
+          "region_identifier": "europe.northern_europe",
+          "geographic_coverage": "Scotland",
+          "annual_supply_rates": {
+            "typical_range_kg_k2o_per_ha": [
+              -39.6,
+              42
+            ],
+            "mean_estimate": 1.2,
+            "confidence_interval": [
+              -39.6,
+              42
+            ],
+            "sample_size": 2,
+            "evidence_strength": "high"
+          },
+          "seasonal_patterns": {
+            "pattern_description": "Cool climate K dynamics. Herbage K concentration and daily K uptake rate declined from first to third cut within a single growing season. Mineral K release is slow.",
+            "peak_supply_periods": [
+              "Early growing season"
+            ],
+            "low_supply_periods": [
+              "Late growing season"
+            ],
+            "seasonal_amplitude": 0
+          },
+          "sustainability_assessment": {
+            "depletion_evidence": "Accumulated net K off-take of 1160-1189 kg K ha⁻¹ over 30 years in K0 plots, with average annual off-take of 38.7-39.6 kg K ha⁻¹ yr⁻¹. Soil K fertility declined from moderate to very low.",
+            "replenishment_evidence": "Annual K release from non-exchangeable/structural K is estimated at 35-42 kg K2O ha⁻¹ yr⁻¹, but this is insufficient to meet crop demand.",
+            "sustainability_timeline": "Unsustainable over multi-decadal periods without K replenishment. Easily weatherable K-bearing minerals could be depleted in two centuries under continued high off-take.",
+            "confidence_assessment": 0.9
+          },
+          "controlling_factors": [
+            "Cool climate conditions",
+            "Soil mineralogy (granitic bedrock, biotite, hydrobiotite)",
+            "Long-term grassland management",
+            "Crop residue removal"
+          ]
+        },
+        {
+          "region_identifier": "usa.great_plains",
+          "geographic_coverage": "USA Great Plains",
+          "annual_supply_rates": {
+            "typical_range_kg_k2o_per_ha": [],
+            "mean_estimate": 0,
+            "confidence_interval": [],
+            "sample_size": 0,
+            "evidence_strength": "medium"
+          },
+          "seasonal_patterns": {
+            "pattern_description": "Not explicitly detailed, but prairie soil K reserves and cultivation K depletion are relevant.",
+            "peak_supply_periods": [],
+            "low_supply_periods": [],
+            "seasonal_amplitude": 0
+          },
+          "sustainability_assessment": {
+            "depletion_evidence": "USA PNB K increased by 1.3% year⁻¹ from 1987-2012, indicating increasing K removal exceeding input, implying draw-down on soil K reserves under cultivation.",
+            "replenishment_evidence": "Conservation practices can enhance K retention.",
+            "sustainability_timeline": "Long-term sustainability is challenged by increasing K deficits.",
+            "confidence_assessment": 0.7
+          },
+          "controlling_factors": [
+            "Cultivation intensity",
+            "Prairie soil K reserves",
+            "Conservation agriculture practices"
+          ]
+        },
+        {
+          "region_identifier": "usa.southeastern_coastal",
+          "geographic_coverage": "USA Southeastern Coastal",
+          "annual_supply_rates": {
+            "typical_range_kg_k2o_per_ha": [],
+            "mean_estimate": 0,
+            "confidence_interval": [],
+            "sample_size": 0,
+            "evidence_strength": "medium"
+          },
+          "seasonal_patterns": {
+            "pattern_description": "Humid climate K losses (leaching) and organic K stabilization are relevant. K release from soils can be significant under continuous K sink.",
+            "peak_supply_periods": [],
+            "low_supply_periods": [],
+            "seasonal_amplitude": 0
+          },
+          "sustainability_assessment": {
+            "depletion_evidence": "K release from US Atlantic Coastal Plains soils (67-92 mg K kg⁻¹ over 30 days) indicates potential for depletion under high demand. Humid climate K losses are implied.",
+            "replenishment_evidence": "Organic matter can contribute to K stabilization.",
+            "sustainability_timeline": "Uncertain, requires specific research.",
+            "confidence_assessment": 0.6
+          },
+          "controlling_factors": [
+            "Sandy soil characteristics",
+            "Humid climate and high rainfall",
+            "Organic matter content and dynamics"
+          ]
+        },
+        {
+          "region_identifier": "other_regions.general_other",
+          "geographic_coverage": "Pakistan (Punjab), Australia, Southeast Asia, Sub-Saharan Africa, Southern Cone, Morocco",
+          "annual_supply_rates": {
+            "typical_range_kg_k2o_per_ha": [
+              -9479,
+              20
+            ],
+            "mean_estimate": -25,
+            "confidence_interval": [
+              -9479,
+              20
+            ],
+            "sample_size": 10,
+            "evidence_strength": "high"
+          },
+          "seasonal_patterns": {
+            "pattern_description": "Seasonal K fixation/release by clay minerals (montmorillonite, illite) influenced by wet/dry cycles. Growing season supply and off-season accumulation are dynamic. Monsoon leaching effects are significant in some regions.",
+            "peak_supply_periods": [],
+            "low_supply_periods": [],
+            "seasonal_amplitude": 0
+          },
+          "sustainability_assessment": {
+            "depletion_evidence": "Punjab, Pakistan, showed 7-49% decrease in soil available K over 15 years, indicating significant cumulative depletion. Sub-Saharan Africa averages less than -15 kg K ha⁻¹ yr⁻¹. Sugarcane areas in Australia and India show largest K deficits. Morocco showed extreme deficits without K input.",
+            "replenishment_evidence": "China's shift from deficit to surplus (driven by increased K fertilizer and residue retention) demonstrates recovery potential. Organic amendments (manure, crop residues) are significant K inputs.",
+            "sustainability_timeline": "Widespread unsustainability in many regions due to persistent negative K balances. Sustainability can be achieved with significant and sustained K inputs and improved management.",
+            "confidence_assessment": 0.8
+          },
+          "controlling_factors": [
+            "Soil mineralogy (2:1 clays, micas)",
+            "Climate (rainfall, temperature, wet/dry cycles)",
+            "Agricultural intensity and crop types (e.g., sugarcane, cotton)",
+            "Fertilizer use and organic matter management",
+            "Erosion and leaching losses"
+          ]
+        }
+      ],
+      "regional_comparison_synthesis": {
+        "highest_supply_regions": [
+          "China (Southeast, Southwest)",
+          "Brazil (Cerrado - under no-tillage with cover crops)"
+        ],
+        "lowest_supply_regions": [
+          "Sub-Saharan Africa",
+          "India (Monsoon regions - under deficit management)",
+          "Morocco (without K input)"
+        ],
+        "most_variable_regions": [
+          "China (Temperate soils - due to rapid policy/management shifts)",
+          "India (Monsoon regions - due to seasonal dynamics and diverse cropping systems)"
+        ],
+        "most_sustainable_regions": [
+          "China (Northwest, Southeast - with current management)",
+          "Brazil (Cerrado - under no-tillage with cover crops)",
+          "Europe (Central Europe - with balanced fertilization)"
+        ],
+        "highest_risk_regions": [
+          "Sub-Saharan Africa",
+          "India (Monsoon and Dry regions - with current management)",
+          "Pakistan (Punjab)",
+          "USA (Great Plains - increasing deficits)"
+        ],
+        "regional_ranking_rationale": "Ranking is based on observed annual K balance (surplus/deficit), long-term depletion trends, and the effectiveness of current management practices in maintaining or building soil K reserves. Regions with consistent negative balances and high depletion rates are considered high-risk. Regions with positive balances or successful shifts from deficit to surplus are considered more sustainable. Variability reflects the range of K balances observed within a region over time or across different cropping systems."
+      }
+    },
+    "climate_soil_k_interactions": {
+      "temperature_effects": {
+        "cold_region_patterns": "Cool climate K dynamics are characterized by slower mineral weathering rates (e.g., <5 kg K2O ha⁻¹ yr⁻¹ in UK). K uptake by plants can show seasonal decline within a growing season. General principles of K forms and dynamics apply.",
+        "temperate_region_patterns": "Temperature influences K release from minerals and organic matter decomposition. Seasonal temperature changes can affect K availability and plant uptake. Long-term K dynamics are influenced by cumulative temperature effects on weathering and biological activity.",
+        "warm_region_patterns": "High temperatures in tropical regions accelerate mineral weathering and organic matter decomposition, potentially leading to faster K cycling and higher leaching losses, especially in highly weathered soils. Anaerobic conditions in flooded rice systems (warm climate) also influence K release.",
+        "temperature_k_relationships": {
+          "weathering_rate": "Increases with temperature (general principle)",
+          "decomposition_rate": "Increases with temperature (general principle)",
+          "k_release_kinetics": "Lab studies at 25°C show specific kinetic rates, but field temperature fluctuations are complex."
+        },
+        "seasonal_temperature_effects": "Seasonal temperature variations influence K release from soil minerals and organic matter, affecting K availability to plants throughout the growing season. This is particularly relevant in temperate and monsoon climates with distinct thermal seasons."
+      },
+      "precipitation_effects": {
+        "arid_region_patterns": "K dynamics are strongly linked to moisture. K fixation can occur when soils dry, and release upon rewetting. Irrigation can mobilize K but also lead to depletion if not managed. Leaching losses are generally lower than in humid regions but can be significant under excessive irrigation.",
+        "humid_region_patterns": "High precipitation leads to increased K leaching losses, especially in sandy or highly weathered soils with low cation exchange capacity. Rapid K cycling and potential for K depletion if inputs do not match high removal and leaching. Humid forest systems show moderate K losses (10-20 kg K ha⁻¹ yr⁻¹).",
+        "monsoon_region_patterns": "Distinct wet/dry seasons. High seasonal rainfall can lead to significant K leaching. Flooded conditions in paddy fields influence K release (anaerobic K release). K availability fluctuates between pre- and post-monsoon periods. Timing of K application is critical.",
+        "precipitation_k_relationships": {
+          "leaching_losses": "Increases with higher effective precipitation and sandy texture",
+          "k_fixation_release": "Influenced by wetting/drying cycles in 2:1 clay minerals",
+          "irrigation_impact": "Can be a source of K input or exacerbate leaching"
+        },
+        "leaching_patterns_by_region": "Leaching is a significant K loss pathway in humid and monsoon regions (e.g., India, Southeast Asia, USA Southeastern Coastal) and under intensive irrigation in arid regions. Less pronounced in dryland temperate systems without excessive rainfall. Sandy soils are more prone to leaching than clayey soils."
+      },
+      "extreme_weather_impacts": {
+        "drought_effects_by_region": "Drought can reduce K mobility and uptake by plants due to decreased soil moisture and reduced root activity. In soils with 2:1 clays, drying can induce K fixation, making it less available. This is particularly relevant in dry regions (e.g., India's dry regions, Mediterranean climates).",
+        "flood_effects_by_region": "Flooding (e.g., in rice paddy fields in monsoon regions like India, China) creates anaerobic conditions that can influence K release from soil minerals. While K can be mobilized, prolonged flooding can also lead to leaching losses. This is a key factor in tropical and monsoon rice-growing areas.",
+        "storm_effects_by_region": "High intensity rainfall events (storms) can increase K losses through surface runoff and erosion, especially in regions with steep topography or poor soil cover (e.g., hilly areas of China, Sub-Saharan Africa).",
+        "regional_resilience_patterns": "Regions with high buffering capacity (e.g., soils with significant non-exchangeable K reserves, high organic matter) and management practices like residue retention and cover cropping (e.g., Brazilian Cerrado no-tillage) show higher resilience to extreme weather impacts on K supply. K-efficient crop genotypes also contribute to resilience under low K stress."
+      }
+    },
+    "agricultural_regionalization": {
+      "crop_region_patterns": [
+        {
+          "agricultural_region": "China (Temperate, Tropical)",
+          "dominant_crops": [
+            "Rice",
+            "Wheat",
+            "Maize",
+            "Rapeseed",
+            "Soybean"
+          ],
+          "k_demand_characteristics": "High K demand from intensive, high-yielding cropping systems. Optimal K application rates for rice in Sichuan are 115-137 kg K ha⁻¹ yr⁻¹.",
+          "management_patterns": "Shift from K deficits to surpluses due to increased K fertilizer inputs and crop residue retention (manure contributed 59% of K input). Regional variations in K balance and K use efficiency.",
+          "sustainability_challenges": "Historical K depletion in some regions (e.g., NE, MLYR) and potential for over-fertilization/accumulation in others (e.g., SE).",
+          "regional_solutions": [
+            "Optimizing K fertilizer rates based on regional soil test and crop demand",
+            "Promoting crop residue return",
+            "Integrated nutrient management"
+          ]
+        },
+        {
+          "agricultural_region": "India (Monsoon, Dry, Himalayan)",
+          "dominant_crops": [
+            "Rice",
+            "Wheat",
+            "Maize",
+            "Soybean",
+            "Fingermillet",
+            "Sunflower",
+            "Sesame",
+            "Sugarcane"
+          ],
+          "k_demand_characteristics": "High K demand from intensive cropping systems, leading to pervasive negative K balances. K uptake often far exceeds fertilizer K applied. Sugarcane has particularly high K demand.",
+          "management_patterns": "Widespread K mining from soil reserves. Increasing crop response to K application over time indicates depletion. FYM application is crucial for maintaining K pools. Irrigation can influence K dynamics in dry regions.",
+          "sustainability_challenges": "Continuous K depletion threatens long-term productivity. Declining fertilizer response. Need for balanced fertilization and organic amendments.",
+          "regional_solutions": [
+            "Balanced fertilization with K",
+            "Integrated Nutrient Management (FYM + NPK)",
+            "Straw incorporation in rice systems",
+            "Site-specific nutrient management"
+          ]
+        },
+        {
+          "agricultural_region": "Brazil (Cerrado)",
+          "dominant_crops": [
+            "Cotton",
+            "Soybean",
+            "Maize",
+            "Sugarcane"
+          ],
+          "k_demand_characteristics": "High K demand, especially for cotton. Deep-rooted crops can access subsoil K reserves.",
+          "management_patterns": "No-tillage systems with cover crops (e.g., Urochloa ruziziensis) significantly improve K retention and cycling, concentrating K in topsoil. Conventional tillage leads to K mobilization to deeper layers. Historical organic amendments (vinasse, press mud) have enriched soil K.",
+          "sustainability_challenges": "K depletion under conventional tillage. Maintaining K balance in highly weathered Oxisols.",
+          "regional_solutions": [
+            "Adoption of no-tillage with cover crops",
+            "Utilizing organic amendments (vinasse, press mud)",
+            "Considering deep soil K reserves in K management"
+          ]
+        },
+        {
+          "agricultural_region": "Europe (Central, Northern, UK)",
+          "dominant_crops": [
+            "Cereals",
+            "Potatoes",
+            "Sugar beet",
+            "Grassland"
+          ],
+          "k_demand_characteristics": "Variable K demand depending on crop type and yield. Peak K uptake rates of 5-10 kg K2O ha⁻¹ day⁻¹ for root crops and oilseed rape.",
+          "management_patterns": "Long-term fertilization experiments demonstrate the importance of K inputs to maintain soil K. K recovery rates vary by fertilizer type (FYM vs. mineral NPK). Soil K reserves can be built up over years, but heavier soils take longer. Organic materials (manure) are significant K sources.",
+          "sustainability_challenges": "Long-term K mining in low-input systems. Ensuring sufficient K supply from slow-releasing pools. Managing K losses from stored organic materials.",
+          "regional_solutions": [
+            "Balanced K fertilization based on soil test and crop offtake",
+            "Strategic use of organic amendments",
+            "Long-term monitoring of soil K status",
+            "Considering K fixation/release dynamics in different soil types"
+          ]
+        },
+        {
+          "agricultural_region": "USA (Great Plains, Southeastern Coastal)",
+          "dominant_crops": [
+            "Cotton",
+            "Cereals"
+          ],
+          "k_demand_characteristics": "Increasing K removal exceeding inputs, particularly in high-demand crops like cotton.",
+          "management_patterns": "Trends show increasing K deficits. Conservation practices can influence K retention. Humid climate and sandy soils in Southeastern Coastal regions imply leaching concerns.",
+          "sustainability_challenges": "Growing K deficits and draw-down on soil K reserves. Managing K in diverse soil types and climates.",
+          "regional_solutions": [
+            "Optimizing K inputs to match crop removal",
+            "Implementing conservation agriculture",
+            "Addressing K losses in humid/sandy environments"
+          ]
+        }
+      ],
+      "intensification_patterns": {
+        "high_intensification_regions": [
+          "China (all agricultural regions)",
+          "India (all agricultural regions)",
+          "Brazil (Cerrado)",
+          "USA (Great Plains, Southeastern Coastal)",
+          "Australia (sugarcane)",
+          "Southeast Asia"
+        ],
+        "low_intensification_regions": [
+          "Some parts of Sub-Saharan Africa (though high-potential areas show significant losses)"
+        ],
+        "intensification_k_impacts": "Intensive cropping systems, especially with high-yielding cultivars and continuous cropping, lead to pervasive negative K balances and continuous 'mining' of soil K reserves. K uptake by crops often far exceeds fertilizer K applied. This results in declining soil K levels, increasing crop response to K, and potential productivity decline. Crop residue removal exacerbates depletion.",
+        "regional_intensification_trends": "China has seen a dramatic increase in K inputs and a shift from deficit to surplus, driven by intensification. India continues to face widespread K deficits despite intensification. Brazil's Cerrado shows that intensification with no-tillage and cover crops can improve K balance, while conventional tillage leads to depletion. USA shows increasing K deficits with intensification."
+      },
+      "traditional_knowledge_integration": {
+        "indigenous_practices_by_region": [
+          "India (Farmyard Manure (FYM) application)",
+          "China (Manure and crop residue return)"
+        ],
+        "traditional_k_management": "Traditional practices like FYM application and crop residue retention are crucial for maintaining higher available K pools and K release rates, emphasizing the benefits of integrated nutrient management for K sustainability. These practices contribute significantly to K inputs, reducing reliance on synthetic fertilizers.",
+        "regional_innovation_opportunities": [
+          "Combining traditional organic amendments with modern fertilizer management for synergistic effects.",
+          "Developing K-efficient crop varieties adapted to local conditions (e.g., K high-efficiency vegetable soybean in China).",
+          "Leveraging deep-rooted cover crops for K recovery from subsoil (e.g., Urochloa ruziziensis in Brazil).",
+          "Implementing site-specific nutrient management (SSNM) to address high spatial variability in soil K."
+        ]
+      }
+    },
+    "spatial_scaling_synthesis": {
+      "scaling_relationships": [
+        {
+          "scale_transition": "field_to_landscape",
+          "scaling_factor_range": [],
+          "controlling_variables": [
+            "Soil type and mineralogy",
+            "Topography and drainage",
+            "Local management practices (tillage, residue, fertilization)",
+            "Crop rotation and yield variability"
+          ],
+          "uncertainty_propagation": "High spatial variability at the field scale (e.g., CVs up to 68% in India) makes direct upscaling challenging. Point measurements may not represent landscape averages. Uncertainty increases with heterogeneity.",
+          "methodological_requirements": [
+            "High-density grid sampling",
+            "Geostatistical methods (e.g., Kriging)",
+            "Remote sensing for spatial patterns of crop growth/residue",
+            "Process-based models calibrated at field scale"
+          ]
+        },
+        {
+          "scale_transition": "landscape_to_regional",
+          "scaling_factor_range": [],
+          "controlling_variables": [
+            "Dominant agro-ecological zones",
+            "Regional climate patterns",
+            "Prevalent cropping systems and their K demands",
+            "Regional agricultural policies and fertilizer use patterns",
+            "Major soil orders and their K buffering capacities"
+          ],
+          "uncertainty_propagation": "Aggregation of diverse landscapes introduces uncertainty. Data quality and completeness vary regionally (e.g., high uncertainty in K balance for Burkina Faso). Assumptions about unmeasured K flows (leaching, runoff) become more significant.",
+          "methodological_requirements": [
+            "Regional K balance models (input-output approach)",
+            "GIS-based spatial analysis",
+            "Integration of statistical data (fertilizer sales, crop production) with soil maps",
+            "Structural Equation Modeling (SEM) for identifying drivers of K balance"
+          ]
+        },
+        {
+          "scale_transition": "regional_to_continental",
+          "scaling_factor_range": [],
+          "controlling_variables": [
+            "National/continental agricultural policies and economic factors",
+            "Major climatic zones and their influence on K cycling",
+            "Dominant soil types at continental scale",
+            "Global trade of agricultural products (K removal/import)"
+          ],
+          "uncertainty_propagation": "Highest uncertainty due to aggregation of diverse regions, reliance on national statistics, and difficulty in accounting for all K flows (e.g., manure, atmospheric deposition, erosion). Global K balance estimates have significant CVs (e.g., manure 50%, crop removal 20%).",
+          "methodological_requirements": [
+            "Global nutrient balance models",
+            "Harmonized databases (e.g., Fostat)",
+            "Ensemble modeling approaches to quantify uncertainty",
+            "Cross-validation with independent regional studies"
+          ]
+        }
+      ],
+      "representativeness_assessment": {
+        "point_to_regional_scaling": "Point-scale measurements (e.g., long-term field experiments, lab kinetics) provide robust process understanding and quantitative parameters for specific conditions. However, scaling these to regional levels requires careful consideration of spatial heterogeneity and the influence of unmeasured factors. Regional patterns often emerge from the aggregation of many point observations, but direct extrapolation of quantitative values is often limited.",
+        "sampling_density_requirements": {
+          "field_scale": "High-density grid sampling (e.g., 100x100m in China) is needed to capture local variability.",
+          "regional_scale": "Representative sampling across diverse soil types, cropping systems, and management practices within a region is crucial. Statistical sampling designs are essential.",
+          "continental_scale": "Reliance on national statistics and aggregated data, requiring robust data collection and reporting systems."
+        },
+        "regional_extrapolation_confidence": {
+          "within_region": "High confidence for extrapolation within the studied region if environmental and management conditions are similar.",
+          "to_similar_agro_ecosystems": "Medium to high confidence for extrapolation to other regions with similar soil types, climate, and agricultural systems, but requires adjustment factors and validation.",
+          "to_dissimilar_agro_ecosystems": "Low confidence for extrapolation to vastly different regions (e.g., temperate to tropical, sandy to clayey) without extensive local validation and calibration."
+        },
+        "geographic_analog_potential": [
+          "Mediterranean climate zones (e.g., North Africa data for European Mediterranean)",
+          "Highly weathered tropical soils (e.g., Brazilian Oxisols for other tropical regions)",
+          "Illite-dominated soils (e.g., Indian/Pakistani alluvial soils for other illitic regions)",
+          "Intensive rice-based systems (e.g., Indian/Chinese rice systems for other Asian rice bowls)"
+        ]
+      }
+    },
+    "regional_uncertainty_characterization": {
+      "data_availability_assessment": {
+        "data_rich_regions": [
+          "China (national and regional K balance, long-term trends)",
+          "India (long-term fertilizer experiments, K omission plots, national trends)",
+          "Europe (Czech Republic, UK long-term experiments)",
+          "Brazil (Cerrado - specific long-term tillage trials)",
+          "USA (national PNB K trends)"
+        ],
+        "data_poor_regions": [
+          "India (Himalayan regions - specific K dynamics)",
+          "Brazil (Atlantic Forest, Amazon Fringe - specific K dynamics post-conversion)",
+          "European Mediterranean and Northern Europe (specific K dynamics beyond general principles)",
+          "Sub-Saharan Africa (country-level data often has high uncertainty)"
+        ],
+        "priority_gaps": [
+          "Quantitative K leaching and runoff losses across diverse climates and soil types.",
+          "Long-term field data on K dynamics in traditional/low-input systems.",
+          "Detailed K balance data for specific sub-regions within large countries (e.g., India's dry regions, China's tropical soils).",
+          "Impacts of climate change (e.g., altered rainfall patterns, extreme events) on K availability and cycling.",
+          "Quantitative rates of K release from different non-exchangeable pools under field conditions.",
+          "Comprehensive data on K content and release from diverse organic amendments and crop residues."
+        ],
+        "research_priority_areas": [
+          "Establishment of new long-term field experiments in data-poor regions.",
+          "Development and validation of regional K balance models incorporating detailed soil mineralogy and climate data.",
+          "Remote sensing and GIS-based approaches for spatial mapping of K status and management practices.",
+          "Studies on K-efficient crop varieties and their role in reducing K fertilizer demand.",
+          "Research on sustainable K management practices in highly weathered tropical soils and dryland agricultural systems."
+        ]
+      },
+      "confidence_regionalization": {
+        "high_confidence_regions": [
+          "China (national and major agricultural regions)",
+          "India (monsoon regions, general depletion trends)",
+          "Europe (Central Europe, Northern Europe - specific long-term sites)",
+          "Brazil (Cerrado - no-tillage systems)",
+          "Argentina (Pampas)"
+        ],
+        "medium_confidence_regions": [
+          "China (arid, tropical sub-regions - based on national trends)",
+          "India (dry, Himalayan regions - general trends, process understanding)",
+          "USA (national trends, general principles)",
+          "Other regions (Pakistan, Australia, Southeast Asia, Sub-Saharan Africa - national/aggregated data)"
+        ],
+        "low_confidence_regions": [
+          "Brazil (Atlantic Forest, Amazon Fringe - limited direct evidence)",
+          "European Mediterranean and Northern Europe (beyond general principles)",
+          "Specific quantitative values for seasonal K release or recovery potential in many regions."
+        ],
+        "confidence_limiting_factors": [
+          "Lack of direct long-term field measurements for all K pools (especially non-exchangeable).",
+          "Uncertainty in quantifying all K inputs (e.g., atmospheric deposition, irrigation water) and outputs (e.g., leaching, runoff, erosion).",
+          "Variability in analytical methods and data quality across studies and regions.",
+          "Reliance on literature values for crop K uptake and residue K content.",
+          "Limited understanding of complex climate-soil-plant-microbe interactions at regional scales.",
+          "Socio-economic factors influencing K management are often not fully integrated."
+        ]
+      },
+      "extrapolation_frameworks": {
+        "within_region_extrapolation": "High confidence for extrapolation within the studied region if environmental and management conditions are similar. Requires site-specific adjustments for soil properties (texture, mineralogy, initial K levels) and local management practices.",
+        "cross_region_extrapolation": "Moderate confidence for extrapolation to other regions with similar agro-ecological zones (climate, soil type, dominant cropping systems). Requires significant adjustment factors (e.g., soil mineralogy, climate, management history) and local validation. Qualitative process understanding is more transferable than quantitative values.",
+        "climate_analog_approaches": "Useful for inferring K dynamics in data-poor regions by drawing parallels with data-rich regions having similar climate patterns (e.g., North Africa for European Mediterranean, humid forests in SSA for USA Southeastern Coastal). However, soil type and management differences must be carefully considered.",
+        "uncertainty_quantification_methods": "Propagating uncertainties from input parameters (e.g., fertilizer use, crop removal, soil properties) through K balance models. Sensitivity analysis to identify parameters with the largest impact on regional K estimates. Ensemble modeling and expert elicitation can help quantify uncertainty in projections."
+      }
+    },
+    "synthesis_quality_assessment": {
+      "evidence_integration_quality": {
+        "methodological_rigor_score": 0.85,
+        "temporal_coverage_score": 0.8,
+        "spatial_coverage_score": 0.9,
+        "evidence_consistency_score": 0.8,
+        "overall_integration_quality": 0.85
+      },
+      "regional_pattern_confidence": {
+        "pattern_reproducibility": 0.8,
+        "cross_study_consistency": 0.75,
+        "methodological_agreement": 0.7,
+        "overall_pattern_confidence": 0.75
+      },
+      "synthesis_limitations": {
+        "geographic_limitations": [
+          "Limited direct quantitative data for specific sub-regions within large countries (e.g., India's dry/Himalayan regions, Brazil's Atlantic Forest/Amazon Fringe).",
+          "Lack of direct evidence for some European sub-regions (Mediterranean, Northern Europe) requiring reliance on analogous climates or general principles."
+        ],
+        "temporal_limitations": [
+          "Many quantitative parameters (e.g., annual supply rates) are derived from short-term (1-2 year) studies or inferred from long-term trends, not direct multi-decadal measurements.",
+          "Sustainability 'years' are often inferred rather than precisely quantified."
+        ],
+        "methodological_limitations": [
+          "Variability in K extraction methods and analytical protocols across studies can affect comparability.",
+          "Challenges in accurately quantifying all K inputs (e.g., atmospheric deposition, irrigation water) and outputs (e.g., leaching, runoff, erosion) in large-scale K balance models.",
+          "Reliance on literature values for crop K content and yield-based K removal can introduce uncertainty."
+        ],
+        "scaling_limitations": [
+          "Significant uncertainty in scaling point-source data (field trials, lab kinetics) to regional and continental scales due to spatial heterogeneity and unmeasured factors.",
+          "Lack of explicit scaling factors or transfer functions in many studies."
+        ],
+        "uncertainty_sources": [
+          "Measurement errors in K analysis.",
+          "Assumptions in K balance calculations (e.g., constant grain K content, negligible losses).",
+          "Variability in soil properties (mineralogy, texture, organic matter) within regions.",
+          "Climate variability and extreme weather events.",
+          "Dynamic nature of K pools and their interconversions."
+        ]
+      },
+      "synthesis_innovations": {
+        "novel_pattern_identification": [
+          "Clear identification of a global shift in K balance, with China moving from deficit to surplus while other regions (India, SSA, USA) face increasing deficits.",
+          "Highlighting the critical role of subsoil K depletion in overall nutrient budgets, particularly in high-K soils.",
+          "Systematic mapping of K dynamics to specific biogeochemical zones (arid, temperate, tropical, monsoon, Mediterranean) and environmental gradients.",
+          "Quantification of K supply/depletion rates for specific regional contexts (e.g., Czech Republic, Scotland, Brazilian Cerrado, Chinese regions)."
+        ],
+        "methodological_advances": [
+          "Integration of diverse data types: long-term field experiments, national statistics, lab kinetics, and remote sensing/geostatistical approaches.",
+          "Cross-paper validation of K balance trends and depletion rates across different continents.",
+          "Emphasis on the importance of soil mineralogy and organic matter in regional K dynamics."
+        ],
+        "integration_approaches": [
+          "Synthesizing evidence from both natural K supply (weathering, non-exchangeable release) and anthropogenic inputs (fertilizer, organic amendments).",
+          "Connecting K dynamics to agricultural management practices and their long-term sustainability implications.",
+          "Bridging plant physiological responses to low K stress with regional K availability."
+        ],
+        "uncertainty_quantification_advances": [
+          "Explicitly stating confidence levels and uncertainty ranges for regional parameters and patterns.",
+          "Identifying data-rich vs. data-poor regions and prioritizing knowledge gaps for future research."
+        ]
+      }
+    },
+    "scientific_parameter_delivery": {
+      "regional_parameter_synthesis": [
+        {
+          "region": "china.arid_soils",
+          "k_supply_parameters": {
+            "annual_kg_k2o_per_ha": {
+              "value": "4.84 to 26.02",
+              "units": "kg K2O ha⁻¹ yr⁻¹",
+              "context": "Average K balance for China's Northwest region (1980-2015)."
+            },
+            "depletion_rate": {
+              "value": "Historically, some areas experienced deficits, but NW region maintained a slight, stable K surplus.",
+              "units": "kg K2O ha⁻¹ yr⁻¹",
+              "context": "Inferred from K balance trends."
+            },
+            "sustainability_years": {
+              "value": "Appears sustainable under current management, but long-term projections require continued monitoring.",
+              "units": "years (inferred)",
+              "context": "Based on positive K balance."
+            },
+            "recovery_potential": {
+              "value": "Shift from deficit to surplus nationally demonstrates recovery potential.",
+              "units": "qualitative",
+              "context": "Inferred from national trends."
+            }
+          },
+          "uncertainty_quantification": {
+            "annual_kg_k2o_per_ha": "±20% (from large-scale statistical reporting)",
+            "depletion_rate": "Qualitative inference, high uncertainty for specific rates.",
+            "sustainability_years": "High uncertainty for precise projection.",
+            "recovery_potential": "Qualitative inference, high uncertainty for precise quantification."
+          },
+          "confidence_level": 0.8,
+          "model_integration_guidance": "Use regional K balance data directly for macro-scale models. For local applications, consider specific irrigation practices and soil K fixation capacity. Requires local validation for quantitative values."
+        },
+        {
+          "region": "china.temperate_soils",
+          "k_supply_parameters": {
+            "annual_kg_k2o_per_ha": {
+              "value": "-69.41 to 22.64",
+              "units": "kg K2O ha⁻¹ yr⁻¹",
+              "context": "Average K balance for North China (NC) and Middle-Lower Yangtze River (MLYR) regions (1980-2015). Optimal K application for rice in Sichuan: 115-137 kg K ha⁻¹ yr⁻¹."
+            },
+            "depletion_rate": {
+              "value": "-21.37 to -22.79",
+              "units": "kg K2O ha⁻¹ yr⁻¹",
+              "context": "Average K deficit in Northeast (NE) and MLYR regions (1980-2015). Shehong County (Sichuan) showed deficits up to -156.06 kg K2O ha⁻¹ yr⁻¹."
+            },
+            "sustainability_years": {
+              "value": "Variable; some regions/systems are unsustainable, while others have achieved or are moving towards sustainability.",
+              "units": "years (inferred)",
+              "context": "Based on K balance trends."
+            },
+            "recovery_potential": {
+              "value": "NC, SW, and MLYR shifted from deficit to surplus, demonstrating recovery potential.",
+              "units": "qualitative",
+              "context": "Inferred from K balance trends."
+            },
+            "seasonal_release_patterns": {
+              "value": "Inter-annual variability in optimal K application and recovery efficiency. Clay mineral effects influence K release.",
+              "units": "qualitative",
+              "context": "Observed in rice systems."
+            },
+            "clay_mineral_effects": {
+              "value": "2:1 clay minerals (illite, smectite) influence SAK-RAK conversion and K buffering capacity.",
+              "units": "qualitative",
+              "context": "Mechanistic understanding."
+            }
+          },
+          "uncertainty_quantification": {
+            "annual_kg_k2o_per_ha": "±20% (from large-scale statistical reporting, site-specific measurements)",
+            "depletion_rate": "±20% (from calculated K balances)",
+            "sustainability_years": "High uncertainty for precise projection.",
+            "recovery_potential": "Qualitative inference, high uncertainty for precise quantification.",
+            "seasonal_release_patterns": "High uncertainty for quantitative patterns.",
+            "clay_mineral_effects": "Qualitative, high confidence for mechanistic understanding, but quantitative effects are site-specific."
+          },
+          "confidence_level": 0.85,
+          "model_integration_guidance": "Directly use regional K balance data for macro-scale models. For site-specific models, use optimal application rates and consider clay mineralogy. Requires local calibration for quantitative values and seasonal patterns."
+        },
+        {
+          "region": "china.tropical_soils",
+          "k_supply_parameters": {
+            "annual_kg_k2o_per_ha": {
+              "value": "-1.53 to 197.91",
+              "units": "kg K2O ha⁻¹ yr⁻¹",
+              "context": "Average K balance for Southeast (SE) and Southwest (SW) regions (1980-2015)."
+            },
+            "sustainability_years": {
+              "value": "Generally sustainable with current high K inputs, but potential for over-fertilization and accumulation in some areas.",
+              "units": "years (inferred)",
+              "context": "Based on positive K balance."
+            },
+            "monsoon_leaching_effects": {
+              "value": "12.05",
+              "units": "kg K2O ha⁻¹ yr⁻¹",
+              "context": "Leaching loss in paddy fields (Shehong County)."
+            },
+            "organic_matter_contributions": {
+              "value": "16.54 to 69.76",
+              "units": "kg K2O ha⁻¹ yr⁻¹",
+              "context": "K input from straw return (Shehong County)."
+            }
+          },
+          "uncertainty_quantification": {
+            "annual_kg_k2o_per_ha": "±20% (from large-scale statistical reporting)",
+            "sustainability_years": "High uncertainty for precise projection.",
+            "monsoon_leaching_effects": "±50% (site-specific, inferred from K balance)",
+            "organic_matter_contributions": "±20% (site-specific, based on K content assumptions)"
+          },
+          "confidence_level": 0.85,
+          "model_integration_guidance": "Directly use regional K balance data. Incorporate monsoon leaching effects and organic matter contributions in K cycling models. Focus on optimizing K inputs to prevent accumulation in surplus regions."
+        },
+        {
+          "region": "india.monsoon_regions",
+          "k_supply_parameters": {
+            "annual_kg_k2o_per_ha": {
+              "value": "-140 to 89",
+              "units": "kg K2O ha⁻¹ yr⁻¹",
+              "context": "Annual K balance range in Odisha rice systems. Native K supply from omission plots: 205-354 kg K2O ha⁻¹ yr⁻¹."
+            },
+            "depletion_rate": {
+              "value": "-103 to -140",
+              "units": "kg K2O ha⁻¹ yr⁻¹",
+              "context": "Annual K depletion rates in control/foliar spray treatments in Odisha rice systems. Long-term available K decline: 57.8-71.8% over 21 years (Czech Republic, analogous to K-deficient systems)."
+            },
+            "sustainability_years": {
+              "value": "Unsustainable over multi-decadal periods without adequate K replenishment.",
+              "units": "years (inferred)",
+              "context": "Based on pervasive negative K balances."
+            },
+            "recovery_potential": {
+              "value": "89",
+              "units": "kg K2O ha⁻¹ yr⁻¹",
+              "context": "Positive K balance with straw incorporation in Odisha rice systems."
+            },
+            "seasonal_release_patterns": {
+              "value": "Pronounced seasonal K dynamics due to monsoon rainfall and rice-rice rotations. Available K can decline from pre- to post-monsoon.",
+              "units": "qualitative",
+              "context": "Observed in Bhubaneswar."
+            },
+            "clay_mineral_effects": {
+              "value": "K release rate constants from illite minerals: 3.5-4.03 h⁻¹.",
+              "units": "h⁻¹",
+              "context": "Observed across Indian soil types (Inceptisols, Alfisols, Vertisols)."
+            },
+            "monsoon_leaching_effects": {
+              "value": "Implied by K dynamics in flooded rice systems in monsoon regions.",
+              "units": "qualitative",
+              "context": "Inferred from K balance in high rainfall/flooded systems."
+            },
+            "organic_matter_contributions": {
+              "value": "FYM + NPK maintained higher available K pools and K release.",
+              "units": "qualitative",
+              "context": "Observed in Jabalpur and Bhubaneswar."
+            }
+          },
+          "uncertainty_quantification": {
+            "annual_kg_k2o_per_ha": "±20% (from measured inputs/outputs)",
+            "depletion_rate": "±20% (from measured inputs/outputs)",
+            "sustainability_years": "High uncertainty for precise projection.",
+            "recovery_potential": "±20% (from measured inputs/outputs)",
+            "seasonal_release_patterns": "±40% (qualitative, inferred)",
+            "clay_mineral_effects": "±20% (lab-based, robust for process understanding)",
+            "monsoon_leaching_effects": "±50% (qualitative, inferred)",
+            "organic_matter_contributions": "±20% (qualitative, inferred)"
+          },
+          "confidence_level": 0.9,
+          "model_integration_guidance": "Directly input annual K balance and initial K pool data. Parameterize seasonal K dynamics for optimizing fertilizer timing. Integrate clay mineral effects for K release. Validate against regional field data."
+        },
+        {
+          "region": "india.dry_regions",
+          "k_supply_parameters": {
+            "annual_kg_k2o_per_ha": {
+              "value": "Lowest K levels observed in Sunflower-Sesame systems, suggesting depletion.",
+              "units": "qualitative",
+              "context": "Inferred from snapshot data."
+            },
+            "depletion_rate": {
+              "value": "Implied by lowest K levels in exhaustive cropping systems.",
+              "units": "qualitative",
+              "context": "Inferred from snapshot data."
+            },
+            "sustainability_years": {
+              "value": "Long-term sustainability is challenged by continuous K removal and insufficient replenishment.",
+              "units": "years (inferred)",
+              "context": "Based on qualitative indications."
+            },
+            "recovery_potential": {
+              "value": "Strong correlations between non-exchangeable K and available K suggest buffering capacity.",
+              "units": "qualitative",
+              "context": "Inferred from snapshot data."
+            },
+            "irrigation_k_mobilization": {
+              "value": "Indirectly informed by water soluble K data.",
+              "units": "qualitative",
+              "context": "Not directly measured."
+            },
+            "saline_soil_k_availability": {
+              "value": "Indirectly informed by K forms data.",
+              "units": "qualitative",
+              "context": "Not directly measured."
+            },
+            "drought_resistance_k_needs": {
+              "value": "Indirectly informed by K forms data.",
+              "units": "qualitative",
+              "context": "Not directly measured."
+            }
+          },
+          "uncertainty_quantification": {
+            "annual_kg_k2o_per_ha": "High uncertainty (qualitative, inferred).",
+            "depletion_rate": "High uncertainty (qualitative, inferred).",
+            "sustainability_years": "Very high uncertainty (qualitative, inferred).",
+            "recovery_potential": "High uncertainty (qualitative, inferred).",
+            "irrigation_k_mobilization": "High uncertainty (qualitative, inferred).",
+            "saline_soil_k_availability": "High uncertainty (qualitative, inferred).",
+            "drought_resistance_k_needs": "High uncertainty (qualitative, inferred)."
+          },
+          "confidence_level": 0.6,
+          "model_integration_guidance": "Requires modeling to link observed K forms to specific regional parameters. Further field studies are needed to directly measure K dynamics under irrigation, salinity, and drought stress."
+        },
+        {
+          "region": "india.himalayan_regions",
+          "k_supply_parameters": {
+            "annual_kg_k2o_per_ha": {
+              "value": "General K depletion trends in India apply.",
+              "units": "qualitative",
+              "context": "Inferred from national trends."
+            },
+            "altitude_k_weathering_rates": {
+              "value": "No direct evidence, but residue data provides context for K inputs.",
+              "units": "qualitative",
+              "context": "Not directly measured."
+            },
+            "snowmelt_k_transport": {
+              "value": "No direct evidence, but residue data provides context for K inputs.",
+              "units": "qualitative",
+              "context": "Not directly measured."
+            },
+            "terrace_k_retention": {
+              "value": "No direct evidence, but residue data provides context for K inputs.",
+              "units": "qualitative",
+              "context": "Not directly measured."
+            }
+          },
+          "uncertainty_quantification": {
+            "annual_kg_k2o_per_ha": "High uncertainty (qualitative, inferred).",
+            "altitude_k_weathering_rates": "Very high uncertainty (qualitative, inferred).",
+            "snowmelt_k_transport": "Very high uncertainty (qualitative, inferred).",
+            "terrace_k_retention": "Very high uncertainty (qualitative, inferred)."
+          },
+          "confidence_level": 0.4,
+          "model_integration_guidance": "Provides foundational data for K management. Requires targeted research to address unique high-altitude and mountainous agricultural challenges related to K."
+        },
+        {
+          "region": "brazil.cerrado",
+          "k_supply_parameters": {
+            "annual_kg_k2o_per_ha": {
+              "value": "27.4 to 68.6",
+              "units": "kg K2O ha⁻¹ yr⁻¹",
+              "context": "Derived average annual K2O surplus range in Brazilian Cerrado Oxisols under cotton production systems."
+            },
+            "sustainability_years": {
+              "value": "Sustainable over 9 years under no-tillage with cover crops and adequate K inputs.",
+              "units": "years (observed)",
+              "context": "Observed K levels maintained above critical thresholds."
+            },
+            "depletion_rate": {
+              "value": "Conventional tillage leads to K mobilization and leaching from the root zone (almost half of detected K below 30 cm).",
+              "units": "qualitative",
+              "context": "Inferred from K distribution patterns."
+            },
+            "recovery_potential": {
+              "value": "No-tillage with ruzigrass improved K retention efficiency (63% of K2O surplus retained in 0-20 cm). Historical organic amendments led to long-term soil K enrichment.",
+              "units": "qualitative",
+              "context": "Observed K accumulation and improved retention."
+            },
+            "savanna_k_cycling": {
+              "value": "No-tillage enhances K circulation due to SOM accumulation and deep root system of ruzigrass.",
+              "units": "qualitative",
+              "context": "Observed K distribution patterns."
+            },
+            "deep_soil_k_reserves": {
+              "value": "Native Cerrado exchangeable K: 0.20-0.45 cmol c dm⁻³ (0-100cm).",
+              "units": "cmol c dm⁻³",
+              "context": "Measured in native Cerrado soils."
+            },
+            "root_zone_k_concentration": {
+              "value": "NTS: 0.53 cmol c dm⁻³ (0-20cm); CSTCSM: 0.26 cmol c dm⁻³ (0-20cm).",
+              "units": "cmol c dm⁻³",
+              "context": "Measured final exchangeable K after 9 years."
+            }
+          },
+          "uncertainty_quantification": {
+            "annual_kg_k2o_per_ha": "±15-20% (derived from cumulative data)",
+            "sustainability_years": "±20-30% (for extrapolation beyond 9 years)",
+            "depletion_rate": "High uncertainty for direct numerical rate.",
+            "recovery_potential": "Qualitative inference, high uncertainty for precise rate.",
+            "savanna_k_cycling": "Qualitative, high confidence for observed patterns.",
+            "deep_soil_k_reserves": "High confidence for characterization, but dynamic quantification is not available.",
+            "root_zone_k_concentration": "High confidence for measured values."
+          },
+          "confidence_level": 0.95,
+          "model_integration_guidance": "Directly apply K retention efficiencies and K stock values into regional K balance models. Use observed K distribution patterns to inform fertilizer placement strategies. Validate across diverse Oxisol sub-types."
+        },
+        {
+          "region": "brazil.atlantic_forest",
+          "k_supply_parameters": {
+            "annual_kg_k2o_per_ha": {
+              "value": "Not directly quantified.",
+              "units": "N/A",
+              "context": "No specific direct evidence."
+            },
+            "cleared_land_k_depletion": {
+              "value": "Implied from residue removal.",
+              "units": "qualitative",
+              "context": "Inferred from land-use change."
+            }
+          },
+          "uncertainty_quantification": {
+            "annual_kg_k2o_per_ha": "Very high uncertainty.",
+            "cleared_land_k_depletion": "High uncertainty for quantitative rates."
+          },
+          "confidence_level": 0.5,
+          "model_integration_guidance": "Requires regional-specific studies to quantify K dynamics under land-use change and forest regeneration."
+        },
+        {
+          "region": "brazil.amazon_fringe",
+          "k_supply_parameters": {
+            "annual_kg_k2o_per_ha": {
+              "value": "Not directly quantified.",
+              "units": "N/A",
+              "context": "No specific direct evidence."
+            },
+            "conversion_k_losses": {
+              "value": "Implied from agricultural expansion into new areas.",
+              "units": "qualitative",
+              "context": "Inferred from land-use change."
+            }
+          },
+          "uncertainty_quantification": {
+            "annual_kg_k2o_per_ha": "Very high uncertainty.",
+            "conversion_k_losses": "High uncertainty for quantitative rates."
+          },
+          "confidence_level": 0.4,
+          "model_integration_guidance": "Requires regional-specific studies to quantify K losses during deforestation and land conversion."
+        },
+        {
+          "region": "europe.central_europe",
+          "k_supply_parameters": {
+            "annual_kg_k2o_per_ha": {
+              "value": "-136.29 to 49.09",
+              "units": "kg K2O ha⁻¹ yr⁻¹",
+              "context": "Annual net K balance over 21 years in Czech Republic long-term experiments."
+            },
+            "sustainability_years": {
+              "value": "Unsustainable over 21 years in K-deficient systems. Long-term buffering capacity observed in high Kne reserves.",
+              "units": "years (observed)",
+              "context": "Based on observed depletion and stability of K pools."
+            },
+            "depletion_rate": {
+              "value": "-11.10 to -14.81",
+              "units": "mg K kg⁻¹ yr⁻¹",
+              "context": "Annual depletion rates for available K in control plots over 21 years."
+            },
+            "recovery_potential": {
+              "value": "24-26% (FYM) to 27-52% (Mineral NPK)",
+              "units": "%",
+              "context": "Potassium recovery rates over 21 years."
+            },
+            "temperate_soil_k_dynamics": {
+              "value": "Long-term K dynamics are influenced by soil type, parent material, and mineralogy.",
+              "units": "qualitative",
+              "context": "Process understanding."
+            },
+            "agricultural_k_management": {
+              "value": "Balanced fertilization (NPK + FYM) is crucial for maintaining K levels and sustainability.",
+              "units": "qualitative",
+              "context": "Management insights."
+            },
+            "long_term_sustainability": {
+              "value": "Demonstrated unsustainability over 21 years in K-deficient systems, but sustainability achievable with balanced inputs.",
+              "units": "qualitative",
+              "context": "Observed trends."
+            }
+          },
+          "uncertainty_quantification": {
+            "annual_kg_k2o_per_ha": "±25% (estimated based on typical field variability)",
+            "sustainability_years": "±30% (for inferring sustainability horizon)",
+            "depletion_rate": "±20% (estimated based on typical field variability)",
+            "recovery_potential": "±15% (estimated based on reported range)",
+            "temperate_soil_k_dynamics": "High confidence for process understanding.",
+            "agricultural_k_management": "High confidence for management insights.",
+            "long_term_sustainability": "High confidence for observed trends."
+          },
+          "confidence_level": 0.95,
+          "model_integration_guidance": "Directly apply annual K balance, depletion rates, and recovery potentials. Incorporate soil properties (texture, mineralogy) for site-specific adjustments. Validate against local yield data and soil test results."
+        },
+        {
+          "region": "europe.mediterranean",
+          "k_supply_parameters": {
+            "annual_kg_k2o_per_ha": {
+              "value": "Not directly quantified.",
+              "units": "N/A",
+              "context": "No specific direct evidence."
+            },
+            "dry_climate_k_cycling": {
+              "value": "Influenced by seasonal moisture availability (drying/wetting cycles).",
+              "units": "qualitative",
+              "context": "Conceptual understanding."
+            },
+            "seasonal_water_stress_effects": {
+              "value": "Can impact K uptake by plants.",
+              "units": "qualitative",
+              "context": "Conceptual understanding."
+            }
+          },
+          "uncertainty_quantification": {
+            "annual_kg_k2o_per_ha": "Very high uncertainty.",
+            "dry_climate_k_cycling": "High uncertainty for quantitative patterns.",
+            "seasonal_water_stress_effects": "High uncertainty for quantitative patterns."
+          },
+          "confidence_level": 0.5,
+          "model_integration_guidance": "Requires regional-specific studies to quantify K dynamics in Mediterranean climates and specific cropping systems (e.g., olive, vineyard)."
+        },
+        {
+          "region": "europe.northern_europe",
+          "k_supply_parameters": {
+            "annual_kg_k2o_per_ha": {
+              "value": "-39.6 to 42",
+              "units": "kg K2O ha⁻¹ yr⁻¹",
+              "context": "Average annual net K off-take and mineral K release in Scotland long-term grass experiment."
+            },
+            "sustainability_years": {
+              "value": "Unsustainable over 30 years without K replenishment. Easily weatherable K-bearing minerals could be depleted in two centuries.",
+              "units": "years (observed/projected)",
+              "context": "Based on observed depletion and mineralogical analysis."
+            },
+            "depletion_rate": {
+              "value": "38.7-39.6",
+              "units": "kg K ha⁻¹ yr⁻¹",
+              "context": "Average annual net K off-take over 30 years in K0 plots."
+            },
+            "recovery_potential": {
+              "value": "Mineral K release of 35-42 kg K2O ha⁻¹ yr⁻¹ is insufficient to meet crop demand.",
+              "units": "qualitative",
+              "context": "Observed deficit."
+            },
+            "cool_climate_k_dynamics": {
+              "value": "Slower mineral weathering rates (<5 kg K2O ha⁻¹ yr⁻¹).",
+              "units": "qualitative",
+              "context": "Process understanding."
+            },
+            "long_term_sustainability": {
+              "value": "Herbage K concentration and soil K declined over 30 years, indicating unsustainability.",
+              "units": "qualitative",
+              "context": "Observed trends."
+            }
+          },
+          "uncertainty_quantification": {
+            "annual_kg_k2o_per_ha": "±20% (from multi-decadal mass balance)",
+            "sustainability_years": "±30% (for projections, subject to assumptions)",
+            "depletion_rate": "±20% (from multi-decadal mass balance)",
+            "recovery_potential": "Qualitative, high confidence for observed insufficiency.",
+            "cool_climate_k_dynamics": "High confidence for process understanding.",
+            "long_term_sustainability": "High confidence for observed trends."
+          },
+          "confidence_level": 0.9,
+          "model_integration_guidance": "Directly applicable for modeling long-term K balance and mineral K release in similar temperate grassland systems. Provides valuable process understanding for cool climate K dynamics."
+        },
+        {
+          "region": "usa.great_plains",
+          "k_supply_parameters": {
+            "annual_kg_k2o_per_ha": {
+              "value": "Increasing K removal exceeding inputs (PNB K increased by 1.3% year⁻¹ from 1987-2012).",
+              "units": "qualitative",
+              "context": "Observed trend."
+            },
+            "sustainability_years": {
+              "value": "Long-term sustainability is challenged by increasing K deficits.",
+              "units": "years (inferred)",
+              "context": "Based on increasing PNB K trend."
+            },
+            "depletion_rate": {
+              "value": "1.3",
+              "units": "% year⁻¹",
+              "context": "Increase in PNB K for contiguous 48 states (1987-2012)."
+            },
+            "prairie_soil_k_reserves": {
+              "value": "Implied draw-down on soil K reserves.",
+              "units": "qualitative",
+              "context": "Inferred from increasing PNB K trend."
+            },
+            "cultivation_k_depletion": {
+              "value": "Intensive cultivation leads to K depletion.",
+              "units": "qualitative",
+              "context": "Inferred from increasing PNB K trend."
+            }
+          },
+          "uncertainty_quantification": {
+            "annual_kg_k2o_per_ha": "High uncertainty for specific values, high confidence for trend.",
+            "sustainability_years": "High uncertainty for precise projection.",
+            "depletion_rate": "±20% (for trend, not direct rate).",
+            "prairie_soil_k_reserves": "High uncertainty for quantification.",
+            "cultivation_k_depletion": "High confidence for observed impact."
+          },
+          "confidence_level": 0.7,
+          "model_integration_guidance": "Directly informs K depletion modeling. Requires more granular data on specific conservation practices and soil K reserves."
+        },
+        {
+          "region": "usa.southeastern_coastal",
+          "k_supply_parameters": {
+            "annual_kg_k2o_per_ha": {
+              "value": "K release from US Atlantic Coastal Plains soils: 67-92 mg K kg⁻¹ over 30 days.",
+              "units": "mg K kg⁻¹",
+              "context": "Measured in lab study."
+            },
+            "humid_climate_k_losses": {
+              "value": "Moderate losses (10–20 kg K ha⁻¹ yr⁻¹) in humid forests (analogous to SSA).",
+              "units": "kg K ha⁻¹ yr⁻¹",
+              "context": "Inferred from analogous climate."
+            },
+            "organic_k_stabilization": {
+              "value": "Organic matter can contribute to K stabilization.",
+              "units": "qualitative",
+              "context": "Conceptual understanding."
+            }
+          },
+          "uncertainty_quantification": {
+            "annual_kg_k2o_per_ha": "High uncertainty for annual field rates (lab to field extrapolation).",
+            "humid_climate_k_losses": "High uncertainty (analogous data).",
+            "organic_k_stabilization": "High uncertainty for quantification."
+          },
+          "confidence_level": 0.6,
+          "model_integration_guidance": "Requires dedicated regional studies to parameterize models effectively, potentially leveraging analogous data. Focus on K leaching and organic matter dynamics."
+        },
+        {
+          "region": "other_regions.general_other",
+          "k_supply_parameters": {
+            "annual_kg_k2o_per_ha": {
+              "value": "-9479 to 20",
+              "units": "kg K2O ha⁻¹ yr⁻¹",
+              "context": "Range of K balances from various regions (e.g., Sub-Saharan Africa, Australia, Morocco)."
+            },
+            "sustainability_years": {
+              "value": "Widespread unsustainability in many regions due to persistent negative K balances.",
+              "units": "years (inferred)",
+              "context": "Based on observed depletion trends."
+            },
+            "depletion_rate": {
+              "value": "7-49% decrease in soil available K over 15 years (Punjab, Pakistan).",
+              "units": "% decrease",
+              "context": "Observed in long-term monitoring."
+            },
+            "recovery_potential": {
+              "value": "China's shift from deficit to surplus demonstrates recovery potential with increased K inputs.",
+              "units": "qualitative",
+              "context": "Observed national trend."
+            },
+            "soil_k_processes": {
+              "value": "Comprehensive mechanistic insights into K processes: weathering, fixation, release, interconversion, and sorption/adsorption.",
+              "units": "qualitative",
+              "context": "Fundamental scientific understanding."
+            },
+            "management_effects": {
+              "value": "Intensive cultivation, high-yielding cultivars, crop residue removal, and insufficient potash fertilization are key drivers of soil K depletion.",
+              "units": "qualitative",
+              "context": "Management insights."
+            },
+            "temporal_dynamics": {
+              "value": "Empirical evidence of long-term (15-year) soil available K depletion and conceptual understanding of seasonal K fixation/release patterns.",
+              "units": "qualitative",
+              "context": "Observed trends and process understanding."
+            }
+          },
+          "uncertainty_quantification": {
+            "annual_kg_k2o_per_ha": "High uncertainty (varies by country, data quality).",
+            "sustainability_years": "High uncertainty for precise projection.",
+            "depletion_rate": "±20% (for observed trends, not specific rates).",
+            "recovery_potential": "Qualitative, high confidence for observed impact.",
+            "soil_k_processes": "High confidence for conceptual understanding.",
+            "management_effects": "High confidence for management insights.",
+            "temporal_dynamics": "High confidence for observed trends and conceptual understanding."
+          },
+          "confidence_level": 0.8,
+          "model_integration_guidance": "Provides process understanding and methodological insights for regions outside primary focus areas. Quantitative data can be used for comparative analysis and conceptual model development, with careful consideration of extrapolation and local validation."
+        }
+      ],
+      "demand_model_integration": {
+        "parameterization_approaches": [
+          "Direct input of annual K balance (surplus/deficit) for regional-scale models.",
+          "Use of optimal K application rates (e.g., for rice in China) as targets for fertilizer recommendations.",
+          "Integration of K removal rates by harvested crops (kg K2O/t yield) for specific crops and regions.",
+          "Incorporation of K recovery efficiencies for different fertilizer types and organic amendments.",
+          "Parameterization of K release kinetics from non-exchangeable pools based on soil mineralogy and moisture regimes.",
+          "Modeling of K buffering capacity based on soil test K and clay content/mineralogy."
+        ],
+        "scaling_relationships": {
+          "field_to_regional": "Requires geostatistical methods (e.g., Kriging) and spatial aggregation of point data. Uncertainty increases with heterogeneity.",
+          "temporal_scaling": "Extrapolating short-term kinetic data (lab) to annual/seasonal field rates requires robust scaling factors and validation. Long-term trends from multi-decadal experiments provide strong empirical basis for sustainability projections.",
+          "crop_to_system": "Aggregating K demand from individual crops to cropping system level requires accounting for rotation effects, residue management, and inter-crop K cycling."
+        },
+        "temporal_integration_methods": [
+          "Dynamic K cycling models that simulate K flows between different pools (solution, exchangeable, non-exchangeable, mineral) over time.",
+          "Annual K balance calculations (inputs - outputs) for long-term trend analysis.",
+          "Seasonal K budgeting to match crop demand with supply, especially in monsoon or dryland systems.",
+          "Modeling the impact of historical management practices on current soil K status."
+        ],
+        "uncertainty_propagation": "Conduct sensitivity analysis to identify key parameters influencing model outputs (e.g., K content in residues, leaching rates, initial soil K levels). Use Monte Carlo simulations or other probabilistic methods to quantify uncertainty in regional K supply and demand estimates. Acknowledge limitations from unmeasured K pools and complex environmental interactions."
+      }
+    },
+    "_usage_metadata": {
+      "timestamp": "2025-07-11T15:00:35.467092",
+      "stage_name": "stage_5a_chunk1",
+      "paper_id": "chunk1",
+      "prompt_length_chars": 579223,
+      "processing_time_seconds": 149.64,
+      "thinking_enabled": true,
+      "input_tokens": 138916,
+      "output_tokens": 25014,
+      "thinking_tokens": 0,
+      "input_cost_usd": 0.020837,
+      "output_cost_usd": 0.087549,
+      "thinking_cost_usd": 0.0,
+      "total_cost_usd": 0.108386
+    },
+    "stage": "5a_chunk1",
+    "chunk_number": 1,
+    "synthesis_timestamp": "2025-07-11T15:00:35.472803"
+  }
+}

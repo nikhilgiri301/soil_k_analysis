@@ -13,7 +13,7 @@ import os
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from utils.config import PATHS
+from utils.json_config import PATHS
 
 class ConfidenceScorer:
     """Conservative confidence scoring system for soil K literature synthesis"""
@@ -279,7 +279,7 @@ class ConfidenceScorer:
             "china": "china",
             "india": "india", 
             "brazil": "brazil",
-            "iran": "iran",
+            "europe": "europe",
             "usa": "usa",
             "united_states": "usa"
         }

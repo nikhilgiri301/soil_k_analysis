@@ -1,0 +1,537 @@
+{
+  "stage_id": "1a",
+  "stage_name": "Generic Extraction",
+  "paper_id": "A global dataset for the production and usage of cereal residues in the period 1997–2021",
+  "processing_timestamp": "2025-07-10T02:59:43.550939",
+  "processing_mode": "batch",
+  "batch_test": true,
+  "results": {
+    "paper_metadata": {
+      "title": "A global dataset for the production and usage of cereal residues in the period 1997–2021",
+      "authors": [
+        "Andrew Smerald",
+        "Jaber Rahimi",
+        "Clemens Scheer"
+      ],
+      "journal": "Scientific Data",
+      "publication_year": 2023,
+      "doi": "10.1038/s41597-023-02587-0",
+      "study_region": "Global",
+      "primary_focus": "Global dataset for cereal residue production and usage"
+    },
+    "research_methodology": {
+      "study_type": "modeling_study",
+      "experimental_design": "Data synthesis and modeling using an ensemble approach to estimate global cereal residue production and usage fractions.",
+      "temporal_scope": {
+        "study_duration_years": 25,
+        "data_collection_frequency": "Annual",
+        "seasonal_coverage": "Bedding requirements consider seasonal differences; some input data (GFED4s) is monthly.",
+        "monitoring_timeline": [
+          "1997-2021"
+        ]
+      },
+      "spatial_scope": {
+        "number_of_sites": 0,
+        "geographic_coverage": "Global",
+        "site_characteristics": [
+          "0.5° global grid cells, characterized by crop production, livestock systems, and GDP per capita."
+        ],
+        "coordinates": "0.5° global grid",
+        "regional_representativeness": "Global coverage with regional breakdowns (e.g., South Asia, East Asia, Europe, North America, etc.)"
+      },
+      "sample_design": {
+        "sample_sizes": {
+          "grid_cells": "Global 0.5° grid",
+          "years": 25
+        },
+        "replication_levels": "18 calculational schemes (ensemble members) for uncertainty quantification",
+        "randomization_approach": "Not applicable for this type of study",
+        "controls_and_treatments": [
+          "Different methods for calculating residue production (3 methods), biomass burning (2 datasets), and livestock feed requirements (3 methods) were combined to form an ensemble."
+        ],
+        "statistical_power": "Not explicitly stated, but global coverage and long time series imply high data volume."
+      },
+      "analytical_methods": {
+        "measurement_protocols": [
+          "Crop residue production: Grain production data (SPAM, FAOSTAT) converted using harvest indices (fixed ratios, exponential yield dependence, linear yield dependence).",
+          "On-field burning: Data from Global Fire Emissions Database (GFED4s) and Fire Inventory from NCAR (FINNv2.5).",
+          "Ruminant feed: Country-specific meat/milk production (FAOSTAT) apportioned to grid cells (GLW 3), converted via feed conversion ratios (FCRs) and crop residue feed fractions (CRFFs) from Herrero et al., Mekonnen and Hoekstra, Mottet et al.",
+          "Animal bedding and horse feed: Estimated daily requirements (kg/day) applied globally using GLW 3 animal populations.",
+          "Other off-field uses: Determined by country GDP per capita (World Bank definition of poor/rich countries) and crop residue availability, with linear interpolation for middle-income countries.",
+          "Residues left on field: Calculated as the remainder after other usages, subject to minimum and maximum limits."
+        ],
+        "instrumentation": [
+          "Satellite observations (for GFED4s, FINNv2.5)"
+        ],
+        "quality_control": [
+          "Grain production scaled to match FAO data.",
+          "Total biomass burning capped at 90% of cereal residue production in each grid cell.",
+          "Trade correction for animal residue usage: deficit grid cells allowed to import from surplus cells (max 1000 km distance).",
+          "Remaining deficits in animal usage set to zero.",
+          "Residue removal (burning + animal + other) capped at 90% of production.",
+          "Minimum 10% of residues assumed to be left on field (due to removal difficulty).",
+          "Maximum limits for residues left on field imposed in specific countries/regions (China 60%, Europe 70%, North America/Oceania 80%)."
+        ],
+        "detection_limits": {
+          "residues_left_on_field_minimum": "10% of total production"
+        },
+        "analytical_precision": {
+          "uncertainty_quantification_method": "Ensemble of 18 calculational schemes",
+          "range_of_values": "Provided for global average usage (e.g., Animal usage: 950-1140 Tg/yr)"
+        }
+      },
+      "statistical_approach": {
+        "analysis_methods": [
+          "Averaging of results from multiple input data/methods.",
+          "Linear interpolation for 'other off-field uses' based on GDP per capita.",
+          "Linear regression analysis for validation against literature values."
+        ],
+        "significance_testing": "Not explicitly mentioned for the dataset generation, but R-squared values are reported for validation.",
+        "uncertainty_quantification": "Ensemble approach using 18 combinations of input data/methods to define a measure of uncertainty (range of values).",
+        "model_validation": "Comparison of dataset estimates with independent literature values for cereal residue production and fractional usage at country and regional levels."
+      }
+    },
+    "quantitative_findings": {
+      "primary_measurements": [
+        {
+          "parameter": "Global Cereal Residue Production (average over 1997-2021)",
+          "values": [
+            3340
+          ],
+          "units": "Tg/yr",
+          "statistical_measures": {
+            "mean": 3340,
+            "standard_error": null,
+            "confidence_interval": null,
+            "sample_size": 25
+          },
+          "measurement_context": "Sum of average usage categories (Animal, Left on field, Other, Burnt) over the period 1997-2021."
+        },
+        {
+          "parameter": "Global Cereal Residue Production (specific years)",
+          "values": [
+            2930,
+            2930,
+            3900
+          ],
+          "units": "Tg",
+          "statistical_measures": {
+            "mean": null,
+            "standard_error": null,
+            "confidence_interval": null,
+            "sample_size": null
+          },
+          "measurement_context": "Estimated production in 1997, 2001, and 2020 respectively, used for validation against literature."
+        },
+        {
+          "parameter": "Global Cereal Residue Usage: Animal Feed/Bedding (average 1997-2021)",
+          "values": [
+            1100
+          ],
+          "units": "Tg/yr",
+          "statistical_measures": {
+            "mean": 1100,
+            "standard_error": null,
+            "confidence_interval": "950 - 1140 Tg/yr",
+            "sample_size": 25
+          },
+          "measurement_context": "Average across the period, with range from 18 calculational schemes. Represents 33% (30-34%) of total usage."
+        },
+        {
+          "parameter": "Global Cereal Residue Usage: Left on Field (average 1997-2021)",
+          "values": [
+            1490
+          ],
+          "units": "Tg/yr",
+          "statistical_measures": {
+            "mean": 1490,
+            "standard_error": null,
+            "confidence_interval": "1310 - 1720 Tg/yr",
+            "sample_size": 25
+          },
+          "measurement_context": "Average across the period, with range from 18 calculational schemes. Represents 45% (42-47%) of total usage."
+        },
+        {
+          "parameter": "Global Cereal Residue Usage: Other Off-Field Purposes (average 1997-2021)",
+          "values": [
+            540
+          ],
+          "units": "Tg/yr",
+          "statistical_measures": {
+            "mean": 540,
+            "standard_error": null,
+            "confidence_interval": "430 - 680 Tg/yr",
+            "sample_size": 25
+          },
+          "measurement_context": "Average across the period, with range from 18 calculational schemes. Represents 16% (14-19%) of total usage."
+        },
+        {
+          "parameter": "Global Cereal Residue Usage: Burnt on Field (average 1997-2021)",
+          "values": [
+            210
+          ],
+          "units": "Tg/yr",
+          "statistical_measures": {
+            "mean": 210,
+            "standard_error": null,
+            "confidence_interval": null,
+            "sample_size": 25
+          },
+          "measurement_context": "Average across the period. Represents 6% (5-8%) of total usage."
+        }
+      ],
+      "statistical_relationships": [
+        {
+          "relationship_type": "Linear Regression (Dataset vs. Literature Production)",
+          "variables": [
+            "Dataset Cereal Residue Production",
+            "Literature Cereal Residue Production"
+          ],
+          "correlation_coefficient": null,
+          "regression_parameters": {
+            "coefficient_of_best_fit": 0.98
+          },
+          "significance_level": null,
+          "effect_size": "r^2 = 0.96"
+        },
+        {
+          "relationship_type": "Linear Regression (Dataset vs. Literature Fractional Usage)",
+          "variables": [
+            "Dataset Fractional Cereal Residue Usage",
+            "Literature Fractional Cereal Residue Usage"
+          ],
+          "correlation_coefficient": null,
+          "regression_parameters": {
+            "coefficient_of_best_fit": 1.05
+          },
+          "significance_level": null,
+          "effect_size": "r^2 = 0.70"
+        }
+      ],
+      "temporal_patterns": [
+        {
+          "parameter": "Global Cereal Residue Management",
+          "trend_description": "Time series available for 1997-2021, showing changes in production and usage fractions over time (visualized in Fig. 1f). Specific rates of change are not quantified in text.",
+          "rate_of_change": null,
+          "units_per_time": null,
+          "trend_significance": null,
+          "seasonal_component": "Not explicitly modeled for overall usage, but seasonal differences are considered for animal bedding requirements."
+        }
+      ],
+      "comparative_results": [
+        {
+          "comparison_type": "Cereal Residue Production (Global)",
+          "groups_compared": [
+            "Our estimates",
+            "Literature values"
+          ],
+          "difference_magnitude": null,
+          "units": "Tg",
+          "statistical_significance": "Close agreement (e.g., Our 2930 Tg in 1997 vs. Smil et al. 2500 Tg; Our 3900 Tg in 2020 vs. Shinde et al. 3860 Tg).",
+          "practical_significance": "High confidence in production estimates."
+        },
+        {
+          "comparison_type": "Burnt Fractions (Global)",
+          "groups_compared": [
+            "Our estimates",
+            "Literature values (FAO)"
+          ],
+          "difference_magnitude": null,
+          "units": "%",
+          "statistical_significance": "Our estimates (5-8%) are typically lower than FAO (10-11% for rice, wheat, maize).",
+          "practical_significance": "Discrepancy noted, potentially due to satellite data not capturing all fires or methodological issues with other approaches (e.g., farmer surveys)."
+        },
+        {
+          "comparison_type": "Burnt Fractions (China)",
+          "groups_compared": [
+            "Our estimates",
+            "Literature values"
+          ],
+          "difference_magnitude": null,
+          "units": "%",
+          "statistical_significance": "Our estimates (2-5%) are lower than literature (9-27%).",
+          "practical_significance": "Discrepancy noted."
+        },
+        {
+          "comparison_type": "Burnt Fractions (India)",
+          "groups_compared": [
+            "Our estimates",
+            "Literature values"
+          ],
+          "difference_magnitude": null,
+          "units": "%",
+          "statistical_significance": "Our estimates (5-7%) are lower than literature (9-20%).",
+          "practical_significance": "Discrepancy noted."
+        },
+        {
+          "comparison_type": "Residues Returned to Field (China)",
+          "groups_compared": [
+            "Our estimates",
+            "Literature values"
+          ],
+          "difference_magnitude": null,
+          "units": "%",
+          "statistical_significance": "Good match (Our 47% in 2009 vs. Lit 46%; Our 51% in 2019 vs. Lit 52%).",
+          "practical_significance": "High confidence in estimates for China."
+        },
+        {
+          "comparison_type": "Residues Returned to Field (Australia)",
+          "groups_compared": [
+            "Our estimates",
+            "Australian Bureau of Statistics"
+          ],
+          "difference_magnitude": null,
+          "units": "%",
+          "statistical_significance": "Good agreement (Our 74% in 2012 vs. ABS 76%).",
+          "practical_significance": "High confidence in estimates for Australia."
+        }
+      ]
+    },
+    "environmental_context": {
+      "geographic_details": {
+        "countries": [],
+        "regions": [],
+        "coordinates": "Global 0.5° grid",
+        "elevation": null,
+        "landscape_position": null
+      },
+      "climate_characteristics": {
+        "climate_classification": null,
+        "temperature_patterns": {},
+        "precipitation_patterns": {},
+        "growing_season": null,
+        "environmental_stressors": [
+          "Drought (reduced sensitivity of plant growth to drought with residue retention)"
+        ]
+      },
+      "soil_properties": {
+        "soil_classification": null,
+        "texture": null,
+        "organic_matter": "Enhanced soil organic carbon (SOC) stocks due to residues left on field.",
+        "chemical_properties": {
+          "nutrients": "Better retention of nutrients (e.g., C and N) in the soil."
+        },
+        "physical_properties": {
+          "erosion_rates": "Lower erosion rates",
+          "aeration": "Better soil aeration"
+        },
+        "mineralogy": null
+      },
+      "land_use_context": {
+        "current_land_use": "Agricultural land (cereal cropping systems)",
+        "cropping_systems": [
+          "Cereal cropping systems"
+        ],
+        "management_intensity": "Implied by different residue management options (e.g., burning, removal, retention).",
+        "historical_context": "Mid-1990s China (crop residues as domestic fuel).",
+        "sustainability_metrics": [
+          "Soil organic carbon (SOC) stocks",
+          "Greenhouse gas emissions (CH4, N2O)",
+          "Nutrient balances"
+        ]
+      }
+    },
+    "agricultural_systems": {
+      "crop_information": {
+        "crop_types": [
+          "Barley",
+          "Maize",
+          "Rice",
+          "Wheat",
+          "Millet",
+          "Sorghum",
+          "Other cereals"
+        ],
+        "varieties_cultivars": [],
+        "growth_stages_studied": [],
+        "yield_levels": {
+          "grain_yield_input": "Mg/ha (used to estimate residue production)"
+        },
+        "production_metrics": {
+          "cereal_residue_production": "Mg/year (estimated output)"
+        }
+      },
+      "management_practices": {
+        "fertilization": {
+          "types": [],
+          "rates": {},
+          "timing": [],
+          "application_methods": []
+        },
+        "irrigation": {
+          "system_type": null,
+          "water_amounts": {},
+          "scheduling": null
+        },
+        "other_practices": {
+          "tillage": "Residue burning clears the way for subsequent planting (implying reduced tillage needs or ease of tillage).",
+          "rotation": [],
+          "pest_management": "Residue burning helps to control pests and diseases.",
+          "organic_amendments": [
+            "Crop residues (when left on field)"
+          ]
+        }
+      },
+      "input_output_relationships": {
+        "input_rates": {
+          "livestock_feed_conversion_ratios": "Vary by animal type, production type, livestock production system, and climate.",
+          "livestock_crop_residue_feed_fractions": "Vary by animal type, production type, livestock production system, and climate.",
+          "animal_bedding_requirements": "0.375 kg/day for cattle, 0.1 kg/day for sheep/goats, 1.5 kg/day for horses, 0.0625 kg/day for pigs."
+        },
+        "output_measurements": {
+          "meat_production": "Country-specific (FAOSTAT)",
+          "milk_production": "Country-specific (FAOSTAT)"
+        },
+        "efficiency_metrics": {
+          "feed_conversion_ratios": "Quantity of feed (kg-dry-matter) required to produce a given quantity of meat or milk protein at herd level."
+        },
+        "balance_calculations": {
+          "residue_balance": "Residue production = sum of burnt, animal usage, other usage, and left on field."
+        }
+      }
+    },
+    "temporal_dynamics": {
+      "study_timeline": {
+        "start_date": "1997",
+        "end_date": "2021",
+        "data_collection_schedule": [
+          "Annual"
+        ],
+        "monitoring_frequency": "Annual"
+      },
+      "seasonal_variations": [
+        {
+          "parameter": "Animal Bedding Usage",
+          "seasonal_pattern": "Considered in calculations",
+          "peak_periods": [],
+          "minimum_periods": [],
+          "amplitude": null
+        }
+      ],
+      "long_term_trends": [
+        {
+          "parameter": "Global Crop Residue Production and Usage",
+          "trend_direction": "Visualized in time series (Fig. 1f), showing changes over 1997-2021.",
+          "trend_magnitude": null,
+          "trend_units": null,
+          "projection_timeframe": null,
+          "sustainability_implications": "Dataset can be used to assess long-term environmental impacts and trade-offs of residue management."
+        }
+      ],
+      "variability_characterization": {
+        "inter_annual_variability": "Captured by the annual time series data.",
+        "spatial_variability": "Captured by the 0.5° global grid resolution.",
+        "measurement_uncertainty": "Quantified by the range from the 18 calculational schemes.",
+        "drivers_of_variability": [
+          "Grain yields (for residue production)",
+          "Livestock populations and production systems (for animal usage)",
+          "GDP per capita (for other off-field uses)",
+          "Availability of other fuels (for domestic fuel use)"
+        ]
+      }
+    },
+    "data_quality_assessment": {
+      "methodological_strengths": [
+        "First publicly-available global dataset for crop residue management.",
+        "Covers a long period (1997–2021) at a relatively fine spatial scale (0.5° resolution).",
+        "Estimates total production and four usage fractions (burnt, animal feed/bedding, other off-field, left on field).",
+        "Uses an ensemble of 18 calculational schemes to quantify uncertainty.",
+        "Validated against existing literature values for production and usage."
+      ],
+      "methodological_limitations": [
+        "Reliance on existing global datasets as inputs, which may have their own limitations.",
+        "Assumptions made for certain parameters (e.g., 90% cap on burning, 1000 km trade distance for residues, specific bedding requirements, GDP-based limits for other off-field uses).",
+        "Discrepancies between satellite-derived burning estimates and literature values (e.g., from farmer surveys).",
+        "Lack of global data for 'other off-field uses' and 'left on field' necessitates imposing limits and assumptions."
+      ],
+      "data_completeness": "Good overall, but specific data gaps are identified for future improvements.",
+      "measurement_precision": {
+        "uncertainty_range": "Quantified by the range across the 18 calculational schemes (e.g., global animal usage 950-1140 Tg/yr)."
+      },
+      "representativeness": {
+        "spatial_representativeness": "High, global coverage at 0.5° resolution.",
+        "temporal_representativeness": "High, covers 25 years (1997-2021) annually.",
+        "system_representativeness": "Limited to cereal residues, which account for the majority (73% in 2020) of crop residue production."
+      },
+      "uncertainty_sources": [
+        "Different methods for determining crop residue production (3 methods).",
+        "Different datasets for agricultural biomass burning (2 datasets).",
+        "Different methods for estimating livestock feed requirements (3 methods).",
+        "Assumptions and imposed limits for residue allocation (e.g., 90% cap, trade, GDP-based usage, min/max left on field)."
+      ],
+      "validation_evidence": [
+        "Close agreement with literature values for global cereal residue production (r^2 = 0.96).",
+        "Good agreement with literature values for fractional crop-residue usage (r^2 = 0.70), though burnt fractions show discrepancies."
+      ]
+    },
+    "literature_integration": {
+      "key_methodological_references": [
+        "Spatial Production Allocation Model (SPAM) [42,43]",
+        "FAOSTAT [9]",
+        "Global Fire Emissions Database (GFED4s) [45,46]",
+        "The Fire Inventory from NCAR (FINNv2.5) [47,48]",
+        "Global Distribution of Ruminant Livestock Production Systems (GRPS 5) [55]",
+        "Gridded Livestock of the World (GLW 3) [50–53,56,57]",
+        "Herrero et al. [2] (for FCRs and CRFFs)",
+        "Mekonnen and Hoekstra [54] (for FCRs)",
+        "Mottet et al. [3] (for FCRs and CRFFs)"
+      ],
+      "comparative_studies": [
+        "Smil et al. [67]",
+        "Lal et al. [13]",
+        "Shinde et al. [18]",
+        "Li et al. [11]",
+        "Jiang et al. [62]",
+        "Xinxin et al. [63]",
+        "Australian Bureau of Statistics [65]"
+      ],
+      "theoretical_framework": "Crop residue management plays a crucial role in agricultural greenhouse gas emissions, soil carbon stocks, livestock feed availability, domestic fuel, and bioenergy production.",
+      "data_sources": [
+        "SPAM (Spatial Production Allocation Model)",
+        "FAOSTAT",
+        "GFED4s (Global Fire Emissions Database)",
+        "FINNv2.5 (The Fire Inventory from NCAR)",
+        "GRPS 5 (Global Distribution of Ruminant Livestock Production Systems)",
+        "GLW 3 (Gridded Livestock of the World)"
+      ],
+      "benchmarking_data": [
+        "Literature estimates for global and regional cereal residue production and usage fractions."
+      ],
+      "validation_studies": [
+        "Studies cited in the 'Technical Validation' section (e.g., [11,13,15,38,40,41,60–63,68–75] for production; [9,11,40,60–63,65,68–71,73,75–80] for fractional usage)."
+      ]
+    },
+    "extraction_metadata": {
+      "extraction_completeness": 0.95,
+      "data_richness_assessment": "The paper is a data descriptor, providing extensive detail on methodology, data sources, and validation, leading to high data richness for extraction.",
+      "confidence_in_extraction": 0.95,
+      "potential_ambiguities": [
+        "The exact global average total production is not explicitly stated as a single number but is derived from the sum of average usages.",
+        "The 'Other cereals' parameters in Table 2 are generic, not specific cultivars."
+      ],
+      "extraction_limitations": [
+        "Some fields in the JSON schema (e.g., specific instrumentation models, detailed QC procedures beyond general descriptions, specific coordinates for sites) are not explicitly provided in the paper text."
+      ],
+      "quality_flags": [],
+      "recommended_validation_checks": [
+        "Cross-verify the numerical values and ranges from Fig. 1e and 1f with the text description.",
+        "Ensure consistency of units for all quantitative data."
+      ]
+    },
+    "_usage_metadata": {
+      "timestamp": "2025-07-10T02:59:03.030786",
+      "stage_name": "stage_1a",
+      "paper_id": "A global dataset for the production and usage of cereal residues in the period 1997–2021",
+      "prompt_length_chars": 62337,
+      "processing_time_seconds": 71.31,
+      "thinking_enabled": true,
+      "input_tokens": 18782,
+      "output_tokens": 6134,
+      "thinking_tokens": 0,
+      "input_cost_usd": 0.002817,
+      "output_cost_usd": 0.021469,
+      "thinking_cost_usd": 0.0,
+      "total_cost_usd": 0.024286
+    }
+  }
+}

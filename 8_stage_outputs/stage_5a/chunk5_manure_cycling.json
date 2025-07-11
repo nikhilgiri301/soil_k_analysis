@@ -1,0 +1,508 @@
+{
+  "stage_id": "5a_chunk5",
+  "stage_name": "Chunk 5 Synthesis",
+  "paper_id": "chunk5",
+  "run_type": "chunk_synthesis",
+  "processing_timestamp": "2025-07-11T15:28:38.235743",
+  "processing_time_seconds": 77.35701084136963,
+  "token_usage": {
+    "input": 54444,
+    "output": 8003,
+    "thinking": 0
+  },
+  "estimated_cost_usd": 0.237754,
+  "results": {
+    "manure_cycling_synthesis_metadata": {
+      "synthesis_scope": "Comprehensive synthesis of organic K cycling, mineralization dynamics, and organic amendment effects on soil K availability in agricultural systems.",
+      "papers_integrated": 23,
+      "evidence_pieces_synthesized": 183,
+      "organic_amendment_types_covered": [
+        "Farmyard Manure (FYM)",
+        "Crop Residues (cereal, sugarcane)",
+        "Vinasse",
+        "Press Mud",
+        "Cover Crops (Urochloa ruziziensis)",
+        "Organic Materials (general)"
+      ],
+      "synthesis_confidence": 0.75,
+      "synthesis_approach": "Systematic integration of quantitative and qualitative evidence from diverse agricultural contexts, weighted by experimental rigor, temporal coverage, and directness of measurement. Mechanistic insights are balanced with applied management implications, and uncertainties are transparently communicated."
+    },
+    "organic_k_cycling_process_synthesis": {
+      "mineralization_kinetics": {
+        "first_order_rate_constants": {
+          "range": [],
+          "typical": 0,
+          "units": "N/A",
+          "confidence": 0.2
+        },
+        "temperature_dependence": {
+          "q10_coefficient": 0,
+          "optimal_temperature": 0
+        },
+        "moisture_dependence": "While moisture influences overall K dynamics (e.g., seasonal fixation/release of mineral K, leaching), direct quantitative relationships for organic K mineralization rates are not explicitly provided. Inferred that decomposition, and thus K release, is sensitive to moisture conditions.",
+        "soil_type_effects": "Indirectly inferred that soil properties influencing organic matter decomposition (e.g., texture, aggregation) would affect organic K mineralization, but no specific quantitative differences are provided for organic K across soil types. Mineral K release kinetics show soil type dependence (e.g., Vertisols > Alfisols > Inceptisols for illite K release).",
+        "seasonal_variation_patterns": "Organic K release is implied to be continuous over time, with sustained contributions from FYM. Crop residue return provides an annual pulse of K, which then becomes available through decomposition. Specific seasonal mineralization patterns for organic K are not quantified.",
+        "evidence_strength": "low"
+      },
+      "stabilization_mechanisms": {
+        "physical_protection_processes": "Implied through the incorporation of organic matter (e.g., FYM, crop residues) into soil, which can physically protect K from rapid leaching or uptake by binding it within organic structures or aggregates.",
+        "chemical_stabilization_mechanisms": "K+ is adsorbed non-specifically on exchange sites of soil colloid complexes, including humus colloids, contributing to its retention and stabilization within the organic matter matrix. This reduces rapid loss and maintains available K pools.",
+        "biological_protection_processes": "Not explicitly detailed in the provided evidence. While microbial activity is crucial for decomposition, direct evidence on microbial immobilization or stabilization of K within biomass is not provided.",
+        "stabilization_efficiency_factors": [
+          "Application of Farmyard Manure (FYM)",
+          "Crop residue retention",
+          "Increased soil organic matter (SOM) content",
+          "Enhanced cation exchange capacity (CEC) due to SOM"
+        ],
+        "long_term_stability_assessment": "Integrated Nutrient Management (FYM + NPK) maintained higher available K pools and reduced the magnitude of non-exchangeable K reduction over decades, suggesting long-term stabilization of K within the soil system, partly attributed to organic matter.",
+        "evidence_strength": "medium"
+      },
+      "microbial_cycling_processes": {
+        "microbial_k_immobilization": "Not directly addressed in the provided evidence.",
+        "microbial_k_mineralization": "Implied as a fundamental process driving K release from decomposing organic matter, but no specific rates or mechanisms are quantified.",
+        "microbial_biomass_k_turnover": "Not directly addressed in the provided evidence.",
+        "enzyme_k_cycling_roles": "Not directly addressed in the provided evidence.",
+        "microbial_community_k_effects": "Not directly addressed in the provided evidence.",
+        "evidence_strength": "low"
+      }
+    },
+    "manure_type_k_cycling_synthesis": {
+      "fresh_manure_cycling": {
+        "immediate_k_availability": {
+          "percentage": 0,
+          "confidence": 0.0
+        },
+        "short_term_release_pattern": "Fresh manure, especially if poorly stored, is prone to significant K losses (e.g., leaching) due to its high water content and readily soluble K forms. This implies a rapid initial release of K upon application, but also a high risk of loss if not managed effectively.",
+        "k_loss_risk_assessment": "High risk of potash loss from stored Farmyard Manure (FYM) due to leaching and other forms of loss if stored in the open for long periods.",
+        "optimal_management_strategies": [
+          "Proper storage to minimize leaching losses",
+          "Timely application to synchronize with crop demand"
+        ],
+        "evidence_quality": "medium"
+      },
+      "composted_manure_cycling": {
+        "slow_release_characteristics": "Composting is implied to stabilize organic matter, which would lead to a slower, more sustained release of K compared to fresh manure. This is inferred from the general benefits of composting, though specific K release kinetics for compost are not provided.",
+        "k_retention_benefits": "Composting is expected to reduce K losses during storage and enhance K retention in the soil due to the formation of more stable organic compounds and increased cation exchange capacity.",
+        "stability_advantages": "Composted materials offer greater stability, reducing immediate K loss risks and providing a more predictable, long-term K supply.",
+        "application_rate_optimization": {},
+        "evidence_quality": "low"
+      },
+      "liquid_manure_cycling": {
+        "rapid_k_availability": "Liquid manures (slurries) are expected to have rapid K availability due to K being largely in soluble forms. This allows for quick uptake by crops.",
+        "application_timing_critical_factors": [
+          "Synchronization with peak crop demand to maximize uptake",
+          "Minimizing runoff and leaching risks due to rapid availability"
+        ],
+        "loss_prevention_strategies": [
+          "Appropriate application methods (e.g., injection)",
+          "Avoiding application before heavy rainfall"
+        ],
+        "precision_application_benefits": "Precision application can optimize the use of liquid manure K, reducing losses and improving nutrient use efficiency.",
+        "evidence_quality": "medium"
+      },
+      "species_specific_differences": [
+        {
+          "manure_source": "Farmyard Manure (FYM)",
+          "k_content_characteristics": {
+            "variability": "Wide variability in nutrient content, including K, depending on animal type, feed, bedding, and storage conditions. Laboratory analysis is strongly advocated for accurate K determination."
+          },
+          "cycling_rate_differences": "Implied to provide sustained K release over time, contributing to higher available K pools and K release rates when combined with mineral fertilizers.",
+          "management_implications": [
+            "Regular analysis of FYM for accurate K budgeting",
+            "Integration with mineral fertilizers for balanced K supply"
+          ],
+          "evidence_strength": "high"
+        },
+        {
+          "manure_source": "Crop Residues (Cereal, Sugarcane)",
+          "k_content_characteristics": {
+            "cereal_residues_global_average_left_on_field": "1490 Tg/year (1997-2021)",
+            "sugarcane_residues_k_return": "Mean 244 kg K2O ha-1 (range 2-477 kg K2O ha-1) in dry leaves + tops at harvest."
+          },
+          "cycling_rate_differences": "K from crop residues is released through decomposition, providing a continuous input to the soil K pool. Deep-rooted cover crops (e.g., Urochloa ruziziensis) can recover K from deeper layers and cycle it to the topsoil via residue decomposition.",
+          "management_implications": [
+            "Residue retention (e.g., green cane management, no-tillage) is crucial for K recycling and maintaining K balance.",
+            "Removal of crop residues contributes to K depletion."
+          ],
+          "evidence_strength": "high"
+        }
+      ]
+    },
+    "soil_manure_k_synergy_synthesis": {
+      "priming_effects": {
+        "native_soil_k_mobilization": "Integrated Nutrient Management (FYM + NPK) maintained higher available K pools and K release, and further reduced the magnitude of non-exchangeable K reduction compared to NPK alone. This suggests that organic amendments can enhance the mobilization of native soil K reserves, potentially through biological or chemical interactions.",
+        "priming_magnitude_quantification": {},
+        "priming_duration_patterns": "Implied to be a long-term effect, contributing to sustained K availability over decades.",
+        "soil_type_priming_differences": "Observed across different Indian soil types (Vertisols, Alfisols, Inceptisols), suggesting broad applicability, though specific differences in priming magnitude were not quantified.",
+        "management_priming_optimization": "Combining FYM with mineral fertilizers is an effective strategy to leverage these synergistic effects and improve overall K supply.",
+        "evidence_strength": "medium"
+      },
+      "cation_exchange_enhancement": {
+        "organic_matter_cec_contributions": "Increased soil organic matter (SOM) directly enhances soil cation exchange capacity (CEC). Humus colloids provide non-specific adsorption sites for K+.",
+        "k_retention_improvements": "The enhanced CEC due to organic matter leads to improved K retention in the soil, reducing leaching losses and increasing the buffering capacity of the soil K pool.",
+        "exchange_site_quality_effects": "Organic matter provides a dynamic pool of exchange sites that can hold K in a readily available form for plants.",
+        "buffering_capacity_enhancements": "By increasing CEC, organic matter contributes significantly to the soil's buffering capacity, stabilizing soil solution K concentrations and ensuring a more consistent supply to plants.",
+        "evidence_strength": "high"
+      },
+      "ph_k_interaction_effects": {
+        "organic_amendment_ph_effects": "The provided evidence does not directly quantify the pH modification effects of organic amendments on K availability. However, organic matter generally contributes to soil pH buffering.",
+        "ph_k_availability_relationships": {},
+        "liming_organic_k_synergies": "Not directly addressed in the provided evidence.",
+        "ph_buffering_k_benefits": "Implied that organic matter's general pH buffering capacity would indirectly benefit K availability by maintaining optimal pH ranges for K solubility and plant uptake.",
+        "evidence_strength": "low"
+      }
+    },
+    "organic_matter_k_contribution_synthesis": {
+      "k_storage_capacity_assessment": {
+        "organic_matter_k_retention": {
+          "kg_k_per_percent_om": 0,
+          "confidence": 0.0
+        },
+        "long_term_k_sequestration": "Long-term application of organic amendments (e.g., vinasse, press mud) has led to significant soil K enrichment and accumulation over time, demonstrating the long-term K sequestration capacity of organic matter.",
+        "organic_k_pool_stability": "K adsorbed to humus colloids and incorporated into stable organic forms contributes to a more stable K pool, reducing rapid losses and providing a sustained supply.",
+        "soil_building_k_contributions": "Organic matter contributes to overall soil health and fertility, including K dynamics, by enhancing CEC, improving soil structure, and providing a reservoir for K.",
+        "evidence_quality": "medium"
+      },
+      "k_release_timing_patterns": {
+        "early_season_k_release": "Implied rapid release from fresh organic materials (e.g., liquid manures) and readily decomposable crop residues, providing K for early crop growth.",
+        "growing_season_k_supply": "Decomposition of organic matter (e.g., FYM, crop residues) provides a sustained release of K throughout the growing season, complementing mineral fertilizer inputs.",
+        "post_harvest_k_cycling": "Crop residues returned to the field at harvest (e.g., sugarcane dry leaves and tops, cereal straw) represent a significant annual K input that cycles back into the soil through decomposition.",
+        "annual_k_cycling_patterns": "Organic matter contributions are typically annual (e.g., residue return, manure application), influencing the annual K balance and long-term soil K trends.",
+        "evidence_quality": "medium"
+      },
+      "buffering_capacity_contributions": {
+        "k_supply_buffering": "Organic matter enhances the soil's buffering capacity for K by providing exchange sites and contributing to a dynamic equilibrium between different K pools. This helps stabilize soil solution K concentrations against fluctuations from uptake or fixation.",
+        "demand_synchronization": "The sustained release of K from decomposing organic matter can help synchronize K supply with crop demand, particularly for crops with prolonged uptake periods.",
+        "stress_mitigation_effects": "By improving overall soil health and K availability, organic matter can indirectly contribute to plant resilience under K stress, though direct evidence for this specific effect is limited.",
+        "resilience_enhancement": "Long-term organic matter inputs enhance the soil's inherent K supplying capacity and resilience to depletion, as demonstrated by the maintenance of higher available K pools.",
+        "evidence_quality": "medium"
+      }
+    },
+    "management_optimization_synthesis": {
+      "application_timing_optimization": [
+        {
+          "timing_strategy": "General Organic Material Application",
+          "k_cycling_benefits": "Ensures K availability for the 'next crop' and minimizes losses from storage.",
+          "crop_synchronization_effectiveness": "Implied that timely application can improve synchronization, but specific timing strategies for organic K are not detailed.",
+          "loss_minimization_benefits": "Reduces potash loss from leaching during storage.",
+          "practical_implementation": "Requires consideration of storage conditions and crop nutrient demand cycles.",
+          "evidence_strength": "medium"
+        }
+      ],
+      "application_rate_relationships": {
+        "optimal_rate_ranges": {
+          "rice_optimal_k_application": "115.02 to 136.90 kg K ha⁻¹ (for yield and quality, from mineral K fertilizer)",
+          "k_to_increase_k_index": "100-800 kg K2O/ha to increase exchangeable K by 60 mg/l (e.g., Sand: 100 kg K2O/ha, Clay: 800 kg K2O/ha, from mineral K fertilizer)"
+        },
+        "diminishing_returns_thresholds": "Implied by the identification of optimal application rates for mineral K, beyond which yield or quality benefits plateau.",
+        "over_application_risks": "While not explicitly quantified for organic K, over-application of K (e.g., in regions with high K surpluses like Southeast China) can lead to unnecessary accumulation and potential environmental concerns.",
+        "biogeochemical_optimization_rates": {
+          "k_input_for_neutral_balance": "163 kg K/ha/year (in a long-term experiment, from mineral K fertilizer)"
+        },
+        "environmental_safety_margins": {}
+      },
+      "integration_strategies": {
+        "organic_inorganic_combinations": "Integrated Nutrient Management (INM), combining Farmyard Manure (FYM) with mineral NPK fertilizers, is highly effective. It maintained higher available K pools, enhanced K release, and significantly reduced the depletion of non-exchangeable K compared to mineral NPK alone.",
+        "complementary_k_source_benefits": "Organic amendments provide a sustained K supply, improve soil health, and enhance the efficiency of mineral K fertilizers, acting as a crucial complement to synthetic inputs.",
+        "synergistic_management_approaches": [
+          "FYM + NPK application for sustained K availability and reduced depletion.",
+          "No-tillage systems combined with cover crops (e.g., Urochloa ruziziensis) for enhanced K cycling, deep K recovery, and improved K use efficiency."
+        ],
+        "system_k_efficiency_improvements": "Global K Use Efficiency (KUE) increased from 46% (1961) to 80% (2020), partly due to improved management practices including organic matter return. No-tillage with ruzigrass improved K use efficiency by retaining 63% of K2O surplus in the topsoil.",
+        "evidence_strength": "high"
+      }
+    },
+    "environmental_factor_effects_synthesis": {
+      "climate_organic_k_interactions": {
+        "temperature_mineralization_relationships": {},
+        "precipitation_organic_k_effects": "High rainfall and irrigation in humid/monsoon climates (e.g., Sichuan paddy fields) can lead to K leaching losses, affecting the net contribution of organic K. Conversely, water stress in dry climates can limit decomposition and K release from organic matter.",
+        "seasonal_climate_k_cycling": "Seasonal moisture variations (e.g., drying/wetting cycles in semi-arid regions) influence K fixation and release from clay minerals, which can interact with organic K dynamics, though specific organic K seasonal patterns are not quantified.",
+        "climate_change_implications": "Changes in temperature and precipitation patterns due to climate change would directly impact organic matter decomposition rates and K mineralization, potentially altering the timing and magnitude of organic K supply.",
+        "evidence_strength": "medium"
+      },
+      "soil_type_organic_k_interactions": [
+        {
+          "soil_classification": "Clayey Oxisols (Brazilian Cerrado)",
+          "organic_k_cycling_characteristics": "No-tillage systems with cover crops significantly enhance K retention and cycling in the topsoil (0-30 cm), concentrating almost 70% of exchangeable K in this layer. This is attributed to increased SOM and CEC, reducing K leaching.",
+          "management_adaptations": [
+            "No-tillage with cover crops for improved K retention and cycling."
+          ],
+          "optimization_strategies": [
+            "Leveraging deep-rooted cover crops to recover K from subsoil."
+          ],
+          "evidence_quality": "high"
+        },
+        {
+          "soil_classification": "Illite-dominant soils (e.g., Vertisols, Alfisols, Inceptisols in India)",
+          "organic_k_cycling_characteristics": "K release rates from illite minerals vary by soil type. Organic amendments (FYM) can maintain higher available K pools and K release, suggesting beneficial interactions with mineral K dynamics in these soils.",
+          "management_adaptations": [
+            "Integrated Nutrient Management (INM) is crucial to sustain K levels and mitigate depletion in these soils."
+          ],
+          "optimization_strategies": [
+            "Tailoring K management to specific soil mineralogy and K fixation/release characteristics."
+          ],
+          "evidence_quality": "high"
+        },
+        {
+          "soil_classification": "Sandy vs. Clayey soils (UK)",
+          "organic_k_cycling_characteristics": "Heavier (clayey) soils take longer to restore to satisfactory K levels than lighter (sandy) soils, implying different K buffering and recovery dynamics influenced by soil texture and mineralogy.",
+          "management_adaptations": [
+            "K build-up strategies need to be adapted to soil texture, with higher rates and longer timelines for clayey soils."
+          ],
+          "optimization_strategies": [
+            "Considering soil type when planning long-term K budgeting and organic amendment applications."
+          ],
+          "evidence_quality": "high"
+        }
+      ],
+      "water_management_organic_k_effects": {
+        "drainage_organic_k_impacts": "Poor drainage or excessive water (e.g., in paddy fields) can lead to K leaching losses, reducing the effectiveness of organic K inputs. Conversely, improved drainage can reduce K losses.",
+        "irrigation_organic_cycling_effects": "Irrigation water can be a significant source of K input (e.g., 21.6 kg K2O ha-1 from 1000 mm water). While not directly affecting organic K cycling, it influences the overall K balance and the need for organic K contributions.",
+        "water_stress_organic_k_relationships": "Water stress (drought) can inhibit organic matter decomposition, thereby slowing the release of K from organic pools and potentially reducing K availability to crops.",
+        "optimal_moisture_organic_cycling": "Maintaining optimal soil moisture conditions is crucial for efficient organic matter decomposition and subsequent K mineralization and availability.",
+        "evidence_strength": "medium"
+      }
+    },
+    "sustainability_implications_synthesis": {
+      "soil_k_building_assessment": {
+        "long_term_k_accumulation": "Long-term application of organic amendments (e.g., vinasse, press mud in sugarcane systems) and increased K inputs (e.g., in China) have demonstrated the potential for gradual enrichment and accumulation of soil K content over time, shifting K balances from deficit to surplus.",
+        "soil_fertility_improvement": "Organic amendments contribute to overall soil fertility by enhancing K availability, improving soil structure, and increasing cation exchange capacity, leading to sustained productivity.",
+        "k_reserve_enhancement": "Strategic management, including organic matter return, can build up soil K reserves, ensuring long-term fertility and reducing reliance on external K inputs.",
+        "multigenerational_benefits": "Maintaining or building soil K reserves through organic amendments is essential for the multi-generational sustainability of agricultural systems, preventing future yield and quality prejudices.",
+        "evidence_confidence": 0.85
+      },
+      "environmental_benefits": {
+        "k_loss_reduction": "Practices like no-tillage with cover crops and proper organic manure storage significantly reduce K leaching and other forms of loss, improving K retention within the agricultural system.",
+        "water_quality_protection": "By reducing K losses through leaching and runoff, organic K management contributes to protecting water quality from nutrient pollution.",
+        "carbon_k_cycling_synergies": "While not explicitly detailed, the enhancement of soil organic matter (carbon) through organic amendments inherently creates synergies with K cycling, as organic matter is key to K retention and release. Increased soil carbon can improve K use efficiency.",
+        "biodiversity_k_cycling_benefits": "Not directly addressed in the provided evidence.",
+        "evidence_strength": "medium"
+      },
+      "cycling_sustainability_assessment": {
+        "soil_k_building_potential": "High. Demonstrated by successful shifts from K deficit to surplus in regions like China through increased K inputs, including significant contributions from organic amendments and residue retention.",
+        "long_term_cycling_benefits": "Organic amendments provide sustained K release, enhance soil K buffering capacity, and improve overall K use efficiency, contributing to the long-term resilience of agricultural systems.",
+        "system_resilience_enhancement": "Integrated nutrient management, incorporating organic K sources, builds soil K reserves and enhances the soil's capacity to buffer against K depletion, making the system more resilient to nutrient stress.",
+        "nutrient_cycling_efficiency": "Global K Use Efficiency (KUE) has increased, and specific practices like no-tillage with cover crops have shown improved K retention efficiency (e.g., 63% of K2O surplus retained), highlighting the potential for more efficient K cycling through organic management.",
+        "evidence_quality": "high"
+      }
+    },
+    "synthesis_quality_assessment": {
+      "organic_cycling_integration_quality": {
+        "process_understanding_depth": 0.7,
+        "temporal_coverage_adequacy": 0.8,
+        "scale_integration_quality": 0.6,
+        "mechanistic_insight_level": 0.6,
+        "overall_organic_cycling_synthesis_quality": 0.7
+      },
+      "cycling_pattern_confidence": {
+        "mineralization_rate_confidence": 0.3,
+        "synergy_effect_confidence": 0.8,
+        "management_optimization_confidence": 0.8,
+        "sustainability_assessment_confidence": 0.8
+      },
+      "synthesis_limitations": {
+        "process_knowledge_gaps": [
+          "Direct quantitative first-order mineralization rates for organic K from various manure types.",
+          "Detailed understanding and quantification of microbial K immobilization and mineralization processes.",
+          "Specific pH modification effects of organic amendments on K availability.",
+          "Quantitative data on species-specific manure K cycling differences beyond general FYM."
+        ],
+        "temporal_scope_limitations": [
+          "While many long-term studies are included, precise inflection points for K depletion or recovery are often inferred rather than directly observed with high temporal resolution.",
+          "Short-term lab kinetic data for mineral K is difficult to directly extrapolate to long-term field organic K dynamics."
+        ],
+        "scale_extrapolation_limitations": [
+          "Limited explicit integration of lab-scale mechanistic insights with field-scale observations for organic K cycling.",
+          "Regional data often aggregates diverse soil and climate conditions, limiting precise local applicability without further validation."
+        ],
+        "management_system_limitations": [
+          "Detailed differentiation of K cycling characteristics across various manure processing methods (e.g., anaerobic digestion, drying) is limited.",
+          "Specific quantitative data on application timing and placement optimization for organic K is sparse."
+        ],
+        "environmental_condition_limitations": [
+          "Quantitative impacts of extreme environmental conditions (e.g., severe drought, high salinity) on *organic K* mineralization and stabilization are not extensively detailed.",
+          "Specific K cycling dynamics in certain ecosystems (e.g., forest soils, rainforests) are not directly addressed for organic K."
+        ]
+      }
+    },
+    "scientific_parameter_delivery": {
+      "cycling_parameter_synthesis": [
+        {
+          "cycling_process": "Annual K Balance (Net Change)",
+          "cycling_rate_parameters": {
+            "Hněvčeves_FYM1_Annual_Net_Balance": "+49.09 kg K2O/ha/year",
+            "Humpolec_FYM1_Annual_Net_Balance": "+2.75 kg K2O/ha/year",
+            "China_2010_Surplus_PNBI_K": "22.9 kg K2O ha-1",
+            "Sichuan_Rice_Wheat_Rotation_Surplus_K2O": "38.04 kg K2O ha⁻¹ yr⁻¹",
+            "Rapeseed_Maize_Rotation_Deficit_K2O": "-156.06 kg K2O ha⁻¹ yr⁻¹ (greatest deficit in Sichuan)"
+          },
+          "environmental_modifiers": {
+            "climate_influence": "Rainfall influencing leaching/erosion (implicitly seasonal)",
+            "soil_type": "Influences K fixation/release and overall balance"
+          },
+          "confidence_level": 0.85,
+          "model_integration_guidance": "Direct input for K balance models. Use positive values for surplus, negative for deficit. Contextualize by cropping system and region."
+        },
+        {
+          "cycling_process": "K Depletion Rate",
+          "cycling_rate_parameters": {
+            "Hněvčeves_Mehlich3_Control_Annual_Depletion": "-14.14 mg K/kg/year",
+            "Humpolec_NH4OAc_Control_Annual_Depletion": "-14.81 mg K/kg/year",
+            "India_K_Omission_Decrease_Exchangeable": "13-18 mg kg-1 decrease during one rice-wheat cycle",
+            "India_K_Omission_Decrease_Non_Exchangeable": "26-41 mg kg-1 decrease during one rice-wheat cycle",
+            "USA_PNB_K_Increasing_Trend": "1.3% year-1 increase in deficit (1987-2012)"
+          },
+          "environmental_modifiers": {
+            "cropping_intensity": "Intensive cropping accelerates depletion",
+            "fertilization_regime": "Lack of K input leads to significant depletion"
+          },
+          "confidence_level": 0.85,
+          "model_integration_guidance": "Direct input for modeling K depletion scenarios. Convert mg/kg to kg/ha using bulk density and soil depth. Use percentage decrease for relative depletion."
+        },
+        {
+          "cycling_process": "K Recovery Potential",
+          "cycling_rate_parameters": {
+            "K_Recovery_FYM": "24-26% (over 21 years in Czech Republic)",
+            "China_K_Balance_Shift_Magnitude": "From -13.6 kg K2O ha-1 (1980) to +22.9 kg K2O ha-1 (2010)",
+            "K_Needed_to_Increase_K_Index": "100-800 kg K2O/ha to increase exchangeable K by 60 mg/l (UK soils)"
+          },
+          "environmental_modifiers": {
+            "soil_type": "Heavier soils take longer to restore K levels",
+            "management_intensity": "Sustained K inputs (fertilizer + organic) enable recovery"
+          },
+          "confidence_level": 0.8,
+          "model_integration_guidance": "Use as targets for K build-up strategies. The 'K_Recovery_FYM' can be used as an efficiency factor for organic K inputs. China's shift is a strong case study for large-scale recovery."
+        },
+        {
+          "cycling_process": "Organic Matter K Contributions",
+          "cycling_rate_parameters": {
+            "Sugarcane_Residue_K_Return": "Mean 244 kg K2O ha-1 (range 2-477 kg K2O ha-1)",
+            "Sichuan_Straw_Return_Input": "16.54 to 69.76 kg K2O ha⁻¹ yr⁻¹",
+            "General_Organic_Material_K_Input": "24 kg K2O ha-1 (from 2 t ha-1 organic material)",
+            "China_Manure_Contribution_to_Total_K_Input": "59% (8.85 Mt K2O average 1980-2015)"
+          },
+          "environmental_modifiers": {
+            "residue_management": "Retention vs. removal",
+            "manure_storage": "Open storage leads to losses"
+          },
+          "confidence_level": 0.75,
+          "model_integration_guidance": "Direct input for K balance models. Use as a component of annual K inputs. Acknowledge variability in K content of organic materials."
+        }
+      ],
+      "amendment_parameter_synthesis": [
+        {
+          "amendment_type": "Farmyard Manure (FYM)",
+          "k_release_parameters": {
+            "implied_sustained_release": "Maintains higher available K pools and K release over long-term (decades) when combined with NPK."
+          },
+          "cycling_coefficients": {
+            "k_recovery_efficiency": "24-26% (over 21 years)"
+          },
+          "environmental_dependencies": {
+            "storage_conditions": "Open storage leads to potash loss due to leaching."
+          },
+          "application_rate_relationships": {
+            "impact_on_available_k": "FYM + NPK treatments resulted in higher available K (e.g., Jabalpur: 324 Kg ha-1 vs. 308 Kg ha-1 for NPK alone)."
+          }
+        },
+        {
+          "amendment_type": "Crop Residues",
+          "k_release_parameters": {
+            "annual_k_return_sugarcane": "Mean 244 kg K2O ha-1 (dry leaves + tops)",
+            "annual_k_return_cereal_straw": "16.54 to 69.76 kg K2O ha⁻¹ yr⁻¹"
+          },
+          "cycling_coefficients": {
+            "k_retention_efficiency_no_tillage": "63% of K2O surplus retained in 0-20 cm layer (with ruzigrass cover crop)"
+          },
+          "environmental_dependencies": {
+            "decomposition_rate": "Influenced by temperature and moisture, affecting K release timing.",
+            "tillage_system": "No-tillage enhances K retention in topsoil."
+          },
+          "application_rate_relationships": {
+            "residue_retention_impact": "Complete residue retention results in near neutral K balances, preventing substantial K export."
+          }
+        },
+        {
+          "amendment_type": "Vinasse and Press Mud",
+          "k_release_parameters": {
+            "long_term_enrichment": "Historical annual applications led to gradual enrichment of soil K content (4.0-5.5 mmol c dm-3 initial K)."
+          },
+          "cycling_coefficients": {},
+          "environmental_dependencies": {},
+          "application_rate_relationships": {}
+        }
+      ],
+      "system_parameter_synthesis": [
+        {
+          "agricultural_system": "Intensive Cropping Systems (General)",
+          "organic_k_cycling_parameters": {
+            "organic_matter_contribution_to_k_input": "Significant (e.g., 59% of total K input in China from manure).",
+            "synergistic_effect_with_mineral_k": "FYM + NPK maintains higher available K and reduces non-exchangeable K depletion."
+          },
+          "integration_coefficients": {
+            "k_use_efficiency_improvement": "Global KUE increased from 46% to 80% (1961-2020), partly due to organic inputs."
+          },
+          "sustainability_parameters": {
+            "long_term_k_balance_shift": "Potential to shift from deficit to surplus (e.g., China's national trend).",
+            "soil_k_depletion_risk": "High risk of depletion without adequate K inputs, including organic sources."
+          },
+          "scaling_relationships": {
+            "regional_k_balance_variability": "Significant spatial and temporal variation in K balance across regions (e.g., China, SSA)."
+          }
+        },
+        {
+          "agricultural_system": "No-Tillage Systems with Cover Crops (e.g., Brazilian Cerrado)",
+          "organic_k_cycling_parameters": {
+            "enhanced_k_retention_topsoil": "Almost 70% of exchangeable K concentrated in 0-30 cm layer.",
+            "deep_k_recovery_and_cycling": "Cover crops (Urochloa ruziziensis) recover K from deeper layers and cycle it to topsoil via residue decomposition."
+          },
+          "integration_coefficients": {
+            "k_use_efficiency_improvement": "Improved K use efficiency by retaining 63% of K2O surplus in the 0-20 cm layer."
+          },
+          "sustainability_parameters": {
+            "long_term_k_accumulation_potential": "Demonstrated K accumulation and improved retention over 9 years.",
+            "reduced_k_leaching": "Lower K leaching compared to conventional tillage."
+          },
+          "scaling_relationships": {
+            "applicability_to_oxisols": "Highly applicable to clayey Oxisols in tropical savannas."
+          }
+        },
+        {
+          "agricultural_system": "Rice-based Cropping Systems (e.g., India, Sichuan)",
+          "organic_k_cycling_parameters": {
+            "straw_return_k_input": "16.54 to 69.76 kg K2O ha⁻¹ yr⁻¹ from straw return.",
+            "anaerobic_k_dynamics": "K dynamics influenced by flooded conditions, with implications for K availability and losses."
+          },
+          "integration_coefficients": {
+            "optimal_k_application_rates": "115.02-136.90 kg K ha⁻¹ for optimal yield and quality."
+          },
+          "sustainability_parameters": {
+            "k_depletion_risk": "Significant K depletion observed in K-omission plots over rice-wheat cycles.",
+            "leaching_losses": "12.05 kg K2O ha⁻¹ yr⁻¹ leaching loss in paddy fields."
+          },
+          "scaling_relationships": {
+            "regional_variability_monsoon_regions": "K balance varies significantly across monsoon-influenced regions due to rainfall, soil type, and management."
+          }
+        }
+      ]
+    },
+    "_usage_metadata": {
+      "timestamp": "2025-07-11T15:28:38.205985",
+      "stage_name": "stage_5a_chunk5",
+      "paper_id": "chunk5",
+      "prompt_length_chars": 297869,
+      "processing_time_seconds": 77.32,
+      "thinking_enabled": true,
+      "input_tokens": 72089,
+      "output_tokens": 8520,
+      "thinking_tokens": 0,
+      "input_cost_usd": 0.010813,
+      "output_cost_usd": 0.02982,
+      "thinking_cost_usd": 0.0,
+      "total_cost_usd": 0.040633
+    },
+    "stage": "5a_chunk5",
+    "chunk_number": 5,
+    "synthesis_timestamp": "2025-07-11T15:28:38.207879"
+  }
+}

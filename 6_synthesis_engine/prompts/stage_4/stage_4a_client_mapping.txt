@@ -1,0 +1,321 @@
+You are a strategic research analyst specializing in soil potassium biogeochemistry and agricultural demand modeling. Your task is to systematically map the validated paper synthesis to specific scientific questions about soil K dynamics, determining exactly how this paper's findings contribute to understanding soil K parameters needed for agricultural modeling.
+
+CLIENT QUESTION ARCHITECTURE:
+{client_question_tree}
+
+VALIDATED PAPER SYNTHESIS TO MAP:
+{stage_3b_results}
+
+SCIENTIFIC CONTEXT:
+This analysis supports soil K parameter quantification for agricultural demand modeling where soil K supply rates serve as critical inputs. The research questions focus on:
+- Quantifying annual soil K supply rates and temporal sustainability patterns
+- Identifying inflection points where soil K supply transitions occur (2-5 year, 5-15 year, 15+ year timeframes)
+- Assessing probability and reliability of temporal patterns and transitions
+- Characterizing regional variations across major agricultural areas
+- Understanding integration with agricultural systems and scaling approaches
+
+RESEARCH FOCUS:
+The primary research objective is to understand soil K sustainability and temporal dynamics in agricultural systems. Key research priorities include:
+- Soil K depletion rates and replenishment mechanisms under different management practices
+- Temporal patterns of soil K availability and potential inflection points in supply
+- Evidence for both soil K depletion and resilience/recovery potential
+- Regional variations in soil K dynamics and sustainability timelines
+- Integration of soil K dynamics with crop demand and management systems
+
+Assess the evidence objectively for these research questions without assuming predetermined outcomes. The goal is scientific understanding of soil K sustainability patterns, whether they indicate depletion, stability, or recovery scenarios.
+
+SYSTEMATIC MAPPING FRAMEWORK:
+
+1. DIRECT EVIDENCE ASSESSMENT:
+   Identify where this paper provides quantitative data that directly addresses specific question branches:
+   - Extract numerical data that directly answers quantitative parameter questions
+   - Identify temporal patterns that directly inform inflection point timing questions
+   - Map geographic data that directly addresses regional variation questions
+   - Document measurement approaches that directly inform methodological questions
+   - Assess agricultural system data that directly addresses integration questions
+   - Evaluate scaling approaches that directly inform extrapolation questions
+
+2. INDIRECT EVIDENCE EVALUATION:
+   Assess where findings provide relevant context or supporting information:
+   - Related measurements that inform but don't directly answer specific questions
+   - Methodological insights that support interpretation of other data
+   - Environmental context that helps understand broader applicability
+   - Process understanding that supports prediction or extrapolation
+   - Comparative data that provides benchmarking or validation context
+
+3. GEOGRAPHIC RELEVANCE ASSESSMENT:
+   Evaluate geographic context and applicability with scientific objectivity:
+   - Geographic identification: Accurately identify the study location and context
+   - Target region relevance: Assess direct applicability to primary target regions (China, India, Brazil, Europe, USA)
+   - Other region context: For studies from other regions, acknowledge the geographic specificity while evaluating scientific value
+   - Process understanding: Recognize that soil K processes may have broader applicability than location-specific quantitative values
+   - Natural scientific interpretation: Act like a scientist who recognizes "This is excellent [location] data. Its applicability to other regions requires separate assessment based on soil type, climate, and management similarities"
+   - Avoid forced extrapolation: Do not artificially force cross-regional applicability assessments where evidence is insufficient
+
+4. TEMPORAL RELEVANCE EVALUATION:
+   Assess contribution to understanding temporal dynamics:
+   - Short-term pattern evidence: Seasonal cycles, 1-2 year monitoring
+   - Medium-term transition evidence: 2-5 year and 5-15 year temporal patterns
+   - Long-term sustainability evidence: 15+ year studies or projections
+   - Inflection point identification: Evidence for specific timing of K supply transitions
+   - Temporal scaling: How short-term measurements relate to long-term patterns
+
+5. EVIDENCE QUALITY CHARACTERIZATION:
+   Assess strength and reliability of evidence for each question branch:
+   - Measurement precision: Analytical quality and uncertainty characterization
+   - Statistical robustness: Sample sizes, replication, statistical validation
+   - Methodological rigor: Experimental design and quality control
+   - Temporal coverage: Study duration and monitoring frequency adequacy
+   - Spatial representativeness: Sampling design and regional coverage
+   - Peer review validation: Publication quality and scientific acceptance
+
+6. INTEGRATION POTENTIAL ASSESSMENT:
+   Evaluate how findings integrate with demand modeling requirements:
+   - Parameter compatibility: Units, temporal resolution, spatial scale compatibility
+   - Uncertainty propagation: How measurement uncertainties affect model applications
+   - System boundary alignment: Compatibility with agricultural system modeling scope
+   - Scaling requirements: What additional steps needed for regional application
+   - Validation potential: How findings could validate or calibrate model assumptions
+
+REQUIRED MAPPING OUTPUT (JSON):
+{
+  "paper_identification": {
+    "title": "",
+    "primary_soil_k_focus": "",
+    "geographic_coverage": [],
+    "temporal_scope": "",
+    "research_approach": "",
+    "overall_relevance_assessment": ""
+  },
+  "direct_evidence_mapping": {
+    "quantitative_parameters": [
+      {
+        "question_branch": "1.1|1.2|1.3|1.4",
+        "evidence_type": "direct_measurement|calculated_parameter|derived_estimate",
+        "quantitative_data": {},
+        "measurement_context": "",
+        "units": "",
+        "precision": "",
+        "evidence_strength": "high|medium|low",
+        "geographic_applicability": [],
+        "temporal_applicability": "",
+        "integration_readiness": "direct|requires_processing|requires_scaling"
+      }
+    ],
+    "temporal_dynamics": [
+      {
+        "question_branch": "2.1|2.2|2.3|2.4|2.5|2.6",
+        "pattern_type": "",
+        "temporal_evidence": {},
+        "timeframe_coverage": "",
+        "pattern_reliability": "",
+        "inflection_point_evidence": "",
+        "evidence_strength": "high|medium|low",
+        "prediction_potential": "",
+        "uncertainty_characterization": ""
+      }
+    ],
+    "probability_assessment": [
+      {
+        "question_branch": "3.1|3.2|3.3|3.4",
+        "probability_evidence": {},
+        "reliability_assessment": "",
+        "condition_dependencies": [],
+        "uncertainty_bounds": "",
+        "confidence_level": "",
+        "evidence_strength": "high|medium|low",
+        "conviction_contribution": ""
+      }
+    ],
+    "regional_variations": [
+      {
+        "question_branch": "4.1.1|4.1.2|4.1.3|4.1.4|4.1.5|4.2|4.3|4.4|other_regions.europe|other_regions.general_other",
+        "regional_evidence": {},
+        "geographic_specificity": "",
+        "environmental_controls": [],
+        "extrapolation_potential": "",
+        "scaling_factors": [],
+        "evidence_strength": "high|medium|low",
+        "regional_confidence": "",
+        "geographic_context_note": ""
+      }
+    ],
+    "agricultural_integration": [
+      {
+        "question_branch": "5.1|5.2|5.3|5.4",
+        "integration_evidence": {},
+        "system_context": "",
+        "management_effects": [],
+        "sustainability_implications": "",
+        "scaling_considerations": [],
+        "evidence_strength": "high|medium|low",
+        "system_applicability": ""
+      }
+    ],
+    "scaling_extrapolation": [
+      {
+        "question_branch": "6.1|6.2|6.3|6.4",
+        "scaling_evidence": {},
+        "scaling_approach": "",
+        "validation_method": "",
+        "uncertainty_propagation": "",
+        "extrapolation_limits": [],
+        "evidence_strength": "high|medium|low",
+        "scaling_confidence": ""
+      }
+    ]
+  },
+  "indirect_evidence_mapping": {
+    "supporting_context": [
+      {
+        "question_relevance": [],
+        "contextual_evidence": "",
+        "supporting_value": "high|medium|low",
+        "interpretation_support": "",
+        "extrapolation_support": "",
+        "uncertainty_insights": ""
+      }
+    ],
+    "methodological_insights": [
+      {
+        "question_relevance": [],
+        "methodological_contribution": "",
+        "analytical_advances": "",
+        "measurement_validation": "",
+        "scaling_approaches": "",
+        "uncertainty_characterization": ""
+      }
+    ],
+    "comparative_benchmarking": [
+      {
+        "question_relevance": [],
+        "benchmark_value": "",
+        "comparative_context": "",
+        "validation_potential": "",
+        "regional_comparison": "",
+        "temporal_comparison": ""
+      }
+    ]
+  },
+  "evidence_synthesis_by_category": {
+    "quantitative_parameters_summary": {
+      "primary_contributions": [],
+      "data_quality": "",
+      "integration_potential": "",
+      "confidence_level": 0.0,
+      "key_limitations": []
+    },
+    "temporal_dynamics_summary": {
+      "primary_contributions": [],
+      "pattern_reliability": "",
+      "inflection_point_insights": "",
+      "confidence_level": 0.0,
+      "temporal_limitations": []
+    },
+    "regional_variations_summary": {
+      "primary_contributions": [],
+      "geographic_coverage": "",
+      "extrapolation_potential": "",
+      "confidence_level": 0.0,
+      "regional_limitations": []
+    },
+    "integration_potential_summary": {
+      "primary_contributions": [],
+      "system_relevance": "",
+      "scaling_requirements": "",
+      "confidence_level": 0.0,
+      "integration_limitations": []
+    }
+  },
+  "research_intelligence_assessment": {
+    "highest_value_contributions": [
+      {
+        "question_branch": "",
+        "contribution_type": "",
+        "value_description": "",
+        "confidence_level": 0.0,
+        "implementation_readiness": ""
+      }
+    ],
+    "medium_value_contributions": [
+      {
+        "question_branch": "",
+        "contribution_type": "",
+        "value_description": "",
+        "confidence_level": 0.0,
+        "development_requirements": ""
+      }
+    ],
+    "knowledge_gap_identification": [
+      {
+        "question_branch": "",
+        "gap_description": "",
+        "gap_significance": "critical|important|moderate",
+        "research_priority": ""
+      }
+    ],
+    "uncertainty_intelligence": [
+      {
+        "uncertainty_source": "",
+        "affected_questions": [],
+        "uncertainty_magnitude": "",
+        "mitigation_approaches": [],
+        "confidence_impacts": ""
+      }
+    ]
+  },
+  "integration_pathway_analysis": {
+    "immediate_applications": [
+      {
+        "question_branch": "",
+        "application_description": "",
+        "integration_approach": "",
+        "confidence_level": 0.0,
+        "validation_requirements": []
+      }
+    ],
+    "medium_term_integration": [
+      {
+        "question_branch": "",
+        "development_pathway": "",
+        "additional_data_needs": [],
+        "scaling_requirements": [],
+        "timeline_estimate": ""
+      }
+    ],
+    "scaling_requirements": {
+      "spatial_scaling_needs": [],
+      "temporal_scaling_needs": [],
+      "methodological_scaling_needs": [],
+      "uncertainty_propagation_needs": []
+    }
+  },
+  "mapping_quality_assessment": {
+    "mapping_completeness": 0.0,
+    "evidence_assessment_confidence": 0.0,
+    "scientific_relevance_accuracy": 0.0,
+    "integration_pathway_feasibility": "high|medium|low",
+    "overall_mapping_confidence": 0.0,
+    "critical_assumptions": [],
+    "mapping_limitations": [],
+    "enhancement_opportunities": []
+  }
+}
+
+MAPPING STANDARDS:
+- Rigorous assessment of evidence quality and direct relevance to specific question branches
+- Conservative evaluation of integration confidence and applicability claims
+- Comprehensive identification of geographic and temporal constraints
+- Clear distinction between direct evidence and supporting context
+- Scientific focus on soil K research questions with objective evidence assessment
+- Realistic pathway identification from evidence to modeling application
+- Transparent uncertainty characterization and limitation documentation
+- Geographic context preservation: Accurately identify study location and acknowledge geographic specificity
+- Regional significance recognition: Emphasize broader regional context (e.g., Czech Republic as valuable European agricultural intelligence)
+- Flexible subcategory mapping: Regional subcategories (e.g., central_europe, mediterranean) are illustrative examples - map data to the most scientifically appropriate subcategory
+- Natural scientific interpretation: Map non-target geography data to other_regions categories while noting scientific value and regional significance
+- Avoid forced extrapolation: Do not artificially extend findings to regions without sufficient evidence for such extension
+- Regional intelligence value: Present country-specific data as representative of broader regional patterns where scientifically appropriate
+
+Map with scientific precision focused on soil K research question advancement and agricultural modeling support. 
+ 

@@ -1,0 +1,660 @@
+{
+  "stage_id": "3a",
+  "stage_name": "Paper Synthesis",
+  "paper_id": "Field-specific potassium and phosphorus balances",
+  "processing_timestamp": "2025-07-10T12:32:17.039372",
+  "processing_time_seconds": 78.129351,
+  "processing_mode": "single_paper",
+  "validation_passed": true,
+  "validation_message": "Valid synthesis result",
+  "results": {
+    "paper_authority": {
+      "research_scope_authority": "This paper, a compilation of multi-site, multi-year field experiments, long-term monitoring, modeling studies, and data analyses, provides strong authority on potassium (K) dynamics in intensive rice-based cropping systems across diverse Asian environments and a long-term grassland system in Scotland. Its authority stems from synthesizing a large volume of plot-level observations (>8000 for RIE, 525 for K omission trials) and multi-decadal experimental data (up to 39 years).",
+      "methodological_rigor": "The methodological rigor is high, employing randomized block designs, nutrient omission trials, grid-based soil sampling, and advanced analytical techniques (ICP-AES, XRF, XRPD) for comprehensive K pool characterization. The use of the QUEFTS model, validated with extensive datasets, adds robustness to the nutrient efficiency calculations. Quality control measures, such as standardized analysis procedures and exclusion of anomalous data, enhance reliability.",
+      "geographic_representativeness": "The soil K findings are highly representative for irrigated rice-based systems across tropical and subtropical Asia, covering diverse agro-climatic regions and soil types (e.g., alluvial, red and lateritic, coastal saline, fluvo-aquic soils). The inclusion of a long-term grass experiment in Scotland extends the representativeness to temperate grassland systems on granitic bedrock-derived soils, providing a comparative perspective on K dynamics in different climates.",
+      "temporal_representativeness": "The research demonstrates strong temporal representativeness, integrating data from short-term seasonal dynamics (e.g., K uptake rates in grass cuts) to multi-decadal trends (e.g., 39-year nutrient balance statistics for India, 30-year grass experiment). This allows for robust conclusions on long-term K depletion and sustainability implications.",
+      "measurement_precision": "Measurement precision for soil K parameters is generally high, supported by the use of advanced instrumentation (ICP-AES, XRF, XRPD) and standardized laboratory procedures. For instance, XRPD quantification of K-bearing minerals has an uncertainty of X ± 0.35 wt% at 95% confidence, and total K from mineral partitioning agreed with XRF measurements within 10%.",
+      "experimental_control": "The paper's authority is bolstered by well-controlled experimental designs, particularly the long-term grass experiment with its randomized block design and distinct K treatments (K0, K65). Nutrient omission trials across Asia provide controlled comparisons of K-deficient versus fully fertilized conditions, allowing for clear assessment of K response and efficiency.",
+      "literature_positioning": "The paper is well-positioned within existing soil K knowledge, building upon established frameworks like Site-Specific Nutrient Management (SSNM) and the QUEFTS model. It confirms and refines reciprocal internal efficiency (RIE) values for K in rice, benchmarks K concentrations in irrigation water, and extensively references prior work on K dynamics, depletion, and mineral weathering, contributing to a comprehensive understanding of K cycling.",
+      "authority_limitations": [
+        "While comprehensive, the paper acknowledges that the QUEFTS model's linear portion is valid only up to 60-70% of yield potential, limiting its direct applicability to very high-yielding scenarios.",
+        "Quantification of sustainable drawdown limits for partial K maintenance approaches requires further research, indicating a gap in definitive long-term sustainability thresholds.",
+        "Uncertainty in K input from irrigation water due to variable concentration and quantity at the field level limits precise field-specific K balance calculations without direct measurement.",
+        "The PROFILE model for K weathering rates showed discrepancies with field-based estimates, suggesting limitations in current modeling approaches for complex mineral K release.",
+        "Statistical power for the long-term grass experiment (80% to detect 15% yield differences) might miss smaller, but agronomically relevant, treatment effects."
+      ]
+    },
+    "integrated_soil_k_findings": {
+      "contextualized_measurements": [
+        {
+          "parameter": "Reciprocal Internal Efficiency (RIE) for Plant K (Full Fertilized)",
+          "values_in_context": {
+            "mean": 17.8,
+            "standard_deviation": 4.6,
+            "median": 17.2,
+            "25th_quartile": 14.2,
+            "75th_quartile": 20.8
+          },
+          "measurement_conditions": "Plant analysis of above-ground dry matter from NPK fertilized plots of irrigated rice with harvest index (HI) between 0.4 and 0.63.",
+          "environmental_context": "Diverse tropical and subtropical irrigated rice-growing environments across Asia.",
+          "experimental_context": "Compilation of >8000 plot-level observations from nutrient omission trials, fertilizer evaluation trials, and on-station experiments, used to derive QUEFTS model relationships.",
+          "temporal_context": "Maturity of irrigated rice, data collected between 1991-2007.",
+          "spatial_context": "Across Asia (n=8521 observations).",
+          "reliability_assessment": "High reliability due to large dataset and consistent methodology across studies, confirming previous RIE values for rice. Applicable for yield potentials up to 60-70%."
+        },
+        {
+          "parameter": "Reciprocal Internal Efficiency (RIE) for Plant K (K Omission Plots)",
+          "values_in_context": {
+            "mean": 14.8,
+            "standard_deviation": 5.5,
+            "median": 12.4,
+            "25th_quartile": 11.0,
+            "75th_quartile": 18.4
+          },
+          "measurement_conditions": "Plant analysis of above-ground dry matter from -K (potassium omission) plots of irrigated rice with HI between 0.4 and 0.63.",
+          "environmental_context": "Diverse tropical and subtropical irrigated rice-growing environments across Asia.",
+          "experimental_context": "Compilation of 525 K omission plot trials, demonstrating nutrient dilution under K deficiency.",
+          "temporal_context": "Maturity of irrigated rice, data collected between 1991-2007.",
+          "spatial_context": "Across Asia (n=462 observations).",
+          "reliability_assessment": "Reliable for characterizing K deficiency effects on plant K accumulation, showing lower RIE compared to fully fertilized conditions due to dilution."
+        },
+        {
+          "parameter": "K concentration in irrigation water",
+          "values_in_context": {
+            "mean": 2.5,
+            "median": 1.8,
+            "standard_deviation": 2.4,
+            "range": "0.3-10.0 mg L-1",
+            "range_across_locations_median": "1.2 to 3.9 mg L-1"
+          },
+          "measurement_conditions": "Water samples collected from canals of gravity-fed irrigation systems and tube wells.",
+          "environmental_context": "Eight diverse rice-growing areas across six Asian countries (e.g., Bohol, Iloilo, Cauvery Delta).",
+          "experimental_context": "245 samples analyzed to quantify K input from irrigation.",
+          "temporal_context": "Not explicitly specified, likely during cropping seasons.",
+          "spatial_context": "Multi-country, multi-site (e.g., Philippines, India, Vietnam).",
+          "reliability_assessment": "Reliable for characterizing the variability and typical range of K input from irrigation, though field-specific quantities can vary."
+        },
+        {
+          "parameter": "Available Potassium (K) in soil (Shanxi, China)",
+          "values_in_context": {
+            "mean": 88.3,
+            "standard_deviation": 16.6,
+            "coefficient_of_variation": 18.8,
+            "minimum_value": 47,
+            "maximum_value": 137,
+            "critical_value": 78,
+            "percentage_below_critical": 23
+          },
+          "measurement_conditions": "Plow layer (0-20 cm) soil samples extracted using 0.25 M/L NaHCO3, 0.01 M/L EDTA and 0.01 M/L NH4F, analyzed by Atomic Absorption Spectrophotometer.",
+          "environmental_context": "Semiarid monsoon climate, Fluvo-aquic soil, Ershilipu village, Xinzhou city, Shanxi Province, China.",
+          "experimental_context": "Grid-based soil sampling (100x100 m) of a 245 ha village with 280 samples.",
+          "temporal_context": "Prior to maize sowing.",
+          "spatial_context": "Ershilipu village, Shanxi Province, China.",
+          "reliability_assessment": "High reliability for characterizing spatial variability at the village scale, showing relatively small variation for K compared to other nutrients, but still 23% of samples below critical levels."
+        },
+        {
+          "parameter": "Accumulated net K off-take (long-term grass experiment)",
+          "values_in_context": {
+            "K0_treatment": 1160,
+            "K65_treatment": 1189
+          },
+          "measurement_conditions": "Calculated from K inputs (fertilizer, deposition) and outputs (harvest, leaching) over 30 years.",
+          "environmental_context": "Loamy sand soil derived from granitic bedrock, NE Scotland (mean annual temp 7.9°C, rainfall 791 mm).",
+          "experimental_context": "30-year randomized block design experiment with K0 (no K) and K65 (65 kg K ha-1 yr-1) treatments.",
+          "temporal_context": "Cumulative over 30 years (1968-1998).",
+          "spatial_context": "Single experimental site at Craigiebuckler, NE Scotland.",
+          "reliability_assessment": "High reliability for quantifying long-term K balance, demonstrating substantial K mining in both K0 and K65 treatments, with K0 relying more heavily on soil reserves."
+        },
+        {
+          "parameter": "Annual K release from non-exchangeable/structural K (long-term grass experiment)",
+          "values_in_context": {
+            "mean": 35
+          },
+          "measurement_conditions": "Estimated from unaccounted K deficit in the 30-year mass balance for the K0 treatment.",
+          "environmental_context": "Loamy sand soil from granitic bedrock, NE Scotland.",
+          "experimental_context": "Derived from the long-term K balance in the K0 treatment, where K uptake exceeded K inputs.",
+          "temporal_context": "Average annual rate over 30 years.",
+          "spatial_context": "Single experimental site at Craigiebuckler, NE Scotland.",
+          "reliability_assessment": "Reasonably reliable as a field-based estimate of K release from soil reserves, though it is an inference from a mass balance and may include uptake from deeper horizons. Discrepancy with PROFILE model highlights complexity."
+        },
+        {
+          "parameter": "K in Biotite and Hydrobiotite (0-40cm)",
+          "values_in_context": {
+            "biotite_0_40cm": 1800,
+            "hydrobiotite_0_40cm": 6180,
+            "total_biotite_hydrobiotite_0_40cm": 7980
+          },
+          "measurement_conditions": "Quantitative X-ray powder diffraction (XRPD) and normative calculations on soil horizons.",
+          "environmental_context": "Loamy sand soil from granitic bedrock, NE Scotland.",
+          "experimental_context": "Analysis of soil samples from the 30-year experiment to characterize K-bearing mineral pools.",
+          "temporal_context": "At the end of the 30-year experiment (1998).",
+          "spatial_context": "Craigiebuckler, NE Scotland (0-40 cm depth).",
+          "reliability_assessment": "High reliability due to precise XRPD methodology (X ± 0.35 wt% uncertainty) and good agreement with total K from XRF. Provides direct evidence of the most labile mineral K sources."
+        }
+      ],
+      "process_understanding": [
+        {
+          "process": "K Balance and Depletion",
+          "mechanistic_insights": "The study demonstrates that intensive cropping systems, especially rice-maize, are significant net exporters of K, leading to negative K balances and soil K depletion. Even with NPK fertilization, K depletion can occur if K inputs do not match removal. Crop residue retention and irrigation water K inputs are critical for mitigating depletion. Long-term experiments show that K mining from soil reserves is substantial in low-input systems.",
+          "quantitative_characterization": {
+            "rice_maize_net_export": "~200 kg K ha-1 at 12 t ha-1 maize yield",
+            "India_annual_nutrient_gap_1999-2000": "10 Mt (NPK)",
+            "India_projected_K_deficit_2020": "8.1 million tonnes (K)",
+            "long_term_grass_accumulated_K_deficit": "1160-1189 kg K ha-1 over 30 years"
+          },
+          "environmental_controls": [
+            "Crop type and yield level (higher yields increase K removal)",
+            "Residue management (retention reduces K export)",
+            "Irrigation water K concentration and quantity (significant K input)",
+            "Organic material application (additional K input)",
+            "Soil type and mineralogy (influences K release from reserves)",
+            "Leaching losses (generally low in puddled rice, higher in light-textured soils)"
+          ],
+          "study_specific_context": "Calculated for various cropping systems (rice-rice, rice-wheat, rice-maize) across Asia and observed in a 30-year grass experiment in Scotland. Illustrative calculations for India highlight national-scale deficits.",
+          "generalizability": "Highly generalizable to intensive agricultural systems globally, particularly those with high biomass removal and insufficient K replenishment. Emphasizes the universal challenge of K mining in productive systems."
+        },
+        {
+          "process": "K Release from Soil Reserves (Mineral Weathering)",
+          "mechanistic_insights": "The research provides strong evidence for the significant contribution of non-exchangeable and structural K (primarily from micas like biotite and hydrobiotite) to plant K supply, especially under K-deficient conditions. It quantifies this release in a long-term field setting, showing that easily weatherable minerals are being depleted. The rate of K release is influenced by mineralogy, soil solution K, and management practices.",
+          "quantitative_characterization": {
+            "annual_K_release_from_minerals_grass": "35 kg K ha-1 yr-1 (average over 30 years)",
+            "native_K_supply_India_omission_plots": "205 to 354 kg K2O ha-1 year-1",
+            "biotite_hydrobiotite_depletion_potential": "7980 kg K ha-1 in 0-40cm, compared to 13600 kg K ha-1 in C horizon (parent material)"
+          },
+          "environmental_controls": [
+            "Soil mineralogy (presence and proportion of K-bearing minerals like biotite, hydrobiotite, illite, K-feldspar)",
+            "Degree of mineral weathering and exposure of mineral edges",
+            "Soil solution K concentration (driving force for release)",
+            "Root activity and density (can accelerate weathering)",
+            "Soil moisture and temperature regimes",
+            "Organic acids from root exudates or decomposing organic matter"
+          ],
+          "study_specific_context": "Directly observed in the 30-year grass experiment in Scotland through mass balance and mineralogical analysis. Supported by K omission trials in India showing substantial native K supply.",
+          "generalizability": "The understanding of K release from primary and secondary minerals is broadly applicable to soils with similar mineralogical composition. The observed depletion rates highlight the finite nature of these reserves and the long-term sustainability challenge for K management."
+        },
+        {
+          "process": "K Fixation",
+          "mechanistic_insights": "The study touches upon K fixation, where K is bound within clay minerals, reducing its availability. Different clay mineral types (illite, kaolinite, smectite) exhibit varying capacities for K fixation. This process can be exacerbated by continuous negative K balances, making soils 'hungry' for K.",
+          "quantitative_characterization": {
+            "illite_soils_fixed": "23-29% of applied K",
+            "kaolinite_soils_fixed": "17-23% of applied K",
+            "smectite_soils_fixed": "26-32% of applied K"
+          },
+          "environmental_controls": [
+            "Type and content of clay minerals (e.g., 2:1 clays like illite, smectite, vermiculite)",
+            "Soil moisture regime (e.g., shallow surface submergence in rice-rice system can increase K fixation)",
+            "K concentration in soil solution"
+          ],
+          "study_specific_context": "Discussed in the context of Indian soils and their K fixation capacities, influencing the efficiency of applied K fertilizers.",
+          "generalizability": "Applicable to soils globally with significant amounts of K-fixing clay minerals. Highlights the importance of considering K fixation when developing fertilizer recommendations to ensure K availability."
+        }
+      ],
+      "temporal_dynamics_synthesis": [
+        {
+          "temporal_pattern": "Long-term decline in soil K fertility and plant K concentration",
+          "pattern_description": "Over decades, available soil K (e.g., NH4OAc-K, HNO3-K) has decreased in benchmark soils of the Indo-Gangetic Plains, even with K application in some long-term experiments. Similarly, in the Scottish grass experiment, herbage K concentration declined over 30 years, stabilizing at lower levels in K0 plots, and acetic acid extractable K in soil also dropped from moderate to very low.",
+          "study_timeline_context": "Observed over 10-30 year periods in long-term experiments (e.g., 1968-1998 for Scotland, 1972-1994 for Orissa) and inferred from comparisons of state-wise nutrient balances over recent decades in India.",
+          "measurement_frequency": "Annual soil and plant sampling in the Scottish experiment; periodic sampling in Indian long-term experiments; state-level data compiled annually.",
+          "pattern_reliability": "High reliability due to direct observation in multi-decadal experiments and consistent trends across different regions and studies.",
+          "extrapolation_potential": "Strong potential to extrapolate to other intensive agricultural systems globally that experience continuous high K removal without adequate replenishment, indicating a widespread sustainability challenge."
+        },
+        {
+          "temporal_pattern": "Seasonal variation in plant K uptake and concentration",
+          "pattern_description": "In the long-term grass experiment, herbage K concentration and daily K 'uptake rate' declined substantially from the first to the third cut within a single growing season, particularly in K65 plots. K0 plots maintained consistently low K concentrations throughout the season.",
+          "study_timeline_context": "Observed annually within the 30-year grass experiment, specifically during the Grass II phase (multiple cuts per year).",
+          "measurement_frequency": "Multiple cuts (e.g., 3 cuts) per growing season.",
+          "pattern_reliability": "Reliable for perennial grass systems under temperate climates, demonstrating the dynamic nature of K uptake throughout the growing season.",
+          "extrapolation_potential": "Applicable to other multi-cut forage systems or crops with multiple harvests, highlighting the need for split K applications to match seasonal demand and prevent mid-season deficiencies."
+        }
+      ],
+      "spatial_patterns_synthesis": [
+        {
+          "spatial_pattern": "High variability in soil K at local (village) and regional (state) scales",
+          "pattern_description": "Available K in farmers' plots within villages in India showed high variability (e.g., CV 68% in Meherpur, Birbhum, WB), influenced by fertilization history and resource availability. While Shanxi, China, showed relatively small spatial variation for K (CV 18.8%) compared to other nutrients, distinct patterns related to land use (e.g., higher K in vegetable areas due to heavy input) were observed. K concentration in irrigation water also varied significantly among and within Asian rice-growing areas.",
+          "geographic_context": "Villages in India (West Bengal, Jharkhand), Shanxi Province (China), and multiple rice-growing areas across Asia.",
+          "sampling_design": "Grid-based soil sampling (100x100 m) in Shanxi; unspecified sampling for Indian farmers' plots; 245 samples for irrigation water across 8 areas.",
+          "representativeness": "The grid sampling in Shanxi provides good representativeness for within-village variability. The Indian data highlights the common challenge of high variability in smallholder farming systems. Irrigation water data is representative of major rice-growing regions.",
+          "scaling_considerations": "High spatial variability at the field/village scale necessitates site-specific nutrient management (SSNM) approaches rather than blanket recommendations. Regional averages for K input from irrigation water may mask significant local variations, impacting field-specific K balances."
+        },
+        {
+          "spatial_pattern": "Regional differences in K fertility status and crop response",
+          "pattern_description": "Indian soils exhibit a wide range of K fertility, with some states showing very low K application rates and significant K deficits. Crop response to applied K varies considerably across agro-climatic zones and cropping systems (e.g., 11.7 kg rice grain equivalent kg-1 K for rice-chickpea vs. 51.0 for rice-tomato). Different soil types in Orissa also showed varying K saturation and response to K application (e.g., no response in coastal saline soils vs. 7.8 kg grain/kg K2O in mixed red and black soils).",
+          "geographic_context": "Multiple states across India (e.g., Orissa, West Bengal, Punjab, Haryana) and diverse agro-climatic zones.",
+          "sampling_design": "Compilation of state-level fertilizer consumption data, multi-location trials, and on-farm trials.",
+          "representativeness": "Highly representative of the national and regional K status and fertilizer use patterns in India, reflecting the diverse soil types and agricultural practices.",
+          "scaling_considerations": "Emphasizes the need for regionalized or site-specific fertilizer recommendations, as blanket approaches are inefficient and can exacerbate K imbalances in specific areas. The findings support the scaling up of SSNM principles."
+        }
+      ]
+    },
+    "scientific_contribution_assessment": {
+      "supply_rate_contribution": {
+        "contribution_type": "Quantification of K supply from diverse sources and long-term mineral release",
+        "quantitative_insights": {
+          "annual_mineral_k_release": "35 kg K ha-1 yr-1 (average over 30 years in Scottish podsol)",
+          "native_k_supply_omission_plots_india": "205 to 354 kg K2O ha-1 year-1 (from K-omission plots in India)",
+          "irrigation_water_k_input": "18 kg K ha-1 (from 1000 mm water at 1.8 mg K L-1)",
+          "organic_material_k_input": "20 kg K ha-1 (from 2 t ha-1 organic material)"
+        },
+        "methodological_insights": "The study leverages long-term mass balance calculations and detailed mineralogical analysis (XRPD) to estimate K release from non-exchangeable/structural pools in a field setting, providing a rare and valuable long-term quantification. It also highlights the importance of accounting for K inputs from irrigation water and organic amendments.",
+        "context_specificity": "The mineral K release rate is specific to the granitic bedrock-derived soil in Scotland. Native K supply rates are specific to the soil types and cropping systems of the Indian omission trials. Irrigation K inputs are specific to the water sources and quantities in Asian rice systems.",
+        "broader_applicability": "The findings underscore that soil K supply is a dynamic process involving multiple sources beyond fertilizer, and that mineral weathering can contribute significantly to crop K uptake over decades. This challenges the traditional view of only exchangeable K as available. The methods used for K balance and mineral characterization are broadly applicable.",
+        "contribution_confidence": 0.95
+      },
+      "temporal_dynamics_contribution": {
+        "contribution_type": "Demonstration of long-term K depletion and seasonal K uptake patterns",
+        "temporal_insights": {
+          "long_term_k_depletion": "Consistent decline in available soil K and increasing crop response to K over decades in India, and significant accumulated K deficit in the 30-year Scottish grass experiment.",
+          "seasonal_k_uptake_patterns": "Declining herbage K concentration and daily K 'uptake rate' from first to third cut in grass, indicating dynamic seasonal demand and supply."
+        },
+        "pattern_identification": "Clearly identifies a widespread trend of K mining in intensive agricultural systems due to insufficient replenishment. Also, it highlights the intra-seasonal variability in plant K demand and uptake, which has implications for split fertilizer applications.",
+        "sustainability_insights": "The research strongly indicates that current K management practices in many intensive systems are unsustainable, leading to depletion of soil K reserves and threatening long-term productivity. It quantifies the magnitude of this depletion and projects future K deficits, emphasizing the urgency for improved K management.",
+        "projection_potential": "The long-term data allows for projections of mineral K depletion (e.g., biotite/hydrobiotite depletion within two centuries at current off-take rates) and future K fertilizer demand (e.g., India's projected 8.1 Mt K deficit by 2020).",
+        "contribution_confidence": 0.98
+      },
+      "spatial_variation_contribution": {
+        "contribution_type": "Characterization of multi-scale spatial variability in soil K and its drivers",
+        "spatial_insights": {
+          "within_village_variability": "High CVs (up to 68%) for available K within farmers' fields in India, driven by diverse management histories.",
+          "regional_variability_india": "Wide range of K fertility status and crop responses across Indian states and agro-climatic zones.",
+          "irrigation_water_k_variability": "Significant variation in K concentration in irrigation water among and within Asian rice-growing areas (e.g., Bohol 0.3-1.5 mg L-1 vs. Iloilo 2.0-6.1 mg L-1)."
+        },
+        "scaling_insights": "The study highlights that while K variability can be low at a village scale (Shanxi, CV 18.8%), it can be very high at the field-to-field scale within a village. This necessitates site-specific approaches. It also shows that K input from irrigation, while significant, varies regionally and locally, complicating uniform recommendations.",
+        "regional_relevance": "Provides critical data for understanding K status and needs in major rice-growing regions of Asia, particularly India and China, which are global agricultural powerhouses. The findings are highly relevant for developing regionalized fertilizer policies.",
+        "extrapolation_potential": "The observed spatial variability patterns and their drivers (e.g., land use, historical fertilization) are broadly applicable to other smallholder farming systems globally, emphasizing the need for localized assessments and SSNM.",
+        "contribution_confidence": 0.95
+      },
+      "agricultural_integration_contribution": {
+        "contribution_type": "Refinement of K fertilizer recommendations and assessment of management impacts on K balance",
+        "system_insights": {
+          "crop_k_requirements": "Updated RIE values for rice (15.9 kg K/tonne grain) and other crops (wheat, maize), providing a basis for calculating K removal.",
+          "cropping_system_impacts": "Quantifies that rice-maize systems are significantly more extractive of K (~200 kg K ha-1 net export) than rice-rice or rice-wheat, demanding higher K inputs.",
+          "yield_response_to_k": "Average 12% yield gain from K fertilization in irrigated rice, with responses varying widely by crop and location (11.7 to 51.0 kg grain/kg K)."
+        },
+        "management_insights": "Demonstrates the critical role of crop residue retention and organic material application in mitigating K depletion. It also compares different fertilizer recommendation approaches (yield gain, full maintenance, partial maintenance), showing that yield gain alone can lead to depletion, while partial maintenance with limited depletion offers a more sustainable and profitable approach.",
+        "productivity_relationships": "Clearly links K application to increased grain yield, improved harvest index, and enhanced fruit quality (e.g., banana, turmeric). It shows that K becomes a growth-limiting nutrient in low-input systems, leading to yield stagnation or decline.",
+        "sustainability_implications": "The research provides actionable insights for sustainable K management, advocating for SSNM, integrated nutrient management (combining mineral and organic sources), and careful consideration of K inputs from irrigation water. It highlights that K depletion is a major threat to long-term food security and agricultural productivity.",
+        "contribution_confidence": 0.98
+      },
+      "methodological_contribution": {
+        "contribution_type": "Validation and application of advanced analytical and modeling tools for K dynamics",
+        "analytical_advances": {
+          "xrp_for_mineral_k": "Effective use of quantitative XRPD to characterize K-bearing mineral pools (biotite, hydrobiotite, illite, K-feldspar) and quantify their contribution to K supply, providing a deeper understanding of soil K reserves.",
+          "quefts_model_validation": "Validation of the QUEFTS model with large, multi-location datasets for determining RIE values for K in rice, enhancing its reliability for nutrient management recommendations."
+        },
+        "measurement_innovations": "The integration of long-term field mass balances with detailed mineralogical analysis provides a robust approach to estimate field-scale K release from non-exchangeable sources, a challenging parameter to quantify.",
+        "scaling_approaches": "The application of SSNM principles and GIS-based mapping for creating soil fertility maps demonstrates effective approaches for scaling plot-level findings to field and village scales, addressing spatial variability in K management.",
+        "uncertainty_characterization": "The study explicitly discusses uncertainties associated with K inputs from irrigation water and organic materials, as well as limitations of models like PROFILE, contributing to a more nuanced understanding of K balance calculations.",
+        "contribution_confidence": 0.95
+      }
+    },
+    "geographic_and_temporal_authority": {
+      "geographic_applicability": {
+        "primary_regions": [
+          "Tropical Asia (Bangladesh, India, Indonesia, Philippines, Thailand, Vietnam)",
+          "Subtropical Asia (China, India)",
+          "Temperate Europe (Scotland)"
+        ],
+        "climate_applicability": [
+          "Tropical monsoon",
+          "Semiarid monsoon",
+          "Humid sub-tropical"
+        ],
+        "soil_type_applicability": [
+          "Alluvial soils",
+          "Red and lateritic soils",
+          "Coastal saline soils",
+          "Black soils",
+          "Brown forest soils",
+          "Fluvo-aquic soil",
+          "Dystric Cambisol/Typic Fragiorthod (Podsol)"
+        ],
+        "landscape_applicability": [
+          "Irrigated lowlands",
+          "Flood plains",
+          "Delta areas",
+          "Uplands",
+          "Medium lands",
+          "Low lands"
+        ],
+        "agricultural_system_applicability": [
+          "Intensive rice-based cropping systems (rice-rice, rice-wheat, rice-maize, rice-pulse, rice-oilseed, rice-vegetable)",
+          "Perennial ryegrass pasture systems"
+        ],
+        "extrapolation_confidence": {
+          "within_studied_regions": "High",
+          "to_similar_agro_ecosystems": "Medium to High (with consideration of specific soil mineralogy and management)",
+          "to_dissimilar_agro_ecosystems": "Low (requires further validation)"
+        }
+      },
+      "temporal_applicability": {
+        "seasonal_coverage": "Wet and dry seasons for rice; multiple cuts for grass, covering full cropping cycles.",
+        "annual_coverage": "Annual monitoring of soil and plant parameters in long-term experiments; annual compilation of state-level data.",
+        "long_term_relevance": "Multi-decadal data (up to 39 years) provides strong insights into long-term K dynamics, depletion, and sustainability.",
+        "projection_timeframes": "Projections for K deficits in India up to 2025; hypothetical mineral K depletion over centuries.",
+        "sustainability_timeframes": "Insights into sustainability over decades, highlighting the finite nature of soil K reserves under current management.",
+        "temporal_confidence": {
+          "short_term_dynamics": "High",
+          "medium_term_trends": "High",
+          "long_term_projections": "Medium (dependent on future management and climate scenarios)"
+        }
+      },
+      "scaling_authority": {
+        "measurement_scale": "Plot-level (field experiments, omission trials), field-level (farmers' plots), village-level (grid sampling), regional/state-level (nutrient balance statistics).",
+        "application_scales": [
+          "Field-specific (SSNM)",
+          "Village-level (GIS mapping)",
+          "Regional/State-level (nutrient balance assessments, policy recommendations)"
+        ],
+        "scaling_validation": "QUEFTS model validated with large datasets. SSNM approaches validated through yield and economic benefits in field trials. Comparison of field-based K release with model predictions (PROFILE) highlighted discrepancies, indicating areas for further scaling model refinement.",
+        "uncertainty_propagation": "Acknowledges that uncertainties (e.g., K in irrigation water) can propagate when scaling from plot to field or regional levels, requiring regional rather than field-specific adjustments for some inputs.",
+        "confidence_by_scale": {
+          "plot_to_field": "High",
+          "field_to_village": "Medium to High (depending on variability)",
+          "village_to_region": "Medium",
+          "region_to_national": "Medium"
+        }
+      }
+    },
+    "methodological_intelligence": {
+      "analytical_reliability": {
+        "method_precision": {
+          "XRPD_uncertainty": "X ± 0.35 wt% (at 95% confidence)",
+          "Ac_K_vs_NH4Ac_K": "Ac-K extracted on average 94% of 1 M NH4Ac, indicating good correlation and proxy reliability."
+        },
+        "detection_capabilities": {},
+        "inter_method_comparisons": [
+          {
+            "comparison_methods": [
+              "Acetic acid extraction (Ac-K)",
+              "1 M ammonium acetate (NH4Ac pH 7) extraction"
+            ],
+            "comparison_results": "Ac-K extracted on average 94% of 1 M NH4Ac.",
+            "notes": "Indicates Ac-K is a good proxy for exchangeable K."
+          },
+          {
+            "comparison_methods": [
+              "PROFILE model",
+              "Field-based estimates of K weathering rates"
+            ],
+            "comparison_results": "Large discrepancy observed.",
+            "notes": "Possibly due to PROFILE model's sensitivity to clay content/specific surface area and representation of mica weathering."
+          },
+          {
+            "comparison_methods": [
+              "Total K from mineral partitioning (XRPD)",
+              "XRF Total K"
+            ],
+            "comparison_results": "Resulted in 100 ±10% agreement, indicating very good agreement between independent estimates.",
+            "notes": "Validates the accuracy of mineralogical quantification for total K."
+          }
+        ],
+        "quality_control_assessment": "High, with comparable methodologies for plant/soil analysis across countries, exclusion of anomalous data for QUEFTS, standardized lab procedures (CAAS, IPNI), and rigorous XRPD quantification with uncertainty estimates.",
+        "measurement_uncertainty": {
+          "K_concentration_irrigation_water": "Substantial variation within and among rice-growing areas (e.g., Bohol 0.3-1.5 mg L-1, Iloilo 2.0-6.1 mg L-1), leading to uncertainty in K input estimates.",
+          "K_leaching_loss": "Often treated as negligible in puddled soils or estimated from literature, introducing potential inaccuracies.",
+          "Straw_weight_estimation": "Assumed grain:straw ratio (e.g., 1:1) for budget calculations can introduce errors."
+        }
+      },
+      "sampling_representativeness": {
+        "spatial_sampling_adequacy": "Adequate. Multi-site and multi-country data for RIE and irrigation water provide broad regional coverage. Grid sampling in Shanxi (100x100m, 280 samples) is robust for capturing within-village variability. Long-term experiment soil sampling (0-15 cm annually, detailed profile in 1998) is appropriate for monitoring K dynamics.",
+        "temporal_sampling_adequacy": "Adequate. Seasonal (multiple cuts for grass) and annual sampling capture short-term dynamics. Multi-decadal monitoring (up to 39 years) provides robust long-term trends for K depletion and mineral weathering.",
+        "statistical_power": "For the long-term grass experiment, the design provided 80% power to detect 15% yield differences at α=0.05. Statistical power for other studies is not always explicitly quantified but implied by significant findings from large datasets.",
+        "bias_potential": [
+          "Exclusion of data with harvest index <0.4 or unbalanced fertilization for QUEFTS analysis could introduce a bias towards optimal conditions, potentially underestimating RIE variability in real-world farmer fields.",
+          "Generalization of K leaching losses or straw weights across diverse systems may introduce bias if local conditions deviate significantly from assumptions."
+        ],
+        "representativeness_confidence": 0.95
+      },
+      "scaling_methodology": {
+        "scaling_approaches": [
+          "QUEFTS model: Used to scale plot-level plant nutrient accumulation data to derive generalized RIE values applicable across diverse rice-growing environments.",
+          "Nutrient balance calculations: Applied to single crop cycles (rice) and full cropping systems (rice-wheat, rice-maize) to estimate K requirements and depletion at field and regional scales.",
+          "GIS-based mapping: Used in Shanxi, China, to interpolate soil analysis data from grid sampling to create soil fertility maps for a whole village, enabling field-specific recommendations.",
+          "Extrapolation of K release rates: Field-based estimates of K release from minerals (e.g., 35 kg K ha-1 yr-1) are used to project long-term sustainability of K supply."
+        ],
+        "validation_methods": [
+          "QUEFTS model RIEs confirmed with larger datasets and consistency with previous studies.",
+          "SSNM approaches validated through yield and economic benefits in field trials.",
+          "Comparison of mineral K partitioning (XRPD) with total K (XRF) for validation of mineralogical quantification."
+        ],
+        "uncertainty_propagation": "Acknowledges that uncertainties in input parameters (e.g., K in irrigation water, straw weight estimation) propagate through balance calculations, affecting the precision of scaled estimates.",
+        "extrapolation_frameworks": [
+          "Site-Specific Nutrient Management (SSNM): Provides a framework for tailoring fertilizer recommendations to field-specific conditions, addressing spatial variability.",
+          "Partial maintenance and yield gain approaches: Offer frameworks for calculating fertilizer rates that balance profitability and sustainability, considering K depletion thresholds."
+        ],
+        "scaling_confidence": {
+          "QUEFTS_RIE_scaling": "High (validated with large datasets)",
+          "Nutrient_balance_scaling": "Medium to High (dependent on input data quality and assumptions)",
+          "GIS_mapping_scaling": "High (for within-village scale)",
+          "Mineral_K_release_extrapolation": "Medium (field-based but long-term projections involve assumptions)"
+        }
+      }
+    },
+    "agricultural_system_integration": {
+      "crop_soil_k_relationships": [
+        {
+          "relationship_type": "K uptake and Reciprocal Internal Efficiency (RIE)",
+          "quantitative_characterization": {
+            "RIE_rice_full_fertilized": "17.8 ± 4.6 kg K per tonne of grain (mean ± SD)",
+            "RIE_rice_k_omission": "14.8 ± 5.5 kg K per tonne of grain",
+            "RIE_QUEFTS_derived": "15.9 kg K per tonne of grain (at 60-70% yield potential)",
+            "K_uptake_rate_grass": "Declined from 1.15 kg ha-1 d-1 (K65, Cut 1) to 0.14 kg ha-1 d-1 (K0, Cut 3)"
+          },
+          "system_context": "Irrigated rice-based cropping systems across Asia and a long-term perennial ryegrass system in Scotland.",
+          "management_dependencies": [
+            "Fertilization level (full NPK vs. K omission)",
+            "Harvest index (influences RIE)",
+            "Cutting frequency (for grass)"
+          ],
+          "temporal_dynamics": "RIE values are relatively stable for a given HI range. K uptake rates in grass show strong seasonal decline, indicating dynamic plant demand.",
+          "reliability": "High, derived from extensive datasets and long-term monitoring. RIE values are robust for modern high-yielding cultivars."
+        },
+        {
+          "relationship_type": "Crop yield response to K fertilization",
+          "quantitative_characterization": {
+            "yield_gain_irrigated_rice": "Average 12% for 525 K omission trials",
+            "rice_grain_yield_response_to_k": "Increased from 8.0 t ha-1 (control) to 13.9 t ha-1 (100% K) for hybrid rice in Orissa.",
+            "banana_yield_response_to_k": "Increased from 37.0 to 55.9 t ha-1 with increasing K levels (200-600 g plant-1).",
+            "grass_yield_response_to_k": "K65 (9 t ha-1 yr-1) significantly higher than K0 (7 t ha-1 yr-1) after initial years."
+          },
+          "system_context": "Diverse rice-based cropping systems (rice-rice, rice-wheat, rice-maize, rice-vegetable, rice-fruit) and perennial ryegrass.",
+          "management_dependencies": [
+            "K fertilizer rate and timing",
+            "Soil K status (initial K availability)",
+            "Other nutrient availability (N, P, micronutrients)",
+            "Crop type and variety"
+          ],
+          "temporal_dynamics": "Yield responses to K increased over time in India as soil K reserves were depleted. In grass, significant differences emerged after several years.",
+          "reliability": "High, based on multi-location, multi-year field trials and long-term experiments. Demonstrates clear economic benefits of K application where K is limiting."
+        }
+      ],
+      "management_system_insights": [
+        {
+          "management_aspect": "K Fertilization Strategies",
+          "soil_k_effects": {
+            "yield_gain_approach": "Can lead to increasing depletion of soil K at high yields.",
+            "full_maintenance": "Matches K removal, preventing depletion, but may be unprofitable if no yield response.",
+            "partial_maintenance_limited_depletion": "Calculated to ensure depletion does not exceed a threshold, more attractive for balancing profitability and sustainability.",
+            "partial_maintenance_plus_yield_gain": "Higher calculated fertilizer rates and more positive K balances, ensuring sufficient K at higher yields."
+          },
+          "effect_magnitude": "Varies by approach and target yield. For instance, rice-maize system requires ~200 kg K ha-1 net export at 12 t ha-1 maize yield, which needs to be met by fertilizer or other inputs.",
+          "temporal_persistence": "Long-term (decades), as these strategies dictate the net K balance and thus the trajectory of soil K reserves.",
+          "system_context": "Applied to rice-based cropping systems (rice-rice, rice-wheat, rice-maize) and discussed in the context of national K deficits in India.",
+          "broader_applicability": "These approaches are broadly applicable for developing sustainable K fertilizer recommendations in intensive agricultural systems globally, moving beyond blanket recommendations to site-specific and balanced fertilization."
+        },
+        {
+          "management_aspect": "Crop Residue Management",
+          "soil_k_effects": {
+            "continuous_rice": "Complete residue retention results in near neutral K balances; removal leads to substantial K export (>100 kg K ha-1 above 7 t ha-1 grain yield).",
+            "rice_wheat": "100% rice residue retention with wheat residue removal can lead to near neutral K balance with high irrigation K input.",
+            "rice_maize": "Complete retention of both rice and maize residues is needed for near-neutral K balances."
+          },
+          "effect_magnitude": "Significant, can shift K balance from highly negative to near neutral.",
+          "temporal_persistence": "Annual effect, cumulative over years.",
+          "system_context": "Key practice in rice-based cropping systems across Asia.",
+          "broader_applicability": "Highlights the critical role of biomass recycling in K cycling and sustainability, applicable to any system where crop residues are a significant source of K."
+        },
+        {
+          "management_aspect": "Organic Material Application",
+          "soil_k_effects": {
+            "K_input": "20 kg K ha-1 from 2 t ha-1 organic material (with 10 g K kg-1) can significantly contribute to K balance.",
+            "long_term_effects": "Combined NPK + FYM increased K uptake and encouraged release of non-exchangeable K in long-term rice-rice LTFE."
+          },
+          "effect_magnitude": "Can shift K balance towards positive or neutral, especially at lower yields or with partial residue retention.",
+          "temporal_persistence": "Annual input, with long-term benefits for soil health and nutrient cycling.",
+          "system_context": "Integrated nutrient management in rice-based systems.",
+          "broader_applicability": "Reinforces the importance of organic amendments as a K source and for enhancing soil K dynamics, applicable to diverse agricultural systems."
+        },
+        {
+          "management_aspect": "Irrigation Water as K Source",
+          "soil_k_effects": {
+            "K_input": "Can contribute significantly to K input (e.g., 18 kg K ha-1 from 1000 mm water at 1.8 mg K L-1).",
+            "K_deficiency_risk": "Water-saving technologies reducing irrigation K input can increase K deficiency risk, especially in systems relying on high K tube-well water."
+          },
+          "effect_magnitude": "Variable, depending on water source and quantity, but can be a major K input.",
+          "temporal_persistence": "Seasonal/annual input.",
+          "system_context": "Irrigated rice systems, particularly in Northwest India where tube-well water is high in K.",
+          "broader_applicability": "Crucial for K balance calculations in irrigated agriculture, emphasizing the need to analyze irrigation water for K content."
+        }
+      ],
+      "sustainability_implications": [
+        {
+          "sustainability_aspect": "Soil K Depletion and Food Security",
+          "current_assessment": "Widespread K depletion is occurring in intensive rice-based systems across Asia, leading to increasing K deficiency and crop responses. India faces a projected K deficit of 8.1 million tonnes by 2020.",
+          "projection_basis": "Based on current K removal rates by crops, inadequate fertilizer application, and observed long-term declines in soil K status.",
+          "timeframe": "Current and projected over the next 5-15 years (for demand/supply gap) and centuries (for mineral K depletion).",
+          "uncertainty": "Projections depend on future changes in fertilizer use, crop yields, and management practices. Mineral K depletion rates are estimates.",
+          "management_implications": "Urgent need for balanced fertilization, site-specific nutrient management (SSNM), and integrated nutrient management (combining mineral and organic sources) to reverse K mining and ensure long-term food security."
+        },
+        {
+          "sustainability_aspect": "Long-term K Supply from Soil Minerals",
+          "current_assessment": "Easily weatherable K-bearing minerals (biotite, hydrobiotite) are being depleted in low-input systems, contributing significantly to current K supply (e.g., 35 kg K ha-1 yr-1 in Scotland).",
+          "projection_basis": "Based on observed depletion rates in long-term experiments and mineralogical analysis, projecting that these easily weatherable minerals could be depleted within two centuries under continued high off-take.",
+          "timeframe": "Decades to centuries.",
+          "uncertainty": "Projections are hypothetical and depend on continued management practices and the actual rate of K release, which can vary with environmental conditions.",
+          "management_implications": "Highlights that reliance on soil reserves is finite. Sustainable K management must consider not only immediate crop needs but also the long-term health of the soil's mineral K reserves, potentially requiring higher K inputs to maintain these pools."
+        }
+      ]
+    },
+    "uncertainty_and_limitations": {
+      "measurement_uncertainties": [
+        {
+          "uncertainty_source": "K concentration in irrigation water",
+          "magnitude_assessment": "Substantial variation (e.g., range 0.3-10.0 mg L-1 across Asia, 50% range 1.2-1.4 mg L-1 in Bohol vs. 3.3-4.2 mg L-1 in Iloilo).",
+          "propagation_effects": "Introduces uncertainty into K input calculations for nutrient balances, especially at the field level.",
+          "mitigation_approaches": [
+            "Regular monitoring of irrigation water K content.",
+            "Regional rather than field-specific adjustments for K input from irrigation."
+          ]
+        },
+        {
+          "uncertainty_source": "Estimation of straw weight for cereals",
+          "magnitude_assessment": "Assumed grain:straw ratio (e.g., 1:1) for budget calculations.",
+          "propagation_effects": "Can lead to inaccuracies in K removal estimates and thus in K balance calculations.",
+          "mitigation_approaches": [
+            "Direct measurement of straw biomass where feasible.",
+            "Use of more precise, location-specific grain:straw ratios."
+          ]
+        },
+        {
+          "uncertainty_source": "K leaching loss estimation",
+          "magnitude_assessment": "Often treated as negligible in puddled soils or estimated from adjacent experiments/literature (e.g., 19-31 kg ha-1 yr-1 for rice-wheat in Punjab).",
+          "propagation_effects": "Can lead to underestimation or overestimation of K losses in balance calculations.",
+          "mitigation_approaches": [
+            "Direct measurement of K leaching in field experiments.",
+            "Development of more accurate leaching models for different soil and water management regimes."
+          ]
+        }
+      ],
+      "extrapolation_limitations": [
+        {
+          "limitation_type": "Applicability of QUEFTS-derived RIE values",
+          "scope_constraints": "RIE values derived from the linear portion of the QUEFTS model are intended for use up to about 60-70% of yield potential.",
+          "confidence_impacts": "Limits direct application to very high-yielding scenarios (e.g., >8 t ha-1 rice), where RIE may increase slightly.",
+          "boundary_conditions": [
+            "Yield potential exceeding 70%",
+            "Unbalanced fertilization or severe stresses not accounted for in the model."
+          ]
+        },
+        {
+          "limitation_type": "Generalizability of mineral K release rates",
+          "scope_constraints": "The estimated annual K release rate of 35 kg K ha-1 yr-1 from non-exchangeable/structural K is specific to the loamy sand soil derived from granitic bedrock in NE Scotland.",
+          "confidence_impacts": "Direct extrapolation to soils with different mineralogy, clay content, or weathering states is limited.",
+          "boundary_conditions": [
+            "Soils with different K-bearing mineral assemblages (e.g., high smectite content)",
+            "Different climatic regimes affecting weathering rates."
+          ]
+        },
+        {
+          "limitation_type": "Field-specific K input from irrigation water",
+          "scope_constraints": "K input through irrigation water is highly variable and not known to individual farmers.",
+          "confidence_impacts": "Makes precise field-specific K balance calculations challenging without direct water analysis, requiring regional averages which may not reflect local conditions.",
+          "boundary_conditions": [
+            "Lack of farmer-level water testing infrastructure.",
+            "High spatial variability in water source K concentration."
+          ]
+        }
+      ],
+      "knowledge_gaps": [
+        {
+          "gap_type": "Sustainable drawdown limits for partial K maintenance",
+          "gap_description": "Further research is needed to quantify the sustainable drawdown limits for partial maintenance approaches, which balance profitability and sustainability.",
+          "research_implications": "Requires long-term studies to determine the maximum acceptable rate of K depletion without compromising future productivity or soil health.",
+          "priority_assessment": "High priority for developing truly sustainable K fertilizer recommendations."
+        },
+        {
+          "gap_type": "Complex soil-plant-nutrient interactions and biological processes",
+          "gap_description": "The current framework for K and P fertilizer requirements does not specifically consider all soil-plant-nutrient interactions and biological processes mediating nutrient availability (e.g., rhizosphere effects, microbial mineralization).",
+          "research_implications": "Further research could refine K availability models by integrating these complex biological and chemical processes.",
+          "priority_assessment": "Medium priority for enhancing mechanistic understanding and model accuracy."
+        },
+        {
+          "gap_type": "Discrepancy between field-based and model-predicted K weathering rates",
+          "gap_description": "A large discrepancy was observed between field-based estimates of K weathering rates and predictions from the PROFILE model.",
+          "research_implications": "Indicates a need for improved models that better represent mica weathering and are less sensitive to specific soil properties like clay content and specific surface area.",
+          "priority_assessment": "High priority for improving predictive models of long-term K supply."
+        }
+      ]
+    },
+    "synthesis_quality": {
+      "integration_coherence": "excellent",
+      "context_preservation": 0.98,
+      "scientific_rigor": 0.97,
+      "contribution_clarity": 0.98,
+      "uncertainty_characterization": 0.95,
+      "synthesis_confidence": 0.97,
+      "synthesis_limitations": [
+        "The synthesis is based on a compilation of papers from a symposium proceedings, which inherently means some details (e.g., specific experimental designs for all individual studies) are not as granular as a single, focused research paper. This required careful inference and generalization where specific details were not provided for every single data point.",
+        "While comprehensive, the synthesis relies on the extracted data. Any nuances or deeper interpretations present in the original full text but not captured in the structured extraction would not be reflected here."
+      ],
+      "enhancement_opportunities": [
+        "Further detailed analysis of the economic implications of different K management strategies across various cropping systems and market conditions.",
+        "More explicit discussion on the role of specific soil microbial communities in K mobilization and their interaction with K-bearing minerals.",
+        "Development of a more integrated model that combines the strengths of QUEFTS for plant uptake with improved mineral weathering models to provide a holistic long-term K balance prediction."
+      ]
+    },
+    "_usage_metadata": {
+      "timestamp": "2025-07-10T12:32:17.036655",
+      "stage_name": "stage_3a_paper_synthesis",
+      "paper_id": "Unknown",
+      "prompt_length_chars": 184125,
+      "processing_time_seconds": 77.83,
+      "thinking_enabled": true,
+      "input_tokens": 49700,
+      "output_tokens": 12941,
+      "thinking_tokens": 0,
+      "input_cost_usd": 0.007455,
+      "output_cost_usd": 0.045294,
+      "thinking_cost_usd": 0.0,
+      "total_cost_usd": 0.052749
+    },
+    "stage": "3A",
+    "paper_id": "Unknown",
+    "synthesis_timestamp": "2025-07-10T12:32:17.038571",
+    "temperature_used": 0.25,
+    "input_stages": [
+      "1B",
+      "2B"
+    ]
+  }
+}

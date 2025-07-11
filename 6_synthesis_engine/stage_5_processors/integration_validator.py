@@ -15,7 +15,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from utils.prompt_loader import PromptLoader
 from utils.gemini_client import GeminiClient
-from utils.config import STAGE_TEMPERATURES
+from utils.json_config import STAGE_TEMPERATURES
 
 class IntegrationValidator:
     """Stage 5B: Validates iterative integration results with comprehensive quality checking"""

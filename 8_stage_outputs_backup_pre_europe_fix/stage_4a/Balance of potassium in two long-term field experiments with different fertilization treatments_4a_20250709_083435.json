@@ -1,0 +1,508 @@
+{
+  "stage_id": "4a",
+  "stage_name": "Client Mapping",
+  "paper_id": "Balance of potassium in two long-term field experiments with different fertilization treatments",
+  "run_type": "stage_test",
+  "processing_timestamp": "2025-07-09T08:34:35.230324",
+  "processing_time_seconds": 54.590898752212524,
+  "token_usage": {
+    "input": 14369,
+    "output": 7687,
+    "thinking": 0
+  },
+  "estimated_cost_usd": 0.12407174999999998,
+  "results": {
+    "paper_identification": {
+      "title": "Long-term Potassium (K) Dynamics and Balance in Agricultural Soils under Various Fertilization Regimes (Implied)",
+      "primary_soil_k_focus": "Long-term potassium (K) dynamics, K balance, and K pool transformations (bioavailable, exchangeable, non-exchangeable) under different fertilization strategies in temperate agricultural soils.",
+      "geographic_coverage": [
+        "Czech Republic"
+      ],
+      "temporal_scope": "21 years (1996-2017)",
+      "research_approach": "Long-term field experiments with controlled fertilization treatments and comprehensive soil K analysis.",
+      "overall_relevance_assessment": "Provides authoritative empirical data on multi-decadal soil K sustainability, depletion rates, and the buffering capacity of different soil types, which is critical for agricultural demand modeling and sustainable nutrient management."
+    },
+    "direct_evidence_mapping": {
+      "quantitative_parameters": [
+        {
+          "question_branch": "soil_k_supply_rates.by_region.other_regions.europe.parameters.annual_kg_k2o_per_ha",
+          "evidence_type": "calculated_parameter",
+          "quantitative_data": {
+            "Hnevceves_Control_annual_k2o": -64.4,
+            "Hnevceves_FYM1_annual_k2o": 49.1,
+            "Hnevceves_NPK_annual_k2o": -12.7,
+            "Humpolec_Control_annual_k2o": -95.4,
+            "Humpolec_FYM1_annual_k2o": 2.8,
+            "Humpolec_NPK_annual_k2o": -16.5
+          },
+          "measurement_context": "Annual net K2O balance derived from 21-year cumulative K balance (K inputs - K outputs) at two sites under various fertilization treatments.",
+          "units": "kg K2O/ha/year",
+          "precision": "Derived from robust long-term balance calculations, with high reliability for the specific experimental conditions.",
+          "evidence_strength": "high",
+          "geographic_applicability": [
+            "Czech Republic",
+            "Temperate climate zones with similar Luvisol and Cambisol soil types"
+          ],
+          "temporal_applicability": "Long-term average annual rates over 21 years.",
+          "integration_readiness": "direct"
+        },
+        {
+          "question_branch": "soil_k_supply_rates.by_time_horizon.10_year_depletion.parameters.total_extractable_k_decline",
+          "evidence_type": "direct_measurement",
+          "quantitative_data": {
+            "Humpolec_N_variant_Kex_decrease_21_years": -205
+          },
+          "measurement_context": "Decrease in exchangeable K (Kex) at Humpolec (Cambisol) under N-only fertilization over 21 years.",
+          "units": "kg K/ha",
+          "precision": "Measured using standard NH4OAc extraction, with high reliability for the specific experimental conditions.",
+          "evidence_strength": "high",
+          "geographic_applicability": [
+            "Czech Republic",
+            "Temperate Cambisol soils with similar K dynamics"
+          ],
+          "temporal_applicability": "Cumulative decline over 21 years.",
+          "integration_readiness": "direct"
+        },
+        {
+          "question_branch": "soil_k_supply_rates.by_region.other_regions.europe.parameters.long_term_sustainability",
+          "evidence_type": "derived_estimate",
+          "quantitative_data": {
+            "Hn_Control_sustainability_years": "Depleting (negative balance)",
+            "Hn_FYM1_sustainability_years": "Sustainable (positive balance)",
+            "Hn_NPK_sustainability_years": "Depleting (negative balance)",
+            "Hu_Control_sustainability_years": "Depleting (negative balance)",
+            "Hu_FYM1_sustainability_years": "Near-sustainable (slightly positive balance)",
+            "Hu_NPK_sustainability_years": "Depleting (negative balance)"
+          },
+          "measurement_context": "Assessment based on the 21-year cumulative K balance. Negative balance indicates depletion, positive indicates sustainability/accumulation.",
+          "units": "Qualitative assessment based on kg K/ha/21 years",
+          "precision": "High for the observed trends, but qualitative for 'sustainability years' without explicit thresholds.",
+          "evidence_strength": "high",
+          "geographic_applicability": [
+            "Czech Republic",
+            "Temperate agricultural systems with similar soil types and management"
+          ],
+          "temporal_applicability": "Directly informs 21-year sustainability; allows for projection beyond.",
+          "integration_readiness": "requires_processing"
+        },
+        {
+          "question_branch": "integration_parameters.crop_uptake_relationships.parameters.plant_k_efficiency_factors",
+          "evidence_type": "direct_measurement",
+          "quantitative_data": {
+            "Crop_uptake_range_21_years": "1124-2452 kg K/ha",
+            "Wheat_grain_K_content": "0.46-0.48%",
+            "Wheat_straw_K_content": "0.88-1.03%",
+            "Barley_grain_K_content": "0.37-0.38%",
+            "Barley_straw_K_content": "0.98-1.18%",
+            "Potato_tubers_K_content": "1.84-2.15%"
+          },
+          "measurement_context": "Total K uptake by crops over 21 years and K content in specific crop components.",
+          "units": "kg K/ha (uptake), % (tissue content)",
+          "precision": "Reliable measurements used in K balance calculation.",
+          "evidence_strength": "high",
+          "geographic_applicability": [
+            "Czech Republic",
+            "Temperate arable systems with similar crop types"
+          ],
+          "temporal_applicability": "Cumulative over 21 years for uptake; snapshot for tissue content.",
+          "integration_readiness": "requires_processing"
+        }
+      ],
+      "temporal_dynamics": [
+        {
+          "question_branch": "soil_k_supply_rates.by_time_horizon.10_year_depletion",
+          "pattern_type": "Long-term Depletion of Bioavailable K",
+          "temporal_evidence": {
+            "Kex_decrease_Humpolec_N_variant": "-205 kg K/ha over 21 years",
+            "General_trend_negative_balance": "Significant decrease in bioavailable K (Mehlich 3, Kex) under continuous negative K balance."
+          },
+          "timeframe_coverage": "21 years (1996-2017)",
+          "pattern_reliability": "High reliability due to long-term experimental duration and consistent observations across treatments with negative K balance.",
+          "inflection_point_evidence": "The study demonstrates continuous depletion, implying that for treatments with negative K balance, the inflection point for K supply decline has already occurred or is ongoing. It does not identify a specific 'transition' point from stability to depletion within the 21 years, but rather shows the consequence of long-term K mining.",
+          "evidence_strength": "high",
+          "prediction_potential": "High potential to predict continued depletion under similar management practices and soil types.",
+          "uncertainty_characterization": "Statistical significance (ANOVA) supports observed trends. Specific error margins for depletion rates are not explicitly detailed in the synthesis."
+        },
+        {
+          "question_branch": "soil_k_supply_rates.by_time_horizon.10_year_depletion",
+          "pattern_type": "Long-term Non-exchangeable K Dynamics (Buffering)",
+          "temporal_evidence": {
+            "Kne_response_Hn_without_K": "Significant decrease over 21 years in Luvisol (lower Kne)",
+            "Kne_response_Hu_with_K": "No significant impact of fertilization on Kne in Cambisol (high Kne)"
+          },
+          "timeframe_coverage": "21 years (1996-2017)",
+          "pattern_reliability": "High reliability for the specific soil types, demonstrating differential long-term responses of Kne to K management.",
+          "inflection_point_evidence": "The differential response of Kne suggests that soils with lower inherent Kne (like Luvisol) reach an 'inflection point' where non-exchangeable reserves begin to be drawn upon more readily under K deficit, whereas soils with high Kne (Cambisol) show greater resilience, delaying such an inflection point.",
+          "evidence_strength": "high",
+          "prediction_potential": "High potential to predict the longevity of K reserves based on initial Kne and soil type.",
+          "uncertainty_characterization": "Statistical significance supports observed differences and trends. Specific error margins for Kne changes are not explicitly detailed."
+        }
+      ],
+      "probability_assessment": [
+        {
+          "question_branch": "soil_k_supply_rates.by_time_horizon.annual_rates",
+          "probability_evidence": {
+            "Statistical_significance_K_balance": "Directly calculated from measured inputs/outputs, providing high confidence in the balance values.",
+            "Statistical_significance_K_pools": "ANOVA used to assess treatment effects on soil K pools, with significant differences reported (e.g., P < 0.001 for Mehlich 3 vs NH4OAc K correlation at Hněvčeves)."
+          },
+          "reliability_assessment": "High reliability for observed trends and differences due to rigorous experimental design, long-term data, and statistical validation.",
+          "condition_dependencies": [
+            "Specific fertilization regimes (Control, N, NPK, FYM)",
+            "Soil type (Luvisol, Cambisol)",
+            "Crop rotation (cereals, potatoes)"
+          ],
+          "uncertainty_bounds": "Uncertainty is addressed through statistical significance, but specific numerical error bounds (e.g., standard deviations) for all parameters are not explicitly provided in the synthesis.",
+          "confidence_level": 0.95,
+          "evidence_strength": "high",
+          "conviction_contribution": "Strongly contributes to conviction regarding the long-term impacts of K management on soil K sustainability and the differential buffering capacity of soil types."
+        }
+      ],
+      "regional_variations": [
+        {
+          "question_branch": "soil_k_supply_rates.by_region.other_regions.europe",
+          "regional_evidence": {
+            "Kne_difference_sites": "Humpolec (Cambisol) 3000 mg K/kg vs. Hněvčeves (Luvisol) 850 mg K/kg",
+            "K_response_differential": "Kne decrease at Hněvčeves (low Kne) without K, stable at Humpolec (high Kne) under K-mining",
+            "K_balance_differences": "Site-specific K balances (e.g., Humpolec Control -1663 kg K/ha/21 years vs. Hněvčeves Control -1124 kg K/ha/21 years)"
+          },
+          "geographic_specificity": "Two distinct sites in the Czech Republic (Hněvčeves - Luvisol on loess; Humpolec - Cambisol on paragneiss).",
+          "environmental_controls": [
+            "Soil type (Luvisol vs. Cambisol)",
+            "Parent material (loess vs. paragneiss)",
+            "Initial non-exchangeable K reserves"
+          ],
+          "extrapolation_potential": "High for qualitative principles (e.g., soil mineralogy influencing K buffering). Moderate for quantitative values to other temperate regions with similar Luvisol/Cambisol types and parent materials. Low for direct quantitative extrapolation to vastly different soil types or climates.",
+          "scaling_factors": [],
+          "evidence_strength": "high",
+          "regional_confidence": 0.95,
+          "geographic_context_note": "The study provides excellent comparative data for temperate European soils, highlighting the critical role of inherent soil properties in K dynamics. While specific quantitative values are site-specific, the understanding of differential buffering capacity is broadly applicable to other regions with varying soil mineralogy."
+        }
+      ],
+      "agricultural_integration": [
+        {
+          "question_branch": "integration_parameters.manure_cycling_interactions",
+          "integration_evidence": {
+            "FYM_effect_K_balance": "Generally positive or less negative K balances (e.g., Hněvčeves FYM 1: 856 kg K/ha/21 years)",
+            "FYM_effect_soil_K": "Maintain or increase bioavailable K, help sustain Kne levels."
+          },
+          "system_context": "Arable cropping system with rotations including cereals and potatoes, utilizing farmyard manure (FYM) as an organic amendment.",
+          "management_effects": [
+            "FYM treatments are highly effective in maintaining long-term soil K fertility and preventing depletion.",
+            "N-only treatments lead to significant K depletion.",
+            "NPK treatments help mitigate depletion but may still result in negative K balance."
+          ],
+          "sustainability_implications": "Highlights FYM as a crucial component for sustainable K management, not only supplying K but also potentially enhancing K cycling and soil health.",
+          "scaling_considerations": "Findings are directly applicable to field-scale management in similar systems. Quantitative scaling to regional levels requires accounting for regional manure availability and application rates.",
+          "evidence_strength": "high",
+          "system_applicability": "Highly applicable to temperate arable systems incorporating organic amendments and mineral fertilizers."
+        }
+      ],
+      "scaling_extrapolation": [
+        {
+          "question_branch": "6.1|6.2|6.3|6.4",
+          "scaling_evidence": {
+            "Measurement_scale": "Plot-level (long-term field experiments)",
+            "Application_scales_noted": "Field-level (with caution), Regional-level (qualitative insights)"
+          },
+          "scaling_approach": "No explicit scaling methodologies are presented. The study provides plot-level empirical data.",
+          "validation_method": "No explicit scaling validation methods are described.",
+          "uncertainty_propagation": "Uncertainty in scaling is not explicitly quantified, but the site-specific nature of K dynamics (especially Kne) implies significant uncertainty when extrapolating quantitative values.",
+          "extrapolation_limits": [
+            "Direct quantitative extrapolation beyond the specific soil types and climate is limited.",
+            "Qualitative principles (e.g., K buffering by soil type) are more broadly applicable than specific numerical values."
+          ],
+          "evidence_strength": "low",
+          "scaling_confidence": "Low for quantitative scaling to regional levels without further site-specific data; Moderate for qualitative scaling of principles."
+        }
+      ]
+    },
+    "indirect_evidence_mapping": {
+      "supporting_context": [
+        {
+          "question_relevance": [
+            "soil_k_supply_rates",
+            "integration_parameters"
+          ],
+          "contextual_evidence": "The study's comprehensive characterization of different soil K pools (bioavailable, exchangeable, non-exchangeable) and their interrelationships provides a robust framework for understanding K supply mechanisms. The quantification of K balance as inputs minus outputs is a fundamental concept supporting all K supply rate questions.",
+          "supporting_value": "high",
+          "interpretation_support": "Helps interpret why certain management practices lead to depletion or accumulation by showing the underlying changes in K pools. The concept of non-exchangeable K buffering is crucial for understanding long-term supply.",
+          "extrapolation_support": "The process understanding (e.g., K buffering capacity) is broadly applicable, supporting qualitative extrapolation to other regions even if quantitative values differ.",
+          "uncertainty_insights": "Highlights that the inherent K reserves (Kne) of a soil type are a major control on its long-term K supply and vulnerability to depletion, adding a critical dimension to uncertainty assessment in modeling."
+        }
+      ],
+      "methodological_insights": [
+        {
+          "question_relevance": [
+            "soil_k_supply_rates",
+            "integration_parameters"
+          ],
+          "methodological_contribution": "The paper demonstrates a rigorous approach to long-term soil K research, utilizing multiple standard analytical methods for K pools and robust statistical analysis. The 21-year duration is a significant methodological strength.",
+          "analytical_advances": "While using standard methods, the comprehensive application across different K pools in a long-term context provides robust comparative data on their dynamics and interrelationships. The strong correlation between Mehlich 3 and NH4OAc K at Hněvčeves contributes to method validation for specific soil types.",
+          "measurement_validation": "The consistency of trends observed across multiple K extraction methods (Mehlich 3, NH4OAc, CAT) implicitly supports the reliability of the K pool characterization.",
+          "scaling_approaches": "No explicit scaling methodologies are presented, but the detailed plot-level data provides a strong foundation for future scaling efforts.",
+          "uncertainty_characterization": "Statistical significance testing (ANOVA) and correlation analysis are used to characterize variability and relationships, enhancing the reliability of findings, though specific error margins for all measurements are not detailed."
+        }
+      ],
+      "comparative_benchmarking": [
+        {
+          "question_relevance": [
+            "soil_k_supply_rates.by_region.other_regions.europe",
+            "soil_k_supply_rates.by_time_horizon"
+          ],
+          "benchmark_value": "21-year cumulative K balances ranging from -2376 to 856 kg K/ha, and end-of-experiment soil K levels (e.g., Mehlich 3 K: 157-200 mg K/kg, Kne: 850-3000 mg K/kg).",
+          "comparative_context": "These values serve as benchmarks for long-term K dynamics in temperate Luvisol and Cambisol soils under conventional and organic fertilization regimes.",
+          "validation_potential": "The data can be used to validate or calibrate K cycling models for similar soil types and agricultural systems, particularly for long-term K balance and depletion/accumulation trends.",
+          "regional_comparison": "Provides a direct comparison of K dynamics between two distinct soil types (Luvisol vs. Cambisol) within a temperate European context.",
+          "temporal_comparison": "Offers a rare long-term (21-year) dataset for comparing K dynamics over multi-decadal periods, which is invaluable for assessing sustainability."
+        }
+      ]
+    },
+    "evidence_synthesis_by_category": {
+      "quantitative_parameters_summary": {
+        "primary_contributions": [
+          "Quantification of annual net K balance (kg K2O/ha/year) under various fertilization regimes over 21 years.",
+          "Direct measurement of long-term exchangeable K (Kex) decline (e.g., -205 kg K/ha over 21 years) in a depleting scenario.",
+          "Detailed K content in major crops (wheat, barley, potato) contributing to K uptake calculations.",
+          "Quantification of different soil K pools (Mehlich 3, Kex, Kne) at the end of the 21-year experiment, showing treatment effects."
+        ],
+        "data_quality": "High. Data derived from well-controlled, long-term field experiments using standard analytical methods and supported by statistical analysis.",
+        "integration_potential": "High. Annual K balance rates are directly usable as inputs for agricultural demand models. Kex decline data informs depletion rates. Crop K content data supports crop demand modeling.",
+        "confidence_level": 0.95,
+        "key_limitations": [
+          "Quantitative values are specific to the studied sites, soil types, and management practices.",
+          "Annual rates are averages over 21 years, not seasonal or year-to-year variability."
+        ]
+      },
+      "temporal_dynamics_summary": {
+        "primary_contributions": [
+          "Empirical evidence for long-term (21-year) depletion of bioavailable K under continuous negative K balance.",
+          "Demonstration of differential long-term non-exchangeable K (Kne) dynamics based on soil type and initial Kne reserves, highlighting its buffering role.",
+          "Insights into the sustainability timeframe of soil K reserves under different management scenarios."
+        ],
+        "pattern_reliability": "High. Observed trends are robust due to the extended duration of the experiment.",
+        "inflection_point_insights": "The study implies that for K-mining treatments, the inflection point for K supply decline has already occurred or is ongoing. It also suggests that soils with lower inherent Kne reach a critical inflection point for drawing on non-exchangeable reserves sooner than those with high Kne.",
+        "confidence_level": 0.98,
+        "temporal_limitations": [
+          "Does not provide detailed insights into seasonal or short-term (e.g., 1-2 year) K dynamics or optimal timing of K applications."
+        ]
+      },
+      "regional_variations_summary": {
+        "primary_contributions": [
+          "Clear demonstration of significant differences in inherent K pools (especially Kne) and K dynamics between two distinct soil types (Luvisol vs. Cambisol) within a temperate climate.",
+          "Highlights the critical influence of parent material and soil mineralogy on soil K buffering capacity and long-term sustainability."
+        ],
+        "geographic_coverage": "Two specific sites in the Czech Republic (temperate Europe).",
+        "extrapolation_potential": "High for qualitative principles (e.g., the importance of soil type and mineralogy for K dynamics). Moderate for quantitative values to other temperate regions with similar Luvisol/Cambisol types. Low for direct quantitative extrapolation to vastly different climates or soil types.",
+        "confidence_level": 0.95,
+        "regional_limitations": [
+          "Findings are geographically specific to the Czech Republic, limiting direct quantitative applicability to other global regions without further validation."
+        ]
+      },
+      "integration_potential_summary": {
+        "primary_contributions": [
+          "Direct evidence for the effectiveness of different fertilization strategies (mineral NPK, organic FYM, N-only) on long-term soil K pools and K balance.",
+          "Quantification of crop K uptake as a major output in the K balance, linking soil K supply to crop demand.",
+          "Demonstrates the critical role of organic amendments (FYM) in maintaining soil K fertility and sustainability over decades."
+        ],
+        "system_relevance": "Highly relevant for arable cropping systems in temperate regions, particularly those considering long-term nutrient management and the role of organic amendments.",
+        "scaling_requirements": "Findings are directly applicable at the field level. Regional scaling requires consideration of regional soil type distribution, climate, and prevalent agricultural practices.",
+        "confidence_level": 0.98,
+        "integration_limitations": [
+          "Does not explicitly detail residue K contributions beyond being part of the overall K balance.",
+          "Focuses on specific crop rotation; applicability to other crop systems requires careful consideration of K demand."
+        ]
+      }
+    },
+    "research_intelligence_assessment": {
+      "highest_value_contributions": [
+        {
+          "question_branch": "soil_k_supply_rates.by_time_horizon.10_year_depletion",
+          "contribution_type": "Empirical Quantification of Long-Term K Depletion",
+          "value_description": "Provides direct, multi-decadal (21-year) empirical data on soil K depletion rates and the differential buffering capacity of distinct soil types. This is crucial for understanding long-term K supply and sustainability in agricultural models.",
+          "confidence_level": 0.98,
+          "implementation_readiness": "High. The quantitative depletion rates and qualitative insights into buffering can be directly incorporated into long-term K balance models."
+        },
+        {
+          "question_branch": "soil_k_supply_rates.by_region.other_regions.europe",
+          "contribution_type": "Demonstration of Soil Type Influence on K Dynamics",
+          "value_description": "Clearly shows how inherent soil properties (parent material, mineralogy, initial Kne) dictate the long-term response of soil K to management. This emphasizes the need for soil-specific K management and improves the accuracy of regional K supply assessments.",
+          "confidence_level": 0.95,
+          "implementation_readiness": "High. The principle of differential buffering capacity can be used to refine regional K supply models by incorporating soil type as a key variable."
+        },
+        {
+          "question_branch": "integration_parameters.manure_cycling_interactions",
+          "contribution_type": "Evaluation of Fertilization Strategies for K Sustainability",
+          "value_description": "Provides strong evidence for the long-term effectiveness of organic amendments (FYM) in maintaining soil K fertility and achieving positive K balances, contrasting with mineral-only or no-K treatments. This is vital for sustainable agricultural modeling.",
+          "confidence_level": 0.98,
+          "implementation_readiness": "High. The findings directly inform the parameterization of K inputs from organic sources and their long-term impact on soil K pools in agricultural models."
+        }
+      ],
+      "medium_value_contributions": [
+        {
+          "question_branch": "soil_k_supply_rates.by_region.other_regions.europe.parameters.annual_kg_k2o_per_ha",
+          "contribution_type": "Annual Net K Balance Quantification",
+          "value_description": "Provides specific annual net K balance values (kg K2O/ha/year) for different treatments and soil types, which are direct inputs for K demand models.",
+          "confidence_level": 0.95,
+          "development_requirements": "Requires careful consideration of geographic and management specificity when applying to other regions or systems."
+        },
+        {
+          "question_branch": "integration_parameters.crop_uptake_relationships",
+          "contribution_type": "Crop K Uptake and Tissue Content Data",
+          "value_description": "Offers quantitative data on K uptake by specific crops and their tissue K content, valuable for refining crop K demand components in models.",
+          "confidence_level": 0.9,
+          "development_requirements": "Needs to be integrated with yield data and crop-specific K demand functions for full utility in modeling."
+        }
+      ],
+      "knowledge_gap_identification": [
+        {
+          "question_branch": "soil_k_supply_rates.by_time_horizon.annual_rates",
+          "gap_description": "Lack of detailed seasonal or year-to-year variability in K supply rates and pool dynamics.",
+          "gap_significance": "important",
+          "research_priority": "Medium priority for optimizing timing of K applications and improving short-term K use efficiency in models."
+        },
+        {
+          "question_branch": "integration_parameters.residue_k_contributions",
+          "gap_description": "While crop uptake is quantified, the specific dynamics of K release from crop residues and its contribution to soil K supply are not explicitly detailed.",
+          "gap_significance": "moderate",
+          "research_priority": "Medium priority for refining residue management components in K cycling models."
+        },
+        {
+          "question_branch": "soil_k_supply_rates.by_region",
+          "gap_description": "Limited geographic scope to two sites in the Czech Republic, restricting direct quantitative extrapolation to other major agricultural regions (e.g., China, India, Brazil, USA) without further site-specific data.",
+          "gap_significance": "critical",
+          "research_priority": "High priority for conducting similar long-term studies in target regions or developing robust scaling methodologies."
+        }
+      ],
+      "uncertainty_intelligence": [
+        {
+          "uncertainty_source": "Geographic Specificity",
+          "affected_questions": [
+            "soil_k_supply_rates.by_region",
+            "integration_parameters",
+            "scaling_extrapolation"
+          ],
+          "uncertainty_magnitude": "High for quantitative extrapolation, low for qualitative principles.",
+          "mitigation_approaches": [
+            "Apply quantitative values only to regions with highly similar soil types, parent materials, and climates.",
+            "Focus on extracting and applying qualitative process understanding (e.g., K buffering) more broadly.",
+            "Prioritize site-specific data collection in target regions."
+          ],
+          "confidence_impacts": "Reduces confidence in direct quantitative application of findings to non-study regions."
+        },
+        {
+          "uncertainty_source": "Lack of Explicit Error Margins for All Parameters",
+          "affected_questions": [
+            "quantitative_parameters",
+            "temporal_dynamics",
+            "probability_assessment"
+          ],
+          "uncertainty_magnitude": "Minor to moderate.",
+          "mitigation_approaches": [
+            "Acknowledge this limitation in model parameterization.",
+            "If full paper is available, extract and integrate standard deviations or confidence intervals.",
+            "Use sensitivity analysis in models to assess impact of parameter variability."
+          ],
+          "confidence_impacts": "Limits a more granular quantification of measurement uncertainty and direct comparison of variability across treatments/sites."
+        }
+      ]
+    },
+    "integration_pathway_analysis": {
+      "immediate_applications": [
+        {
+          "question_branch": "soil_k_supply_rates.by_region.other_regions.europe.parameters.annual_kg_k2o_per_ha",
+          "application_description": "Parameterize annual soil K supply rates (net balance) for temperate European agricultural systems, particularly those with Luvisol or Cambisol soils and similar management practices.",
+          "integration_approach": "Direct input of calculated annual K2O balance values into regional K balance models or agricultural demand models as a component of soil K supply.",
+          "confidence_level": 0.9,
+          "validation_requirements": [
+            "Cross-validation with other long-term studies in similar European contexts.",
+            "Sensitivity analysis within the model to assess impact of K balance variability."
+          ]
+        },
+        {
+          "question_branch": "integration_parameters.manure_cycling_interactions",
+          "application_description": "Inform the K contribution and long-term impact of farmyard manure (FYM) in agricultural K cycling models.",
+          "integration_approach": "Use the observed positive K balances and soil K maintenance under FYM treatments to calibrate manure K release and stabilization parameters in models.",
+          "confidence_level": 0.95,
+          "validation_requirements": [
+            "Comparison with manure K mineralization rates from other studies.",
+            "Field validation of model predictions in systems using FYM."
+          ]
+        }
+      ],
+      "medium_term_integration": [
+        {
+          "question_branch": "soil_k_supply_rates.by_time_horizon.10_year_depletion",
+          "development_pathway": "Develop soil K supply functions that incorporate the differential buffering capacity of soil types based on their non-exchangeable K (Kne) reserves.",
+          "additional_data_needs": [
+            "More detailed mineralogical data for various soil types.",
+            "Kinetics of Kne release/fixation under different soil moisture and temperature regimes."
+          ],
+          "scaling_requirements": [
+            "Mapping of soil Kne reserves at regional scales.",
+            "Development of soil type-specific K buffering coefficients."
+          ],
+          "timeline_estimate": "6-12 months for initial model development, 1-2 years for validation."
+        }
+      ],
+      "scaling_requirements": {
+        "spatial_scaling_needs": [
+          "Development of robust methodologies to extrapolate plot-level K dynamics to field and regional scales, accounting for soil heterogeneity and landscape variability.",
+          "Comprehensive soil mapping of K pools (especially Kne) and mineralogy in target regions.",
+          "Integration of climate data (e.g., rainfall, temperature) to account for regional differences in weathering and leaching."
+        ],
+        "temporal_scaling_needs": [
+          "Development of models that can bridge short-term (seasonal) K dynamics with long-term trends, potentially requiring higher frequency monitoring data.",
+          "Refinement of K transformation rates (e.g., fixation, release) over varying time steps."
+        ],
+        "methodological_scaling_needs": [
+          "Standardization of K extraction methods across regions for comparative analysis.",
+          "Development of upscaling algorithms that integrate plot-level process understanding with regional environmental data."
+        ],
+        "uncertainty_propagation_needs": [
+          "Quantification of uncertainty at each scaling step (measurement, plot-to-field, field-to-region).",
+          "Development of probabilistic modeling approaches to account for inherent variability in soil K dynamics."
+        ]
+      }
+    },
+    "mapping_quality_assessment": {
+      "mapping_completeness": 0.95,
+      "evidence_assessment_confidence": 0.97,
+      "scientific_relevance_accuracy": 0.98,
+      "integration_pathway_feasibility": "high",
+      "overall_mapping_confidence": 0.96,
+      "critical_assumptions": [
+        "The provided 'VALIDATED PAPER SYNTHESIS' accurately reflects the original paper's findings and limitations.",
+        "The K to K2O conversion factor (1.2046) is appropriate for agricultural modeling context."
+      ],
+      "mapping_limitations": [
+        "The original paper's title was not provided, so a placeholder was used.",
+        "Specific error margins (e.g., standard deviations) for all quantitative values were not available in the synthesis, limiting granular uncertainty quantification.",
+        "The synthesis did not provide explicit seasonal K dynamics, which limits mapping to short-term temporal questions."
+      ],
+      "enhancement_opportunities": [
+        "If the full paper were available, more detailed statistical data (e.g., standard deviations, full ANOVA tables) could be extracted to enhance precision and uncertainty characterization.",
+        "Further research on seasonal K dynamics in similar soil types would complement the long-term insights."
+      ]
+    },
+    "_usage_metadata": {
+      "timestamp": "2025-07-09T08:34:35.227555",
+      "stage_name": "unknown",
+      "paper_id": "unknown",
+      "prompt_length_chars": 63450,
+      "processing_time_seconds": 54.59,
+      "thinking_enabled": true,
+      "input_tokens": 15038,
+      "output_tokens": 7974,
+      "thinking_tokens": 0,
+      "input_cost_usd": 0.002256,
+      "output_cost_usd": 0.027909,
+      "thinking_cost_usd": 0.0,
+      "total_cost_usd": 0.030165
+    },
+    "stage": "4A",
+    "paper_id": "unknown",
+    "mapping_timestamp": "2025-07-09T08:34:35.228774",
+    "temperature_used": 0.1,
+    "client_architecture_version": "1.0"
+  }
+}

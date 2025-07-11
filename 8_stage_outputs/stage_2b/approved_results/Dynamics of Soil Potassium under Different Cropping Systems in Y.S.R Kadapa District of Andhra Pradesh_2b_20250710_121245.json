@@ -1,0 +1,994 @@
+{
+  "stage_id": "2b",
+  "stage_name": "Soil K Validation",
+  "paper_id": "Dynamics of Soil Potassium under Different Cropping Systems in Y.S.R Kadapa District of Andhra Pradesh",
+  "processing_timestamp": "2025-07-10T12:12:45.915317",
+  "processing_time_seconds": 77.441192,
+  "processing_mode": "single_paper",
+  "validation_passed": true,
+  "validation_message": "Valid validation result",
+  "results": {
+    "scientific_accuracy_validation": {
+      "terminology_accuracy": {
+        "accurate": true,
+        "corrections_needed": [],
+        "clarifications_required": []
+      },
+      "parameter_extraction_accuracy": {
+        "accurate": true,
+        "measurement_errors": [],
+        "unit_corrections": []
+      },
+      "process_characterization_accuracy": {
+        "accurate": true,
+        "description_errors": [],
+        "mechanistic_corrections": []
+      }
+    },
+    "quantitative_data_validation": {
+      "numerical_accuracy": {
+        "verified": true,
+        "value_discrepancies": [
+          {
+            "parameter": "Available K (Surface)",
+            "field": "mean_range",
+            "extracted_value": "262.80 mg kg-1",
+            "corrected_value": "262.84 mg kg-1",
+            "reason": "Corrected mean value based on Table 1."
+          },
+          {
+            "parameter": "Water soluble K (Surface)",
+            "field": "values (min)",
+            "extracted_value": 5.5,
+            "corrected_value": 5.55,
+            "reason": "Corrected minimum value based on Table 1."
+          },
+          {
+            "parameter": "Total K (Sub-surface)",
+            "field": "values (max)",
+            "extracted_value": 33330,
+            "corrected_value": 36270,
+            "reason": "Corrected maximum value based on Table 1, which provides more detailed ranges than the abstract."
+          }
+        ],
+        "calculation_errors": []
+      },
+      "unit_preservation": {
+        "preserved": true,
+        "conversion_errors": [],
+        "standardization_issues": []
+      },
+      "statistical_accuracy": {
+        "verified": true,
+        "missing_statistics": [],
+        "statistical_errors": []
+      }
+    },
+    "context_preservation_validation": {
+      "research_objective_accuracy": {
+        "preserved": true,
+        "mischaracterizations": [],
+        "context_omissions": []
+      },
+      "experimental_design_accuracy": {
+        "preserved": true,
+        "design_errors": [],
+        "scope_misrepresentations": []
+      },
+      "environmental_context_accuracy": {
+        "preserved": true,
+        "context_errors": [
+          {
+            "field": "soil_properties.classification",
+            "error_description": "Inference about soil classification (Vertisol/Inceptisols) was not directly stated in the paper's methods or results.",
+            "corrected_information": "Removed the inferred soil classification to maintain fidelity to the original paper's direct statements."
+          }
+        ],
+        "setting_omissions": []
+      }
+    },
+    "methodological_validation": {
+      "analytical_method_accuracy": {
+        "accurate": true,
+        "method_mischaracterizations": [],
+        "protocol_errors": []
+      },
+      "sampling_design_accuracy": {
+        "accurate": true,
+        "design_errors": [],
+        "representativeness_issues": []
+      },
+      "quality_control_accuracy": {
+        "accurate": true,
+        "qc_omissions": [],
+        "precision_mischaracterizations": []
+      }
+    },
+    "temporal_spatial_validation": {
+      "temporal_accuracy": {
+        "accurate": true,
+        "timeline_errors": [],
+        "pattern_mischaracterizations": []
+      },
+      "spatial_accuracy": {
+        "accurate": true,
+        "location_errors": [],
+        "scale_misrepresentations": []
+      },
+      "variability_characterization": {
+        "accurate": true,
+        "variability_errors": [
+          {
+            "field": "spatial_variations.between_site_differences[0].difference_magnitude.description",
+            "error_description": "The description of surface vs. sub-surface K distribution for Lattice K and Total K was slightly inaccurate, implying surface was always higher except for specific systems, whereas sub-surface could be higher for some systems.",
+            "corrected_information": "Refined description to state that available, water soluble, exchangeable, and non-exchangeable K were generally higher in surface soils, while Lattice K and Total K showed variable distribution with sub-surface sometimes having higher values."
+          },
+          {
+            "field": "spatial_variations.between_site_differences[0].explanatory_factors",
+            "error_description": "An explanatory factor ('Increase in finer fractions of soil particles at lower depth') was included for higher K at depth, which was not directly supported by the paper for this specific context.",
+            "corrected_information": "Removed the unsupported explanatory factor."
+          }
+        ]
+      }
+    },
+    "completeness_assessment": {
+      "data_completeness": {
+        "complete": true,
+        "missing_data": [],
+        "omitted_measurements": []
+      },
+      "methodological_completeness": {
+        "complete": true,
+        "missing_methods": [],
+        "incomplete_descriptions": []
+      },
+      "contextual_completeness": {
+        "complete": true,
+        "missing_context": [],
+        "insufficient_background": []
+      }
+    },
+    "validation_enhancements": {
+      "critical_corrections": [
+        {
+          "correction_type": "Numerical Correction",
+          "section_affected": "quantitative_soil_k_data.concentration_measurements",
+          "error_description": "Discrepancy in mean range for Available K (Surface) and min value for Water soluble K (Surface) and max value for Total K (Sub-surface) compared to Table 1.",
+          "corrected_information": "Updated values to match the precise data presented in Table 1.",
+          "impact_assessment": "Ensures higher numerical accuracy of reported K concentrations."
+        },
+        {
+          "correction_type": "Contextual Accuracy",
+          "section_affected": "environmental_context.soil_properties.classification",
+          "error_description": "Inference about soil classification (Vertisol/Inceptisols) was not explicitly stated in the original paper.",
+          "corrected_information": "Removed the inferred soil classification to strictly adhere to the information provided in the paper.",
+          "impact_assessment": "Maintains fidelity to the original research context and avoids external interpretation."
+        },
+        {
+          "correction_type": "Descriptive Accuracy",
+          "section_affected": "spatial_variations.between_site_differences",
+          "error_description": "The description of K distribution between surface and sub-surface soils for Lattice K and Total K was not fully accurate, and an explanatory factor was not directly supported.",
+          "corrected_information": "Refined the description to accurately reflect the variable distribution of Lattice K and Total K with depth, and removed an unsupported explanatory factor.",
+          "impact_assessment": "Improves the accuracy of spatial variability characterization."
+        },
+        {
+          "correction_type": "Data Representation",
+          "section_affected": "treatment_management_effects.experimental_treatments",
+          "error_description": "The 'effect_magnitude' field was set to '0' for qualitative effects.",
+          "corrected_information": "Removed the 'effect_magnitude' field as the effects are described qualitatively (e.g., 'highest', 'lowest') rather than with a specific numerical magnitude.",
+          "impact_assessment": "Ensures appropriate representation of qualitative findings."
+        }
+      ],
+      "completeness_improvements": [
+        {
+          "improvement_type": "Quantitative Detail",
+          "missing_information": "Specific correlation coefficients for different K forms.",
+          "source_location": "RESULTS AND DISCUSSION section, page 429.",
+          "addition_value": "Provides precise quantitative relationships between K forms, crucial for understanding K dynamics and equilibrium."
+        },
+        {
+          "improvement_type": "Contextual Detail",
+          "missing_information": "Explicit statements about highest/lowest K forms under irrigated/rainfed conditions.",
+          "source_location": "RESULTS AND DISCUSSION section, page 428-429.",
+          "addition_value": "Enriches the understanding of treatment effects by explicitly stating the comparative performance of cropping systems as described by the authors."
+        }
+      ],
+      "context_clarifications": []
+    },
+    "enhanced_soil_k_extraction": {
+      "paper_metadata": {
+        "title": "Dynamics of Soil Potassium under Different Cropping Systems in Y.S.R Kadapa District of Andhra Pradesh",
+        "authors": [
+          "Charankumar G.R.",
+          "V. Munaswamy",
+          "T. Giridhara Krishna",
+          "D. Subramanyam"
+        ],
+        "journal": "Environment and Ecology",
+        "publication_year": 2022,
+        "research_focus": "Study of soil potassium dynamics under different cropping systems.",
+        "soil_k_relevance": "The entire study is focused on the distribution, forms, and interrelationships of soil potassium."
+      },
+      "research_context": {
+        "study_objectives": "To study the dynamics of soil potassium under different cropping systems in Y.S.R Kadapa district, Andhra Pradesh. To assess different potassium fractions in soils for potassium management and long-term sustainability of cropping systems, and to formulate sound fertilizer recommendations based on soil K supplying capacity and relationships among K forms.",
+        "soil_k_research_role": "Soil potassium is the central subject of the research, with the study investigating its various forms, concentrations, distribution with depth, and interrelationships under different agricultural management practices (cropping systems).",
+        "geographic_setting": "Y.S.R Kadapa district, Andhra Pradesh, India. Situated at Geographical Co-ordination of 13° 43’ to 15° 14’ of Northern latitude and 77° 55’ to 79° 29’ of the Eastern longitude. Lies in the river basin of Pennar.",
+        "environmental_conditions": "Classified as a drought prone area due to scanty and uneven distribution of rainfall. Annual rainfall of the district is 700 mm.",
+        "agricultural_context": "The study was conducted under different cropping systems: fallow – bengalgram, sunflower – sesame, paddy – paddy, groundnut mono cropping, and groundnut – groundnut cropping sequences.",
+        "study_design": "Observational study involving collection of five soil samples from each of the five cropping systems at two depths (0-15 cm and 15-30 cm). Statistical analysis (correlation) was performed to understand relationships among different forms of potassium and with soil properties.",
+        "temporal_scope": "Soil samples were collected during 2018-19. The study represents a cross-sectional assessment of soil K dynamics.",
+        "spatial_scope": "Y.S.R Kadapa district. Five soil samples were collected from each of the five cropping systems at two depths (0-15 cm and 15-30 cm)."
+      },
+      "quantitative_soil_k_data": {
+        "concentration_measurements": [
+          {
+            "parameter": "Available K",
+            "values": [
+              73.65,
+              282.8
+            ],
+            "original_units": "mg kg-1",
+            "measurement_method": "Neutral normal ammonium acetate extraction (Hanway and Heidel 1952)",
+            "sample_context": "Surface soils (0-15 cm) under different cropping systems",
+            "temporal_context": "2018-19",
+            "spatial_context": "Y.S.R Kadapa district",
+            "statistical_measures": {
+              "mean_range": "84.55 to 262.84 mg kg-1"
+            }
+          },
+          {
+            "parameter": "Available K",
+            "values": [
+              51.3,
+              160.9
+            ],
+            "original_units": "mg kg-1",
+            "measurement_method": "Neutral normal ammonium acetate extraction (Hanway and Heidel 1952)",
+            "sample_context": "Sub-surface soils (15-30 cm) under different cropping systems",
+            "temporal_context": "2018-19",
+            "spatial_context": "Y.S.R Kadapa district",
+            "statistical_measures": {
+              "mean_range": "55.08 to 151.73 mg kg-1"
+            }
+          },
+          {
+            "parameter": "Water soluble K",
+            "values": [
+              5.55,
+              43.3
+            ],
+            "original_units": "mg kg-1",
+            "measurement_method": "1:5 soil water suspension extraction (Jackson 1973)",
+            "sample_context": "Surface soils (0-15 cm) under different cropping systems",
+            "temporal_context": "2018-19",
+            "spatial_context": "Y.S.R Kadapa district",
+            "statistical_measures": {
+              "mean_range": "9.52 to 37.24 mg kg-1"
+            }
+          },
+          {
+            "parameter": "Water soluble K",
+            "values": [
+              5.05,
+              17.25
+            ],
+            "original_units": "mg kg-1",
+            "measurement_method": "1:5 soil water suspension extraction (Jackson 1973)",
+            "sample_context": "Sub-surface soils (15-30 cm) under different cropping systems",
+            "temporal_context": "2018-19",
+            "spatial_context": "Y.S.R Kadapa district",
+            "statistical_measures": {
+              "mean_range": "6.63 to 14.35 mg kg-1"
+            }
+          },
+          {
+            "parameter": "Exchangeable K",
+            "values": [
+              68.1,
+              254.1
+            ],
+            "original_units": "mg kg-1",
+            "measurement_method": "Calculated as Available K minus Water soluble K",
+            "sample_context": "Surface soils (0-15 cm) under different cropping systems",
+            "temporal_context": "2018-19",
+            "spatial_context": "Y.S.R Kadapa district",
+            "statistical_measures": {
+              "mean_range": "75.03 to 236.77 mg kg-1"
+            }
+          },
+          {
+            "parameter": "Exchangeable K",
+            "values": [
+              43.7,
+              144.05
+            ],
+            "original_units": "mg kg-1",
+            "measurement_method": "Calculated as Available K minus Water soluble K",
+            "sample_context": "Sub-surface soils (15-30 cm) under different cropping systems",
+            "temporal_context": "2018-19",
+            "spatial_context": "Y.S.R Kadapa district",
+            "statistical_measures": {
+              "mean_range": "46.07 to 138.84 mg kg-1"
+            }
+          },
+          {
+            "parameter": "Non-exchangeable K",
+            "values": [
+              309.95,
+              970.35
+            ],
+            "original_units": "mg kg-1",
+            "measurement_method": "Wood and De Turk (1941) method",
+            "sample_context": "Surface soils (0-15 cm) under different cropping systems",
+            "temporal_context": "2018-19",
+            "spatial_context": "Y.S.R Kadapa district",
+            "statistical_measures": {
+              "mean_range": "337.35 to 896.49 mg kg-1"
+            }
+          },
+          {
+            "parameter": "Non-exchangeable K",
+            "values": [
+              238.8,
+              623.0
+            ],
+            "original_units": "mg kg-1",
+            "measurement_method": "Wood and De Turk (1941) method",
+            "sample_context": "Sub-surface soils (15-30 cm) under different cropping systems",
+            "temporal_context": "2018-19",
+            "spatial_context": "Y.S.R Kadapa district",
+            "statistical_measures": {
+              "mean_range": "275.13 to 602.53 mg kg-1"
+            }
+          },
+          {
+            "parameter": "Lattice K",
+            "values": [
+              11498.1,
+              23326.6
+            ],
+            "original_units": "mg kg-1",
+            "measurement_method": "Calculated as Total K minus (NH4OAc-K + non-exchangeable K) (Wiklander 1954)",
+            "sample_context": "Surface soils (0-15 cm) under different cropping systems",
+            "temporal_context": "2018-19",
+            "spatial_context": "Y.S.R Kadapa district",
+            "statistical_measures": {
+              "mean_range": "14038.10 to 20116.32 mg kg-1"
+            }
+          },
+          {
+            "parameter": "Lattice K",
+            "values": [
+              6460.2,
+              35828.2
+            ],
+            "original_units": "mg kg-1",
+            "measurement_method": "Calculated as Total K minus (NH4OAc-K + non-exchangeable K) (Wiklander 1954)",
+            "sample_context": "Sub-surface soils (15-30 cm) under different cropping systems",
+            "temporal_context": "2018-19",
+            "spatial_context": "Y.S.R Kadapa district",
+            "statistical_measures": {
+              "mean_range": "7219.58 to 31708.88 mg kg-1"
+            }
+          },
+          {
+            "parameter": "Total K",
+            "values": [
+              11920,
+              24190
+            ],
+            "original_units": "mg kg-1",
+            "measurement_method": "HF-HClO4 digestion method (Pratt 1965)",
+            "sample_context": "Surface soils (0-15 cm) under different cropping systems",
+            "temporal_context": "2018-19",
+            "spatial_context": "Y.S.R Kadapa district",
+            "statistical_measures": {
+              "mean_range": "14460 to 20952 mg kg-1"
+            }
+          },
+          {
+            "parameter": "Total K",
+            "values": [
+              6990,
+              36270
+            ],
+            "original_units": "mg kg-1",
+            "measurement_method": "HF-HClO4 digestion method (Pratt 1965)",
+            "sample_context": "Sub-surface soils (15-30 cm) under different cropping systems",
+            "temporal_context": "2018-19",
+            "spatial_context": "Y.S.R Kadapa district",
+            "statistical_measures": {
+              "mean_range": "7834 to 32134 mg kg-1"
+            }
+          }
+        ],
+        "pool_characterizations": [
+          {
+            "pool_type": "Available K",
+            "values": [
+              0.58,
+              1.33
+            ],
+            "units": "% of total K",
+            "analytical_method": "Calculated from measured values",
+            "measurement_conditions": "Surface soils (0-15 cm)",
+            "temporal_variation": "Not applicable (cross-sectional)",
+            "treatment_effects": {
+              "paddy_paddy": "Highest contribution (1.33%)",
+              "sunflower_sesame": "Lowest contribution (0.58%)"
+            }
+          },
+          {
+            "pool_type": "Available K",
+            "values": [
+              0.11,
+              1.58
+            ],
+            "units": "% of total K",
+            "analytical_method": "Calculated from measured values",
+            "measurement_conditions": "Sub-surface soils (15-30 cm)",
+            "temporal_variation": "Not applicable (cross-sectional)",
+            "treatment_effects": {
+              "paddy_paddy": "Highest contribution (1.58%)",
+              "groundnut_monocropping": "Lowest contribution (0.17%)"
+            }
+          },
+          {
+            "pool_type": "Water soluble K",
+            "values": [
+              0.07,
+              0.18
+            ],
+            "units": "% of total K",
+            "analytical_method": "Calculated from measured values",
+            "measurement_conditions": "Surface soils (0-15 cm)",
+            "temporal_variation": "Not applicable (cross-sectional)",
+            "treatment_effects": {
+              "groundnut_groundnut": "Highest contribution (0.18%)",
+              "sunflower_sesame": "Lowest contribution (0.07%)"
+            }
+          },
+          {
+            "pool_type": "Water soluble K",
+            "values": [
+              0.03,
+              0.18
+            ],
+            "units": "% of total K",
+            "analytical_method": "Calculated from measured values",
+            "measurement_conditions": "Sub-surface soils (15-30 cm)",
+            "temporal_variation": "Not applicable (cross-sectional)",
+            "treatment_effects": {
+              "groundnut_groundnut": "Highest contribution (0.18%)",
+              "sunflower_sesame": "Lowest contribution (0.03%)"
+            }
+          },
+          {
+            "pool_type": "Exchangeable K",
+            "values": [
+              0.44,
+              1.2
+            ],
+            "units": "% of total K",
+            "analytical_method": "Calculated from measured values",
+            "measurement_conditions": "Surface soils (0-15 cm)",
+            "temporal_variation": "Not applicable (cross-sectional)",
+            "treatment_effects": {
+              "paddy_paddy": "Highest contribution (1.20%)",
+              "sunflower_sesame": "Lowest contribution (0.52%)"
+            }
+          },
+          {
+            "pool_type": "Exchangeable K",
+            "values": [
+              0.14,
+              1.44
+            ],
+            "units": "% of total K",
+            "analytical_method": "Calculated from measured values",
+            "measurement_conditions": "Sub-surface soils (15-30 cm)",
+            "temporal_variation": "Not applicable (cross-sectional)",
+            "treatment_effects": {
+              "paddy_paddy": "Highest contribution (1.44%)",
+              "groundnut_monocropping": "Lowest contribution (0.14%)"
+            }
+          },
+          {
+            "pool_type": "Non-exchangeable K",
+            "values": [
+              2.33,
+              5.08
+            ],
+            "units": "% of total K",
+            "analytical_method": "Calculated from measured values",
+            "measurement_conditions": "Surface soils (0-15 cm)",
+            "temporal_variation": "Not applicable (cross-sectional)",
+            "treatment_effects": {
+              "fallow_bengalgram": "Highest contribution (5.08%)",
+              "sunflower_sesame": "Lowest contribution (2.33%)"
+            }
+          },
+          {
+            "pool_type": "Non-exchangeable K",
+            "values": [
+              1.15,
+              6.26
+            ],
+            "units": "% of total K",
+            "analytical_method": "Calculated from measured values",
+            "measurement_conditions": "Sub-surface soils (15-30 cm)",
+            "temporal_variation": "Not applicable (cross-sectional)",
+            "treatment_effects": {
+              "paddy_paddy": "Highest contribution (6.26%)",
+              "sunflower_sesame": "Lowest contribution (1.15%)"
+            }
+          },
+          {
+            "pool_type": "Lattice K",
+            "values": [
+              94.0,
+              97.08
+            ],
+            "units": "% of total K",
+            "analytical_method": "Calculated from measured values",
+            "measurement_conditions": "Surface soils (0-15 cm)",
+            "temporal_variation": "Not applicable (cross-sectional)",
+            "treatment_effects": {
+              "groundnut_groundnut": "Highest contribution (97.08%)",
+              "sunflower_sesame": "Lowest contribution (94.00%)"
+            }
+          },
+          {
+            "pool_type": "Lattice K",
+            "values": [
+              92.16,
+              98.68
+            ],
+            "units": "% of total K",
+            "analytical_method": "Calculated from measured values",
+            "measurement_conditions": "Sub-surface soils (15-30 cm)",
+            "temporal_variation": "Not applicable (cross-sectional)",
+            "treatment_effects": {
+              "groundnut_monocropping": "Highest contribution (98.68%)",
+              "groundnut_groundnut": "Lowest contribution (92.16%)"
+            }
+          }
+        ],
+        "process_rates": [],
+        "balance_calculations": []
+      },
+      "temporal_patterns": {
+        "study_duration": "Samples collected during 2018-19 (cross-sectional study).",
+        "monitoring_frequency": "Single sampling event.",
+        "seasonal_observations": [],
+        "long_term_trends": [],
+        "event_responses": []
+      },
+      "spatial_variations": {
+        "within_site_variability": [],
+        "between_site_differences": [
+          {
+            "parameter": "All forms of K",
+            "site_comparison": "Comparison between surface (0-15 cm) and sub-surface (15-30 cm) soils across all cropping systems.",
+            "difference_magnitude": {
+              "description": "Highest available, water soluble, exchangeable, and non-exchangeable K observed in surface soils than in sub-surface soils in all cropping systems. Lattice K and Total K showed variable distribution, with sub-surface soils sometimes having higher values (e.g., Groundnut monocropping).",
+              "surface_vs_subsurface_trend": "Generally higher K forms in surface soils for available, water soluble, exchangeable, and non-exchangeable K; variable for lattice and total K."
+            },
+            "explanatory_factors": [
+              "Presence of vegetation (for surface K)",
+              "Upward translocation of K from lower layers through capillary rise or ground water (for surface K)"
+            ]
+          },
+          {
+            "parameter": "All forms of K",
+            "site_comparison": "Comparison among different cropping systems (Fallow – Bengalgram, Sunflower – Sesame, Paddy – Paddy, Groundnut monocropping, Groundnut – Groundnut).",
+            "difference_magnitude": {
+              "description": "Significant variations observed across cropping systems for all K forms. For example, highest available K and exchangeable K in paddy-paddy system, lowest in sunflower-sesame. Highest water soluble K in groundnut-groundnut. Highest non-exchangeable K in fallow-bengalgram (surface) and paddy-paddy (sub-surface). Highest lattice K and total K in groundnut-groundnut (surface) and groundnut monocropping (sub-surface).",
+              "range_of_values": "See quantitative_soil_k_data for specific ranges per cropping system."
+            },
+            "explanatory_factors": [
+              "Continuous application of potassic fertilizers (e.g., paddy-paddy)",
+              "Exhaustive nature of crops (e.g., sunflower-sesame)",
+              "Imbalanced fertilization",
+              "Low utilization or non-replenishment of K",
+              "Predominance of potassium bearing primary minerals",
+              "Higher clay percentage offering more exchangeable sites"
+            ]
+          }
+        ],
+        "scaling_considerations": []
+      },
+      "process_characterization": {
+        "cycling_processes": [
+          {
+            "process_name": "Dynamic Equilibrium of K Forms",
+            "description": "The study reveals the existence of a dynamic equilibrium among different forms of K (water soluble-K, exchangeable-K, non-exchangeable-K, and lattice-K) in the soil. This equilibrium ensures K supply to crop plants.",
+            "quantification": {
+              "correlation_surface_soil": "Available K correlated with WS-K (r=0.416*), EX-K (r=0.987**), NEX-K (r=0.791**), Total K (r=0.421*). WS-K correlated with NEX-K (r=0.744**), Lattice K (r=0.665**), Total K (r=0.682**). EX-K correlated with NEX-K (r=0.708**). NEX-K correlated with Lattice K (r=0.705**), Total K (r=0.741**). Lattice K correlated with Total K (r=0.999**).",
+              "correlation_subsurface_soil": "Available K correlated with EX-K (r=0.766**), NEX-K (r=0.943**), and negatively with Lattice K (r=-0.482*), Total K (r=-0.472*). WS-K correlated with NEX-K (r=0.486*). EX-K correlated with NEX-K (r=0.701**). NEX-K negatively correlated with Lattice K (r=-0.472*), Total K (r=-0.462*). Lattice K correlated with Total K (r=0.999**)."
+            },
+            "controlling_factors": [
+              "Soil chemical environment",
+              "Organic and inorganic forms of K",
+              "Clay mineralogy (implied by non-exchangeable K and lattice K discussions)"
+            ],
+            "measurement_approach": "Correlation analysis of measured K forms."
+          },
+          {
+            "process_name": "K Release/Replenishment",
+            "description": "Decline in exchangeable K is replenished by the release of non-exchangeable K.",
+            "quantification": {
+              "correlation_surface_soil": "Exchangeable K highly and significantly correlated with non-exchangeable K (r = 0.708**)."
+            },
+            "controlling_factors": [
+              "Soil K pools",
+              "Crop uptake"
+            ],
+            "measurement_approach": "Inferred from correlation analysis."
+          }
+        ],
+        "plant_soil_interactions": [
+          {
+            "interaction_type": "K Absorption by Plants",
+            "description": "Potassium is absorbed by plants in larger amounts than any other mineral element except nitrogen. It plays a vital role in enzyme activity, carbohydrate and nitrogen metabolism, translocation of assimilates, protein synthesis, starch formation/breakdown/translocation, water balance, agronomic productivity, and sustainability.",
+            "quantitative_data": {},
+            "temporal_patterns": "Not explicitly studied in this paper, but implied by 'dynamics'.",
+            "influencing_factors": [
+              "Availability of K in soil (water soluble-K, exchangeable-K)",
+              "Crop demand"
+            ]
+          },
+          {
+            "interaction_type": "Mining of Soil Native K",
+            "description": "Growing crops without K for longer periods leads to the mining of soil native K, resulting in declining available K.",
+            "quantitative_data": {},
+            "temporal_patterns": "Implied long-term effect, not directly measured in this study.",
+            "influencing_factors": [
+              "Insufficient nutrient addition via fertilizers and manures",
+              "Intensive cropping"
+            ]
+          }
+        ],
+        "chemical_processes": [
+          {
+            "process": "Sorption/Desorption",
+            "characterization": "Exchangeable K is held by negative charges on clay particles and humic substances, indicating sorption processes. Its availability is influenced by these sites.",
+            "rates": {},
+            "environmental_controls": [
+              "Clay content",
+              "Organic matter content",
+              "Soil chemical environment"
+            ],
+            "implications": "Higher clay percentage in soils offers more exchangeable sites for K."
+          },
+          {
+            "process": "Fixation/Release (Non-exchangeable K)",
+            "characterization": "Non-exchangeable or fixed-K is trapped between layers of dioctahedral and trioctahedral micas and vermiculites, making it sparingly available to plants. It can be released to replenish exchangeable K.",
+            "rates": {},
+            "environmental_controls": [
+              "Clay mineralogy (e.g., presence of 2:1 clay minerals)",
+              "Soil moisture conditions (implied by 'dynamics')"
+            ],
+            "implications": "Higher percentage of clay in soils contributes to higher non-exchangeable K."
+          }
+        ]
+      },
+      "treatment_management_effects": {
+        "experimental_treatments": [
+          {
+            "treatment_description": "Paddy – Paddy cropping system",
+            "soil_k_effects": {
+              "available_k": "Highest in both surface and sub-surface soils",
+              "exchangeable_k": "Highest in both surface and sub-surface soils",
+              "non_exchangeable_k": "Highest in sub-surface soils",
+              "overall_k_forms": "Highest among irrigated conditions"
+            },
+            "effect_duration": "Not specified, but attributed to continuous application of potassic fertilizers.",
+            "mechanisms": [
+              "Continuous application of potassic fertilizers",
+              "Soils containing relatively higher clay percentage offering more exchangeable sites for K"
+            ]
+          },
+          {
+            "treatment_description": "Sunflower – Sesame cropping system",
+            "soil_k_effects": {
+              "available_k": "Lowest in surface soils",
+              "water_soluble_k": "Lowest at both depths",
+              "exchangeable_k": "Lowest in surface soils",
+              "non_exchangeable_k": "Lowest at both depths",
+              "lattice_k": "Lowest in surface soils",
+              "total_k": "Lowest in surface soils",
+              "overall_k_forms": "Lowest among irrigated conditions"
+            },
+            "effect_duration": "Not specified, but attributed to continuous cropping.",
+            "mechanisms": [
+              "Exhaustive nature of crops",
+              "Less application of potassic fertilizers than crop needed",
+              "Imbalanced fertilization"
+            ]
+          },
+          {
+            "treatment_description": "Groundnut monocropping system",
+            "soil_k_effects": {
+              "available_k": "Lowest in sub-surface soils",
+              "exchangeable_k": "Lowest in sub-surface soils",
+              "lattice_k": "Highest in sub-surface soils",
+              "total_k": "Highest in sub-surface soils"
+            },
+            "effect_duration": "Not specified.",
+            "mechanisms": [
+              "Low utilization of K",
+              "Non-replenishment of K from other pools",
+              "Predominance of potassium bearing primary minerals"
+            ]
+          },
+          {
+            "treatment_description": "Fallow – Bengalgram cropping system",
+            "soil_k_effects": {
+              "non_exchangeable_k": "Highest in surface soils",
+              "overall_k_forms": "Highest among rainfed conditions"
+            },
+            "effect_duration": "Not specified.",
+            "mechanisms": [
+              "Higher percentage of clay in these soils"
+            ]
+          },
+          {
+            "treatment_description": "Groundnut – Groundnut cropping system",
+            "soil_k_effects": {
+              "water_soluble_k": "Highest in both surface and sub-surface soils",
+              "lattice_k": "Highest in surface soils, lowest in sub-surface soils",
+              "total_k": "Highest in surface soils, lowest in sub-surface soils"
+            },
+            "effect_duration": "Not specified.",
+            "mechanisms": [
+              "Addition of fertilizers",
+              "Presence of potassium bearing minerals"
+            ]
+          }
+        ],
+        "management_practices": [
+          {
+            "practice": "Potassium fertilizer application",
+            "soil_k_impacts": {
+              "available_k": "Increased",
+              "exchangeable_k": "Increased"
+            },
+            "implementation_details": "Continuous application of potassic fertilizers to both crops in paddy-paddy system.",
+            "temporal_effects": "Implied sustained higher levels.",
+            "spatial_effects": "Observed in specific cropping systems."
+          },
+          {
+            "practice": "Imbalanced fertilization",
+            "soil_k_impacts": {
+              "native_k_mining": "Caused mining of native K pools",
+              "available_k": "Declined"
+            },
+            "implementation_details": "Implied in sunflower-sesame system.",
+            "temporal_effects": "Implied long-term decline.",
+            "spatial_effects": "Observed in specific cropping systems."
+          },
+          {
+            "practice": "Crop straw incorporation",
+            "soil_k_impacts": {
+              "soil_fertility": "Suggested for sustaining soil fertility by supplementing K removal."
+            },
+            "implementation_details": "Recommended in conclusion.",
+            "temporal_effects": "Long-term benefit.",
+            "spatial_effects": "General recommendation."
+          }
+        ],
+        "comparative_analysis": [
+          {
+            "comparison_type": "Cropping system comparison (irrigated vs. rainfed)",
+            "treatments_compared": [
+              "Paddy-paddy (irrigated)",
+              "Groundnut-groundnut (irrigated)",
+              "Sunflower-sesame (irrigated)",
+              "Fallow-bengalgram (rainfed)",
+              "Groundnut monocropping (rainfed)"
+            ],
+            "soil_k_differences": {
+              "irrigated_conditions": "Among irrigated conditions, all forms of potassium were highest in paddy-paddy cropping system, followed by groundnut-groundnut and sunflower-sesame.",
+              "rainfed_conditions": "Among rainfed conditions, all forms of potassium were highest in fallow-bengalgram cropping system, followed by groundnut monocropping."
+            },
+            "statistical_significance": "Not explicitly stated for this overall comparison, but individual K form differences are discussed."
+          }
+        ]
+      },
+      "methodological_details": {
+        "analytical_methods": [
+          {
+            "method_name": "Water soluble K extraction",
+            "target_parameters": [
+              "Water soluble K"
+            ],
+            "procedure_description": "Shaking soil water suspension in a 1:5 ratio for 5 minutes, then filtering. K was determined.",
+            "instrumentation": "Flame photometer for K estimation.",
+            "precision": {},
+            "detection_limits": {},
+            "quality_control": []
+          },
+          {
+            "method_name": "Available K extraction",
+            "target_parameters": [
+              "Available K"
+            ],
+            "procedure_description": "Extraction with neutral normal ammonium acetate using a 1:5 soil solution ratio and shaking for five minutes.",
+            "instrumentation": "Flame photometer for K estimation.",
+            "precision": {},
+            "detection_limits": {},
+            "quality_control": []
+          },
+          {
+            "method_name": "Exchangeable K calculation",
+            "target_parameters": [
+              "Exchangeable K"
+            ],
+            "procedure_description": "Obtained by subtracting water-soluble K from available K.",
+            "instrumentation": "N/A (calculated)",
+            "precision": {},
+            "detection_limits": {},
+            "quality_control": []
+          },
+          {
+            "method_name": "Non-exchangeable K estimation",
+            "target_parameters": [
+              "Non-exchangeable K"
+            ],
+            "procedure_description": "Estimated by following the method as described by Wood and De Turk (1941).",
+            "instrumentation": "Flame photometer for K estimation.",
+            "precision": {},
+            "detection_limits": {},
+            "quality_control": []
+          },
+          {
+            "method_name": "Lattice K calculation",
+            "target_parameters": [
+              "Lattice K"
+            ],
+            "procedure_description": "Calculated from the difference between total K and the sum of NH4OAc-K (Available K) and non-exchangeable K (Wiklander 1954).",
+            "instrumentation": "N/A (calculated)",
+            "precision": {},
+            "detection_limits": {},
+            "quality_control": []
+          },
+          {
+            "method_name": "Total K estimation",
+            "target_parameters": [
+              "Total K"
+            ],
+            "procedure_description": "Estimated by HF-HClO4 digestion method using platinum crucibles as outlined by Pratt (1965).",
+            "instrumentation": "Flame photometer for K estimation.",
+            "precision": {},
+            "detection_limits": {},
+            "quality_control": []
+          }
+        ],
+        "sampling_design": {
+          "spatial_sampling": "Five soil samples from each of the five cropping systems were collected from the Y.S.R. district.",
+          "temporal_sampling": "During 2018-19 (single sampling period).",
+          "sample_processing": "Soil samples were air-dried, ground in a wooden pestle with mortar, and passed through a 2mm stainless steel sieve.",
+          "storage_handling": "Not explicitly mentioned beyond initial processing.",
+          "representativeness": "Samples collected from specific cropping systems and depths to represent variations within the district."
+        },
+        "data_quality": {
+          "precision_measures": [],
+          "accuracy_assessments": [],
+          "method_comparisons": [],
+          "uncertainty_sources": []
+        }
+      },
+      "environmental_context": {
+        "climate_conditions": {
+          "temperature": "Not specified.",
+          "precipitation": "Annual rainfall of 700 mm. Classified as drought prone area due to scanty and uneven distribution of rainfall.",
+          "seasonality": "Not specified for sampling.",
+          "extremes": "Drought prone."
+        },
+        "soil_properties": {
+          "classification": "Not explicitly classified in the paper.",
+          "texture": "Not quantified, but implied by discussion: 'soils contain relatively higher clay per cent' and 'higher percentage of clay'.",
+          "mineralogy": "Not quantified, but implied by discussion: 'potassium bearing minerals', 'predominance of potassium bearing primary minerals'.",
+          "organic_matter": {
+            "description": "Not quantified, but implied by 'humic substances' in relation to exchangeable K."
+          },
+          "chemical_properties": {
+            "pH": "Not quantified, but 'prevailing soil chemical environment' mentioned as governing K availability."
+          },
+          "physical_properties": {}
+        },
+        "landscape_context": {
+          "topography": "Not explicitly described, but located in the Pennar river basin.",
+          "drainage": "Not explicitly described.",
+          "position": "Y.S.R Kadapa district, Andhra Pradesh, India.",
+          "land_use_history": "Implied by the selection of different cropping systems (fallow – bengalgram, sunflower – sesame, paddy – paddy, groundnut mono cropping, groundnut – groundnut)."
+        }
+      },
+      "research_integration": {
+        "relationship_to_other_measurements": "Correlation analysis was performed among different forms of potassium. The paper states 'correlation among different forms of potassium and with soil properties' was done, but only K-K correlations are presented in the results.",
+        "integration_with_plant_studies": "Potassium is highlighted as a crucial plant nutrient, absorbed in large amounts, vital for plant metabolism, water balance, and agronomic productivity. The study's findings are intended to inform potassium management for crop sustainability.",
+        "connection_to_broader_objectives": "The study contributes to understanding soil fertility decline, the need for balanced fertilizer use, and ensuring adequate food production on dwindling arable land by providing knowledge on soil K dynamics and supplying capacity.",
+        "comparative_context": "The results are discussed in comparison to findings from other studies in India and elsewhere, particularly regarding K forms, their distribution, and correlations (e.g., Katkar et al. 2011, Lungmuana et al. 2014, Hebsur and Gali 2011, Mazumdar et al. 2014, Swamanna et al. 2015, Kundu et al. 2014, Dhakad et al. 2017, Saini and Grewal 2014, Elbaalawy et al. 2016, Lakaria et al. 2012, Prasad et al. 2010, Rajeevana and Kavitha 2017, Rao et al. 2013, Sawarkar et al. 2013, Jatav and Dewangan 2012).",
+        "literature_positioning": "The study positions itself as essential for potassium management and formulating sound fertilizer recommendations, building upon existing knowledge of K forms and their dynamic equilibrium."
+      },
+      "data_limitations": {
+        "measurement_constraints": [],
+        "temporal_limitations": [
+          "The study is cross-sectional, based on a single sampling event (2018-19), thus not capturing long-term or seasonal temporal dynamics directly."
+        ],
+        "spatial_limitations": [
+          "While covering different cropping systems, the study is confined to a single district (Y.S.R Kadapa district)."
+        ],
+        "methodological_constraints": [
+          "Specific soil properties (e.g., texture, organic matter, pH) were mentioned as being determined but their quantitative values and specific correlations with K forms were not presented in the results, only K-K correlations.",
+          "Precision, accuracy, and detection limits of analytical methods were not explicitly reported."
+        ],
+        "interpretation_caveats": [
+          "The exact fertilizer application rates or other management details for each cropping system were not provided, making it difficult to precisely attribute K dynamics solely to the cropping system type without knowing the full management history."
+        ]
+      },
+      "extraction_assessment": {
+        "data_completeness": 0.98,
+        "quantitative_content": 0.99,
+        "temporal_coverage": 0.2,
+        "spatial_coverage": 0.7,
+        "methodological_detail": 0.85,
+        "extraction_confidence": 0.98,
+        "native_context_preservation": 0.99,
+        "extraction_notes": "All explicit quantitative data for soil K forms (ranges, means, percentages) and their correlations were extracted and verified. Methodological details for K analysis were comprehensive. The paper's cross-sectional nature limits temporal dynamics extraction. While soil properties were mentioned as being analyzed, their specific quantitative values and correlations with K forms were not presented in the results, only K-K correlations. The impact of management practices is inferred from the cropping systems and general statements about fertilizer use. Minor numerical corrections and descriptive refinements were applied based on detailed table data and text."
+      },
+      "enhancement_summary": {
+        "corrections_applied": [
+          "Corrected specific numerical values for Available K (Surface) mean range, Water soluble K (Surface) min value, and Total K (Sub-surface) max value based on Table 1.",
+          "Refined the description of spatial variations for Lattice K and Total K between surface and sub-surface soils to accurately reflect variable distribution.",
+          "Removed an unsupported explanatory factor for spatial variations.",
+          "Removed the 'effect_magnitude' field for qualitative treatment effects.",
+          "Removed inferred soil classification to maintain fidelity to the original paper."
+        ],
+        "enhancements_added": [
+          "Added detailed correlation coefficients with significance levels for all K forms in both surface and sub-surface soils.",
+          "Included explicit comparative statements regarding highest/lowest K forms under irrigated vs. rainfed conditions for different cropping systems."
+        ],
+        "areas_enriched": [
+          "Quantitative data (correlation coefficients)",
+          "Spatial variations (more precise description of depth distribution)",
+          "Treatment/Management effects (explicit comparative statements and qualitative effect magnitudes)"
+        ],
+        "enhancement_justification": "The enhancements provide more precise quantitative data (correlations) and richer contextual details regarding spatial variations and treatment effects, directly sourced from the paper. Corrections ensure higher numerical and descriptive accuracy, improving the overall scientific fidelity and utility of the extraction for business applications."
+      }
+    },
+    "validation_certification": {
+      "scientific_accuracy_score": 0.98,
+      "context_preservation_score": 0.99,
+      "completeness_score": 0.98,
+      "extraction_enhancement_value": "high",
+      "overall_validation_confidence": 0.98,
+      "validation_status": "approved",
+      "critical_issues_count": 0,
+      "enhancement_recommendations": [],
+      "validator_notes": "The enhanced extraction accurately captures the soil K dynamics and related information from the original paper. All identified numerical discrepancies and descriptive inaccuracies have been corrected. Significant enhancements were made by incorporating detailed correlation coefficients and explicit comparative statements on cropping system effects, which were present in the text but not fully captured in the initial extraction. The extraction maintains high fidelity to the original research context and is suitable for business-critical applications."
+    },
+    "_usage_metadata": {
+      "timestamp": "2025-07-10T12:12:45.912137",
+      "stage_name": "unknown",
+      "paper_id": "unknown",
+      "prompt_length_chars": 78453,
+      "processing_time_seconds": 77.15,
+      "thinking_enabled": true,
+      "input_tokens": 21326,
+      "output_tokens": 11835,
+      "thinking_tokens": 0,
+      "input_cost_usd": 0.003199,
+      "output_cost_usd": 0.041423,
+      "thinking_cost_usd": 0.0,
+      "total_cost_usd": 0.044621
+    },
+    "success": true,
+    "stage": "2B",
+    "paper_id": "Dynamics of Soil Potassium under Different Cropping Systems in Y.S.R Kadapa District of Andhra Pradesh.pdf",
+    "validation_timestamp": "2025-07-10T12:12:45.914610",
+    "temperature_used": 0.05,
+    "validated_stage": "2A"
+  }
+}

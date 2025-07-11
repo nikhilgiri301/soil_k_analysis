@@ -13,7 +13,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from utils.prompt_loader import PromptLoader
 from utils.gemini_client import GeminiClient
-from utils.config import STAGE_TEMPERATURES
+from utils.json_config import STAGE_TEMPERATURES
 
 class GenericValidator:
     """Stage 1B: Validates generic paper extraction for accuracy and completeness"""
@@ -35,8 +35,8 @@ class GenericValidator:
         """Validate Stage 1A extraction against original paper"""
         
         try:
-            # Check if stage_1a failed
-            if not stage_1a_result.get('success', False):
+            # Check if stage_1a failed - look for error field or empty result
+            if stage_1a_result.get('error') or not stage_1a_result.get('paper_metadata'):
                 return {
                     "success": False,
                     "stage": "1B",

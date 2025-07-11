@@ -13,7 +13,7 @@ import os
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from utils.config import PATHS
+from utils.json_config import PATHS
 
 class QualityController:
     """Comprehensive quality validation and control system"""

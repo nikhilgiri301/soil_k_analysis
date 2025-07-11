@@ -92,15 +92,36 @@
             "evidence_requirements": ["deforestation_studies", "nutrient_flow_analysis"]
           }
         },
-        "iran": {
-          "arid_plateau": {
+        "europe": {
+          "central_europe": {
             "parameters": [
-              "desert_soil_k_availability",
-              "water_stress_k_mobilization",
-              "salt_accumulation_effects"
+              "temperate_soil_k_dynamics",
+              "agricultural_k_management",
+              "long_term_sustainability"
             ],
             "confidence_threshold": 0.6,
-            "evidence_requirements": ["arid_zone_studies", "water_stress_experiments"]
+            "evidence_requirements": ["regional_field_studies", "long_term_monitoring"],
+            "applicability_note": "Example subcategory - data should be mapped to most appropriate European context"
+          },
+          "mediterranean": {
+            "parameters": [
+              "dry_climate_k_cycling",
+              "seasonal_water_stress_effects",
+              "olive_vineyard_k_systems"
+            ],
+            "confidence_threshold": 0.6,
+            "evidence_requirements": ["mediterranean_studies", "drought_stress_analysis"],
+            "applicability_note": "Example subcategory - for Mediterranean climate contexts"
+          },
+          "northern_europe": {
+            "parameters": [
+              "cool_climate_k_dynamics",
+              "forest_soil_k_cycling",
+              "short_season_agriculture"
+            ],
+            "confidence_threshold": 0.5,
+            "evidence_requirements": ["northern_climate_studies", "forest_soil_analysis"],
+            "applicability_note": "Example subcategory - for northern European contexts"
           }
         },
         "usa": {
@@ -121,6 +142,19 @@
             ],
             "confidence_threshold": 0.7,
             "evidence_requirements": ["leaching_studies", "organic_matter_analysis"]
+          }
+        },
+        "other_regions": {
+          "description": "Research from regions not directly covered in primary target geographies",
+          "general_other": {
+            "parameters": [
+              "soil_k_processes",
+              "management_effects", 
+              "temporal_dynamics"
+            ],
+            "confidence_threshold": 0.5,
+            "evidence_requirements": ["peer_reviewed_studies", "controlled_experiments"],
+            "applicability_note": "Provides process understanding and methodological insights for regions outside primary focus areas"
           }
         }
       },

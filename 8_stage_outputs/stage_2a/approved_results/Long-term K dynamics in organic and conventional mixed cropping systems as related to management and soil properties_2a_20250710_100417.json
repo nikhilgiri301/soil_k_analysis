@@ -1,0 +1,797 @@
+{
+  "stage_id": "2a",
+  "stage_name": "Soil K-Specific Extraction",
+  "paper_id": "Long-term K dynamics in organic and conventional mixed cropping systems as related to management and soil properties",
+  "processing_timestamp": "2025-07-10T10:04:17.371498",
+  "processing_time_seconds": 63.6967670917511,
+  "processing_mode": "single_paper",
+  "validation_passed": true,
+  "validation_message": "Valid soil K extraction",
+  "results": {
+    "paper_metadata": {
+      "title": "Long-term K dynamics in organic and conventional mixed cropping systems as related to management and soil properties",
+      "authors": [
+        "Ingrid Öborn"
+      ],
+      "journal": "IPI-OUAT-IPNI International Symposium, OUAT, Bhubaneswar, Orissa, India",
+      "publication_year": 2009,
+      "research_focus": "Potassium Dynamics in Soil under different Cropping Systems and Nutrient Management Practices",
+      "soil_k_relevance": "The delivery of K from soil mineral sources is of crucial importance for long-term sustainability; the research aims to quantify K sinks and sources, including mineral weathering, and identify soils (areas) in need of K-supplementation."
+    },
+    "research_context": {
+      "study_objectives": "To quantify K sinks and sources, including mineral weathering, and identify soils (areas) in need of K-supplementation; to assess soil K weathering rates and potential; to evaluate long-term field experiments; to characterize K sources and sinks qualitatively and quantitatively; and to utilize GIS-based maps.",
+      "soil_k_research_role": "Central to understanding long-term sustainability in agricultural systems, particularly in the context of decreasing K fertilizer application and reported negative K balances, by assessing the role of soil mineral K sources.",
+      "geographic_setting": "Swedish and Scottish agricultural sites, including Öjebyn, Kungsängen, Högåsa, Vreta Kloster, Ekebo, Fjardingslöv, Ö Ljungby, Önnestad, Bollerup (Sweden) and Countesswells (Aberdeen, UK).",
+      "environmental_conditions": "Sites located on a wide range of parent materials and in different climatic regions. Countesswells site: Annual average temperature 7.9°C, 791 mm precipitation.",
+      "agricultural_context": "Study conducted in organic and conventional mixed cropping systems, including dairy production, grass-dominated low input systems, and a 6-year mixed rotation (Oats/Pea, Ley I, Ley II, Ley III, Barley, Potatoes).",
+      "study_design": "Combination of simulation modelling, long-term field experiments (including historical data and re-sampling), qualitative and quantitative characterization of K sources and sinks, and GIS-based mapping. Countesswells experiment used a randomized block design with 5 replicates.",
+      "temporal_scope": "Long-term studies, including a 30-year field experiment (Countesswells) and Swedish fertility experiments spanning ~40 years. Data includes annual biomass harvest and K concentration measurements.",
+      "spatial_scope": "Measurements at farm-gate, soil surface, and soil system budget levels. Field and plot level studies, with soil sampling depths including 0-15 cm, 0-25 cm (Ap horizon), and 0-110 cm soil profiles. Multiple sites across Sweden and Scotland."
+    },
+    "quantitative_soil_k_data": {
+      "concentration_measurements": [
+        {
+          "parameter": "Mean annual K concentration in grass biomass",
+          "values": [
+            1.5,
+            2.0
+          ],
+          "original_units": "% K (dw)",
+          "measurement_method": "Biomass analysis",
+          "sample_context": "Grass I and Grass II (perennial rye grass)",
+          "temporal_context": "Annual, over 30 years",
+          "spatial_context": "Countesswells experimental site",
+          "statistical_measures": {
+            "range_with_K_fertilizer": "1.5-2.0 %",
+            "range_without_K_fertilizer": "0.5-1.0 %"
+          }
+        },
+        {
+          "parameter": "Total K in surface soil (Ap-horizons)",
+          "values": [
+            5,
+            35
+          ],
+          "original_units": "g kg-1",
+          "measurement_method": "X-ray fluorescence (XRF)",
+          "sample_context": "Ap-horizons of various Scottish and Swedish soils",
+          "temporal_context": "Not specified (likely baseline)",
+          "spatial_context": "Multiple sites across Scotland and Sweden",
+          "statistical_measures": {
+            "range": "5-35 g kg-1"
+          }
+        },
+        {
+          "parameter": "Exchangeable K (Kex) in soil profiles",
+          "values": [
+            0,
+            600
+          ],
+          "original_units": "mg kg-1",
+          "measurement_method": "Acetic acid extraction",
+          "sample_context": "Soil profiles (0-110 cm) from Swedish fertility experiments",
+          "temporal_context": "Not specified (likely end-of-experiment or specific time point)",
+          "spatial_context": "Fjardingslöv, Ekebo, Vreta Kloster, Högåsa, Kungsängen",
+          "statistical_measures": {
+            "range": "0-600 mg kg-1"
+          }
+        }
+      ],
+      "pool_characterizations": [
+        {
+          "pool_type": "Total K",
+          "values": [
+            43100,
+            65500,
+            66000,
+            84700
+          ],
+          "units": "kg ha-1",
+          "analytical_method": "Not specified (likely XRF or total digestion)",
+          "measurement_conditions": "Ap horizon (0-25 cm)",
+          "temporal_variation": "Not reported for this specific data set",
+          "treatment_effects": {}
+        },
+        {
+          "pool_type": "Aqueous regulable K (Aq reg K)",
+          "values": [
+            12800
+          ],
+          "units": "kg ha-1",
+          "analytical_method": "Not specified",
+          "measurement_conditions": "Ap horizon (0-25 cm)",
+          "temporal_variation": "Not reported for this specific data set",
+          "treatment_effects": {}
+        },
+        {
+          "pool_type": "2M HCl extractable K",
+          "values": [
+            2500,
+            6800,
+            13300
+          ],
+          "units": "kg ha-1",
+          "analytical_method": "2M HCl extraction",
+          "measurement_conditions": "Ap horizon (0-25 cm)",
+          "temporal_variation": "Not reported for this specific data set",
+          "treatment_effects": {}
+        },
+        {
+          "pool_type": "Exchangeable K (Ex-K)",
+          "values": [
+            80,
+            100,
+            220,
+            510
+          ],
+          "units": "kg ha-1",
+          "analytical_method": "Acetic acid extraction",
+          "measurement_conditions": "Ap horizon (0-25 cm)",
+          "temporal_variation": "Dynamic pool, replenished 10 times over 30 years in K-deficient grass system",
+          "treatment_effects": {
+            "K0_treatment": "Decreased over 30 years (Countesswells)",
+            "K65_treatment": "Stable/slight decrease over 30 years (Countesswells)"
+          }
+        },
+        {
+          "pool_type": "K in K-feldspar",
+          "values": [
+            5,
+            35
+          ],
+          "units": "g kg-1",
+          "analytical_method": "Quantitative mineralogical analysis (XRPD)",
+          "measurement_conditions": "Various Swedish and Scottish soils, different depths (Ap, 0-25, 25-40, 40-70, 70-110 cm)",
+          "temporal_variation": "Not reported",
+          "treatment_effects": {}
+        },
+        {
+          "pool_type": "K in Muscovite (di)",
+          "values": [
+            0,
+            10
+          ],
+          "units": "g kg-1",
+          "analytical_method": "Quantitative mineralogical analysis (XRPD)",
+          "measurement_conditions": "Various Swedish and Scottish soils, different depths (Ap, 0-25, 25-40, 40-70, 70-110 cm)",
+          "temporal_variation": "Not reported",
+          "treatment_effects": {}
+        },
+        {
+          "pool_type": "K in Illite (di)",
+          "values": [
+            0,
+            10
+          ],
+          "units": "g kg-1",
+          "analytical_method": "Quantitative mineralogical analysis (XRPD)",
+          "measurement_conditions": "Various Swedish and Scottish soils, different depths (Ap, 0-25, 25-40, 40-70, 70-110 cm)",
+          "temporal_variation": "Not reported",
+          "treatment_effects": {}
+        },
+        {
+          "pool_type": "K in Mixed layer (di)",
+          "values": [
+            0,
+            5
+          ],
+          "units": "g kg-1",
+          "analytical_method": "Quantitative mineralogical analysis (XRPD)",
+          "measurement_conditions": "Various Swedish and Scottish soils, different depths (Ap, 0-25, 25-40, 40-70, 70-110 cm)",
+          "temporal_variation": "Not reported",
+          "treatment_effects": {}
+        },
+        {
+          "pool_type": "K in Biotite (tri)",
+          "values": [
+            0,
+            5
+          ],
+          "units": "g kg-1",
+          "analytical_method": "Quantitative mineralogical analysis (XRPD)",
+          "measurement_conditions": "Various Swedish and Scottish soils, different depths (Ap, 0-25, 25-40, 40-70, 70-110 cm)",
+          "temporal_variation": "Not reported",
+          "treatment_effects": {}
+        },
+        {
+          "pool_type": "K in soil solution",
+          "values": [
+            0.1,
+            0.2
+          ],
+          "units": "% of total K",
+          "analytical_method": "Conceptual model",
+          "measurement_conditions": "General soil K pools",
+          "temporal_variation": "Not reported",
+          "treatment_effects": {}
+        },
+        {
+          "pool_type": "Fixed K",
+          "values": [
+            2,
+            10
+          ],
+          "units": "% of total K",
+          "analytical_method": "Conceptual model",
+          "measurement_conditions": "General soil K pools",
+          "temporal_variation": "Not reported",
+          "treatment_effects": {}
+        },
+        {
+          "pool_type": "Mineral K",
+          "values": [
+            90,
+            98
+          ],
+          "units": "% of total K",
+          "analytical_method": "Conceptual model",
+          "measurement_conditions": "General soil K pools",
+          "temporal_variation": "Not reported",
+          "treatment_effects": {}
+        }
+      ],
+      "process_rates": [
+        {
+          "process": "K release from non-exchangeable sources",
+          "rate_values": [
+            38
+          ],
+          "units": "kg K ha-1 yr-1",
+          "measurement_approach": "Calculated from total net K off-take over 30 years",
+          "environmental_conditions": "K deficient grass system",
+          "duration": "30 years"
+        },
+        {
+          "process": "K release rates from long-term field experiments",
+          "rate_values": [
+            8,
+            65
+          ],
+          "units": "kg K ha-1 yr-1",
+          "measurement_approach": "Evaluation of long-term field experiments",
+          "environmental_conditions": "Various soil types and management conditions",
+          "duration": "Not specified for individual rates, but from long-term experiments"
+        },
+        {
+          "process": "K weathering rates (model simulations)",
+          "rate_values": [
+            3,
+            80
+          ],
+          "units": "kg K ha-1 yr-1",
+          "measurement_approach": "Biogeochemical steady-state model PROFILE",
+          "environmental_conditions": "Dependent on soil mineralogy, soil texture, climate",
+          "duration": "Not specified (steady-state model)"
+        },
+        {
+          "process": "Mean annual K-off take in biomass harvest",
+          "rate_values": [
+            50,
+            200
+          ],
+          "units": "kg K ha-1 yr-1",
+          "measurement_approach": "Biomass harvest analysis",
+          "environmental_conditions": "Grass I and Grass II systems",
+          "duration": "Annual, over 30 years"
+        }
+      ],
+      "balance_calculations": [
+        {
+          "balance_type": "Farm-gate K balance",
+          "components": {},
+          "net_result": 3,
+          "units": "kg K ha-1 yr-1",
+          "calculation_period": "Not specified",
+          "assumptions": []
+        },
+        {
+          "balance_type": "Farm-gate K balance",
+          "components": {},
+          "net_result": 50,
+          "units": "kg K ha-1 yr-1",
+          "calculation_period": "Not specified",
+          "assumptions": []
+        },
+        {
+          "balance_type": "Field K balance (Conventional system)",
+          "components": {
+            "FYM_input": 126,
+            "Urine_input": 43,
+            "Water_input": 187,
+            "Crop_output": -248,
+            "Various_output": -33,
+            "Pea_output": -20
+          },
+          "net_result": -13,
+          "units": "kg K ha-1 yr-1",
+          "calculation_period": "6-year mixed rotation",
+          "assumptions": []
+        },
+        {
+          "balance_type": "Field K balance (Organic system)",
+          "components": {
+            "FYM_input": 81,
+            "Water_input": 49,
+            "Crop_output": -192,
+            "Pea_output": -16
+          },
+          "net_result": -29,
+          "units": "kg K ha-1 yr-1",
+          "calculation_period": "6-year mixed rotation",
+          "assumptions": []
+        },
+        {
+          "balance_type": "Average K sources and sinks",
+          "components": {
+            "sources": [
+              "Weathering (weath)",
+              "Deposition (dep)",
+              "Manure (man)",
+              "Fertilizer (fert)"
+            ],
+            "sinks": [
+              "Leaching (leach)",
+              "Harvest (harv)",
+              "K-exchangeable (K-ex, net change)"
+            ]
+          },
+          "net_result": null,
+          "units": "kg ha-1 yr-1",
+          "calculation_period": "Over 4-6 rotations during ~40 years",
+          "assumptions": []
+        }
+      ]
+    },
+    "temporal_patterns": {
+      "study_duration": "30 years (Countesswells field experiment), ~40 years (Swedish fertility experiments)",
+      "monitoring_frequency": "Annual (biomass harvest, K concentration in grass), long-term re-sampling of soil.",
+      "seasonal_observations": [],
+      "long_term_trends": [
+        {
+          "parameter": "K fertilizer application in Europe",
+          "trend_description": "Decrease in K fertiliser application in many European countries.",
+          "time_period": "1982-2002",
+          "trend_magnitude": null,
+          "statistical_significance": "Implied by figure"
+        },
+        {
+          "parameter": "K balances",
+          "trend_description": "Negative K balances reported at farm and field level, especially in grass dominated low input systems (e.g., organic systems).",
+          "time_period": "Long-term",
+          "trend_magnitude": null,
+          "statistical_significance": "Reported"
+        },
+        {
+          "parameter": "Exchangeable K (0-15 cm)",
+          "trend_description": "Decreased significantly over 30 years in the 0 K treatment; remained relatively stable or showed slight decrease in the 65 kg K/yr treatment.",
+          "time_period": "30 years",
+          "trend_magnitude": null,
+          "statistical_significance": "Visually significant from graph"
+        },
+        {
+          "parameter": "K off-take in biomass",
+          "trend_description": "Generally stable or slightly decreasing over 30 years, with higher off-take in K-fertilized plots.",
+          "time_period": "30 years",
+          "trend_magnitude": null,
+          "statistical_significance": "Visually significant from graph"
+        },
+        {
+          "parameter": "K concentration in grass",
+          "trend_description": "Generally stable or slightly decreasing over 30 years, with higher concentrations in K-fertilized plots.",
+          "time_period": "30 years",
+          "trend_magnitude": null,
+          "statistical_significance": "Visually significant from graph"
+        }
+      ],
+      "event_responses": [
+        {
+          "event_type": "K fertilizer application",
+          "soil_k_response": "Higher K concentration in grass, higher K off-take in biomass, and maintenance of higher exchangeable K levels in soil.",
+          "response_timing": "Annual application, observed over 30 years",
+          "magnitude": {},
+          "recovery_pattern": "Not explicitly described as recovery, but maintenance of K levels."
+        }
+      ]
+    },
+    "spatial_variations": {
+      "within_site_variability": [
+        {
+          "parameter": "Exchangeable K (Kex)",
+          "variability_description": "Varied with soil depth (0-110 cm), generally decreasing with increasing depth.",
+          "coefficient_of_variation": null,
+          "spatial_pattern": "Vertical gradient",
+          "controlling_factors": [
+            "Soil depth",
+            "K fertilizer application rate"
+          ]
+        },
+        {
+          "parameter": "Mineralogical speciation of K",
+          "variability_description": "Varied with soil depth (Ap, 0-25, 25-40, 40-70, 70-110 cm) for different K-bearing minerals (K-feldspar, Muscovite, Illite, Mixed layer, Biotite).",
+          "coefficient_of_variation": null,
+          "spatial_pattern": "Vertical gradient",
+          "controlling_factors": [
+            "Soil depth",
+            "Mineral type"
+          ]
+        }
+      ],
+      "between_site_differences": [
+        {
+          "parameter": "Soil K pools (Tot-K, Aq reg K, 2M HCl K, Ex-K)",
+          "site_comparison": "Significant differences observed across different FAO soil types (Loamy sand Dystric Cambisol, Loamy sand Eutric Regosol, Silt loam Thionic Gleysol, Clay(illitic) Eutric Cambisol).",
+          "difference_magnitude": {
+            "Tot-K_range": "43,100 to 84,700 kg ha-1",
+            "Ex-K_range": "80 to 510 kg ha-1"
+          },
+          "explanatory_factors": [
+            "Soil type (FAO classification)",
+            "Clay content (illitic)",
+            "Mineralogy"
+          ]
+        },
+        {
+          "parameter": "Total K (XRF)",
+          "site_comparison": "Varied significantly between Scottish and Swedish soils.",
+          "difference_magnitude": {
+            "range": "5 to 35 g kg-1"
+          },
+          "explanatory_factors": [
+            "Geographic location (Scottish vs. Swedish soils)"
+          ]
+        },
+        {
+          "parameter": "Average K sources and sinks",
+          "site_comparison": "Varied significantly across different Swedish experimental sites (Fjardingslöv, Ekebo, Vreta Kloster, Högåsa).",
+          "difference_magnitude": {},
+          "explanatory_factors": [
+            "Site-specific conditions",
+            "K-fertilizer application rate"
+          ]
+        }
+      ],
+      "scaling_considerations": [
+        {
+          "scale_transition": "From field/plot measurements to broader areas",
+          "scaling_approach": "Integration with GIS-based maps for identifying areas in need of K-supplementation.",
+          "uncertainty": "Not explicitly quantified but implied by the need for modeling and mapping.",
+          "limitations": []
+        }
+      ]
+    },
+    "process_characterization": {
+      "cycling_processes": [
+        {
+          "process_name": "K balance (Farm-gate, Soil surface, Soil system)",
+          "description": "Assessment of K inputs and outputs at different system boundaries to understand net K changes.",
+          "quantification": {
+            "farm_gate_organic": "+3 kg K ha-1 yr-1",
+            "farm_gate_conventional": "+50 kg K ha-1 yr-1",
+            "field_conventional": "-13 kg K ha-1 yr-1",
+            "field_organic": "-29 kg K ha-1 yr-1"
+          },
+          "controlling_factors": [
+            "Management practices (organic vs. conventional)",
+            "Fertilizer application",
+            "Manure application",
+            "Crop harvest",
+            "Leaching",
+            "Weathering",
+            "Deposition",
+            "Kex replenishment/depletion"
+          ],
+          "measurement_approach": "Input-output budgeting"
+        },
+        {
+          "process_name": "Mineral weathering",
+          "description": "Release of K from primary minerals (K-feldspar, micas, clay minerals like illite, biotite, mixed layer minerals) into more available forms.",
+          "quantification": {
+            "model_estimates": "3-80 kg K ha-1 yr-1",
+            "field_estimates": "8-65 kg K ha-1 yr-1"
+          },
+          "controlling_factors": [
+            "Soil mineralogy",
+            "Soil texture",
+            "Climate",
+            "Presence of 'etch pits' (crystal defects)"
+          ],
+          "measurement_approach": "Simulation modeling (PROFILE), evaluation of long-term field experiments"
+        },
+        {
+          "process_name": "K release from non-exchangeable sources",
+          "description": "Release of K from less available pools (e.g., fixed K, mineral K) to more available pools (e.g., exchangeable K).",
+          "quantification": {
+            "total_release_30_years": "1100 kg K ha-1",
+            "annual_release_rate": "38 kg K ha-1 yr-1"
+          },
+          "controlling_factors": [
+            "K deficiency in soil",
+            "Crop demand"
+          ],
+          "measurement_approach": "Calculated from net K off-take in K-deficient system"
+        }
+      ],
+      "plant_soil_interactions": [
+        {
+          "interaction_type": "K uptake by plants (off-take)",
+          "description": "Removal of K from the soil system through biomass harvest.",
+          "quantitative_data": {
+            "mean_annual_offtake_range": "50-200 kg K ha-1 yr-1"
+          },
+          "temporal_patterns": "Generally stable or slightly decreasing over 30 years, influenced by K fertilization.",
+          "influencing_factors": [
+            "K fertilizer application rate",
+            "Crop type (grass)",
+            "Biomass yield"
+          ]
+        },
+        {
+          "interaction_type": "Plant K concentration",
+          "description": "Concentration of K in harvested plant biomass.",
+          "quantitative_data": {
+            "mean_annual_concentration_range": "0.5-2.0 % K (dw)"
+          },
+          "temporal_patterns": "Generally stable or slightly decreasing over 30 years, influenced by K fertilization.",
+          "influencing_factors": [
+            "K fertilizer application rate",
+            "Soil K availability"
+          ]
+        }
+      ],
+      "chemical_processes": [
+        {
+          "process": "Sorption/Desorption (implied by exchangeable and fixed K)",
+          "characterization": "K exists in soil solution, on exchange sites (exchangeable K), and in fixed forms within clay minerals. Exchangeable K is a dynamic pool that can be replenished from non-exchangeable sources or depleted.",
+          "rates": {},
+          "environmental_controls": [
+            "Clay mineralogy",
+            "Soil moisture",
+            "K concentration in soil solution"
+          ],
+          "implications": "Crucial for K availability to plants and long-term K supply."
+        },
+        {
+          "process": "Weathering of K-bearing minerals",
+          "characterization": "Release of K from primary minerals like K-feldspar, muscovite, illite, mixed layer minerals, and biotite, often from 'etch pits' (crystal defects).",
+          "rates": {
+            "weathering_rate_range": "3-80 kg K ha-1 yr-1"
+          },
+          "environmental_controls": [
+            "Soil mineralogy",
+            "Soil texture",
+            "Climate"
+          ],
+          "implications": "A significant long-term source of K, especially in low-input systems."
+        }
+      ]
+    },
+    "treatment_management_effects": {
+      "experimental_treatments": [
+        {
+          "treatment_description": "K fertilizer application (K0 vs K65 kg ha-1 yr-1)",
+          "soil_k_effects": {
+            "K_concentration_in_grass": "Higher with K65",
+            "K_off_take_in_biomass": "Higher with K65",
+            "Exchangeable_K_0-15cm": "Maintained higher levels with K65, declined with K0"
+          },
+          "effect_magnitude": null,
+          "effect_duration": "30 years",
+          "mechanisms": [
+            "Direct input of K to soil",
+            "Maintenance of soil K pools"
+          ]
+        },
+        {
+          "treatment_description": "K-fertilizer application rates (A, B, C, D) in Swedish fertility experiments",
+          "soil_k_effects": {
+            "Exchangeable_K_in_soil_profiles": "Higher Kex concentrations, especially in topsoil, with increasing K fertilizer rates.",
+            "K_balance_components": "Influenced the relative contributions of K sources (fertilizer, manure, weathering, deposition) and sinks (harvest, leaching, Kex change)."
+          },
+          "effect_magnitude": null,
+          "effect_duration": "~40 years",
+          "mechanisms": [
+            "Direct K input",
+            "Impact on K fixation/release dynamics"
+          ]
+        }
+      ],
+      "management_practices": [
+        {
+          "practice": "Organic vs. Conventional Cropping Systems",
+          "soil_k_impacts": {
+            "Farm_gate_K_balance": "Organic system (+3 kg K ha-1 yr-1) had lower net K balance than conventional (+50 kg K ha-1 yr-1).",
+            "Field_K_balance": "Organic system (-29 kg K ha-1 yr-1) had more negative balance than conventional (-13 kg K ha-1 yr-1)."
+          },
+          "implementation_details": "Mixed cropping systems, dairy production, 6-year mixed rotation.",
+          "temporal_effects": "Observed over long-term (6-year rotation, farm-gate balances).",
+          "spatial_effects": "Compared across different farm/field systems."
+        },
+        {
+          "practice": "Manure and Urine application",
+          "soil_k_impacts": {
+            "K_inputs": "Significant K inputs to the soil system."
+          },
+          "implementation_details": "Part of both organic and conventional systems.",
+          "temporal_effects": "Annual inputs.",
+          "spatial_effects": "Field-level inputs."
+        }
+      ],
+      "comparative_analysis": [
+        {
+          "comparison_type": "Management system comparison",
+          "treatments_compared": [
+            "Organic cropping system",
+            "Conventional cropping system"
+          ],
+          "soil_k_differences": {
+            "net_K_balance": "Organic systems showed more negative or less positive K balances compared to conventional systems."
+          },
+          "statistical_significance": "Implied by reported mean balances."
+        },
+        {
+          "comparison_type": "Fertilizer rate comparison",
+          "treatments_compared": [
+            "No K fertilizer (K0)",
+            "65 kg K ha-1 yr-1 (K65)",
+            "Various K fertilizer application rates (A, B, C, D)"
+          ],
+          "soil_k_differences": {
+            "soil_K_levels": "Higher K fertilizer rates maintained higher soil K levels (e.g., exchangeable K) and plant K concentrations.",
+            "K_balance_components": "Altered the relative importance of K sources and sinks."
+          },
+          "statistical_significance": "Implied by observed trends and reported data."
+        }
+      ]
+    },
+    "methodological_details": {
+      "analytical_methods": [
+        {
+          "method_name": "Total K (Tot-K) analysis",
+          "target_parameters": [
+            "Total K"
+          ],
+          "procedure_description": "Not explicitly detailed, but XRF (X-ray fluorescence) was used for total K in surface soil.",
+          "instrumentation": "XRF",
+          "precision": {},
+          "detection_limits": {},
+          "quality_control": []
+        },
+        {
+          "method_name": "2M HCl K extraction",
+          "target_parameters": [
+            "Non-exchangeable K (acid-extractable)"
+          ],
+          "procedure_description": "Extraction with 2M HCl.",
+          "instrumentation": "Not specified",
+          "precision": {},
+          "detection_limits": {},
+          "quality_control": []
+        },
+        {
+          "method_name": "Exchangeable K (Ex-K) analysis",
+          "target_parameters": [
+            "Exchangeable K"
+          ],
+          "procedure_description": "Extraction with acetic acid.",
+          "instrumentation": "Not specified",
+          "precision": {},
+          "detection_limits": {},
+          "quality_control": []
+        },
+        {
+          "method_name": "Quantitative mineralogical analysis",
+          "target_parameters": [
+            "Mineralogical speciation of K (K in K-feldspar, Muscovite, Illite, Mixed layer, Biotite)"
+          ],
+          "procedure_description": "X-ray powder diffraction (XRPD) with random orientation. Sample preparation involved milling in water, spray drying, and repeated loading/emptying/loading by multiple operators.",
+          "instrumentation": "XRPD",
+          "precision": {},
+          "detection_limits": {},
+          "quality_control": [
+            "Sample preparation crucial",
+            "Prepared mixture of four minerals 25% w/w each for validation",
+            "3 operators, 6 times each for reproducibility check"
+          ]
+        },
+        {
+          "method_name": "Biogeochemical steady-state model PROFILE",
+          "target_parameters": [
+            "K release from mineral weathering"
+          ],
+          "procedure_description": "Application of the PROFILE model to estimate weathering rates.",
+          "instrumentation": "Computational model",
+          "precision": {},
+          "detection_limits": {},
+          "quality_control": []
+        }
+      ],
+      "sampling_design": {
+        "spatial_sampling": "Soil samples collected from Ap horizon (0-25 cm), 0-15 cm, and soil profiles (0-110 cm) at various Swedish and Scottish sites. Countesswells experiment used a randomized block design with 5 replicates.",
+        "temporal_sampling": "Long-term field experiments involved re-sampling and monitoring over 30-40 years. Annual biomass harvests for K off-take and concentration.",
+        "sample_processing": "Not explicitly detailed for all samples, but for XRPD, it involved milling in water and spray drying.",
+        "storage_handling": "Not specified.",
+        "representativeness": "Aimed to cover a wide range of parent materials and climatic regions across Swedish and Scottish sites."
+      },
+      "data_quality": {
+        "precision_measures": [
+          "For XRPD, reproducibility checks with multiple operators and repetitions were performed."
+        ],
+        "accuracy_assessments": [],
+        "method_comparisons": [],
+        "uncertainty_sources": [
+          "Quantitative values from graphs are visual estimates.",
+          "Model estimates for weathering rates depend on input parameters (soil mineralogy, texture, climate)."
+        ]
+      }
+    },
+    "environmental_context": {
+      "climate_conditions": {
+        "temperature": "Annual average 7.9°C (Countesswells)",
+        "precipitation": "791 mm (Countesswells)",
+        "seasonality": "Not explicitly detailed, but implied by annual measurements.",
+        "extremes": "Not specified."
+      },
+      "soil_properties": {
+        "classification": "Dystric Cambisol (FAO), Typic Fragiorthod (USDA) for Countesswells. Other types include Eutric Regosol, Thionic Gleysol, Clay(illitic) Eutric Cambisol.",
+        "texture": "Countesswells: clay 1-4%, silt 17-22%, sand 75-82%. Other types include Loamy sand, Silt loam, Clay(illitic).",
+        "mineralogy": "K-feldspar, Muscovite, Illite, Mixed layer, Biotite (phyllosilicates). Parent material at Countesswells: Glacial till derived from granitic bedrock.",
+        "organic_matter": "Countesswells: org C Ap 5.1%, Bs 1.5%.",
+        "chemical_properties": {
+          "pHCaCl2": "4.9-5.2 (Countesswells)"
+        },
+        "physical_properties": {
+          "drainage": "Freely draining (Countesswells)"
+        }
+      },
+      "landscape_context": {
+        "topography": "Not specified beyond 'freely draining'.",
+        "drainage": "Freely draining iron humus podzol (Countesswells).",
+        "position": "Not specified.",
+        "land_use_history": "Long-term field experiments with established rotations and management histories (e.g., 30-year experiment, ~40-year fertility experiments)."
+      }
+    },
+    "research_integration": {
+      "relationship_to_other_measurements": "The study acknowledges a strong focus on N and P in general agricultural research but highlights the importance of K. K dynamics are linked to crop biomass production and nutrient off-take.",
+      "integration_with_plant_studies": "Directly integrates by measuring K concentration in harvested grass biomass and K off-take, demonstrating the plant-soil K cycle.",
+      "connection_to_broader_objectives": "Aims to contribute to understanding long-term sustainability in agriculture, improving nutrient management for food production and quality, and reducing environmental damage by addressing K deficiencies and nutrient mining.",
+      "comparative_context": "Compares K dynamics under different management systems (organic vs. conventional), varying K fertilizer application rates, and across diverse soil types and geographic locations (Swedish vs. Scottish sites).",
+      "literature_positioning": "Builds upon previous research on nutrient balances (Oenema et al., 2003), K dynamics (Bengtsson et al, 2003; Öborn et al, 2005; Simonsson et al. 2007), mineral weathering models (Holmqvist et al., 2003), and mineralogical analysis (Andrist Rangel, 2008; Hillier, 1999;2003)."
+    },
+    "data_limitations": {
+      "measurement_constraints": [
+        "Some quantitative values for K concentrations and off-take rates were derived from visual interpretation of graphs, which may introduce minor inaccuracies compared to tabulated data."
+      ],
+      "temporal_limitations": [],
+      "spatial_limitations": [],
+      "methodological_constraints": [
+        "The source is a presentation, which may summarize or omit certain detailed experimental protocols or full statistical results typically found in a peer-reviewed paper."
+      ],
+      "interpretation_caveats": []
+    },
+    "extraction_assessment": {
+      "data_completeness": 0.95,
+      "quantitative_content": 0.9,
+      "temporal_coverage": 0.95,
+      "spatial_coverage": 0.9,
+      "methodological_detail": 0.85,
+      "extraction_confidence": 0.95,
+      "native_context_preservation": 0.98,
+      "extraction_notes": "Extracted all explicit soil K information, including quantitative data from tables and graphs. Preserved the context of the research as a symposium presentation. Noted that some quantitative values were estimated from visual inspection of graphs. The presentation format inherently limits the depth of detail compared to a full research paper."
+    },
+    "_usage_metadata": {
+      "timestamp": "2025-07-10T10:04:17.368485",
+      "stage_name": "stage_2a",
+      "paper_id": "Long-term K dynamics in organic and conventional mixed cropping systems as related to management and soil properties",
+      "prompt_length_chars": 70200,
+      "processing_time_seconds": 63.62,
+      "thinking_enabled": true,
+      "input_tokens": 24454,
+      "output_tokens": 8889,
+      "thinking_tokens": 0,
+      "input_cost_usd": 0.003668,
+      "output_cost_usd": 0.031112,
+      "thinking_cost_usd": 0.0,
+      "total_cost_usd": 0.03478
+    }
+  }
+}

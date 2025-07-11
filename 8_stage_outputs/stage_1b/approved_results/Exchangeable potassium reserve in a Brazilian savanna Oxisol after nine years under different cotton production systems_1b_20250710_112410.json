@@ -1,0 +1,1131 @@
+{
+  "stage_id": "1b",
+  "stage_name": "Generic Validation",
+  "paper_id": "Exchangeable potassium reserve in a Brazilian savanna Oxisol after nine years under different cotton production systems",
+  "processing_timestamp": "2025-07-10T11:24:10.753651",
+  "processing_time_seconds": 105.67067337036133,
+  "processing_mode": "single_paper",
+  "validation_passed": true,
+  "validation_message": "Valid validation result",
+  "results": {
+    "accuracy_verification": {
+      "numerical_accuracy": {
+        "verification_status": true,
+        "discrepancies_found": [
+          "Cumulative soybean and maize yields were listed as primary measurements but are derived values not explicitly stated in the text, and their derivation could not be fully validated from the provided text."
+        ],
+        "corrections_needed": [
+          "Move derived cumulative cotton yields from 'primary_measurements' to 'production_metrics' and explicitly label them as derived.",
+          "Remove unvalidated derived cumulative soybean and maize yields from the extraction."
+        ]
+      },
+      "unit_consistency": {
+        "verification_status": true,
+        "inconsistencies_found": [],
+        "standardization_needed": []
+      },
+      "statistical_accuracy": {
+        "verification_status": true,
+        "errors_identified": [],
+        "missing_statistics": [
+          "Standard errors or confidence intervals for reported means were not consistently provided in the original paper's text."
+        ]
+      },
+      "methodological_accuracy": {
+        "verification_status": true,
+        "description_errors": [],
+        "clarifications_needed": [
+          "More specific details on ruzigrass management (sowing, desiccation) and fertilizer application methods (incorporation, split applications) were present in the text but not fully captured."
+        ]
+      },
+      "contextual_accuracy": {
+        "verification_status": true,
+        "context_errors": [],
+        "missing_context": [
+          "Specific cultivar names used each year were not provided in the original paper.",
+          "Detailed annual climate data (e.g., monthly temperature/rainfall) beyond averages were not provided."
+        ]
+      }
+    },
+    "completeness_assessment": {
+      "quantitative_data_completeness": {
+        "completeness_score": 0.9,
+        "missing_data_identified": [
+          "Cumulative N and P2O5 fertilization rates for all treatments over nine years.",
+          "Mean annual yields for soybean and maize crops."
+        ],
+        "critical_omissions": []
+      },
+      "methodological_completeness": {
+        "completeness_score": 0.9,
+        "missing_methods": [],
+        "incomplete_descriptions": [
+          "Detailed descriptions of ruzigrass sowing and desiccation.",
+          "Specific application methods for liming and phosphogypsum in different tillage systems.",
+          "Split application details for N and K2O fertilizers for maize and cotton."
+        ]
+      },
+      "contextual_completeness": {
+        "completeness_score": 0.9,
+        "missing_context": [
+          "More specific details on the seasonality of rainfall.",
+          "The historical context of annual plowing and harrowing prior to the experiment."
+        ],
+        "insufficient_detail": []
+      },
+      "literature_integration_completeness": {
+        "completeness_score": 0.95,
+        "missing_references": [],
+        "inadequate_benchmarking": []
+      }
+    },
+    "scientific_precision": {
+      "terminology_precision": {
+        "precision_assessment": "excellent",
+        "terminology_issues": [],
+        "precision_improvements": []
+      },
+      "relationship_accuracy": {
+        "accuracy_assessment": "good",
+        "relationship_errors": [],
+        "clarification_needs": [
+          "Refinement of the percentage difference in K content between NTS and CSTCSM for greater precision (e.g., 'more than twice' vs. '93-117% higher')."
+        ]
+      },
+      "uncertainty_characterization": {
+        "characterization_quality": "adequate",
+        "uncertainty_omissions": [
+          "Lack of explicit standard errors or confidence intervals for most reported means in the original paper."
+        ],
+        "confidence_calibration": []
+      },
+      "limitation_documentation": {
+        "documentation_quality": "good",
+        "missing_limitations": [],
+        "inadequate_caveats": []
+      }
+    },
+    "quality_enhancement": {
+      "high_priority_corrections": [
+        {
+          "correction_type": "Quantitative Data Misclassification",
+          "description": "Cumulative crop yields (soybean, maize, cotton) were listed under 'primary_measurements' but are derived values. Soybean and maize cumulative yields could not be fully validated from the provided text.",
+          "impact_on_interpretation": "Misrepresents directly measured data vs. calculated/derived data, potentially leading to misinterpretation of raw findings.",
+          "recommended_action": "Move derived cumulative cotton yields to 'production_metrics' and remove unvalidated derived soybean/maize yields. Clarify that mean annual soybean/maize yields were not explicitly provided."
+        }
+      ],
+      "medium_priority_improvements": [
+        {
+          "improvement_type": "Quantitative Precision",
+          "description": "Refine the percentage difference for K content comparison between NTS and CSTCSM to be more precise based on the stated values.",
+          "benefit": "Increases numerical accuracy and scientific precision.",
+          "implementation": "Change '93-117% higher' to 'more than twice (approx. 104% higher)'."
+        },
+        {
+          "improvement_type": "Completeness of Fertilization Data",
+          "description": "Add cumulative N and P2O5 fertilization rates for all treatments, which were explicitly stated in the paper.",
+          "benefit": "Provides a more complete picture of nutrient inputs over the study duration.",
+          "implementation": "Add these values to 'agricultural_systems.management_practices.fertilization.rates'."
+        },
+        {
+          "improvement_type": "Methodological Detail",
+          "description": "Enhance descriptions of ruzigrass management, liming/phosphogypsum application methods, and split fertilization applications.",
+          "benefit": "Offers a clearer and more comprehensive understanding of experimental protocols.",
+          "implementation": "Integrate specific details from the 'Materials and Methods' section into relevant fields."
+        }
+      ],
+      "data_enrichment_opportunities": [
+        {
+          "opportunity_type": "Contextual Detail - Climate",
+          "additional_data_source": "Original text",
+          "potential_value": "Provides a more complete understanding of the environmental conditions influencing the study.",
+          "extraction_approach": "Add 'Concentrated from October to March' to precipitation patterns."
+        },
+        {
+          "opportunity_type": "Contextual Detail - Historical Land Use",
+          "additional_data_source": "Original text",
+          "potential_value": "Clarifies the pre-experiment soil management history.",
+          "extraction_approach": "Add 'with the soil prepared annually by plowing and harrowing' to historical context."
+        },
+        {
+          "opportunity_type": "Methodological Detail - Soil Analysis",
+          "additional_data_source": "Original text (Table 1 footnote)",
+          "potential_value": "Ensures full transparency on the specific methods used for initial soil characterization.",
+          "extraction_approach": "Explicitly list the methods (e.g., Mehlich-1, KCl) for each initial soil parameter."
+        }
+      ]
+    },
+    "internal_consistency": {
+      "numerical_consistency": {
+        "consistency_status": true,
+        "inconsistencies_found": [],
+        "resolution_needed": []
+      },
+      "temporal_consistency": {
+        "consistency_status": true,
+        "timeline_issues": [],
+        "clarification_needed": []
+      },
+      "geographic_consistency": {
+        "consistency_status": true,
+        "location_conflicts": [],
+        "standardization_needed": []
+      },
+      "methodological_consistency": {
+        "consistency_status": true,
+        "method_conflicts": [],
+        "harmonization_needed": []
+      }
+    },
+    "enhanced_extraction": {
+      "paper_metadata": {
+        "title": "Exchangeable potassium reserve in a Brazilian savanna Oxisol after nine years under different cotton production systems",
+        "authors": [
+          "Alexandre Cunha de Barcellos Ferreira",
+          "Ana Luiza Dias Coelho Borin",
+          "Fernando Mendes Lamas",
+          "Gilvan Barbosa Ferreira",
+          "Álvaro Vilela de Resende"
+        ],
+        "journal": "Sci. Agric.",
+        "publication_year": 2022,
+        "doi": "10.1590/1678-992X-2020-0339",
+        "study_region": "Brazilian Savanna (Cerrado biome), Goiás",
+        "primary_focus": "Potassium dynamics and exchangeable reserves in soil profile under different cotton production systems"
+      },
+      "research_methodology": {
+        "study_type": "field_experiment",
+        "experimental_design": "Randomized block design with four replications. Experimental plot size: 576 m² (14.4 × 40 m). Native Cerrado used as a reference control.",
+        "temporal_scope": {
+          "study_duration_years": 9,
+          "data_collection_frequency": "Annual for crop yields; single soil sampling at the end of the experiment (Oct 2014).",
+          "seasonal_coverage": "Crops sown in spring (Soybean: second half of Oct; Maize: late Oct to early Nov; Cotton: late Nov to mid-Dec), harvested manually. Ruzigrass grown in autumn-winter off-season.",
+          "monitoring_timeline": [
+            "August 2005: Experiment initiation, initial soil sampling, liming, subsoiling, plowing, harrowing.",
+            "October 2009: Dolomitic limestone and phosphogypsum application.",
+            "October 2014: Final soil sampling."
+          ]
+        },
+        "spatial_scope": {
+          "number_of_sites": 1,
+          "geographic_coverage": "Santa Helena de Goiás, Goiás, Brazil",
+          "site_characteristics": [
+            "Clayey dystrophic Red Latosol (Typic Haplorthox/Oxisol)",
+            "Altitude: 557 m",
+            "Prior land use: 3 years cotton, then soybean monoculture with annual plowing and harrowing."
+          ],
+          "coordinates": "17°50’37” S, 50°35’52” W",
+          "regional_representativeness": "Representative of the Brazilian Cerrado biome, where Oxisols are predominant."
+        },
+        "sample_design": {
+          "sample_sizes": {
+            "experimental_plots": 16,
+            "soil_samples_per_depth": 10,
+            "composite_soil_samples_per_depth": 1,
+            "yield_sampling_points_per_plot": 3
+          },
+          "replication_levels": "Four replications per treatment.",
+          "randomization_approach": "Randomized block design.",
+          "controls_and_treatments": [
+            "Control: Native Cerrado (adjacent area, no management interventions) for K and OM reference.",
+            "Treatment 1 (CSTCM): Conventional soil tillage (CST) with cotton monoculture.",
+            "Treatment 2 (CSTCSC): CST with annual cotton-soybean-cotton succession.",
+            "Treatment 3 (CSTCSM): CST with cotton/soybean/maize rotation.",
+            "Treatment 4 (NTS): No-tillage system (NTS) with cotton/soybean/maize rotation and Urochloa ruziziensis (ruzigrass) as a cover crop in the off-season."
+          ],
+          "statistical_power": "Not explicitly stated, but p-value of 0.05 used for significance."
+        },
+        "analytical_methods": {
+          "measurement_protocols": [
+            "Soil pH: CaCl2 method (Teixeira et al., 2017).",
+            "Available Phosphorus (P): Mehlich-1 extraction (Teixeira et al., 2017).",
+            "Exchangeable Potassium (K): Mehlich-1 extraction and quantified in a flame photometer (Teixeira et al., 2017).",
+            "Exchangeable Calcium (Ca): KCl 1 mol L-1 extraction (Teixeira et al., 2017).",
+            "Exchangeable Magnesium (Mg): KCl 1 mol L-1 extraction (Teixeira et al., 2017).",
+            "Potential Acidity (H+Al): Calcium acetate, 0.5 mol L-1, pH 7.0 extraction (Teixeira et al., 2017).",
+            "Sum of Exchangeable Bases (SB): Ca + Mg + K.",
+            "Cation Exchange Capacity (CEC): H+Al + SB.",
+            "Soil Base Saturation Percentage (V): SB/CEC × 100.",
+            "Soil Organic Matter (SOM): Walkley-Black method (Teixeira et al., 2017).",
+            "Particle Size Analysis: Clay, Silt, Sand content (Teixeira et al., 2017).",
+            "Crop Yield: Manual harvest from three 5-m long, 4-row points per plot, converted to kg ha-1, grain moisture corrected to 13%.",
+            "K Export: Crop yields multiplied by mean removal rates (17 kg K2O per ton of seed cotton, 20 kg K2O per ton of soybean grains, 3.7 kg K2O per ton of maize grains) (Borin et al., 2019; Duarte et al., 2019; Embrapa, 2013).",
+            "Partial K Balance: Estimated as the difference between K input (fertilization) and K output (harvest export), as well as the exported/applied ratios (Resende et al., 2019)."
+          ],
+          "instrumentation": [
+            "Flame photometer for K quantification."
+          ],
+          "quality_control": [
+            "Cultivar, plant population, fertilization, and chemical control of pests, diseases, and weeds were standardized for each crop and within each agricultural year."
+          ],
+          "detection_limits": {},
+          "analytical_precision": {}
+        },
+        "statistical_approach": {
+          "analysis_methods": [
+            "Analysis of variance (ANOVA)."
+          ],
+          "significance_testing": "Means compared by Tukey test (p ≤ 0.05).",
+          "uncertainty_quantification": "Standard errors not explicitly provided for all values, but statistical significance is reported.",
+          "model_validation": "Not applicable (experimental study)."
+        }
+      },
+      "quantitative_findings": {
+        "primary_measurements": [
+          {
+            "parameter": "Initial Soil pH (0-20 cm)",
+            "values": [
+              5.35
+            ],
+            "units": "pH CaCl2",
+            "statistical_measures": {},
+            "measurement_context": "Before initiating the experiment (Aug 2005)."
+          },
+          {
+            "parameter": "Initial Available Phosphorus (0-20 cm)",
+            "values": [
+              6.1
+            ],
+            "units": "mg dm-3",
+            "statistical_measures": {},
+            "measurement_context": "Before initiating the experiment (Aug 2005), extracted by Mehlich-1."
+          },
+          {
+            "parameter": "Initial Exchangeable Potassium (0-20 cm)",
+            "values": [
+              0.23
+            ],
+            "units": "cmolc dm-3",
+            "statistical_measures": {},
+            "measurement_context": "Before initiating the experiment (Aug 2005), extracted by Mehlich-1."
+          },
+          {
+            "parameter": "Initial Exchangeable Calcium (0-20 cm)",
+            "values": [
+              2.07
+            ],
+            "units": "cmolc dm-3",
+            "statistical_measures": {},
+            "measurement_context": "Before initiating the experiment (Aug 2005), extracted by KCl 1 mol L-1."
+          },
+          {
+            "parameter": "Initial Exchangeable Magnesium (0-20 cm)",
+            "values": [
+              0.42
+            ],
+            "units": "cmolc dm-3",
+            "statistical_measures": {},
+            "measurement_context": "Before initiating the experiment (Aug 2005), extracted by KCl 1 mol L-1."
+          },
+          {
+            "parameter": "Initial Potential Acidity (H+Al) (0-20 cm)",
+            "values": [
+              3.61
+            ],
+            "units": "cmolc dm-3",
+            "statistical_measures": {},
+            "measurement_context": "Before initiating the experiment (Aug 2005), extracted by calcium acetate, 0.5 mol L-1, pH 7.0."
+          },
+          {
+            "parameter": "Initial Sum of Exchangeable Bases (SB) (0-20 cm)",
+            "values": [
+              2.72
+            ],
+            "units": "cmolc dm-3",
+            "statistical_measures": {},
+            "measurement_context": "Before initiating the experiment (Aug 2005)."
+          },
+          {
+            "parameter": "Initial Cation Exchange Capacity (CEC) (0-20 cm)",
+            "values": [
+              6.33
+            ],
+            "units": "cmolc dm-3",
+            "statistical_measures": {},
+            "measurement_context": "Before initiating the experiment (Aug 2005)."
+          },
+          {
+            "parameter": "Initial Soil Base Saturation Percentage (V) (0-20 cm)",
+            "values": [
+              59
+            ],
+            "units": "%",
+            "statistical_measures": {},
+            "measurement_context": "Before initiating the experiment (Aug 2005)."
+          },
+          {
+            "parameter": "Initial Soil Organic Matter (SOM) (0-20 cm)",
+            "values": [
+              24.2
+            ],
+            "units": "g kg-1",
+            "statistical_measures": {},
+            "measurement_context": "Before initiating the experiment (Aug 2005), by Walkley-Black method."
+          },
+          {
+            "parameter": "Initial Clay Content (0-20 cm)",
+            "values": [
+              495
+            ],
+            "units": "g kg-1",
+            "statistical_measures": {},
+            "measurement_context": "Before initiating the experiment (Aug 2005)."
+          },
+          {
+            "parameter": "Initial Silt Content (0-20 cm)",
+            "values": [
+              217
+            ],
+            "units": "g kg-1",
+            "statistical_measures": {},
+            "measurement_context": "Before initiating the experiment (Aug 2005)."
+          },
+          {
+            "parameter": "Initial Sand Content (0-20 cm)",
+            "values": [
+              288
+            ],
+            "units": "g kg-1",
+            "statistical_measures": {},
+            "measurement_context": "Before initiating the experiment (Aug 2005)."
+          },
+          {
+            "parameter": "Exchangeable K content (NTS, 0-5 cm)",
+            "values": [
+              1.18
+            ],
+            "units": "cmol c dm-3",
+            "statistical_measures": {},
+            "measurement_context": "After nine years, highest K content in NTS topsoil, 79% higher than mean of CST treatments."
+          },
+          {
+            "parameter": "Exchangeable K content (NTS, 0-20 cm weighted average)",
+            "values": [
+              0.53
+            ],
+            "units": "cmol c dm-3",
+            "statistical_measures": {},
+            "measurement_context": "After nine years, equivalent to 829 kg ha-1 of KCl."
+          },
+          {
+            "parameter": "Exchangeable K content (CSTCSM, 0-20 cm weighted average)",
+            "values": [
+              0.26
+            ],
+            "units": "cmol c dm-3",
+            "statistical_measures": {},
+            "measurement_context": "After nine years, equivalent to 407 kg ha-1 of KCl."
+          },
+          {
+            "parameter": "K2O equivalent in Native Cerrado soil (0-100 cm)",
+            "values": [
+              591
+            ],
+            "units": "kg ha-1",
+            "statistical_measures": {
+              "mean": 591
+            },
+            "measurement_context": "Estimated stock in exchangeable form, assuming 1.0 kg dm-3 bulk density."
+          },
+          {
+            "parameter": "Cumulative K2O supplied by fertilization (CSTCM)",
+            "values": [
+              1170
+            ],
+            "units": "kg ha-1",
+            "statistical_measures": {},
+            "measurement_context": "Over nine years."
+          },
+          {
+            "parameter": "Cumulative K2O supplied by fertilization (CSTCSC)",
+            "values": [
+              834
+            ],
+            "units": "kg ha-1",
+            "statistical_measures": {},
+            "measurement_context": "Over nine years."
+          },
+          {
+            "parameter": "Cumulative K2O supplied by fertilization (CSTCSM)",
+            "values": [
+              939
+            ],
+            "units": "kg ha-1",
+            "statistical_measures": {},
+            "measurement_context": "Over nine years."
+          },
+          {
+            "parameter": "Cumulative K2O supplied by fertilization (NTS)",
+            "values": [
+              939
+            ],
+            "units": "kg ha-1",
+            "statistical_measures": {},
+            "measurement_context": "Over nine years."
+          },
+          {
+            "parameter": "Total K2O Export (CSTCM)",
+            "values": [
+              553
+            ],
+            "units": "kg ha-1",
+            "statistical_measures": {},
+            "measurement_context": "Over nine years."
+          },
+          {
+            "parameter": "Total K2O Export (CSTCSC)",
+            "values": [
+              587
+            ],
+            "units": "kg ha-1",
+            "statistical_measures": {},
+            "measurement_context": "Over nine years."
+          },
+          {
+            "parameter": "Total K2O Export (CSTCSM)",
+            "values": [
+              454
+            ],
+            "units": "kg ha-1",
+            "statistical_measures": {},
+            "measurement_context": "Over nine years."
+          },
+          {
+            "parameter": "Total K2O Export (NTS)",
+            "values": [
+              487
+            ],
+            "units": "kg ha-1",
+            "statistical_measures": {},
+            "measurement_context": "Over nine years."
+          },
+          {
+            "parameter": "Partial K2O Balance (CSTCM)",
+            "values": [
+              617
+            ],
+            "units": "kg ha-1",
+            "statistical_measures": {},
+            "measurement_context": "Surplus over nine years."
+          },
+          {
+            "parameter": "Partial K2O Balance (CSTCSC)",
+            "values": [
+              247
+            ],
+            "units": "kg ha-1",
+            "statistical_measures": {},
+            "measurement_context": "Surplus over nine years."
+          },
+          {
+            "parameter": "Partial K2O Balance (CSTCSM)",
+            "values": [
+              485
+            ],
+            "units": "kg ha-1",
+            "statistical_measures": {},
+            "measurement_context": "Surplus over nine years."
+          },
+          {
+            "parameter": "Partial K2O Balance (NTS)",
+            "values": [
+              452
+            ],
+            "units": "kg ha-1",
+            "statistical_measures": {},
+            "measurement_context": "Surplus over nine years."
+          },
+          {
+            "parameter": "Offtake Rate (CSTCM)",
+            "values": [
+              47
+            ],
+            "units": "%",
+            "statistical_measures": {},
+            "measurement_context": "Ratio of K export to fertilization over nine years."
+          },
+          {
+            "parameter": "Offtake Rate (CSTCSC)",
+            "values": [
+              70
+            ],
+            "units": "%",
+            "statistical_measures": {},
+            "measurement_context": "Ratio of K export to fertilization over nine years."
+          },
+          {
+            "parameter": "Offtake Rate (CSTCSM)",
+            "values": [
+              48
+            ],
+            "units": "%",
+            "statistical_measures": {},
+            "measurement_context": "Ratio of K export to fertilization over nine years."
+          },
+          {
+            "parameter": "Offtake Rate (NTS)",
+            "values": [
+              52
+            ],
+            "units": "%",
+            "statistical_measures": {},
+            "measurement_context": "Ratio of K export to fertilization over nine years."
+          },
+          {
+            "parameter": "Mean Cotton Yield (CSTCM)",
+            "values": [
+              3615
+            ],
+            "units": "kg ha-1",
+            "statistical_measures": {},
+            "measurement_context": "Mean annual yield over nine years."
+          },
+          {
+            "parameter": "Mean Cotton Yield (CSTCSC)",
+            "values": [
+              3855
+            ],
+            "units": "kg ha-1",
+            "statistical_measures": {},
+            "measurement_context": "Mean annual yield over nine years."
+          },
+          {
+            "parameter": "Mean Cotton Yield (CSTCSM)",
+            "values": [
+              3285
+            ],
+            "units": "kg ha-1",
+            "statistical_measures": {},
+            "measurement_context": "Mean annual yield over nine years."
+          },
+          {
+            "parameter": "Mean Cotton Yield (NTS)",
+            "values": [
+              3885
+            ],
+            "units": "kg ha-1",
+            "statistical_measures": {},
+            "measurement_context": "Mean annual yield over nine years."
+          },
+          {
+            "parameter": "K2O retained in 0-20 cm (NTS)",
+            "values": [
+              63
+            ],
+            "units": "%",
+            "statistical_measures": {},
+            "measurement_context": "Percentage of K2O surplus (452 kg ha-1) retained in the 0-20 cm layer after nine years, subtracting initial reserve."
+          },
+          {
+            "parameter": "K2O retained in 0-20 cm (CST treatments)",
+            "values": [
+              34
+            ],
+            "units": "%",
+            "statistical_measures": {},
+            "measurement_context": "Maximum percentage of K2O surplus retained in the 0-20 cm layer after nine years."
+          },
+          {
+            "parameter": "Critical K level",
+            "values": [
+              0.13
+            ],
+            "units": "cmol c dm-3",
+            "statistical_measures": {},
+            "measurement_context": "Reference critical level for 0-20 cm layer (Sousa and Lobato, 2004)."
+          }
+        ],
+        "statistical_relationships": [
+          {
+            "relationship_type": "Correlation",
+            "variables": [
+              "Exchangeable K content",
+              "Soil Organic Matter (SOM)"
+            ],
+            "correlation_coefficient": null,
+            "regression_parameters": {},
+            "significance_level": "Strong relationship indicated qualitatively, but no specific coefficient provided.",
+            "effect_size": ""
+          },
+          {
+            "relationship_type": "Comparison of Means",
+            "variables": [
+              "Exchangeable K content",
+              "Production System"
+            ],
+            "correlation_coefficient": null,
+            "regression_parameters": {},
+            "significance_level": "p ≤ 0.05 (Tukey test)",
+            "effect_size": "NTS had 79% higher K in 0-5 cm than mean CST; NTS had more than twice (approx. 104% higher) K in 0-20 cm than CSTCSM."
+          }
+        ],
+        "temporal_patterns": [
+          {
+            "parameter": "Exchangeable K content in soil profile",
+            "trend_description": "Highest values were detected in the upper layers of the soil profile (mainly at 0-5 cm), decreasing progressively with depth, irrespective of the treatment. CSTCM showed K mobilization to deeper layers, while NTS retained K in topsoil.",
+            "rate_of_change": null,
+            "units_per_time": "",
+            "trend_significance": "Statistically significant differences between treatments at various depths (p ≤ 0.05).",
+            "seasonal_component": "Not explicitly described for K content, but crop cycles are seasonal."
+          },
+          {
+            "parameter": "Soil Organic Matter (SOM)",
+            "trend_description": "SOM levels followed the same tendency as exchangeable K, indicating accumulation in NTS topsoil.",
+            "rate_of_change": null,
+            "units_per_time": "",
+            "trend_significance": "Statistically significant differences between treatments at various depths (p ≤ 0.05).",
+            "seasonal_component": "Not explicitly described."
+          }
+        ],
+        "comparative_results": [
+          {
+            "comparison_type": "Treatment Effect on K Distribution",
+            "groups_compared": [
+              "CSTCM",
+              "NTS"
+            ],
+            "difference_magnitude": null,
+            "units": "",
+            "statistical_significance": "Significant (p ≤ 0.05)",
+            "practical_significance": "In CSTCM, almost half of K was found below 30 cm, indicating leaching. In NTS, almost 70% remained in topsoil (up to 30 cm), showing better retention."
+          },
+          {
+            "comparison_type": "Treatment Effect on K Content (0-5 cm)",
+            "groups_compared": [
+              "NTS",
+              "Mean of CST treatments"
+            ],
+            "difference_magnitude": 79,
+            "units": "% higher",
+            "statistical_significance": "Significant (p ≤ 0.05)",
+            "practical_significance": "NTS significantly increased K content in the topsoil due to OM accumulation and K cycling."
+          },
+          {
+            "comparison_type": "Treatment Effect on K Content (0-20 cm weighted average)",
+            "groups_compared": [
+              "NTS",
+              "CSTCSM"
+            ],
+            "difference_magnitude": 422,
+            "units": "kg ha-1 KCl",
+            "statistical_significance": "Significant (p ≤ 0.05)",
+            "practical_significance": "NTS retained more than twice the K available for absorption in the soil layer with greater root activity compared to CSTCSM."
+          },
+          {
+            "comparison_type": "Treatment Effect on K Retention (0-20 cm)",
+            "groups_compared": [
+              "NTS",
+              "CST treatments"
+            ],
+            "difference_magnitude": null,
+            "units": "% of surplus",
+            "statistical_significance": "Significant (p ≤ 0.05)",
+            "practical_significance": "NTS retained 63% of K2O surplus in 0-20 cm, while CST treatments retained max 34%, indicating NTS's superior K storage capacity."
+          },
+          {
+            "comparison_type": "Treatment Effect on Cotton Yield",
+            "groups_compared": [
+              "NTS",
+              "CSTCM",
+              "CSTCSC",
+              "CSTCSM"
+            ],
+            "difference_magnitude": null,
+            "units": "kg ha-1",
+            "statistical_significance": "Not explicitly stated for yield differences, but NTS showed the highest mean cotton yield.",
+            "practical_significance": "NTS (3,885 kg ha-1) showed the highest mean cotton yield, supporting its sustainability."
+          }
+        ]
+      },
+      "environmental_context": {
+        "geographic_details": {
+          "countries": [
+            "Brazil"
+          ],
+          "regions": [
+            "Goiás",
+            "Cerrado biome"
+          ],
+          "coordinates": "17°50’37” S, 50°35’52” W",
+          "elevation": "557 m",
+          "landscape_position": "Field almost flat."
+        },
+        "climate_characteristics": {
+          "climate_classification": "Aw (Köppen-Geiger)",
+          "temperature_patterns": {},
+          "precipitation_patterns": {
+            "average_annual_rainfall": "1800 mm",
+            "seasonality": "Concentrated from October to March."
+          },
+          "growing_season": "Rainy season from Oct to Mar, crops sown in spring (late Oct/early Nov for soybean/maize, late Nov/mid-Dec for cotton).",
+          "environmental_stressors": [
+            "Rainfed conditions"
+          ]
+        },
+        "soil_properties": {
+          "soil_classification": "Clayey dystrophic Red Latosol (Typic Haplorthox/Oxisol)",
+          "texture": "Clayey (495 g kg-1 clay, 217 g kg-1 silt, 288 g kg-1 sand)",
+          "organic_matter": "Initial 24.2 g kg-1 (0-20 cm). Increased in NTS topsoil.",
+          "chemical_properties": {
+            "pH_CaCl2": 5.35,
+            "available_P": "6.1 mg dm-3",
+            "exchangeable_K": "0.23 cmolc dm-3",
+            "exchangeable_Ca": "2.07 cmolc dm-3",
+            "exchangeable_Mg": "0.42 cmolc dm-3",
+            "potential_acidity_H_Al": "3.61 cmolc dm-3",
+            "sum_exchangeable_bases_SB": "2.72 cmolc dm-3",
+            "cation_exchange_capacity_CEC": "6.33 cmolc dm-3",
+            "base_saturation_V": "59 %",
+            "general_description": "Naturally acidic, high Al saturation, poor natural fertility, low OM content and CEC."
+          },
+          "physical_properties": {
+            "drainage": "Good drainage",
+            "bulk_density_assumption": "1.0 kg dm-3 (for K2O stock calculations)"
+          },
+          "mineralogy": "Low frequency of 2:1 clay minerals, leading to weak K retention strength."
+        },
+        "land_use_context": {
+          "current_land_use": "Agricultural production (cotton-based systems)",
+          "cropping_systems": [
+            "Cotton monoculture",
+            "Cotton-soybean-cotton succession",
+            "Cotton/soybean/maize rotation",
+            "No-tillage with cotton/soybean/maize rotation and Urochloa ruziziensis cover crop"
+          ],
+          "management_intensity": "High fertilizer use for cotton to achieve high yield and fiber quality.",
+          "historical_context": "Three years of cotton cultivation, and before that, soybean monoculture, with the soil prepared annually by plowing and harrowing, prior to the experiment.",
+          "sustainability_metrics": [
+            "Nutrient balances (K balance)",
+            "Soil health metrics (Soil Organic Matter content)",
+            "Environmental impacts (K leaching losses)"
+          ]
+        }
+      },
+      "agricultural_systems": {
+        "crop_information": {
+          "crop_types": [
+            "Cotton (Gossypium hirsutum)",
+            "Soybean (Glycine max)",
+            "Maize (Zea mays)",
+            "Urochloa ruziziensis (ruzigrass)"
+          ],
+          "varieties_cultivars": [
+            "Not specified, varied annually depending on cultivar used."
+          ],
+          "growth_stages_studied": [
+            "Full cropping cycle from sowing to harvest."
+          ],
+          "yield_levels": {
+            "mean_cotton_yield_CSTCM": "3615 kg ha-1",
+            "mean_cotton_yield_CSTCSC": "3855 kg ha-1",
+            "mean_cotton_yield_CSTCSM": "3285 kg ha-1",
+            "mean_cotton_yield_NTS": "3885 kg ha-1"
+          },
+          "production_metrics": {
+            "K2O_removal_rate_cotton": "17 kg K2O per ton of seed cotton",
+            "K2O_removal_rate_soybean": "20 kg K2O per ton of soybean grains",
+            "K2O_removal_rate_maize": "3.7 kg K2O per ton of maize grains",
+            "cumulative_seed_cotton_CSTCM": "32535 kg ha-1 (derived, 9 cotton crops over 9 years)",
+            "cumulative_seed_cotton_CSTCSC": "19275 kg ha-1 (derived, 5 cotton crops over 9 years)",
+            "cumulative_seed_cotton_CSTCSM": "9855 kg ha-1 (derived, 3 cotton crops over 9 years)",
+            "cumulative_seed_cotton_NTS": "11655 kg ha-1 (derived, 3 cotton crops over 9 years)",
+            "note_on_yields": "Mean annual yields for soybean and maize were not explicitly provided in the text."
+          }
+        },
+        "management_practices": {
+          "fertilization": {
+            "types": [
+              "N (Nitrogen)",
+              "P2O5 (Phosphorus pentoxide)",
+              "K2O (Potassium oxide)",
+              "Calcitic limestone",
+              "Dolomitic limestone",
+              "Phosphogypsum (PG)"
+            ],
+            "rates": {
+              "mean_annual_N_cotton": "111 kg ha-1",
+              "mean_annual_P2O5_cotton": "126 kg ha-1",
+              "mean_annual_K2O_cotton": "130 kg ha-1",
+              "mean_annual_N_soybean": "6 kg ha-1",
+              "mean_annual_P2O5_soybean": "54 kg ha-1",
+              "mean_annual_K2O_soybean": "46 kg ha-1",
+              "mean_annual_N_maize": "97 kg ha-1",
+              "mean_annual_P2O5_maize": "119 kg ha-1",
+              "mean_annual_K2O_maize": "137 kg ha-1",
+              "cumulative_total_N_CSTCM": "999 kg ha-1 (9 years)",
+              "cumulative_total_P2O5_CSTCM": "1134 kg ha-1 (9 years)",
+              "cumulative_total_K2O_CSTCM": "1170 kg ha-1 (9 years)",
+              "cumulative_total_N_CSTCSC": "579 kg ha-1 (9 years)",
+              "cumulative_total_P2O5_CSTCSC": "846 kg ha-1 (9 years)",
+              "cumulative_total_K2O_CSTCSC": "834 kg ha-1 (9 years)",
+              "cumulative_total_N_CSTCSM": "642 kg ha-1 (9 years)",
+              "cumulative_total_P2O5_CSTCSM": "897 kg ha-1 (9 years)",
+              "cumulative_total_K2O_CSTCSM": "939 kg ha-1 (9 years)",
+              "cumulative_total_N_NTS": "642 kg ha-1 (9 years)",
+              "cumulative_total_P2O5_NTS": "897 kg ha-1 (9 years)",
+              "cumulative_total_K2O_NTS": "939 kg ha-1 (9 years)",
+              "calcitic_limestone_2005": "2200 kg ha-1 (90% CaCO3 equivalent)",
+              "dolomitic_limestone_2009": "2000 kg ha-1 (85% CaCO3 equivalent)",
+              "phosphogypsum_2009": "1000 kg ha-1"
+            },
+            "timing": [
+              "Soybean: All fertilization applied in the sowing furrow.",
+              "Maize and Cotton: All phosphate fertilizer and approximately 20% of N and 50% of K2O in the sowing furrow; the remaining N and K2O amounts were divided into two topdressing applications."
+            ],
+            "application_methods": [
+              "CST treatments: Calcitic limestone, dolomitic limestone, and phosphogypsum were incorporated up to 20 cm with plowing and harrowing.",
+              "NTS treatment: Calcitic limestone, dolomitic limestone, and phosphogypsum were broadcasted on the soil surface without incorporation."
+            ]
+          },
+          "irrigation": {
+            "system_type": "Rainfed conditions",
+            "water_amounts": {},
+            "scheduling": "Dependent on natural rainfall."
+          },
+          "other_practices": {
+            "tillage": "Conventional soil tillage (CST): Annual preparation between late Sept and early Oct, consisting of a disc harrowing to turn the soil over up to 20 cm deep, followed by a leveling disc harrowing. Another leveling disc harrowing operation was performed two days before soybean, maize, or cotton sowing. No-tillage system (NTS): No mechanical soil disturbance, reliance on cover crops and chemical desiccation.",
+            "rotation": [
+              "CSTCM: Cotton monoculture.",
+              "CSTCSC: Annual cotton-soybean-cotton succession.",
+              "CSTCSM: Cotton/soybean/maize rotation.",
+              "NTS: Soybean (spring-summer) + Urochloa ruziziensis (ruzigrass) (autumn-winter) / Maize intercropped with ruzigrass (spring-summer) / Cotton (spring-summer-autumn). Ruzigrass was mechanically sown using 6 kg ha-1 of seeds with 100% culture value after soybean harvest, two days after desiccation of volunteer soybean plants and weeds using paraquat herbicide (400 g ha-1 of active ingredient). Maize in NTS was intercropped with ruzigrass using 7 kg ha-1 of seeds with 85% culture value mixed with starter fertilizer in sowing furrows. Ruzigrass remained as a cover plant throughout the off-season and was desiccated with glyphosate (1,400 g ha-1 of active ingredient) 30 days before sowing the next maize or cotton crop."
+            ],
+            "pest_management": "Chemical control of pests, diseases, and weeds standardized for each crop and year.",
+            "organic_amendments": [
+              "Urochloa ruziziensis (ruzigrass) as cover crop in NTS.",
+              "Crop residues from cotton, maize, and soybean."
+            ]
+          }
+        },
+        "input_output_relationships": {
+          "input_rates": {
+            "cumulative_K2O_fertilization_CSTCM": "1170 kg ha-1",
+            "cumulative_K2O_fertilization_CSTCSC": "834 kg ha-1",
+            "cumulative_K2O_fertilization_CSTCSM": "939 kg ha-1",
+            "cumulative_K2O_fertilization_NTS": "939 kg ha-1"
+          },
+          "output_measurements": {
+            "cumulative_K2O_export_CSTCM": "553 kg ha-1",
+            "cumulative_K2O_export_CSTCSC": "587 kg ha-1",
+            "cumulative_K2O_export_CSTCSM": "454 kg ha-1",
+            "cumulative_K2O_export_NTS": "487 kg ha-1"
+          },
+          "efficiency_metrics": {
+            "offtake_rate_CSTCM": "47%",
+            "offtake_rate_CSTCSC": "70%",
+            "offtake_rate_CSTCSM": "48%",
+            "offtake_rate_NTS": "52%"
+          },
+          "balance_calculations": {
+            "partial_K2O_balance_CSTCM": "617 kg ha-1 surplus",
+            "partial_K2O_balance_CSTCSC": "247 kg ha-1 surplus",
+            "partial_K2O_balance_CSTCSM": "485 kg ha-1 surplus",
+            "partial_K2O_balance_NTS": "452 kg ha-1 surplus"
+          }
+        }
+      },
+      "temporal_dynamics": {
+        "study_timeline": {
+          "start_date": "August 2005",
+          "end_date": "October 2014",
+          "data_collection_schedule": [
+            "Initial soil sampling: August 2005",
+            "Annual crop harvests for yield data",
+            "Final soil sampling: October 2014"
+          ],
+          "monitoring_frequency": "Annual for crop production, one-time for detailed soil profile analysis at the end."
+        },
+        "seasonal_variations": [
+          {
+            "parameter": "Rainfall",
+            "seasonal_pattern": "Concentrated from October to March (rainy season).",
+            "peak_periods": [
+              "October",
+              "March"
+            ],
+            "minimum_periods": [
+              "April",
+              "September"
+            ],
+            "amplitude": null
+          },
+          {
+            "parameter": "Crop Sowing",
+            "seasonal_pattern": "Soybean: second half of Oct. Maize: late Oct to early Nov. Cotton: late Nov to mid-Dec.",
+            "peak_periods": [],
+            "minimum_periods": [],
+            "amplitude": null
+          },
+          {
+            "parameter": "Cover Crop (Ruzigrass) Growth",
+            "seasonal_pattern": "Autumn-winter (off-season) after grain crops.",
+            "peak_periods": [],
+            "minimum_periods": [],
+            "amplitude": null
+          }
+        ],
+        "long_term_trends": [
+          {
+            "parameter": "Exchangeable K content in soil profile",
+            "trend_direction": "Accumulation in topsoil (0-30 cm) for NTS; leaching to deeper layers (>30 cm) for CSTCM.",
+            "trend_magnitude": null,
+            "trend_units": "",
+            "projection_timeframe": "Over nine years of cultivation.",
+            "sustainability_implications": "NTS improves K use efficiency and retention, contributing to long-term soil fertility and sustainability in tropical soils."
+          }
+        ],
+        "variability_characterization": {
+          "inter_annual_variability": "Crop yields and K dynamics influenced by annual variations in cultivar, plant population, and pest/disease pressure (standardized but inherent variability).",
+          "spatial_variability": "Addressed by randomized block design and composite soil sampling.",
+          "measurement_uncertainty": "Not explicitly quantified for all measurements, but statistical analysis (ANOVA, Tukey test) accounts for variability.",
+          "drivers_of_variability": [
+            "Soil management (tillage vs. no-tillage)",
+            "Crop succession/rotation combinations",
+            "Cover crop inclusion (Urochloa ruziziensis)",
+            "K fertilization rates and timing"
+          ]
+        }
+      },
+      "data_quality_assessment": {
+        "methodological_strengths": [
+          "Long-term experiment (9 years) provides robust insights into long-term K dynamics.",
+          "Randomized block design with four replications enhances statistical validity.",
+          "Comprehensive soil sampling depths (up to 100 cm) allow for profile analysis.",
+          "Inclusion of native Cerrado as a reference provides a baseline for comparison.",
+          "Detailed characterization of initial soil properties.",
+          "Standardized crop management practices across treatments (except tillage/rotation) reduce confounding factors."
+        ],
+        "methodological_limitations": [
+          "Single study site, limiting direct extrapolation to other regions without further validation.",
+          "Assumption of soil bulk density (1.0 kg dm-3) for K2O stock calculations may introduce minor inaccuracies if actual bulk density varied significantly with depth or treatment.",
+          "Specific cultivar names not provided, which could influence nutrient uptake and yield.",
+          "Detailed annual climate data (e.g., temperature, specific rainfall distribution) not provided, only averages.",
+          "No explicit quantification of measurement precision (e.g., CV, detection limits for all parameters) beyond statistical significance levels."
+        ],
+        "data_completeness": "Good, most required parameters are extracted from the text. Some specific annual crop yields (soybean, maize) and cultivar names were not provided in the original paper.",
+        "measurement_precision": {
+          "K_quantification": "Flame photometer",
+          "SOM_determination": "Walkley-Black method",
+          "yield_measurement": "Manual harvest, moisture corrected"
+        },
+        "representativeness": {
+          "spatial_representativeness": "The study site is representative of clayey Oxisols in the Brazilian Cerrado biome, a major agricultural region.",
+          "temporal_representativeness": "Nine-year duration provides good temporal representativeness for long-term soil management effects.",
+          "system_representativeness": "The studied cotton production systems are relevant to agricultural practices in the Cerrado."
+        },
+        "uncertainty_sources": [
+          "Variability inherent in field experiments.",
+          "Assumptions made for K2O stock calculations (soil bulk density).",
+          "Potential for unmeasured factors influencing K dynamics (e.g., specific microbial activity, detailed water movement)."
+        ],
+        "validation_evidence": [
+          "Findings are consistent with existing literature on K cycling, no-tillage, and cover crops in tropical soils (e.g., increased OM and K retention in NTS)."
+        ]
+      },
+      "literature_integration": {
+        "key_methodological_references": [
+          "Teixeira et al. (2017) - Manual of Soil Analysis Methods.",
+          "Sousa and Lobato (2004) - Cerrado: Soil Correction and Fertilization."
+        ],
+        "comparative_studies": [
+          "Ferreira et al. (2009) - Observed similar K reduction with depth in Rhodic Hapludox.",
+          "Almeida et al. (2021) - Forms and balance of soil potassium from long-term integrated crop-livestock system.",
+          "Ramos et al. (2018) - Soil organic matter doubles CEC of tropical soil under no-till.",
+          "Tanaka et al. (2019) - Nutrients released by Urochloa cover crops.",
+          "Moterle et al. (2019) - Ferralsol clay mineralogy and potassium supply.",
+          "Kaminski et al. (2010) - Potassium availability in Hapludalf soil under long term fertilization."
+        ],
+        "theoretical_framework": "K supply to plants by exchangeable and non-exchangeable forms, K release by crop residues, K susceptibility to runoff/leaching, role of NTS and forage grasses in K conservation, OM's role in CEC and K retention, K transport by diffusion, root system development and K absorption.",
+        "data_sources": [
+          "CONAB (2020) - Brazilian cotton production data.",
+          "FAO (2020) - World K fertilizer consumption data."
+        ],
+        "benchmarking_data": [
+          "Native Cerrado soil (adjacent area) as a reference for natural K and OM levels.",
+          "Critical K level of 0.13 cmol c dm-3 for 0-20 cm layer (Sousa and Lobato, 2004)."
+        ],
+        "validation_studies": [
+          "Findings align with previous research on the benefits of no-tillage and cover crops (e.g., Urochloa species) for nutrient cycling and soil health in tropical environments."
+        ]
+      },
+      "extraction_metadata": {
+        "extraction_completeness": 0.92,
+        "data_richness_assessment": "The paper is rich in methodological details and quantitative findings, especially regarding soil chemical properties, K dynamics, and crop yields under different management systems. The long-term nature of the study adds significant value.",
+        "confidence_in_extraction": 0.95,
+        "potential_ambiguities": [
+          "Specific cultivars used each year were not named.",
+          "Exact annual climate data (e.g., monthly temperature/rainfall) beyond averages were not provided.",
+          "Standard errors or confidence intervals were not consistently provided for all reported means in the text, only statistical significance (p-values)."
+        ],
+        "extraction_limitations": [
+          "The provided 'table_data' was empty, requiring all quantitative data to be extracted directly from the text and figures (which were described in the text). This increases the potential for transcription errors compared to parsing structured table data."
+        ],
+        "quality_flags": [
+          "Missing specific cultivar names.",
+          "Missing detailed annual climate data.",
+          "Missing explicit standard errors/confidence intervals for all reported means."
+        ],
+        "recommended_validation_checks": [
+          "Cross-reference all numerical values with the original paper's figures and tables if available in a parseable format.",
+          "Verify the interpretation of statistical significance and comparative results."
+        ]
+      },
+      "enhancement_summary": {
+        "corrections_applied": [
+          "Corrected the classification of cumulative crop yields from 'primary_measurements' to 'production_metrics' and removed unvalidated derived soybean/maize yields."
+        ],
+        "enhancements_added": [
+          "Added cumulative N and P2O5 fertilization rates for all treatments.",
+          "Provided more detailed descriptions of ruzigrass management (sowing, desiccation, intercropping).",
+          "Clarified application methods for liming, phosphogypsum, and split fertilizer applications.",
+          "Enriched the seasonal coverage with specific crop sowing months.",
+          "Added the seasonality of rainfall (concentrated Oct-Mar).",
+          "Included the historical context of annual plowing and harrowing prior to the experiment.",
+          "Refined the K content comparison percentage for NTS vs CSTCSM."
+        ],
+        "areas_enriched": [
+          "Quantitative findings (precision and context of derived values).",
+          "Research methodology (temporal scope, analytical methods, quality control).",
+          "Environmental context (climate, historical land use).",
+          "Agricultural systems (fertilization, other practices, production metrics)."
+        ],
+        "enhancement_justification": "The enhancements significantly improve the accuracy, completeness, and scientific precision of the extraction by incorporating more granular details from the original paper, clarifying derived data, and providing a richer contextual understanding of the study's design and findings."
+      }
+    },
+    "validation_quality": {
+      "validation_thoroughness": 0.98,
+      "confidence_in_validation": 0.98,
+      "validation_completeness": 0.98,
+      "critical_issues_identified": 1,
+      "enhancement_value": "high",
+      "validation_certification": "approved",
+      "validator_notes": "The initial extraction was generally accurate but lacked depth in certain methodological and contextual details, and incorrectly presented derived cumulative yields as primary measurements. The enhanced extraction provides a more comprehensive and scientifically precise representation of the research, incorporating specific details on management practices, analytical protocols, and clarifying derived data points.",
+      "recommended_next_steps": [
+        "For future extractions, prioritize distinguishing between directly stated measurements and derived calculations.",
+        "Ensure all explicit methodological details (e.g., specific chemical reagents, application timings) are captured.",
+        "If possible, prompt for clarification on missing specific data points like cultivar names or detailed annual climate data if they are critical for full understanding."
+      ]
+    },
+    "_usage_metadata": {
+      "timestamp": "2025-07-10T11:24:10.749367",
+      "stage_name": "unknown",
+      "paper_id": "unknown",
+      "prompt_length_chars": 79671,
+      "processing_time_seconds": 105.63,
+      "thinking_enabled": true,
+      "input_tokens": 21955,
+      "output_tokens": 13299,
+      "thinking_tokens": 0,
+      "input_cost_usd": 0.003293,
+      "output_cost_usd": 0.046546,
+      "thinking_cost_usd": 0.0,
+      "total_cost_usd": 0.04984
+    },
+    "success": true,
+    "stage": "1B",
+    "paper_id": "Exchangeable potassium reserve in a Brazilian savanna Oxisol after nine years under different cotton production systems",
+    "validation_timestamp": "2025-07-10T11:24:10.751939",
+    "temperature_used": 0.05,
+    "validated_stage": "1A"
+  }
+}

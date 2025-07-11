@@ -26,8 +26,26 @@ class PromptLoader:
             "stage_3b_synthesis_validation": "stage_3b_synthesis_validation.txt",
             "stage_4a_client_mapping": "stage_4a_client_mapping.txt",
             "stage_4b_mapping_validation": "stage_4b_mapping_validation.txt",
-            "stage_5a_knowledge_synthesis": "stage_5a_knowledge_synthesis.txt",
-            "stage_5b_final_validation": "stage_5b_final_validation.txt"
+            # Gold Standard Architecture - Stage 5A Chunk Synthesis
+            "stage_5a_regional_synthesis": "stage_5/stage_5a_regional_synthesis.txt",
+            "stage_5a_temporal_synthesis": "stage_5/stage_5a_temporal_synthesis.txt", 
+            "stage_5a_crop_specific_synthesis": "stage_5/stage_5a_crop_specific_synthesis.txt",
+            "stage_5a_crop_uptake_synthesis": "stage_5/stage_5a_crop_uptake_synthesis.txt",
+            "stage_5a_manure_cycling_synthesis": "stage_5/stage_5a_manure_cycling_synthesis.txt",
+            "stage_5a_residue_cycling_synthesis": "stage_5/stage_5a_residue_cycling_synthesis.txt",
+            # Gold Standard Architecture - Stage 5B Chunk Validation
+            "stage_5b_regional_validation": "stage_5/stage_5b_regional_validation.txt",
+            "stage_5b_temporal_validation": "stage_5/stage_5b_temporal_validation.txt",
+            "stage_5b_crop_specific_validation": "stage_5/stage_5b_crop_specific_validation.txt",
+            "stage_5b_crop_uptake_validation": "stage_5/stage_5b_crop_uptake_validation.txt",
+            "stage_5b_manure_cycling_validation": "stage_5/stage_5b_manure_cycling_validation.txt",
+            "stage_5b_residue_cycling_validation": "stage_5/stage_5b_residue_cycling_validation.txt",
+            # Gold Standard Architecture - Stage 6 Cross-Chunk Integration
+            "stage_6a_cross_chunk_integration": "stage_6/stage_6a_cross_chunk_integration.txt",
+            "stage_6b_integration_validation": "stage_6/stage_6b_integration_validation.txt",
+            # Gold Standard Architecture - Stage 7 Scientific Distillation
+            "stage_7a_scientific_distillation": "stage_7/stage_7a_scientific_distillation.txt",
+            "stage_7b_distillation_validation": "stage_7/stage_7b_distillation_validation.txt"
         }
         
         # Validate prompts directory

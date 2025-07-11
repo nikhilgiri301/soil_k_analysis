@@ -1,0 +1,681 @@
+{
+  "stage_id": "1a",
+  "stage_name": "Generic Extraction",
+  "paper_id": "Temporal andspatial variation of potassium balance in agricultural land at national and regional levels in China",
+  "processing_timestamp": "2025-07-10T10:31:59.209885",
+  "processing_time_seconds": 66.70422649383545,
+  "processing_mode": "single_paper",
+  "validation_passed": true,
+  "validation_message": "Valid generic extraction",
+  "results": {
+    "paper_metadata": {
+      "title": "Temporal and spatial variation of potassium balance in agricultural land at national and regional levels in China",
+      "authors": [
+        "Yingxia Liu",
+        "Jinchuan Ma",
+        "Wencheng Ding",
+        "Wentian He",
+        "Qiuliang Lei",
+        "Qiang Gao",
+        "Ping He"
+      ],
+      "journal": "PLoS ONE",
+      "publication_year": 2017,
+      "doi": "10.1371/journal.pone.0184156",
+      "study_region": "China (national and regional levels)",
+      "primary_focus": "Potassium (K) balance and K use efficiency in agricultural land"
+    },
+    "research_methodology": {
+      "study_type": "modeling_study",
+      "experimental_design": "This study analyzed temporal and spatial changes of K balance using statistical data and related parameters within a defined soil K balance model. It is a retrospective analysis and modeling study, not an experimental design with treatments and controls in the traditional sense.",
+      "temporal_scope": {
+        "study_duration_years": 36,
+        "data_collection_frequency": "Annual data aggregated into four decades (1980s, 1990s, 2000s, 2010s)",
+        "seasonal_coverage": "Not applicable (annual averages)",
+        "monitoring_timeline": [
+          "1980-2015 (annual data)",
+          "1980s (1980-1989)",
+          "1990s (1990-1999)",
+          "2000s (2000-2009)",
+          "2010s (2010-2015)"
+        ]
+      },
+      "spatial_scope": {
+        "number_of_sites": 31,
+        "geographic_coverage": "Mainland China (excluding Hong Kong and Macao), divided into six geographical regions",
+        "site_characteristics": [
+          "Agricultural land",
+          "31 provincial data sets",
+          "Six geographical regions"
+        ],
+        "coordinates": "Not provided (regional/national scale)",
+        "regional_representativeness": "Comprehensive coverage of mainland China at provincial and regional levels."
+      },
+      "sample_design": {
+        "sample_sizes": {
+          "provinces": 31,
+          "years": 36
+        },
+        "replication_levels": "Not applicable (macro-level statistical analysis)",
+        "randomization_approach": "Not applicable",
+        "controls_and_treatments": [
+          "Not applicable (observational/modeling study)"
+        ],
+        "statistical_power": "Not explicitly stated, but based on national/regional statistical data."
+      },
+      "analytical_methods": {
+        "measurement_protocols": [
+          "Soil K balance model (inputs: chemical fertilizer, organic manure, atmospheric dry/wet deposition, irrigation, crop seeds; outputs: crop removal, nutrient loss via leaching/runoff)",
+          "Organic manure categorized by human/animal manure, straw, cake manure",
+          "Quantity of crop straw calculated through grain yields and literature survey-based conversion factors (ratio of grain to straw)",
+          "K contents in straw collected from published studies (Table 2)",
+          "K requirement for unit of economic yield of different crops collected from published studies (Table 3)",
+          "Leaching and runoff outputs accounted for a small percentage of total outputs (values from S3 Table)"
+        ],
+        "instrumentation": [
+          "Statistical data obtained from the China Agriculture Statistical Report [38]"
+        ],
+        "quality_control": [
+          "Original data verification",
+          "Filling in missing data (referring to statistical yearbook/published literature or using data from adjacent years)",
+          "Data validation (data from adjacent years could not vary by more than 15%)",
+          "Derivative data construction"
+        ],
+        "detection_limits": {},
+        "analytical_precision": {}
+      },
+      "statistical_approach": {
+        "analysis_methods": [
+          "Temporal and spatial analysis of K balance",
+          "Calculation of average annual increments",
+          "Coefficient of determination (R^2) for trends",
+          "Comparison across four decades (1980s, 1990s, 2000s, 2010s) and six regions",
+          "Positive linear correlation analysis between K input and K output in crops"
+        ],
+        "significance_testing": "Mentioned 'significantly larger/lower' for regional comparisons, but specific p-values or tests not detailed in text.",
+        "uncertainty_quantification": "Not explicitly quantified, but data validation rules applied.",
+        "model_validation": "Parameters derived from published literature and statistical data. No independent model validation against field measurements mentioned."
+      }
+    },
+    "quantitative_findings": {
+      "primary_measurements": [
+        {
+          "parameter": "Total K input (national)",
+          "values": [
+            6.78,
+            23.44
+          ],
+          "units": "Mt K2O",
+          "statistical_measures": {
+            "mean": 14.95,
+            "standard_error": null,
+            "confidence_interval": null,
+            "sample_size": 36
+          },
+          "measurement_context": "From 1980 to 2015, average annual increment of 0.48 Mt K2O"
+        },
+        {
+          "parameter": "Total K input (national, per area)",
+          "values": [
+            84.25,
+            139.35,
+            183.32,
+            203.33
+          ],
+          "units": "kg K2O ha-1 yr-1",
+          "statistical_measures": {
+            "mean": 146.92,
+            "standard_error": null,
+            "confidence_interval": null,
+            "sample_size": 4
+          },
+          "measurement_context": "Average for 1980s, 1990s, 2000s, 2010s respectively"
+        },
+        {
+          "parameter": "Total K output (national)",
+          "values": [
+            8.1,
+            21.31
+          ],
+          "units": "Mt K2O",
+          "statistical_measures": {
+            "mean": 14.78,
+            "standard_error": null,
+            "confidence_interval": null,
+            "sample_size": 36
+          },
+          "measurement_context": "From 1980 to 2015, average annual increment of 0.38 Mt K2O"
+        },
+        {
+          "parameter": "Total K output (national, per area)",
+          "values": [
+            108.41,
+            145.27,
+            162.01,
+            183.84
+          ],
+          "units": "kg K2O ha-1",
+          "statistical_measures": {
+            "mean": 146.11,
+            "standard_error": null,
+            "confidence_interval": null,
+            "sample_size": 4
+          },
+          "measurement_context": "Average for 1980s, 1990s, 2000s, 2010s respectively"
+        },
+        {
+          "parameter": "K balance (national, per area)",
+          "values": [
+            -24.17,
+            -5.92,
+            21.31,
+            19.5
+          ],
+          "units": "kg K2O ha-1",
+          "statistical_measures": {
+            "mean": 0.81,
+            "standard_error": null,
+            "confidence_interval": null,
+            "sample_size": 4
+          },
+          "measurement_context": "Average for 1980s, 1990s, 2000s, 2010s respectively"
+        },
+        {
+          "parameter": "K balance (national, total)",
+          "values": [
+            -1.33,
+            -0.1,
+            2.74,
+            2.13
+          ],
+          "units": "Mt K2O",
+          "statistical_measures": {
+            "mean": null,
+            "standard_error": null,
+            "confidence_interval": null,
+            "sample_size": null
+          },
+          "measurement_context": "Values for 1980, 1997, 2003, 2015 respectively"
+        },
+        {
+          "parameter": "Potassium Use Efficiency (KUE) (national)",
+          "values": [
+            127.09,
+            104.35,
+            87.69,
+            89.69
+          ],
+          "units": "%",
+          "statistical_measures": {
+            "mean": 103.6,
+            "standard_error": null,
+            "confidence_interval": null,
+            "sample_size": 4
+          },
+          "measurement_context": "Average for 1980s, 1990s, 2000s, 2010s respectively"
+        },
+        {
+          "parameter": "K input from chemical fertilizer (national)",
+          "values": [
+            32.8
+          ],
+          "units": "% of total input",
+          "statistical_measures": {
+            "mean": 4.91,
+            "standard_error": null,
+            "confidence_interval": null,
+            "sample_size": null
+          },
+          "measurement_context": "Average 1980-2015, Mt K2O"
+        },
+        {
+          "parameter": "K input from organic manure (national)",
+          "values": [
+            59.2
+          ],
+          "units": "% of total input",
+          "statistical_measures": {
+            "mean": 8.85,
+            "standard_error": null,
+            "confidence_interval": null,
+            "sample_size": null
+          },
+          "measurement_context": "Average 1980-2015, Mt K2O"
+        },
+        {
+          "parameter": "K input from other resources (national)",
+          "values": [
+            8.0
+          ],
+          "units": "% of total input",
+          "statistical_measures": {
+            "mean": 1.19,
+            "standard_error": null,
+            "confidence_interval": null,
+            "sample_size": null
+          },
+          "measurement_context": "Average 1980-2015, Mt K2O"
+        },
+        {
+          "parameter": "K output from crops removal (national)",
+          "values": [
+            99.0
+          ],
+          "units": "% of total output",
+          "statistical_measures": {
+            "mean": 14.63,
+            "standard_error": null,
+            "confidence_interval": null,
+            "sample_size": null
+          },
+          "measurement_context": "Average 1980-2015, Mt K2O"
+        },
+        {
+          "parameter": "K output from loss (leaching and runoff) (national)",
+          "values": [
+            1.0
+          ],
+          "units": "% of total output",
+          "statistical_measures": {
+            "mean": 0.15,
+            "standard_error": null,
+            "confidence_interval": null,
+            "sample_size": null
+          },
+          "measurement_context": "Average 1980-2015, Mt K2O"
+        },
+        {
+          "parameter": "Predicted K balance for China in 2020",
+          "values": [
+            76.5
+          ],
+          "units": "kg K2O ha-1",
+          "statistical_measures": {
+            "mean": 76.5,
+            "standard_error": null,
+            "confidence_interval": null,
+            "sample_size": null
+          },
+          "measurement_context": "Based on policy of zero growth of chemical fertilizer and 60% straw and manure return rates, and 2015 crop yields."
+        },
+        {
+          "parameter": "Potential K fertilizer reduction in SE to maintain equilibrium",
+          "values": [
+            202.29
+          ],
+          "units": "kg K2O ha-1",
+          "statistical_measures": {
+            "mean": 202.29,
+            "standard_error": null,
+            "confidence_interval": null,
+            "sample_size": null
+          },
+          "measurement_context": "To maintain equilibrium in K balance in SE."
+        }
+      ],
+      "statistical_relationships": [
+        {
+          "relationship_type": "Linear correlation",
+          "variables": [
+            "K input",
+            "K output in crops"
+          ],
+          "correlation_coefficient": null,
+          "regression_parameters": {
+            "R^2_1980s": 0.41,
+            "R^2_1990s": 0.7,
+            "R^2_2000s": 0.83,
+            "R^2_2010s": 0.8
+          },
+          "significance_level": "Not explicitly stated, but R^2 values indicate strength of correlation.",
+          "effect_size": null
+        }
+      ],
+      "temporal_patterns": [
+        {
+          "parameter": "K input (national)",
+          "trend_description": "Increasing trend",
+          "rate_of_change": 0.48,
+          "units_per_time": "Mt K2O per year",
+          "trend_significance": "R^2 = 0.990",
+          "seasonal_component": "Not applicable"
+        },
+        {
+          "parameter": "K output (national)",
+          "trend_description": "Increasing trend",
+          "rate_of_change": 0.38,
+          "units_per_time": "Mt K2O per year",
+          "trend_significance": "R^2 = 0.976",
+          "seasonal_component": "Not applicable"
+        },
+        {
+          "parameter": "K balance (national)",
+          "trend_description": "Shifted from deficit to slight surplus, then remained relatively stable.",
+          "rate_of_change": null,
+          "units_per_time": null,
+          "trend_significance": null,
+          "seasonal_component": "Not applicable"
+        },
+        {
+          "parameter": "KUE (national)",
+          "trend_description": "Decreased over time",
+          "rate_of_change": null,
+          "units_per_time": null,
+          "trend_significance": "Decline in slope",
+          "seasonal_component": "Not applicable"
+        }
+      ],
+      "comparative_results": [
+        {
+          "comparison_type": "Regional K balance (average 1980-2015)",
+          "groups_compared": [
+            "Northeast (NE)",
+            "North China (NC)",
+            "Northwest (NW)",
+            "Middle-Lower Yangtze River (MLYR)",
+            "Southeast (SE)",
+            "Southwest (SW)"
+          ],
+          "difference_magnitude": null,
+          "units": "kg K2O ha-1",
+          "statistical_significance": "Considerably different",
+          "practical_significance": "NE: -21.37, NC: 1.25, NW: 13.70, MLYR: -22.79, SE: 99.22, SW: 7.18"
+        },
+        {
+          "comparison_type": "Regional KUE (average 1980-2015)",
+          "groups_compared": [
+            "Northeast (NE)",
+            "North China (NC)",
+            "Northwest (NW)",
+            "Middle-Lower Yangtze River (MLYR)",
+            "Southeast (SE)",
+            "Southwest (SW)"
+          ],
+          "difference_magnitude": null,
+          "units": "%",
+          "statistical_significance": "Great variation",
+          "practical_significance": "NE: 138.63, NC: 107.28, NW: 83.02, MLYR: 121.65, SE: 73.97, SW: 97.22"
+        }
+      ]
+    },
+    "environmental_context": {
+      "geographic_details": {
+        "countries": [
+          "China"
+        ],
+        "regions": [
+          "Northeast (NE)",
+          "North China (NC)",
+          "Northwest (NW)",
+          "Middle-Lower Yangtze River (MLYR)",
+          "Southeast (SE)",
+          "Southwest (SW)"
+        ],
+        "coordinates": "Not provided",
+        "elevation": "Not provided",
+        "landscape_position": "Not provided"
+      },
+      "climate_characteristics": {
+        "climate_classification": "Not provided",
+        "temperature_patterns": {},
+        "precipitation_patterns": {},
+        "growing_season": "Not provided",
+        "environmental_stressors": [
+          "Alternation of dry and wet climate conditions (in NW)"
+        ]
+      },
+      "soil_properties": {
+        "soil_classification": "Not provided",
+        "texture": "Not provided",
+        "organic_matter": "Not provided",
+        "chemical_properties": {
+          "soil_available_K": "Decreased in NW from 1990s to 2000s, stable in NE from 1990s to 2000s",
+          "pH": "Not provided"
+        },
+        "physical_properties": {},
+        "mineralogy": "High K-containing minerals such as micas and feldspars (contributing to soil K supply capacity)"
+      },
+      "land_use_context": {
+        "current_land_use": "Agricultural land",
+        "cropping_systems": [
+          "Cereal crops",
+          "Fruit and vegetables",
+          "Oil crops",
+          "Industrial crops",
+          "Root crops"
+        ],
+        "management_intensity": "Intensification implied by increasing fertilizer use and crop yields.",
+        "historical_context": "China suffered serious soil K deficiency from 1961-1997; relieved in recent years with increased fertilizer K application and straw return.",
+        "sustainability_metrics": [
+          "Potassium balance",
+          "Potassium use efficiency (KUE)"
+        ]
+      }
+    },
+    "agricultural_systems": {
+      "crop_information": {
+        "crop_types": [
+          "Cereal crops (Rice, Wheat, Maize, Sorghum, Millet, Barley, Other cereals)",
+          "Fruit and vegetables (Fruit, Vegetable, Melons)",
+          "Oil crops (Peanut, Sunflower, Rape, Sesame, Other oil crops, Soybeans, Pea)",
+          "Industrial crops (Flue-cured tobacco, Tobacco, Tea, Bast fibre plants, Cotton, Sugar beet, Sugarcane)",
+          "Root crops (Potato, Sweet potato)"
+        ],
+        "varieties_cultivars": [],
+        "growth_stages_studied": [],
+        "yield_levels": {
+          "economic_yield": "Used for K output calculation",
+          "crop_yield": "Increased over time, 2015 regarded as optimal level"
+        },
+        "production_metrics": {
+          "K_requirement_per_unit_economic_yield": "Table 3 provides values (e.g., Wheat: 27.14 kg K2O t-1, Vegetables: 4.85 kg K2O t-1)"
+        }
+      },
+      "management_practices": {
+        "fertilization": {
+          "types": [
+            "Chemical fertilizer",
+            "Organic manure (human and livestock manure, straw return, cake manure)"
+          ],
+          "rates": {
+            "chemical_fertilizer_K_input_national_1980": "0.38 Mt K2O",
+            "chemical_fertilizer_K_input_national_2015": "10.58 Mt K2O",
+            "chemical_fertilizer_K_input_national_average_annual_increment": "0.29 Mt K2O"
+          },
+          "timing": [],
+          "application_methods": []
+        },
+        "irrigation": {
+          "system_type": "Not specified",
+          "water_amounts": {},
+          "scheduling": "Not specified"
+        },
+        "other_practices": {
+          "tillage": "Not specified",
+          "rotation": [],
+          "pest_management": "Not specified",
+          "organic_amendments": [
+            "Straw return",
+            "Human and livestock manure",
+            "Cake manure"
+          ]
+        }
+      },
+      "input_output_relationships": {
+        "input_rates": {
+          "K_input_national_1980": "6.78 Mt K2O",
+          "K_input_national_2015": "23.44 Mt K2O",
+          "K_input_national_average_annual_increment": "0.48 Mt K2O"
+        },
+        "output_measurements": {
+          "K_output_national_1980": "8.10 Mt K2O",
+          "K_output_national_2015": "21.31 Mt K2O",
+          "K_output_national_average_annual_increment": "0.38 Mt K2O"
+        },
+        "efficiency_metrics": {
+          "Potassium_Use_Efficiency_(KUE)": "Calculated as crops removal (K output in crops) divided by total K input of a system."
+        },
+        "balance_calculations": {
+          "K_balance": "Difference between K inputs and outputs."
+        }
+      }
+    },
+    "temporal_dynamics": {
+      "study_timeline": {
+        "start_date": "1980",
+        "end_date": "2015",
+        "data_collection_schedule": [
+          "Annual data collected and analyzed in four decadal periods (1980s, 1990s, 2000s, 2010s)"
+        ],
+        "monitoring_frequency": "Annual"
+      },
+      "seasonal_variations": [],
+      "long_term_trends": [
+        {
+          "parameter": "National K input",
+          "trend_direction": "Increasing",
+          "trend_magnitude": 0.48,
+          "trend_units": "Mt K2O per year",
+          "projection_timeframe": "2020",
+          "sustainability_implications": "Increased K input, especially from chemical fertilizers, leading to K surplus nationally."
+        },
+        {
+          "parameter": "National K output",
+          "trend_direction": "Increasing",
+          "trend_magnitude": 0.38,
+          "trend_units": "Mt K2O per year",
+          "projection_timeframe": "2020",
+          "sustainability_implications": "Increased K output due to higher crop yields and changes in crop composition (more high K uptake crops)."
+        },
+        {
+          "parameter": "National K balance",
+          "trend_direction": "Shift from deficit to surplus",
+          "trend_magnitude": null,
+          "trend_units": null,
+          "projection_timeframe": "2020",
+          "sustainability_implications": "Improved K balance nationally, but regional disparities persist, requiring localized adjustments."
+        },
+        {
+          "parameter": "National KUE",
+          "trend_direction": "Decreasing",
+          "trend_magnitude": null,
+          "trend_units": null,
+          "projection_timeframe": null,
+          "sustainability_implications": "Diminished effect of K fertilizer on grain production, indicating potential overuse in some regions."
+        }
+      ],
+      "variability_characterization": {
+        "inter_annual_variability": {
+          "K_input_output_balance": "Fluctuations observed, e.g., K input/output in six regions, K balance in SE (1995-1998 decrease)."
+        },
+        "spatial_variability": {
+          "K_input_output_balance_KUE": "Great variation across different regions (NE, NC, NW, MLYR, SE, SW)."
+        },
+        "measurement_uncertainty": {},
+        "drivers_of_variability": [
+          "Different crops and soil fertility",
+          "Chemical fertilizer application rates",
+          "Crop yields",
+          "Proportion of high K uptake crops (fruit & vegetables)",
+          "Straw return rates",
+          "Social economy and farmer household management",
+          "Livestock numbers (e.g., cattle reduction in SE)"
+        ]
+      }
+    },
+    "data_quality_assessment": {
+      "methodological_strengths": [
+        "Long-term (36 years) and broad spatial coverage (national and regional levels)",
+        "Comprehensive K balance model including multiple input and output sources",
+        "Data pre-processing with validation rules (e.g., <15% variation between adjacent years)",
+        "Integration of statistical data and literature-based parameters."
+      ],
+      "methodological_limitations": [
+        "Reliance on statistical data and literature-derived conversion factors/parameters, which may introduce uncertainties.",
+        "Difficulty in quantifying accurate K2O leaching and runoff outputs (small percentage, but still an estimate).",
+        "Lack of specific soil property data (e.g., texture, OM, pH) for regional analysis.",
+        "No explicit mention of uncertainty quantification for the K balance model itself.",
+        "Prediction for 2020 based on specific policy assumptions (zero growth, 60% straw/manure return)."
+      ],
+      "data_completeness": "High for K balance components (inputs/outputs) from 1980-2015, with missing data filled using established methods.",
+      "measurement_precision": {},
+      "representativeness": {
+        "spatial_representativeness": "High, covering 31 provincial data sets and six major regions of mainland China.",
+        "temporal_representativeness": "High, covering 36 years (1980-2015), allowing for long-term trend analysis.",
+        "system_representativeness": "Represents agricultural land-use systems at national and regional scales in China."
+      },
+      "uncertainty_sources": [
+        "Estimates for leaching and runoff losses",
+        "Literature-based conversion factors (e.g., grain to straw ratio, K content in straw, K requirement for yield)",
+        "Assumptions for future predictions (e.g., zero growth of chemical fertilizer, straw return rates)."
+      ],
+      "validation_evidence": [
+        "No independent validation studies against field measurements of K balance are explicitly mentioned for the model results, but the study discusses consistency with previous findings (e.g., soil K deficiency relief)."
+      ]
+    },
+    "literature_integration": {
+      "key_methodological_references": [
+        "Liu et al. [39] (for K balance model parameters)",
+        "Li and Jin [32] (for straw return rates and K2O in compound fertilizer)",
+        "China Agriculture Statistical Report [38] (for primary statistical data)"
+      ],
+      "comparative_studies": [
+        "Sheldrick et al. [24] (soil nutrient audits for China, importance of national level)",
+        "Shen et al. [13] (N, P, K balances for agroecosystems in China)",
+        "Liu et al. [25] (soil K as limiting factor)",
+        "Huang et al. [26], Oelofse et al. [27] (soil K surpluses in vegetable production in specific provinces)",
+        "Studies on specific experimental sites [15, 28–31]"
+      ],
+      "theoretical_framework": "Nutrient balance/budget concept (difference between nutrient inputs and outputs of a system with predefined spatiotemporal boundaries) [4].",
+      "data_sources": [
+        "China Agriculture Statistical Report [38] (chemical fertilizer, livestock numbers, crop yield, population, planting area, cultivated land area)",
+        "Published literature (conversion factors, K contents, K requirements)"
+      ],
+      "benchmarking_data": [
+        "Comparative K balance and KUE values from other studies (e.g., Europe [17, 18], Africa [19, 20], Asia [21, 22], North America [23]) are mentioned in the introduction for context, but not directly used for benchmarking the study's results."
+      ],
+      "validation_studies": [
+        "No direct validation studies mentioned for the model used, but the paper discusses consistency with previous findings (e.g., soil K deficiency relief)."
+      ]
+    },
+    "extraction_metadata": {
+      "extraction_completeness": 0.9,
+      "data_richness_assessment": "High. The paper provides extensive quantitative data on K inputs, outputs, and balance at national and regional levels over a long period, including breakdowns by source/crop type and efficiency metrics. Methodological details are also well-described.",
+      "confidence_in_extraction": 0.95,
+      "potential_ambiguities": [
+        "Specific statistical tests and p-values for 'significant differences' are not provided.",
+        "The exact definition of 'cultivated land area' used for per-hectare calculations is not detailed (e.g., total arable land, sown area).",
+        "The 'other inputs' and 'leaching and runoff outputs' are stated to be from S3 Table, but S3 Table was not provided in the prompt, so specific values for these minor components are not extracted."
+      ],
+      "extraction_limitations": [
+        "Inability to extract specific values from supporting information tables (S1, S2, S3) as they were not provided in the prompt.",
+        "Lack of detailed climate data, specific soil classifications, or precise geographic coordinates beyond regional names."
+      ],
+      "quality_flags": [
+        "Missing_Specific_Statistical_Tests",
+        "Missing_Detailed_Geographic_Data",
+        "Missing_Supporting_Table_Data"
+      ],
+      "recommended_validation_checks": [
+        "Cross-reference extracted numerical values with original tables/figures if available.",
+        "Verify the interpretation of 'significant differences' if specific statistical results are found in supplementary materials.",
+        "Confirm the exact definitions of input/output components and their calculation methods from cited methodological references."
+      ]
+    },
+    "_usage_metadata": {
+      "timestamp": "2025-07-10T10:31:59.207664",
+      "stage_name": "stage_1a",
+      "paper_id": "Temporal andspatial variation of potassium balance in agricultural land at national and regional levels in China",
+      "prompt_length_chars": 110879,
+      "processing_time_seconds": 66.67,
+      "thinking_enabled": true,
+      "input_tokens": 38410,
+      "output_tokens": 7357,
+      "thinking_tokens": 0,
+      "input_cost_usd": 0.005762,
+      "output_cost_usd": 0.02575,
+      "thinking_cost_usd": 0.0,
+      "total_cost_usd": 0.031511
+    }
+  }
+}

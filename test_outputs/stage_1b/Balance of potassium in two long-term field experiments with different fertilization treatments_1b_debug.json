@@ -1,0 +1,50 @@
+{
+  "paper_id": "Balance of potassium in two long-term field experiments with different fertilization treatments",
+  "validation_input_stats": {
+    "stage_1a_result_size": 21862,
+    "paper_data_size": 38498,
+    "has_paper_metadata": true,
+    "has_quantitative_findings": true,
+    "stage_1a_fields": [
+      "paper_metadata",
+      "research_methodology",
+      "quantitative_findings",
+      "environmental_context",
+      "agricultural_systems",
+      "temporal_dynamics",
+      "data_quality_assessment",
+      "literature_integration",
+      "extraction_metadata",
+      "_usage_metadata",
+      "stage",
+      "paper_id",
+      "processing_timestamp",
+      "temperature_used"
+    ]
+  },
+  "validation_output_stats": {
+    "validation_quality": {
+      "validation_thoroughness": 1.0,
+      "confidence_in_validation": 1.0,
+      "validation_completeness": 1.0,
+      "critical_issues_identified": 2,
+      "enhancement_value": "high",
+      "validation_certification": "requires_revision",
+      "validator_notes": "The extraction demonstrated high accuracy for most direct textual and tabular data. However, a critical issue was identified where data (Potassium saturation in CEC) was extracted and attributed to a table (Table 4) that is not present in the provided text, indicating a hallucination or reliance on an external, unprovided source. Additionally, a numerical value for a long-term trend was inaccurate, and a statistical significance level was generalized inappropriately. These issues necessitate revision to ensure the highest standard of accuracy and verifiability.",
+      "recommended_next_steps": [
+        "Implement the high-priority corrections as detailed in the 'quality_enhancement' section.",
+        "Re-evaluate the extraction process to prevent hallucination of data not present in the source text.",
+        "Ensure numerical values derived from figures are explicitly noted as estimates if precise values are not provided in the text."
+      ]
+    },
+    "issues_found": 0,
+    "recommendations_given": 0,
+    "overall_success": false
+  },
+  "validation": {
+    "is_valid": false,
+    "issues": [
+      "Missing required field: validation_issues"
+    ]
+  }
+}

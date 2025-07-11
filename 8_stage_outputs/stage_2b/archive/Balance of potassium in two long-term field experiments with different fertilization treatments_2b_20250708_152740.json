@@ -1,0 +1,215 @@
+{
+  "stage_id": "2b",
+  "stage_name": "Soil K Validation",
+  "paper_id": "Balance of potassium in two long-term field experiments with different fertilization treatments",
+  "run_type": "stage_test",
+  "processing_timestamp": "2025-07-08T15:27:40.277025",
+  "processing_time_seconds": 40.58978605270386,
+  "token_usage": {
+    "input": 16820,
+    "output": 1870,
+    "thinking": 0
+  },
+  "estimated_cost_usd": 0.066825,
+  "results": {
+    "scientific_accuracy_validation": {
+      "terminology_accuracy": {
+        "accurate": true,
+        "corrections_needed": [],
+        "clarifications_required": []
+      },
+      "parameter_extraction_accuracy": {
+        "accurate": true,
+        "measurement_errors": [],
+        "unit_corrections": []
+      },
+      "process_characterization_accuracy": {
+        "accurate": true,
+        "description_errors": [],
+        "mechanistic_corrections": []
+      }
+    },
+    "quantitative_data_validation": {
+      "numerical_accuracy": {
+        "verified": false,
+        "value_discrepancies": [
+          {
+            "parameter": "Non-exchangeable K (Kne)",
+            "extracted_values": "[816, 927, 2908, 3068]",
+            "original_text_values": "850 mg Kne/kg (Luvisol), 3000 mg Kne/kg (Cambisol)",
+            "discrepancy_reason": "The original text (abstract) provides single average values for Kne at each site, not ranges. The extracted ranges are not directly verifiable from the provided text snippet.",
+            "impact": "Minor precision issue in reporting Kne values."
+          }
+        ],
+        "calculation_errors": []
+      },
+      "unit_preservation": {
+        "preserved": true,
+        "conversion_errors": [],
+        "standardization_issues": [
+          {
+            "parameter": "Total K extracted by boiling HNO3",
+            "extracted_unit": "mg K/kg",
+            "original_text_unit": "mg K/ha",
+            "issue_description": "The original paper states 'Hněvčeves (1069 mg K/ha)' and 'Humpolec (3167 mg K/ha)' when referring to the total K extracted by boiling HNO3 for percentage calculations. While 'mg K/kg' is the standard unit for soil concentration and consistent with other extracted K forms, the paper explicitly uses 'mg K/ha' in this specific sentence. This is likely a typo in the original paper, but the extraction should ideally reflect the original phrasing or note the ambiguity.",
+            "impact": "Minor ambiguity in unit representation due to source paper's inconsistency."
+          }
+        ]
+      },
+      "statistical_accuracy": {
+        "verified": true,
+        "missing_statistics": [],
+        "statistical_errors": []
+      }
+    },
+    "context_preservation_validation": {
+      "research_objective_accuracy": {
+        "preserved": true,
+        "mischaracterizations": [],
+        "context_omissions": []
+      },
+      "experimental_design_accuracy": {
+        "preserved": true,
+        "design_errors": [],
+        "scope_misrepresentations": []
+      },
+      "environmental_context_accuracy": {
+        "preserved": true,
+        "context_errors": [],
+        "setting_omissions": []
+      }
+    },
+    "methodological_validation": {
+      "analytical_method_accuracy": {
+        "accurate": true,
+        "method_mischaracterizations": [],
+        "protocol_errors": []
+      },
+      "sampling_design_accuracy": {
+        "accurate": true,
+        "design_errors": [],
+        "representativeness_issues": []
+      },
+      "quality_control_accuracy": {
+        "accurate": true,
+        "qc_omissions": [],
+        "precision_mischaracterizations": []
+      }
+    },
+    "temporal_spatial_validation": {
+      "temporal_accuracy": {
+        "accurate": true,
+        "timeline_errors": [],
+        "pattern_mischaracterizations": []
+      },
+      "spatial_accuracy": {
+        "accurate": true,
+        "location_errors": [],
+        "scale_misrepresentations": []
+      },
+      "variability_characterization": {
+        "accurate": true,
+        "variability_errors": [],
+        "scaling_mischaracterizations": []
+      }
+    },
+    "completeness_assessment": {
+      "data_completeness": {
+        "complete": true,
+        "missing_data": [],
+        "omitted_measurements": []
+      },
+      "methodological_completeness": {
+        "complete": true,
+        "missing_methods": [],
+        "incomplete_descriptions": []
+      },
+      "contextual_completeness": {
+        "complete": true,
+        "missing_context": [],
+        "insufficient_background": []
+      }
+    },
+    "validation_enhancements": {
+      "critical_corrections": [
+        {
+          "correction_type": "Numerical Value Correction",
+          "section_affected": "quantitative_soil_k_data.pool_characterizations",
+          "error_description": "The extracted values for 'Non-exchangeable K (Kne)' were presented as ranges (816-927 mg K/kg for Hněvčeves and 2908-3068 mg K/kg for Humpolec). The provided original text (abstract) only states single average values: 850 mg Kne/kg for Luvisol (Hněvčeves) and 3000 mg Kne/kg for Cambisol (Humpolec). The ranges are not verifiable from the provided text.",
+          "corrected_information": "Adjusted 'values' to [850, 3000] and 'treatment_effects' descriptions to reflect the single average values from the abstract.",
+          "impact_assessment": "Enhances numerical accuracy by strictly adhering to the directly verifiable information in the provided text."
+        }
+      ],
+      "completeness_improvements": [],
+      "context_clarifications": [
+        {
+          "clarification_type": "Unit Ambiguity Clarification",
+          "ambiguous_content": "The unit for 'Total K extracted by boiling HNO3' was extracted as 'mg K/kg', while the original paper states 'mg K/ha' in the specific sentence describing these values for percentage calculations.",
+          "clarified_interpretation": "While 'mg K/ha' is stated in the paper, 'mg K/kg' is the scientifically more appropriate unit for a soil concentration measurement and is consistent with other soil K measurements in the study. This discrepancy is likely a typo in the original paper. The extraction maintains 'mg K/kg' but this note clarifies the original phrasing.",
+          "supporting_evidence": "Original text: 'Hněvčeves (1069 mg K/ha): M3 18.8%...'. Context of other soil K measurements being in mg K/kg."
+        }
+      ]
+    },
+    "enhanced_soil_k_extraction": {
+      "corrected_quantitative_data": {
+        "pool_characterizations": [
+          {
+            "pool_type": "Non-exchangeable K (Kne)",
+            "values": [
+              850,
+              3000
+            ],
+            "units": "mg K/kg",
+            "analytical_method": "Boiling HNO3 extraction (subtracting NH4OAc-determined K)",
+            "measurement_conditions": "0-30 cm depth, finely ground soil samples",
+            "temporal_variation": "Measured at end of 21-year experiment (2017)",
+            "treatment_effects": {
+              "Hněvčeves_average": "850 mg K/kg",
+              "Humpolec_average": "3000 mg K/kg",
+              "description": "Both sites significantly differ due to soil-forming materials. Humpolec (Cambisol on paragneiss) has much higher Kne than Hněvčeves (Luvisol on loess). Fertilization for 21 years did not significantly impact Kne at Humpolec. At Hněvčeves, a significant tendency to decrease Kne was observed in variants without K fertilization."
+            }
+          }
+        ]
+      },
+      "improved_context_description": {},
+      "enhanced_methodological_detail": {},
+      "strengthened_temporal_analysis": {},
+      "enriched_spatial_characterization": {}
+    },
+    "validation_certification": {
+      "scientific_accuracy_score": 0.98,
+      "context_preservation_score": 0.99,
+      "completeness_score": 0.95,
+      "extraction_enhancement_value": "medium",
+      "overall_validation_confidence": 0.97,
+      "validation_status": "conditionally_approved",
+      "critical_issues_count": 1,
+      "enhancement_recommendations": [
+        "Correct the specific numerical values for Non-exchangeable K (Kne) to match the single values provided in the abstract, as the extracted ranges are not directly verifiable from the provided text.",
+        "Add a note regarding the ambiguity of the unit for 'Total K extracted by boiling HNO3' as stated in the original paper (mg K/ha vs. mg K/kg)."
+      ],
+      "validator_notes": "The extraction is highly comprehensive and accurate given the provided text. The identified issues are minor numerical precision and unit ambiguity, which are addressed in the enhancements. The extraction correctly identified and ignored the mis-extracted 'Table Data' at the end of the prompt. Overall, a very strong extraction."
+    },
+    "_usage_metadata": {
+      "timestamp": "2025-07-08T15:27:40.248186",
+      "stage_name": "unknown",
+      "paper_id": "unknown",
+      "prompt_length_chars": 62332,
+      "processing_time_seconds": 40.56,
+      "thinking_enabled": true,
+      "input_tokens": 19231,
+      "output_tokens": 2200,
+      "thinking_tokens": 0,
+      "input_cost_usd": 0.002885,
+      "output_cost_usd": 0.0077,
+      "thinking_cost_usd": 0.0,
+      "total_cost_usd": 0.010585
+    },
+    "success": true,
+    "stage": "2B",
+    "paper_id": "Balance of potassium in two long-term field experiments with different fertilization treatments.pdf",
+    "validation_timestamp": "2025-07-08T15:27:40.250007",
+    "temperature_used": 0.05,
+    "validated_stage": "2A"
+  }
+}

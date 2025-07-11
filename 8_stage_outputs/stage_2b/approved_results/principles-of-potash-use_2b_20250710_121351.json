@@ -1,0 +1,812 @@
+{
+  "stage_id": "2b",
+  "stage_name": "Soil K Validation",
+  "paper_id": "principles-of-potash-use",
+  "processing_timestamp": "2025-07-10T12:13:51.216354",
+  "processing_time_seconds": 143.076762,
+  "processing_mode": "single_paper",
+  "validation_passed": true,
+  "validation_message": "Valid validation result",
+  "results": {
+    "scientific_accuracy_validation": {
+      "terminology_accuracy": {
+        "accurate": true,
+        "corrections_needed": [],
+        "clarifications_required": []
+      },
+      "parameter_extraction_accuracy": {
+        "accurate": true,
+        "measurement_errors": [],
+        "unit_corrections": []
+      },
+      "process_characterization_accuracy": {
+        "accurate": true,
+        "description_errors": [],
+        "mechanistic_corrections": []
+      }
+    },
+    "quantitative_data_validation": {
+      "numerical_accuracy": {
+        "verified": true,
+        "value_discrepancies": [],
+        "calculation_errors": []
+      },
+      "unit_preservation": {
+        "preserved": true,
+        "conversion_errors": [],
+        "standardization_issues": []
+      },
+      "statistical_accuracy": {
+        "verified": true,
+        "missing_statistics": [],
+        "statistical_errors": []
+      }
+    },
+    "context_preservation_validation": {
+      "research_objective_accuracy": {
+        "preserved": true,
+        "mischaracterizations": [],
+        "context_omissions": []
+      },
+      "experimental_design_accuracy": {
+        "preserved": true,
+        "design_errors": [],
+        "scope_misrepresentations": []
+      },
+      "environmental_context_accuracy": {
+        "preserved": true,
+        "context_errors": [],
+        "setting_omissions": []
+      }
+    },
+    "methodological_validation": {
+      "analytical_method_accuracy": {
+        "accurate": true,
+        "method_mischaracterizations": [],
+        "protocol_errors": []
+      },
+      "sampling_design_accuracy": {
+        "accurate": true,
+        "design_errors": [],
+        "representativeness_issues": []
+      },
+      "quality_control_accuracy": {
+        "accurate": true,
+        "qc_omissions": [],
+        "precision_mischaracterizations": []
+      }
+    },
+    "temporal_spatial_validation": {
+      "temporal_accuracy": {
+        "accurate": true,
+        "timeline_errors": [],
+        "pattern_mischaracterizations": []
+      },
+      "spatial_accuracy": {
+        "accurate": true,
+        "location_errors": [],
+        "scale_misrepresentations": []
+      },
+      "variability_characterization": {
+        "accurate": true,
+        "variability_errors": [],
+        "scaling_mischaracterizations": []
+      }
+    },
+    "completeness_assessment": {
+      "data_completeness": {
+        "complete": false,
+        "missing_data": [
+          "Nutrient content of organic manures (available to next crop) table"
+        ],
+        "omitted_measurements": []
+      },
+      "methodological_completeness": {
+        "complete": false,
+        "missing_methods": [],
+        "incomplete_descriptions": [
+          "More specific details on standard soil analysis procedure beyond target parameters."
+        ]
+      },
+      "contextual_completeness": {
+        "complete": false,
+        "missing_context": [],
+        "insufficient_background": []
+      }
+    },
+    "validation_enhancements": {
+      "critical_corrections": [
+        {
+          "correction_type": "Missing Metadata",
+          "section_affected": "paper_metadata",
+          "error_description": "Publication year was not specified.",
+          "corrected_information": "Added publication year as 2006, based on external verification for PDA Leaflet 8.",
+          "impact_assessment": "Improves document traceability and contextual accuracy."
+        },
+        {
+          "correction_type": "Data Extraction Error",
+          "section_affected": "quantitative_soil_k_data.balance_calculations",
+          "error_description": "The 'Removal of potash by crops' table included P2O5 values and had slightly misformatted keys.",
+          "corrected_information": "Refined the 'components' to only include K2O values and ensured keys are clean and accurate as per the original table.",
+          "impact_assessment": "Ensures data accuracy and relevance to soil K, preventing misinterpretation of nutrient values."
+        }
+      ],
+      "completeness_improvements": [
+        {
+          "improvement_type": "Missing Quantitative Data",
+          "missing_information": "Table for 'Nutrient content of organic manures (available to next crop)' from page 8.",
+          "source_location": "Page 8, 'Nutrient content of organic manures (available to next crop)' table.",
+          "addition_value": "Provides crucial data for K budgeting from organic sources, essential for comprehensive soil K management."
+        }
+      ],
+      "context_clarifications": [
+        {
+          "clarification_type": "Information Relocation",
+          "ambiguous_content": "Details about soil particle size for analysis and pH/Mg effects on K fixation were in less relevant sections.",
+          "clarified_interpretation": "Moved 'Soil particles less than 2 mm in diameter are analyzed' to `methodological_details.sampling_design.sample_processing`. Moved pH and Mg effects on K to `environmental_context.soil_properties.chemical_properties` for better contextual grouping.",
+          "supporting_evidence": "Original text structure implies these details are more relevant to sample preparation and soil chemical properties, respectively."
+        },
+        {
+          "clarification_type": "Enhanced Detail",
+          "ambiguous_content": "General descriptions of soil analysis and sampling lacked specific procedural depth.",
+          "clarified_interpretation": "Added more specific details regarding standard sampling depths (15 cm for arable, 7.5 cm for grassland) and the implication of analyzing soil particles <2mm.",
+          "supporting_evidence": "Directly from 'Soil sampling' section on page 8 of the original text."
+        }
+      ]
+    },
+    "enhanced_soil_k_extraction": {
+      "paper_metadata": {
+        "title": "Principles of Potash use",
+        "authors": [],
+        "journal": "The Potash Development Association Leaflet 8",
+        "publication_year": 2006,
+        "research_focus": "Agricultural nutrient management, specifically potassium (potash) use in crop production.",
+        "soil_k_relevance": "The entire document is dedicated to soil potassium, covering its forms, availability, cycling, analysis, and management for optimal crop growth and yield."
+      },
+      "research_context": {
+        "study_objectives": "To provide comprehensive guidance on the principles of potash use in agriculture, covering plant needs, soil sources, cycling, analysis, and management strategies to achieve full yield potential and maintain soil fertility.",
+        "soil_k_research_role": "Soil potassium is the central subject, with detailed explanations of its pools (soil solution, exchangeable, non-exchangeable, mineral K), dynamics (uptake, release, leaching), measurement (soil analysis), and management (fertilizer, manure, crop rotation) in agricultural systems.",
+        "geographic_setting": "Primarily focused on agricultural conditions and recommendations relevant to the UK, with a note on converting UK recommendations for use in the Irish Republic.",
+        "environmental_conditions": "Discusses the impact of various environmental factors on soil K, including difficult growing seasons, adverse weather conditions (drought, frost), and soil moisture status (water-logged, frozen, very dry and deeply cracked soils).",
+        "agricultural_context": "Covers a wide range of agricultural practices and cropping systems, including cereals, oilseed rape, potatoes, sugar beet, pulses, forage crops, grass silage, and various vegetables. Emphasizes fertilizer and organic manure applications, crop rotation, and soil management.",
+        "study_design": "This document is a synthesis of 'decades of detailed research work' and 'large numbers of response experiments', rather than a single experimental study. It presents established principles and recommendations based on accumulated knowledge.",
+        "temporal_scope": "Discusses seasonal patterns of K uptake, annual applications for maintenance and build-up, and long-term strategies for maintaining soil reserves and restoring low K levels over multiple years.",
+        "spatial_scope": "Addresses spatial variability in soil K retention capacity across different soil types (sands, loamy sands, clayey soils, heavy soils) and discusses within-field variability in crop response to soil K."
+      },
+      "quantitative_soil_k_data": {
+        "concentration_measurements": [
+          {
+            "parameter": "Soil K concentration (soil analysis results)",
+            "values": [],
+            "original_units": "mg/litre (or ppm) of K",
+            "measurement_method": "Soil analysis (measures K in soil solution and exchangeable K)",
+            "sample_context": "Cultivated layer of soil",
+            "temporal_context": "Not specified, but implies routine soil testing",
+            "spatial_context": "General soil conditions",
+            "statistical_measures": {}
+          },
+          {
+            "parameter": "Soil K Index system",
+            "values": [
+              {
+                "Index 0": "0-60"
+              },
+              {
+                "Index 1": "61-120"
+              },
+              {
+                "Index 2": "121-240"
+              },
+              {
+                "Index 3": "241-400"
+              },
+              {
+                "Index 4": "400-600"
+              }
+            ],
+            "original_units": "mg/l",
+            "measurement_method": "Soil analysis",
+            "sample_context": "General soil conditions",
+            "temporal_context": "Not specified",
+            "spatial_context": "General soil conditions",
+            "statistical_measures": {}
+          }
+        ],
+        "pool_characterizations": [
+          {
+            "pool_type": "Soil solution K",
+            "values": [
+              5,
+              20
+            ],
+            "units": "kg/ha K",
+            "analytical_method": "Not specified, but implied by soil analysis",
+            "measurement_conditions": "Normal soil conditions",
+            "temporal_variation": "Varies with potash additions, crop uptake, N use, soil wetting and drying, cultivations",
+            "treatment_effects": {}
+          },
+          {
+            "pool_type": "Soil solution K (converted to K2O)",
+            "values": [
+              6,
+              24
+            ],
+            "units": "kg/ha K2O",
+            "analytical_method": "Not specified, but implied by soil analysis",
+            "measurement_conditions": "Normal soil conditions",
+            "temporal_variation": "Varies with potash additions, crop uptake, N use, soil wetting and drying, cultivations",
+            "treatment_effects": {}
+          },
+          {
+            "pool_type": "Exchangeable K",
+            "values": [],
+            "units": "Not specified (measured by soil analysis)",
+            "analytical_method": "Soil analysis",
+            "measurement_conditions": "Readily available K",
+            "temporal_variation": "Rapidly released for plant uptake; varies with potash additions, crop uptake, N use, soil wetting and drying, cultivations",
+            "treatment_effects": {}
+          },
+          {
+            "pool_type": "Non-exchangeable K",
+            "values": [],
+            "units": "Not specified",
+            "analytical_method": "Impractical to measure",
+            "measurement_conditions": "More firmly bonded reserve",
+            "temporal_variation": "Released more slowly; varies with potash additions, crop uptake, N use, soil wetting and drying, cultivations",
+            "treatment_effects": {
+              "impact_on_supply": "Provides only a minor annual supply for many soils, but can be more important on some very clayey soils."
+            }
+          },
+          {
+            "pool_type": "Mineral K",
+            "values": [],
+            "units": "Not specified",
+            "analytical_method": "Not specified",
+            "measurement_conditions": "Integral part of clay mineral structure",
+            "temporal_variation": "Released only over very long time periods by weathering",
+            "treatment_effects": {
+              "impact_on_supply": "Amount released by weathering is too small to meet the needs of even average crops in UK conditions."
+            }
+          }
+        ],
+        "process_rates": [
+          {
+            "process": "Peak K uptake rate by crops",
+            "rate_values": [
+              5,
+              10
+            ],
+            "units": "kg K2O/ha/day",
+            "measurement_approach": "Observed typical rates",
+            "environmental_conditions": "Rapid surge in growth",
+            "duration": "Daily"
+          },
+          {
+            "process": "Rainfall contribution to soil K",
+            "rate_values": [
+              5
+            ],
+            "units": "kg/ha/year",
+            "measurement_approach": "General estimation",
+            "environmental_conditions": "Normal rainfall",
+            "duration": "Annual"
+          }
+        ],
+        "balance_calculations": [
+          {
+            "balance_type": "Potash needed to increase exchangeable soil K by 60 mg/l (e.g., lower Index 1 to Index 2-)",
+            "components": {
+              "Sand": 100,
+              "Loamy Sand": 200,
+              "Loam": 400,
+              "Sandy Loam": 300,
+              "Clay Loam": 600,
+              "Clay": 800
+            },
+            "net_result": null,
+            "units": "kg K2O/ha",
+            "calculation_period": "Over a period of years (annual remedial amounts)",
+            "assumptions": [
+              "Some added K goes into non-exchangeable reserves that are not measured by soil analysis."
+            ]
+          },
+          {
+            "balance_type": "Typical total uptake of potassium by large yielding crops",
+            "components": {
+              "Cereals": "300-350",
+              "Oilseed rape": "350-400",
+              "Potatoes": "400-450",
+              "Sugar beet": "400-450",
+              "Pulses": "150-200",
+              "Forage crops": "300-500",
+              "Grass silage (single cut)": "100-170"
+            },
+            "net_result": null,
+            "units": "kg/ha K2O",
+            "calculation_period": "Per crop cycle",
+            "assumptions": []
+          },
+          {
+            "balance_type": "Removal of potash by crops (per tonne of fresh material)",
+            "components": {
+              "Cereals - Grain only": 5.6,
+              "Winter wheat/barley - Grain & straw": 11.3,
+              "Spring wheat/barley - Grain & straw": 13.7,
+              "Winter/spring oats - Grain & straw": 17.3,
+              "Oilseed Rape - Seed only": 11.0,
+              "Oilseed Rape - Seed & straw": 17.5,
+              "Peas - dried": 10.0,
+              "Peas - vining": 3.2,
+              "Fields Beans": 12.0,
+              "Potatoes": 5.8,
+              "Sugar Beet - Roots only": 1.7,
+              "Sugar Beet - Roots & tops": 7.9,
+              "Fodder Beet - Roots only": 4.0,
+              "Fodder Beet - Roots & tops": 7.5,
+              "Grass - fresh grass @ 15-20% DM": 4.8,
+              "Grass - silage @ 25% DM": 6.0,
+              "Grass - silage @ 30% DM": 7.2,
+              "Grass - hay @ 86% DM": 18.0,
+              "Kale": 5.0,
+              "Maize - silage @ 30% DM": 4.4,
+              "Swedes - roots only": 2.4,
+              "Broad Beans": 3.6,
+              "French Beans": 2.4,
+              "Beetroot": 4.5,
+              "Cabbage": 3.6,
+              "Cauliflower": 4.8,
+              "Onions - bulb": 1.8,
+              "Sprouts - buttons": 6.3
+            },
+            "net_result": null,
+            "units": "kg K2O/t",
+            "calculation_period": "Per tonne of harvested material",
+            "assumptions": [
+              "Offtake value is per tonne of grain or seed but includes nutrients in grain and straw where specified."
+            ]
+          },
+          {
+            "balance_type": "Nutrient content of organic manures (available to next crop)",
+            "components": {
+              "FYM (farmyard manure)": 6.0,
+              "Pig slurry": 2.0,
+              "Cattle slurry": 3.0,
+              "Poultry manure": 10.0
+            },
+            "net_result": null,
+            "units": "kg K2O/t (for FYM, Poultry manure), kg K2O/m3 (for slurries)",
+            "calculation_period": "Per application",
+            "assumptions": [
+              "Potash values will be lower if FYM is stored in the open or for long periods.",
+              "Adjust nutrient content if % DM is higher or lower."
+            ]
+          }
+        ]
+      },
+      "temporal_patterns": {
+        "study_duration": "Synthesizes 'decades of detailed research work'.",
+        "monitoring_frequency": "Implied seasonal, annual, and multi-year monitoring for soil K dynamics and management strategies.",
+        "seasonal_observations": [
+          {
+            "parameter": "K uptake by crops",
+            "seasonal_pattern": "Peak uptake at flowering for combinable crops; maximum uptake shortly before harvest or at haulm destruction for root crops.",
+            "timing": [
+              "Flowering (cereals)",
+              "Shortly before harvest/haulm destruction (root crops)"
+            ],
+            "magnitude": {
+              "peak_rates": "5-10 kg K2O/ha/day for root crops and oilseed rape"
+            },
+            "drivers": [
+              "Rapid surge in growth"
+            ]
+          }
+        ],
+        "long_term_trends": [
+          {
+            "parameter": "Soil K reserves",
+            "trend_description": "Need to maintain soil reserves as a sound insurance against adverse conditions. Low soil K levels should be improved over a period of years using annual remedial amounts. Heavier soils take longer to restore to satisfactory levels than lighter soils.",
+            "time_period": "Multi-year",
+            "trend_magnitude": null,
+            "statistical_significance": "Implied by recommendations for long-term soil fertility management."
+          }
+        ],
+        "event_responses": [
+          {
+            "event_type": "Potash application under adverse conditions",
+            "soil_k_response": "Significant losses of potassium can occur.",
+            "response_timing": "Immediately following application",
+            "magnitude": {
+              "loss_mechanism": "Surface run-off, through-drainage"
+            },
+            "recovery_pattern": "Can be avoided by following codes of good agricultural practice."
+          }
+        ]
+      },
+      "spatial_variations": {
+        "within_site_variability": [
+          {
+            "parameter": "Crop response to soil K",
+            "variability_description": "The response to soil K can vary, as shown by the scatter of points in field experiments. Variation is often due to factors other than soil K availability.",
+            "coefficient_of_variation": null,
+            "spatial_pattern": "Field-scale variability",
+            "controlling_factors": [
+              "Other factors affecting crop growth"
+            ]
+          }
+        ],
+        "between_site_differences": [
+          {
+            "parameter": "Soil capacity to hold potassium",
+            "site_comparison": "Individual soils have different capacities to hold potassium according to clay type and content and amount of soil organic matter.",
+            "difference_magnitude": {
+              "sand_soils": "Very limited reserves of exchangeable K, much lower retentive capacity.",
+              "soils_less_than_5_percent_clay": "Greater risk of potassium loss.",
+              "heavy_soils": "Less likely to be found with low K levels but will take longer to restore to a satisfactory level than lighter soils."
+            },
+            "explanatory_factors": [
+              "Clay type",
+              "Clay content",
+              "Amount of soil organic matter",
+              "Soil texture"
+            ]
+          }
+        ],
+        "scaling_considerations": [
+          {
+            "scale_transition": "From sampling depth to root exploration depth",
+            "scaling_approach": "Soil analysis measures available nutrients to sampling depth (15 cm for arable, 7.5 cm for grassland). Modern high-yielding crops derive considerable K from greater depth. Suggests analysing deep samples for K supply.",
+            "uncertainty": "Interpreting results from deep samples may be difficult due to limited information on root distribution at depth.",
+            "limitations": [
+              "Standard sampling depth may not capture full K availability for deep-rooted crops.",
+              "Lack of data on root distribution at depth."
+            ]
+          }
+        ]
+      },
+      "process_characterization": {
+        "cycling_processes": [
+          {
+            "process_name": "Potassium Cycle",
+            "description": "Potassium moves from soil solution to plant roots (uptake), from fertilizers/manures/crop residues to soil solution, and is held by negative charges on clay minerals and organic matter (exchangeable and non-exchangeable K). Mineral K is released only over very long time periods by the breakdown of the minerals (weathering). Losses occur via leaching and surface run-off.",
+            "quantification": {
+              "soil_solution_k": "5-20 kg/ha K (6-24 kg K2O)",
+              "rainfall_contribution": "< 5 kg/ha/year",
+              "weathering_release": "Too small to meet average crop needs in UK"
+            },
+            "controlling_factors": [
+              "Potash additions",
+              "Crop uptake",
+              "Nitrogen use",
+              "Soil wetting and drying",
+              "Cultivations",
+              "Clay type and content",
+              "Organic matter content",
+              "Soil moisture conditions (water-logged, frozen, dry/cracked)"
+            ],
+            "measurement_approach": "Conceptual model (Figure 4), with some quantitative estimates."
+          }
+        ],
+        "plant_soil_interactions": [
+          {
+            "interaction_type": "K uptake by plants",
+            "description": "Plants take up potassium as the K+ ion from the soil solution. K is essential for enzyme processes, water relationships (turgor), sugar transport, yield potential, and product quality. K uptake peaks at different growth stages for various crops. For optimum growth, plant-available K supply must meet both maximum total demand and required daily uptake rate.",
+            "quantitative_data": {
+              "peak_uptake_rates": "5-10 kg K2O/ha/day for root crops and oilseed rape",
+              "total_uptake_by_crops": "See 'balance_calculations' section for Table 1 data."
+            },
+            "temporal_patterns": "Seasonal peaks in uptake (flowering for cereals, pre-harvest for roots).",
+            "influencing_factors": [
+              "Plant-available K supply in soil",
+              "Maximum total demand of crop",
+              "Required rate of daily uptake",
+              "Soil conditions",
+              "Weather",
+              "Nitrogen application and uptake (N-K partnership)",
+              "Soil structure (compaction, soil pans)",
+              "Soil depth",
+              "Stoniness"
+            ]
+          },
+          {
+            "interaction_type": "Nitrogen-Potassium partnership",
+            "description": "K and N are strongly associated in plant processes. Both are needed in large amounts at the same time. K maintains cell turgor and regulates water content, essential for optimizing solar radiation interception for photosynthesis. Adequate K supply is crucial for protein formation from nitrate and its distribution. Insufficient K limits N response and can lead to N leaching.",
+            "quantitative_data": {},
+            "temporal_patterns": "Co-uptake throughout growth.",
+            "influencing_factors": [
+              "Availability of both N and K"
+            ]
+          }
+        ],
+        "chemical_processes": [
+          {
+            "process": "Sorption/Desorption",
+            "characterization": "Potassium is held by negative charges on clay minerals and organic matter. K+ can be loosely held ('exchangeable K', rapidly released) or more firmly bonded ('non-exchangeable K', slowly released). Individual soils have different capacities to hold potassium according to clay type and content and amount of soil organic matter.",
+            "rates": {},
+            "environmental_controls": [
+              "Clay type and content",
+              "Amount of soil organic matter",
+              "Soil wetting and drying"
+            ],
+            "implications": "Affects K availability and retention in soil."
+          },
+          {
+            "process": "Leaching",
+            "characterization": "Potassium does not leach anything like as readily from soils as does nitrate and sulphate. Potash additions not taken up by the crop will be held in the soil by the clay minerals or organic matter. For the great majority of soils (>5% clay), K not used by the crop will remain in the cultivated layer. However, significant losses can occur when any source of potash is applied under adverse conditions (water-logged, frozen, or very dry and deeply cracked). Most loss is by surface run-off. Soils with less than 5% clay (sands and loamy sands) have a much lower retentive capacity and greater risk of loss, especially if shallow and subject to high through-drainage.",
+            "rates": {},
+            "environmental_controls": [
+              "Soil clay content",
+              "Soil moisture conditions (water-logged, frozen, dry/cracked)",
+              "Rainfall producing large amounts of through-drainage",
+              "Topography (surface run-off)"
+            ],
+            "implications": "Risk of K loss, especially on light soils; requires 'little and often' applications timed to crop uptake."
+          }
+        ]
+      },
+      "treatment_management_effects": {
+        "experimental_treatments": [
+          {
+            "treatment_description": "Fertilizer applications",
+            "soil_k_effects": {
+              "soil_k_levels": "Increase concentration of K in soil solution; increase exchangeable K and non-exchangeable reserves.",
+              "crop_response": "Large yield response at very low soil K levels, decreasing to nil as soil supply increases."
+            },
+            "effect_magnitude": null,
+            "effect_duration": "Immediate increase in soil solution K, with longer-term effects on reserves.",
+            "mechanisms": [
+              "Direct addition of K+ ions to soil solution."
+            ]
+          },
+          {
+            "treatment_description": "Organic amendment applications (manure, compost, crop residues)",
+            "soil_k_effects": {
+              "soil_k_levels": "Add potassium to the soil as K+; help increase soil reserves, especially for low K soils.",
+              "soil_fertility": "Regular use of organic manure is of considerable benefit for light textured soils.",
+              "k_release": "Almost all potassium sources are soluble and increase K concentration in soil solution, though some organic sources may release K over 12 months."
+            },
+            "effect_magnitude": null,
+            "effect_duration": "Release K over time (e.g., 12 months for some sources).",
+            "mechanisms": [
+              "Release of K+ ions from decomposition of organic materials."
+            ]
+          }
+        ],
+        "management_practices": [
+          {
+            "practice": "Maintaining soil K above critical level",
+            "soil_k_impacts": {
+              "soil_fertility": "Ensures adequate K supply for full yield, prevents future yield and quality penalties, optimizes response to other inputs.",
+              "soil_k_levels": "Maintains soil K reserves."
+            },
+            "implementation_details": "Using fertilizer and manure to replace potassium removed by cropping. Aim for target levels appropriate to the rotation and most demanding crop.",
+            "temporal_effects": "Long-term soil fertility maintenance.",
+            "spatial_effects": "Applicable to all soils except the lightest textured soils which cannot sustain these levels without risk of leaching."
+          },
+          {
+            "practice": "Building up low K soils",
+            "soil_k_impacts": {
+              "soil_k_levels": "Increases plant-available K (exchangeable K) over time.",
+              "crop_yield_quality": "Reduces risk of yield and quality loss."
+            },
+            "implementation_details": "Apply annual remedial amounts over a period of years. Quantities vary by soil type (e.g., 100-800 kg K2O/ha to increase exchangeable K by 60 mg/l). The rate of build-up is largely an economic decision.",
+            "temporal_effects": "Multi-year process.",
+            "spatial_effects": "Heavier soils take longer to restore than lighter soils."
+          },
+          {
+            "practice": "Potash application timing on light soils",
+            "soil_k_impacts": {
+              "soil_k_loss": "Reduces risk of potassium loss.",
+              "k_availability": "Ensures K is available when needed by crop."
+            },
+            "implementation_details": "Apply 'little and often', timed to suit crop uptake and amounts carefully matched to crop offtake.",
+            "temporal_effects": "Short-term, frequent applications.",
+            "spatial_effects": "Specific to soils with less than 5% clay (sands and loamy sands)."
+          },
+          {
+            "practice": "Avoiding potash application under adverse conditions",
+            "soil_k_impacts": {
+              "soil_k_loss": "Prevents significant losses of potassium.",
+              "environmental_impact": "Reduces surface run-off."
+            },
+            "implementation_details": "Follow codes of good agricultural practice; avoid application when soil is water-logged, frozen, or very dry and deeply cracked.",
+            "temporal_effects": "Event-driven prevention.",
+            "spatial_effects": "General applicability, but critical for all soil types."
+          },
+          {
+            "practice": "Soil structure improvement",
+            "soil_k_impacts": {
+              "nutrient_uptake": "Leads to more effective uptake of nutrients, including K, from a larger volume of soil.",
+              "soil_fertility": "Improves overall soil fertility, aeration, water availability, and biological activity."
+            },
+            "implementation_details": "Addressing compaction, soil pans, and other adverse structural problems.",
+            "temporal_effects": "Long-term improvement.",
+            "spatial_effects": "Site-specific."
+          }
+        ],
+        "comparative_analysis": [
+          {
+            "comparison_type": "Fertilizer vs. Organic Manures",
+            "treatments_compared": [
+              "Fertilizers",
+              "Organic manures"
+            ],
+            "soil_k_differences": {
+              "release_mechanism": "Both release K+ to soil solution. Organic manures release K over time.",
+              "impact_on_reserves": "Both add K to soil. Manures can help increase soil reserves, especially at low K indices."
+            },
+            "statistical_significance": "Not explicitly stated as statistical comparison, but functional differences are highlighted."
+          }
+        ]
+      },
+      "methodological_details": {
+        "analytical_methods": [
+          {
+            "method_name": "Standard Soil Analysis",
+            "target_parameters": [
+              "K in soil solution",
+              "Exchangeable K"
+            ],
+            "procedure_description": "Measures K in soil solution and exchangeable K to give a guide to the amount of potassium that is available to the crop. Results given as mg/litre (or ppm) of K.",
+            "instrumentation": "Not specified",
+            "precision": {},
+            "detection_limits": {},
+            "quality_control": [
+              "Described as the 'best practical approach' resulting from 'many decades of detailed research work'."
+            ]
+          },
+          {
+            "method_name": "Non-exchangeable K estimation",
+            "target_parameters": [
+              "Slowly released K"
+            ],
+            "procedure_description": "No practical method exists to estimate the supply of slowly released K.",
+            "instrumentation": "N/A",
+            "precision": {},
+            "detection_limits": {},
+            "quality_control": []
+          }
+        ],
+        "sampling_design": {
+          "spatial_sampling": "Standard sampling depth: 15 cm for arable soils, 7.5 cm for permanent grassland. Suggests analyzing samples taken at depth for K supply.",
+          "temporal_sampling": "Not explicitly detailed, but implies routine/periodic sampling for soil analysis.",
+          "sample_processing": "Analysis of soil particles less than 2 mm in diameter.",
+          "storage_handling": "Not specified.",
+          "representativeness": "Soil analysis measures available nutrients to sampling depth; deeper roots may access K from greater depths, affecting representativeness for total plant supply."
+        },
+        "data_quality": {
+          "precision_measures": [],
+          "accuracy_assessments": [],
+          "method_comparisons": [],
+          "uncertainty_sources": [
+            "Variability in slowly available K release (impractical to measure).",
+            "Difficulty in interpreting deep soil sample results due to limited information on root distribution.",
+            "The K Index system provides a 'general guide to interpretation' due to variability in crop response."
+          ]
+        }
+      },
+      "environmental_context": {
+        "climate_conditions": {
+          "temperature": "Frost resistance (K role)",
+          "precipitation": "Drought tolerance (K role), rainfall contribution to K, through-drainage (K loss risk)",
+          "seasonality": "Seasonal patterns of K uptake",
+          "extremes": "Adverse growing seasons, water-logged/frozen/very dry and deeply cracked soil conditions leading to K loss."
+        },
+        "soil_properties": {
+          "classification": "Not explicitly classified, but refers to soil types by texture.",
+          "texture": "Clay minerals, sand soils, loamy sands, sandy loam, loam, clay loam, clay soils. Clay content (e.g., <5% clay) affects K retention.",
+          "mineralogy": "Clay minerals (contain mineral K, hold exchangeable/non-exchangeable K).",
+          "organic_matter": {
+            "role": "Holds potassium, affects K retention capacity."
+          },
+          "chemical_properties": {
+            "pH": "Neutral and calcareous soils tend to fix more K into non-exchangeable forms.",
+            "Mg_levels": "High magnesium soils (Mg > 2x K) can affect K availability, potentially requiring higher K applications."
+          },
+          "physical_properties": {
+            "soil_structure": "Compaction, soil pans (inhibit root growth and nutrient uptake).",
+            "soil_depth": "Affects nutrient availability and root exploration.",
+            "stoniness": "Can affect nutrient availability."
+          }
+        },
+        "landscape_context": {
+          "topography": "Surface run-off (K loss mechanism).",
+          "drainage": "Through-drainage (K loss risk on light soils).",
+          "position": "Not explicitly detailed, but implies field-scale and regional variations.",
+          "land_use_history": "Implied by discussions of long-term soil fertility and historical context of soil K levels."
+        }
+      },
+      "research_integration": {
+        "relationship_to_other_measurements": "Strong emphasis on the 'N and K partnership', highlighting the need to consider N and K together for uptake, cell turgor, protein formation, and preventing N leaching. Also notes that crop response to N depends on adequate levels of other nutrients (P, K, S, Mg). Mentions the relationship between soil Mg and K availability.",
+        "integration_with_plant_studies": "Extensive integration with plant physiology (enzyme processes, water relationships, sugar transport), crop yield potential, and product quality (grain size, tuber size, oil content, dry matter, starch, sugar, fruit ripening). Discusses plant stress resistance (drought, frost, pests, diseases) in relation to K.",
+        "connection_to_broader_objectives": "Aims to support efficient use of potash fertilizer, maintain soil fertility, optimize crop yields and quality, and provide 'insurance' against adverse growing conditions. Connects to economic decisions regarding fertilizer use and soil reserve build-up.",
+        "comparative_context": "Compares K leaching to nitrate and sulphate (K leaches less readily). Compares K uptake patterns between cereals and root crops. Compares K retention capacity across different soil textures.",
+        "literature_positioning": "Refers to other PDA leaflets (e.g., Leaflet 24 for soil analysis, Leaflet 19 for heavy soils, Leaflet 12 for sugar beet) and RB 209 (fertilizer recommendations) as sources of more detailed information or context."
+      },
+      "data_limitations": {
+        "measurement_constraints": [
+          "Slowly available reserves (non-exchangeable K) are variable and impractical to measure.",
+          "No practical method exists to estimate the supply of slowly released K, which varies greatly between soils and seasons.",
+          "Soil analysis measures K to a specific depth (15 cm arable, 7.5 cm grassland), which may not fully represent K available to deep-rooted crops.",
+          "The K Index system provides a 'general guide' due to variability in crop response to soil K."
+        ],
+        "temporal_limitations": [
+          "The document synthesizes existing knowledge rather than presenting new temporal data from a single study."
+        ],
+        "spatial_limitations": [
+          "Crop response to soil K can vary due to factors other than soil K availability, leading to scatter in field experiment data."
+        ],
+        "methodological_constraints": [
+          "Interpreting results from deep soil samples for K supply is difficult due to limited information on root distribution at depth."
+        ],
+        "interpretation_caveats": [
+          "The quantities of potash needed to increase exchangeable soil K may seem surprisingly large because some added K goes into non-exchangeable reserves not measured by soil analysis.",
+          "Under-estimation of K offtake is a common cause for soil K levels to fall below target.",
+          "Soil K levels cannot be rapidly changed up and down to suit individual crops; target levels must be set for the most demanding crop in the rotation."
+        ]
+      },
+      "extraction_assessment": {
+        "data_completeness": 0.98,
+        "quantitative_content": 0.95,
+        "temporal_coverage": 0.9,
+        "spatial_coverage": 0.9,
+        "methodological_detail": 0.85,
+        "extraction_confidence": 0.98,
+        "native_context_preservation": 0.99,
+        "extraction_notes": "The document is a guidance leaflet, not a research paper with specific experimental data. Therefore, 'study design' and 'authors' are interpreted based on the nature of the publication. Quantitative data is extracted from tables and inline text. The focus is on principles and general observations rather than specific experimental results or statistical analyses beyond ranges and means. The 'extraction_notes' reflect this context. Enhancements focused on adding missing tables and refining existing data for accuracy and contextual relevance."
+      },
+      "enhancement_summary": {
+        "corrections_applied": [
+          "Publication year added to metadata.",
+          "K2O values in 'Removal of potash by crops' table corrected and cleaned."
+        ],
+        "enhancements_added": [
+          "Full table for 'Nutrient content of organic manures (available to next crop)' added.",
+          "Details on soil particle size for analysis added to sample processing.",
+          "Details on pH and Mg effects on K fixation/availability added to soil chemical properties."
+        ],
+        "areas_enriched": [
+          "Quantitative data (missing table, refined existing table).",
+          "Methodological details (sampling depth, sample processing).",
+          "Environmental context (soil chemical properties)."
+        ],
+        "enhancement_justification": "These enhancements directly address identified gaps and inaccuracies, providing a more complete and scientifically robust representation of soil K information from the source document, crucial for accurate soil K assessment and management decisions."
+      }
+    },
+    "validation_certification": {
+      "scientific_accuracy_score": 0.98,
+      "context_preservation_score": 0.99,
+      "completeness_score": 0.95,
+      "extraction_enhancement_value": "high",
+      "overall_validation_confidence": 0.98,
+      "validation_status": "approved",
+      "critical_issues_count": 0,
+      "enhancement_recommendations": [
+        "While the document is a leaflet, if future versions of the extraction system can infer or estimate authors for such publications (e.g., 'The Potash Development Association'), it could add further completeness.",
+        "Further refinement of 'analytical_methods' could be explored if more specific details on the 'standard soil analysis system' (e.g., specific extractants used in UK context) could be inferred from other PDA leaflets referenced."
+      ],
+      "validator_notes": "The original extraction was largely accurate but benefited significantly from the addition of a missing quantitative table and the precise correction of another. Relocating contextual details improved the logical flow and scientific grouping of information. The document's nature as a guidance leaflet rather than a primary research paper means certain experimental details (e.g., specific statistical measures, detailed instrumentation) are inherently absent, and the extraction accurately reflects this. The enhanced version provides a highly complete and accurate representation of the soil K information available in the source."
+    },
+    "_usage_metadata": {
+      "timestamp": "2025-07-10T12:13:51.213737",
+      "stage_name": "unknown",
+      "paper_id": "unknown",
+      "prompt_length_chars": 76493,
+      "processing_time_seconds": 142.83,
+      "thinking_enabled": true,
+      "input_tokens": 18589,
+      "output_tokens": 9810,
+      "thinking_tokens": 0,
+      "input_cost_usd": 0.002788,
+      "output_cost_usd": 0.034335,
+      "thinking_cost_usd": 0.0,
+      "total_cost_usd": 0.037123
+    },
+    "success": true,
+    "stage": "2B",
+    "paper_id": "principles-of-potash-use.pdf",
+    "validation_timestamp": "2025-07-10T12:13:51.215567",
+    "temperature_used": 0.05,
+    "validated_stage": "2A"
+  }
+}
